@@ -82,6 +82,7 @@ code --install-extension dongfg.vscode-beancount-formatter
 code --install-extension dorzey.vscode-sqlfluff
 code --install-extension esbenp.prettier-vscode
 code --install-extension iceyer.toml-formatter
+code --install-extension ms-vscode.makefile-tools
 
 # data
 code --install-extension GrapeCity.gc-excelviewer
