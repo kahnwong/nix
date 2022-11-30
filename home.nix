@@ -177,5 +177,5 @@
       mac_only = [
       ];
     in
-    common++ (if pkgs.system != "aarch64-darwin" then linux_only else mac_only);
+    common ++ (if pkgs.system != "aarch64-darwin" then linux_only else mac_only);
 }
