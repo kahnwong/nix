@@ -33,6 +33,34 @@
 
   home.file.".pyenv/version".source = ./dotfiles/.pyenv/version;
 
+  programs.git = {
+    # git config --global --edit for raw config content
+    enable = true;
+    userName = "kahnwong";
+    userEmail = "karn@karnwong.me";
+
+    delta = {
+      enable = true;
+      options = {
+        navigate = true; # use n and N to move between diff sections
+        side-by-side = true;
+      };
+    };
+
+    extraConfig = {
+      diff.colorMoved = "default";
+      merge.conflictstyle = "diff3";
+      url."git@github.com:".insteadOf = "https://github.com/";
+
+      # ssh signing key
+      user.signingkey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGjELfQh9UxS1ORQZJY0it8T57x8+mHSg0fVAG/dprrl karn@karnwong.me";
+      gpg.format = "ssh";
+      commit.gpgsign = true;
+      credential.helper = "osxkeychain";
+    };
+
+  };
+
   ### nvim
   programs.neovim = {
     enable = true;
@@ -101,7 +129,6 @@
         # git
         delta
         gh
-        git
         gitleaks
         pre-commit
         trufflehog
@@ -185,11 +212,13 @@
         meslo-lgs-nf
         powerline-fonts
         source-code-pro
+
+        # IDE
+        vscode
       ];
 
       linux_only = [
         helm
-        vscode
       ];
 
       mac_only = [
