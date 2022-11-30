@@ -175,6 +175,7 @@
       ];
 
       mac_only = [
+        pkgs.mpv
       ];
     in
     common ++ (if pkgs.system != "aarch64-darwin" then linux_only else mac_only);
