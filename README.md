@@ -4,11 +4,11 @@
 
 1. Edit `home.username` and `home.homeDirectory` in `home.nix`.
 2. `make setup`
-3. `make install`
 
 ## todo
 
 - `set -g NIX_PATH $HOME/.nix-defexpr/channels` # this is the config for fish shell
+- set pyenv
 
 ## Flake (not used)
 

@@ -5,4 +5,5 @@ export PATH=$PATH:/nix/var/nix/profiles/default/bin/
 export PATH=$PATH:$HOME/.nix-profile/bin
 export NIXPKGS_ALLOW_INSECURE=1
 
+ln -s "$PWD"/* ~/.config/nixpkgs
 home-manager switch
