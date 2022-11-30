@@ -9,6 +9,8 @@
 
   nixpkgs.config.allowUnfree = true;
   programs.home-manager.enable = true;
+  fonts.fontconfig.enable = true;
+
   # programs.fish.enable = true;
   # programs.vscode.enable = true;
 
@@ -166,6 +168,12 @@
         # gcp
         google-cloud-sdk
         docker-credential-gcr
+
+        # fonts
+        font-awesome
+        meslo-lgs-nf
+        powerline-fonts
+        source-code-pro
       ];
 
       linux_only = [
