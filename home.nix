@@ -9,6 +9,30 @@
 
   nixpkgs.config.allowUnfree = true;
   programs.home-manager.enable = true;
+  # programs.fish.enable = true;
+  # programs.vscode.enable = true;
+
+  # configurations
+  home.file.".config/fish/config.fish".source = ./dotfiles/.config/fish/config.fish;
+  home.file.".config/fish/conf.d/work.fish".source = ./dotfiles/.config/fish/conf.d/work.fish;
+  home.file.".config/fish/functions/fuck.fish".source = ./dotfiles/.config/fish/functions/fuck.fish;
+  home.file.".config/fish/functions/pip.fish".source = ./dotfiles/.config/fish/functions/pip.fish;
+  home.file.".config/fish/conf.d/00_fig_pre.fish".source = ./dotfiles/.config/fish/conf.d/00_fig_pre.fish;
+  home.file.".config/fish/conf.d/99_fig_post.fish".source = ./dotfiles/.config/fish/conf.d/99_fig_post.fish;
+
+  home.file.".config/starship.toml".source = ./dotfiles/.config/starship.toml;
+
+  home.file.".topydo".source = ./dotfiles/.topydo;
+  home.file.".topydo_columns ".source = ./dotfiles/.topydo_columns;
+
+  home.file.".wakatime.cfg".source = ./dotfiles/.wakatime.cfg;
+
+  home.file.".config/nvim/init.vim".source = ./dotfiles/.config/nvim/init.vim;
+
+  home.file.".ssh/config".source = ./dotfiles/.ssh/config;
+
+  home.file.".aws/config".source = ./dotfiles/.aws/config;
+  home.file.".aws/credentials".source = ./dotfiles/.aws/credentials;
 
   home.packages = with pkgs;
     let

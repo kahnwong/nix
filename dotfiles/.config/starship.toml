@@ -1,0 +1,68 @@
+[battery]
+full_symbol = "🔋"
+charging_symbol = "🔌"
+discharging_symbol = "⚡"
+
+[[battery.display]]
+threshold = 30
+style = "bold red"
+
+[aws]
+disabled = true
+format = "[$profile]($style) "
+style = "bold #F79400"
+# [aws.region_aliases]
+# ap-southeast-2 = "au"
+# ap-southeast-1 = "sg"
+
+[gcloud]
+format = '[$symbol$account(@$domain)(\($project\))]($style) '
+
+[git_branch]
+format = "on [$symbol$branch]($style) "
+style = "bold #7BC61F"
+# symbol = "🍣 "
+
+[git_commit]
+disabled = true
+commit_hash_length = 7
+tag_symbol = "🔖 "
+style = "underline green"
+only_detached = false
+
+[git_status]
+disabled = false
+style = "blue"
+staged = '[++\($count\)](green)'
+ahead = "⇡${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+behind = "⇣${count}"
+
+[python]
+disabled = false
+format = 'via [${symbol} ${pyenv_prefix}(${version} )(\($virtualenv\))]($style) '
+symbol = "\uE235"
+# style = "#026F9C"
+
+[nodejs]
+format = "via [${symbol} $version](bold green) "
+symbol = "\uE718"
+style = "#44FFD2"
+
+[package]
+disabled = true
+
+[custom.todo]
+command = "echo $(topydo due:'<=today' | wc -l)"
+when = true
+style = "#00A1FA"
+shell = "fish"
+symbol = "\uf4a0 "
+
+# [status]
+# style = "bg:blue"
+# symbol = "🔴 "
+# success_symbol = "🟢 SUCCESS"
+# format = '[\[$symbol$common_meaning$signal_name$maybe_int\]]($style): $status '
+# map_symbol = true
+# disabled = false
