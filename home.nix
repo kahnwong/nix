@@ -143,7 +143,7 @@
         # data
         pkgs.visidata
         pkgs.sqlfluff
-        pkgs.spark
+        # pkgs.spark
         # pkgs.python310Packages.pyspark
 
         # postgres

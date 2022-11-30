@@ -18,6 +18,13 @@ set fish_escape_delay_ms 3000
 # suppress fish_greeting message
 set -g fish_greeting
 
+################
+# NIX
+################
+set NIX_PATH $HOME/.nix-defexpr/channels
+set PATH $PATH:$HOME/.nix-profile/bin
+set PATH $PATH:/nix/var/nix/profiles/default/bin/
+
 
 ################
 # PROMPT
