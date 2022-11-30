@@ -53,13 +53,11 @@
       merge.conflictstyle = "diff3";
       url."git@github.com:".insteadOf = "https://github.com/";
 
-      # # ssh signing key
-      # git_signing = {
-      #   user.signingkey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGjELfQh9UxS1ORQZJY0it8T57x8+mHSg0fVAG/dprrl karn@karnwong.me";
-      #   gpg.format = "ssh";
-      #   commit.gpgsign = true;
-      #   credential.helper = "osxkeychain";
-      # };
+      # ssh signing key
+      user.signingkey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGjELfQh9UxS1ORQZJY0it8T57x8+mHSg0fVAG/dprrl karn@karnwong.me";
+      gpg.format = "ssh";
+      commit.gpgsign = true;
+      credential.helper = "osxkeychain";
     };
 
   };

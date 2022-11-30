@@ -3,8 +3,9 @@
 ## Usage
 
 1. Edit `home.username` and `home.homeDirectory` in `home.nix`.
-2. `make setup`
-3. For Mac OS:
+2. If you're on Mac, enable `ssh signing key` section in `home.nix`.
+3. `make setup`
+4. For Mac OS:
    1. Login to `App Store`
    2. `gh auth login`
    3. `make mac-extras`
