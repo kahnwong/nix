@@ -1,8 +1,9 @@
 { config, pkgs, ... }:
 
 {
-  home.username = "root";
-  home.homeDirectory = "/root";
+  home.username = "$USER"; # change me
+  home.homeDirectory = "/home/$USER"; # change me: linux version
+  # home.homeDirectory = "/Users/$USER"; # change me: mac version
 
   home.stateVersion = "22.05";
 
