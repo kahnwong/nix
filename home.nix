@@ -165,13 +165,11 @@
         # gcp
         pkgs.google-cloud-sdk
         pkgs.docker-credential-gcr
-
-        # vscode
-        pkgs.vscode
       ];
 
       linux_only = [
         pkgs.helm
+        pkgs.vscode
       ];
 
       mac_only = [
