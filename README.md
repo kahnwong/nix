@@ -8,7 +8,6 @@
 
 ## todo
 
-- add pre-commit
 - `set -g NIX_PATH $HOME/.nix-defexpr/channels` # this is the config for fish shell
 
 ## Flake (not used)

@@ -1,5 +1,4 @@
 setup:
-	./setup.sh
-
-install:
-	./install.sh
+	./01_setup.sh
+	./02_install.sh
+	./03_install_vscode_extensions.sh
