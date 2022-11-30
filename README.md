@@ -3,7 +3,7 @@
 ## Usage
 
 1. Edit `home.username` and `home.homeDirectory` in `home.nix`.
-2. # run script
+2. `make setup`
 
 ## todo
 
