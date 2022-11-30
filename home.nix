@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   home.username = "$USER"; # change me
@@ -53,11 +53,16 @@
       merge.conflictstyle = "diff3";
       url."git@github.com:".insteadOf = "https://github.com/";
 
-      # ssh signing key
+      # git_signing_key
       user.signingkey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGjELfQh9UxS1ORQZJY0it8T57x8+mHSg0fVAG/dprrl karn@karnwong.me";
       gpg.format = "ssh";
-      commit.gpgsign = true;
-      credential.helper = "osxkeychain";
+
+      commit = lib.mkIf (pkgs.system == "aarch64-darwin") {
+        gpgsign = true;
+      };
+      credential = lib.mkIf (pkgs.system == "aarch64-darwin") {
+        helper = "osxkeychain";
+      };
     };
 
   };
