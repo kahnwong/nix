@@ -73,7 +73,6 @@
         pkgs.trivy
 
         # k8s
-        pkgs.helm
         pkgs.kubectl
 
         # terraform
@@ -144,6 +143,14 @@
         # vscode
         pkgs.vscode
       ];
+
+      linux_only = [
+        pkgs.helm
+      ];
+
+      mac_only = [
+      ];
     in
-    common; #++ (if config.services.xserver.enable then xorg else noxorg);
+    # common; #++ (if config.services.xserver.enable then xorg else noxorg);
+    common++ (if pkgs.system != "aarch64-darwin" then linux_only else mac_only);
 }
