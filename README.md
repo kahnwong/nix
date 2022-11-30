@@ -6,7 +6,8 @@
 2. `make setup`
 3. For Mac OS:
    1. Login to `App Store`
-   2. `make mac-extras`
+   2. `gh auth login`
+   3. `make mac-extras`
 
 ## Useful commands
 

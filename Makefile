@@ -6,3 +6,4 @@ setup:
 	$$HOME/.nix-profile/bin/fish 05_install_fish_plugins.sh
 mac-extras:
 	./06_install_mac_extras.sh
+	./07_install_ghcli_extentions
