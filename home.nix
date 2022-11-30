@@ -41,141 +41,141 @@
       # Packages to always install.
       common = [
         # shell
-        pkgs.fish
-        pkgs.starship
-        pkgs.tmux
+        fish
+        starship
+        tmux
 
         # build env
-        pkgs.openssl
-        pkgs.zlib
-        pkgs.readline
+        openssl
+        zlib
+        readline
 
         # downloaders
-        pkgs.yt-dlp
-        pkgs.aria
-        pkgs.wget
+        yt-dlp
+        aria
+        wget
 
         # networking
-        pkgs.curl
-        pkgs.dogdns
-        pkgs.gping
-        pkgs.httpie
+        curl
+        dogdns
+        gping
+        httpie
 
         # utilities
-        pkgs.bat
-        pkgs.btop
-        pkgs.colordiff
-        pkgs.difftastic
-        pkgs.du-dust
-        pkgs.duf
-        pkgs.exa
-        pkgs.fd
-        pkgs.fzf
-        pkgs.graphviz
-        pkgs.htop
-        pkgs.ncdu
-        pkgs.procs
-        pkgs.ripgrep
-        pkgs.rsync
-        pkgs.sops
-        pkgs.tere
-        pkgs.thefuck
-        pkgs.tldr
-        pkgs.tree
-        pkgs.watch
+        bat
+        btop
+        colordiff
+        difftastic
+        du-dust
+        duf
+        exa
+        fd
+        fzf
+        graphviz
+        htop
+        ncdu
+        procs
+        ripgrep
+        rsync
+        sops
+        tere
+        thefuck
+        tldr
+        tree
+        watch
 
         # git
-        pkgs.delta
-        pkgs.gh
-        pkgs.git
-        pkgs.gitleaks
-        pkgs.pre-commit
-        pkgs.trufflehog
+        delta
+        gh
+        git
+        gitleaks
+        pre-commit
+        trufflehog
 
         # docker
-        pkgs.ctop
-        pkgs.dive
-        pkgs.lazydocker
-        pkgs.trivy
+        ctop
+        dive
+        lazydocker
+        trivy
 
         # k8s
-        pkgs.kubectl
+        kubectl
 
         # terraform
-        pkgs.terraform
-        pkgs.terraform-docs
-        pkgs.terraformer
-        pkgs.tflint
-        pkgs.tfsec
+        terraform
+        terraform-docs
+        terraformer
+        tflint
+        tfsec
 
         # nix
-        pkgs.nixpkgs-fmt
+        nixpkgs-fmt
 
         # shell - linters
-        pkgs.shellcheck
-        pkgs.shfmt
+        shellcheck
+        shfmt
 
         # markdown
-        pkgs.glow
-        pkgs.nodePackages_latest.markdownlint-cli2
-        pkgs.nodePackages.markdown-link-check
+        glow
+        nodePackages_latest.markdownlint-cli2
+        nodePackages.markdown-link-check
 
         # json
-        pkgs.fx
-        pkgs.jq
+        fx
+        jq
 
         # yaml
-        pkgs.yq
+        yq
 
         # python
-        pkgs.black
-        pkgs.pipenv
-        pkgs.python310Packages.pipx
+        black
+        pipenv
+        python310Packages.pipx
 
         # golang
-        pkgs.go
-        pkgs.golangci-lint
+        go
+        golangci-lint
 
         # java
-        pkgs.jdk
+        jdk
 
         # node
-        pkgs.nodejs
-        pkgs.nodePackages_latest.npm
+        nodejs
+        nodePackages_latest.npm
 
         # data
-        pkgs.visidata
-        pkgs.sqlfluff
-        # pkgs.spark
-        # pkgs.python310Packages.pyspark
+        visidata
+        sqlfluff
+        # spark
+        # python310Packages.pyspark
 
         # postgres
-        pkgs.pgcli
+        pgcli
 
         # applications
-        pkgs.bitwarden-cli
-        pkgs.caddy
-        pkgs.hugo
-        pkgs.k6
-        pkgs.neovim
-        pkgs.topydo
+        bitwarden-cli
+        caddy
+        hugo
+        k6
+        neovim
+        topydo
 
         # aws
-        pkgs.awscli2
+        awscli2
 
         # gcp
-        pkgs.google-cloud-sdk
-        pkgs.docker-credential-gcr
+        google-cloud-sdk
+        docker-credential-gcr
       ];
 
       linux_only = [
-        pkgs.helm
-        pkgs.vscode
+        helm
+        vscode
       ];
 
       mac_only = [
-        pkgs.mpv
+        mpv
       ];
     in
-    common ++ (if pkgs.system != "aarch64-darwin" then linux_only else mac_only);
+    common ++ (if system != "aarch64-darwin" then linux_only else mac_only);
 }
