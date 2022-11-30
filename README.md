@@ -4,10 +4,21 @@
 
 1. Edit `home.username` and `home.homeDirectory` in `home.nix`.
 2. `make setup`
+3. For Mac OS, also run `make mac-extras`
+
+## Useful commands
+
+```bash
+# backup vscode extensions list
+code --list-extensions | xargs -L 1 echo code --install-extension > ext_install.sh
+
+# backup vscode config
+cp "/users/$USER/Library/Application Support/Code/User/keybindings.json" .
+cp "/users/$USER/Library/Application Support/Code/User/settings.json" .
+```
 
 ## todo
 
-- `set -g NIX_PATH $HOME/.nix-defexpr/channels` # this is the config for fish shell
 - set pyenv
 
 ## Flake (not used)
