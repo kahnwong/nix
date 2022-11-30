@@ -13,7 +13,7 @@ echo "========== Installing Homebrew =========="
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 sudo chown -R "$(whoami)" "$(brew --prefix)"/*
 
-echo "========== Install brew apps =========="
+echo "================================= Install brew apps ================================="
 # communication
 brew install --cask adium
 brew install --cask discord-canary
@@ -89,8 +89,19 @@ brew install --cask microsoft-remote-desktop
 brew install --cask postman
 brew install --cask visual-studio-code
 
-# ------------------------------------------------
-echo "========== Set configs =========="
+# misc
+brew install mas
+
+echo "================================= Install App Store applications ================================="
+mas install 1176895641 # spark
+mas install 1423210932 # flow - focus & pomodoro timer
+mas install 1451685025 # wireguard
+mas install 1475387142 # tailscale
+mas install 539883307  # LINE
+mas install 568494494  # pocket
+# mas install 1274495053 # microsoft todo
+
+echo "================================= Set configs ================================="
 
 ### vscode config
 cp ./dotfiles/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json

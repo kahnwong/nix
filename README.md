@@ -4,7 +4,9 @@
 
 1. Edit `home.username` and `home.homeDirectory` in `home.nix`.
 2. `make setup`
-3. For Mac OS, also run `make mac-extras`
+3. For Mac OS:
+   1. Login to `App Store`
+   2. `make mac-extras`
 
 ## Useful commands
 
