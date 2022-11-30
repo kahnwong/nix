@@ -11,10 +11,7 @@
   programs.home-manager.enable = true;
   fonts.fontconfig.enable = true;
 
-  # programs.fish.enable = true;
-  # programs.vscode.enable = true;
-
-  # configurations
+  ### configurations
   home.file.".config/fish/config.fish".source = ./dotfiles/.config/fish/config.fish;
   home.file.".config/fish/conf.d/work.fish".source = ./dotfiles/.config/fish/conf.d/work.fish;
   home.file.".config/fish/functions/fuck.fish".source = ./dotfiles/.config/fish/functions/fuck.fish;
@@ -29,14 +26,29 @@
 
   home.file.".wakatime.cfg".source = ./dotfiles/.wakatime.cfg;
 
-  home.file.".config/nvim/init.vim".source = ./dotfiles/.config/nvim/init.vim;
-
   home.file.".ssh/config".source = ./dotfiles/.ssh/config;
 
   home.file.".aws/config".source = ./dotfiles/.aws/config;
   home.file.".aws/credentials".source = ./dotfiles/.aws/credentials;
 
   home.file.".pyenv/version".source = ./dotfiles/.pyenv/version;
+
+  ### nvim
+  programs.neovim = {
+    enable = true;
+    viAlias = true;
+    vimAlias = true;
+    vimdiffAlias = true;
+    plugins = with pkgs.vimPlugins; [
+      # vim-wakatime
+      csv-vim
+      nvim-autopairs
+      vim-hcl
+      vim-markdown
+      vim-nix
+      vim-signify
+    ];
+  };
 
   home.packages = with pkgs;
     let
@@ -159,7 +171,6 @@
         caddy
         hugo
         k6
-        neovim
         topydo
 
         # aws
