@@ -133,6 +133,7 @@
         pkgs.python310Packages.pipx
 
         # golang
+        pkgs.go
         pkgs.golangci-lint
 
         # java

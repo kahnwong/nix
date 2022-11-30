@@ -36,8 +36,6 @@ brew install --cask flameshot
 brew install --cask hot
 brew install --cask kap
 brew install --cask keepingyouawake
-brew install --cask logi-options-plus
-brew install --cask logitech-camera-settings
 brew install --cask maccy
 brew install --cask mactracker
 brew install --cask michaelvillar-timer
@@ -88,6 +86,12 @@ brew install --cask lens
 brew install --cask microsoft-remote-desktop
 brew install --cask postman
 brew install --cask visual-studio-code
+
+# peripheral software
+brew tap homebrew/cask-versions
+brew tap homebrew/cask-drivers
+brew install --cask logi-options-plus
+brew install --cask logitech-camera-settings
 
 # misc
 brew install mas
