@@ -14,6 +14,15 @@ if [[ $(uname -s) == 'Darwin' ]]; then
 fi
 
 ####################
+# create ssh key
+####################
+if [ ! -f "$HOME/.ssh/github" ]; then
+	ssh-keygen -b 2048 -t rsa -f ~/.ssh/github -q -N ""
+else
+	echo "$HOME/.ssh/github already exists"
+fi
+
+####################
 # setup nix
 ####################
 sh <(curl -L https://nixos.org/nix/install) --daemon
