@@ -34,6 +34,8 @@
   home.file.".aws/config".source = ./dotfiles/.aws/config;
   home.file.".aws/credentials".source = ./dotfiles/.aws/credentials;
 
+  home.file.".pyenv/version".source = ./dotfiles/.pyenv/version;
+
   home.packages = with pkgs;
     let
       # Packages to always install.

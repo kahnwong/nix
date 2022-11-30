@@ -4,6 +4,7 @@
 # default
 set PATH \
     $HOME/.nix-profile/bin \
+    $HOME/.pyenv/bin \
     $HOME/.local/bin \
     /usr/local/bin \
     /usr/local/sbin \
@@ -45,14 +46,14 @@ set GOPATH ~/go
 set PATH $PATH:$GOPATH/bin
 
 
-# ################
-# # pyenv
-# ################
-# set -g PYENV_ROOT $HOME/.pyenv
-# set PYENV_VERSION 3.10.6
-# status is-interactive; and pyenv init --path | source
-# pyenv init - | source
-# status --is-interactive; and pyenv virtualenv-init - | source
+################
+# pyenv
+################
+set -g PYENV_ROOT $HOME/.pyenv
+set PYENV_VERSION 3.10.6
+status is-interactive; and pyenv init --path | source
+pyenv init - | source
+status --is-interactive; and pyenv virtualenv-init - | source
 
 
 ################
