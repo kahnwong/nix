@@ -57,7 +57,7 @@
     extraConfig = {
       diff.colorMoved = "default";
       merge.conflictstyle = "diff3";
-      url."git@github.com:".insteadOf = "https://github.com/";
+      # url."git@github.com:".insteadOf = "https://github.com/";
 
       ##################
       # git_signing_key
