@@ -29,7 +29,10 @@ Tested against:
 ### Set default shell (Linux only)
 
 ```bash
-`chsh` and type `/usr/bin/fish`
+`chsh` and type `$HOME/.nix-profile/bin/fish`
+
+# or this one
+`vi /etc/passwd` and specify shell for your user
 ```
 
 ### Set iTerm2 config (Mac only)
