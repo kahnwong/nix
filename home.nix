@@ -211,7 +211,6 @@
         # applications
         beancount
         bitwarden-cli
-        caddy
         fava
         hugo
         k6
@@ -236,15 +235,14 @@
 
       linux_only = [
         helm
-        docker
-        docker-compose
+        # docker
+        # docker-compose
 
         # system
         fail2ban
         iotop
         ntfs3g
         progress
-        tailscale
       ];
 
       mac_only = [
@@ -259,6 +257,7 @@
         zoom-us
 
         # dev tools
+        caddy
         iterm2
         postman
       ];

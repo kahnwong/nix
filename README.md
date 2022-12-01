@@ -19,6 +19,7 @@ Tested against:
    1. Login to `App Store`
    2. `gh auth login`
    3. `make mac-extras`
+7. If you need `tailscale`, `caddy`, or `docker` on your server, install it via your system's package manager, since nix requires you set up systemd services explicitly.
 
 ## Post Installation Instructions
 
