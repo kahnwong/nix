@@ -7,3 +7,4 @@ sops -e .config/fish/conf.d/work.fish >.config/fish/conf.d/work.sops.fish
 sops -e .aws/config >.aws/config.sops
 sops -e .aws/credentials >.aws/credentials.sops
 sops -e settings.json >settings.sops.json
+sops -e .config/sops/age/keys.txt >.config/sops/age/keys.sops.txt

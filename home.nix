@@ -21,6 +21,8 @@
   home.file.".config/fish/conf.d/00_fig_pre.fish".source = ./dotfiles/.config/fish/conf.d/00_fig_pre.fish;
   home.file.".config/fish/conf.d/99_fig_post.fish".source = ./dotfiles/.config/fish/conf.d/99_fig_post.fish;
 
+  home.file.".config/sops/age/keys.txt".source = ./dotfiles/.config/sops/age/keys.txt;
+
   home.file.".config/starship.toml".source = ./dotfiles/.config/starship.toml;
 
   home.file."yt-dlp.conf".source = ./dotfiles/yt-dlp.conf;
