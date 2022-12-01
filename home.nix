@@ -226,7 +226,7 @@
       linux_only = [
         helm
         docker
-        docker-compose_2
+        docker-compose
       ];
 
       mac_only = [
