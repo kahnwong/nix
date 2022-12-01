@@ -36,6 +36,9 @@ code --list-extensions | xargs -L 1 echo code --install-extension > ext_install.
 # backup vscode config
 cp "/users/$USER/Library/Application Support/Code/User/keybindings.json" .
 cp "/users/$USER/Library/Application Support/Code/User/settings.json" .
+
+# equivalent to apt-get update
+nix-channel --update
 ```
 
 ## Flake (not used)

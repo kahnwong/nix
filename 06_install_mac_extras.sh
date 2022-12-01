@@ -14,6 +14,9 @@ echo "========== Installing Homebrew =========="
 sudo chown -R "$(whoami)" "$(brew --prefix)"/*
 
 echo "================================= Install brew apps ================================="
+brew tap homebrew/cask-versions
+brew tap homebrew/cask-drivers
+
 # communication
 brew install --cask adium
 brew install --cask discord-canary
@@ -23,7 +26,7 @@ brew install --cask whatsapp
 brew install --cask zoom
 
 # utilities
-brew install --cask angry-ip-scanner
+# brew install --cask angry-ip-scanner
 brew install --cask appcleaner
 brew install --cask balenaetcher
 brew install --cask bitwarden
@@ -61,7 +64,7 @@ brew install --cask nextcloud
 brew install --cask notion
 brew install --cask protonvpn
 brew install --cask simple-comic
-brew install --cask spotify
+# brew install --cask spotify
 brew install --cask standard-notes
 brew install --cask syncthing
 brew install --cask tad
@@ -88,8 +91,6 @@ brew install --cask postman
 brew install --cask visual-studio-code
 
 # peripheral software
-brew tap homebrew/cask-versions
-brew tap homebrew/cask-drivers
 brew install --cask logi-options-plus
 brew install --cask logitech-camera-settings
 

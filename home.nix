@@ -9,6 +9,8 @@
 
   nixpkgs.config.allowUnfree = true;
   programs.home-manager.enable = true;
+  # services.home-manager.autoUpgrade.enable = true;
+
   fonts.fontconfig.enable = true;
 
   ### configurations
@@ -198,8 +200,9 @@
         # spark
         # python310Packages.pyspark
 
-        # postgres
+        # database
         pgcli
+        mongodb-tools
 
         # applications
         bitwarden-cli
