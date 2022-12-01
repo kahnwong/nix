@@ -1,12 +1,19 @@
 # nix
 
+Tested against:
+
+- x86_64-linux
+- aarch64-linux
+- x86_64-darwin
+- aarch64-darwin
+
 ## Usage
 
 1. Edit `home.username` and `home.homeDirectory` in `./home.nix`.
 2. Edit `userName` and `userEmail` in `programs.git` block in `./home.nix`.
-3. If you are on `Mac` and want to set up ssh key signing, edit value in `user.signingkey` in `git_signing_key` section in `./home.nix`,
+3. If you are on `Mac` and want to set up ssh key signing, edit value `user.signingkey` in `git_signing_key` section in `./home.nix`,
    - If you don't want to set up commit signing, comment out the whole `git_signing_key` section.
-4. On Raspberry Pi 4,comment out `nodePackages_latest.*`. It raises segmentation fault, not sure whether this applies to other `aarch64-linux` or not.
+4. On `Raspberry Pi 4`, comment out `nodePackages_latest.*`. It raises segmentation fault, not sure whether this applies to other `aarch64-linux` or not.
 5. `make setup`
 6. For Mac OS:
    1. Login to `App Store`
