@@ -83,6 +83,7 @@ brew install --cask gitup
 brew install --cask jupyter-notebook-viewer
 brew install --cask lens
 brew install --cask microsoft-remote-desktop
+brew install --cask tailscale
 
 # peripheral software
 brew install --cask logi-options-plus
@@ -95,7 +96,6 @@ echo "================================= Install App Store applications =========
 mas install 1176895641 # spark
 mas install 1423210932 # flow - focus & pomodoro timer
 mas install 1451685025 # wireguard
-mas install 1475387142 # tailscale
 mas install 539883307  # LINE
 mas install 568494494  # pocket
 # mas install 1274495053 # microsoft todo
