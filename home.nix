@@ -21,6 +21,8 @@
 
   home.file.".config/starship.toml".source = ./dotfiles/.config/starship.toml;
 
+  home.file."yt-dlp.conf".source = ./dotfiles/yt-dlp.conf;
+
   home.file.".topydo".source = ./dotfiles/.topydo;
   home.file.".topydo_columns ".source = ./dotfiles/.topydo_columns;
 
@@ -83,16 +85,6 @@
     ];
   };
 
-  ### yt-dlp
-  programs.yt-dlp = {
-    enable = true;
-    extraConfig = ''
-      -o "%(title)s.%(ext)s" --ignore-errors
-      # -f bestvideo[ext!=webm]+bestaudio[ext!=webm]/best[ext!=webm]
-      -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]
-    '';
-  };
-
   home.packages = with pkgs;
     let
       # Packages to always install.
@@ -110,6 +102,7 @@
         # downloaders
         aria
         wget
+        yt-dlp
 
         # networking
         curl
