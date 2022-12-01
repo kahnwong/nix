@@ -27,9 +27,7 @@ fi
 ####################
 sh <(curl -L https://nixos.org/nix/install) --daemon
 
-if [[ $(uname -s) == 'Darwin' ]]; then
-	export PATH=$PATH:/nix/var/nix/profiles/default/bin/
-fi
+export PATH=$PATH:/nix/var/nix/profiles/default/bin/
 
 nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
 nix-channel --update
