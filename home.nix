@@ -236,7 +236,6 @@
         ntfs3g
         progress
         tailscale
-
       ];
 
       mac_only = [

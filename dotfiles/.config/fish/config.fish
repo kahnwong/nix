@@ -6,6 +6,7 @@ set PATH \
     $HOME/.nix-profile/bin \
     $HOME/.pyenv/bin \
     $HOME/.local/bin \
+    /opt/homebrew/bin \
     /usr/local/bin \
     /usr/local/sbin \
     /usr/bin \
