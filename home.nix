@@ -249,7 +249,19 @@
 
       mac_only = [
         mpv
+        jetbrains.datagrip
+        jetbrains.idea-ultimate
+
+        # communication
+        discord-canary
+        slack
+        teams
+        zoom-us
+
+        # dev tools
+        iterm2
+        postman
       ];
     in
-    common ++ (if system != "aarch64-darwin" then linux_only else mac_only);
+    common ++ (if system == "x86_64-linux" then linux_only else mac_only);
 }

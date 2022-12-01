@@ -19,17 +19,14 @@ brew tap homebrew/cask-drivers
 
 # communication
 brew install --cask adium
-brew install --cask discord-canary
-brew install --cask microsoft-teams
-brew install --cask slack
 brew install --cask whatsapp
-brew install --cask zoom
 
 # utilities
 # brew install --cask angry-ip-scanner
 brew install --cask appcleaner
 brew install --cask balenaetcher
 brew install --cask bitwarden
+brew install --cask devdocs
 brew install --cask cheatsheet
 brew install --cask coconutbattery
 brew install --cask devdocs
@@ -83,12 +80,9 @@ brew install --cask docker
 brew install --cask fig
 brew install --cask fork
 brew install --cask gitup
-brew install --cask iterm2
 brew install --cask jupyter-notebook-viewer
 brew install --cask lens
 brew install --cask microsoft-remote-desktop
-brew install --cask postman
-brew install --cask visual-studio-code
 
 # peripheral software
 brew install --cask logi-options-plus
