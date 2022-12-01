@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export PATH=$PATH:$HOME/.nix-profile/bin
+
 # theme
 code --install-extension akamud.vscode-theme-onelight
 code --install-extension helgardrichard.helium-icon-theme
