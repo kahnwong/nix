@@ -61,6 +61,7 @@ brew install --cask nextcloud
 brew install --cask notion
 brew install --cask protonvpn
 brew install --cask simple-comic
+brew install --cask sleek
 # brew install --cask spotify
 brew install --cask standard-notes
 brew install --cask syncthing
