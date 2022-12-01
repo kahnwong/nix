@@ -2,9 +2,11 @@
 
 ## Usage
 
-1. Edit `home.username` and `home.homeDirectory` in `home.nix`.
-2. `make setup`
-3. For Mac OS:
+1. Edit `home.username` and `home.homeDirectory` in `./home.nix`.
+2. Edit `userName` and `userEmail` in `programs.git` block in `./home.nix`.
+3. If you are on `Mac` and want to set up ssh key signing, edit value in `user.signingkey` in `git_signing_key` section in `./home.nix`, or disable it altogether.
+4. `make setup`
+5. For Mac OS:
    1. Login to `App Store`
    2. `gh auth login`
    3. `make mac-extras`
