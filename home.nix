@@ -65,10 +65,10 @@
       user.signingkey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGjELfQh9UxS1ORQZJY0it8T57x8+mHSg0fVAG/dprrl karn@karnwong.me";
       gpg.format = "ssh";
 
-      commit = lib.mkIf (pkgs.system != "x86_64-linux") {
+      commit = lib.mkIf pkgs.stdenv.isDarwin {
         gpgsign = true;
       };
-      credential = lib.mkIf (pkgs.system != "x86_64-linux") {
+      credential = lib.mkIf pkgs.stdenv.isDarwin {
         helper = "osxkeychain";
       };
     };
@@ -263,5 +263,5 @@
         postman
       ];
     in
-    common ++ (if system == "x86_64-linux" then linux_only else mac_only);
+    common ++ (if stdenv.isLinux then linux_only else mac_only);
 }
