@@ -65,10 +65,10 @@
       user.signingkey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGjELfQh9UxS1ORQZJY0it8T57x8+mHSg0fVAG/dprrl karn@karnwong.me";
       gpg.format = "ssh";
 
-      commit = lib.mkIf (pkgs.system == "aarch64-darwin") {
+      commit = lib.mkIf (pkgs.system != "x86_64-linux") {
         gpgsign = true;
       };
-      credential = lib.mkIf (pkgs.system == "aarch64-darwin") {
+      credential = lib.mkIf (pkgs.system != "x86_64-linux") {
         helper = "osxkeychain";
       };
     };
