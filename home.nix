@@ -64,7 +64,6 @@
         helper = "osxkeychain";
       };
     };
-
   };
 
   ### nvim
@@ -84,6 +83,16 @@
     ];
   };
 
+  ### yt-dlp
+  programs.yt-dlp = {
+    enable = true;
+    extraConfig = ''
+      -o "%(title)s.%(ext)s" --ignore-errors
+      # -f bestvideo[ext!=webm]+bestaudio[ext!=webm]/best[ext!=webm]
+      -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]
+    '';
+  };
+
   home.packages = with pkgs;
     let
       # Packages to always install.
@@ -99,7 +108,6 @@
         readline
 
         # downloaders
-        yt-dlp
         aria
         wget
 
@@ -118,6 +126,7 @@
         duf
         exa
         fd
+        ffmpeg
         fzf
         graphviz
         htop
@@ -213,20 +222,28 @@
         google-cloud-sdk
         docker-credential-gcr
 
+        # IDE
+        vscode
+
         # fonts
         font-awesome
         meslo-lgs-nf
         powerline-fonts
         source-code-pro
-
-        # IDE
-        vscode
       ];
 
       linux_only = [
         helm
         docker
         docker-compose
+
+        # system
+        fail2ban
+        iotop
+        ntfs3g
+        progress
+        tailscale
+
       ];
 
       mac_only = [
