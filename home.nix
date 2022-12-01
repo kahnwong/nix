@@ -209,8 +209,10 @@
         mongodb-tools
 
         # applications
+        beancount
         bitwarden-cli
         caddy
+        fava
         hugo
         k6
         topydo
