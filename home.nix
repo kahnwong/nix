@@ -31,6 +31,7 @@
   home.file.".topydo_columns ".source = ./dotfiles/.topydo_columns;
 
   home.file.".wakatime.cfg".source = ./dotfiles/.wakatime.cfg;
+  home.file.".config/fish/functions/fish_prompt.fish".source = ./dotfiles/.config/fish/functions/fish_prompt.fish;
 
   home.file.".ssh/config".source = ./dotfiles/.ssh/config;
 

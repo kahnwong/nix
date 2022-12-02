@@ -60,8 +60,8 @@
       "action": "HighlightTrigger"
     },
     {
-      "disabled": true,
-      "parameter": "~/.wakatime/wakatime-cli --entity Terminal --entity-type app --plugin \"iterm2-wakatime/0.0.1\" --project \"<<LAST_PROJECT>>\"",
+      "disabled": false,
+      "parameter": "~/.nix-profile/bin/wakatime-cli --entity Terminal --entity-type app --plugin \"iterm2-wakatime/0.0.1\" --project \"<<LAST_PROJECT>>\"",
       "regex": "^.",
       "action": "ScriptTrigger"
     }
