@@ -5,7 +5,7 @@
   home.homeDirectory = "/home/$USER"; # change me: linux version
   # home.homeDirectory = "/Users/$USER"; # change me: mac version
 
-  home.stateVersion = "22.05";
+  home.stateVersion = "22.11";
 
   nixpkgs.config.allowUnfree = true;
   programs.home-manager.enable = true;

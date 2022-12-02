@@ -60,6 +60,9 @@ cp "/users/$USER/Library/Application Support/Code/User/settings.json" .
 
 # equivalent to apt-get update
 nix-channel --update
+
+# equivalent to do-release-upgrade
+https://nixos.org/manual/nix/stable/installation/upgrading.html
 ```
 
 ## Flake (not used)
