@@ -126,12 +126,16 @@ function gp
     git push
 end
 
-function gdl
-    git diff HEAD~1..HEAD
+function gd
+    git diff
 end
 
 function gds
     git diff --staged
+end
+
+function gdl
+    git diff HEAD~1..HEAD
 end
 
 function diff
