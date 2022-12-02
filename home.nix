@@ -80,15 +80,35 @@
     viAlias = true;
     vimAlias = true;
     vimdiffAlias = true;
+
+    # default nix vim plugin manager is flaky with vim-wakatime, need to use vim-plug
     plugins = with pkgs.vimPlugins; [
-      # vim-wakatime
-      csv-vim
-      nvim-autopairs
-      vim-hcl
-      vim-markdown
-      vim-nix
-      vim-signify
+      vim-plug
     ];
+
+    extraConfig = ''
+      set number
+
+      runtime! plug.vim
+      call plug#begin()
+
+      "diff
+      Plug 'mhinz/vim-signify'
+
+      "integrations
+      Plug 'wakatime/vim-wakatime'
+
+      "syntax highlighting
+      Plug 'chrisbra/csv.vim'
+      Plug 'jvirtanen/vim-hcl'
+      Plug 'LnL7/vim-nix'
+      Plug 'preservim/vim-markdown'
+
+      "utilities
+      Plug 'windwp/nvim-autopairs'
+
+      call plug#end()
+    '';
   };
 
   home.packages = with pkgs;
@@ -215,6 +235,7 @@
         hugo
         k6
         topydo
+        wakatime
 
         # aws
         awscli2
@@ -239,7 +260,6 @@
         # docker-compose
 
         # system
-        fail2ban
         iotop
         ntfs3g
         progress

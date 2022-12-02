@@ -23,6 +23,7 @@ brew install --cask whatsapp
 
 # utilities
 # brew install --cask angry-ip-scanner
+brew install --cask alfred
 brew install --cask appcleaner
 brew install --cask balenaetcher
 brew install --cask bitwarden
@@ -87,6 +88,7 @@ brew install --cask microsoft-remote-desktop
 brew install --cask tailscale
 
 # peripheral software
+brew install --cask logitech-options
 brew install --cask logi-options-plus
 brew install --cask logitech-camera-settings
 

@@ -7,3 +7,5 @@ export PATH=$PATH:$HOME/.nix-profile/bin
 
 ln -s "$PWD"/* ~/.config/nixpkgs
 home-manager switch
+
+nvim --headless +PlugInstall +qall
