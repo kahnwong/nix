@@ -31,7 +31,7 @@
   home.file.".topydo_columns ".source = ./dotfiles/.topydo_columns;
 
   home.file.".wakatime.cfg".source = ./dotfiles/.wakatime.cfg;
-  home.file.".config/fish/functions/fish_prompt.fish".source = ./dotfiles/.config/fish/functions/fish_prompt.fish;
+  # home.file.".config/fish/functions/fish_prompt.fish".source = ./dotfiles/.config/fish/functions/fish_prompt.fish;
 
   home.file.".ssh/config".source = ./dotfiles/.ssh/config;
 
@@ -88,8 +88,6 @@
     ];
 
     extraConfig = ''
-      set number
-
       runtime! plug.vim
       call plug#begin()
 
@@ -103,12 +101,21 @@
       Plug 'chrisbra/csv.vim'
       Plug 'jvirtanen/vim-hcl'
       Plug 'LnL7/vim-nix'
-      Plug 'preservim/vim-markdown'
+      "Plug 'preservim/vim-markdown'
 
       "utilities
       Plug 'windwp/nvim-autopairs'
 
+      Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+      Plug 'junegunn/fzf.vim'
+
+      "ui
+      Plug 'stevearc/dressing.nvim'
+
       call plug#end()
+
+      """" config
+      set number
     '';
   };
 
@@ -136,9 +143,11 @@
         dogdns
         gping
         httpie
+        speedtest-cli
 
         # utilities
         bat
+        broot
         btop
         colordiff
         difftastic
@@ -150,6 +159,7 @@
         fzf
         graphviz
         htop
+        libqalculate
         ncdu
         procs
         ripgrep
@@ -198,6 +208,7 @@
 
         # json
         fx
+        gron
         jq
 
         # yaml
@@ -268,8 +279,6 @@
 
       mac_only = [
         mpv
-        jetbrains.datagrip
-        jetbrains.idea-ultimate
 
         # communication
         discord-canary
@@ -280,6 +289,8 @@
         # dev tools
         caddy
         iterm2
+        jetbrains.datagrip
+        jetbrains.idea-ultimate
         postman
       ];
     in

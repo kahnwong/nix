@@ -174,6 +174,10 @@ function cat
     bat --theme "Monokai Extended" $argv
 end
 
+function tree
+    broot
+end
+
 function dig
     dog $argv
 end
