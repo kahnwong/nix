@@ -174,6 +174,10 @@
         tree
         watch
 
+        # fetch
+        neofetch
+        onefetch
+
         # git
         delta
         gh
@@ -232,6 +236,7 @@
         # node
         nodejs
         nodePackages_latest.npm
+        yarn
 
         # data
         visidata
