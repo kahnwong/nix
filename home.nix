@@ -56,9 +56,9 @@
       merge.conflictstyle = "diff3";
       # url."git@github.com:".insteadOf = "https://github.com/";
 
-      ##################
+      ######################
       # git_signing_key
-      ##################
+      ######################
       user.signingkey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGjELfQh9UxS1ORQZJY0it8T57x8+mHSg0fVAG/dprrl karn@karnwong.me";
       gpg.format = "ssh";
 
@@ -68,6 +68,9 @@
       credential = lib.mkIf pkgs.stdenv.isDarwin {
         helper = "osxkeychain";
       };
+      ######################
+      # end git_signing_key
+      ######################
     };
   };
 
@@ -107,11 +110,15 @@
 
       "ui
       Plug 'stevearc/dressing.nvim'
+      Plug 'vim-airline/vim-airline'
+      Plug 'vim-airline/vim-airline-themes'
 
       call plug#end()
 
       """" config
       set number
+
+      let g:airline_theme='onedark'
     '';
   };
 
