@@ -1,74 +1,34 @@
 [All]
 title = All
-# sortexpr = desc:importance
-groupexpr = priority,context
+sortexpr = asc:priority
 show_all = 1
-filterexpr = -@blog -@work -@listen -@watch -+project -+media -@recurring -@tinkering -@community
+filterexpr = -@work -@tinkering -@community
+groupexpr = context
 
 [Today]
 title = Today
 sortexpr = desc:importance
-groupexpr = context
 show_all = 0
 filterexpr = due:<=today
-
-# [Tomorrow]
-# title = Tomorrow
-# sortexpr = desc:importance
-# groupexpr = context
-# show_all = 0
-# filterexpr = due:tomorrow
-
-[Work]
-title = Work
-sortexpr = asc:due
-show_all = 1
-filterexpr = @work
-groupexpr = project
+groupexpr = context
 
 [Tinkering]
 title = Tinkering
-sortexpr = asc:due
-show_all = 1
+sortexpr = asc:priority
+show_all = 0
 filterexpr = @tinkering
 groupexpr = project
 
-[Community]
-title = Community
-sortexpr = asc:due
-show_all = 1
-filterexpr = @community
+[Todo]
+title = Todo
+sortexpr = asc:priority
+show_all = 0
+filterexpr = @work
 groupexpr = project
 
-#[Overdue]
-#title = Overdue
-#filterexpr = due:<today
-#sortexpr = desc:due
-#show_all = 1
-
-#[Wallabag]
-#title = Wallabag
-#sortexpr = desc:importance
-#show_all = 0
-#filterexpr = @wallabagapp
-
-#[Media]
-#title = Downloads
-#sortexpr = desc:due
-#groupexpr = context
-#show_all = 0
-#filterexpr = @download
-
-#[Blog]
-#title = Blog
-#filterexpr = +blog
-#groupexpr = context
-#show_all = 0
-
-#[Wallabag]
-#title = Wallabag
-#filterexpr = +background
-#show_all = 0
-#[Tinkering]
-#title = Tinkering
-#filterexpr = +project
+[Triage]
+title = Triage
+sortexpr = desc:importance
+show_all = 0
+filterexpr = (>=F) @work
+groupexpr = desc:priority
