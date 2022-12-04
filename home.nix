@@ -26,6 +26,7 @@
   home.file.".config/fish/conf.d/topydo.fish".source = ./dotfiles/.config/fish/conf.d/topydo.fish;
   home.file.".config/fish/conf.d/work.fish".source = ./dotfiles/.config/fish/conf.d/work.fish;
   home.file.".config/fish/config.fish".source = ./dotfiles/.config/fish/config.fish;
+  home.file.".config/fish/fish_plugins".source = ./dotfiles/.config/fish/fish_plugins;
   home.file.".config/fish/functions/fuck.fish".source = ./dotfiles/.config/fish/functions/fuck.fish;
   home.file.".config/fish/functions/pip.fish".source = ./dotfiles/.config/fish/functions/pip.fish;
   home.file.".config/sops/age/keys.txt".source = ./dotfiles/.config/sops/age/keys.txt;

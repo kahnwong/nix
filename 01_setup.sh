@@ -23,6 +23,11 @@ else
 fi
 
 ####################
+# fisher
+####################
+curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
+
+####################
 # setup nix
 ####################
 sh <(curl -L https://nixos.org/nix/install) --daemon

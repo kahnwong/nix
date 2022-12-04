@@ -17,3 +17,4 @@ fi
 home-manager switch
 
 nvim --headless +PlugInstall +qall
+fish -c "fisher update"
