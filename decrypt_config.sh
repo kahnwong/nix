@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sops -d .enc.env >.env
+
 cd dotfiles || exit
 sops -d wakatime.sops.cfg >.wakatime.cfg
 sops -d .ssh/config.sops >.ssh/config

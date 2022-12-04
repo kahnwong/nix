@@ -6,6 +6,14 @@ export PATH=$PATH:$HOME/.nix-profile/bin
 # export NIXPKGS_ALLOW_INSECURE=1
 
 ln -s "$PWD"/* ~/.config/nixpkgs
+
+if [ -f ".env" ]; then
+	source .env
+else
+	echo ".env doesn't exist! Please create .env and populate variables."
+	exit 1
+fi
+
 home-manager switch
 
 nvim --headless +PlugInstall +qall

@@ -4,3 +4,4 @@ credentials
 work.fish
 settings.json
 keys.txt
+.env

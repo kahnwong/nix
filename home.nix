@@ -1,9 +1,11 @@
 { config, pkgs, lib, ... }:
 
 {
-  home.username = "$USER"; # change me
-  home.homeDirectory = "/home/$USER"; # change me: linux version
-  # home.homeDirectory = "/Users/$USER"; # change me: mac version
+  home.username = builtins.getEnv "username";
+
+  # linux: `/home/$username`
+  # mac: `/Users/$username`
+  home.homeDirectory = builtins.getEnv "home_directory";
 
   home.stateVersion = "22.11";
 
@@ -38,10 +40,10 @@
 
   ### git
   programs.git = {
-    # git config --global --edit for raw config content
+    # `git config --global --edit` for raw config content
     enable = true;
-    userName = "kahnwong";
-    userEmail = "karn@karnwong.me";
+    userName = builtins.getEnv "git_username";
+    userEmail = builtins.getEnv "git_email";
 
     delta = {
       enable = true;
@@ -59,7 +61,7 @@
       ######################
       # git_signing_key
       ######################
-      user.signingkey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGjELfQh9UxS1ORQZJY0it8T57x8+mHSg0fVAG/dprrl karn@karnwong.me";
+      user.signingkey = builtins.getEnv "user_signingkey";
       gpg.format = "ssh";
 
       commit = lib.mkIf pkgs.stdenv.isDarwin {
