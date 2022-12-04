@@ -175,6 +175,7 @@
         thefuck
         tldr
         tree
+        vhs
         watch
 
         # fetch
@@ -287,8 +288,6 @@
       ];
 
       mac_only = [
-        mpv
-
         # communication
         discord-canary
         slack

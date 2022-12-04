@@ -62,6 +62,7 @@ brew install --cask --no-quarantine iina
 brew install --cask --no-quarantine jellyfin-media-player
 brew install --cask --no-quarantine macdown
 brew install --cask --no-quarantine miro
+brew install --no-quarantine mpv
 brew install --cask --no-quarantine nextcloud
 brew install --cask --no-quarantine notion
 brew install --cask --no-quarantine protonvpn

@@ -10,6 +10,10 @@ function tree
     broot
 end
 
+function fman
+    EDITOR="vi" fman
+end
+
 function dig
     dog $argv
 end
