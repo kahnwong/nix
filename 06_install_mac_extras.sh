@@ -21,6 +21,9 @@ brew tap homebrew/cask-drivers
 brew install --cask --no-quarantine adium
 brew install --cask --no-quarantine whatsapp
 
+# data
+brew install apache-spark
+
 # utilities
 # brew install --cask --no-quarantine angry-ip-scanner
 brew install --cask --no-quarantine alfred

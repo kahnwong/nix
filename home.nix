@@ -244,8 +244,6 @@
         # data
         visidata
         sqlfluff
-        # spark
-        # python310Packages.pyspark
 
         # database
         pgcli
