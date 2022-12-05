@@ -138,6 +138,7 @@
         openssl
         zlib
         readline
+        gdal
 
         # downloaders
         aria
