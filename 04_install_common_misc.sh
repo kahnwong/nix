@@ -12,3 +12,6 @@ npm set prefix ~/.npm-global
 ### packages
 npm install -g @jaebradley/wakatime-cli
 go install github.com/nore-dev/fman@latest
+
+### pip
+pipx install nbpreview
