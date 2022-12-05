@@ -10,8 +10,8 @@ function tree
     broot
 end
 
-function fman
-    EDITOR="vi" fman
+function fm
+    EDITOR="vi" fman --theme nord
 end
 
 function dig
