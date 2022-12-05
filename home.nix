@@ -236,7 +236,7 @@
         golangci-lint
 
         # java
-        jdk
+        temurin-bin
 
         # node
         nodejs
