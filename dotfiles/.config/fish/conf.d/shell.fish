@@ -50,3 +50,7 @@ end
 # function cbonsai
 #   docker exec -it cbonsai cbonsai -li
 # end
+
+function zip-compress
+    bash -c 'for i in *.txt; do zip -rm `basename $i .txt`.zip $i; done'
+end
