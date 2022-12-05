@@ -17,6 +17,12 @@ echo "================================= Install brew apps ======================
 brew tap homebrew/cask-versions
 brew tap homebrew/cask-drivers
 
+# cli
+brew install mas
+brew install mpv
+brew install padok-team/tap/tfautomv
+brew install wkhtmltopdf
+
 # communication
 brew install --cask --no-quarantine adium
 brew install --cask --no-quarantine whatsapp
@@ -62,7 +68,6 @@ brew install --cask --no-quarantine iina
 brew install --cask --no-quarantine jellyfin-media-player
 brew install --cask --no-quarantine macdown
 brew install --cask --no-quarantine miro
-brew install --no-quarantine mpv
 brew install --cask --no-quarantine nextcloud
 brew install --cask --no-quarantine notion
 brew install --cask --no-quarantine protonvpn
@@ -97,14 +102,12 @@ brew install --cask --no-quarantine gitup
 brew install --cask --no-quarantine lens
 brew install --cask --no-quarantine microsoft-remote-desktop
 brew install --cask --no-quarantine tailscale
+brew install padok-team/tap/tfautomv
 
 # peripheral software
 brew install --cask --no-quarantine logitech-options
 brew install --cask --no-quarantine logi-options-plus
 brew install --cask --no-quarantine logitech-camera-settings
-
-# misc
-brew install mas
 
 echo "================================= Install App Store applications ================================="
 mas install 1176895641 # spark
