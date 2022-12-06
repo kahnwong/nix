@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export PATH=$PATH:$HOME/.nix-profile/bin
+
 ### python
 curl https://pyenv.run | bash
 
@@ -12,6 +14,5 @@ npm set prefix ~/.npm-global
 ### packages
 npm install -g @jaebradley/wakatime-cli
 go install github.com/nore-dev/fman@latest
-
-### pip
+go install github.com/yitsushi/totp-cli@latest
 pipx install nbpreview

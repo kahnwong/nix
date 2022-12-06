@@ -54,3 +54,8 @@ end
 function zip-compress
     bash -c 'for i in *.txt; do zip -rm `basename $i .txt`.zip $i; done'
 end
+
+function aws-totp
+    totp-cli generate baania aws-88x | pbcopy
+    echo "AWS OTP copied to clipboard!"
+end
