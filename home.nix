@@ -32,7 +32,6 @@
   home.file.".config/fish/functions/pip.fish".source = ./dotfiles/.config/fish/functions/pip.fish;
   home.file.".config/sops/age/keys.txt".source = ./dotfiles/.config/sops/age/keys.txt;
   home.file.".config/starship.toml".source = ./dotfiles/.config/starship.toml;
-  home.file.".pyenv/version".source = ./dotfiles/.pyenv/version;
   home.file.".ssh/config".source = ./dotfiles/.ssh/config;
   home.file.".topydo_columns".source = ./dotfiles/.topydo_columns;
   home.file.".topydo".source = ./dotfiles/.topydo;

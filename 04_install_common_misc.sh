@@ -6,7 +6,9 @@ export PATH=$PATH:$HOME/.nix-profile/bin
 curl https://pyenv.run | bash
 
 export PATH=$PATH:$HOME/.pyenv/bin
-pyenv install -s 3.10.8
+export PYTHON_VERSION="3.10.8"
+pyenv install -s $PYTHON_VERSION
+pyenv global $PYTHON_VERSION
 
 ### npm
 npm set prefix ~/.npm-global
