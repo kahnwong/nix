@@ -44,6 +44,7 @@ brew install --cask --no-quarantine eul
 brew install --cask --no-quarantine flameshot
 brew install --cask --no-quarantine hot
 brew install --cask --no-quarantine kap
+brew install --cask --no-quarantine keepassxc
 brew install --cask --no-quarantine keepingyouawake
 brew install --cask --no-quarantine maccy
 brew install --cask --no-quarantine mactracker

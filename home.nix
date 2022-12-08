@@ -282,6 +282,7 @@
         # docker-compose
 
         # system
+        fuse
         iotop
         ntfs3g
         progress

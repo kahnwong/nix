@@ -18,3 +18,4 @@ npm install -g @jaebradley/wakatime-cli
 go install github.com/nore-dev/fman@latest
 go install github.com/yitsushi/totp-cli@latest
 pipx install nbpreview
+pipx install pip_search
