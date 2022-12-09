@@ -24,91 +24,91 @@ brew install padok-team/tap/tfautomv
 brew install wkhtmltopdf
 
 # communication
-brew install --cask --no-quarantine adium
-brew install --cask --no-quarantine whatsapp
+brew install --cask adium
+brew install --cask whatsapp
 
 # data
 brew install apache-spark
 
 # utilities
-# brew install --cask --no-quarantine angry-ip-scanner
-brew install --cask --no-quarantine alfred
-brew install --cask --no-quarantine appcleaner
-brew install --cask --no-quarantine balenaetcher
-brew install --cask --no-quarantine bitwarden
-brew install --cask --no-quarantine cheatsheet
-brew install --cask --no-quarantine clocker
-brew install --cask --no-quarantine coconutbattery
-brew install --cask --no-quarantine dozer
-brew install --cask --no-quarantine eul
-brew install --cask --no-quarantine flameshot
-brew install --cask --no-quarantine hot
-brew install --cask --no-quarantine kap
-brew install --cask --no-quarantine keepassxc
-brew install --cask --no-quarantine keepingyouawake
-brew install --cask --no-quarantine maccy
-brew install --cask --no-quarantine mactracker
-brew install --cask --no-quarantine meetingbar
-brew install --cask --no-quarantine michaelvillar-timer
-brew install --cask --no-quarantine muzzle
-brew install --cask --no-quarantine numi
-brew install --cask --no-quarantine shifty
-brew install --cask --no-quarantine spectacle
-brew install --cask --no-quarantine stats
-brew install --cask --no-quarantine the-unarchiver
-brew install --cask --no-quarantine tyke
+# brew install --cask angry-ip-scanner
+brew install --cask alfred
+brew install --cask appcleaner
+brew install --cask balenaetcher
+brew install --cask bitwarden
+brew install --cask cheatsheet
+brew install --cask clocker
+brew install --cask coconutbattery
+brew install --cask dozer
+brew install --cask eul
+brew install --cask flameshot
+brew install --cask hot
+brew install --cask kap
+brew install --cask keepassxc
+brew install --cask keepingyouawake
+brew install --cask maccy
+brew install --cask mactracker
+brew install --cask meetingbar
+brew install --cask michaelvillar-timer
+brew install --cask muzzle
+brew install --cask numi
+brew install --cask shifty
+brew install --cask spectacle
+brew install --cask stats
+brew install --cask the-unarchiver
+brew install --cask tyke
 
 # applications
-brew install --cask --no-quarantine calibre
-brew install --cask --no-quarantine dropbox
-brew install --cask --no-quarantine fbreader
-brew install --cask --no-quarantine firefox
-brew install --cask --no-quarantine firefox-nightly
-brew install --cask --no-quarantine google-chrome
-brew install --cask --no-quarantine iina
-brew install --cask --no-quarantine jellyfin-media-player
-brew install --cask --no-quarantine macdown
-brew install --cask --no-quarantine miro
-brew install --cask --no-quarantine nextcloud
-brew install --cask --no-quarantine notion
-brew install --cask --no-quarantine protonvpn
-brew install --cask --no-quarantine simple-comic
-brew install --cask --no-quarantine sleek
-# brew install --cask --no-quarantine spotify
-brew install --cask --no-quarantine standard-notes
-brew install --cask --no-quarantine syncthing
-brew install --cask --no-quarantine tad
-brew install --cask --no-quarantine todoist
-brew install --cask --no-quarantine todotxt
-brew install --cask --no-quarantine transmission-remote-gui
-brew install --cask --no-quarantine xnviewmp
-# brew install --cask --no-quarantine qgis
+brew install --cask calibre
+brew install --cask dropbox
+brew install --cask fbreader
+brew install --cask firefox
+brew install --cask firefox-nightly
+brew install --cask google-chrome
+brew install --cask iina
+brew install --cask jellyfin-media-player
+brew install --cask macdown
+brew install --cask miro
+brew install --cask nextcloud
+brew install --cask notion
+brew install --cask protonvpn
+brew install --cask simple-comic
+brew install --cask sleek
+# brew install --cask spotify
+brew install --cask standard-notes
+brew install --cask syncthing
+brew install --cask tad
+brew install --cask todoist
+brew install --cask todotxt
+brew install --cask transmission-remote-gui
+brew install --cask xnviewmp
+# brew install --cask qgis
 
 # database
-brew install --cask --no-quarantine db-browser-for-sqlite
-brew install --cask --no-quarantine mongodb-compass
+brew install --cask db-browser-for-sqlite
+brew install --cask mongodb-compass
 
 # quick look
-brew install --cask --no-quarantine syntax-highlight
-brew install --cask --no-quarantine jupyter-notebook-viewer
-brew install --cask --no-quarantine qlmarkdown
+brew install --cask syntax-highlight
+brew install --cask jupyter-notebook-viewer
+brew install --cask qlmarkdown
 
 # dev tools
-brew install --cask --no-quarantine devdocs
-brew install --cask --no-quarantine devtoys
-brew install --cask --no-quarantine docker
-brew install --cask --no-quarantine fig
-brew install --cask --no-quarantine fork
-brew install --cask --no-quarantine gitup
-brew install --cask --no-quarantine lens
-brew install --cask --no-quarantine microsoft-remote-desktop
-brew install --cask --no-quarantine tailscale
+brew install --cask devdocs
+brew install --cask devtoys
+brew install --cask docker
+brew install --cask fig
+brew install --cask fork
+brew install --cask gitup
+brew install --cask lens
+brew install --cask microsoft-remote-desktop
+brew install --cask tailscale
 brew install padok-team/tap/tfautomv
 
 # peripheral software
-brew install --cask --no-quarantine logitech-options
-brew install --cask --no-quarantine logi-options-plus
-brew install --cask --no-quarantine logitech-camera-settings
+brew install --cask logitech-options
+brew install --cask logi-options-plus
+brew install --cask logitech-camera-settings
 
 echo "================================= Install App Store applications ================================="
 mas install 1176895641 # spark
