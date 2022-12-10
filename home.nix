@@ -204,6 +204,7 @@
         terraformer
         tflint
         tfsec
+        infracost
 
         # nix
         nixpkgs-fmt
