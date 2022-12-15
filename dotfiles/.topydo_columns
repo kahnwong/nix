@@ -23,12 +23,12 @@ groupexpr = project
 title = Todo
 sortexpr = asc:priority
 show_all = 0
-filterexpr = @work
+filterexpr = @work -+data-quality -+data-tooling
 groupexpr = project
 
 [Triage]
 title = Triage
 sortexpr = desc:importance
 show_all = 0
-filterexpr = (>=F) @work
+filterexpr = (>=F) @work -+data-quality -+data-tooling
 groupexpr = desc:priority
