@@ -267,9 +267,6 @@
         google-cloud-sdk
         docker-credential-gcr
 
-        # IDE
-        vscode
-
         # fonts
         font-awesome
         meslo-lgs-nf
@@ -302,6 +299,7 @@
         jetbrains.datagrip
         jetbrains.idea-ultimate
         postman
+        vscode
       ];
     in
     common ++ (if stdenv.isLinux then linux_only else mac_only);
