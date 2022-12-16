@@ -75,9 +75,9 @@ end
 # vscode
 ################
 function rcode
-    code --folder-uri=vscode-remote://ssh-remote+nuc/root/$argv/
+    code --folder-uri=vscode-remote://ssh-remote+nuc/home/kahnwong/$argv/
 end
 
 function rcode-ts
-    code --folder-uri=vscode-remote://ssh-remote+fringe-division/root/$argv/
+    code --folder-uri=vscode-remote://ssh-remote+fringe-division/home/kahnwong/$argv/
 end
