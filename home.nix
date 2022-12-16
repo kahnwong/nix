@@ -36,7 +36,7 @@
   home.file.".topydo_columns".source = ./dotfiles/.topydo_columns;
   home.file.".topydo".source = ./dotfiles/.topydo;
   home.file.".wakatime.cfg".source = ./dotfiles/.wakatime.cfg;
-  home.file."yt-dlp.conf".source = ./dotfiles/yt-dlp.conf;
+  home.file.".config/yt-dlp/config".source = ./dotfiles/yt-dlp.conf;
 
   ### git
   programs.git = {
