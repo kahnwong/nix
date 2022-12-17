@@ -274,6 +274,9 @@
         meslo-lgs-nf
         powerline-fonts
         source-code-pro
+        jetbrains-mono
+        fira-code
+        hack-font
       ];
 
       linux_only = [
