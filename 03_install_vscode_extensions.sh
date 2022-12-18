@@ -43,6 +43,7 @@ code --install-extension hancel.markdown-image
 code --install-extension joffreykern.markdown-toc
 code --install-extension TakumiI.markdowntable
 code --install-extension yzane.markdown-pdf
+code --install-extension Markwhen.markwhen
 
 # yaml
 code --install-extension hilleer.yaml-plus-json
