@@ -57,6 +57,7 @@ brew install --cask spectacle
 brew install --cask stats
 brew install --cask the-unarchiver
 brew install --cask tyke
+brew install --cask yubico-yubikey-manager
 
 # applications
 brew install --cask calibre
