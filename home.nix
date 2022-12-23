@@ -136,7 +136,7 @@
         tmux
 
         # build env
-        gcc-wrapper
+        gcc
         gdal
         libffi
         libxml2
