@@ -269,6 +269,9 @@
         google-cloud-sdk
         docker-credential-gcr
 
+        # devops
+        steampipe
+
         # fonts
         font-awesome
         meslo-lgs-nf
