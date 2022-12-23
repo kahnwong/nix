@@ -126,6 +126,9 @@ code --install-extension vsls-contrib.gistfs
 code --install-extension yaruson.ascii-unicode-escape
 code --install-extension mindaro-dev.file-downloader
 
+# applications
+code --install-extension fabiospampinato.vscode-todo-plus
+
 # presentations
 code --install-extension marp-team.marp-vscode
 code --install-extension antfu.slidev
