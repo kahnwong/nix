@@ -136,10 +136,14 @@
         tmux
 
         # build env
-        openssl
-        zlib
-        readline
+        gcc-wrapper
         gdal
+        libffi
+        libxml2
+        libxslt
+        openssl
+        readline
+        zlib
 
         # downloaders
         aria
