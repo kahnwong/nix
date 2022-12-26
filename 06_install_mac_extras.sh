@@ -20,7 +20,6 @@ brew tap homebrew/cask-drivers
 # cli
 brew install mas
 brew install mpv
-brew install padok-team/tap/tfautomv
 brew install wkhtmltopdf
 
 # communication
@@ -37,7 +36,7 @@ brew install --cask appcleaner
 brew install --cask balenaetcher
 brew install --cask bitwarden
 brew install --cask cheatsheet
-brew install --cask clocker
+# brew install --cask clocker
 brew install --cask coconutbattery
 brew install --cask dozer
 brew install --cask eul
@@ -61,6 +60,7 @@ brew install --cask yubico-yubikey-manager
 
 # applications
 brew install --cask calibre
+brew install --cask cron
 brew install --cask dropbox
 brew install --cask fbreader
 brew install --cask firefox
