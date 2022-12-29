@@ -101,6 +101,7 @@ brew install --cask docker
 brew install --cask fig
 brew install --cask fork
 brew install --cask gitup
+brew install --cask httpie
 brew install --cask lens
 brew install --cask microsoft-remote-desktop
 brew install --cask tailscale
