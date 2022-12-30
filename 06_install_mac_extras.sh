@@ -72,6 +72,7 @@ brew install --cask macdown
 brew install --cask miro
 brew install --cask nextcloud
 brew install --cask notion
+brew install --cask pocket-casts
 brew install --cask protonvpn
 brew install --cask simple-comic
 brew install --cask sleek
