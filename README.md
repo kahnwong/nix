@@ -63,6 +63,9 @@ nix-channel --update
 
 # equivalent to do-release-upgrade
 https://nixos.org/manual/nix/stable/installation/upgrading.html
+
+# garbage collection
+nix-store --gc
 ```
 
 ## Flake (not used)
