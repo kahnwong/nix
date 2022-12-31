@@ -155,6 +155,7 @@
         broot
         btop
         colordiff
+        d2
         difftastic
         du-dust
         duf

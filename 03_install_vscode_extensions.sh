@@ -37,13 +37,16 @@ code --install-extension qezhu.gitlink
 code --install-extension waderyan.gitblame
 
 # markdown
-code --install-extension bierner.markdown-mermaid
 code --install-extension DavidAnson.vscode-markdownlint
 code --install-extension hancel.markdown-image
 code --install-extension joffreykern.markdown-toc
 code --install-extension TakumiI.markdowntable
 code --install-extension yzane.markdown-pdf
 code --install-extension Markwhen.markwhen
+
+# diagrams
+code --install-extension bierner.markdown-mermaid
+code --install-extension terrastruct.d2
 
 # yaml
 code --install-extension hilleer.yaml-plus-json
