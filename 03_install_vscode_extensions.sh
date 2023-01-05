@@ -20,6 +20,8 @@ code --install-extension 4ops.terraform
 code --install-extension hashicorp.terraform
 code --install-extension hashicorp.hcl
 code --install-extension Infracost.infracost
+code --install-extension run-at-scale.terraform-doc-snippets
+code --install-extension tfsec.tfsec
 
 # nix
 code --install-extension bbenoist.Nix
@@ -27,7 +29,6 @@ code --install-extension jnoortheen.nix-ide
 
 # github
 code --install-extension cschleiden.vscode-github-actions
-code --install-extension GitHub.copilot
 code --install-extension GitHub.vscode-pull-request-github
 
 # git
@@ -43,10 +44,14 @@ code --install-extension joffreykern.markdown-toc
 code --install-extension TakumiI.markdowntable
 code --install-extension yzane.markdown-pdf
 code --install-extension Markwhen.markwhen
+code --install-extension bierner.markdown-preview-github-styles
+code --install-extension bierner.github-markdown-preview
 
-# diagrams
+# docs
 code --install-extension bierner.markdown-mermaid
 code --install-extension terrastruct.d2
+code --install-extension idleberg.badges
+code --install-extension idleberg.badgen
 
 # yaml
 code --install-extension hilleer.yaml-plus-json
@@ -80,7 +85,6 @@ code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
 code --install-extension gerane.Language-TodoTXT
 code --install-extension Lencerf.beancount
 code --install-extension zamerick.vscode-caddyfile-syntax
-code --install-extension SimonSiefke.prettier-vscode
 code --install-extension bladnman.auto-align
 code --install-extension bmalehorn.vscode-fish
 code --install-extension bungcip.better-toml
@@ -110,6 +114,7 @@ code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension ms-vscode.test-adapter-converter
 code --install-extension mohitsingh.repo
 code --install-extension hbenl.vscode-test-explorer
+code --install-extension me-dutour-mathieu.vscode-github-actions
 
 # utilities
 code --install-extension christian-kohler.path-intellisense
@@ -124,7 +129,6 @@ code --install-extension ryu1kn.partial-diff
 code --install-extension ryu1kn.text-marker
 code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension TabNine.tabnine-vscode
-code --install-extension tht13.html-preview-vscode
 code --install-extension vsls-contrib.gistfs
 code --install-extension yaruson.ascii-unicode-escape
 code --install-extension mindaro-dev.file-downloader
