@@ -48,6 +48,24 @@ Tested against:
 - set `tap to single click`
 - set `three-finger drag`
 
+## Upgrading
+
+### Nix
+
+```bash
+# equivalent to apt-get update
+nix-channel --update # then run `home-manager switch`
+
+# equivalent to do-release-upgrade
+https://nixos.org/manual/nix/stable/installation/upgrading.html
+```
+
+### Brew
+
+```bash
+brew upgrade
+```
+
 ## Useful commands
 
 ```bash
@@ -58,13 +76,7 @@ code --list-extensions | xargs -L 1 echo code --install-extension > ext_install.
 cp "/users/$USER/Library/Application Support/Code/User/keybindings.json" .
 cp "/users/$USER/Library/Application Support/Code/User/settings.json" .
 
-# equivalent to apt-get update
-nix-channel --update
-
-# equivalent to do-release-upgrade
-https://nixos.org/manual/nix/stable/installation/upgrading.html
-
-# garbage collection
+# nix garbage collection
 nix-store --gc
 ```
 
