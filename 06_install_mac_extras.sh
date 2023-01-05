@@ -24,7 +24,11 @@ brew install wkhtmltopdf
 
 # communication
 brew install --cask adium
+brew install --cask discord-canary
+brew install --cask microsoft-teams
+brew install --cask slack
 brew install --cask whatsapp
+brew install --cask zoom
 
 # data
 brew install apache-spark
@@ -89,6 +93,7 @@ brew install --cask xnviewmp
 # database
 brew install --cask db-browser-for-sqlite
 brew install --cask mongodb-compass
+brew install --cask datagrip
 
 # quick look
 brew install --cask syntax-highlight
@@ -103,9 +108,12 @@ brew install --cask fig
 brew install --cask fork
 brew install --cask gitup
 brew install --cask httpie
-brew install --cask lens
+brew install --cask intellij-idea
+brew install --cask iterm2
 brew install --cask microsoft-remote-desktop
+brew install --cask postman
 brew install --cask tailscale
+brew install --cask visual-studio-code
 brew install padok-team/tap/tfautomv
 
 # peripheral software
