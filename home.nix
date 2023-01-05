@@ -41,7 +41,7 @@
 
   ### git
   programs.git = {
-    # `git config --global --edit` for raw config content
+    # `git config --global --edit` to see raw config
     enable = true;
     userName = builtins.getEnv "git_username";
     userEmail = builtins.getEnv "git_email";
@@ -155,7 +155,6 @@
         broot
         btop
         colordiff
-        d2
         difftastic
         du-dust
         duf
@@ -170,12 +169,10 @@
         procs
         ripgrep
         rsync
-        sops
         tere
         thefuck
         tldr
         tree
-        vhs
         watch
 
         # fetch
@@ -257,19 +254,20 @@
         bitwarden-cli
         fava
         hugo
-        k6
         topydo
         wakatime
 
-        # aws
+        # cloud
         awscli2
-
-        # gcp
         google-cloud-sdk
         docker-credential-gcr
 
         # devops
+        d2
+        k6
+        sops
         steampipe
+        vhs
 
         # fonts
         font-awesome
@@ -282,7 +280,7 @@
       ];
 
       linux_only = [
-        helm
+        helm # doesn't work on aarch64-darwin
         # docker
         # docker-compose
 
@@ -294,19 +292,7 @@
       ];
 
       mac_only = [
-        # communication
-        discord-canary
-        slack
-        teams
-        zoom-us
-
-        # dev tools
-        caddy
-        iterm2
-        jetbrains.datagrip
-        jetbrains.idea-ultimate
-        postman
-        vscode
+        caddy # on linux it requires extra configs to enable systemd
       ];
     in
     common ++ (if stdenv.isLinux then linux_only else mac_only);
