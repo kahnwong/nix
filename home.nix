@@ -103,6 +103,7 @@
       Plug 'chrisbra/csv.vim'
       Plug 'jvirtanen/vim-hcl'
       Plug 'LnL7/vim-nix'
+      Plug 'cweagans/vim-taskpaper'
       "Plug 'preservim/vim-markdown'
 
       "utilities
