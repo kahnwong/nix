@@ -196,6 +196,7 @@
         # k8s
         kubectl
         k9s
+        kompose
 
         # terraform
         terraform
