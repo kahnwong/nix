@@ -111,6 +111,7 @@ brew install --cask httpie
 brew install --cask intellij-idea
 brew install --cask iterm2
 brew install --cask microsoft-remote-desktop
+brew install --cask openlens
 brew install --cask postman
 brew install --cask tailscale
 brew install --cask visual-studio-code
