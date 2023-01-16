@@ -237,6 +237,7 @@
 
         # java
         temurin-bin
+        maven
 
         # node
         nodejs
