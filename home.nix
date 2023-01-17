@@ -15,6 +15,8 @@
 
   fonts.fontconfig.enable = true;
 
+  manual.manpages.enable = false;
+
   ### configurations
   home.file.".aws/config".source = ./dotfiles/.aws/config;
   home.file.".aws/credentials".source = ./dotfiles/.aws/credentials;
