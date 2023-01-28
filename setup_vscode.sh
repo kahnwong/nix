@@ -1,8 +1,16 @@
 #!/bin/bash
 
 ### config
-cp ./config/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
-cp ./config/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+if [[ $(uname -s) == 'Darwin' ]]; then
+	export KEYBINDING_LOCATION="$HOME/Library/Application Support/Code/User/keybindings.json"
+	export SETTING_LOCATION="$HOME/Library/Application Support/Code/User/settings.json"
+else
+	export KEYBINDING_LOCATION="$HOME/.config/Code/User/keybindings.json"
+	export SETTING_LOCATION="$HOME/.config/Code/User/settings.json"
+fi
+
+cp ./config/vscode/keybindings.json "$KEYBINDING_LOCATION"
+cp ./config/vscode/settings.json "$SETTING_LOCATION"
 
 ### extensions
 export PATH=$PATH:$HOME/.nix-profile/bin
