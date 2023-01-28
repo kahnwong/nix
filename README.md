@@ -7,19 +7,24 @@ Tested against:
 - x86_64-darwin
 - aarch64-darwin
 
+## Notes
+
+home_directory:
+
+- linux: `/home/$username`
+- mac: `/Users/$username`
+
 ## Usage
 
-1. Edit `home.username` and `home.homeDirectory` in `./home.nix`.
-2. Edit `userName` and `userEmail` in `programs.git` block in `./home.nix`.
-3. If you are on `Mac` and want to set up ssh key signing, edit value `user.signingkey` in `git_signing_key` section in `./home.nix`,
-   - If you don't want to set up commit signing, comment out the whole `git_signing_key` section.
-4. On `Raspberry Pi 4`, comment out `nodePackages_latest.*`. It raises segmentation fault, not sure whether this applies to other `aarch64-linux` or not.
-5. `make setup`
-6. For Mac OS:
+1. Create `.env` and populate variables (see list of env keys in `.enc.env`)
+2. (Optional) If you don't want to set up commit signing, comment out the whole `git_signing_key` section.
+3. On `Raspberry Pi 4`, comment out `nodePackages_latest.*`. It raises segmentation fault, not sure whether this applies to other `aarch64-linux` or not.
+4. `make setup`
+5. For Mac OS:
    1. Login to `App Store`
    2. `gh auth login`
    3. `make mac-extras`
-7. If you need `tailscale`, `caddy`, `fail2ban`, or `docker` on your server, install it via your system's package manager, since nix requires you set up systemd services explicitly.
+6. If you need `tailscale`, `caddy`, `fail2ban`, or `docker` on your server, install it via your system's package manager, since nix requires you set up systemd services explicitly.
 
 ## Post Installation Instructions
 
