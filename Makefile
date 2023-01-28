@@ -1,8 +1,9 @@
-setup:
-	./01_setup.sh
-	./02_install.sh
-	./03_install_vscode_extensions.sh
-	./04_install_common_misc.sh
-mac-extras:
-	./05_install_ghcli_extentions
-	./06_install_mac_extras.sh
+common:
+	./setup.sh
+	./install_nix.sh
+	./install_misc.sh
+	cat ./post_installation_message.txt
+
+mac:
+	./setup_brew.sh
+	./install_brew.sh

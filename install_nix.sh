@@ -16,5 +16,10 @@ fi
 
 home-manager switch
 
-nvim --headless +PlugInstall +qall
+# these stay here because their source config is populated via nix
+### fish
+curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
 fish -c "fisher update"
+
+### nvim
+nvim --headless +PlugInstall +qall

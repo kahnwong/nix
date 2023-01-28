@@ -1,5 +1,5 @@
 .wakatime.cfg
-dotfiles/.ssh/config
+dotfiles/**/config
 credentials
 work.fish
 settings.json

@@ -19,11 +19,10 @@ home_directory:
 1. Create `.env` and populate variables (see list of env keys in `.enc.env`)
 2. (Optional) If you don't want to set up commit signing, comment out the whole `git_signing_key` section.
 3. On `Raspberry Pi 4`, comment out `nodePackages_latest.*`. It raises segmentation fault, not sure whether this applies to other `aarch64-linux` or not.
-4. `make setup`
+4. `make common`
 5. For Mac OS:
    1. Login to `App Store`
-   2. `gh auth login`
-   3. `make mac-extras`
+   2. `make mac`
 6. If you need `tailscale`, `caddy`, `fail2ban`, or `docker` on your server, install it via your system's package manager, since nix requires you set up systemd services explicitly.
 
 ## Post Installation Instructions
@@ -62,7 +61,7 @@ home_directory:
 nix-channel --update # then run `home-manager switch`
 
 # equivalent to do-release-upgrade
-https://nixos.org/manual/nix/stable/installation/upgrading.html
+<https://nixos.org/manual/nix/stable/installation/upgrading.html>
 ```
 
 ### Brew
