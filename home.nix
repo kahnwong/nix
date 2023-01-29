@@ -132,9 +132,26 @@
       # Packages to always install.
       common = [
         # shell
+        bat
+        broot
+        colordiff
+        difftastic
+        du-dust
+        duf
+        exa
+        fd
         fish
+        fzf
+        ncdu
+        procs
+        ripgrep
         starship
+        tere
+        thefuck
+        tldr
         tmux
+        tree
+        watch
 
         # build env
         gdal
@@ -152,29 +169,16 @@
         speedtest-cli
 
         # utilities
-        bat
-        broot
         btop
-        colordiff
-        difftastic
-        du-dust
-        duf
-        exa
-        fd
+        cbonsai
         ffmpeg
-        fzf
         graphviz
         htop
+        instaloader
         libqalculate
-        ncdu
-        procs
-        ripgrep
+        rclone
+        restic
         rsync
-        tere
-        thefuck
-        tldr
-        tree
-        watch
 
         # fetch
         neofetch
@@ -225,6 +229,9 @@
 
         # yaml
         yq
+
+        # html
+        htmlq
 
         # python
         black
