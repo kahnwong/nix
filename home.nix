@@ -174,10 +174,10 @@
         ffmpeg
         graphviz
         htop
-        instaloader
+        # instaloader
         libqalculate
-        rclone
-        restic
+        # rclone
+        # restic
         rsync
 
         # fetch
