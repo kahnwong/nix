@@ -72,9 +72,9 @@ shell = "fish"
 symbol = "\uf4a0 "
 
 [status]
-# style = "bg:blue"
-# symbol = "🔴 "
-# success_symbol = "🟢 SUCCESS"
-# format = '[\[$symbol$common_meaning$signal_name$maybe_int\]]($style): $status '
-# map_symbol = true
-disabled = false
+style = "bg:blue"
+symbol = "🔴 "
+success_symbol = "🟢 SUCCESS"
+format = '[\[$symbol$common_meaning$signal_name$maybe_int\]]($style): $status '
+map_symbol = true
+disabled = true
