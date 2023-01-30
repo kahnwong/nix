@@ -8,11 +8,6 @@ set fish_escape_delay_ms 3000
 set -g fish_greeting
 
 ################
-# PROMPT
-################
-starship init fish | source
-
-################
 # PATH
 ################
 # default
@@ -55,6 +50,11 @@ pyenv init - | source
 status --is-interactive; and pyenv virtualenv-init - | source
 
 set pipenv_fish_fancy yes
+
+################
+# PROMPT
+################
+starship init fish | source
 
 ################
 # misc
