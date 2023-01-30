@@ -5,8 +5,8 @@ common:
 	cat ./post_installation_message.txt
 
 mac:
-	./setup_brew.sh
-	./install_brew.sh
+	./setup_mac.sh
+	./install_mac.sh
 	./setup_vscode.sh
 
 linux:
