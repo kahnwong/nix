@@ -7,6 +7,10 @@ set fish_escape_delay_ms 3000
 # suppress fish_greeting message
 set -g fish_greeting
 
+################
+# PROMPT
+################
+starship init fish | source
 
 ################
 # PATH
@@ -24,6 +28,12 @@ set PATH \
     /usr/sbin \
     /bin \
     /sbin
+
+################
+# CONFIG
+################
+# gpg
+set GPG_TTY tty
 
 ### nix
 set NIX_PATH $HOME/.nix-defexpr/channels
@@ -46,19 +56,6 @@ status --is-interactive; and pyenv virtualenv-init - | source
 
 set pipenv_fish_fancy yes
 
-
-################
-# PROMPT
-################
-starship init fish | source
-
-
-################
-# GPG
-################
-set GPG_TTY tty
-
-
 ################
 # misc
 ################
@@ -66,18 +63,13 @@ set GPG_TTY tty
 #     fava -p 5004 ~/Cloud/Apps/fava/beans.beancount
 # end
 
-function brew-upgrade-cask
-    brew list --cask | xargs brew upgrade --cask
+function brew-upgrade
+    brew upgrade --greedy
 end
-
 
 ################
 # vscode
 ################
 function rcode
-    code --folder-uri=vscode-remote://ssh-remote+nuc/home/kahnwong/$argv/
-end
-
-function rcode-ts
     code --folder-uri=vscode-remote://ssh-remote+fringe-division/home/kahnwong/$argv/
 end

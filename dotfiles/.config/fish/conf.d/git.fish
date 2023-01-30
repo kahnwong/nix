@@ -34,6 +34,6 @@ function diff
     difft $argv
 end
 
-function add-git-ssh-agent
+function git-add-ssh-agent
     ssh-add --apple-use-keychain ~/.ssh/github_signing_key
 end

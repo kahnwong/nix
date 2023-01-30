@@ -5,7 +5,6 @@ function docker-rmi
     docker images | grep $argv | awk '{print $3}' | xargs docker rmi
 end
 
-
 ################
 # terraform
 ################
@@ -21,7 +20,6 @@ function tf-cost
         --sync-usage-file \
         --path .
 end
-
 
 ################
 # gcp
