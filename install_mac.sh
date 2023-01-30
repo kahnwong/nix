@@ -107,7 +107,6 @@ brew install --cask tyke
 brew install --cask yubico-yubikey-manager
 
 # peripheral software
-brew install --cask logitech-options
 brew install --cask logi-options-plus
 brew install --cask logitech-camera-settings
 
