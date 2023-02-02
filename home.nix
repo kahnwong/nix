@@ -179,6 +179,7 @@
         # rclone
         # restic
         rsync
+        silicon
 
         # fetch
         neofetch
