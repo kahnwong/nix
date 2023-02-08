@@ -85,6 +85,7 @@ brew install --cask balenaetcher
 brew install --cask bitwarden
 brew install --cask cheatsheet
 brew install --cask clocker
+brew install --cask cloudflare-warp
 brew install --cask coconutbattery
 brew install --cask dozer
 brew install --cask eul
