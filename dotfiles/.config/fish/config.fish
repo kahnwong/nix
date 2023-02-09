@@ -27,6 +27,9 @@ set PATH \
 ################
 # CONFIG
 ################
+# flatpak on linux
+set XDG_DATA_DIRS $HOME/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:$XDG_DATA_DIRS
+
 # gpg
 set GPG_TTY tty
 

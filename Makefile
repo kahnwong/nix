@@ -10,6 +10,6 @@ mac:
 	./setup_vscode.sh
 
 linux:
-	# todo add setup apt install/etc
-	# add desktop apps via snap/etc
+	./setup_linux.sh
+	./install_linux.sh
 	./setup_vscode.sh

@@ -268,7 +268,6 @@
         bitwarden-cli
         fava
         hugo
-        topydo
         wakatime
 
         # cloud
@@ -299,14 +298,14 @@
         # docker-compose
 
         # system
-        fuse
+        # fuse
         iotop
-        ntfs3g
         progress
       ];
 
       mac_only = [
         caddy # on linux it requires extra configs to enable systemd
+        topydo # doesn't work on debian-on-macbook
       ];
     in
     common ++ (if stdenv.isLinux then linux_only else mac_only);
