@@ -18,10 +18,6 @@ function dig
     dog $argv
 end
 
-function du
-    dust $argv
-end
-
 function ps
     procs $argv
 end
