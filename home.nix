@@ -223,7 +223,7 @@
 
         # markdown
         glow
-        nodePackages_latest.markdownlint-cli2
+        nodePackages_latest.markdownlint-cli
         nodePackages.markdown-link-check
 
         # json

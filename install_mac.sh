@@ -47,6 +47,7 @@ brew install --cask mongodb-compass
 brew install --cask openlens
 brew install --cask postman
 brew install --cask tailscale
+brew install --cask vincelwt-chatgpt
 brew install --cask visual-studio-code
 brew install padok-team/tap/tfautomv
 
@@ -69,10 +70,11 @@ brew install --cask qlmarkdown
 # productivity
 brew install --cask cron
 brew install --cask macdown
+brew install --cask meetingbar
 brew install --cask miro
 brew install --cask notion
+brew install --cask obsidian
 brew install --cask sleek
-brew install --cask meetingbar
 brew install --cask standard-notes
 brew install --cask todoist
 brew install --cask todotxt
