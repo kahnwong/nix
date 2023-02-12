@@ -50,6 +50,13 @@ brew install --cask tailscale
 brew install --cask vincelwt-chatgpt
 brew install --cask visual-studio-code
 brew install padok-team/tap/tfautomv
+docker extension install aquasec/trivy-docker-extension
+docker extension install docker/disk-usage-extension
+docker extension install docker/logs-explorer-extension
+docker extension install lucasbernalte981/graph-view-extension
+docker extension install prakhar1989/dive-in
+docker extension install slimdotai/dd-ext
+docker extension install snyk/snyk-docker-desktop-extension
 
 # entertainment
 brew install --cask calibre

@@ -241,6 +241,7 @@
         black
         pipenv
         python310Packages.pipx
+        ruff
 
         # golang
         go
