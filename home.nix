@@ -9,7 +9,16 @@
 
   home.stateVersion = "22.11";
 
-  nixpkgs.config.allowUnfree = true;
+  nixpkgs.config = {
+    allowUnfree = true;
+    packageOverrides = pkgs: {
+      unstable = import <unstable> {
+        config = config.nixpkgs.config;
+      };
+    };
+  };
+
+
   programs.home-manager.enable = true;
   # services.home-manager.autoUpgrade.enable = true;
 
@@ -280,7 +289,7 @@
         d2
         k6
         sops
-        steampipe
+        unstable.steampipe
         vhs
 
         # fonts

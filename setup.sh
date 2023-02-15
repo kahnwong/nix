@@ -32,6 +32,7 @@ sh <(curl -L https://nixos.org/nix/install) --daemon
 export PATH=$PATH:/nix/var/nix/profiles/default/bin/
 
 nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
+nix-channel --add https://nixos.org/channels/nixpkgs-unstable unstable
 nix-channel --update
 
 # temporary since during init only bash/zsh shell is available
