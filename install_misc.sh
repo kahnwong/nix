@@ -51,3 +51,18 @@ gh extension install hectcastro/gh-metrics
 gh extension install rsese/gh-actions-status
 
 echo "" # force return exit 0 so it'll continue executing downstream steps. exit 1 is from package is already existed
+
+####################
+# steampipe
+####################
+# set config at `~/.steampipe/config`
+steampipe plugin install aws
+steampipe plugin install cloudflare
+steampipe plugin install gcp
+steampipe plugin install github
+
+### dashboards
+# https://hub.steampipe.io/mods/turbot/aws_insights
+# https://hub.steampipe.io/mods/turbot/aws_perimeter
+# https://hub.steampipe.io/mods/turbot/aws_thrifty
+# https://hub.steampipe.io/mods/turbot/github_compliance
