@@ -2,8 +2,8 @@
 focus_background_color = light-green
 
 [topydo]
-archive_filename = /Users/kahnwong/Nextcloud/Apps/todotxt/done.txt
-filename = /Users/kahnwong/Nextcloud/Apps/todotxt/todo.txt
+archive_filename = /Users/kahnwong/Dropbox/Apps/todotxt/done.txt
+filename = /Users/kahnwong/Dropbox/Apps/todotxt/todo.txt
 
 [ls]
 hidden_item_tags=blog,listen,watch
