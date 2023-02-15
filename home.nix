@@ -144,16 +144,16 @@
       # Packages to always install.
       common = [
         # shell
-        bat
-        broot
-        colordiff
-        difftastic
-        du-dust
-        duf
-        exa
-        fd
-        fish
-        fzf
+        unstable.bat
+        unstable.broot
+        unstable.colordiff
+        unstable.difftastic
+        unstable.du-dust
+        unstable.duf
+        unstable.exa
+        unstable.fd
+        unstable.fish
+        unstable.fzf
         ncdu
         procs
         ripgrep
@@ -286,11 +286,11 @@
         docker-credential-gcr
 
         # devops
-        d2
-        k6
-        sops
+        unstable.d2
+        unstable.k6
+        unstable.sops
         unstable.steampipe
-        vhs
+        unstable.vhs
 
         # fonts
         font-awesome
@@ -314,7 +314,7 @@
       ];
 
       mac_only = [
-        caddy # on linux it requires extra configs to enable systemd
+        unstable.caddy # on linux it requires extra configs to enable systemd
         topydo # doesn't work on debian-on-macbook
       ];
     in
