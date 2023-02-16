@@ -155,135 +155,135 @@
         unstable.fish
         unstable.fzf
         ncdu
-        procs
-        ripgrep
-        starship
-        tere
-        thefuck
-        tldr
-        tmux
-        tree
-        watch
+        unstable.procs
+        unstable.ripgrep
+        unstable.starship
+        unstable.tere
+        unstable.thefuck
+        unstable.tldr
+        unstable.tmux
+        unstable.tree
+        unstable.watch
 
         # build env
         gdal
 
         # downloaders
-        aria
-        wget
-        yt-dlp
+        unstable.aria
+        unstable.wget
+        unstable.yt-dlp
 
         # networking
-        curl
-        dogdns
-        gping
-        httpie
-        speedtest-cli
+        unstable.curl
+        unstable.dogdns
+        unstable.gping
+        unstable.httpie
+        unstable.speedtest-cli
 
         # utilities
-        btop
-        cbonsai
-        ffmpeg
-        graphviz
-        htop
+        unstable.btop
+        unstable.cbonsai
+        unstable.ffmpeg
+        unstable.graphviz
+        unstable.htop
         # instaloader
-        libqalculate
+        unstable.libqalculate
         # rclone
         # restic
-        rsync
-        silicon
+        unstable.rsync
+        unstable.silicon
 
         # fetch
-        neofetch
-        onefetch
+        unstable.neofetch
+        unstable.onefetch
 
         # git
         delta
-        gh
-        gitleaks
-        pre-commit
+        unstable.gh
+        unstable.gitleaks
+        unstable.pre-commit
         trufflehog
 
         # docker
-        ctop
-        dive
-        lazydocker
-        trivy
+        unstable.ctop
+        unstable.dive
+        unstable.lazydocker
+        unstable.trivy
 
         # k8s
-        kubectl
-        k9s
-        kompose
+        unstable.kubectl
+        unstable.k9s
+        unstable.kompose
 
         # terraform
-        terraform
-        terraform-docs
-        terraformer
-        tflint
-        tfsec
-        infracost
+        unstable.terraform
+        unstable.terraform-docs
+        unstable.terraformer
+        unstable.tflint
+        unstable.tfsec
+        unstable.infracost
 
         # nix
-        nixpkgs-fmt
+        unstable.nixpkgs-fmt
 
         # shell - linters
-        shellcheck
-        shfmt
+        unstable.shellcheck
+        unstable.shfmt
 
         # markdown
-        glow
-        nodePackages_latest.markdownlint-cli
-        nodePackages.markdown-link-check
+        unstable.glow
+        unstable.nodePackages_latest.markdownlint-cli
+        unstable.nodePackages.markdown-link-check
 
         # json
-        fx
-        gron
-        jq
+        unstable.fx
+        unstable.gron
+        unstable.jq
 
         # yaml
-        yq
+        unstable.yq
 
         # html
-        htmlq
+        unstable.htmlq
 
         # python
-        black
-        pipenv
-        python310Packages.pipx
-        ruff
+        unstable.black
+        unstable.pipenv
+        unstable.python310Packages.pipx
+        unstable.ruff
 
         # golang
-        go
-        golangci-lint
+        unstable.go
+        unstable.golangci-lint
 
-        # java
-        temurin-bin
-        maven
+        # # java
+        # temurin-bin
+        # maven
 
         # node
-        nodejs
-        nodePackages_latest.npm
-        yarn
+        unstable.nodejs
+        unstable.nodePackages_latest.npm
+        unstable.yarn
 
         # data
-        visidata
-        sqlfluff
+        unstable.visidata
+        unstable.sqlfluff
 
         # database
-        pgcli
-        mongodb-tools
+        unstable.pgcli
+        unstable.mongodb-tools
 
         # applications
-        beancount
-        bitwarden-cli
-        fava
-        hugo
-        wakatime
+        unstable.beancount
+        unstable.bitwarden-cli
+        unstable.fava
+        unstable.hugo
+        unstable.wakatime
 
         # cloud
-        awscli2
-        google-cloud-sdk
-        docker-credential-gcr
+        unstable.awscli2
+        unstable.google-cloud-sdk
+        unstable.docker-credential-gcr
 
         # devops
         unstable.d2
