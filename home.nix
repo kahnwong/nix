@@ -40,13 +40,15 @@
   home.file.".config/fish/functions/fish_prompt.fish".source = ./dotfiles/.config/fish/functions/fish_prompt.fish;
   home.file.".config/fish/functions/fuck.fish".source = ./dotfiles/.config/fish/functions/fuck.fish;
   home.file.".config/fish/functions/pip.fish".source = ./dotfiles/.config/fish/functions/pip.fish;
+  home.file.".config/kitty/kitty.conf".source = ./dotfiles/.config/kitty/kitty.conf;
+  home.file.".config/kitty/theme.conf".source = ./dotfiles/.config/kitty/theme.conf;
   home.file.".config/sops/age/keys.txt".source = ./dotfiles/.config/sops/age/keys.txt;
   home.file.".config/starship.toml".source = ./dotfiles/.config/starship.toml;
+  home.file.".config/yt-dlp/config".source = ./dotfiles/yt-dlp.conf;
   home.file.".ssh/config".source = ./dotfiles/.ssh/config;
   home.file.".topydo_columns".source = ./dotfiles/.topydo_columns;
   home.file.".topydo".source = ./dotfiles/.topydo;
   home.file.".wakatime.cfg".source = ./dotfiles/.wakatime.cfg;
-  home.file.".config/yt-dlp/config".source = ./dotfiles/yt-dlp.conf;
 
   ### git
   programs.git = {

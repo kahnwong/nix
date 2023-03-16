@@ -42,6 +42,7 @@ brew install --cask gitup
 brew install --cask httpie
 brew install --cask intellij-idea
 brew install --cask iterm2
+brew install --cask kitty
 brew install --cask microsoft-remote-desktop
 brew install --cask mongodb-compass
 brew install --cask openlens
