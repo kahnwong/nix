@@ -145,6 +145,7 @@ code --install-extension TabNine.tabnine-vscode
 code --install-extension vsls-contrib.gistfs
 code --install-extension yaruson.ascii-unicode-escape
 code --install-extension mindaro-dev.file-downloader
+code --install-extension AykutSarac.jsoncrack-vscode
 
 # applications
 code --install-extension fabiospampinato.vscode-todo-plus
