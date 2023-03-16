@@ -194,6 +194,7 @@
         # restic
         unstable.rsync
         unstable.silicon
+        unstable.slides
 
         # fetch
         unstable.neofetch
