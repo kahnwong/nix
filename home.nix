@@ -180,6 +180,7 @@
         unstable.dogdns
         unstable.gping
         unstable.httpie
+        unstable.rustscan
         unstable.speedtest-cli
 
         # utilities
