@@ -40,12 +40,12 @@ home_directory:
 `vi /etc/passwd` and specify shell for your user
 ```
 
-### Set iTerm2 config (Mac only)
+<!-- ### Set iTerm2 config (Mac only)
 
 - Import iTerm2 config (`config/iterm-config.json`)
 - Preferences > Profile > General > Command, select `Custom Shell` from drop-down menu, and set value to `/Users/$USER/.nix-profile/bin/fish` # replace `$USER` with your username
 - Preferences > general > profiles > general > working directory > select `Reuse previous session's directory`
-- Preferences > Profile > Text > Font > select `MesloLGS Nerd Font Mono`
+- Preferences > Profile > Text > Font > select `MesloLGS Nerd Font Mono` -->
 
 ### Misc MacOS config
 

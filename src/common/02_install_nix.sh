@@ -19,8 +19,14 @@ home-manager switch
 
 # these stay here because their source config is populated via nix
 ### fish
-curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
-fish -c "fisher update"
+curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish
+fish -c "fisher install franciscolourenco/done"
+fish -c "fisher install jethrokuan/z"
+fish -c "fisher install jorgebucaran/autopair.fish"
+fish -c "fisher install jorgebucaran/fisher"
+fish -c "fisher install jorgebucaran/nvm.fish"
+fish -c "fisher install meaningful-ooo/sponge"
+fish -c "fisher install patrickf1/colored_man_pages.fish"
 
 ### nvim
 nvim --headless +PlugInstall +qall
