@@ -15,7 +15,7 @@ set PATH \
     $HOME/.nix-profile/bin \
     $HOME/.pyenv/bin \
     $HOME/.local/bin \
-    $HOME/.npm-global \
+    $HOME/.npm-global/bin \
     /opt/homebrew/bin \
     /usr/local/bin \
     /usr/local/sbin \
