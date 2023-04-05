@@ -291,6 +291,7 @@
         # devops
         unstable.d2
         unstable.k6
+        unstable.keyscope
         unstable.sops
         unstable.steampipe
         unstable.vhs
