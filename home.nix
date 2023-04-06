@@ -293,7 +293,7 @@
         unstable.k6
         unstable.keyscope
         unstable.sops
-        unstable.steampipe
+        # unstable.steampipe
         unstable.vhs
 
         # fonts

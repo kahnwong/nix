@@ -6,9 +6,9 @@ function cat
     bat --theme "Monokai Extended" $argv
 end
 
-function tree
-    broot
-end
+# function tree
+#    broot
+# end
 
 function fm
     EDITOR="vi" fman --theme nord
