@@ -8,7 +8,7 @@ threshold = 30
 style = "bold red"
 
 [aws]
-disabled = true
+disabled = false
 format = "[$profile]($style) "
 style = "bold #F79400"
 # [aws.region_aliases]
