@@ -33,6 +33,7 @@
       unstable.yarn
 
       # python
+      gdal # for build env
       unstable.black
       unstable.pipenv
       unstable.python310Packages.pipx

@@ -26,6 +26,7 @@
 
   ### imports
   imports = [
+    ./nix/cloud.nix
     ./nix/containers.nix
     ./nix/fonts.nix
     ./nix/programming.nix
@@ -40,8 +41,6 @@
   ];
 
   ### configurations
-  home.file.".aws/config".source = ./dotfiles/.aws/config;
-  home.file.".aws/credentials".source = ./dotfiles/.aws/credentials;
   home.file.".config/sops/age/keys.txt".source = ./dotfiles/.config/sops/age/keys.txt;
   home.file.".config/yt-dlp/config".source = ./dotfiles/yt-dlp.conf;
   home.file.".ssh/config".source = ./dotfiles/.ssh/config;
@@ -50,9 +49,6 @@
     let
       # Packages to always install.
       common = [
-        # build env
-        gdal
-
         # downloaders
         unstable.aria
         unstable.wget
@@ -97,11 +93,6 @@
         unstable.bitwarden-cli
         unstable.fava
         unstable.hugo
-
-        # cloud
-        unstable.awscli2
-        unstable.google-cloud-sdk
-        unstable.docker-credential-gcr
 
         # devops
         unstable.d2
