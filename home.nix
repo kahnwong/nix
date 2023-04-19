@@ -26,6 +26,7 @@
 
   ### imports
   imports = [
+    ./nix/tools/awscli.nix
     ./nix/cloud.nix
     ./nix/containers.nix
     ./nix/fonts.nix
