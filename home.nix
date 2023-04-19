@@ -26,12 +26,13 @@
 
   ### imports
   imports = [
-    ./nix/tools/awscli.nix
     ./nix/cloud.nix
     ./nix/containers.nix
+    ./nix/devops.nix
     ./nix/fonts.nix
     ./nix/programming.nix
     ./nix/shell.nix
+    ./nix/tools/awscli.nix
     ./nix/tools/fish.nix
     ./nix/tools/git.nix
     ./nix/tools/kitty.nix
@@ -94,21 +95,12 @@
         unstable.bitwarden-cli
         unstable.fava
         unstable.hugo
-
-        # devops
-        unstable.d2
-        unstable.k6
-        unstable.keyscope
-        unstable.sops
-        # unstable.steampipe
-        unstable.vhs
       ];
 
       linux_only = [
       ];
 
       mac_only = [
-        unstable.caddy # on linux it requires extra configs to enable systemd
       ];
     in
     common ++ (if stdenv.isLinux then linux_only else mac_only);
