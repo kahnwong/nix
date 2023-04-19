@@ -18,7 +18,6 @@
     };
   };
 
-
   programs.home-manager.enable = true;
   # services.home-manager.autoUpgrade.enable = true;
 
@@ -42,10 +41,8 @@
     ./nix/tools/starship.nix
     ./nix/tools/topydo.nix
     ./nix/tools/wakatime.nix
+    ./nix/tools/yt-dlp.nix
   ];
-
-  ### configurations
-  home.file.".config/yt-dlp/config".source = ./dotfiles/yt-dlp.conf;
 
   home.packages = with pkgs;
     [
