@@ -28,8 +28,8 @@
   imports = [
     ./nix/containers.nix
     ./nix/fonts.nix
+    ./nix/programming.nix
     ./nix/shell.nix
-    ./nix/terraform.nix
     ./nix/tools/fish.nix
     ./nix/tools/git.nix
     ./nix/tools/kitty.nix
@@ -84,48 +84,6 @@
         unstable.neofetch
         unstable.onefetch
 
-        # nix
-        unstable.nixpkgs-fmt
-
-        # shell - linters
-        unstable.shellcheck
-        unstable.shfmt
-
-        # markdown
-        unstable.glow
-        unstable.nodePackages_latest.markdownlint-cli
-        unstable.nodePackages.markdown-link-check
-
-        # json
-        unstable.fx
-        unstable.gron
-        unstable.jq
-
-        # yaml
-        unstable.yq
-
-        # html
-        unstable.htmlq
-
-        # python
-        unstable.black
-        unstable.pipenv
-        unstable.python310Packages.pipx
-        unstable.ruff
-
-        # golang
-        unstable.go
-        unstable.golangci-lint
-
-        # # java
-        # temurin-bin
-        # maven
-
-        # node
-        unstable.nodejs
-        unstable.nodePackages_latest.npm
-        unstable.yarn
-
         # data
         unstable.visidata
         unstable.sqlfluff
@@ -139,7 +97,6 @@
         unstable.bitwarden-cli
         unstable.fava
         unstable.hugo
-        unstable.wakatime
 
         # cloud
         unstable.awscli2
