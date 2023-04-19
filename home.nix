@@ -31,6 +31,7 @@
     ./nix/fish.nix
     ./nix/git.nix
     ./nix/nvim.nix
+    ./nix/wakatime.nix
   ];
 
   ### configurations
@@ -44,7 +45,6 @@
   home.file.".ssh/config".source = ./dotfiles/.ssh/config;
   home.file.".topydo_columns".source = ./dotfiles/.topydo_columns;
   home.file.".topydo".source = ./dotfiles/.topydo;
-  home.file.".wakatime.cfg".source = ./dotfiles/.wakatime.cfg;
 
   home.packages = with pkgs;
     let
