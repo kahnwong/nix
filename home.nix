@@ -26,13 +26,13 @@
 
   ### imports
   imports = [
-    ./nix/fish.nix
     ./nix/fonts.nix
-    ./nix/git.nix
-    ./nix/kitty.nix
-    ./nix/nvim.nix
-    ./nix/topydo.nix
-    ./nix/wakatime.nix
+    ./nix/tools/fish.nix
+    ./nix/tools/git.nix
+    ./nix/tools/kitty.nix
+    ./nix/tools/nvim.nix
+    ./nix/tools/topydo.nix
+    ./nix/tools/wakatime.nix
   ];
 
   ### configurations
