@@ -31,6 +31,7 @@
     ./nix/fish.nix
     ./nix/git.nix
     ./nix/nvim.nix
+    ./nix/topydo.nix
     ./nix/wakatime.nix
   ];
 
@@ -43,8 +44,6 @@
   home.file.".config/starship.toml".source = ./dotfiles/.config/starship.toml;
   home.file.".config/yt-dlp/config".source = ./dotfiles/yt-dlp.conf;
   home.file.".ssh/config".source = ./dotfiles/.ssh/config;
-  home.file.".topydo_columns".source = ./dotfiles/.topydo_columns;
-  home.file.".topydo".source = ./dotfiles/.topydo;
 
   home.packages = with pkgs;
     let
@@ -217,7 +216,6 @@
 
       mac_only = [
         unstable.caddy # on linux it requires extra configs to enable systemd
-        topydo # doesn't work on debian-on-macbook
       ];
     in
     common ++ (if stdenv.isLinux then linux_only else mac_only);
