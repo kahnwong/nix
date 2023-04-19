@@ -22,13 +22,12 @@
   programs.home-manager.enable = true;
   # services.home-manager.autoUpgrade.enable = true;
 
-  fonts.fontconfig.enable = true;
-
   manual.manpages.enable = false;
 
   ### imports
   imports = [
     ./nix/fish.nix
+    ./nix/fonts.nix
     ./nix/git.nix
     ./nix/kitty.nix
     ./nix/nvim.nix
@@ -191,15 +190,6 @@
         unstable.sops
         # unstable.steampipe
         unstable.vhs
-
-        # fonts
-        font-awesome
-        meslo-lgs-nf
-        powerline-fonts
-        source-code-pro
-        jetbrains-mono
-        fira-code
-        hack-font
       ];
 
       linux_only = [
