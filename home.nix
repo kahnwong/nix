@@ -26,6 +26,7 @@
 
   ### imports
   imports = [
+    ./nix/containers.nix
     ./nix/fonts.nix
     ./nix/shell.nix
     ./nix/tools/fish.nix
@@ -82,16 +83,8 @@
         unstable.neofetch
         unstable.onefetch
 
-        # docker
-        unstable.ctop
-        unstable.dive
-        unstable.lazydocker
-        unstable.trivy
 
-        # k8s
-        unstable.kubectl
-        unstable.k9s
-        unstable.kompose
+
 
         # terraform
         unstable.terraform
@@ -173,13 +166,6 @@
       ];
 
       linux_only = [
-        helm # doesn't work on aarch64-darwin
-        # docker
-        # docker-compose
-
-        # system
-        # fuse
-        iotop
       ];
 
       mac_only = [

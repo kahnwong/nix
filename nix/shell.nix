@@ -29,6 +29,7 @@
       ];
 
       linux_only = [
+        iotop
         progress
       ];
     in
