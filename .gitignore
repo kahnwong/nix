@@ -15,7 +15,7 @@ settings.json
 keys.txt
 
 # ssh
-dotfiles/**/config
+**/ssh/config
 
 # wakatime
 .wakatime.cfg

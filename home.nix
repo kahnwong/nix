@@ -46,7 +46,6 @@
 
   ### configurations
   home.file.".config/yt-dlp/config".source = ./dotfiles/yt-dlp.conf;
-  home.file.".ssh/config".source = ./dotfiles/.ssh/config;
 
   home.packages = with pkgs;
     [
