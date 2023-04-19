@@ -28,6 +28,7 @@
   imports = [
     ./nix/cloud.nix
     ./nix/containers.nix
+    ./nix/data-tools.nix
     ./nix/devops.nix
     ./nix/fonts.nix
     ./nix/programming.nix
@@ -69,7 +70,6 @@
         unstable.cbonsai
         unstable.ffmpeg
         unstable.graphviz
-        unstable.htop
         # instaloader
         unstable.libqalculate
         # rclone
@@ -81,14 +81,6 @@
         # fetch
         unstable.neofetch
         unstable.onefetch
-
-        # data
-        unstable.visidata
-        unstable.sqlfluff
-
-        # database
-        unstable.pgcli
-        unstable.mongodb-tools
 
         # applications
         unstable.beancount

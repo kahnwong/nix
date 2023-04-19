@@ -13,10 +13,10 @@
         unstable.exa
         unstable.fd
         unstable.fzf
+        unstable.htop
         unstable.ncdu
         unstable.procs
         unstable.ripgrep
-        unstable.starship
         unstable.tere
         unstable.thefuck
         unstable.tldr
