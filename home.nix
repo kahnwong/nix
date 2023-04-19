@@ -38,6 +38,7 @@
     ./nix/tools/kitty.nix
     ./nix/tools/nvim.nix
     ./nix/tools/sops.nix
+    ./nix/tools/ssh.nix
     ./nix/tools/starship.nix
     ./nix/tools/topydo.nix
     ./nix/tools/wakatime.nix
