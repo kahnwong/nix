@@ -6,6 +6,7 @@
       common = [
         unstable.bat
         unstable.broot
+        unstable.btop
         unstable.colordiff
         unstable.difftastic
         unstable.du-dust
@@ -23,6 +24,19 @@
         unstable.tmux
         unstable.tree
         unstable.watch
+
+        # downloaders
+        unstable.aria
+        unstable.wget
+        unstable.yt-dlp
+
+        # fetch
+        unstable.neofetch
+        unstable.onefetch
+
+        # utilities
+        unstable.ffmpeg
+        unstable.libqalculate
       ];
 
       mac_only = [

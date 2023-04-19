@@ -4,12 +4,33 @@
   home.packages = with pkgs;
     let
       common = [
+        # backup
+        unstable.rclone
+        unstable.restic
+        unstable.rsync
+
+        # docs
         unstable.d2
+        unstable.graphviz
+        unstable.silicon
+        unstable.slides
+        unstable.vhs
+
+        # load testing
         unstable.k6
+
+        # networking
+        unstable.curl
+        unstable.dogdns
+        unstable.gping
+        unstable.httpie
+        unstable.rustscan
+        unstable.speedtest-cli
+
+        # secretops
+        unstable.bitwarden-cli
         unstable.keyscope
         unstable.sops
-        # unstable.steampipe
-        unstable.vhs
       ];
 
       linux_only = [

@@ -49,51 +49,12 @@
   home.file.".ssh/config".source = ./dotfiles/.ssh/config;
 
   home.packages = with pkgs;
-    let
-      # Packages to always install.
-      common = [
-        # downloaders
-        unstable.aria
-        unstable.wget
-        unstable.yt-dlp
+    [
+      # applications
+      unstable.beancount
+      unstable.fava
 
-        # networking
-        unstable.curl
-        unstable.dogdns
-        unstable.gping
-        unstable.httpie
-        unstable.rustscan
-        unstable.speedtest-cli
-
-        # utilities
-        unstable.btop
-        unstable.cbonsai
-        unstable.ffmpeg
-        unstable.graphviz
-        # instaloader
-        unstable.libqalculate
-        # rclone
-        # restic
-        unstable.rsync
-        unstable.silicon
-        unstable.slides
-
-        # fetch
-        unstable.neofetch
-        unstable.onefetch
-
-        # applications
-        unstable.beancount
-        unstable.bitwarden-cli
-        unstable.fava
-        unstable.hugo
-      ];
-
-      linux_only = [
-      ];
-
-      mac_only = [
-      ];
-    in
-    common ++ (if stdenv.isLinux then linux_only else mac_only);
+      # static site generator
+      unstable.hugo
+    ];
 }
