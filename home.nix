@@ -27,6 +27,7 @@
   ### imports
   imports = [
     ./nix/fonts.nix
+    ./nix/shell.nix
     ./nix/tools/fish.nix
     ./nix/tools/git.nix
     ./nix/tools/kitty.nix
@@ -39,35 +40,14 @@
   home.file.".aws/config".source = ./dotfiles/.aws/config;
   home.file.".aws/credentials".source = ./dotfiles/.aws/credentials;
   home.file.".config/sops/age/keys.txt".source = ./dotfiles/.config/sops/age/keys.txt;
-  home.file.".config/starship.toml".source = ./dotfiles/.config/starship.toml;
   home.file.".config/yt-dlp/config".source = ./dotfiles/yt-dlp.conf;
   home.file.".ssh/config".source = ./dotfiles/.ssh/config;
+  home.file.".config/starship.toml".source = ./dotfiles/.config/starship.toml;
 
   home.packages = with pkgs;
     let
       # Packages to always install.
       common = [
-        # shell
-        unstable.bat
-        unstable.broot
-        unstable.colordiff
-        unstable.difftastic
-        unstable.du-dust
-        unstable.duf
-        unstable.exa
-        unstable.fd
-        unstable.fzf
-        ncdu
-        unstable.procs
-        unstable.ripgrep
-        unstable.starship
-        unstable.tere
-        unstable.thefuck
-        unstable.tldr
-        unstable.tmux
-        unstable.tree
-        unstable.watch
-
         # build env
         gdal
 
@@ -200,7 +180,6 @@
         # system
         # fuse
         iotop
-        progress
       ];
 
       mac_only = [
