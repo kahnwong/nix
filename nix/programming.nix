@@ -43,14 +43,6 @@
       unstable.shellcheck
       unstable.shfmt
 
-      # terraform
-      unstable.infracost
-      unstable.terraform
-      unstable.terraform-docs
-      unstable.terraformer
-      unstable.tflint
-      unstable.tfsec
-
       # yaml
       unstable.yq
     ];

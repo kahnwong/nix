@@ -47,6 +47,26 @@
         # secretops
         unstable.bitwarden-cli
         unstable.keyscope
+
+        # terraform
+        unstable.terraform
+        unstable.terraform-providers.aws
+        unstable.terraform-providers.cloudflare
+        unstable.terraform-providers.github
+        unstable.terraform-providers.google
+        unstable.terraform-providers.google-beta
+        unstable.terraform-providers.sops
+        unstable.terraform-providers.tfe
+        unstable.terraform-providers.vault
+
+        ## tools
+        unstable.terraform-docs
+        unstable.terraformer
+        unstable.infracost
+
+        ## linters
+        unstable.tfsec
+        unstable.tflint
       ];
 
       linux_only = [
