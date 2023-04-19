@@ -9,6 +9,23 @@
         unstable.restic
         unstable.rsync
 
+        # cloud
+        unstable.google-cloud-sdk
+        unstable.docker-credential-gcr
+
+        # containers
+        ### docker
+        unstable.ctop
+        unstable.dive
+        unstable.lazydocker
+        unstable.trivy
+
+        ### k8s
+        unstable.kubectl
+        unstable.k9s
+        unstable.kompose
+        unstable.kubernetes-helm
+
         # docs
         unstable.d2
         unstable.graphviz

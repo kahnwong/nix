@@ -25,8 +25,6 @@
 
   ### imports
   imports = [
-    ./nix/cloud.nix
-    ./nix/containers.nix
     ./nix/data-tools.nix
     ./nix/devops.nix
     ./nix/fonts.nix
