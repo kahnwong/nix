@@ -30,6 +30,7 @@
   imports = [
     ./nix/fish.nix
     ./nix/git.nix
+    ./nix/kitty.nix
     ./nix/nvim.nix
     ./nix/topydo.nix
     ./nix/wakatime.nix
@@ -38,8 +39,6 @@
   ### configurations
   home.file.".aws/config".source = ./dotfiles/.aws/config;
   home.file.".aws/credentials".source = ./dotfiles/.aws/credentials;
-  home.file.".config/kitty/kitty.conf".source = ./dotfiles/.config/kitty/kitty.conf;
-  home.file.".config/kitty/theme.conf".source = ./dotfiles/.config/kitty/theme.conf;
   home.file.".config/sops/age/keys.txt".source = ./dotfiles/.config/sops/age/keys.txt;
   home.file.".config/starship.toml".source = ./dotfiles/.config/starship.toml;
   home.file.".config/yt-dlp/config".source = ./dotfiles/yt-dlp.conf;
