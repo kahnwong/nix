@@ -29,13 +29,14 @@
     ./nix/containers.nix
     ./nix/fonts.nix
     ./nix/shell.nix
+    ./nix/terraform.nix
     ./nix/tools/fish.nix
     ./nix/tools/git.nix
     ./nix/tools/kitty.nix
     ./nix/tools/nvim.nix
+    ./nix/tools/starship.nix
     ./nix/tools/topydo.nix
     ./nix/tools/wakatime.nix
-    ./nix/tools/starship.nix
   ];
 
   ### configurations
@@ -82,17 +83,6 @@
         # fetch
         unstable.neofetch
         unstable.onefetch
-
-
-
-
-        # terraform
-        unstable.terraform
-        unstable.terraform-docs
-        unstable.terraformer
-        unstable.tflint
-        unstable.tfsec
-        unstable.infracost
 
         # nix
         unstable.nixpkgs-fmt
