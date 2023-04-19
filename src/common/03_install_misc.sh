@@ -2,22 +2,22 @@
 
 export PATH=$PATH:$HOME/.nix-profile/bin
 
-####################
-# node
-####################
+############################
+# applications - node
+############################
 npm set prefix ~/.npm-global
 npm install -g @jaebradley/wakatime-cli
 
-####################
-# golang
-####################
+############################
+# applications - golang
+############################
 go install github.com/nore-dev/fman@latest
 go install github.com/spectralops/senv@latest
 go install github.com/yitsushi/totp-cli@latest
 
-####################
-# python
-####################
+############################
+# python - pyenv
+############################
 ### pyenv
 curl https://pyenv.run | bash
 
@@ -26,7 +26,9 @@ export PYTHON_VERSION="3.10.8"
 pyenv install -s $PYTHON_VERSION
 pyenv global $PYTHON_VERSION
 
-### packages
+############################
+# applications - python
+############################
 pipx install nbpreview
 pipx install pip_search
 
