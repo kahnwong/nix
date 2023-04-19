@@ -1,7 +1,20 @@
-.wakatime.cfg
-dotfiles/**/config
-credentials
-work.fish
-settings.json
-keys.txt
+# env
 .env
+
+# fish
+work.fish
+
+# vscode
+settings.json
+
+# aws
+credentials
+
+# sops
+keys.txt
+
+# ssh
+dotfiles/**/config
+
+# wakatime
+.wakatime.cfg

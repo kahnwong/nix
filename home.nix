@@ -28,22 +28,13 @@
 
   ### imports
   imports = [
+    ./nix/fish.nix
     ./nix/git.nix
   ];
 
   ### configurations
   home.file.".aws/config".source = ./dotfiles/.aws/config;
   home.file.".aws/credentials".source = ./dotfiles/.aws/credentials;
-  home.file.".config/fish/conf.d/devops.fish".source = ./dotfiles/.config/fish/conf.d/devops.fish;
-  home.file.".config/fish/conf.d/git.fish".source = ./dotfiles/.config/fish/conf.d/git.fish;
-  home.file.".config/fish/conf.d/shell.fish".source = ./dotfiles/.config/fish/conf.d/shell.fish;
-  home.file.".config/fish/conf.d/topydo.fish".source = ./dotfiles/.config/fish/conf.d/topydo.fish;
-  home.file.".config/fish/conf.d/work.fish".source = ./dotfiles/.config/fish/conf.d/work.fish;
-  home.file.".config/fish/config.fish".source = ./dotfiles/.config/fish/config.fish;
-  home.file.".config/fish/functions/envsource.fish".source = ./dotfiles/.config/fish/functions/envsource.fish;
-  home.file.".config/fish/functions/fish_prompt.fish".source = ./dotfiles/.config/fish/functions/fish_prompt.fish;
-  home.file.".config/fish/functions/fuck.fish".source = ./dotfiles/.config/fish/functions/fuck.fish;
-  home.file.".config/fish/functions/pip.fish".source = ./dotfiles/.config/fish/functions/pip.fish;
   home.file.".config/kitty/kitty.conf".source = ./dotfiles/.config/kitty/kitty.conf;
   home.file.".config/kitty/theme.conf".source = ./dotfiles/.config/kitty/theme.conf;
   home.file.".config/sops/age/keys.txt".source = ./dotfiles/.config/sops/age/keys.txt;
@@ -53,9 +44,6 @@
   home.file.".topydo_columns".source = ./dotfiles/.topydo_columns;
   home.file.".topydo".source = ./dotfiles/.topydo;
   home.file.".wakatime.cfg".source = ./dotfiles/.wakatime.cfg;
-
-  ### git
-
 
   ### nvim
   programs.neovim = {
@@ -123,7 +111,6 @@
         unstable.duf
         unstable.exa
         unstable.fd
-        unstable.fish
         unstable.fzf
         ncdu
         unstable.procs
