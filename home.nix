@@ -34,6 +34,7 @@
     ./nix/tools/nvim.nix
     ./nix/tools/topydo.nix
     ./nix/tools/wakatime.nix
+    ./nix/tools/starship.nix
   ];
 
   ### configurations
@@ -42,7 +43,6 @@
   home.file.".config/sops/age/keys.txt".source = ./dotfiles/.config/sops/age/keys.txt;
   home.file.".config/yt-dlp/config".source = ./dotfiles/yt-dlp.conf;
   home.file.".ssh/config".source = ./dotfiles/.ssh/config;
-  home.file.".config/starship.toml".source = ./dotfiles/.config/starship.toml;
 
   home.packages = with pkgs;
     let
