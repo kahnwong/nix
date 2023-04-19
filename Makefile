@@ -7,9 +7,9 @@ common:
 mac:
 	./src/mac/01_setup_mac.sh
 	./src/mac/02_install_mac.sh
-	./src/setup_vscode.sh
+	./src/vscode/setup.sh
 
 linux:
 	./src/linux/01_setup_linux.sh
 	./src/linux/02_install_linux.sh
-	./src/setup_vscode.sh
+	./src/vscode/setup.sh
