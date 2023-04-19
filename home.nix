@@ -170,13 +170,6 @@
         unstable.neofetch
         unstable.onefetch
 
-        # git
-        delta
-        unstable.gh
-        unstable.gitleaks
-        unstable.pre-commit
-        trufflehog
-
         # docker
         unstable.ctop
         unstable.dive
