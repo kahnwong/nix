@@ -30,7 +30,6 @@
         # secretops
         unstable.bitwarden-cli
         unstable.keyscope
-        unstable.sops
       ];
 
       linux_only = [

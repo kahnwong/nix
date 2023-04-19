@@ -38,13 +38,13 @@
     ./nix/tools/git.nix
     ./nix/tools/kitty.nix
     ./nix/tools/nvim.nix
+    ./nix/tools/sops.nix
     ./nix/tools/starship.nix
     ./nix/tools/topydo.nix
     ./nix/tools/wakatime.nix
   ];
 
   ### configurations
-  home.file.".config/sops/age/keys.txt".source = ./dotfiles/.config/sops/age/keys.txt;
   home.file.".config/yt-dlp/config".source = ./dotfiles/yt-dlp.conf;
   home.file.".ssh/config".source = ./dotfiles/.ssh/config;
 
