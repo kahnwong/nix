@@ -9,8 +9,8 @@ else
 	export SETTING_LOCATION="$HOME/.config/Code/User/settings.json"
 fi
 
-cp ./src/vscode/config/keybindings.json "$KEYBINDING_LOCATION"
-cp ./src/vscode/config/settings.json "$SETTING_LOCATION"
+cp ./scripts/vscode/config/keybindings.json "$KEYBINDING_LOCATION"
+cp ./scripts/vscode/config/settings.json "$SETTING_LOCATION"
 
 ### extensions
 export PATH=$PATH:$HOME/.nix-profile/bin
