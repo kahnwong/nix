@@ -95,3 +95,25 @@ nix flake init
 
 nix build flake.nix
 ```
+
+## Nixpkgs
+
+<https://stackoverflow.com/questions/71927395/how-is-vendorsha256-computed>
+
+```nix
+with import <nixpkgs> { } ;
+
+buildGoModule rec {
+  pname = "fman";
+  version = "1.20.1";
+
+  src = fetchFromGitHub {
+    owner = "nore-dev";
+    repo = "fman";
+    rev = "v${version}";
+    sha256 = "1111111111111111111111111111111111111111111111111111"; # 1. replace with actual value from run logs
+  };
+
+  vendorSha256 = lib.fakeSha256; # 2. do the same after replacing above sha
+}
+```

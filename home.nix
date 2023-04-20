@@ -1,5 +1,7 @@
 { config, pkgs, lib, ... }:
-
+let
+  fman = import ./pkgs/golang/fman.nix;
+in
 {
   home.username = builtins.getEnv "username";
 
@@ -45,6 +47,9 @@
 
   home.packages = with pkgs;
     [
+      # custom packages
+      fman
+
       # applications
       unstable.beancount
       unstable.fava
