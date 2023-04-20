@@ -25,22 +25,22 @@
 
   ### imports
   imports = [
-    ./nix/data-tools.nix
-    ./nix/devops.nix
-    ./nix/fonts.nix
-    ./nix/programming.nix
-    ./nix/shell.nix
-    ./nix/tools/awscli.nix
-    ./nix/tools/fish.nix
-    ./nix/tools/git.nix
-    ./nix/tools/kitty.nix
-    ./nix/tools/nvim.nix
-    ./nix/tools/sops.nix
-    ./nix/tools/ssh.nix
-    ./nix/tools/starship.nix
-    ./nix/tools/topydo.nix
-    ./nix/tools/wakatime.nix
-    ./nix/tools/yt-dlp.nix
+    ./modules/data-tools.nix
+    ./modules/devops.nix
+    ./modules/fonts.nix
+    ./modules/programming.nix
+    ./modules/shell.nix
+    ./modules/tools/awscli.nix
+    ./modules/tools/fish.nix
+    ./modules/tools/git.nix
+    ./modules/tools/kitty.nix
+    ./modules/tools/nvim.nix
+    ./modules/tools/sops.nix
+    ./modules/tools/ssh.nix
+    ./modules/tools/starship.nix
+    ./modules/tools/topydo.nix
+    ./modules/tools/wakatime.nix
+    ./modules/tools/yt-dlp.nix
   ];
 
   home.packages = with pkgs;

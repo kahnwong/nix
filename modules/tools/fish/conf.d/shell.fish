@@ -35,13 +35,10 @@ function weather
     curl wttr.in
 end
 
-#function ping
-#    gping $argv
-#end
+function ping
+    gping $argv
+end
 
-# function mping
-#     host $argv | iponmap -c
-# end
 
 # function cbonsai
 #   docker exec -it cbonsai cbonsai -li
