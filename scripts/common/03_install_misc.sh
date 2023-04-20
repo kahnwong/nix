@@ -11,7 +11,6 @@ npm install -g @jaebradley/wakatime-cli
 ############################
 # applications - golang
 ############################
-go install github.com/nore-dev/fman@latest
 go install github.com/spectralops/senv@latest
 go install github.com/yitsushi/totp-cli@latest
 
