@@ -67,6 +67,9 @@
         ## linters
         unstable.tfsec
         unstable.tflint
+
+        # misc
+        unstable.entr
       ];
 
       linux_only = [
