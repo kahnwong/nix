@@ -41,11 +41,10 @@ code --install-extension bbenoist.Nix
 code --install-extension jnoortheen.nix-ide
 
 # github
-code --install-extension cschleiden.vscode-github-actions
 code --install-extension GitHub.vscode-pull-request-github
+code --install-extension github.vscode-github-actions
 
 # git
-code --install-extension letmaik.git-tree-compare
 code --install-extension mhutchie.git-graph
 code --install-extension qezhu.gitlink
 code --install-extension waderyan.gitblame
@@ -57,8 +56,6 @@ code --install-extension joffreykern.markdown-toc
 code --install-extension TakumiI.markdowntable
 code --install-extension yzane.markdown-pdf
 code --install-extension Markwhen.markwhen
-code --install-extension bierner.markdown-preview-github-styles
-code --install-extension bierner.github-markdown-preview
 
 # docs
 code --install-extension bierner.markdown-mermaid
@@ -127,7 +124,6 @@ code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension ms-vscode.test-adapter-converter
 code --install-extension mohitsingh.repo
 code --install-extension hbenl.vscode-test-explorer
-code --install-extension me-dutour-mathieu.vscode-github-actions
 
 # utilities
 code --install-extension christian-kohler.path-intellisense
