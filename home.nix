@@ -43,6 +43,7 @@ in
     ./modules/tools/topydo.nix
     ./modules/tools/wakatime.nix
     ./modules/tools/yt-dlp.nix
+    ./modules/tools/zellij.nix
   ];
 
   home.packages = with pkgs;

@@ -39,10 +39,9 @@ function ping
     gping $argv
 end
 
-
-# function cbonsai
-#   docker exec -it cbonsai cbonsai -li
-# end
+function tmux
+    zellij $argv
+end
 
 function zip-compress
     bash -c 'for i in *.txt; do zip -rm `basename $i .txt`.zip $i; done'

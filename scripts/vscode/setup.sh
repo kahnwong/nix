@@ -103,6 +103,7 @@ code --install-extension dorzey.vscode-sqlfluff
 code --install-extension esbenp.prettier-vscode
 code --install-extension iceyer.toml-formatter
 code --install-extension ms-vscode.makefile-tools
+code --install-extension kdl-org.kdl
 
 # data
 code --install-extension GrapeCity.gc-excelviewer
