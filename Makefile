@@ -13,3 +13,6 @@ linux:
 	./scripts/linux/01_setup_linux.sh
 	./scripts/linux/02_install_linux.sh
 	./scripts/vscode/setup.sh
+
+decrypt-credentials:
+	./scripts/decrypt.sh

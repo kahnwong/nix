@@ -6,8 +6,9 @@
 
   home.packages = with pkgs;
     let
-      common = [
-      ];
+      common = [ ];
+
+      linux_only = [ ];
 
       mac_only = [
         topydo # doesn't work on debian-on-macbook
