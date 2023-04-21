@@ -1,6 +1,7 @@
 { config, pkgs, lib, ... }:
 let
   fman = import ./pkgs/golang/fman.nix;
+  totp-cli = import ./pkgs/golang/totp-cli.nix;
 in
 {
   home.username = builtins.getEnv "username";
@@ -49,6 +50,7 @@ in
     [
       # custom packages
       fman
+      totp-cli
 
       # applications
       unstable.beancount

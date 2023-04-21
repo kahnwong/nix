@@ -9,12 +9,6 @@ npm set prefix ~/.npm-global
 npm install -g @jaebradley/wakatime-cli
 
 ############################
-# applications - golang
-############################
-go install github.com/spectralops/senv@latest
-go install github.com/yitsushi/totp-cli@latest
-
-############################
 # python - pyenv
 ############################
 ### pyenv
