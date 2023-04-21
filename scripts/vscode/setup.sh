@@ -104,6 +104,7 @@ code --install-extension esbenp.prettier-vscode
 code --install-extension iceyer.toml-formatter
 code --install-extension ms-vscode.makefile-tools
 code --install-extension kdl-org.kdl
+code --install-extension TheNuProjectContributors.vscode-nushell-lang
 
 # data
 code --install-extension GrapeCity.gc-excelviewer

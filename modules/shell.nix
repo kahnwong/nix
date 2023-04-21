@@ -23,6 +23,7 @@
         unstable.tldr
         unstable.tmux
         unstable.tree
+        unstable.nushell
         unstable.watch
 
         # downloaders
