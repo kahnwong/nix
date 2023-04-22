@@ -51,7 +51,6 @@ code --install-extension waderyan.gitblame
 
 # markdown
 code --install-extension DavidAnson.vscode-markdownlint
-code --install-extension hancel.markdown-image
 code --install-extension joffreykern.markdown-toc
 code --install-extension TakumiI.markdowntable
 code --install-extension yzane.markdown-pdf
