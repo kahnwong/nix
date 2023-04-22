@@ -25,6 +25,7 @@
         unstable.k9s
         unstable.kompose
         unstable.kubernetes-helm
+        unstable.kube-capacity
 
         # docs
         unstable.d2
