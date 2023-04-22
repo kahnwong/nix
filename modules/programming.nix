@@ -44,6 +44,6 @@
       unstable.shfmt
 
       # yaml
-      unstable.yq
+      unstable.yq-go
     ];
 }
