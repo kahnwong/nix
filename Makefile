@@ -16,3 +16,8 @@ linux:
 
 decrypt-credentials:
 	./scripts/decrypt.sh
+
+nix-update:
+	nix-channel --update  # equivalent to apt-get update
+	home-manager switch
+	nix-store --gc  # cleanup garbage collection

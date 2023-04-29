@@ -57,8 +57,7 @@ home_directory:
 ### Nix
 
 ```bash
-# equivalent to apt-get update
-nix-channel --update # then run `home-manager switch`
+make nix-update
 
 # equivalent to do-release-upgrade
 <https://nixos.org/manual/nix/stable/installation/upgrading.html>
@@ -79,9 +78,6 @@ code --list-extensions | xargs -L 1 echo code --install-extension > ext_install.
 # backup vscode config
 cp "/users/$USER/Library/Application Support/Code/User/keybindings.json" .
 cp "/users/$USER/Library/Application Support/Code/User/settings.json" .
-
-# nix garbage collection
-nix-store --gc
 ```
 
 ## Flake (not used)
