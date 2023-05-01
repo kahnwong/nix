@@ -1,6 +1,20 @@
 { config, pkgs, lib, ... }:
 
+
 {
+  imports = [
+    ./tools/fish.nix
+    ./tools/git.nix
+    ./tools/kitty.nix
+    ./tools/nvim.nix
+    ./tools/ssh.nix
+    ./tools/starship.nix
+    ./tools/topydo.nix
+    ./tools/wakatime.nix
+    ./tools/yt-dlp.nix
+    ./tools/zellij.nix
+  ];
+
   home.packages = with pkgs;
     let
       common = [

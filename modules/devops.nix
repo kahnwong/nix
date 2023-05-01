@@ -1,6 +1,11 @@
 { config, pkgs, lib, ... }:
 
 {
+  imports = [
+    ./tools/awscli.nix
+    ./tools/sops.nix
+  ];
+
   home.packages = with pkgs;
     let
       common = [

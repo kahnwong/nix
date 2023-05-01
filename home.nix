@@ -32,18 +32,6 @@ in
     ./modules/fonts.nix
     ./modules/programming.nix
     ./modules/shell.nix
-    ./modules/tools/awscli.nix
-    ./modules/tools/fish.nix
-    ./modules/tools/git.nix
-    ./modules/tools/kitty.nix
-    ./modules/tools/nvim.nix
-    ./modules/tools/sops.nix
-    ./modules/tools/ssh.nix
-    ./modules/tools/starship.nix
-    ./modules/tools/topydo.nix
-    ./modules/tools/wakatime.nix
-    ./modules/tools/yt-dlp.nix
-    ./modules/tools/zellij.nix
   ];
 
   home.packages = with pkgs;
