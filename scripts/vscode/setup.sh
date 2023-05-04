@@ -110,6 +110,7 @@ code --install-extension GrapeCity.gc-excelviewer
 code --install-extension RandomFractalsInc.geo-data-viewer
 code --install-extension RandomFractalsInc.vscode-data-preview
 code --install-extension mechatroner.rainbow-csv
+code --install-extension dvirtz.parquet-viewer
 
 # workspace
 code --install-extension Gruntfuggly.todo-tree
