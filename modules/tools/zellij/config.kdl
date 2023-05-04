@@ -1,2 +1,4 @@
 default_shell "fish"
 default_layout "compact"
+copy_command "pbcopy"
+mouse_mode false
