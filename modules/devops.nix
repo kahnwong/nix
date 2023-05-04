@@ -23,7 +23,6 @@
         unstable.ctop
         unstable.dive
         unstable.lazydocker
-        unstable.trivy
 
         ### k8s
         unstable.kubectl
@@ -31,6 +30,11 @@
         unstable.kompose
         unstable.kubernetes-helm
         unstable.kube-capacity
+
+        ### security
+        unstable.grype
+        unstable.syft
+        unstable.trivy
 
         # docs
         unstable.d2
