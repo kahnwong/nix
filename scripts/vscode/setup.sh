@@ -29,7 +29,7 @@ code --install-extension ms-vscode-remote.vscode-remote-extensionpack
 code --install-extension ms-vscode.remote-explorer
 
 # terraform
-code --install-extension 4ops.terraform
+# code --install-extension 4ops.terraform
 code --install-extension hashicorp.terraform
 code --install-extension hashicorp.hcl
 code --install-extension Infracost.infracost
@@ -45,19 +45,19 @@ code --install-extension GitHub.vscode-pull-request-github
 code --install-extension github.vscode-github-actions
 
 # git
-code --install-extension mhutchie.git-graph
+# code --install-extension mhutchie.git-graph
 code --install-extension qezhu.gitlink
-code --install-extension waderyan.gitblame
+# code --install-extension waderyan.gitblame
 
 # markdown
 code --install-extension DavidAnson.vscode-markdownlint
-code --install-extension joffreykern.markdown-toc
+# code --install-extension joffreykern.markdown-toc
 code --install-extension TakumiI.markdowntable
-code --install-extension yzane.markdown-pdf
+# code --install-extension yzane.markdown-pdf
 code --install-extension Markwhen.markwhen
 
 # docs
-code --install-extension bierner.markdown-mermaid
+# code --install-extension bierner.markdown-mermaid
 code --install-extension terrastruct.d2
 code --install-extension idleberg.badges
 code --install-extension idleberg.badgen
@@ -68,6 +68,7 @@ code --install-extension redhat.vscode-yaml
 
 # python
 code --install-extension donjayamanne.python-environment-manager
+code --install-extension ms-python.black-formatter
 code --install-extension ms-python.isort
 code --install-extension ms-python.python
 code --install-extension ms-python.vscode-pylance
@@ -103,7 +104,6 @@ code --install-extension esbenp.prettier-vscode
 code --install-extension iceyer.toml-formatter
 code --install-extension ms-vscode.makefile-tools
 code --install-extension kdl-org.kdl
-code --install-extension TheNuProjectContributors.vscode-nushell-lang
 
 # data
 code --install-extension GrapeCity.gc-excelviewer
@@ -123,31 +123,30 @@ code --install-extension WakaTime.vscode-wakatime
 code --install-extension withfig.fig
 code --install-extension amazonwebservices.aws-toolkit-vscode
 code --install-extension ms-vsliveshare.vsliveshare
-code --install-extension ms-vscode.test-adapter-converter
-code --install-extension mohitsingh.repo
-code --install-extension hbenl.vscode-test-explorer
+# code --install-extension ms-vscode.test-adapter-converter
+# code --install-extension mohitsingh.repo
+# code --install-extension hbenl.vscode-test-explorer
 
-# utilities
+# # utilities
 code --install-extension christian-kohler.path-intellisense
-code --install-extension davidfreer.go-to-character-position
+# code --install-extension davidfreer.go-to-character-position
 code --install-extension flesler.url-encode
-code --install-extension fvclaus.sort-json-array
+# code --install-extension fvclaus.sort-json-array
 code --install-extension ms-vscode.wordcount
-code --install-extension pnp.polacode
 code --install-extension mushan.vscode-paste-image
 code --install-extension Rubymaniac.vscode-paste-and-indent
-code --install-extension ryu1kn.partial-diff
-code --install-extension ryu1kn.text-marker
+# code --install-extension ryu1kn.partial-diff
+# code --install-extension ryu1kn.text-marker
 code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension TabNine.tabnine-vscode
 code --install-extension vsls-contrib.gistfs
 code --install-extension yaruson.ascii-unicode-escape
-code --install-extension mindaro-dev.file-downloader
+# code --install-extension mindaro-dev.file-downloader
 code --install-extension AykutSarac.jsoncrack-vscode
 
-# applications
-code --install-extension fabiospampinato.vscode-todo-plus
+# # applications
+# code --install-extension fabiospampinato.vscode-todo-plus
 
 # presentations
 code --install-extension marp-team.marp-vscode
-code --install-extension antfu.slidev
+# code --install-extension antfu.slidev
