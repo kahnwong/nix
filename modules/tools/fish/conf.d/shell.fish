@@ -14,14 +14,6 @@ function fm
     EDITOR="vi" fman --theme nord
 end
 
-function dig
-    dog $argv
-end
-
-function ps
-    procs $argv
-end
-
 function vi
     nvim $argv
 end
@@ -33,10 +25,6 @@ end
 
 function weather
     curl wttr.in
-end
-
-function ping
-    gping $argv
 end
 
 function tmux

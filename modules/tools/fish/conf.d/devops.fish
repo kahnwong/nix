@@ -32,3 +32,29 @@ function gcp-resources-list
         --format=json \
             > $argv.json
 end
+
+################
+# networking
+################
+function dig
+    dog $argv
+end
+
+function ping
+    gping $argv
+end
+
+function geoping
+    curl -s "https://geonet.shodan.io/api/geoping/$argv" | jq 'sort_by(.avg_rtt) | .[] | {"city": .from_loc.city, "response_time":.avg_rtt}'
+end
+
+function geodns
+    curl -s "https://geonet.shodan.io/api/geodns/$argv" | jq '.[] | {"city": .from_loc.city, "value":.answers[].value}'
+end
+
+################
+# system
+################
+function ps
+    procs $argv
+end
