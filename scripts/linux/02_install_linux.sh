@@ -12,10 +12,9 @@ sudo apt update
 sudo apt install code -y
 
 ### applications
-flatpak install flathub org.mozilla.firefox -y
-flatpak install flathub com.google.Chrome -y
-flatpak install flathub io.mpv.Mpv -y
-flatpak install flathub com.nextcloud.desktopclient.nextcloud -y
 flatpak install flathub com.discordapp.Discord -y
 flatpak install flathub com.github.eneshecan.WhatsAppForLinux -y
-flatpak install flathub org.standardnotes.standardnotes -y
+flatpak install flathub com.google.Chrome -y
+flatpak install flathub com.nextcloud.desktopclient.nextcloud -y
+flatpak install flathub io.mpv.Mpv -y
+flatpak install flathub org.mozilla.firefox -y
