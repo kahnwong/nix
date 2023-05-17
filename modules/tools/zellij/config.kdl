@@ -1,4 +1,6 @@
 default_shell "fish"
 default_layout "compact"
-copy_command "pbcopy"
-mouse_mode false
+
+// enable to allow copy-on-select
+// copy_command "pbcopy"
+// mouse_mode false
