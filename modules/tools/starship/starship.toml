@@ -16,7 +16,8 @@ style = "bold #F79400"
 # ap-southeast-1 = "sg"
 
 [gcloud]
-format = '[$symbol$account(@$domain)(\($project\))]($style) '
+# format = '[$symbol$account(@$domain)(\($project\))]($style) '
+format = 'on [$symbol(@$domain)(\($region\))]($style) '
 
 [git_branch]
 format = "on [$symbol$branch]($style) "
