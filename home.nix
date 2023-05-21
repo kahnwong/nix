@@ -32,7 +32,7 @@
       ];
 
       server_only = [
-        ./tools/sops.nix # is subset of devops.nix
+        ./modules/tools/sops.nix # is subset of devops.nix
       ];
 
       workstation_only = [
