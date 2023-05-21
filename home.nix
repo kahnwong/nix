@@ -28,17 +28,13 @@
     ./modules/data-tools.nix
     ./modules/devops.nix
     ./modules/fonts.nix
+    ./modules/misc.nix
     ./modules/programming.nix
     ./modules/shell.nix
   ];
 
   home.packages = with pkgs;
     [
-      # applications
-      unstable.beancount
-      unstable.fava
 
-      # static site generator
-      unstable.hugo
     ];
 }
