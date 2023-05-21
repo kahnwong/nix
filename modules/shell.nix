@@ -1,6 +1,7 @@
 { config, pkgs, lib, ... }:
-
-
+let
+  extraGolangPackages = import ./pkgs/shell-golang.nix;
+in
 {
   imports = [
     ./tools/fish.nix
@@ -52,6 +53,10 @@
         # utilities
         unstable.ffmpeg
         unstable.libqalculate
+
+        # custom packages
+        extraGolangPackages.fman
+        extraGolangPackages.totp-cli
       ];
 
       mac_only = [

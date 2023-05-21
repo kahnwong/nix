@@ -1,7 +1,5 @@
 { config, pkgs, lib, ... }:
-let
-  extraGolangPackages = import ./pkgs/golang.nix;
-in
+
 {
   home.username = builtins.getEnv "username";
 
@@ -36,10 +34,6 @@ in
 
   home.packages = with pkgs;
     [
-      # custom packages
-      extraGolangPackages.fman
-      extraGolangPackages.totp-cli
-
       # applications
       unstable.beancount
       unstable.fava
