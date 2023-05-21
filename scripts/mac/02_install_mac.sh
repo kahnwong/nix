@@ -90,6 +90,8 @@ brew install --cask maccy
 brew install --cask mactracker
 brew install --cask michaelvillar-timer
 brew install --cask protonvpn
+brew install --cask raspberry-pi-imager
+# brew install --cask raycast
 brew install --cask shifty
 brew install --cask spectacle
 brew install --cask stats
