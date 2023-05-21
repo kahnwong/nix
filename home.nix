@@ -24,14 +24,26 @@
   manual.manpages.enable = false;
 
   ### imports
-  imports = [
-    ./modules/data-tools.nix
-    ./modules/devops.nix
-    ./modules/fonts.nix
-    ./modules/misc.nix
-    ./modules/programming.nix
-    ./modules/shell.nix
-  ];
+  imports = with pkgs;
+    let
+      base = [
+        ./modules/misc.nix
+        ./modules/shell.nix
+      ];
+
+      server_only = [
+        ./tools/sops.nix # is subset of devops.nix
+      ];
+
+      workstation_only = [
+        ./modules/data-tools.nix
+        ./modules/devops.nix
+        ./modules/fonts.nix
+        ./modules/programming.nix
+      ];
+
+    in
+    base ++ (if (builtins.getEnv "machine_name" == "server") then server_only else workstation_only);
 
   home.packages = with pkgs;
     [
