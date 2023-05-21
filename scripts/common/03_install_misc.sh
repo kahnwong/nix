@@ -15,7 +15,7 @@ npm install -g @jaebradley/wakatime-cli
 curl https://pyenv.run | bash
 
 export PATH=$PATH:$HOME/.pyenv/bin
-export PYTHON_VERSION="3.10.8"
+export PYTHON_VERSION="3.11.3"
 pyenv install -s $PYTHON_VERSION
 pyenv global $PYTHON_VERSION
 
