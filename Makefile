@@ -9,9 +9,9 @@ mac:
 	./scripts/mac/02_install_mac.sh
 	./scripts/vscode/setup.sh
 
-linux:
-	./scripts/linux/01_setup_linux.sh
-	./scripts/linux/02_install_linux.sh
+linux-desktop:
+	./scripts/linux-desktop/01_setup_linux.sh
+	./scripts/linux-desktop/02_install_linux.sh
 	./scripts/vscode/setup.sh
 
 decrypt-credentials:
