@@ -18,12 +18,17 @@ home_directory:
 
 1. Create `.env` and populate variables (see list of env keys in `.enc.env`)
 2. (Optional) If you don't want to set up commit signing, comment out the whole `git_signing_key` section.
-3. On `Raspberry Pi 4`, comment out `nodePackages_latest.*`. It raises segmentation fault, not sure whether this applies to other `aarch64-linux` or not.
-4. `make common`
-5. For Mac OS:
-   1. Login to `App Store`
-   2. `make mac`
-6. If you need `tailscale`, `caddy`, `fail2ban`, or `docker` on your server, install it via your system's package manager, since nix requires you set up systemd services explicitly.
+3. `make common`
+
+### Mac OS Extras
+
+1. Login to `App Store`
+2. `make mac`
+
+### Linux Extras
+
+- If you need `tailscale`, `caddy`, `fail2ban`, or `docker` on your server, install it via your system's package manager, since nix requires you set up systemd services explicitly.
+<!-- - If you want to use a local apt repo: `sed -i 's#http://ports.ubuntu.com/ubuntu-ports#http://th.archive.ubuntu.com/ubuntu#g' /etc/apt/sources.list` -->
 
 ## Post Installation Instructions
 

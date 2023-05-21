@@ -40,4 +40,4 @@ export NIX_PATH=$HOME/.nix-defexpr/channels:/nix/var/nix/profiles/per-user/root/
 
 nix-shell '<home-manager>' -A install
 
-rm ~/.config/nixpkgs/home.nix
+# rm ~/.config/nixpkgs/home.nix # looks like we don't need this in newer versions
