@@ -62,7 +62,7 @@ home_directory:
 ### Nix
 
 ```bash
-make nix-update
+make update
 
 # equivalent to do-release-upgrade
 <https://nixos.org/manual/nix/stable/installation/upgrading.html>
