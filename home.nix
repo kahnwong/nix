@@ -43,7 +43,7 @@
       ];
 
     in
-    base ++ (if (builtins.getEnv "machine_name" == "server") then server_only else workstation_only);
+    base ++ (if (builtins.getEnv "machine_type" == "server") then server_only else workstation_only);
 
   home.packages = with pkgs;
     [
