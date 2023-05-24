@@ -11,6 +11,6 @@ hidden_item_tags=blog,listen,watch
 [edit]
 editor = /usr/bin/vi
 
-[colorscheme]
-context_color = cyan
-project_color = yellow
+; [colorscheme]
+; context_color = cyan
+; project_color = yellow
