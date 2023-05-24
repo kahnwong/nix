@@ -31,7 +31,7 @@ brew install apache-spark
 # dev tools
 brew install --cask datagrip
 brew install --cask docker
-brew install --cask fig
+# brew install --cask fig
 brew install --cask fork
 brew install --cask gitup
 brew install --cask httpie
