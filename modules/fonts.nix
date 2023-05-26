@@ -5,6 +5,7 @@
 
   home.packages = with pkgs;
     [
+      cascadia-code
       fira-code
       font-awesome
       hack-font
