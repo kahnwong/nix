@@ -32,6 +32,9 @@
       unstable.nodePackages_latest.npm
       unstable.yarn
 
+      # rust
+      unstable.cargo
+
       # python
       gdal # for build env
       unstable.black
