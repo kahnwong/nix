@@ -3,12 +3,6 @@
 export PATH=$PATH:$HOME/.nix-profile/bin
 
 ############################
-# applications - node
-############################
-npm set prefix ~/.npm-global
-npm install -g @jaebradley/wakatime-cli
-
-############################
 # python - pyenv
 ############################
 ### pyenv
@@ -18,6 +12,17 @@ export PATH=$PATH:$HOME/.pyenv/bin
 export PYTHON_VERSION="3.11.3"
 pyenv install -s $PYTHON_VERSION
 pyenv global $PYTHON_VERSION
+
+############################
+# applications - golang
+############################
+go install github.com/techygrrrl/timerrr@latest
+
+############################
+# applications - node
+############################
+npm set prefix ~/.npm-global
+npm install -g @jaebradley/wakatime-cli
 
 ############################
 # applications - python
