@@ -1,13 +1,31 @@
-################
-# docker
-################
+########################
+# CONTAINERS: DOCKER
+########################
 function docker-rmi
     docker images | grep $argv | awk '{print $3}' | xargs docker rmi
 end
 
-################
-# terraform
-################
+############################
+# IDE: VSCODE
+############################
+function rcode
+    code --folder-uri=vscode-remote://ssh-remote+fringe-division/home/kahnwong/$argv/
+end
+
+########################
+# INFRA: GCP
+########################
+function gcp-resources-list
+    echo "getting resources: $argv"
+    gcloud asset search-all-resources \
+        --scope=projects/$argv \
+        --page-size=500 \
+        --format=json >$argv.json
+end
+
+########################
+# INFRA: TERRAFORM
+########################
 function terraformer-init
     terraform state replace-provider -auto-approve registry.terraform.io/-/aws hashicorp/aws && terraform init
 end
@@ -21,21 +39,22 @@ function tf-cost
         --path .
 end
 
-################
-# gcp
-################
-function gcp-resources-list
-    echo "getting resources: $argv"
-    gcloud asset search-all-resources \
-        --scope=projects/$argv \
-        --page-size=500 \
-        --format=json \
-            > $argv.json
+
+########################
+# SYSTEM
+########################
+function ps
+    procs $argv
 end
 
-################
-# networking
-################
+function brew-upgrade
+    brew upgrade --greedy
+end
+
+
+########################
+# SYSTEM: NETWORKING
+########################
 function dig
     dog $argv
 end
@@ -50,11 +69,4 @@ end
 
 function geodns
     curl -s "https://geonet.shodan.io/api/geodns/$argv" | jq '.[] | {"city": .from_loc.city, "value":.answers[].value}'
-end
-
-################
-# system
-################
-function ps
-    procs $argv
 end

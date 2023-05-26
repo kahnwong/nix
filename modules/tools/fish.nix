@@ -3,6 +3,7 @@
 {
   home.file.".config/fish/conf.d/devops.fish".source = ./fish/conf.d/devops.fish;
   home.file.".config/fish/conf.d/git.fish".source = ./fish/conf.d/git.fish;
+  home.file.".config/fish/conf.d/misc.fish".source = ./fish/conf.d/misc.fish;
   home.file.".config/fish/conf.d/shell.fish".source = ./fish/conf.d/shell.fish;
   home.file.".config/fish/conf.d/topydo.fish".source = ./fish/conf.d/topydo.fish;
   home.file.".config/fish/conf.d/work.fish".source = ./fish/conf.d/work.fish;

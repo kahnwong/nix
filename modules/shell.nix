@@ -1,6 +1,6 @@
 { config, pkgs, lib, ... }:
 let
-  extraGolangPackages = import ./pkgs/shell-golang.nix;
+  extraGolangPackages = import ./pkgs/golang.nix;
 in
 {
   imports = [
@@ -53,6 +53,7 @@ in
         # utilities
         unstable.ffmpeg
         unstable.libqalculate
+        unstable.tz
 
         # custom packages
         extraGolangPackages.fman
