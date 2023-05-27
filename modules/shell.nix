@@ -47,8 +47,12 @@ in
         unstable.yt-dlp
 
         # fetch
+        unstable.afetch
+        unstable.cpufetch
+        unstable.ipfetch
         unstable.neofetch
         unstable.onefetch
+        unstable.pfetch
 
         # utilities
         unstable.ffmpeg
