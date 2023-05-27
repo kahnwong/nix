@@ -9,9 +9,12 @@
       fira-code
       font-awesome
       hack-font
+      ibm-plex
       inter
+      iosevka
       jetbrains-mono
       meslo-lgs-nf
+      national-park-typeface
       powerline-fonts
       source-code-pro
     ];
