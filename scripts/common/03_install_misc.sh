@@ -16,6 +16,7 @@ pyenv global $PYTHON_VERSION
 ############################
 # applications - golang
 ############################
+go install github.com/fawni/def@latest
 go install github.com/techygrrrl/timerrr@latest
 
 ############################
