@@ -17,5 +17,7 @@
       national-park-typeface
       powerline-fonts
       source-code-pro
+
+      (nerdfonts.override { fonts = [ "CascadiaCode" ]; })
     ];
 }
