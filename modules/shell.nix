@@ -47,7 +47,6 @@ in
         unstable.yt-dlp
 
         # fetch
-        unstable.afetch
         unstable.cpufetch
         unstable.ipfetch
         unstable.neofetch
@@ -68,6 +67,7 @@ in
       ];
 
       linux_only = [
+        unstable.afetch
         iotop
         progress
       ];
