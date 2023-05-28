@@ -74,6 +74,7 @@ brew install --cask todotxt
 # utilities
 brew install --cask alfred
 brew install --cask angry-ip-scanner
+brew install --cask anydesk
 brew install --cask appcleaner
 brew install --cask balenaetcher
 brew install --cask bitwarden
