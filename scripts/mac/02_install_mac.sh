@@ -28,6 +28,7 @@ brew install --cask zoom
 brew install --cask qgis
 brew install --cask tad
 brew install apache-spark
+brew install dvc
 
 # dev tools
 brew install --cask datagrip

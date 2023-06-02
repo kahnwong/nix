@@ -2,15 +2,26 @@
 
 {
   home.packages = with pkgs;
-    [
-      # database
-      unstable.pgcli
-      unstable.mongodb-tools
+    let
+      common = [
+        # database
+        unstable.pgcli
+        unstable.mongodb-tools
 
-      # linters
-      unstable.sqlfluff
+        # linters
+        unstable.sqlfluff
 
-      # wrangling
-      unstable.visidata
-    ];
+        # wrangling
+        unstable.visidata
+      ];
+
+      mac_only = [
+      ];
+
+      linux_only = [
+        dvc
+      ];
+    in
+    common ++ (if stdenv.isLinux then linux_only else mac_only);
+
 }
