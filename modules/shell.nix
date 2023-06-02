@@ -31,6 +31,7 @@ in
         unstable.fzf
         unstable.htop
         unstable.ncdu
+        unstable.nushell
         unstable.procs
         unstable.ripgrep
         unstable.tere
@@ -38,7 +39,7 @@ in
         unstable.tldr
         unstable.tmux
         unstable.tree
-        unstable.nushell
+        unstable.viddy
         unstable.watch
 
         # downloaders
