@@ -19,7 +19,6 @@
       ];
 
       linux_only = [
-        # unstable.dvc
       ];
     in
     common ++ (if stdenv.isLinux then linux_only else mac_only);

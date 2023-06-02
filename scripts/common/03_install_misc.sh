@@ -30,6 +30,7 @@ npm install -g @jaebradley/wakatime-cli
 ############################
 pipx install nbpreview
 pipx install pip_search
+pipx install dvc[s3]
 
 ####################
 # git
