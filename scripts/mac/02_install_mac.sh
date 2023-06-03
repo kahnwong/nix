@@ -102,7 +102,7 @@ brew install --cask tyke
 brew install --cask yubico-yubikey-manager
 
 # peripheral software
-brew install --cask logi-options-plus
+brew install --cask linearmouse
 brew install --cask logitech-camera-settings
 
 echo "================================= Install App Store applications ================================="
