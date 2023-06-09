@@ -25,6 +25,7 @@
         unstable.lazydocker
 
         ### k8s
+        unstable.fluxcd
         unstable.kubectl
         unstable.k9s
         unstable.kompose
