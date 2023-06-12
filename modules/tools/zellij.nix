@@ -5,6 +5,6 @@
 
   home.packages = with pkgs;
     [
-      unstable.zellij
+      zellij
     ];
 }

@@ -47,10 +47,6 @@ function ps
     procs $argv
 end
 
-function brew-upgrade
-    brew upgrade --greedy
-end
-
 
 ########################
 # SYSTEM: NETWORKING
