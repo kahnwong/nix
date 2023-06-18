@@ -15,7 +15,7 @@
   };
 
   home.packages = with pkgs;
-  [
-    topydo
-  ];
+    [
+      # topydo # installed via pipx instead
+    ];
 }
