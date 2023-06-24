@@ -16,6 +16,8 @@ end
 # INFRA: GCP
 ########################
 function gcp-resources-list
+    # $argv = project_name
+
     echo "getting resources: $argv"
     gcloud asset search-all-resources \
         --scope=projects/$argv \
@@ -65,4 +67,12 @@ end
 
 function geodns
     curl -s "https://geonet.shodan.io/api/geodns/$argv" | jq '.[] | {"city": .from_loc.city, "value":.answers[].value}'
+end
+
+########################
+# UTILITIES
+########################
+function upload-picoshare -a path -a url
+    set -l url "$(echo $url | sed 's#/g/#/api/guest/#g')"
+    curl -F "file=@$path" $url
 end
