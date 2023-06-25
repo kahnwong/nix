@@ -51,7 +51,7 @@ symbol = "\uE718"
 style = "#44FFD2"
 
 [kubernetes]
-disabled = false
+disabled = true
 detect_folders = ["opencost"]
 
 [package]
@@ -63,11 +63,4 @@ when = true
 style = "#00A1FA"
 shell = "fish"
 symbol = "\uf4a0 "
-
-[status]
-style = "bg:blue"
-symbol = "🔴 "
-success_symbol = "🟢 SUCCESS"
-format = '[\[$symbol$common_meaning$signal_name$maybe_int\]]($style): $status '
-map_symbol = true
 disabled = true
