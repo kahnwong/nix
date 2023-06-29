@@ -9,7 +9,7 @@
       fira-code
       font-awesome
       hack-font
-      ibm-plex
+      # ibm-plex
       inter
       iosevka
       jetbrains-mono
