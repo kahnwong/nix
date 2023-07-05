@@ -18,7 +18,7 @@ brew install --cask syncthing
 # communication
 brew install --cask adium
 brew install --cask discord
-brew install --cask ferdium
+# brew install --cask ferdium
 brew install --cask microsoft-teams
 brew install --cask slack
 brew install --cask whatsapp
@@ -63,7 +63,6 @@ brew install --cask qlmarkdown
 # productivity
 brew install --cask cron
 brew install --cask macdown
-brew install --cask meetingbar
 # brew install --cask notion
 brew install --cask obsidian
 brew install --cask sleek

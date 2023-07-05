@@ -9,9 +9,9 @@
   home.packages = with pkgs;
     let
       common = [
-        # backup
-        unstable.rclone
-        unstable.restic
+        # # backup
+        # unstable.rclone
+        # unstable.restic
         unstable.rsync
 
         # cloud
@@ -25,7 +25,6 @@
         unstable.lazydocker
 
         ### k8s
-        unstable.fluxcd
         unstable.kubectl
         unstable.k9s
         unstable.kompose
@@ -50,7 +49,7 @@
         # networking
         unstable.curl
         unstable.dogdns
-        unstable.gping
+        gping
         unstable.httpie
         unstable.rustscan
         unstable.speedtest-cli
