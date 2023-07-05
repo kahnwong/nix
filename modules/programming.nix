@@ -13,9 +13,9 @@
       # html
       unstable.htmlq
 
-      # # java
-      # temurin-bin
-      # maven
+      # java
+      temurin-bin
+      maven
 
       # json
       unstable.fx
