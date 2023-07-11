@@ -1,4 +1,7 @@
 { config, pkgs, lib, ... }:
+let
+  extraGolangPackages = import ./pkgs/golang.nix;
+in
 
 {
   imports = [
@@ -15,6 +18,7 @@
         unstable.rsync
 
         # cloud
+        extraGolangPackages.cloud-sql-proxy
         unstable.docker-credential-gcr
         unstable.google-cloud-sdk
 
