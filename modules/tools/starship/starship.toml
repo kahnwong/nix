@@ -51,8 +51,8 @@ symbol = "\uE718"
 style = "#44FFD2"
 
 [kubernetes]
-disabled = true
-detect_folders = ["opencost"]
+disabled = false
+detect_folders = ["chart"]
 
 [package]
 disabled = true

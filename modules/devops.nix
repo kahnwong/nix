@@ -15,8 +15,8 @@
         unstable.rsync
 
         # cloud
-        unstable.google-cloud-sdk
         unstable.docker-credential-gcr
+        unstable.google-cloud-sdk
 
         # containers
         ### docker
