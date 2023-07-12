@@ -20,7 +20,7 @@ in
         # cloud
         extraGolangPackages.cloud-sql-proxy
         unstable.docker-credential-gcr
-        unstable.google-cloud-sdk
+        (google-cloud-sdk.withExtraComponents [ google-cloud-sdk.components.gke-gcloud-auth-plugin ])
 
         # containers
         ### docker
