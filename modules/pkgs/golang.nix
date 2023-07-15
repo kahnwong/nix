@@ -74,4 +74,23 @@ with import <nixpkgs> { } ;
       mainProgram = "cloud-sql-proxy";
     };
   };
+
+  # # can't skip test
+  # timerrr = buildGoModule
+  #   rec {
+  #     pname = "timerrr";
+  #     version = "0.1.4";
+
+  #     src = fetchFromGitHub {
+  #       owner = "techygrrrl";
+  #       repo = "timerrr";
+  #       rev = "${version}";
+  #       sha256 = "sha256-9X/qMWcNQTRlMjubB3pf/4qENlyvuwnuE1CBIefHBPQ=";
+  #     };
+
+  #     vendorSha256 = "sha256-X7SOleUyoVHWAdXuN8zonCvvLfeW5hNw/AIp0NwTKG0=";
+
+  #     doChek = false;
+  #     dontCheck = true;
+  #   };
 }
