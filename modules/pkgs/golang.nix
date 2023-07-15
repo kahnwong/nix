@@ -1,6 +1,21 @@
 with import <nixpkgs> { } ;
 
 {
+  def = buildGoModule
+    rec {
+      pname = "def";
+      version = "0.2.2";
+
+      src = fetchFromGitHub {
+        owner = "fawni";
+        repo = "def";
+        rev = "v${version}";
+        sha256 = "sha256-1XXlImDNEbQit8cBZIRhdT5UKXBHW1JkWQh/zf5zqgU=";
+      };
+
+      vendorSha256 = "sha256-UiDnSXOgSvIfIUI+zQ5HC7iGzbtfbQ4Snaxs69RePug=";
+    };
+
   fman = buildGoModule
     rec {
       pname = "fman";

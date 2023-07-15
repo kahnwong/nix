@@ -60,6 +60,7 @@ in
         unstable.tz
 
         # custom packages
+        extraGolangPackages.def
         extraGolangPackages.fman
         extraGolangPackages.totp-cli
       ];
