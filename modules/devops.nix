@@ -29,6 +29,7 @@ in
         unstable.lazydocker
 
         ### k8s
+        unstable.helm-dashboard
         unstable.kubectl
         unstable.k9s
         unstable.kompose
