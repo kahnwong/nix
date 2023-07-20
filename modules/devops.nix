@@ -23,20 +23,23 @@ in
         (google-cloud-sdk.withExtraComponents [ google-cloud-sdk.components.gke-gcloud-auth-plugin ])
 
         # containers
-        ### docker
+        ## docker
         unstable.ctop
         unstable.dive
         unstable.lazydocker
 
-        ### k8s
-        unstable.helm-dashboard
-        unstable.kubectl
-        unstable.k9s
+        ## k8s
         # unstable.kompose
-        unstable.kubernetes-helm
+        unstable.helm-dashboard
+        unstable.k9s
         unstable.kube-capacity
+        unstable.kubectl
+        unstable.krew
+        unstable.kubectx
+        unstable.kubernetes-helm
+        unstable.ktop
 
-        ### security
+        ## security
         unstable.grype
         unstable.syft
         unstable.trivy

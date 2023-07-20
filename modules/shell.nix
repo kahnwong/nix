@@ -70,6 +70,7 @@ in
 
       linux_only = [
         unstable.afetch
+        unstable.rio
         iotop
         progress
       ];

@@ -16,6 +16,7 @@ set PATH \
     $HOME/.pyenv/bin \
     $HOME/.local/bin \
     $HOME/.npm-global/bin \
+    $HOME/.krew/bin \
     /opt/homebrew/bin \
     /usr/local/bin \
     /usr/local/sbin \

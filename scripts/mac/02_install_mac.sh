@@ -37,10 +37,12 @@ brew install --cask gitup
 brew install --cask httpie
 brew install --cask intellij-idea
 brew install --cask kitty
+brew install kui
 brew install --cask microsoft-remote-desktop
 brew install --cask mongodb-compass
 brew install --cask openlens
 brew install --cask postman
+# brew install --cask rio
 brew install --cask tailscale
 brew install --cask visual-studio-code
 

@@ -32,6 +32,13 @@ pipx install pip_search
 pipx install dvc[s3]
 pipx install topydo[columns]
 
+############################
+# kubectl
+############################
+krew install nodepools
+krew install reap
+krew install status
+
 ####################
 # git
 ####################
