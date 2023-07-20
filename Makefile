@@ -3,8 +3,7 @@
 ##############
 common:
 	./scripts/common/01_setup.sh
-	./scripts/common/02_install_nix.sh
-	./scripts/common/03_install_misc.sh
+	./scripts/common/02_install_misc.sh
 	cat ./post_installation_message.txt
 
 mac:
