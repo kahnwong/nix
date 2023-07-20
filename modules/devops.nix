@@ -32,7 +32,7 @@ in
         unstable.helm-dashboard
         unstable.kubectl
         unstable.k9s
-        unstable.kompose
+        # unstable.kompose
         unstable.kubernetes-helm
         unstable.kube-capacity
 

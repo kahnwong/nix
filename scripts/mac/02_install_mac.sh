@@ -18,7 +18,6 @@ brew install --cask syncthing
 # communication
 brew install --cask adium
 brew install --cask discord
-# brew install --cask ferdium
 brew install --cask microsoft-teams
 brew install --cask slack
 brew install --cask whatsapp
@@ -37,7 +36,6 @@ brew install --cask fork
 brew install --cask gitup
 brew install --cask httpie
 brew install --cask intellij-idea
-# brew install --cask iterm2
 brew install --cask kitty
 brew install --cask microsoft-remote-desktop
 brew install --cask mongodb-compass
@@ -53,7 +51,6 @@ brew install --cask iina
 brew install --cask simple-comic
 brew install --cask transmission-remote-gui
 brew install --cask xnviewmp
-# brew install --cask spotify
 
 # quick look
 brew install --cask syntax-highlight
@@ -63,7 +60,6 @@ brew install --cask qlmarkdown
 # productivity
 brew install --cask cron
 brew install --cask macdown
-# brew install --cask notion
 brew install --cask obsidian
 brew install --cask sleek
 brew install --cask todoist
@@ -77,7 +73,6 @@ brew install --cask appcleaner
 brew install --cask balenaetcher
 brew install --cask bitwarden
 brew install --cask cheatsheet
-# brew install --cask clocker
 brew install --cask cloudflare-warp
 brew install --cask coconutbattery
 brew install --cask dozer
@@ -91,7 +86,6 @@ brew install --cask mactracker
 brew install --cask michaelvillar-timer
 brew install --cask protonvpn
 brew install --cask raspberry-pi-imager
-# brew install --cask raycast
 brew install --cask shifty
 brew install --cask spectacle
 brew install --cask stats
@@ -109,4 +103,3 @@ mas install 1423210932 # flow - focus & pomodoro timer
 mas install 1451685025 # wireguard
 mas install 539883307  # LINE
 mas install 568494494  # pocket
-# mas install 1274495053 # microsoft todo

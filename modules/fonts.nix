@@ -10,6 +10,7 @@
       font-awesome
       hack-font
       # ibm-plex
+      intel-one-mono
       inter
       iosevka
       jetbrains-mono
