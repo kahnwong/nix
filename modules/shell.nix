@@ -31,7 +31,6 @@ in
         unstable.fzf
         unstable.htop
         unstable.ncdu
-        unstable.nushell
         unstable.procs
         unstable.ripgrep
         unstable.tere

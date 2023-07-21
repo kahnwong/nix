@@ -98,6 +98,7 @@ brew install --cask yubico-yubikey-manager
 # peripheral software
 brew install --cask linearmouse
 brew install --cask logitech-camera-settings
+brew install --cask logitech-g-hub
 
 echo "================================= Install App Store applications ================================="
 mas install 1176895641 # spark

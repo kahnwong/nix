@@ -52,7 +52,7 @@ style = "#44FFD2"
 
 [kubernetes]
 disabled = false
-detect_folders = ["chart"]
+detect_extensions = ["yaml"]
 
 [package]
 disabled = true
