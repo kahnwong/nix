@@ -23,7 +23,6 @@ code --install-extension dorzey.vscode-sqlfluff
 code --install-extension esbenp.prettier-vscode
 code --install-extension flesler.url-encode
 code --install-extension gerane.Language-TodoTXT
-code --install-extension GitHub.github-vscode-theme
 code --install-extension github.vscode-github-actions
 code --install-extension GitHub.vscode-pull-request-github
 code --install-extension golang.go
@@ -38,6 +37,7 @@ code --install-extension marp-team.marp-vscode
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
 code --install-extension redhat.vscode-yaml
+code --install-extension shakram02.bash-beautify
 code --install-extension TabNine.tabnine-vscode
 code --install-extension TakumiI.markdowntable
 code --install-extension Terrastruct.d2
@@ -47,7 +47,6 @@ code --install-extension yaruson.ascii-unicode-escape
 code --install-extension zamerick.vscode-caddyfile-syntax
 
 # IDE
-# code --install-extension vscodevim.vim
 code --install-extension bladnman.auto-align
 code --install-extension christian-kohler.path-intellisense
 code --install-extension Gruntfuggly.todo-tree
@@ -59,6 +58,7 @@ code --install-extension ms-vscode.atom-keybindings
 code --install-extension ms-vscode.remote-explorer
 code --install-extension ms-vscode.remote-server
 code --install-extension mushan.vscode-paste-image
+code --install-extension vscodevim.vim
 
 # python
 code --install-extension donjayamanne.python-environment-manager
@@ -79,10 +79,11 @@ code --install-extension Infracost.infracost
 code --install-extension tfsec.tfsec
 
 # theme
+code --install-extension GitHub.github-vscode-theme
+code --install-extension PKief.material-icon-theme
 code --install-extension akamud.vscode-theme-onelight
 code --install-extension antfu.theme-vitesse
 code --install-extension garytyler.darcula-pycharm
-code --install-extension PKief.material-icon-theme
 code --install-extension sourcegraph.vscode-sourcegraph-theme
 code --install-extension vincentfiestada.cold-horizon-vscode
 code --install-extension zhuangtongfa.material-theme
