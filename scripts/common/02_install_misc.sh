@@ -38,6 +38,7 @@ pipx install topydo[columns]
 krew install nodepools
 krew install reap
 krew install status
+krew install stern
 
 ####################
 # git
