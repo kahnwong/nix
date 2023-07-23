@@ -73,7 +73,6 @@ code --install-extension ptweir.python-string-sql
 
 # terraform
 code --install-extension 4ops.terraform
-code --install-extension betajob.modulestf
 code --install-extension hashicorp.hcl
 code --install-extension hashicorp.terraform
 code --install-extension Infracost.infracost
