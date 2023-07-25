@@ -25,7 +25,7 @@ code --install-extension Terrastruct.d2
 code --install-extension WakaTime.vscode-wakatime
 code --install-extension bbenoist.Nix
 code --install-extension bmalehorn.vscode-fish
-code --install-extension bungcip.better-toml
+code --install-extension tamasfe.even-better-toml
 code --install-extension dorzey.vscode-sqlfluff
 code --install-extension esbenp.prettier-vscode
 code --install-extension flesler.url-encode
