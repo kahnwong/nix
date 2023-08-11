@@ -12,7 +12,7 @@
         unstable.sqlfluff
 
         # wrangling
-        unstable.visidata
+        visidata
       ];
 
       mac_only = [
