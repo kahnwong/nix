@@ -26,6 +26,7 @@ decrypt-credentials:
 update-brew:
 	brew upgrade --greedy
 	brew autoremove
+	brew cleanup
 
 # NIX
 update:
