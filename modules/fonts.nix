@@ -7,17 +7,17 @@
     [
       cascadia-code
       fira-code
-      font-awesome
-      hack-font
+      # font-awesome
+      # hack-font
       # ibm-plex
-      intel-one-mono
-      inter
-      iosevka
+      # intel-one-mono
+      # inter
+      # iosevka
       jetbrains-mono
       meslo-lgs-nf
-      national-park-typeface
+      # national-park-typeface
       powerline-fonts
-      source-code-pro
+      # source-code-pro
 
       (nerdfonts.override { fonts = [ "CascadiaCode" ]; })
     ];
