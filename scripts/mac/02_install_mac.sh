@@ -24,7 +24,7 @@ brew install --cask whatsapp
 brew install --cask zoom
 
 # data
-brew install --cask qgis
+# brew install --cask qgis
 brew install --cask tad
 brew install apache-spark
 
@@ -84,7 +84,6 @@ brew install --cask kap
 brew install --cask keepassxc
 brew install --cask keepingyouawake
 brew install --cask maccy
-brew install --cask mactracker
 brew install --cask michaelvillar-timer
 brew install --cask protonvpn
 brew install --cask raspberry-pi-imager
