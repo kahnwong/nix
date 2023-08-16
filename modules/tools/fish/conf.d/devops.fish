@@ -40,6 +40,10 @@ function terraformer-init
 end
 
 function tf-cost
+    infracost breakdown --path .
+end
+
+function tf-cost-html
     infracost breakdown \
         --format html \
         --out-file infracost-report.html \
