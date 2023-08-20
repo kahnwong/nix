@@ -77,8 +77,8 @@ brew install --cask bitwarden
 brew install --cask cheatsheet
 brew install --cask cloudflare-warp
 brew install --cask coconutbattery
-brew install --cask dozer
 brew install --cask flameshot
+brew install --cask hiddenbar
 brew install --cask hot
 brew install --cask kap
 brew install --cask keepassxc
