@@ -36,9 +36,9 @@ pipx install topydo[columns]
 # kubectl
 ############################
 krew install nodepools
-krew install reap
 krew install status
 krew install stern
+krew install outdated
 
 ####################
 # git
