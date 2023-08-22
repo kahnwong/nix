@@ -6,11 +6,9 @@ in
   imports = [
     ./tools/fish.nix
     ./tools/git.nix
-    ./tools/kitty.nix
     ./tools/nvim.nix
     ./tools/ssh.nix
     ./tools/starship.nix
-    ./tools/topydo.nix
     ./tools/wakatime.nix
     ./tools/yt-dlp.nix
     ./tools/zellij.nix
@@ -53,15 +51,8 @@ in
         unstable.onefetch
         unstable.pfetch
 
-        # utilities
-        unstable.ffmpeg
-        unstable.libqalculate
-        unstable.tz
-
         # custom packages
-        extraGolangPackages.def
         extraGolangPackages.fman
-        extraGolangPackages.totp-cli
       ];
 
       mac_only = [
@@ -69,7 +60,6 @@ in
 
       linux_only = [
         unstable.afetch
-        unstable.rio
         iotop
         progress
       ];

@@ -27,7 +27,6 @@
   imports = with pkgs;
     let
       base = [
-        ./modules/misc.nix
         ./modules/shell.nix
       ];
 
@@ -39,6 +38,7 @@
         ./modules/data-tools.nix
         ./modules/devops.nix
         ./modules/fonts.nix
+        ./modules/misc.nix
         ./modules/programming.nix
       ];
 

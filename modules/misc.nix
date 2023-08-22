@@ -1,13 +1,39 @@
 { config, pkgs, lib, ... }:
-
+let
+  extraGolangPackages = import ./pkgs/golang.nix;
+in
 {
-  home.packages = with pkgs;
-    [
-      # applications
-      unstable.beancount
-      unstable.fava
+  imports = [
+    ./tools/kitty.nix
+    ./tools/topydo.nix
+  ];
 
-      # static site generator
-      unstable.hugo
-    ];
+  home.packages = with pkgs;
+    let
+      common = [
+        # applications
+        unstable.beancount
+        unstable.fava
+
+        # static site generator
+        unstable.hugo
+
+        # utilities
+        unstable.ffmpeg
+        unstable.libqalculate
+        unstable.tz
+
+        # custom packages
+        extraGolangPackages.def
+        extraGolangPackages.totp-cli
+      ];
+
+      mac_only = [
+      ];
+
+      linux_only = [
+        unstable.rio
+      ];
+    in
+    common ++ (if stdenv.isLinux then linux_only else mac_only);
 }
