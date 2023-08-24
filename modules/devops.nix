@@ -18,12 +18,12 @@ in
         unstable.rsync
 
         # cloud
-        # extraGolangPackages.cloud-sql-proxy
+        extraGolangPackages.cloud-sql-proxy
         unstable.docker-credential-gcr
         (
           google-cloud-sdk.withExtraComponents [
             google-cloud-sdk.components.gke-gcloud-auth-plugin
-            google-cloud-sdk.components.cloud_sql_proxy
+            # google-cloud-sdk.components.cloud_sql_proxy # this is outdated
           ]
         )
 
