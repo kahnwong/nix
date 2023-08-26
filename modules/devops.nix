@@ -37,12 +37,16 @@ in
         # unstable.kompose
         unstable.helm-dashboard
         unstable.k9s
-        unstable.kube-capacity
         unstable.kubectl
-        unstable.krew
-        unstable.kubectx
         unstable.kubernetes-helm
+        unstable.pluto
+
+        # krew
+        unstable.krew
         unstable.ktop
+        unstable.kube-capacity
+        unstable.kubectx
+        unstable.stern
 
         ## security
         unstable.grype

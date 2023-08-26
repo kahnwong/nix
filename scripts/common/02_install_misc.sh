@@ -17,6 +17,7 @@ pyenv global $PYTHON_VERSION
 # applications - golang
 ############################
 go install github.com/techygrrrl/timerrr@latest
+go install github.com/peterldowns/nix-search-cli/cmd/nix-search@latest
 
 ############################
 # applications - node
@@ -37,7 +38,6 @@ pipx install topydo[columns]
 ############################
 krew install nodepools
 krew install status
-krew install stern
 krew install outdated
 
 ####################
