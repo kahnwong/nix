@@ -8,7 +8,7 @@ in
     ./tools/topydo.nix
   ];
 
-  home.file.".config/pg-conn-cli/db.yaml".source = ./tools/pg-conn-cli/db.yaml.txt;
+  home.file.".config/pgconn/db.yaml".source = ./tools/pgconn/db.yaml.txt;
 
   home.packages = with pkgs;
     let
