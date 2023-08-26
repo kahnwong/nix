@@ -16,7 +16,7 @@ end
 # IDE: VSCODE
 ############################
 function rcode
-    code --folder-uri=vscode-remote://ssh-remote+fringe-division/home/kahnwong/$argv/
+    code --folder-uri=vscode-remote://ssh-remote+nuc/home/kahnwong/$argv/
 end
 
 ########################
