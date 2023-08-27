@@ -9,8 +9,6 @@ in
     ./tools/nvim.nix
     ./tools/ssh.nix
     ./tools/starship.nix
-    ./tools/wakatime.nix
-    ./tools/yt-dlp.nix
     ./tools/zellij.nix
   ];
 
@@ -32,7 +30,6 @@ in
         unstable.procs
         unstable.ripgrep
         unstable.tere
-        unstable.thefuck
         unstable.tldr
         unstable.tmux
         unstable.tree
@@ -42,7 +39,6 @@ in
         # downloaders
         unstable.aria
         unstable.wget
-        unstable.yt-dlp
 
         # fetch
         unstable.cpufetch

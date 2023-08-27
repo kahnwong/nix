@@ -1,26 +1,11 @@
 #!/bin/bash
 
 ####################
-# prep mac
-####################
-if [[ $(uname -s) == 'Darwin' ]]; then
-	echo "========== Installing xcode cli development tools =========="
-	xcode-select --install
-
-	if [[ $(uname -m) == 'arm64' ]]; then
-		echo "========== Installing rosetta =========="
-		/usr/sbin/softwareupdate --install-rosetta --agree-to-license
-	fi
-fi
-
-####################
 # prep debian
 ####################
 if [[ $(uname -s) == 'Linux' ]]; then
 	echo "========== Installing build tools and other essentials =========="
-	sudo apt-get install build-essential g++ gcc libbz2-dev libc-dev liblzma-dev libncurses5-dev \
-		libncursesw5-dev libreadline-dev libsqlite3-dev libssl-dev libxml2-dev libxslt1-dev \
-		llvm make tk-dev xz-utils zlib1g-dev curl wget ntfs-3g \
+	sudo apt-get install make curl wget ntfs-3g \
 		-y
 fi
 

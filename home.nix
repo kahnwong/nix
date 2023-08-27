@@ -35,11 +35,6 @@
       ];
 
       workstation_only = [
-        ./modules/data-tools.nix
-        ./modules/devops.nix
-        ./modules/fonts.nix
-        ./modules/misc.nix
-        ./modules/programming.nix
       ];
 
     in
