@@ -27,21 +27,23 @@ in
           ]
         )
 
-        # containers
+        # docker
         ## docker
         unstable.ctop
         unstable.dive
         unstable.lazydocker
 
-        ## k8s
+        # k8s
         # unstable.kompose
         unstable.helm-dashboard
+        unstable.k3d
         unstable.k9s
+        unstable.kind
         unstable.kubectl
         unstable.kubernetes-helm
         unstable.pluto
 
-        # krew
+        ## krew
         unstable.krew
         unstable.ktop
         unstable.kube-capacity
