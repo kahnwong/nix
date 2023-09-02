@@ -24,6 +24,7 @@ in
         unstable.ffmpeg
         unstable.libqalculate
         unstable.tz
+        extraGolangPackages.timerrr
 
         # custom packages
         extraGolangPackages.def
