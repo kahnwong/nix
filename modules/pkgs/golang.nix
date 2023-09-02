@@ -57,15 +57,14 @@ with import <nixpkgs> { } ;
       sha256 = "sha256-kk+TW6nCUkV1FHEi+p4298JF9Im/aEWNoXPn5fueDj0=";
     };
 
-    # subPackages = [ "cmd/cloud-sql-proxy" ];
-
     vendorSha256 = "sha256-FzBHhQ90c3Kr7F43EGoDNEe2oKymy0Cw6uFr3awhN08=";
 
     preCheck = ''
       buildFlagsArray+="-short"
     '';
 
-    doChek = false;
+    doCheck = false;
+    doInstallCheck = false;
     dontCheck = true;
 
     meta = with lib; {
@@ -90,7 +89,7 @@ with import <nixpkgs> { } ;
 
   #     vendorSha256 = "sha256-X7SOleUyoVHWAdXuN8zonCvvLfeW5hNw/AIp0NwTKG0=";
 
-  #     doChek = false;
+  #     doCheck = false;
   #     dontCheck = true;
   #   };
 }
