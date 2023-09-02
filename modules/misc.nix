@@ -34,7 +34,6 @@ in
       ];
 
       linux_only = [
-        unstable.rio
       ];
     in
     common ++ (if stdenv.isLinux then linux_only else mac_only);
