@@ -48,16 +48,16 @@ with import <nixpkgs> { } ;
   # based on: https://github.com/NixOS/nixpkgs/blob/master/pkgs/tools/misc/cloud-sql-proxy/default.nix
   cloud-sql-proxy = buildGoModule rec {
     pname = "cloud-sql-proxy";
-    version = "2.6.1";
+    version = "2.4.0";
 
     src = fetchFromGitHub {
       owner = "GoogleCloudPlatform";
       repo = "cloud-sql-proxy";
       rev = "v${version}";
-      sha256 = "sha256-YbfN9ZdcxP78/dNaONBhb1UqcZYJcet+lHuKmvXk9MI=";
+      sha256 = "sha256-kk+TW6nCUkV1FHEi+p4298JF9Im/aEWNoXPn5fueDj0=";
     };
 
-    vendorSha256 = "sha256-2Cu9o26R9y2EBUB9kLf98n2AKFOE7NE1NrcMD+8pvRY=";
+    vendorSha256 = "sha256-FzBHhQ90c3Kr7F43EGoDNEe2oKymy0Cw6uFr3awhN08=";
 
     preCheck = ''
       buildFlagsArray+="-short"
