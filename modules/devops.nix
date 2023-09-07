@@ -38,6 +38,7 @@ in
         unstable.helm-dashboard
         unstable.k3d
         unstable.k9s
+        unstable.kdash
         unstable.kind
         unstable.kubectl
         unstable.kubernetes-helm

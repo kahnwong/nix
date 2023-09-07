@@ -17,6 +17,7 @@ pyenv global $PYTHON_VERSION
 # applications - golang
 ############################
 go install github.com/peterldowns/nix-search-cli/cmd/nix-search@latest
+go install github.com/saltfishpr/redis-viewer@latest
 
 ############################
 # applications - node
