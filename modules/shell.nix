@@ -7,7 +7,6 @@ in
     ./tools/fish.nix
     ./tools/git.nix
     ./tools/nvim.nix
-    ./tools/ssh.nix
     ./tools/starship.nix
     ./tools/zellij.nix
   ];
