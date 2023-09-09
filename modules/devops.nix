@@ -49,7 +49,6 @@ in
         unstable.ktop
         unstable.kube-capacity
         unstable.kubectx
-        unstable.stern
 
         ## security
         unstable.grype

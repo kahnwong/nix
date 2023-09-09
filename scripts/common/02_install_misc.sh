@@ -39,6 +39,7 @@ pipx install topydo[columns]
 krew install nodepools
 krew install status
 krew install outdated
+krew install images
 
 ####################
 # git
