@@ -55,6 +55,11 @@ in
         unstable.syft
         unstable.trivy
 
+        # database
+        unstable.postgresql
+        unstable.pgcli
+        unstable.mongodb-tools
+
         # docs
         unstable.d2
         unstable.graphviz
