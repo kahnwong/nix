@@ -4,6 +4,7 @@
 common:
 	./scripts/common/01_setup.sh
 	./scripts/common/02_install_misc.sh
+	./scripts/common/03_add_fish_completions.sh
 	cat ./post_installation_message.txt
 
 mac:
@@ -31,6 +32,7 @@ update-brew:
 # NIX
 update:
 	./scripts/update.sh
+	./scripts/common/03_add_fish_completions.sh
 
 apply:
 	./scripts/apply.sh
