@@ -16,6 +16,7 @@
         config = config.nixpkgs.config;
       };
     };
+    permittedInsecurePackages = [ "openssl-1.1.1v" ];
   };
 
   programs.home-manager.enable = true;

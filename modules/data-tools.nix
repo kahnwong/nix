@@ -4,6 +4,9 @@
   home.packages = with pkgs;
     let
       common = [
+        # big data
+        unstable.spark
+
         # linters
         unstable.sqlfluff
 
