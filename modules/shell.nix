@@ -24,14 +24,14 @@ in
         unstable.difftastic
         unstable.du-dust
         unstable.duf
-        unstable.exa
+        unstable.eza
         unstable.fd
         unstable.fzf
         unstable.htop
         unstable.ncdu
         unstable.procs
         unstable.ripgrep
-        unstable.tere
+        tere
         unstable.thefuck
         unstable.tldr
         unstable.tmux

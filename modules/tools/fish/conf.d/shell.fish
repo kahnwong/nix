@@ -1,5 +1,5 @@
 function ls
-    exa --icons -1 --group-directories-first $argv
+    eza --icons -1 --group-directories-first $argv
 end
 
 function cat
