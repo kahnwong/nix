@@ -35,10 +35,19 @@ set XDG_DATA_DIRS $HOME/.local/share/flatpak/exports/share:/var/lib/flatpak/expo
 # gpg
 set GPG_TTY tty
 
+# starship
+starship init fish | source
+
+# zoxide
+zoxide init fish | source
+
+# mcfly
+mcfly init fish | source
+set MCFLY_KEY_SCHEME vim
+
 ####################
-# CONFIG: CLOUD
+# CONFIG: GCP
 ####################
-# gcloud
 set GOOGLE_APPLICATION_CREDENTIALS $HOME/.config/gcloud/application_default_credentials.json
 
 ####################
@@ -60,13 +69,3 @@ pyenv init - | source
 status --is-interactive; and pyenv virtualenv-init - | source
 
 set pipenv_fish_fancy yes
-
-####################
-# PROMPT
-####################
-starship init fish | source
-
-####################
-# zoxide
-####################
-zoxide init fish | source

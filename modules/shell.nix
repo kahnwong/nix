@@ -28,6 +28,7 @@ in
         unstable.fd
         unstable.fzf
         unstable.htop
+        unstable.mcfly
         unstable.ncdu
         unstable.procs
         unstable.ripgrep
