@@ -60,7 +60,6 @@ home-manager switch
 ### fish
 curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish
 fish -c "fisher install franciscolourenco/done"
-fish -c "fisher install jethrokuan/z"
 fish -c "fisher install jorgebucaran/autopair.fish"
 fish -c "fisher install jorgebucaran/fisher"
 fish -c "fisher install jorgebucaran/nvm.fish"

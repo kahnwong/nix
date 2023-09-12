@@ -38,6 +38,7 @@ in
         unstable.tree
         unstable.viddy
         unstable.watch
+        unstable.zoxide
 
         # downloaders
         unstable.aria

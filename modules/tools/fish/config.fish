@@ -65,3 +65,8 @@ set pipenv_fish_fancy yes
 # PROMPT
 ####################
 starship init fish | source
+
+####################
+# zoxide
+####################
+zoxide init fish | source
