@@ -56,7 +56,7 @@ in
         unstable.trivy
 
         # database
-        unstable.postgresql
+        unstable.postgresql_15
         unstable.pgcli
         unstable.mongodb-tools
 
