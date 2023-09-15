@@ -29,6 +29,7 @@ in
         # custom packages
         extraGolangPackages.def
         extraGolangPackages.totp-cli
+        extraGolangPackages.email-to-epub
       ];
 
       mac_only = [

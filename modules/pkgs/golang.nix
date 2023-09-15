@@ -106,4 +106,19 @@ with import <nixpkgs> { } ;
 
       vendorSha256 = "sha256-JDOu7YdX9ztMZt0EFAMz++gD7n+Mn1VOe5g6XwrgS5M=";
     };
+
+  email-to-epub = buildGoModule
+    rec {
+      pname = "gonejack";
+      version = "1.1";
+
+      src = fetchFromGitHub {
+        owner = "gonejack";
+        repo = "email-to-epub";
+        rev = "v${version}";
+        sha256 = "sha256-L937JXNk5X8gfHDR3cDMEq4Bw6uOqRwuq6mNABiNYlQ=";
+      };
+
+      vendorSha256 = "sha256-2byn8zRevHfFPYkKbDkDkVrFqwNKU7DhWFRr+E/Cb9Y=";
+    };
 }

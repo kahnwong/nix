@@ -17,7 +17,6 @@ pyenv global $PYTHON_VERSION
 # applications - golang
 ############################
 go install github.com/saltfishpr/redis-viewer@latest
-go install github.com/gonejack/email-to-epub@latest
 
 ############################
 # applications - node
