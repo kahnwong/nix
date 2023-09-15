@@ -9,3 +9,6 @@ mv fish-shell/share/completions/*.fish ~/.config/fish/completions/
 
 cd .. || exit
 rm -rf temp
+
+## docker
+wget --backups 0 -P ~/.config/fish/completions https://raw.githubusercontent.com/docker/cli/master/contrib/completion/fish/docker.fish
