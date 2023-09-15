@@ -91,4 +91,19 @@ with import <nixpkgs> { } ;
       doCheck = false;
       dontCheck = true;
     };
+
+  nix-search-cli = buildGoModule
+    rec {
+      pname = "peterldowns";
+      version = "release-1694534186-f3f1c53";
+
+      src = fetchFromGitHub {
+        owner = "peterldowns";
+        repo = "nix-search-cli";
+        rev = "${version}";
+        sha256 = "sha256-YM1Lf7py79rU8aJE0PfQaMr5JWx5J1covUf1aCjRkc8=";
+      };
+
+      vendorSha256 = "sha256-JDOu7YdX9ztMZt0EFAMz++gD7n+Mn1VOe5g6XwrgS5M=";
+    };
 }

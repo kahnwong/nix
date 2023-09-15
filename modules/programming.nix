@@ -1,10 +1,13 @@
 { config, pkgs, lib, ... }:
-
+let
+  extraGolangPackages = import ./pkgs/golang.nix;
+in
 {
   home.packages = with pkgs;
     [
       # nix
       unstable.nixpkgs-fmt
+      extraGolangPackages.nix-search-cli
 
       # golang
       unstable.go
@@ -39,6 +42,7 @@
       gdal # for build env
       unstable.black
       unstable.pipenv
+      unstable.poetry
       unstable.python310Packages.pipx
       unstable.ruff
 
