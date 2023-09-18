@@ -17,7 +17,6 @@ set PATH \
     $HOME/.local/bin \
     $HOME/.npm-global/bin \
     $HOME/.krew/bin \
-    $HOME/.fig/bin \
     /opt/homebrew/bin \
     /usr/local/bin \
     /usr/local/sbin \
