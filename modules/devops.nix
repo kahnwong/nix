@@ -73,8 +73,9 @@ in
         # networking
         unstable.curl
         unstable.dogdns
-        gping
+        unstable.gping
         unstable.httpie
+        unstable.hurl
         unstable.rustscan
         unstable.speedtest-cli
 
