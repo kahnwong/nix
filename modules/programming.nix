@@ -11,14 +11,14 @@ in
 
       # golang
       unstable.go
-      unstable.golangci-lint
+      # unstable.golangci-lint
 
       # html
       unstable.htmlq
 
       # java
       temurin-bin
-      maven
+      # maven
 
       # json
       unstable.fx
@@ -35,11 +35,11 @@ in
       unstable.nodePackages_latest.npm
       unstable.yarn
 
-      # rust
-      unstable.cargo
+      # # rust
+      # unstable.cargo
 
       # python
-      gdal # for build env
+      # gdal # for build env
       unstable.black
       unstable.pipenv
       unstable.poetry
