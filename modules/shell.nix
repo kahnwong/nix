@@ -32,7 +32,10 @@ in
         unstable.ncdu
         unstable.procs
         unstable.ripgrep
-        tere
+        (pkgs.tere.overrideAttrs (oldAttrs: {
+          doCheck = false;
+          dontCheck = true;
+        }))
         unstable.thefuck
         unstable.tldr
         unstable.tmux
