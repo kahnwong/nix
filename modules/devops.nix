@@ -78,6 +78,7 @@ in
         unstable.hurl
         unstable.rustscan
         unstable.speedtest-cli
+        unstable.xh
 
         # secretops
         unstable.bitwarden-cli
