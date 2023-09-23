@@ -5,20 +5,23 @@
 
   home.packages = with pkgs;
     [
-      cascadia-code
-      fira-code
       # font-awesome
-      # hack-font
-      # ibm-plex
-      # intel-one-mono
       # inter
-      # iosevka
-      jetbrains-mono
-      meslo-lgs-nf
       # national-park-typeface
       powerline-fonts
-      # source-code-pro
 
-      (nerdfonts.override { fonts = [ "CascadiaCode" ]; })
+      (nerdfonts.override {
+        fonts = [
+          "CascadiaCode"
+          "FiraCode"
+          "JetBrainsMono"
+          "Meslo"
+          # "Hack"
+          # "IBMPlexMono"
+          # "IntelOneMono"
+          # "Iosevka"
+          # "SourceCodePro"
+        ];
+      })
     ];
 }
