@@ -13,8 +13,8 @@ in
     let
       common = [
         # # backup
-        # unstable.rclone
-        # unstable.restic
+        unstable.rclone
+        unstable.restic
         unstable.rsync
 
         # cloud
