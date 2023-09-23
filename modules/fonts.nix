@@ -8,6 +8,7 @@
       # font-awesome
       # inter
       # national-park-typeface
+      meslo-lgs-nf # for terminal
       powerline-fonts
 
       (nerdfonts.override {
@@ -15,7 +16,6 @@
           "CascadiaCode"
           "FiraCode"
           "JetBrainsMono"
-          "Meslo"
           # "Hack"
           # "IBMPlexMono"
           # "IntelOneMono"
