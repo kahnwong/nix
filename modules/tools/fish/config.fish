@@ -17,6 +17,7 @@ set PATH \
     $HOME/.local/bin \
     $HOME/.npm-global/bin \
     $HOME/.krew/bin \
+    /Applications/IntelliJ\ IDEA.app/Contents/MacOS \
     /opt/homebrew/bin \
     /usr/local/bin \
     /usr/local/sbin \
