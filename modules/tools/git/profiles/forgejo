@@ -1,0 +1,4 @@
+[user]
+	email = "karn@karnwong.me"
+	name = "kahnwong"
+	signingkey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ5lU0BXrGslL/visgnO3aRcwH8fJHJqcqDFeJeFH5El karn@karnwong.me"
