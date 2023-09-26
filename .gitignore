@@ -4,8 +4,9 @@
 # fish
 work.fish
 
-# vscode
+# ide
 settings.json
+.idea
 
 # aws
 **/aws/config
@@ -16,6 +17,10 @@ keys.txt
 
 # ssh
 **/ssh/config
+**/ssh/config.d/homelab
+**/ssh/config.d/vps
+**/ssh/config.d/work
+**/ssh/config.d/work-legacy
 
 # wakatime
 wakatime.cfg
