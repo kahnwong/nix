@@ -17,6 +17,7 @@ pyenv global $PYTHON_VERSION
 # applications - golang
 ############################
 go install github.com/saltfishpr/redis-viewer@latest
+go install golang.org/x/tools/cmd/goimports@latest
 
 ############################
 # applications - node
