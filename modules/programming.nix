@@ -18,6 +18,7 @@ in
 
       # java
       temurin-bin
+      gradle
       # maven
 
       # json

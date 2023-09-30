@@ -50,6 +50,9 @@ in
         unstable.kube-capacity
         unstable.kubectx
 
+        # deployment
+        unstable.waypoint
+
         ## security
         unstable.grype
         unstable.syft
