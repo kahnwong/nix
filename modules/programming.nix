@@ -12,6 +12,7 @@ in
       # golang
       unstable.go
       unstable.golangci-lint
+      unstable.gopls
 
       # html
       unstable.htmlq
