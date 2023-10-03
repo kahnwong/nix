@@ -12,7 +12,7 @@ in
   home.packages = with pkgs;
     let
       common = [
-        # # backup
+        # backup
         unstable.rclone
         unstable.restic
         unstable.rsync
@@ -49,9 +49,6 @@ in
         unstable.ktop
         unstable.kube-capacity
         unstable.kubectx
-
-        # deployment
-        unstable.waypoint
 
         ## security
         unstable.grype
