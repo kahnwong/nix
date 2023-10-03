@@ -27,30 +27,6 @@ set PATH \
     /sbin
 
 ####################
-# CONFIG: MISC
-####################
-# flatpak on linux
-set XDG_DATA_DIRS $HOME/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:$XDG_DATA_DIRS
-
-# gpg
-set GPG_TTY tty
-
-# starship
-starship init fish | source
-
-# zoxide
-zoxide init fish | source
-
-# mcfly
-mcfly init fish | source
-set MCFLY_KEY_SCHEME vim
-
-####################
-# CONFIG: GCP
-####################
-set GOOGLE_APPLICATION_CREDENTIALS $HOME/.config/gcloud/application_default_credentials.json
-
-####################
 # CONFIG: RUNTIME
 ####################
 # golang
@@ -69,3 +45,30 @@ pyenv init - | source
 status --is-interactive; and pyenv virtualenv-init - | source
 
 set pipenv_fish_fancy yes
+
+####################
+# CONFIG: TOOLS
+####################
+# flatpak on linux
+set XDG_DATA_DIRS $HOME/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:$XDG_DATA_DIRS
+
+# gpg
+set GPG_TTY tty
+
+# starship
+starship init fish | source
+
+# zoxide
+zoxide init fish | source
+
+# mcfly
+mcfly init fish | source
+set MCFLY_KEY_SCHEME vim
+
+# pgconn
+pgconn completion fish | source
+
+####################
+# CONFIG: GCP
+####################
+set GOOGLE_APPLICATION_CREDENTIALS $HOME/.config/gcloud/application_default_credentials.json
