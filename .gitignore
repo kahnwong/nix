@@ -27,3 +27,4 @@ wakatime.cfg
 
 # misc
 db.yaml.txt
+*.plaintext.*

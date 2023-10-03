@@ -9,6 +9,7 @@ in
   ];
 
   home.file.".config/pgconn/db.yaml".source = ./tools/pgconn/db.yaml.txt;
+  home.file.".config/totp/totp.yaml".source = ./tools/totp/totp.yaml.plaintext.txt;
 
   home.packages = with pkgs;
     let
