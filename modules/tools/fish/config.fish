@@ -68,6 +68,9 @@ set MCFLY_KEY_SCHEME vim
 # pgconn
 pgconn completion fish | source
 
+# totp
+totp completion fish | source
+
 ####################
 # CONFIG: GCP
 ####################
