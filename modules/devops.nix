@@ -43,6 +43,7 @@ in
         unstable.kubectl
         unstable.kubernetes-helm
         unstable.pluto
+        unstable.argocd
 
         ## krew
         unstable.krew
