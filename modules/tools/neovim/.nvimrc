@@ -35,3 +35,6 @@ filetype plugin on
 
 let g:airline_theme='onedark'
 let g:airline_powerline_fonts = 1
+
+" Search settings
+set ignorecase " Ignore casing of searches
