@@ -1,10 +1,8 @@
 #!/bin/bash
 
-if [ -f ".env" ]; then
-	source .env
-else
-	echo ".env doesn't exist! Please create .env and populate variables."
-	exit 1
-fi
+if [[ $(uname -s) == 'Darwin' ]]; then
+	nix build && sudo ./result/activate
 
-home-manager switch
+elif [[ $(uname -s) == 'Linux' ]]; then
+	nix build && ./result/activate
+fi

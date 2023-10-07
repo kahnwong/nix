@@ -31,30 +31,13 @@ sh <(curl -L https://nixos.org/nix/install) --daemon
 
 export PATH=$PATH:/nix/var/nix/profiles/default/bin/
 
-nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
-nix-channel --add https://nixos.org/channels/nixpkgs-unstable unstable
-nix-channel --update
-
 # temporary since during init only bash/zsh shell is available
 export NIX_PATH=$HOME/.nix-defexpr/channels:/nix/var/nix/profiles/per-user/root/channels${NIX_PATH:+:$NIX_PATH}
 export PATH=$PATH:/nix/var/nix/profiles/default/bin/
 export PATH=$PATH:$HOME/.nix-profile/bin
 # export NIXPKGS_ALLOW_INSECURE=1
 
-rm -f ~/.config/home-manager/home.nix
-
-mkdir -p "$HOME/.config/home-manager"
-ln -s "$PWD"/* "$HOME/.config/home-manager"
-
-if [ -f ".env" ]; then
-	source .env
-else
-	echo ".env doesn't exist! Please create .env and populate variables."
-	exit 1
-fi
-
-nix-shell '<home-manager>' -A install
-home-manager switch
+./scripts/apply.sh
 
 # these stay here because their source config is populated via nix
 ### fish
