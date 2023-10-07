@@ -35,11 +35,16 @@
         specialArgs = { inherit nixpkgs; };
       };
       debianSystem = home-manager.lib.homeManagerConfiguration {
-        system = "x86_64-linux";
-        configuration = homeManagerConfFor ./hosts/nuc/home.nix;
-        homeDirectory = "/home/kahnwong";
-        username = "kahnwong";
-        specialArgs = { inherit nixpkgs; };
+        pkgs = nixpkgs.legacyPackages.x86_64-linux;
+        modules = [
+          ./hosts/nuc/home.nix
+          {
+            home = {
+              username = "kahnwong";
+              homeDirectory = "/home/kahnwong";
+            };
+          }
+        ];
       };
     in
     {

@@ -14,9 +14,6 @@
   home = {
     stateVersion = "23.05";
     packages = with pkgs; [
-      # nix
-      home-manager
-
       # shell
       bat
       colordiff

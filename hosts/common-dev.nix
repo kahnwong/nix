@@ -18,6 +18,10 @@
       python310Packages.pipx
       ruff
 
+      # shell - linters
+      shellcheck
+      shfmt
+
       # kubernetes
       k9s
       kubectl

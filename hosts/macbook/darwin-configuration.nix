@@ -5,7 +5,8 @@
   ];
   environment.systemPackages = with pkgs;
     [
-
+      # nix
+      home-manager # this needs to stay here
     ];
 
   fonts = {

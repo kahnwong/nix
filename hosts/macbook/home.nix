@@ -38,10 +38,6 @@ in
     # # rust
     # cargo
 
-    # shell - linters
-    shellcheck
-    shfmt
-
     ################################################################
     # backup
     rclone
