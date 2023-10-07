@@ -1,30 +1,8 @@
-# env
-.env
-
-# fish
-work.fish
+# nix
+result
 
 # ide
-settings.json
 .idea
 
-# aws
-**/aws/config
-**/aws/credentials
-
-# sops
-keys.txt
-
-# ssh
-**/ssh/config
-**/ssh/config.d/homelab
-**/ssh/config.d/vps
-**/ssh/config.d/work
-**/ssh/config.d/work-legacy
-
-# wakatime
-wakatime.cfg
-
-# misc
-db.yaml.txt
-*.plaintext.*
+# vscode
+settings.json
