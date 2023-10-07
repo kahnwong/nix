@@ -1,5 +1,7 @@
 # nix
 
+Flake migration based on <https://github.com/sebastiant/dotfiles>.
+
 ## Usage
 
 ```bash
