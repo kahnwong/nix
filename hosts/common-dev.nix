@@ -22,6 +22,9 @@
       shellcheck
       shfmt
 
+      # containers
+      buildpack
+
       # kubernetes
       k9s
       kubectl
