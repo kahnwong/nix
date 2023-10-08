@@ -31,7 +31,7 @@
       macbookSpare = darwin.lib.darwinSystem {
         system = "x86_64-darwin";
         modules = [
-          ./hosts/macbook/darwin-configuration.nix
+          ./hosts/macbook/base/darwin-configuration.nix
           home-manager.darwinModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
