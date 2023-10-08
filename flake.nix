@@ -52,6 +52,18 @@
           }
         ];
       };
+      server = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.x86_64-linux;
+        modules = [
+          ./hosts/server/home.nix
+          {
+            home = {
+              username = "kahnwong";
+              homeDirectory = "/home/kahnwong";
+            };
+          }
+        ];
+      };
     };
   };
 }
