@@ -22,7 +22,7 @@ go install github.com/GoogleCloudPlatform/cloud-sql-proxy/v2@latest
 go install github.com/kahnwong/pgconn@latest
 go install github.com/kahnwong/totp@latest
 go install github.com/nore-dev/fman@latest
-go install github.com/peterldowns/nix-search-cli@latest
+go install github.com/peterldowns/nix-search-cli/cmd/nix-search@latest
 go install github.com/saltfishpr/redis-viewer@latest
 go install github.com/techygrrrl/timerrr@latest
 go install golang.org/x/tools/cmd/goimports@latest

@@ -33,7 +33,6 @@ in
 
     # nix
     nixpkgs-fmt
-    # extraGolangPackages.nix-search-cli
 
     # # rust
     # cargo
