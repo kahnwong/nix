@@ -37,6 +37,7 @@ export PATH=$PATH:/nix/var/nix/profiles/default/bin/
 export PATH=$PATH:$HOME/.nix-profile/bin
 # export NIXPKGS_ALLOW_INSECURE=1
 
+chmod +x ./scripts/apply.sh
 ./scripts/apply.sh
 
 # these stay here because their source config is populated via nix

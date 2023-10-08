@@ -14,39 +14,33 @@
     };
   };
 
-  outputs = { darwin, home-manager, nixpkgs, ... }:
-    let
-      homeManagerConfFor = config:
-        { ... }: {
-          nixpkgs.overlays = [
-          ];
-          imports = [ config ];
-        };
-      darwinSystem = darwin.lib.darwinSystem {
+  outputs = { darwin, home-manager, nixpkgs, ... }: {
+    homeManagerConfigurations = {
+      macbook = darwin.lib.darwinSystem {
         system = "aarch64-darwin";
         modules = [
           ./hosts/macbook/darwin-configuration.nix
           home-manager.darwinModules.home-manager
           {
-            home-manager.users.kahnwong =
-              homeManagerConfFor ./hosts/macbook/home.nix;
+            home-manager.useGlobalPkgs = true;
+            home-manager.users.kahnwong = ./hosts/macbook/home.nix;
           }
         ];
         specialArgs = { inherit nixpkgs; };
       };
-      darwinSystemIntel = darwin.lib.darwinSystem {
+      macbookSpare = darwin.lib.darwinSystem {
         system = "x86_64-darwin";
         modules = [
           ./hosts/macbook/darwin-configuration.nix
           home-manager.darwinModules.home-manager
           {
-            home-manager.users.kahnwong =
-              homeManagerConfFor ./hosts/macbook/home.nix;
+            home-manager.useGlobalPkgs = true;
+            home-manager.users.kahnwong = ./hosts/macbook/home.nix;
           }
         ];
         specialArgs = { inherit nixpkgs; };
       };
-      debianSystem = home-manager.lib.homeManagerConfiguration {
+      nuc = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         modules = [
           ./hosts/nuc/home.nix
@@ -58,11 +52,6 @@
           }
         ];
       };
-    in
-    {
-      debian = debianSystem.activationPackage;
-      defaultPackage.x86_64-linux = debianSystem.activationPackage;
-      defaultPackage.aarch64-darwin = darwinSystem.system;
-      defaultPackage.x86_64-darwin = darwinSystemIntel.system;
     };
+  };
 }

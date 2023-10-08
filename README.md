@@ -2,6 +2,35 @@
 
 Flake migration based on <https://github.com/sebastiant/dotfiles>.
 
+## Pre-requisites
+
+Edit `./scripts/apply.sh` and set appropriate build command. See `flake.nix` for available options.
+
+Examples:
+
+```bash
+# macbook
+nix build '.#homeManagerConfigurations.macbook.system'
+
+# linux
+nix build '.#homeManagerConfigurations.nuc.activationPackage'
+```
+
+File content should look like this:
+
+```bash
+#!/bin/bash
+
+$BUILD_COMMAND --experimental-features 'nix-command flakes'
+
+if [[ $(uname -s) == 'Darwin' ]]; then
+    sudo ./result/activate
+
+    elif [[ $(uname -s) == 'Linux' ]]; then
+    ./result/activate
+fi
+```
+
 ## Usage
 
 ```bash
