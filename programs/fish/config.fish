@@ -69,10 +69,10 @@ mcfly init fish | source
 set MCFLY_KEY_SCHEME vim
 
 # pgconn
-pgconn completion fish | source
+if type -p pgconn; pgconn completion fish | source; end
 
 # totp
-totp completion fish | source
+if type -p totp; totp completion fish | source; end
 
 ####################
 # CONFIG: GCP
