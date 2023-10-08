@@ -3,12 +3,28 @@
 
 { pkgs, ... }:
 {
+  imports = [
+    ../programs/aws/aws.nix
+  ];
+
   home = {
     packages = with pkgs; [
+      # golang
+      golangci-lint
+      gopls
+
+      # java
+      temurin-bin
+      gradle
+      # maven
+
       # node
       nodejs
       nodePackages_latest.npm
       yarn
+
+      # nix
+      nixpkgs-fmt
 
       # python
       # gdal # for build env
@@ -17,6 +33,10 @@
       poetry
       python310Packages.pipx
       ruff
+
+      # markdown
+      nodePackages_latest.markdownlint-cli
+      nodePackages.markdown-link-check
 
       # shell - linters
       shellcheck
@@ -29,6 +49,7 @@
       k9s
       kubectl
       kubernetes-helm
+      kubectx
 
       # database
       postgresql_15
@@ -37,7 +58,6 @@
       # secretops
       bitwarden-cli
       keyscope
-      sops
 
       # api testing
       httpie
@@ -57,7 +77,14 @@
       tfsec
       tflint
 
+      # data
+      sqlfluff
+      visidata
+
       # misc
+      hugo
+      libqalculate
+      tz
       wakatime
     ];
   };

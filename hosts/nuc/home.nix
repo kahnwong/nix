@@ -9,6 +9,7 @@ in
     ../common.nix
     ../common-linux.nix
     ../common-dev.nix
+    ../misc.nix
     ../../programs/non-free.nix
   ];
 

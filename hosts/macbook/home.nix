@@ -8,43 +8,14 @@ in
   imports = [
     ../common.nix
     ../common-dev.nix
+    ../misc.nix
     ../../programs/non-free.nix
     ../../programs/kitty/kitty.nix
   ];
   home.packages = with pkgs; [
-    # golang
-    golangci-lint
-    gopls
-
-    # # html
-    # htmlq
-
-    # java
-    temurin-bin
-    gradle
-    # maven
-
-    # json
-    gron
-
-    # markdown
-    nodePackages_latest.markdownlint-cli
-    nodePackages.markdown-link-check
-
-    # nix
-    nixpkgs-fmt
-
-    # # rust
-    # cargo
-
-    ################################################################
     # backup
     rclone
     restic
-
-    # data
-    sqlfluff
-    visidata
 
     # devops
     docker-credential-gcr
@@ -68,7 +39,6 @@ in
     krew
     ktop
     kube-capacity
-    kubectx
 
     ## security
     grype
@@ -87,6 +57,5 @@ in
 
     # misc
     caddy
-    hugo
   ];
 }

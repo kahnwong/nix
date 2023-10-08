@@ -1,13 +1,10 @@
 { pkgs, ... }:
 {
   imports = [
-    ../programs/aws/aws.nix
     ../programs/fish/fish.nix
     ../programs/git/git.nix
     ../programs/nvim/nvim.nix
     ../programs/starship/starship.nix
-    ../programs/topydo/topydo.nix
-    ../programs/yt-dlp/yt-dlp.nix
     ../programs/zellij/zellij.nix
   ];
 
@@ -47,9 +44,6 @@
       ncdu
       procs
 
-      # runtime
-      go
-
       # fetch
       cpufetch
       ipfetch
@@ -67,11 +61,13 @@
       aria
       wget
 
+      # runtime
+      go
+
       # utils
       entr
-      libqalculate
       tldr
-      tz
+      sops
     ];
   };
 }
