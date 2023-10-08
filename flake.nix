@@ -16,14 +16,14 @@
 
   outputs = { darwin, home-manager, nixpkgs, ... }: {
     homeManagerConfigurations = {
-      macbook = darwin.lib.darwinSystem {
+      macbookMain = darwin.lib.darwinSystem {
         system = "aarch64-darwin";
         modules = [
-          ./hosts/macbook/darwin-configuration.nix
+          ./hosts/macbook/base/darwin-configuration.nix
           home-manager.darwinModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
-            home-manager.users.kahnwong = ./hosts/macbook/home.nix;
+            home-manager.users.kahnwong = ./hosts/macbook/main/home.nix;
           }
         ];
         specialArgs = { inherit nixpkgs; };
@@ -35,7 +35,7 @@
           home-manager.darwinModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
-            home-manager.users.kahnwong = ./hosts/macbook/home.nix;
+            home-manager.users.kahnwong = ./hosts/macbook/spare/home.nix;
           }
         ];
         specialArgs = { inherit nixpkgs; };
