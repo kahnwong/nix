@@ -52,6 +52,9 @@ set pipenv_fish_fancy yes
 # flatpak on linux
 set XDG_DATA_DIRS $HOME/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:$XDG_DATA_DIRS
 
+# fzf
+export FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git \) -prune -o -print'
+
 # gpg
 set GPG_TTY tty
 

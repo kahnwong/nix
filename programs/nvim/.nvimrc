@@ -38,3 +38,4 @@ let g:airline_powerline_fonts = 1
 
 " Search settings
 set ignorecase " Ignore casing of searches
+set wildignore=*/node_modules/*
