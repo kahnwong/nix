@@ -8,7 +8,6 @@ in
   imports = [
     ../common.nix
     ../common-linux.nix
-    ../../programs/non-free.nix
   ];
 
   home.packages = with pkgs; [

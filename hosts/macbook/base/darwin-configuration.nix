@@ -1,7 +1,6 @@
 { pkgs, nix, nixpkgs, config, lib, ... }:
 {
   imports = [
-    ../../../programs/non-free.nix
   ];
   environment.systemPackages = with pkgs;
     [

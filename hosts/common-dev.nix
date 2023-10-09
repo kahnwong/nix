@@ -7,6 +7,10 @@
     ../programs/aws/aws.nix
   ];
 
+  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (pkgs.lib.getName pkg) [
+    "terraform"
+  ];
+
   home = {
     packages = with pkgs; [
       # golang
@@ -66,8 +70,6 @@
       xh
 
       # terraform
-      terraform
-
       ## tools
       terraform-docs
       terraformer
