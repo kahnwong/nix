@@ -58,8 +58,8 @@
           ./hosts/server/home.nix
           {
             home = {
-              username = "kahnwong";
-              homeDirectory = "/home/kahnwong";
+              username = "ubuntu";
+              homeDirectory = "/home/ubuntu";
             };
           }
         ];
