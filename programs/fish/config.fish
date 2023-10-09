@@ -40,9 +40,9 @@ set PATH $PATH:/nix/var/nix/profiles/default/bin/
 
 # python
 set PYENV_VERSION 3.11.3
-if type -p pyenv; pyenv init - | source; end
+if type -p pyenv > /dev/null; pyenv init - | source; end
 
-status --is-interactive; and if type -p pyenv; pyenv virtualenv-init - | source; end
+status --is-interactive; and if type -p pyenv > /dev/null; pyenv virtualenv-init - | source; end
 
 set pipenv_fish_fancy yes
 
@@ -69,10 +69,10 @@ mcfly init fish | source
 set MCFLY_KEY_SCHEME vim
 
 # pgconn
-if type -p pgconn; pgconn completion fish | source; end
+if type -p pgconn > /dev/null; pgconn completion fish | source; end
 
 # totp
-if type -p totp; totp completion fish | source; end
+if type -p totp > /dev/null; totp completion fish | source; end
 
 ####################
 # CONFIG: GCP
