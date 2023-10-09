@@ -40,9 +40,9 @@ set PATH $PATH:/nix/var/nix/profiles/default/bin/
 
 # python
 set PYENV_VERSION 3.11.3
-pyenv init - | source
+if type -p pyenv; pyenv init - | source; end
 
-status --is-interactive; and pyenv virtualenv-init - | source
+status --is-interactive; and if type -p pyenv; pyenv virtualenv-init - | source; end
 
 set pipenv_fish_fancy yes
 
