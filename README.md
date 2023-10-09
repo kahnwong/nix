@@ -35,6 +35,9 @@ fi
 
 ```bash
 make common
+
+# optional
+make common-dev
 ```
 
 ### Mac OS Extras

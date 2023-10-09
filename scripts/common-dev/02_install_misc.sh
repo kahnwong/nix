@@ -1,7 +1,5 @@
 #!/bin/bash
 
-export PATH=$PATH:$HOME/.nix-profile/bin
-
 ############################
 # python - pyenv
 ############################
@@ -29,18 +27,18 @@ go install github.com/techygrrrl/timerrr@latest
 go install golang.org/x/tools/cmd/goimports@latest
 
 ############################
-# applications - node
-############################
-npm set prefix ~/.npm-global
-npm install -g @jaebradley/wakatime-cli
-
-############################
 # applications - python
 ############################
 pipx install nbpreview
 pipx install pip_search
 pipx install dvc[s3]
 pipx install topydo[columns]
+
+############################
+# applications - node
+############################
+npm set prefix ~/.npm-global
+npm install -g @jaebradley/wakatime-cli
 
 ############################
 # kubectl
