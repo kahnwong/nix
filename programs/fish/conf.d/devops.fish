@@ -35,10 +35,6 @@ end
 ########################
 # INFRA: TERRAFORM
 ########################
-function terraform
-    tofu $argv
-end
-
 function terraformer-init
     terraform state replace-provider -auto-approve registry.terraform.io/-/aws hashicorp/aws && terraform init
 end
