@@ -21,7 +21,8 @@ File content should look like this:
 ```bash
 #!/bin/bash
 
-$BUILD_COMMAND --experimental-features 'nix-command flakes'
+export NIXPKGS_ALLOW_UNFREE=1
+$BUILD_COMMAND --experimental-features 'nix-command flakes'  --impure
 
 if [[ $(uname -s) == 'Darwin' ]]; then
     sudo ./result/activate

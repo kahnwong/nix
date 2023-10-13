@@ -66,6 +66,7 @@
       xh
 
       # terraform
+      terraform # non-free
       opentofu
 
       ## tools
