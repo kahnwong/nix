@@ -34,6 +34,9 @@
       python310Packages.pipx
       ruff
 
+      # rust
+      rustc
+
       # markdown
       nodePackages_latest.markdownlint-cli
       nodePackages.markdown-link-check
