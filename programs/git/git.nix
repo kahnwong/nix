@@ -16,6 +16,11 @@
       };
     };
 
+    # default
+    userName = "kahnwong";
+    userEmail = "karn@karnwong.me";
+    signing.key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ5lU0BXrGslL/visgnO3aRcwH8fJHJqcqDFeJeFH5El karn@karnwong.me";
+
     extraConfig = {
       diff.colorMoved = "default";
       merge.conflictstyle = "diff3";
@@ -33,6 +38,7 @@
       };
 
       ### git profiles
+      # optional
       includeIf."gitdir:~/Git/" = {
         path = "profiles/github";
       };
