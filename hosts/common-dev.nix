@@ -5,6 +5,7 @@
 {
   imports = [
     ../programs/aws/aws.nix
+    ../programs/git/git.nix
   ];
 
   home = {

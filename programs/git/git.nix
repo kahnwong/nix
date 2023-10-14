@@ -21,6 +21,7 @@
       merge.conflictstyle = "diff3";
       # url."git@github.com:".insteadOf = "https://github.com/";
 
+      ### commit signing
       gpg.format = "ssh";
 
       commit = lib.mkIf pkgs.stdenv.isDarwin {
@@ -30,11 +31,12 @@
       credential = lib.mkIf pkgs.stdenv.isDarwin {
         helper = "osxkeychain";
       };
+
       ### git profiles
-      includeIf."gitdir:**/Git/**/.git" = {
+      includeIf."gitdir:~/Git/" = {
         path = "profiles/github";
       };
-      includeIf."gitdir:**/Git-forgejo/**/.git" = {
+      includeIf."gitdir:~/Git-forgejo/" = {
         path = "profiles/forgejo";
       };
     };
