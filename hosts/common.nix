@@ -37,6 +37,7 @@
 
       # system
       ctop
+      lazydocker
       du-dust
       duf
       htop
