@@ -43,7 +43,7 @@
       nuc = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         modules = [
-          ./hosts/nuc/home.nix
+          ./hosts/linux/dev/home.nix
           {
             home = {
               username = "kahnwong";
@@ -55,11 +55,23 @@
       server = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         modules = [
-          ./hosts/server/home.nix
+          ./hosts/linux/server/home.nix
           {
             home = {
               username = "ubuntu";
               homeDirectory = "/home/ubuntu";
+            };
+          }
+        ];
+      };
+      utm = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.aarch64-linux;
+        modules = [
+          ./hosts/linux/dev/home.nix
+          {
+            home = {
+              username = "kahnwong";
+              homeDirectory = "/home/kahnwong";
             };
           }
         ];

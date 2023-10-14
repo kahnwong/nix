@@ -6,10 +6,10 @@ let
 in
 {
   imports = [
-    ../common.nix
-    ../common-linux.nix
-    ../common-dev.nix
-    ../misc.nix
+    ../../common.nix
+    ../../common-linux.nix
+    ../../common-dev.nix
+    ../../misc.nix
   ];
 
   home.packages = with pkgs; [
