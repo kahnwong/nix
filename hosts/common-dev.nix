@@ -36,7 +36,7 @@
       ruff
 
       # rust
-      rustc
+      rustup
 
       # markdown
       nodePackages_latest.markdownlint-cli
