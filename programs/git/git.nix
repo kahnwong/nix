@@ -19,7 +19,7 @@
     # default
     userName = "kahnwong";
     userEmail = "karn@karnwong.me";
-    signing.key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ5lU0BXrGslL/visgnO3aRcwH8fJHJqcqDFeJeFH5El karn@karnwong.me";
+    signing.key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGjELfQh9UxS1ORQZJY0it8T57x8+mHSg0fVAG/dprrl karn@karnwong.me";
 
     extraConfig = {
       diff.colorMoved = "default";
