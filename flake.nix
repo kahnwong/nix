@@ -64,18 +64,6 @@
           }
         ];
       };
-      utm = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.aarch64-linux;
-        modules = [
-          ./hosts/linux/dev/home.nix
-          {
-            home = {
-              username = "kahnwong";
-              homeDirectory = "/home/kahnwong";
-            };
-          }
-        ];
-      };
     };
   };
 }
