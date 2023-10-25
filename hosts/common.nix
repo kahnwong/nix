@@ -2,7 +2,7 @@
 {
   imports = [
     ../programs/fish/fish.nix
-    # ../programs/nvim/nvim.nix
+    ../programs/nvim/nvim.nix
     ../programs/starship/starship.nix
     ../programs/zellij/zellij.nix
   ];
