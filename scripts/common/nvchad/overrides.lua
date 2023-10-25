@@ -51,33 +51,37 @@ M.mason = {
     "clangd",
     "clang-format",
 
+    -- bash
+    "bash-language-server",
+
     -- golang
-    "golangci_lint_ls", "gopls",
+    "golangci-lint-langserver",
+    "gopls",
 
     -- kubernetes
-    "helm_ls",
+    "helm-ls",
 
     -- nix
-    "nixd",
+    "nil",
 
     -- python
+    "black",
     "pylyzer",
 
     -- terraform
-    "terraform_lsp",
-    "terraformls",
+    "terraform-ls",
     "tflint",
 
     -- markdown
     "marksman",
 
     -- json/yaml
-    "spectral",
-    "yamlls",
+    "spectral-language-server",
+    "yaml-language-server",
 
     -- docker
-    "docker_compose_language_service",
-    "dockerls",
+    "docker-compose-language-service",
+    "dockerfile-language-server",
   },
 }
 
