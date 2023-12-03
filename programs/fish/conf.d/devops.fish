@@ -1,7 +1,7 @@
 ########################
 # CONTAINERS: DOCKER
 ########################
-function docker-rmi
+function ,docker-rmi
     docker images | grep $argv | awk '{print $3}' | xargs docker rmi
 end
 
@@ -15,14 +15,14 @@ end
 ############################
 # IDE: VSCODE
 ############################
-function rcode
+function ,rcode
     code --folder-uri=vscode-remote://ssh-remote+nuc/home/kahnwong/$argv/
 end
 
 ########################
 # INFRA: GCP
 ########################
-function gcp-resources-list
+function ,gcp-resources-list
     # $argv = project_name
 
     echo "getting resources: $argv"
@@ -35,15 +35,15 @@ end
 ########################
 # INFRA: TERRAFORM
 ########################
-function terraformer-init
+function ,terraformer-init
     terraform state replace-provider -auto-approve registry.terraform.io/-/aws hashicorp/aws && terraform init
 end
 
-function tf-cost
+function ,tf-cost
     infracost breakdown --path .
 end
 
-function tf-cost-html
+function ,tf-cost-html
     infracost breakdown \
         --format html \
         --out-file infracost-report.html \
@@ -83,7 +83,7 @@ end
 ########################
 # UTILITIES
 ########################
-function upload-picoshare -a path -a url
+function ,upload-picoshare -a path -a url
     set -l url "$(echo $url | sed 's#/g/#/api/guest/#g')"
     curl -F "file=@$path" $url
 end

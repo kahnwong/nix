@@ -1,12 +1,12 @@
-function weather
+function ,weather
     curl wttr.in
 end
 
-function zip-compress
+function ,zip-compress
     bash -c 'for i in *.txt; do zip -rm `basename $i .txt`.zip $i; done'
 end
 
-function code-to-image
+function ,code-to-image
     silicon --from-clipboard -l rs --to-clipboard --theme OneHalfDark
 end
 
