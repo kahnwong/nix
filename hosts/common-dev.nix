@@ -91,6 +91,7 @@
       libqalculate
       tz
       wakatime
+      sshx
     ];
   };
 }
