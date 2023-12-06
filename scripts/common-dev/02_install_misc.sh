@@ -60,6 +60,7 @@ fi
 
 # gh-cli extensions
 gh auth login
+gh config set git_protocol ssh
 gh extension install dlvhdr/gh-dash
 gh extension install kawarimidoll/gh-graph
 gh extension install mislav/gh-branch
