@@ -32,6 +32,8 @@
       black
       pipenv
       poetry
+      poetryPlugins.poetry-plugin-export
+      poetryPlugins.poetry-plugin-up
       python310Packages.pipx
       ruff
 
