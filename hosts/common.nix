@@ -37,6 +37,7 @@
 
       # system
       ctop
+      oxker
       lazydocker
       du-dust
       duf
