@@ -3,6 +3,7 @@
 {
   home.file.".config/git/profiles/forgejo".source = ./profiles/forgejo;
   home.file.".config/git/profiles/github".source = ./profiles/github;
+  home.file.".gitignore_global".source = ./gitignore/gitignore_global;
 
   programs.git = {
     # `git config --global --edit` to see raw config
@@ -45,6 +46,9 @@
       includeIf."gitdir:~/Git-forgejo/" = {
         path = "profiles/forgejo";
       };
+
+      ### global ignore
+      core.excludesfile = "~/.gitignore_global";
     };
   };
 
