@@ -1,0 +1,124 @@
+---
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-added-large-files
+      - id: check-case-conflict
+      - id: check-executables-have-shebangs
+      - id: check-json
+      - id: check-shebang-scripts-are-executable
+      - id: check-toml
+      - id: detect-private-key
+      - id: fix-byte-order-marker
+      - id: mixed-line-ending
+  # ----------------------- OPS -----------------------
+  - repo: https://github.com/jumanjihouse/pre-commit-hook-yamlfmt
+    rev: 0.2.3
+    hooks:
+      - id: yamlfmt
+        args: [--mapping, "2", --sequence, "4", --offset, "2", --width, "150", --preserve-quotes]
+        exclude: ^.github/dependabot.yml
+  - repo: https://github.com/AleksaC/hadolint-py
+    rev: v2.12.0.3
+    hooks:
+      - id: hadolint
+        args:
+          - --ignore
+          - DL3025
+          - --ignore
+          - DL3018
+          - --ignore
+          - DL3027
+  - repo: https://github.com/jumanjihouse/pre-commit-hooks
+    rev: 3.0.0
+    hooks:
+      - id: shellcheck
+      - id: shfmt
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.38.0
+    hooks:
+      - id: markdownlint
+        args: [--ignore, node_modules, --ignore, src, --fix, --disable, MD013]
+  - repo: https://github.com/antonbabenko/pre-commit-terraform
+    rev: v1.86.0
+    hooks:
+      - id: terraform_fmt
+      - id: terraform_validate
+      - id: terraform_docs
+        args:
+          - --args=--config=.terraform-docs.yaml
+  # ----------------------- GOLANG -----------------------
+  - repo: https://github.com/dnephin/pre-commit-golang
+    rev: v0.5.1
+    hooks:
+      - id: go-fmt
+      - id: go-vet
+      - id: go-imports
+      # - id: no-go-testing
+      - id: golangci-lint
+      # - id: go-critic
+      # - id: go-unit-tests
+      - id: go-build
+      - id: go-mod-tidy
+    # ----------------------- NIX -----------------------
+  - repo: https://github.com/nix-community/nixpkgs-fmt
+    rev: v1.3.0
+    hooks:
+      - id: nixpkgs-fmt
+  # ------------------------- PYTHON ------------------------
+  - repo: https://github.com/psf/black
+    rev: 23.12.1
+    hooks:
+      - id: black
+  - repo: https://github.com/charliermarsh/ruff-pre-commit
+    rev: v0.1.8
+    hooks:
+      - id: ruff
+        args: ["--fix", "--ignore=E402,E501"]
+        exclude: ^migrations/
+  - repo: https://github.com/asottile/reorder_python_imports
+    rev: v3.12.0
+    hooks:
+      - id: reorder-python-imports
+  - repo: https://github.com/python-poetry/poetry
+    rev: 1.7.1
+    hooks:
+      - id: poetry-check
+      - id: poetry-lock
+  - repo: https://github.com/python-poetry/poetry-plugin-export
+    rev: 1.6.0
+    hooks:
+      - id: poetry-export
+        args: ["--without-hashes", "-f", "requirements.txt", "-o", "requirements.txt"]
+#      - id: poetry-export
+#        args: ["--with", "dev", "--without-hashes", "-f", "requirements.txt", "-o", "requirements-dev.txt"]
+  - repo: https://github.com/nbQA-dev/nbQA
+    rev: 1.7.1
+    hooks:
+      - id: nbqa-black
+  - repo: https://github.com/kynan/nbstripout
+    rev: 0.6.1
+    hooks:
+      - id: nbstripout
+  # - repo: local
+  #   hooks:
+  #     - id: mypy
+  #       name: mypy
+  #       entry: "bash ./tests/run_mypy.sh"
+  #       language: system
+  #       types: [python]
+  #       pass_filenames: false
+  #       require_serial: true
+  # - repo: local
+  #   hooks:
+  #     - id: pytest
+  #       name: pytest
+  #       entry: pytest tests/tests.py
+  #       language: system
+  #       types: [python]
+  #       pass_filenames: false
+  #       require_serial: true

@@ -10,7 +10,7 @@ Examples:
 
 ```bash
 # macbook
-nix build '.#homeManagerConfigurations.macbook.system'
+nix build '.#homeManagerConfigurations.macbookMain.system'
 
 # linux
 nix build '.#homeManagerConfigurations.nuc.activationPackage'

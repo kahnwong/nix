@@ -4,6 +4,8 @@
   home.file.".config/git/profiles/forgejo".source = ./profiles/forgejo;
   home.file.".config/git/profiles/github".source = ./profiles/github;
   home.file.".gitignore_global".source = ./gitignore/gitignore_global;
+  home.file.".pre-commit-config.yaml".source = ./pre-commit/.pre-commit-config.yaml;
+
 
   programs.git = {
     # `git config --global --edit` to see raw config

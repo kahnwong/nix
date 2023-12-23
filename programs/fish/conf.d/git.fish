@@ -38,3 +38,8 @@ function ,git-add-ssh-agent
     ssh-add --apple-use-keychain ~/.ssh/github_signing_key
     ssh-add --apple-use-keychain ~/.ssh/forgejo_signing_key
 end
+
+function ,init-pre-commit
+    cp ~/.pre-commit-config.yaml .
+    chmod 644 .pre-commit-config.yaml
+end

@@ -20,21 +20,21 @@ repos:
     hooks:
       - id: shellcheck
       - id: shfmt
-  # - repo: https://github.com/jumanjihouse/pre-commit-hook-yamlfmt
-  #   rev: 0.2.1
-  #   hooks:
-  #     - id: yamlfmt
-  #       args:
-  #         - --mapping
-  #         - "2"
-  #         - --sequence
-  #         - "4"
-  #         - --offset
-  #         - "2"
-  #         - --width
-  #         - "150"
-  #         - --preserve-quotes
-  -   repo: https://github.com/nix-community/nixpkgs-fmt
-      rev: v1.3.0
-      hooks:
-      -   id: nixpkgs-fmt
+  - repo: https://github.com/jumanjihouse/pre-commit-hook-yamlfmt
+    rev: 0.2.1
+    hooks:
+      - id: yamlfmt
+        args:
+          - --mapping
+          - "2"
+          - --sequence
+          - "4"
+          - --offset
+          - "2"
+          - --width
+          - "150"
+          - --preserve-quotes
+  - repo: https://github.com/nix-community/nixpkgs-fmt
+    rev: v1.3.0
+    hooks:
+      - id: nixpkgs-fmt
