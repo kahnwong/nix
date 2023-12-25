@@ -21,8 +21,6 @@
 
       # node
       nodejs
-      nodePackages_latest.npm
-      yarn
 
       # nix
       nixpkgs-fmt

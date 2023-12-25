@@ -1,6 +1,11 @@
 #!/bin/bash
 
 ############################
+# node
+############################
+nvm install v18.19.0
+
+############################
 # python - pyenv
 ############################
 ### pyenv
@@ -37,7 +42,10 @@ pipx install topydo[columns]
 ############################
 # applications - node
 ############################
+nvm use v18.19.0
+
 npm set prefix ~/.npm-global
+npm install -g yarn
 npm install -g @jaebradley/wakatime-cli
 
 ############################
