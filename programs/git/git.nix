@@ -20,7 +20,7 @@
     };
 
     # default
-    userName = "kahnwong";
+    userName = "Karn Wong";
     userEmail = "karn@karnwong.me";
     signing.key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGjELfQh9UxS1ORQZJY0it8T57x8+mHSg0fVAG/dprrl karn@karnwong.me";
 
