@@ -5,6 +5,7 @@
   home.file.".config/git/profiles/github".source = ./profiles/github;
   home.file.".gitignore_global".source = ./gitignore/gitignore_global;
   home.file.".pre-commit-config.yaml".source = ./pre-commit/.pre-commit-config.yaml;
+  home.file.".sops.yaml".source = ./sops/.sops.yaml;
 
 
   programs.git = {

@@ -22,7 +22,7 @@ end
 ########################
 # INFRA: GCP
 ########################
-function ,gcp-resources-list
+function ,gcp-list-resources
     # $argv = project_name
 
     echo "getting resources: $argv"
@@ -83,7 +83,7 @@ end
 ########################
 # UTILITIES
 ########################
-function ,upload-picoshare -a path -a url
+function ,picoshare-upload -a path -a url
     set -l url "$(echo $url | sed 's#/g/#/api/guest/#g')"
     curl -F "file=@$path" $url
 end
