@@ -6,6 +6,9 @@ sops -d ./programs/aws/credentials.sops >~/.aws/credentials
 
 sops -d ./programs/fish/conf.d/work.sops.fish >~/.config/fish/conf.d/work.fish
 
+mkdir -p ~/.kube
+sops -d ./programs/kubectl/config.sops >~/.kube/config
+
 mkdir -p ~/.config/pgconn
 sops -d ./programs/pgconn/db.sops.yaml.txt >~/.config/pgconn/db.yaml
 
