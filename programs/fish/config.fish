@@ -25,7 +25,8 @@ set PATH \
     /usr/bin \
     /usr/sbin \
     /bin \
-    /sbin
+    /sbin \
+    $HOME/scripts
 
 ####################
 # CONFIG: RUNTIME
