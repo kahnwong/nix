@@ -87,6 +87,10 @@
       sqlfluff
       visidata
 
+      # backup
+      rclone
+      restic
+
       # misc
       hugo
       libqalculate

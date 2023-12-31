@@ -12,10 +12,6 @@ in
     ../../../programs/kitty/kitty.nix
   ];
   home.packages = with pkgs; [
-    # backup
-    rclone
-    restic
-
     # devops
     docker-credential-gcr
     (
