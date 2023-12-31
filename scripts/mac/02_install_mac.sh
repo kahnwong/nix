@@ -21,6 +21,7 @@ brew install --cask adium
 brew install --cask discord
 brew install --cask microsoft-teams
 brew install --cask slack
+brew install --cask thunderbird
 brew install --cask whatsapp
 brew install --cask zoom
 
