@@ -78,7 +78,8 @@ if type -p pgconn > /dev/null; pgconn completion fish | source; end
 if type -p totp > /dev/null; totp completion fish | source; end
 
 # swissknife
-if type -p totp > /dev/null; swissknife completion fish | source; end
+if type -p swissknife > /dev/null; swissknife completion fish | source; end
+
 ####################
 # CONFIG: GCP
 ####################
