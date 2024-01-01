@@ -48,5 +48,5 @@ fish -c "fisher install jorgebucaran/nvm.fish"
 fish -c "fisher install meaningful-ooo/sponge"
 fish -c "fisher install patrickf1/colored_man_pages.fish"
 
-### nvim
-nvim --headless +PlugInstall +qall
+#### nvim
+#nvim --headless +PlugInstall +qall

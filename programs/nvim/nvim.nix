@@ -18,6 +18,6 @@
     #   vim-plug
     # ];
 
-    # extraConfig = (builtins.readFile ./.nvimrc);
+    # extraConfig = (builtins.readFile ./.nvimrc.bak);
   };
 }
