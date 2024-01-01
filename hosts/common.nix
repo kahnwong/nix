@@ -10,6 +10,10 @@
   home = {
     stateVersion = "23.05";
     packages = with pkgs; [
+      # backup
+      rclone
+      restic
+
       # shell
       bat
       colordiff

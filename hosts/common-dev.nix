@@ -18,11 +18,11 @@
 
       # java
       temurin-bin
-      gradle
-      # maven
+      ## gradle
+      ## maven
 
       # node
-      nodejs
+      nodejs # so nvm can initialize
 
       # nix
       nixpkgs-fmt
@@ -37,8 +37,8 @@
       python310Packages.pipx
       ruff
 
-      # rust
-      rustup
+      #      # rust
+      #      rustup
 
       # markdown
       nodePackages_latest.markdownlint-cli
@@ -48,8 +48,8 @@
       shellcheck
       shfmt
 
-      # containers
-      buildpack
+      #      # containers
+      #      buildpack
 
       # kubernetes
       k9s
@@ -87,10 +87,6 @@
       # data
       sqlfluff
       visidata
-
-      # backup
-      rclone
-      restic
 
       # misc
       hugo
