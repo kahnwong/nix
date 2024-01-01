@@ -8,7 +8,6 @@ in
   imports = [
     ../../common.nix
     ../../common-dev.nix
-    ../../../programs/kitty/kitty.nix
   ];
   home.packages = with pkgs; [
   ];

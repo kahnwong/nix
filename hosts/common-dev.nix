@@ -6,6 +6,7 @@
   imports = [
     ../programs/aws/aws.nix
     ../programs/git/git.nix
+    ../programs/kitty/kitty.nix
     ../programs/scripts/scripts.nix
   ];
 

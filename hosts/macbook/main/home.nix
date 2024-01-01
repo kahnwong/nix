@@ -9,7 +9,6 @@ in
     ../../common.nix
     ../../common-dev.nix
     ../../misc.nix
-    ../../../programs/kitty/kitty.nix
   ];
   home.packages = with pkgs; [
     # devops
