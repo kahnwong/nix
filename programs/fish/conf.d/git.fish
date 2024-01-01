@@ -33,18 +33,3 @@ end
 function diff
     difft $argv
 end
-
-function ,git-add-ssh-agent
-    ssh-add --apple-use-keychain ~/.ssh/github_signing_key
-    ssh-add --apple-use-keychain ~/.ssh/forgejo_signing_key
-end
-
-function ,pre-commit-init
-    cp ~/.pre-commit-config.yaml .
-    chmod 644 .pre-commit-config.yaml
-end
-
-function ,sops-init
-    cp ~/.sops.yaml .
-    chmod 644 .sops.yaml
-end

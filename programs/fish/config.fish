@@ -79,7 +79,7 @@ if type -p totp > /dev/null; totp completion fish | source; end
 
 # swissknife
 alias sk="swissknife"
-if type -p sk > /dev/null; sk completion fish | source; end
+if type -p swissknife > /dev/null; sk completion fish | source; end
 
 ####################
 # CONFIG: GCP
