@@ -47,6 +47,7 @@ nvm use v18.19.0
 npm set prefix ~/.npm-global
 npm install -g yarn
 npm install -g @jaebradley/wakatime-cli
+npm install -g markdownlint-cli
 
 ############################
 # kubectl

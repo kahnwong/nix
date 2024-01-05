@@ -41,7 +41,6 @@
       #      rustup
 
       # markdown
-      nodePackages_latest.markdownlint-cli
       nodePackages.markdown-link-check
 
       # shell - linters
