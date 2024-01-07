@@ -37,6 +37,7 @@
       curl
       dogdns
       gping
+      iftop
       speedtest-cli
 
       # system
