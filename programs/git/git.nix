@@ -27,7 +27,7 @@
 
     extraConfig = {
       diff.colorMoved = "default";
-      merge.conflictstyle = "diff3";
+      merge.conflictstyle = "zdiff3";
       # url."git@github.com:".insteadOf = "https://github.com/";
 
       ### commit signing
