@@ -73,6 +73,7 @@
       go
 
       # utils
+      age
       entr
       tldr
       sops
