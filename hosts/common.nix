@@ -28,6 +28,7 @@
         dontCheck = true;
       }))
       rsync
+      tailspin
       tree
       viddy
       watch
