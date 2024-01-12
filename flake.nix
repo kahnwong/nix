@@ -28,6 +28,18 @@
         ];
         specialArgs = { inherit nixpkgs; };
       };
+      macbookDemo = darwin.lib.darwinSystem {
+        system = "aarch64-darwin";
+        modules = [
+          ./hosts/macbook/base/darwin-configuration.nix
+          home-manager.darwinModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.users.kahnwong = ./hosts/macbook/main/home.nix;
+          }
+        ];
+        specialArgs = { inherit nixpkgs; };
+      };
       macbookSpare = darwin.lib.darwinSystem {
         system = "x86_64-darwin";
         modules = [
