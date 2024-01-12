@@ -31,11 +31,11 @@
       macbookDemo = darwin.lib.darwinSystem {
         system = "aarch64-darwin";
         modules = [
-          ./hosts/macbook/base/darwin-configuration.nix
+          ./hosts/macbook/base/darwin-configuration-demo.nix
           home-manager.darwinModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
-            home-manager.users.kahnwong = ./hosts/macbook/main/home.nix;
+            home-manager.users.demo = ./hosts/macbook/demo/home.nix;
           }
         ];
         specialArgs = { inherit nixpkgs; };
