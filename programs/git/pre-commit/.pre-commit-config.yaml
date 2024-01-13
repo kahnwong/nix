@@ -21,7 +21,7 @@ repos:
     hooks:
       - id: yamlfmt
         args: [--mapping, "2", --sequence, "4", --offset, "2", --width, "150", --preserve-quotes]
-        exclude: ^.github/dependabot.yml
+        exclude: ^.github/dependabot.yaml
   - repo: https://github.com/AleksaC/hadolint-py
     rev: v2.12.0.3
     hooks:

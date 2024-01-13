@@ -1,0 +1,63 @@
+---
+version: 2
+updates:
+  - package-ecosystem: docker
+    directory: "/"
+    schedule:
+      interval: daily
+      time: "00:00"
+      timezone: Asia/Bangkok
+    open-pull-requests-limit: 10
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: daily
+      time: "00:00"
+      timezone: Asia/Bangkok
+    open-pull-requests-limit: 10
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+  - package-ecosystem: gomod
+    directory: "/"
+    schedule:
+      interval: daily
+      time: "00:00"
+      timezone: Asia/Bangkok
+    open-pull-requests-limit: 10
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: daily
+      time: '00:00'
+      timezone: Asia/Bangkok
+    open-pull-requests-limit: 10
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+  - package-ecosystem: pip
+    directory: "/"
+    schedule:
+      interval: daily
+      time: "00:00"
+      timezone: Asia/Bangkok
+    open-pull-requests-limit: 30
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+  - package-ecosystem: terraform
+    directory: "/"
+    schedule:
+      interval: daily
+      time: "00:00"
+      timezone: Asia/Bangkok
+    open-pull-requests-limit: 10
+    commit-message:
+      prefix: "chore"
+      include: "scope"

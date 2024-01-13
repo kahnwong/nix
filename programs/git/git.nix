@@ -4,6 +4,9 @@
   home.file.".config/git/profiles/forgejo".source = ./profiles/forgejo;
   home.file.".config/git/profiles/github".source = ./profiles/github;
   home.file.".gitignore_global".source = ./gitignore/gitignore_global;
+
+  # templates
+  home.file."dependabot.yaml".source = ./dependabot/dependabot.yaml;
   home.file.".pre-commit-config.yaml".source = ./pre-commit/.pre-commit-config.yaml;
   home.file.".sops.yaml".source = ./sops/.sops.yaml;
 
