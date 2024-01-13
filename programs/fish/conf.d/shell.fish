@@ -27,6 +27,6 @@ function tmux
     zellij $argv
 end
 
-function jq
-    command jaq $argv
-end
+# function jq
+#    command jaq $argv
+# end
