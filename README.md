@@ -22,7 +22,7 @@ File content should look like this:
 #!/bin/bash
 
 export NIXPKGS_ALLOW_UNFREE=1
-$BUILD_COMMAND --experimental-features 'nix-command flakes'  --impure
+nix build '.#homeManagerConfigurations.macbookMain.system' --experimental-features 'nix-command flakes'  --impure
 
 if [[ $(uname -s) == 'Darwin' ]]; then
     sudo ./result/activate
