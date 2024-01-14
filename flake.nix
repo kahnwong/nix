@@ -16,6 +16,7 @@
 
   outputs = { darwin, home-manager, nixpkgs, ... }: {
     homeManagerConfigurations = {
+      # ----------------- mac ----------------- #
       macbookMain = darwin.lib.darwinSystem {
         system = "aarch64-darwin";
         modules = [
@@ -52,6 +53,7 @@
         ];
         specialArgs = { inherit nixpkgs; };
       };
+      # ----------------- linux ----------------- #
       nuc = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         modules = [
@@ -66,6 +68,19 @@
       };
       server = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
+        modules = [
+          ./hosts/linux/server/home.nix
+          {
+            home = {
+              username = "ubuntu";
+              homeDirectory = "/home/ubuntu";
+            };
+          }
+        ];
+      };
+      # ----------------- pi ----------------- #
+      pi = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.aarch64-linux;
         modules = [
           ./hosts/linux/server/home.nix
           {
