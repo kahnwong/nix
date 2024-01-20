@@ -32,6 +32,14 @@ function ,gcp-list-resources
         --format=json >$argv.json
 end
 
+
+########################
+# INFRA: TERRAFORM
+########################
+function tf
+    terraform $argv
+end
+
 ########################
 # SYSTEM
 ########################
