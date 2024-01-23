@@ -9,6 +9,7 @@
   home.file."dependabot.yaml".source = ./dependabot/dependabot.yaml;
   home.file.".pre-commit-config.yaml".source = ./pre-commit/.pre-commit-config.yaml;
   home.file.".sops.yaml".source = ./sops/.sops.yaml;
+  home.file.".sops-dc.yaml".source = ./sops/.sops-dc.yaml;
 
 
   programs.git = {

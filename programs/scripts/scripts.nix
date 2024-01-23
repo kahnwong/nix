@@ -8,6 +8,7 @@
   home.file."scripts/,pre-commit-init.sh".source = ./pre-commit-init.sh;
   home.file."scripts/,qgis.sh".source = ./qgis.sh;
   home.file."scripts/,sops-init.sh".source = ./sops-init.sh;
+  home.file."scripts/,sops-dc-init.sh".source = ./sops-dc-init.sh;
   home.file."scripts/,tf-cost-html.sh".source = ./tf-cost-html.sh;
   home.file."scripts/,tf-cost.sh".source = ./tf-cost.sh;
   home.file."scripts/,tf-init.sh".source = ./tf-init.sh;
