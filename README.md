@@ -50,6 +50,8 @@ make common-dev
 
 - If you need `tailscale`, `caddy`, `fail2ban`, or `docker` on your server, install it via your system's package manager, since nix requires you set up systemd services explicitly.
 
+- For nerd fonts, download fonts from [here], put them in `~/.local/share/fonts` then run `fc-cache -fv`.
+
 ## Post-installation instructions
 
 ### Linux: Set default shell
