@@ -60,7 +60,7 @@ brew install --cask jupyter-notebook-viewer
 brew install --cask qlmarkdown
 
 # productivity
-brew install --cask cron
+brew install --cask notion-calendar
 brew install --cask macdown
 brew install --cask obsidian
 brew install --cask sleek
