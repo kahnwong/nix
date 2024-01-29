@@ -42,9 +42,6 @@
       speedtest-cli
 
       # system
-      ctop
-      oxker
-      lazydocker
       du-dust
       duf
       htop
@@ -57,6 +54,11 @@
       neofetch
       onefetch
       pfetch
+
+      # containers
+      ctop
+      oxker
+      lazydocker
 
       # data manipulation
       fx

@@ -31,10 +31,10 @@
       # gdal # for build env
       black
       pipenv
+      pipx
       poetry
       poetryPlugins.poetry-plugin-export
       poetryPlugins.poetry-plugin-up
-      python310Packages.pipx
       ruff
 
       #      # rust
@@ -62,13 +62,13 @@
 
       # secretops
       bitwarden-cli
-      keyscope
+      #      keyscope
 
       # api testing
       httpie
-      hurl
+      #      hurl
       rustscan
-      xh
+      #      xh
 
       # terraform
       terraform # non-free
