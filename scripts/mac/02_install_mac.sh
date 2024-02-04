@@ -79,6 +79,7 @@ brew install --cask cheatsheet
 brew install --cask cloudflare-warp
 brew install --cask coconutbattery
 brew install --cask flameshot
+brew install --cask heynote
 brew install --cask hiddenbar
 brew install --cask hot
 brew install --cask kap
