@@ -7,6 +7,7 @@ brew install --cask arc
 brew install --cask firefox
 brew install --cask firefox-nightly
 brew install --cask google-chrome
+brew install --cask mullvad-browser
 
 # cli
 brew install mas
@@ -88,7 +89,7 @@ brew install --cask michaelvillar-timer
 brew install --cask protonvpn
 brew install --cask raspberry-pi-imager
 brew install --cask shifty
-brew install --cask spectacle
+# brew install --cask spectacle
 brew install --cask stats
 brew install --cask the-unarchiver
 brew install --cask tyke
