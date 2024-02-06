@@ -32,6 +32,7 @@
       tree
       viddy
       watch
+      yazi
       zoxide
 
       # networking

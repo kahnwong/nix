@@ -52,6 +52,9 @@ set pipenv_fish_fancy yes
 ####################
 # CONFIG: TOOLS
 ####################
+# editor
+set EDITOR nvim
+
 # flatpak on linux
 set XDG_DATA_DIRS $HOME/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:$XDG_DATA_DIRS
 
