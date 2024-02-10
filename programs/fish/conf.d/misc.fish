@@ -3,7 +3,7 @@ function ,weather
 end
 
 function tz # <https://github.com/oz/tz>
-    TZ_LIST="Asia/Bangkok,TH - Bangkok;US/Eastern,USA - New York;US/Pacific,USA - Seattle;Europe/Riga,LV - Riga;Europe/London,UK - London" command tz
+    TZ_LIST="US/Eastern,USA - New York;US/Pacific,USA - Seattle;Europe/Riga,LV - Riga;Europe/London,UK - London" command tz
 end
 
 # function budget
