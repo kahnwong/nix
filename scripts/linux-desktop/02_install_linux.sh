@@ -17,3 +17,4 @@ flatpak install flathub com.github.eneshecan.WhatsAppForLinux -y
 flatpak install flathub com.google.Chrome -y
 flatpak install flathub io.mpv.Mpv -y
 flatpak install flathub org.mozilla.firefox -y
+flatpak install flathub org.mozilla.Thunderbird -y
