@@ -30,6 +30,7 @@
       # python
       # gdal # for build env
       black
+      mypy
       pipenv
       pipx
       poetry
