@@ -48,7 +48,7 @@ repos:
           - --args=--config=.terraform-docs.yaml
   # ----------------------- DOCS -----------------------
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.38.0
+    rev: v0.39.0
     hooks:
       - id: markdownlint
         args: [--ignore, node_modules, --ignore, src, --fix, --disable, MD013]
