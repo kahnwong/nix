@@ -39,3 +39,10 @@ update:
 
 apply:
 	./scripts/apply.sh
+
+# SSH
+ssh-keys-backup:
+	./scripts/ssh-keys-backup.sh
+
+ssh-keys-restore:
+	./scripts/ssh-keys-restore.sh

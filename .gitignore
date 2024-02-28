@@ -7,3 +7,6 @@ apply.sh
 
 # vscode
 settings.json
+
+# keys
+ssh-keys.zip
