@@ -44,7 +44,7 @@ set PATH $PATH:/nix/var/nix/profiles/default/bin/
 set -xU nvm_default_version v18.19.0
 
 # python
-set PYENV_VERSION 3.11.3
+set PYENV_VERSION 3.11.8
 if type -p pyenv > /dev/null; pyenv init - | source; end
 status --is-interactive; and if type -p pyenv > /dev/null; pyenv virtualenv-init - | source; end
 set pipenv_fish_fancy yes

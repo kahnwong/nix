@@ -12,7 +12,7 @@ nvm install v18.19.0
 curl https://pyenv.run | bash
 
 export PATH=$PATH:$HOME/.pyenv/bin
-export PYTHON_VERSION="3.11.3"
+export PYTHON_VERSION="3.11.8"
 pyenv install -s $PYTHON_VERSION
 pyenv global $PYTHON_VERSION
 
