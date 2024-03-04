@@ -65,7 +65,6 @@
       fx
       glow
       jq
-      jaq
       yq-go
 
       # downloader
