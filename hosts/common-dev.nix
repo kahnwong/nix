@@ -64,11 +64,12 @@
       bitwarden-cli
       #      keyscope
 
-      # api testing
-      httpie
-      #      hurl
+      # # api testing
+      # httpie
+      # hurl
+      # xh
+
       rustscan
-      #      xh
 
       # terraform
       terraform # non-free
@@ -76,12 +77,11 @@
 
       ## tools
       terraform-docs
-      terraformer
+      # terraformer
       infracost
 
-      ## linters
-      tfsec
-      tflint
+      ### linters
+      # tflint
 
       # data
       sqlfluff
