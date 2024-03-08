@@ -11,7 +11,7 @@
     stateVersion = "23.05";
     packages = with pkgs; [
       # backup
-      rclone
+      #      rclone
       restic
 
       # shell

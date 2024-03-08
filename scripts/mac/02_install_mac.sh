@@ -3,11 +3,9 @@
 echo "================================= Install brew apps ================================="
 
 # browser
-brew install --cask arc
 brew install --cask firefox
 brew install --cask firefox-nightly
 brew install --cask google-chrome
-brew install --cask mullvad-browser
 
 # cli
 brew install mas
@@ -34,13 +32,11 @@ brew install apache-spark
 # dev tools
 brew install --cask docker
 brew install --cask fork
-brew install --cask gitup
-brew install --cask httpie
 brew install --cask intellij-idea
 brew install --cask kitty
 brew install kui
 brew install --cask microsoft-remote-desktop
-brew install --cask mongodb-compass
+#brew install --cask mongodb-compass
 brew install --cask openlens
 brew install --cask postman
 # brew install --cask rio
@@ -91,7 +87,7 @@ brew install --cask protonvpn
 brew install --cask raspberry-pi-imager
 brew install --cask shifty
 # brew install --cask spectacle
-brew install --cask stats
+#brew install --cask stats
 brew install --cask the-unarchiver
 brew install --cask tyke
 brew install --cask yubico-yubikey-manager

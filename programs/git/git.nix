@@ -62,8 +62,8 @@
   home.packages = with pkgs; [
     delta
     gh
-    gitleaks
+    # gitleaks
     pre-commit
-    trufflehog
+    # trufflehog
   ];
 }

@@ -12,6 +12,7 @@
 
   home = {
     packages = with pkgs; [
+      # ------- runtime ------- #
       # golang
       golangci-lint
       gopls
@@ -35,36 +36,50 @@
       #      # rust
       #      rustup
 
-      # markdown
-      nodePackages.markdown-link-check
-
       # shell - linters
       shellcheck
       shfmt
 
+      # ------- devops ------- #
       #      # containers
       #      buildpack
+
+      # gcp
+      docker-credential-gcr
+      (
+        google-cloud-sdk.withExtraComponents [
+          google-cloud-sdk.components.gke-gcloud-auth-plugin
+          # google-cloud-sdk.components.cloud_sql_proxy # this is outdated
+        ]
+      )
 
       # kubernetes
       k9s
       kubectl
       kubernetes-helm
       kubectx
+      # kompose
+      argocd
+      helm-dashboard
+      k3d
+      #      kdash
+      #      kind
+      #    pluto
+
+      ## krew
+      krew
+      ktop
+      kube-capacity
 
       # database
-      postgresql_15
+      postgresql_16
       pgcli
+      #    mongodb-tools
 
-      # secretops
-      bitwarden-cli
-      #      keyscope
-
-      # # api testing
-      # httpie
-      # hurl
-      # xh
-
-      rustscan
+      ## security
+      grype
+      syft
+      trivy
 
       # terraform
       terraform # non-free
@@ -75,8 +90,25 @@
       # terraformer
       infracost
 
-      ### linters
-      # tflint
+      # docs
+      #    d2
+      #    graphviz
+      silicon
+      #    slides
+      vhs
+
+      # networking
+      rustscan
+
+      # ------- tools ------- #
+      nodePackages.markdown-link-check
+      bitwarden-cli
+      #      keyscope
+
+      # # api testing
+      # httpie
+      # hurl
+      # xh
 
       # data
       sqlfluff
