@@ -35,7 +35,6 @@ go install golang.org/x/tools/cmd/goimports@latest
 # applications - python
 ############################
 if [[ $(uname -s) == 'Linux' ]]; then
-	echo "========== Installing build tools and other essentials =========="
 	sudo apt install pipx -y
 elif [[ $(uname -s) == 'Darwin' ]]; then
 	brew install pipx
