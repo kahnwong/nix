@@ -34,10 +34,21 @@ go install golang.org/x/tools/cmd/goimports@latest
 ############################
 # applications - python
 ############################
+if [[ $(uname -s) == 'Linux' ]]; then
+	echo "========== Installing build tools and other essentials =========="
+	sudo apt install pipx -y
+elif [[ $(uname -s) == 'Darwin' ]]; then
+	brew install pipx
+fi
+pipx ensurepath
+
 pipx install nbpreview
 pipx install pip_search
 pipx install dvc[s3]
 pipx install topydo[columns]
+
+pipx install poetry
+pipx inject poetry poetry-plugin-export
 
 ############################
 # applications - node
@@ -79,4 +90,4 @@ gh extension install stoe/gh-report
 gh extension install hectcastro/gh-metrics
 gh extension install rsese/gh-actions-status
 
-echo "" # force return exit 0 so it'll continue executing downstream steps. exit 1 is from package is already existed
+echo "" # force return exit 0 so it'll continue executing downstream steps. exit 1 is from package is already exists

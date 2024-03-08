@@ -30,11 +30,6 @@
       # python
       # gdal # for build env
       black
-      pipenv
-      pipx
-      poetry
-      poetryPlugins.poetry-plugin-export
-      poetryPlugins.poetry-plugin-up
       ruff
 
       #      # rust
