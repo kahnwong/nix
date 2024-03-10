@@ -19,7 +19,7 @@ show_all = 0
 filterexpr = @tinkering
 groupexpr = project
 
-[Todo]
+[Work]
 title = Todo
 sortexpr = asc:priority
 show_all = 0
