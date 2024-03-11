@@ -5,7 +5,6 @@
 {
   imports = [
     ../programs/aws/aws.nix
-    ../programs/git/git.nix
     ../programs/kitty/kitty.nix
     ../programs/scripts/scripts.nix
   ];
@@ -54,10 +53,7 @@
       )
 
       # kubernetes
-      k9s
-      kubectl
       kubernetes-helm
-      kubectx
       # kompose
       argocd
       helm-dashboard
@@ -115,9 +111,6 @@
       visidata
 
       # misc
-      hugo
-      libqalculate
-      tz
       wakatime
       sshx
     ];

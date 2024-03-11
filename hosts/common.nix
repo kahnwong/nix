@@ -27,12 +27,12 @@
         doCheck = false;
         dontCheck = true;
       }))
-      rsync
-      tailspin
+      #      rsync
+      #      tailspin
       tree
       viddy
       watch
-      yazi
+      #      yazi
       zoxide
 
       # networking
