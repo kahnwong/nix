@@ -83,6 +83,7 @@ brew install --cask keepassxc
 brew install --cask keepingyouawake
 brew install --cask maccy
 brew install --cask michaelvillar-timer
+brew install --cask mullvadvpn
 brew install --cask protonvpn
 brew install --cask raspberry-pi-imager
 brew install --cask shifty
