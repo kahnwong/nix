@@ -50,6 +50,9 @@
       includeIf."gitdir:~/Git/" = {
         path = "profiles/github";
       };
+      includeIf."gitdir:~/Library/Mobile Documents/" = {
+        path = "profiles/github";
+      };
       includeIf."gitdir:~/Git/forgejo/" = {
         path = "profiles/forgejo";
       };
