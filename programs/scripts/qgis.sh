@@ -1,4 +1,3 @@
 #!/bin/bash
 
-pyenv shell miniforge3-23.3.1-1
-mamba run -n qgis qgis
+/Users/kahnwong/.pyenv/versions/miniforge3-23.3.1-1/condabin/mamba run -n qgis qgis
