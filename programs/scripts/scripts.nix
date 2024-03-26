@@ -4,6 +4,7 @@
   home.file."scripts/,code-to-image.sh".source = ./code-to-image.sh;
   home.file."scripts/,convert-to-webp.sh".source = ./convert-to-webp.sh;
   home.file."scripts/,dependabot-init.sh".source = ./dependabot-init.sh;
+  home.file."scripts/,flameshot-restart.sh".source = ./flameshot-restart.sh;
   home.file."scripts/,git-add-ssh-key.sh".source = ./git-add-ssh-key.sh;
   home.file."scripts/,pre-commit-init.sh".source = ./pre-commit-init.sh;
   home.file."scripts/,qgis.sh".source = ./qgis.sh;
