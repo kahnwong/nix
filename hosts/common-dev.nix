@@ -32,8 +32,8 @@
       black
       ruff
 
-      #      # rust
-      #      rustup
+      # rust
+      rustup
 
       # shell - linters
       shellcheck
