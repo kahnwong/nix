@@ -9,9 +9,6 @@ sops -d ./programs/fish/conf.d/work.sops.fish >~/.config/fish/conf.d/work.fish
 mkdir -p ~/.kube
 sops -d ./programs/kubectl/config.sops >~/.kube/config
 
-mkdir -p ~/.config/pgconn
-sops -d ./programs/pgconn/db.sops.yaml.txt >~/.config/pgconn/db.yaml
-
 mkdir -p ~/.ssh/config.d
 sops -d ./programs/ssh/config.d/homelab.sops >~/.ssh/config.d/homelab
 sops -d ./programs/ssh/config.d/vps.sops >~/.ssh/config.d/vps
