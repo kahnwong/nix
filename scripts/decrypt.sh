@@ -19,9 +19,6 @@ sops -d ./programs/ssh/config.d/work-legacy.sops >~/.ssh/config.d/work-legacy
 sops -d ./programs/ssh/config.d/work.sops >~/.ssh/config.d/work
 sops -d ./programs/ssh/config.sops >~/.ssh/config
 
-mkdir -p ~/.config/totp
-sops -d ./programs/totp/totp.sops.yaml.txt >~/.config/totp/totp.yaml
-
 sops -d ./programs/wakatime/wakatime.sops.cfg >~/.wakatime.cfg
 
 sops -d ./scripts/vscode/config/settings.sops.json >./scripts/vscode/config/settings.json
