@@ -29,8 +29,13 @@
     # userEmail = "karn@karnwong.me";
     # signing.key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGjELfQh9UxS1ORQZJY0it8T57x8+mHSg0fVAG/dprrl karn@karnwong.me";
 
+    # https://jvns.ca/blog/2024/02/16/popular-git-config-options/
     extraConfig = {
-      diff.colorMoved = "default";
+      diff = {
+        colorMoved = "default";
+        algorithm = "histogram";
+      };
+
       merge.conflictstyle = "zdiff3";
       # url."git@github.com:".insteadOf = "https://github.com/";
 
@@ -59,6 +64,22 @@
 
       ### global ignore
       core.excludesfile = "~/.gitignore_global";
+
+      pull = {
+        rebase = true;
+        autosetupremote = true;
+      };
+
+      push = {
+        autoSetupRemote = true;
+      };
+
+      init = {
+        defaultBranch = "main";
+      };
+
+      fetch.prune = true;
+      log.date = "iso";
     };
   };
 
