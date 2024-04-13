@@ -74,9 +74,9 @@
         autoSetupRemote = true;
       };
 
-      init = {
-        defaultBranch = "main";
-      };
+      #      init = {
+      #        defaultBranch = "main";
+      #      };
 
       fetch.prune = true;
       log.date = "iso";
