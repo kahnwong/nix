@@ -87,4 +87,4 @@ gh extension install stoe/gh-report
 gh extension install hectcastro/gh-metrics
 gh extension install rsese/gh-actions-status
 
-echo "" # force return exit 0 so it'll continue executing downstream steps. exit 1 is from package is already exists
+echo "" # force return exit 0 so it'll continue executing downstream steps. exit 1 is from package already exists
