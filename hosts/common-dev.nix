@@ -15,6 +15,7 @@
       # golang
       golangci-lint
       gopls
+      gotools
 
       # java
       temurin-bin
