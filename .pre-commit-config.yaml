@@ -34,6 +34,7 @@ repos:
           - --width
           - "150"
           - --preserve-quotes
+        exclude: (sops\.yaml)$
   - repo: https://github.com/nix-community/nixpkgs-fmt
     rev: v1.3.0
     hooks:
