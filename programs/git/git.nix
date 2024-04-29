@@ -16,6 +16,10 @@
     # `git config --global --edit` to see raw config
     enable = true;
 
+    lfs = {
+      enable = true;
+    };
+
     delta = {
       enable = true;
       options = {
@@ -84,6 +88,7 @@
   };
 
   home.packages = with pkgs; [
+    git-lfs
     delta
     gh
     # gitleaks
