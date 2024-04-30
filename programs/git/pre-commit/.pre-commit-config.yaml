@@ -122,21 +122,21 @@ repos:
     rev: 0.6.1
     hooks:
       - id: nbstripout
-  # - repo: local
-  #   hooks:
-  #     - id: mypy
-  #       name: mypy
-  #       entry: "bash ./tests/run_mypy.sh"
-  #       language: system
-  #       types: [python]
-  #       pass_filenames: false
-  #       require_serial: true
-  # - repo: local
-  #   hooks:
-  #     - id: pytest
-  #       name: pytest
-  #       entry: pytest tests/tests.py
-  #       language: system
-  #       types: [python]
-  #       pass_filenames: false
-  #       require_serial: true
+#  - repo: local
+#    hooks:
+#     - id: mypy
+#       name: mypy
+#       entry: "poetry run mypy $PROJECT"
+#       language: system
+#       types: [python]
+#       pass_filenames: false
+#       require_serial: true
+#  - repo: local
+#    hooks:
+#     - id: pytest
+#       name: pytest
+#       entry: pytest tests/tests.py
+#       language: system
+#       types: [python]
+#       pass_filenames: false
+#       require_serial: true
