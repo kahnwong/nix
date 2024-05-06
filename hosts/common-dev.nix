@@ -91,6 +91,7 @@
       #    d2
       #    graphviz
       silicon
+      charm-freeze
       #    slides
       vhs
 
