@@ -30,6 +30,11 @@ go install github.com/saltfishpr/redis-viewer@latest
 go install github.com/techygrrrl/timerrr@latest
 
 ############################
+# applications - cargo
+############################
+cargo install imgcatr
+
+############################
 # applications - python
 ############################
 if [[ $(uname -s) == 'Linux' ]]; then
