@@ -1,5 +1,5 @@
 function ,weather
-    curl wttr.in
+    curl wttr.in/Bangkok
 end
 
 function tz # <https://github.com/oz/tz>
