@@ -55,9 +55,9 @@
           helper = "osxkeychain";
         })
 
-        (lib.mkIf pkgs.stdenv.isLinux {
-          helper = "gopass";
-        })
+        #        (lib.mkIf pkgs.stdenv.isLinux {
+        #          helper = "gopass";
+        #        })
       ];
 
       ### git profiles
@@ -100,6 +100,6 @@
     # gitleaks
     pre-commit
     # trufflehog
-    gopass
+    #    gopass
   ];
 }
