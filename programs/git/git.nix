@@ -46,13 +46,29 @@
       ### commit signing
       gpg.format = "ssh";
 
-      commit = lib.mkIf pkgs.stdenv.isDarwin {
+      #            commit = lib.mkIf pkgs.stdenv.isDarwin {
+      #              gpgsign = true;
+      #            };
+
+      commit = {
         gpgsign = true;
       };
 
-      credential = lib.mkIf pkgs.stdenv.isDarwin {
-        helper = "osxkeychain";
-      };
+      #      credential = lib.mkIf pkgs.stdenv.isDarwin {
+      #        helper = "osxkeychain";
+      #      };
+
+      credential = lib.mkMerge [
+        (lib.mkIf pkgs.stdenv.isDarwin {
+          helper = "osxkeychain";
+        })
+
+        (lib.mkIf pkgs.stdenv.isLinux {
+          helper = "gopass";
+        })
+      ];
+
+
 
       ### git profiles
       # optional
@@ -94,5 +110,6 @@
     # gitleaks
     pre-commit
     # trufflehog
+    gopass
   ];
 }
