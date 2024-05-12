@@ -65,7 +65,6 @@ brew install --cask todoist
 brew install --cask todotxt
 
 # utilities
-brew install --cask alfred
 brew install --cask angry-ip-scanner
 brew install --cask anydesk
 brew install --cask appcleaner
@@ -86,6 +85,7 @@ brew install --cask michaelvillar-timer
 brew install --cask mullvadvpn
 brew install --cask protonvpn
 brew install --cask raspberry-pi-imager
+brew install --cask raycast
 brew install --cask shifty
 # brew install --cask spectacle
 #brew install --cask stats
