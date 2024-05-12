@@ -74,8 +74,8 @@
       #    mongodb-tools
 
       ## security
-      grype
-      syft
+      #      grype
+      #      syft
       trivy
 
       # terraform
@@ -89,7 +89,7 @@
 
       # docs
       #    d2
-      #    graphviz
+      graphviz
       silicon
       charm-freeze
       #    slides
