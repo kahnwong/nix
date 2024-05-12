@@ -48,6 +48,7 @@
       htop
       ncdu
       procs
+      zenith
 
       # fetch
       cpufetch
