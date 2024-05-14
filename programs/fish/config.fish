@@ -85,6 +85,10 @@ if type -p totp > /dev/null; totp completion fish | source; end
 alias sk="swissknife"
 if type -p swissknife > /dev/null; sk completion fish | source; end
 
+# timesheet
+alias ts="timesheet"
+if type -p timesheet > /dev/null; ts completion fish | source; end
+
 ####################
 # CONFIG: GCP
 ####################
