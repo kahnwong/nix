@@ -2,7 +2,7 @@
 title = All
 sortexpr = asc:priority
 show_all = 1
-filterexpr = -@work -@tinkering -@community -@recurring
+filterexpr = -@work -@tinkering -@community -@recurring -@blog
 groupexpr = context
 
 [Today]
@@ -26,9 +26,16 @@ show_all = 0
 filterexpr = @work
 groupexpr = project
 
-[Triage]
-title = Triage
-sortexpr = desc:importance
+[Blog]
+title = Blog
+sortexpr = asc:priority
 show_all = 0
-filterexpr = (>=F) @work
-groupexpr = desc:priority
+filterexpr = @blog
+groupexpr = project
+
+#[Triage]
+#title = Triage
+#sortexpr = desc:importance
+#show_all = 0
+#filterexpr = (>=F) @work
+#groupexpr = desc:priority
