@@ -49,6 +49,7 @@ pipx ensurepath
 pipx install nbpreview
 pipx install pip_search
 pipx install dvc[s3]
+pipx install dvc[gs]
 pipx install topydo[columns]
 
 pipx install poetry
