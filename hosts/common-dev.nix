@@ -2,6 +2,7 @@
 {
   imports = [
     ../programs/aws/aws.nix
+    ../programs/git/git.nix
     ../programs/kitty/kitty.nix
     ../programs/pgconn/pgconn.nix
     ../programs/proxmox/proxmox.nix
@@ -54,6 +55,9 @@
 
       # kubernetes
       kubernetes-helm
+      k9s
+      kubectl
+      kubectx
       #      kompose
       #      argocd
       #      helm-dashboard
@@ -111,11 +115,14 @@
       visidata
 
       # misc
-      wakatime
+      hugo
       sshx
+      wakatime
 
       # utilities
       pop
+      libqalculate
+      tz
     ];
   };
 }
