@@ -61,7 +61,7 @@ brew install --cask notion-calendar
 brew install --cask macdown
 brew install --cask obsidian
 brew install --cask sleek
-brew install --cask todoist
+#brew install --cask todoist
 brew install --cask todotxt
 
 # utilities
@@ -83,7 +83,7 @@ brew install --cask keepingyouawake
 brew install --cask maccy
 brew install --cask michaelvillar-timer
 brew install --cask mullvadvpn
-brew install --cask protonvpn
+#brew install --cask protonvpn
 brew install --cask raspberry-pi-imager
 brew install --cask raycast
 brew install --cask shifty
@@ -91,6 +91,7 @@ brew install --cask shifty
 #brew install --cask stats
 brew install --cask the-unarchiver
 brew install --cask tyke
+brew install --cask yubico-authenticator
 brew install --cask yubico-yubikey-manager
 
 # peripheral software

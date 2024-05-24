@@ -28,6 +28,7 @@ go install github.com/kahnwong/totp@latest
 go install github.com/ksoclabs/kbom@latest
 go install github.com/nore-dev/fman@latest
 go install github.com/peterldowns/nix-search-cli/cmd/nix-search@latest
+go install github.com/protomaps/go-pmtiles@latest
 go install github.com/saltfishpr/redis-viewer@latest
 go install github.com/techygrrrl/timerrr@latest
 
