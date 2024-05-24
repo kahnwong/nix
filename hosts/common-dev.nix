@@ -1,6 +1,3 @@
-## these stay here until I get a dedicated dev box
-## currently I also use my homelab as a dev box
-
 { pkgs, ... }:
 {
   imports = [
@@ -46,9 +43,6 @@
       shfmt
 
       # ------- devops ------- #
-      #      # containers
-      #      buildpack
-
       # gcp
       docker-credential-gcr
       (
@@ -60,13 +54,13 @@
 
       # kubernetes
       kubernetes-helm
-      # kompose
-      argocd
-      helm-dashboard
-      k3d
+      #      kompose
+      #      argocd
+      #      helm-dashboard
+      #      k3d
       #      kdash
       #      kind
-      #    pluto
+      #      pluto
 
       ## krew
       krew
@@ -96,7 +90,7 @@
       #    d2
       graphviz
       silicon
-      charm-freeze
+      #      charm-freeze
       #    slides
       vhs
 
@@ -106,7 +100,6 @@
       # ------- tools ------- #
       nodePackages.markdown-link-check
       bitwarden-cli
-      #      keyscope
 
       # # api testing
       # httpie
@@ -114,7 +107,7 @@
       # xh
 
       # data
-      sqlfluff
+      #      sqlfluff
       visidata
 
       # misc
