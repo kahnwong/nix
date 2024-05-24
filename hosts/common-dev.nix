@@ -6,7 +6,12 @@
   imports = [
     ../programs/aws/aws.nix
     ../programs/kitty/kitty.nix
+    ../programs/pgconn/pgconn.nix
+    ../programs/proxmox/proxmox.nix
     ../programs/scripts/scripts.nix
+    ../programs/topydo/topydo.nix
+    ../programs/totp/totp.nix
+    ../programs/yt-dlp/yt-dlp.nix
   ];
 
   home = {
@@ -115,6 +120,9 @@
       # misc
       wakatime
       sshx
+
+      # utilities
+      pop
     ];
   };
 }
