@@ -81,6 +81,7 @@ brew install --cask hot
 brew install --cask kap
 brew install --cask keepassxc
 brew install --cask keepingyouawake
+brew install --cask latest
 brew install --cask maccy
 brew install --cask michaelvillar-timer
 brew install --cask mullvadvpn
