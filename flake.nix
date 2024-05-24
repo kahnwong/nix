@@ -41,18 +41,6 @@
         ];
         specialArgs = { inherit nixpkgs; };
       };
-      macbookSpare = darwin.lib.darwinSystem {
-        system = "x86_64-darwin";
-        modules = [
-          ./hosts/macbook/base/darwin-configuration.nix
-          home-manager.darwinModules.home-manager
-          {
-            home-manager.useGlobalPkgs = true;
-            home-manager.users.kahnwong = ./hosts/macbook/spare/home.nix;
-          }
-        ];
-        specialArgs = { inherit nixpkgs; };
-      };
       # ----------------- linux ----------------- #
       nuc = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
