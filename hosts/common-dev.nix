@@ -101,6 +101,9 @@
       # networking
       rustscan
 
+      # monitoring
+      #      sampler
+
       # ------- tools ------- #
       nodePackages.markdown-link-check
       bitwarden-cli
