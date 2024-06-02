@@ -53,6 +53,9 @@
         ]
       )
 
+      # azure
+      azure-cli
+
       # kubernetes
       kubernetes-helm
       k9s
