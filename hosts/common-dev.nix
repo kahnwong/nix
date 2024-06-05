@@ -6,6 +6,7 @@
     ../programs/kitty/kitty.nix
     ../programs/pgconn/pgconn.nix
     ../programs/proxmox/proxmox.nix
+    ../programs/timesheet/timesheet.nix
     ../programs/scripts/scripts.nix
     ../programs/topydo/topydo.nix
     ../programs/totp/totp.nix
