@@ -1,7 +1,7 @@
 { config, pkgs, lib, ... }:
 
 {
-  home.file."timesheet/config.ini".source = ./config.ini;
+  home.file.".config/timesheet/config.ini".source = ./config.ini;
 
   home.packages = with pkgs;
     [
