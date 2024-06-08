@@ -89,6 +89,9 @@ if type -p swissknife > /dev/null; sk completion fish | source; end
 alias ts="timesheet"
 if type -p timesheet > /dev/null; ts completion fish | source; end
 
+# article-summarizer
+alias sm="article-summarizer"
+
 ####################
 # CONFIG: GCP
 ####################

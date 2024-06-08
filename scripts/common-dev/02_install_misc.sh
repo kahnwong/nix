@@ -21,6 +21,7 @@ pyenv global $PYTHON_VERSION
 ############################
 go install github.com/GoogleCloudPlatform/cloud-sql-proxy/v2@latest
 go install github.com/fawni/def@latest
+go install github.com/kahnwong/article-summarizer@latest
 go install github.com/kahnwong/pgconn@latest
 go install github.com/kahnwong/swissknife@latest
 go install github.com/kahnwong/timesheet@latest
@@ -49,7 +50,7 @@ pipx ensurepath
 
 pipx install nbpreview
 pipx install pip_search
-pipx install dvc[all]
+pipx install "dvc[all]"
 pipx install topydo[columns]
 
 pipx install poetry
