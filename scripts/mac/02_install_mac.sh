@@ -58,6 +58,7 @@ brew install --cask qlmarkdown
 
 # productivity
 brew install --cask notion-calendar
+brew install --cask loom
 brew install --cask macdown
 brew install --cask obsidian
 brew install --cask sleek
