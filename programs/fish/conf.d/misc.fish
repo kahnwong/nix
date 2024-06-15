@@ -21,6 +21,6 @@ function c
       eventsToday
 end
 
-# function budget
-#     fava -p 5004 ~/Cloud/Apps/fava/beans.beancount
-# end
+function go-build
+    CGO_ENABLED=0 go build -ldflags="-s -w" .
+end
