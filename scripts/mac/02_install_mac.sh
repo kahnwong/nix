@@ -3,6 +3,7 @@
 echo "================================= Install brew apps ================================="
 
 # browser
+brew install --cask arc
 brew install --cask firefox
 brew install --cask firefox-nightly
 brew install --cask google-chrome
@@ -30,18 +31,19 @@ brew install --cask tad
 brew install apache-spark
 
 # dev tools
+# brew install --cask mongodb-compass
+# brew install --cask postman
+# brew install --cask rio
+brew install --cask apidog
 brew install --cask docker
 brew install --cask fork
 brew install --cask intellij-idea
 brew install --cask kitty
-brew install kui
 brew install --cask microsoft-remote-desktop
-#brew install --cask mongodb-compass
 brew install --cask openlens
-brew install --cask postman
-# brew install --cask rio
 brew install --cask tailscale
 brew install --cask visual-studio-code
+brew install kui
 
 # entertainment
 brew install --cask calibre
@@ -66,6 +68,10 @@ brew install --cask sleek
 brew install --cask todotxt
 
 # utilities
+# brew install --cask hiddenbar
+# brew install --cask protonvpn
+# brew install --cask spectacle
+# brew install --cask stats
 brew install --cask alfred
 brew install --cask angry-ip-scanner
 brew install --cask anydesk
@@ -77,7 +83,6 @@ brew install --cask cloudflare-warp
 brew install --cask coconutbattery
 brew install --cask flameshot
 brew install --cask heynote
-brew install --cask hiddenbar
 brew install --cask hot
 brew install --cask kap
 brew install --cask keepassxc
@@ -86,15 +91,14 @@ brew install --cask latest
 brew install --cask maccy
 brew install --cask michaelvillar-timer
 brew install --cask mullvadvpn
-#brew install --cask protonvpn
 brew install --cask raspberry-pi-imager
 brew install --cask shifty
-# brew install --cask spectacle
-#brew install --cask stats
 brew install --cask the-unarchiver
 brew install --cask tyke
 brew install --cask yubico-authenticator
 brew install --cask yubico-yubikey-manager
+brew install ical-buddy
+brew install jordanbaird-ice
 
 # peripheral software
 brew install --cask linearmouse
