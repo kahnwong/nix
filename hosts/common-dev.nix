@@ -130,6 +130,11 @@
       pop
       libqalculate
       tz
+
+      # finance
+      hledger
+      hledger-web
+      hledger-ui
     ];
   };
 }
