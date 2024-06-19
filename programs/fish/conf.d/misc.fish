@@ -11,6 +11,7 @@ function c
       -ic A3340F36-8323-445F-BE7E-E0DC73FF26FD,140DA448-1B0A-42E0-85FE-DCF3949A44E9,CAB7A17B-8F21-4A64-A73B-E2756218CDB3 \
       -f \
       -npn \
+      -ea \
       -nc \
       -iep "title,datetime" \
       -ps "| - |" \
