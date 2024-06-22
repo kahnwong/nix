@@ -100,9 +100,9 @@
     git-lfs
     delta
     gh
-    # gitleaks
+    gitleaks
     pre-commit
-    # trufflehog
+    trufflehog
     #    gopass
   ];
 }
