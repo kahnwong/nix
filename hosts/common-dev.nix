@@ -132,9 +132,8 @@
       tz
 
       # finance
-      hledger
-      hledger-web
-      hledger-ui
+      beancount
+      fava
     ];
   };
 }
