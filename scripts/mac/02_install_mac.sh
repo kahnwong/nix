@@ -35,6 +35,7 @@ brew install apache-spark
 # brew install --cask postman
 # brew install --cask rio
 brew install --cask apidog
+brew install --cask devtoys
 brew install --cask docker
 brew install --cask fork
 brew install --cask intellij-idea
