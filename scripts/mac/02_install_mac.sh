@@ -90,7 +90,7 @@ brew install --cask keepassxc
 brew install --cask keepingyouawake
 brew install --cask latest
 brew install --cask maccy
-brew install --cask michaelvillar-timer
+#brew install --cask michaelvillar-timer
 brew install --cask mullvadvpn
 brew install --cask raspberry-pi-imager
 brew install --cask shifty
