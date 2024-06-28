@@ -16,7 +16,7 @@ function c
       -iep "title,datetime" \
       -ps "| - |" \
       -po "datetime,title" \
-      -df "%H:%M" \
+      -tf "%H:%M" \
       -eed \
       -n \
       eventsToday
