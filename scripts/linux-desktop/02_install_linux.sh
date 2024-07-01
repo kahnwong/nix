@@ -18,3 +18,4 @@ flatpak install flathub com.google.Chrome -y
 flatpak install flathub io.mpv.Mpv -y
 flatpak install flathub org.mozilla.firefox -y
 flatpak install flathub org.mozilla.Thunderbird -y
+flatpak install flathub com.github.IsmaelMartinez.teams_for_linux -y
