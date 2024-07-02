@@ -12,6 +12,8 @@ sudo apt update
 sudo apt install code -y
 
 ### applications
+sudo snap install intellij-idea-ultimate --classic
+
 flatpak install flathub com.discordapp.Discord -y
 flatpak install flathub com.github.eneshecan.WhatsAppForLinux -y
 flatpak install flathub com.google.Chrome -y
@@ -22,6 +24,5 @@ flatpak install flathub com.github.IsmaelMartinez.teams_for_linux -y
 flatpak install flathub com.sindresorhus.Caprine -y
 flatpak install flathub org.flameshot.Flameshot -y
 flatpak install flathub org.kde.konsole -y
-flatpak install flathub com.jetbrains.IntelliJ-IDEA-Ultimate -y
 flatpak install flathub org.fkoehler.KTailctl -y
 flatpak install flathub com.usebottles.bottles -y
