@@ -24,3 +24,4 @@ flatpak install flathub org.flameshot.Flameshot -y
 flatpak install flathub org.kde.konsole -y
 flatpak install flathub com.jetbrains.IntelliJ-IDEA-Ultimate -y
 flatpak install flathub org.fkoehler.KTailctl -y
+flatpak install flathub com.usebottles.bottles -y
