@@ -20,3 +20,7 @@ flatpak install flathub io.mpv.Mpv -y
 flatpak install flathub org.mozilla.Thunderbird -y
 flatpak install flathub com.github.IsmaelMartinez.teams_for_linux -y
 flatpak install flathub com.sindresorhus.Caprine -y
+flatpak install flathub org.flameshot.Flameshot -y
+flatpak install flathub org.kde.konsole -y
+flatpak install flathub com.jetbrains.IntelliJ-IDEA-Ultimate -y
+flatpak install flathub org.fkoehler.KTailctl -y
