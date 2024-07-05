@@ -25,4 +25,4 @@ flatpak install flathub com.sindresorhus.Caprine -y
 flatpak install flathub org.flameshot.Flameshot -y
 flatpak install flathub org.kde.konsole -y
 flatpak install flathub org.fkoehler.KTailctl -y
-flatpak install flathub com.usebottles.bottles -y
+# flatpak install flathub com.usebottles.bottles -y
