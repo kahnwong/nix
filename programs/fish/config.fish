@@ -75,8 +75,8 @@ zoxide init fish | source
 mcfly init fish | source
 set MCFLY_KEY_SCHEME vim
 
-# hledger
-set -gx LEDGER_FILE /Users/kahnwong/Cloud/Apps/hledger/.hledger.journal
+# direnv
+direnv hook fish | source
 
 # pgconn
 if type -p pgconn > /dev/null; pgconn completion fish | source; end

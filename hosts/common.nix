@@ -78,9 +78,10 @@
 
       # utils
       age
+      direnv
       entr
-      tldr
       sops
+      tldr
     ];
   };
 }
