@@ -38,6 +38,7 @@
       # networking
       curl
       dogdns
+      doggo
       gping
       iftop
       speedtest-cli
