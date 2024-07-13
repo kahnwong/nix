@@ -95,5 +95,6 @@ gh extension install geoffreywiseman/gh-actuse
 gh extension install stoe/gh-report
 gh extension install hectcastro/gh-metrics
 gh extension install rsese/gh-actions-status
+gh extension install Shresht7/gh-license
 
 echo "" # force return exit 0 so it'll continue executing downstream steps. exit 1 is from package already exists
