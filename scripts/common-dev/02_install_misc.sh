@@ -91,10 +91,7 @@ gh extension install dlvhdr/gh-dash
 gh extension install kawarimidoll/gh-graph
 gh extension install mislav/gh-branch
 gh extension install seachicken/gh-poi
-gh extension install geoffreywiseman/gh-actuse
-gh extension install stoe/gh-report
-gh extension install hectcastro/gh-metrics
-gh extension install rsese/gh-actions-status
 gh extension install Shresht7/gh-license
+gh extension install davidraviv/gh-clean-branches
 
 echo "" # force return exit 0 so it'll continue executing downstream steps. exit 1 is from package already exists
