@@ -140,3 +140,9 @@ repos:
 #       types: [python]
 #       pass_filenames: false
 #       require_serial: true
+#  - repo: local
+#    hooks:
+#      - id: prettier
+#        name: prettier
+#        entry: "yarn prettier . --write"
+#        language: system
