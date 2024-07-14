@@ -1,13 +1,14 @@
 { pkgs, ... }:
 {
   imports = [
+    ../programs/article-summarizer/article-summarizer.nix
     ../programs/aws/aws.nix
     ../programs/git/git.nix
     ../programs/kitty/kitty.nix
     ../programs/pgconn/pgconn.nix
     ../programs/proxmox/proxmox.nix
-    ../programs/timesheet/timesheet.nix
     ../programs/scripts/scripts.nix
+    ../programs/timesheet/timesheet.nix
     ../programs/topydo/topydo.nix
     ../programs/totp/totp.nix
     ../programs/yt-dlp/yt-dlp.nix
