@@ -52,6 +52,8 @@ make common-dev
 
 - For nerd fonts, download fonts from [here](https://github.com/ryanoasis/nerd-fonts/releases), put them in `~/.local/share/fonts` then run `fc-cache -fv`.
 
+- To setup custom mouse buttons: <https://github.com/pwr-Solaar/Solaar>.
+
 ## Post-installation instructions
 
 ### Linux: Set default shell
