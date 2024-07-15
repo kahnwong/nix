@@ -53,6 +53,7 @@ make common-dev
 - For nerd fonts, download fonts from [here](https://github.com/ryanoasis/nerd-fonts/releases), put them in `~/.local/share/fonts` then run `fc-cache -fv`.
 
 - To setup custom mouse buttons: <https://github.com/pwr-Solaar/Solaar>.
+- If you install linux on mac devices, install gnome-tweaks to remap super and alt button.
 
 ## Post-installation instructions
 
