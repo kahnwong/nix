@@ -8,6 +8,7 @@
     ../programs/pgconn/pgconn.nix
     ../programs/proxmox/proxmox.nix
     ../programs/scripts/scripts.nix
+    ../programs/terraform/terraform.nix
     ../programs/timesheet/timesheet.nix
     ../programs/topydo/topydo.nix
     ../programs/totp/totp.nix
@@ -85,15 +86,6 @@
       #      grype
       #      syft
       trivy
-
-      # terraform
-      terraform # non-free
-      opentofu
-
-      ## tools
-      terraform-docs
-      # terraformer
-      infracost
 
       # docs
       #    d2
