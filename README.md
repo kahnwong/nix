@@ -50,7 +50,7 @@ make common-dev
 
 - If you need `tailscale`, `caddy`, `fail2ban`, or `docker` on your server, install it via your system's package manager, since nix requires you set up systemd services explicitly.
 
-- For nerd fonts, download fonts from [here](https://github.com/ryanoasis/nerd-fonts/releases), put them in `~/.local/share/fonts` then run `fc-cache -fv`.
+- For nerd fonts, download fonts from [here](https://github.com/ryanoasis/nerd-fonts/releases), put them in `~/.local/share/fonts` (or `~/.fonts`) then run `fc-cache -fv`.
 
 - To setup custom mouse buttons: <https://github.com/pwr-Solaar/Solaar>.
 - If you install linux on mac devices, install gnome-tweaks to remap super and alt button.
