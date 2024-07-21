@@ -9,9 +9,7 @@
     ];
 
   fonts = {
-    fontDir.enable = true;
-
-    fonts = with pkgs; [
+    packages = with pkgs; [
       # font-awesome
       # inter
       # national-park-typeface
