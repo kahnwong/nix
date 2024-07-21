@@ -27,21 +27,10 @@ linux-desktop:
 decrypt-credentials:
 	./scripts/decrypt.sh
 
-# BREW
-update-brew:
-	brew upgrade --greedy
-	brew autoremove
-	brew cleanup
-
-# FLATPAK
-update-flatpak:
-	flatpak update
-	flatpak uninstall --unused
-
-# NIX
 update:
 	./scripts/update.sh
 
+# NIX
 apply:
 	./scripts/apply.sh
 
