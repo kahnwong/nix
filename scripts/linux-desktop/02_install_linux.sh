@@ -29,3 +29,4 @@ flatpak install flathub org.fkoehler.KTailctl -y
 # flatpak install flathub com.usebottles.bottles -y
 flatpak install flathub com.github.zocker_160.SyncThingy -y
 flatpak install flathub io.github.dweymouth.supersonic -y
+flatpak install flathub com.github.hluk.copyq -y
