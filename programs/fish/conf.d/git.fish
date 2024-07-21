@@ -33,3 +33,7 @@ end
 function diff
     difft $argv
 end
+
+function p
+    pre-commit
+end
