@@ -33,6 +33,11 @@ update-brew:
 	brew autoremove
 	brew cleanup
 
+# FLATPAK
+update-flatpak:
+	flatpak update
+	flatpak uninstall --unused
+
 # NIX
 update:
 	./scripts/update.sh
