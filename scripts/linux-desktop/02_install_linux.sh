@@ -14,12 +14,13 @@ sudo apt install code -y
 ### applications
 sudo snap install intellij-idea-ultimate --classic
 sudo apt install flameshot
+curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 
 flatpak install flathub com.discordapp.Discord -y
 flatpak install flathub com.github.eneshecan.WhatsAppForLinux -y
 flatpak install flathub com.google.Chrome -y
 flatpak install flathub io.mpv.Mpv -y
-# flatpak install flathub org.mozilla.firefox -y
+# flatpak install flathub org.mozilla.firefox -y  # already installed via snap by default
 flatpak install flathub org.mozilla.Thunderbird -y
 flatpak install flathub com.github.IsmaelMartinez.teams_for_linux -y
 flatpak install flathub com.sindresorhus.Caprine -y
