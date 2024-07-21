@@ -42,10 +42,11 @@
         specialArgs = { inherit nixpkgs; };
       };
       # ----------------- linux ----------------- #
+      # currently NUC and SAILFISH are the same
       nuc = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         modules = [
-          ./hosts/linux/dev/home.nix
+          ./hosts/linux/nuc/home.nix
           {
             home = {
               username = "kahnwong";

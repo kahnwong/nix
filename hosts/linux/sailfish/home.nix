@@ -9,6 +9,7 @@ in
     ../../common.nix
     ../../common-linux.nix
     ../../common-desktop.nix
+    ../../common-dev.nix
   ];
 
   home.packages = with pkgs; [
