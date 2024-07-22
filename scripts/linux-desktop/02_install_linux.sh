@@ -13,7 +13,6 @@ sudo apt install code -y
 
 ### applications
 sudo snap install intellij-idea-ultimate --classic
-sudo apt install flameshot
 curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 
 # flatpak install flathub com.github.eneshecan.WhatsAppForLinux -y
@@ -31,5 +30,6 @@ flatpak install flathub dev.k8slens.OpenLens -y
 flatpak install flathub io.github.dweymouth.supersonic -y
 flatpak install flathub io.mpv.Mpv -y
 flatpak install flathub org.fkoehler.KTailctl -y
+flatpak install flathub org.flameshot.Flameshot -y
 flatpak install flathub org.kde.konsole -y
 flatpak install flathub org.mozilla.Thunderbird -y

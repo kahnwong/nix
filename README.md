@@ -55,7 +55,7 @@ make common-dev
 - To setup custom mouse buttons: <https://github.com/pwr-Solaar/Solaar>.
   - For some mouses, use <https://github.com/libratbag/piper/issues/352#issuecomment-1147626332>.
 - If you install linux on mac devices, install gnome-tweaks to remap super and alt button.
-- Set Flameshot shortcut: <https://flameshot.org/docs/guide/key-bindings/#on-ubuntu-and-other-gnome-based-distros>.
+- Set Flameshot shortcut: <https://flameshot.org/docs/guide/key-bindings/#on-ubuntu-and-other-gnome-based-distros>. Flatpak path: `/var/lib/flatpak/exports/bin/org.flameshot.Flameshot`.
 - Set Kitty app launcher: <https://sw.kovidgoyal.net/kitty/binary/#desktop-integration-on-linux>.
 
 ## Post-installation instructions
