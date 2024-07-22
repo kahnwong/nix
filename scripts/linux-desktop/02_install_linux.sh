@@ -19,7 +19,6 @@ curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 # flatpak install flathub com.github.eneshecan.WhatsAppForLinux -y
 # flatpak install flathub com.sindresorhus.Caprine -y
 # flatpak install flathub com.usebottles.bottles -y
-# flatpak install flathub org.kde.konsole -y
 # flatpak install flathub org.mozilla.firefox -y  # already installed via snap by default
 flatpak install flathub com.calibre_ebook.calibre -y
 flatpak install flathub com.discordapp.Discord -y
@@ -32,4 +31,5 @@ flatpak install flathub dev.k8slens.OpenLens -y
 flatpak install flathub io.github.dweymouth.supersonic -y
 flatpak install flathub io.mpv.Mpv -y
 flatpak install flathub org.fkoehler.KTailctl -y
+flatpak install flathub org.kde.konsole -y
 flatpak install flathub org.mozilla.Thunderbird -y
