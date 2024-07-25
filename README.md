@@ -57,6 +57,7 @@ make common-dev
 - If you install linux on mac devices, install gnome-tweaks to remap super and alt button.
 - Set Flameshot shortcut: <https://flameshot.org/docs/guide/key-bindings/#on-ubuntu-and-other-gnome-based-distros>. Flatpak path: `/var/lib/flatpak/exports/bin/org.flameshot.Flameshot`.
 - Set Kitty app launcher: <https://sw.kovidgoyal.net/kitty/binary/#desktop-integration-on-linux>.
+- Launch CopyQ on startup: `/var/lib/flatpak/exports/bin/com.github.hluk.copyq --start-server toggle`.
 
 ## Post-installation instructions
 
