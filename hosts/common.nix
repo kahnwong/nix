@@ -53,7 +53,6 @@
 
       # fetch
       cpufetch
-      ipfetch
       neofetch
       onefetch
       pfetch

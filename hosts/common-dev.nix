@@ -56,15 +56,14 @@
         ]
       )
 
-      # azure
-      azure-cli
+      #      # azure
+      #      azure-cli
 
       # kubernetes
       kubernetes-helm
       k9s
       kubectl
       kubectx
-      #      kompose
       #      argocd
       #      helm-dashboard
       #      k3d
@@ -92,7 +91,6 @@
       graphviz
       silicon
       #      charm-freeze
-      #    slides
       vhs
 
       # networking
@@ -106,7 +104,6 @@
       bitwarden-cli
 
       # # api testing
-      # httpie
       # hurl
       # xh
 
