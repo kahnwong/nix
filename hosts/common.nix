@@ -39,8 +39,8 @@
       curl
       doggo
       gping
-      iftop
-      speedtest-cli
+      #      iftop
+      #      speedtest-cli
 
       # system
       du-dust
