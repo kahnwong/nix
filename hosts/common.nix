@@ -37,7 +37,6 @@
 
       # networking
       curl
-      dogdns
       doggo
       gping
       iftop

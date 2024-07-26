@@ -52,7 +52,7 @@ end
 # SYSTEM: NETWORKING
 ########################
 function dig
-    dog $argv
+    doggo $argv
 end
 
 function ping
