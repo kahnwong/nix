@@ -22,6 +22,7 @@
       golangci-lint
       gopls
       gotools
+      goreleaser
 
       # java
       temurin-bin
