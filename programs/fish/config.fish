@@ -92,6 +92,10 @@ if type -p swissknife > /dev/null; sk completion fish | source; end
 alias ts="timesheet"
 if type -p timesheet > /dev/null; ts completion fish | source; end
 
+# config-init
+alias ci="config-init"
+if type -p config-init > /dev/null; ci completion fish | source; end
+
 # article-summarizer
 alias sm="article-summarizer"
 
