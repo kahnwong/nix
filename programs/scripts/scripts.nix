@@ -3,7 +3,6 @@
 {
   home.file."scripts/,code-to-image.sh".source = ./code-to-image.sh;
   home.file."scripts/,convert-to-webp.sh".source = ./convert-to-webp.sh;
-  home.file."scripts/,dependabot-init.sh".source = ./dependabot-init.sh;
   home.file."scripts/,docker-compose-up.sh".source = ./docker-compose-up.sh;
   home.file."scripts/,flameshot-kill.sh".source = ./flameshot-kill.sh;
   home.file."scripts/,gh-list-repos.sh".source = ./gh-list-repos.sh;
