@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # nix
-nix flake update
+nix flake update --experimental-features 'nix-command flakes'
 ./scripts/apply.sh
 nix-store --gc # cleanup garbage collection
 
