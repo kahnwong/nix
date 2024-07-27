@@ -13,6 +13,5 @@
   home.file."scripts/,sops-init.sh".source = ./sops-init.sh;
   home.file."scripts/,tf-cost-html.sh".source = ./tf-cost-html.sh;
   home.file."scripts/,tf-cost.sh".source = ./tf-cost.sh;
-  home.file."scripts/,tf-init.sh".source = ./tf-init.sh;
   home.file."scripts/,zip-compress.sh".source = ./zip-compress.sh;
 }
