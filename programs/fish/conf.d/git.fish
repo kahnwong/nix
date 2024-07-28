@@ -35,5 +35,5 @@ function diff
 end
 
 function p
-    pre-commit
+    pre-commit $argv
 end
