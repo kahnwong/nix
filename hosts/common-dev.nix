@@ -24,11 +24,6 @@
       gotools
       goreleaser
 
-      # java
-      temurin-bin
-      ## gradle
-      ## maven
-
       # node
       nodejs # so nvm can initialize
 
@@ -39,9 +34,6 @@
       # gdal # for build env
       black
       ruff
-
-      # rust
-      rustup
 
       # shell - linters
       shellcheck
@@ -78,39 +70,21 @@
       kube-capacity
 
       # database
-      postgresql_16
+      #      postgresql_16
       pgcli
       #    mongodb-tools
-
-      ## security
-      #      grype
-      #      syft
-      trivy
-
-      # docs
-      #    d2
-      graphviz
-      silicon
-      #      charm-freeze
-      vhs
-
-      # networking
-      rustscan
 
       # monitoring
       #      sampler
 
       # ------- tools ------- #
-      nodePackages.markdown-link-check
-      bitwarden-cli
-
       # # api testing
       # hurl
       # xh
 
       # data
       #      sqlfluff
-      visidata
+      #      visidata
 
       # misc
       hugo

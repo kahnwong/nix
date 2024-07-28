@@ -41,6 +41,7 @@
       gping
       #      iftop
       #      speedtest-cli
+      rustscan
 
       # system
       du-dust

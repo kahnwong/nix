@@ -9,6 +9,7 @@ in
     ../../common.nix
     ../../common-desktop.nix
     ../../common-dev.nix
+    ../../common-dev-workstation.nix
   ];
   home.packages = with pkgs; [
     caddy
