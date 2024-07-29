@@ -51,3 +51,4 @@ fish -c "fisher install danhper/fish-ssh-agent"
 
 #### nvim
 #nvim --headless +PlugInstall +qall
+git clone https://github.com/kahnwong/nvchad-starter.git ~/.config/nvim --depth 1

@@ -69,6 +69,9 @@
       includeIf."gitdir:~/Cloud/Apps/" = {
         path = "profiles/github";
       };
+      includeIf."gitdir:~/.config/nvim/" = {
+        path = "profiles/github";
+      };
       includeIf."gitdir:~/Git/forgejo/" = {
         path = "profiles/forgejo";
       };

@@ -4,7 +4,6 @@
 common:
 	./scripts/common/01_setup.sh
 	./scripts/common/02_add_fish_completions.sh
-	./scripts/common/03_nvim.sh
 	cat ./post_installation_message.txt
 
 common-dev:
