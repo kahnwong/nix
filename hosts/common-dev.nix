@@ -78,6 +78,8 @@
       #      sampler
 
       # ------- tools ------- #
+      k6
+
       # # api testing
       # hurl
       # xh
