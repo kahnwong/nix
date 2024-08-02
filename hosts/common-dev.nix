@@ -78,7 +78,7 @@
       #      sampler
 
       # ------- tools ------- #
-      k6
+      # k6
 
       # # api testing
       # hurl
@@ -90,6 +90,7 @@
 
       # misc
       hugo
+      silicon
       sshx
       wakatime
 

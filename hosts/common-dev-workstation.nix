@@ -20,10 +20,9 @@
 
       # docs
       #    d2
-      graphviz
-      silicon
+      # graphviz
       #      charm-freeze
-      vhs
+      # vhs
 
       # ------- tools ------- #
       nodePackages.markdown-link-check

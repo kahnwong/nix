@@ -12,7 +12,7 @@
     packages = with pkgs; [
       # backup
       #      rclone
-      restic
+      # restic
 
       # shell
       bat
