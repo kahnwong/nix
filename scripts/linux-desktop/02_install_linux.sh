@@ -12,8 +12,9 @@ sudo apt update
 sudo apt install code -y
 
 ### applications
-sudo snap install intellij-idea-ultimate --classic
 curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
+sudo snap install intellij-idea-ultimate --classic
+sudo snap install mpv
 
 # flatpak install flathub com.github.eneshecan.WhatsAppForLinux -y
 # flatpak install flathub com.sindresorhus.Caprine -y

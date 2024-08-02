@@ -21,6 +21,7 @@ set PATH \
     $HOME/.cargo/bin \
     /Applications/IntelliJ\ IDEA.app/Contents/MacOS \
     /opt/homebrew/bin \
+    /snap/bin \
     /usr/local/bin \
     /usr/local/sbin \
     /usr/bin \
