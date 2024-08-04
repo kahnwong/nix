@@ -3,7 +3,8 @@
 # nix
 nix flake update --experimental-features 'nix-command flakes'
 ./scripts/apply.sh
-nix-store --gc # cleanup garbage collection
+nix-store --gc
+# nix-collect-garbage --delete-old  # only run this once in a while
 
 # fish
 fisher update
