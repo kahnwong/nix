@@ -27,6 +27,7 @@ go install github.com/kahnwong/pgconn@latest
 go install github.com/kahnwong/swissknife@latest
 go install github.com/kahnwong/timesheet@latest
 go install github.com/kahnwong/totp@latest
+go install github.com/kahnwong/waka@latest
 go install github.com/ksoclabs/kbom@latest
 go install github.com/nore-dev/fman@latest
 go install github.com/peterldowns/nix-search-cli/cmd/nix-search@latest
@@ -63,7 +64,6 @@ nvm use v18.19.0
 
 npm set prefix ~/.npm-global
 npm install -g yarn
-npm install -g @jaebradley/wakatime-cli
 npm install -g markdownlint-cli
 
 ############################
