@@ -64,7 +64,7 @@ nvm use v18.19.0
 
 npm set prefix ~/.npm-global
 npm install -g yarn
-npm install -g markdownlint-cli
+npm install -g markdownlint-cli2
 
 ############################
 # kubectl
