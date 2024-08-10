@@ -7,10 +7,9 @@
   home.file.".config/fish/conf.d/shell.fish".source = ./conf.d/shell.fish;
   home.file.".config/fish/conf.d/topydo.fish".source = ./conf.d/topydo.fish;
   home.file.".config/fish/config.fish".source = ./config.fish;
-  home.file.".config/fish/functions/envsource.fish".source = ./functions/envsource.fish;
+  home.file.".config/fish/functions/envsource.fish".source =
+    ./functions/envsource.fish;
   home.file.".config/fish/functions/pip.fish".source = ./functions/pip.fish;
 
-  home.packages = with pkgs; [
-    fish
-  ];
+  home.packages = with pkgs; [ fish ];
 }

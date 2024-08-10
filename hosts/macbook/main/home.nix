@@ -3,15 +3,12 @@ let
   nixFlakes = (pkgs.writeScriptBin "nixFlakes" ''
     exec ${pkgs.nixUnstable}/bin/nix --experimental-features "nix-command flakes" "$@"
   '');
-in
-{
+in {
   imports = [
     ../../common.nix
     ../../common-desktop.nix
     ../../common-dev.nix
     ../../common-dev-workstation.nix
   ];
-  home.packages = with pkgs; [
-    caddy
-  ];
+  home.packages = with pkgs; [ caddy ];
 }

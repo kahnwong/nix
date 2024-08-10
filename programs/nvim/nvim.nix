@@ -8,10 +8,7 @@
     vimdiffAlias = true;
 
     # for treesitter
-    plugins = with pkgs.vimPlugins;[
-      nvim-treesitter
-    ];
-
+    plugins = with pkgs.vimPlugins; [ nvim-treesitter ];
 
     # # default nix vim plugin manager is flaky with vim-wakatime, need to use vim-plug
     # plugins = with pkgs.vimPlugins; [

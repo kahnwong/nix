@@ -9,14 +9,11 @@
   home.file.".sops.yaml".source = ./sops/.sops.yaml;
   home.file.".sops-dc.yaml".source = ./sops/.sops-dc.yaml;
 
-
   programs.git = {
     # `git config --global --edit` to see raw config
     enable = true;
 
-    lfs = {
-      enable = true;
-    };
+    lfs = { enable = true; };
 
     delta = {
       enable = true;
@@ -44,14 +41,10 @@
       ### commit signing
       gpg.format = "ssh";
 
-      commit = {
-        gpgsign = true;
-      };
+      commit = { gpgsign = true; };
 
       credential = lib.mkMerge [
-        (lib.mkIf pkgs.stdenv.isDarwin {
-          helper = "osxkeychain";
-        })
+        (lib.mkIf pkgs.stdenv.isDarwin { helper = "osxkeychain"; })
 
         #        (lib.mkIf pkgs.stdenv.isLinux {
         #          helper = "gopass";
@@ -60,24 +53,14 @@
 
       ### git profiles
       # optional
-      includeIf."gitdir:~/Git/" = {
-        path = "profiles/github";
-      };
+      includeIf."gitdir:~/Git/" = { path = "profiles/github"; };
       includeIf."gitdir:~/Library/Mobile Documents/" = {
         path = "profiles/github";
       };
-      includeIf."gitdir:~/Cloud/Apps/" = {
-        path = "profiles/github";
-      };
-      includeIf."gitdir:/opt/syncthing/cloud/" = {
-        path = "profiles/github";
-      };
-      includeIf."gitdir:~/.config/nvim/" = {
-        path = "profiles/github";
-      };
-      includeIf."gitdir:~/Git/forgejo/" = {
-        path = "profiles/forgejo";
-      };
+      includeIf."gitdir:~/Cloud/Apps/" = { path = "profiles/github"; };
+      includeIf."gitdir:/opt/syncthing/cloud/" = { path = "profiles/github"; };
+      includeIf."gitdir:~/.config/nvim/" = { path = "profiles/github"; };
+      includeIf."gitdir:~/Git/forgejo/" = { path = "profiles/forgejo"; };
 
       ### global ignore
       core.excludesfile = "~/.gitignore_global";
@@ -87,9 +70,7 @@
         autosetupremote = true;
       };
 
-      push = {
-        autoSetupRemote = true;
-      };
+      push = { autoSetupRemote = true; };
 
       #      init = {
       #        defaultBranch = "main";

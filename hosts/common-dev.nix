@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{ pkgs, ... }: {
   imports = [
     ../programs/article-summarizer/article-summarizer.nix
     ../programs/aws/aws.nix
@@ -28,7 +27,7 @@
       nodejs # so nvm can initialize
 
       # nix
-      nixpkgs-fmt
+      nixfmt
 
       # python
       # gdal # for build env
@@ -42,12 +41,10 @@
       # ------- devops ------- #
       # gcp
       docker-credential-gcr
-      (
-        google-cloud-sdk.withExtraComponents [
-          google-cloud-sdk.components.gke-gcloud-auth-plugin
-          # google-cloud-sdk.components.cloud_sql_proxy # this is outdated
-        ]
-      )
+      (google-cloud-sdk.withExtraComponents [
+        google-cloud-sdk.components.gke-gcloud-auth-plugin
+        # google-cloud-sdk.components.cloud_sql_proxy # this is outdated
+      ])
 
       #      # azure
       #      azure-cli

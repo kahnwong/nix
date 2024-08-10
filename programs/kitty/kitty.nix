@@ -9,8 +9,7 @@
         let
           mac = builtins.readFile ./kitty-mac.conf;
           linux = builtins.readFile ./kitty-linux.conf;
-        in
-        (if stdenv.isLinux then linux else mac);
+        in (if stdenv.isLinux then linux else mac);
     };
   };
 

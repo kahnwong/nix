@@ -3,8 +3,7 @@ let
   nixFlakes = (pkgs.writeScriptBin "nixFlakes" ''
     exec ${pkgs.nixUnstable}/bin/nix --experimental-features "nix-command flakes" "$@"
   '');
-in
-{
+in {
   imports = [
     ../../common.nix
     ../../common-linux.nix
@@ -12,6 +11,5 @@ in
     ../../common-dev.nix
   ];
 
-  home.packages = with pkgs; [
-  ];
+  home.packages = with pkgs; [ ];
 }

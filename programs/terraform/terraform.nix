@@ -2,17 +2,17 @@
 
 {
   home.file.".terraformrc".source = ./.terraformrc;
-  home.file.".terraform.d/plugin-cache/.terraformrc".source = ./.terraformrc; # dummy file for init directory
+  home.file.".terraform.d/plugin-cache/.terraformrc".source =
+    ./.terraformrc; # dummy file for init directory
 
-  home.packages = with pkgs;
-    [
-      terraform # non-free
-      opentofu
+  home.packages = with pkgs; [
+    terraform # non-free
+    opentofu
 
-      ## tools
-      terraform-docs
-      # terraformer
-      infracost
+    ## tools
+    terraform-docs
+    # terraformer
+    infracost
 
-    ];
+  ];
 }

@@ -1,41 +1,30 @@
 ---
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.0.1
+    rev: v4.6.0
     hooks:
       - id: trailing-whitespace
       - id: end-of-file-fixer
+      - id: check-yaml
       - id: check-added-large-files
       - id: check-case-conflict
       - id: check-executables-have-shebangs
       - id: check-json
-      - id: check-yaml
+      - id: check-shebang-scripts-are-executable
+      - id: check-toml
       - id: detect-private-key
       - id: fix-byte-order-marker
       - id: mixed-line-ending
-      - id: file-contents-sorter
-        files: requirements.txt
+  # ----------------------- OPS -----------------------
   - repo: https://github.com/jumanjihouse/pre-commit-hooks
     rev: 3.0.0
     hooks:
       - id: shellcheck
       - id: shfmt
-  - repo: https://github.com/jumanjihouse/pre-commit-hook-yamlfmt
-    rev: 0.2.1
+    # ----------------------- NIX -----------------------
+  - repo: local
     hooks:
-      - id: yamlfmt
-        args:
-          - --mapping
-          - "2"
-          - --sequence
-          - "4"
-          - --offset
-          - "2"
-          - --width
-          - "150"
-          - --preserve-quotes
-        exclude: (sops\.yaml)$
-  - repo: https://github.com/nix-community/nixpkgs-fmt
-    rev: v1.3.0
-    hooks:
-      - id: nixpkgs-fmt
+      - id: nixfmt
+        name: nixfmt
+        entry: "nixfmt"
+        language: system

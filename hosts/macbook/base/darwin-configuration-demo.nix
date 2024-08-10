@@ -1,7 +1,5 @@
-{ pkgs, nix, nixpkgs, config, lib, ... }:
-{
-  imports = [
-  ];
+{ pkgs, nix, nixpkgs, config, lib, ... }: {
+  imports = [ ];
   environment.systemPackages = with pkgs;
     [
       # nix
@@ -31,16 +29,10 @@
     ];
   };
 
-  users = {
-    users.demo = {
-      home = /Users/demo;
-    };
-  };
+  users = { users.demo = { home = /Users/demo; }; };
 
   nix = {
-    nixPath = lib.mkForce [
-      "nixpkgs=${nixpkgs}"
-    ];
+    nixPath = lib.mkForce [ "nixpkgs=${nixpkgs}" ];
     extraOptions = ''
       experimental-features = nix-command flakes
     '';

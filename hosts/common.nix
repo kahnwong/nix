@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{ pkgs, ... }: {
   imports = [
     ../programs/fish/fish.nix
     ../programs/nvim/nvim.nix
