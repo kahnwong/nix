@@ -30,7 +30,9 @@ flatpak install flathub com.github.johnfactotum.Foliate -y
 flatpak install flathub com.github.zocker_160.SyncThingy -y
 flatpak install flathub com.google.Chrome -y
 flatpak install flathub dev.k8slens.OpenLens -y
+flatpak install flathub dev.skynomads.Seabird
 flatpak install flathub io.github.dweymouth.supersonic -y
+flatpak install flathub io.kinvolk.Headlamp -y
 flatpak install flathub org.fkoehler.KTailctl -y
 flatpak install flathub org.flameshot.Flameshot -y
 flatpak install flathub org.mozilla.Thunderbird -y
