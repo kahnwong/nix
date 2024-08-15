@@ -1,7 +1,7 @@
 { config, pkgs, lib, ... }:
 
 {
-  home.file.".config/git/profiles/forgejo".source = ./profiles/forgejo;
+  home.file.".config/git/profiles/gitea".source = ./profiles/gitea;
   home.file.".config/git/profiles/github".source = ./profiles/github;
   home.file.".gitignore_global".source = ./gitignore/gitignore_global;
 
@@ -60,7 +60,7 @@
       includeIf."gitdir:~/Cloud/Apps/" = { path = "profiles/github"; };
       includeIf."gitdir:/opt/syncthing/cloud/" = { path = "profiles/github"; };
       includeIf."gitdir:~/.config/nvim/" = { path = "profiles/github"; };
-      includeIf."gitdir:~/Git/forgejo/" = { path = "profiles/forgejo"; };
+      includeIf."gitdir:~/Git/gitea/" = { path = "profiles/gitea"; };
 
       ### global ignore
       core.excludesfile = "~/.gitignore_global";
