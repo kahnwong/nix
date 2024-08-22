@@ -22,6 +22,7 @@
       gopls
       gotools
       goreleaser
+      air
 
       # node
       nodejs # so nvm can initialize
