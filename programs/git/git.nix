@@ -54,12 +54,20 @@
       ### git profiles
       # optional
       includeIf."gitdir:~/Git/" = { path = "profiles/github"; };
+
+      ## obsidian
       includeIf."gitdir:~/Library/Mobile Documents/" = {
         path = "profiles/github";
       };
+      includeIf."gitdir:~/Obsidian/" = { path = "profiles/github"; };
+
+      ## syncthing
       includeIf."gitdir:~/Cloud/Apps/" = { path = "profiles/github"; };
       includeIf."gitdir:/opt/syncthing/cloud/" = { path = "profiles/github"; };
+
+      ## nvim
       includeIf."gitdir:~/.config/nvim/" = { path = "profiles/github"; };
+
       includeIf."gitdir:~/Git/gitea/" = { path = "profiles/gitea"; };
 
       ### global ignore
