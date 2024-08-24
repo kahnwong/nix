@@ -35,4 +35,5 @@ flatpak install flathub io.github.dweymouth.supersonic -y
 flatpak install flathub io.kinvolk.Headlamp -y
 flatpak install flathub org.fkoehler.KTailctl -y
 flatpak install flathub org.flameshot.Flameshot -y
+flatpak install flathub org.kde.okular -y
 flatpak install flathub org.mozilla.Thunderbird -y

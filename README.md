@@ -60,6 +60,7 @@ make common-dev
 - Launch CopyQ on startup: `/var/lib/flatpak/exports/bin/com.github.hluk.copyq --start-server toggle`. On Wayland, add prefix `env QT_QPA_PLATFORM=xcb`.
 - Start synthingy on startup: `flatpak run --command=SyncThingy com.github.zocker_160.SyncThingy`.
 - Install [mullvad](https://mullvad.net/en/download/vpn/linux).
+- Fix discord not loading: `rm -rf ~/.var/app/com.discordapp.Discord`
 
 ## Post-installation instructions
 
