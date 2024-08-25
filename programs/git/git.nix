@@ -24,8 +24,8 @@
     };
 
     # default
-    # userName = "Karn Wong";
-    # userEmail = "karn@karnwong.me";
+    userName = "Karn Wong";
+    userEmail = "karn@karnwong.me";
     # signing.key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGjELfQh9UxS1ORQZJY0it8T57x8+mHSg0fVAG/dprrl karn@karnwong.me";
 
     # https://jvns.ca/blog/2024/02/16/popular-git-config-options/
@@ -68,6 +68,7 @@
       ## nvim
       includeIf."gitdir:~/.config/nvim/" = { path = "profiles/github"; };
 
+      # gitea
       includeIf."gitdir:~/Git/gitea/" = { path = "profiles/gitea"; };
 
       ### global ignore
