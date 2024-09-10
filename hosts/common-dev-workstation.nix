@@ -8,9 +8,6 @@
       ## gradle
       ## maven
 
-      # rust
-      rustup
-
       ## security
       #      grype
       #      syft

@@ -16,7 +16,7 @@
 
   home = {
     packages = with pkgs; [
-      # ------- runtime ------- #
+      # ------- runtimes & toolchains ------- #
       # golang
       golangci-lint
       gopls
@@ -34,6 +34,9 @@
       # gdal # for build env
       black
       ruff
+
+      # rust
+      rustup
 
       # shell - linters
       shellcheck
