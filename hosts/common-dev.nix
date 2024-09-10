@@ -28,7 +28,7 @@
       nodejs # so nvm can initialize
 
       # nix
-      nixfmt
+      nixfmt-classic
 
       # python
       # gdal # for build env
