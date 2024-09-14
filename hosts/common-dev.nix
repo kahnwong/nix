@@ -34,6 +34,7 @@
       # gdal # for build env
       black
       ruff
+      uv
 
       # rust
       rustup
