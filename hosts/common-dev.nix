@@ -81,9 +81,8 @@
       # ------- tools ------- #
       k6
 
-      # # api testing
-      # hurl
-      # xh
+      # api testing
+      hurl
 
       # data
       #      sqlfluff
