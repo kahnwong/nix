@@ -20,7 +20,7 @@
       # vhs
 
       # kubernetes
-      k3d
+      # k3d # but actual k3s is better
 
       # ------- tools ------- #
       nodePackages.markdown-link-check
