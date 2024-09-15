@@ -61,7 +61,6 @@
       kubectx
       #      argocd
       #      helm-dashboard
-      #      k3d
       #      kdash
       #      kind
       #      pluto

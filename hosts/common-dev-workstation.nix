@@ -19,6 +19,9 @@
       #      charm-freeze
       # vhs
 
+      # kubernetes
+      k3d
+
       # ------- tools ------- #
       nodePackages.markdown-link-check
       #      bitwarden-cli
