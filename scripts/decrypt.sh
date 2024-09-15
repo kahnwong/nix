@@ -12,8 +12,8 @@ sops -d ./programs/kubectl/config.sops >~/.kube/config
 mkdir -p ~/.ssh/config.d
 sops -d ./programs/ssh/config.d/homelab.sops >~/.ssh/config.d/homelab
 sops -d ./programs/ssh/config.d/vps.sops >~/.ssh/config.d/vps
-sops -d ./programs/ssh/config.d/work-legacy.sops >~/.ssh/config.d/work-legacy
-sops -d ./programs/ssh/config.d/work.sops >~/.ssh/config.d/work
+# sops -d ./programs/ssh/config.d/work-legacy.sops >~/.ssh/config.d/work-legacy
+# sops -d ./programs/ssh/config.d/work.sops >~/.ssh/config.d/work
 sops -d ./programs/ssh/config.sops >~/.ssh/config
 
 sops -d ./programs/wakatime/wakatime.sops.cfg >~/.wakatime.cfg
