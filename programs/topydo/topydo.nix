@@ -22,6 +22,6 @@
 
   home.packages = with pkgs;
     [
-      # topydo # installed via pipx instead
+      # topydo # installed via uv instead
     ];
 }

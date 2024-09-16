@@ -42,20 +42,12 @@ cargo install imgcatr
 ############################
 # applications - python
 ############################
-if [[ $(uname -s) == 'Linux' ]]; then
-	sudo apt install pipx -y
-elif [[ $(uname -s) == 'Darwin' ]]; then
-	brew install pipx
-fi
-pipx ensurepath
-
-pipx install nbpreview
-pipx install pip_search
-pipx install "dvc[all]"
-pipx install topydo[columns]
-
-pipx install poetry
-pipx inject poetry poetry-plugin-export
+# uv tool install nbpreview
+uv tool install pip_search
+uv tool install "dvc[all]"
+uv tool install topydo[columns]
+uv tool install poetry
+uv tool install poetry-plugin-export
 
 ############################
 # applications - node
