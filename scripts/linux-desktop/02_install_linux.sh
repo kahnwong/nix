@@ -26,6 +26,7 @@ flatpak install flathub com.calibre_ebook.calibre -y
 flatpak install flathub com.discordapp.Discord -y
 flatpak install flathub com.github.IsmaelMartinez.teams_for_linux -y
 flatpak install flathub com.github.hluk.copyq -y
+flatpak install flathub com.github.iwalton3.jellyfin-media-player -y
 flatpak install flathub com.github.johnfactotum.Foliate -y
 flatpak install flathub com.github.zocker_160.SyncThingy -y
 flatpak install flathub com.google.Chrome -y

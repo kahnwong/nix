@@ -50,6 +50,7 @@ brew install kui
 brew install --cask calibre
 brew install --cask fbreader
 brew install --cask iina
+brew install --cask jellyfin-media-player
 brew install --cask simple-comic
 brew install --cask transmission-remote-gui
 brew install --cask xnviewmp
