@@ -12,7 +12,7 @@ set -g fish_greeting
 ####################
 # default
 set PATH \
-    $HOME/.local/share/nvm/v18.19.0/bin \
+    $HOME/.local/share/nvm/v20.17.0/bin \
     $HOME/.nix-profile/bin \
     $HOME/.pyenv/bin \
     $HOME/.local/bin \
@@ -43,7 +43,7 @@ set PATH $PATH:$HOME/.nix-profile/bin
 set PATH $PATH:/nix/var/nix/profiles/default/bin/
 
 # node
-set -xU nvm_default_version v18.19.0
+set -xU nvm_default_version v20.17.0
 
 # python
 set PYENV_VERSION 3.11.8

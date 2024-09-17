@@ -3,7 +3,7 @@
 ############################
 # node
 ############################
-nvm install v18.19.0
+nvm install v20.17.0
 
 ############################
 # python - pyenv
@@ -52,7 +52,7 @@ uv tool install poetry-plugin-export
 ############################
 # applications - node
 ############################
-nvm use v18.19.0
+nvm use v20.17.0
 
 npm set prefix ~/.npm-global
 npm install -g yarn
