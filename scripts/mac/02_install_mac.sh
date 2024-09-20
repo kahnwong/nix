@@ -32,9 +32,8 @@ brew install apache-spark
 
 # dev tools
 # brew install --cask mongodb-compass
-# brew install --cask postman
 # brew install --cask rio
-brew install --cask apidog
+brew install --cask bruno
 brew install --cask devtoys
 brew install --cask docker
 brew install --cask fork
