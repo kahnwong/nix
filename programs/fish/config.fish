@@ -42,6 +42,7 @@ set PATH $PATH:$HOME/.nix-profile/bin
 set PATH $PATH:/nix/var/nix/profiles/default/bin/
 
 # node
+alias nvm="fnm"
 if type -p fnm > /dev/null; fnm env --use-on-cd --shell fish | source; end
 
 # python
