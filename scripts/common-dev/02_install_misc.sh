@@ -3,7 +3,8 @@
 ############################
 # node
 ############################
-nvm install v20.17.0
+fnm install v20.17.0
+fnm default v20.17.0
 
 ############################
 # python - pyenv
@@ -52,8 +53,6 @@ uv tool install poetry-plugin-export
 ############################
 # applications - node
 ############################
-nvm use v20.17.0
-
 npm set prefix ~/.npm-global
 npm install -g yarn
 npm install -g markdownlint-cli2

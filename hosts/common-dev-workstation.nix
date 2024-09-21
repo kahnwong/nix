@@ -17,7 +17,7 @@
       # maven
 
       # ---- node ----
-      nodejs # so nvm can initialize
+      fnm
 
       # ---- nix ----
       nixfmt-classic

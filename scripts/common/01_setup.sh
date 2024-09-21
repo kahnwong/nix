@@ -44,7 +44,6 @@ curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://raw.githubus
 fish -c "fisher install franciscolourenco/done"
 fish -c "fisher install jorgebucaran/autopair.fish"
 fish -c "fisher install jorgebucaran/fisher"
-fish -c "fisher install jorgebucaran/nvm.fish"
 fish -c "fisher install meaningful-ooo/sponge"
 fish -c "fisher install patrickf1/colored_man_pages.fish"
 fish -c "fisher install danhper/fish-ssh-agent"
