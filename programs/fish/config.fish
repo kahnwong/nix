@@ -48,7 +48,6 @@ if type -p fnm > /dev/null; fnm env --use-on-cd --shell fish | source; end
 set PYENV_VERSION 3.11.8
 if type -p pyenv > /dev/null; pyenv init - | source; end
 status --is-interactive; and if type -p pyenv > /dev/null; pyenv virtualenv-init - | source; end
-set pipenv_fish_fancy yes
 
 ####################
 # CONFIG: TOOLS
