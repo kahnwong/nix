@@ -13,7 +13,7 @@ fnm default v20.17.0
 curl https://pyenv.run | bash
 
 export PATH=$PATH:$HOME/.pyenv/bin
-export PYTHON_VERSION="3.11.8"
+export PYTHON_VERSION="3.12.6"
 pyenv install -s $PYTHON_VERSION
 pyenv global $PYTHON_VERSION
 

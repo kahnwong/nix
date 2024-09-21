@@ -45,7 +45,7 @@ set PATH $PATH:/nix/var/nix/profiles/default/bin/
 if type -p fnm > /dev/null; fnm env --use-on-cd --shell fish | source; end
 
 # python
-set PYENV_VERSION 3.11.8
+set PYENV_VERSION 3.12.6
 if type -p pyenv > /dev/null; pyenv init - | source; end
 status --is-interactive; and if type -p pyenv > /dev/null; pyenv virtualenv-init - | source; end
 
