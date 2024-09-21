@@ -1,107 +1,49 @@
 { pkgs, ... }: {
   imports = [
-    ../programs/article-summarizer/article-summarizer.nix
     ../programs/aws/aws.nix
     ../programs/git/git.nix
     ../programs/kitty/kitty.nix
     ../programs/pgconn/pgconn.nix
     ../programs/proxmox/proxmox.nix
     ../programs/scripts/scripts.nix
-    ../programs/terraform/terraform.nix
+    ../programs/yt-dlp/yt-dlp.nix
+
+    # apps
+    ../programs/article-summarizer/article-summarizer.nix
     ../programs/timesheet/timesheet.nix
     ../programs/topydo/topydo.nix
     ../programs/totp/totp.nix
-    ../programs/yt-dlp/yt-dlp.nix
   ];
 
   home = {
     packages = with pkgs; [
-      # ------- runtimes & toolchains ------- #
-      # golang
-      golangci-lint
-      gopls
-      gotools
-      goreleaser
-      air
+      # ---- database ----
+      pgcli
 
-      # node
-      nodejs # so nvm can initialize
-
-      # nix
-      nixfmt-classic
-
-      # python
-      # gdal # for build env
-      black
-      ruff
-      uv
-
-      # rust
-      rustup
-
-      # shell - linters
-      shellcheck
-      shfmt
-
-      # ------- devops ------- #
-      # gcp
-      docker-credential-gcr
-      (google-cloud-sdk.withExtraComponents [
-        google-cloud-sdk.components.gke-gcloud-auth-plugin
-        # google-cloud-sdk.components.cloud_sql_proxy # this is outdated
-      ])
-
-      #      # azure
-      #      azure-cli
-
-      # kubernetes
-      kubernetes-helm
+      # ---- kubernetes ----
       k9s
       kubectl
       kubectx
-      #      argocd
-      #      helm-dashboard
-      #      kdash
-      #      kind
-      #      pluto
 
-      ## krew
-      krew
-      ktop
-      kube-capacity
-
-      # database
-      #      postgresql_16
-      pgcli
-      #    mongodb-tools
-
-      # monitoring
-      #      sampler
-
-      # ------- tools ------- #
+      # ---- api testing ----
+      hurl
       k6
 
-      # api testing
-      hurl
-
-      # data
+      # ---- data ----
       #      sqlfluff
       #      visidata
 
-      # misc
-      hugo
-      silicon
+      # ---- misc ----
       sshx
       wakatime
 
-      # utilities
-      pop
-      libqalculate
-      tz
-
-      # finance
+      # -- finance --
       beancount
       fava
+
+      # -- utils --
+      libqalculate
+      tz
     ];
   };
 }

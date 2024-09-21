@@ -7,7 +7,6 @@ in {
   imports = [
     ../../common.nix
     ../../common-linux.nix
-    ../../common-desktop.nix
     ../../common-dev.nix
     ../../common-dev-workstation.nix
   ];

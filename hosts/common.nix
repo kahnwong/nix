@@ -9,11 +9,11 @@
   home = {
     stateVersion = "23.05";
     packages = with pkgs; [
-      # backup
+      # ---- backup ----
       #      rclone
-      # restic
+      #      restic
 
-      # shell
+      # ---- shell ----
       bat
       colordiff
       difftastic
@@ -34,7 +34,7 @@
       #      yazi
       zoxide
 
-      # networking
+      # ---- networking ----
       curl
       doggo
       gping
@@ -42,7 +42,7 @@
       #      speedtest-cli
       rustscan
 
-      # system
+      # ---- system ----
       du-dust
       duf
       htop
@@ -50,31 +50,32 @@
       procs
       zenith
 
-      # fetch
+      # ---- fetch ----
       cpufetch
       neofetch
       onefetch
       pfetch
 
-      # containers
+      # ---- containers ----
       ctop
       oxker
       lazydocker
 
-      # data manipulation
+      # ---- data manipulation ----
       fx
       glow
       jq
       yq-go
 
-      # downloader
+      # ---- downloader ----
       aria
       wget
 
-      # runtime
+      # ---- runtimes & toolchains ----
       go
+      uv
 
-      # utils
+      # ---- utils ----
       age
       direnv
       entr
