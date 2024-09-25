@@ -35,6 +35,7 @@ set PATH \
 # golang
 set GOPATH ~/go
 set PATH $PATH:$GOPATH/bin
+set -x GOROOT (go1.23.0 env GOROOT)
 
 # nix
 set NIX_PATH $HOME/.nix-defexpr/channels
