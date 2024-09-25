@@ -13,6 +13,11 @@ go install golang.org/dl/go1.23.0@latest
 go1.23.0 download
 
 ############################
+# rust
+############################
+rustup default stable
+
+############################
 # python - pyenv
 ############################
 ### pyenv

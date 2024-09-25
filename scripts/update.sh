@@ -17,6 +17,9 @@ if [[ $(uname -s) == 'Darwin' ]]; then
 	brew cleanup
 fi
 
+# rust
+rustup update
+
 # flatpak
 if [[ $(uname -s) == 'Linux' ]]; then
 	flatpak update
