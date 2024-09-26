@@ -10,7 +10,6 @@
 
     # apps
     ../programs/article-summarizer/article-summarizer.nix
-    ../programs/timesheet/timesheet.nix
     ../programs/topydo/topydo.nix
     ../programs/totp/totp.nix
   ];
