@@ -16,6 +16,8 @@ sops -d ./programs/ssh/config.d/vps.sops >~/.ssh/config.d/vps
 # sops -d ./programs/ssh/config.d/work.sops >~/.ssh/config.d/work
 sops -d ./programs/ssh/config.sops >~/.ssh/config
 
+mkdir -p ~/.config/timesheet
+sops -d ./programs/timesheet/config.sops.ini.txt >~/.config/timesheet/config.ini
 sops -d ./programs/wakatime/wakatime.sops.cfg >~/.wakatime.cfg
 
 sops -d ./scripts/vscode/config/settings.sops.json >./scripts/vscode/config/settings.json
