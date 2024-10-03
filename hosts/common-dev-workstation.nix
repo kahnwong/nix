@@ -85,6 +85,7 @@
       hugo
       silicon
       pop
+      git-cliff
     ];
   };
 }
