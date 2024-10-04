@@ -2,7 +2,7 @@
 title = All
 sortexpr = asc:priority
 show_all = 1
-filterexpr = -@work -@tinkering -@community -@recurring -@blog
+filterexpr = -@work -@tinkering -@community -@recurring -@blog -@quarterly-sync
 groupexpr = context
 
 [Today]
@@ -32,10 +32,3 @@ sortexpr = asc:priority
 show_all = 0
 filterexpr = @blog
 groupexpr = project
-
-#[Triage]
-#title = Triage
-#sortexpr = desc:importance
-#show_all = 0
-#filterexpr = (>=F) @work
-#groupexpr = desc:priority
