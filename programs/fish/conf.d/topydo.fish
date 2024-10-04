@@ -7,7 +7,7 @@ function tt
 end
 
 function tr
-    topydo ls -- -@recurring
+    topydo ls -s asc:context -- -@work -@recurring -@quarterly-sync
 end
 
 function tw
