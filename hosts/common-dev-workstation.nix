@@ -86,6 +86,7 @@
       silicon
       pop
       git-cliff
+      hyperfine
     ];
   };
 }
