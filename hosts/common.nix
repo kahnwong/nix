@@ -72,7 +72,6 @@
       wget
 
       # ---- runtimes & toolchains ----
-      go
       uv
 
       # ---- utils ----
