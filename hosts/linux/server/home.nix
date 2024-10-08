@@ -6,5 +6,8 @@ let
 in {
   imports = [ ../../common.nix ../../common-linux.nix ];
 
-  home.packages = with pkgs; [ ];
+  home.packages = with pkgs;
+    [
+
+    ];
 }

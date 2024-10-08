@@ -32,10 +32,8 @@ set PATH \
 ####################
 # CONFIG: RUNTIME
 ####################
-# golang
-set GOPATH ~/go
-set PATH $PATH:$GOPATH/bin
-set -x GOROOT (go1.23.0 env GOROOT)
+# asdf
+source ~/.asdf/plugins/golang/set-env.fish
 
 # nix
 set NIX_PATH $HOME/.nix-defexpr/channels

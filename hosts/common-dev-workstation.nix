@@ -4,6 +4,9 @@
   home = {
     packages = with pkgs; [
       # -------- runtimes & toolchains --------
+      # ---- version manager ----
+      asdf-vm
+
       # ---- golang ----
       golangci-lint
       gopls

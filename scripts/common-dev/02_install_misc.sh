@@ -9,8 +9,8 @@ fnm default v20.17.0
 ############################
 # go
 ############################
-go install golang.org/dl/go1.23.0@latest
-go1.23.0 download
+asdf plugin add golang https://github.com/asdf-community/asdf-golang.git
+asdf install golang 1.23.2
 
 ############################
 # rust
