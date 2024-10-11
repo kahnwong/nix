@@ -4,6 +4,9 @@
   home = {
     packages = with pkgs; [
       # -------- runtimes & toolchains --------
+      # ---- c ----
+      uncrustify
+
       # ---- golang ----
       golangci-lint
       gopls
