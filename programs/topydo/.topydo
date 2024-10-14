@@ -1,17 +1,14 @@
 [colorscheme]
-focus_background_color = light-green
+context_color = cyan
+project_color = yellow
+focus_background_color = light-magenta
 
 [topydo]
 archive_filename = ARCHIVE_FILENAME
 filename = TODO_FILENAME
 
-[ls]
-hidden_item_tags=blog,listen,watch
+# [ls]
+# hidden_item_tags=blog
 
 [edit]
-editor = /usr/bin/vi
-
-[colorscheme]
-context_color = cyan
-project_color = yellow
-focus_background_color = green
+editor = nvim
