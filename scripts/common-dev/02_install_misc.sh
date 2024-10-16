@@ -9,8 +9,8 @@ fnm default v20.17.0
 ############################
 # go
 ############################
-go install golang.org/dl/go1.23.0@latest
-go1.23.0 download
+go install golang.org/dl/go1.23.2@latest
+go1.23.2 download
 
 ############################
 # rust
