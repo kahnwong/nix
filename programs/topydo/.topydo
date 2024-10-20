@@ -1,7 +1,7 @@
 [colorscheme]
 context_color = cyan
 project_color = yellow
-focus_background_color = light-magenta
+focus_background_color = magenta
 
 [topydo]
 archive_filename = ARCHIVE_FILENAME
