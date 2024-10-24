@@ -16,6 +16,28 @@
 
   home = {
     packages = with pkgs; [
+      # -------- runtimes & toolchains --------
+      # ---- golang ----
+      golangci-lint
+      gopls
+      gotools
+      goreleaser
+      air
+
+      # ---- node ----
+      fnm
+
+      # ---- nix ----
+      nixfmt-classic
+
+      # ---- rust ----
+      rustup
+
+      # ---- shell - linters ----
+      shellcheck
+      shfmt
+
+      # -------- others --------
       # ---- database ----
       pgcli
 

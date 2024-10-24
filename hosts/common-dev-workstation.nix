@@ -7,35 +7,15 @@
       # ---- c ----
       uncrustify
 
-      # ---- golang ----
-      golangci-lint
-      gopls
-      gotools
-      goreleaser
-      air
-
       # ---- java ----
       temurin-bin
       # gradle
       # maven
 
-      # ---- node ----
-      fnm
-
-      # ---- nix ----
-      nixfmt-classic
-
       # ---- python ----
       # gdal # for build env
       black
       ruff
-
-      # ---- rust ----
-      rustup
-
-      # ---- shell - linters ----
-      shellcheck
-      shfmt
 
       # -------- devops --------
       # gcp
