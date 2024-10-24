@@ -50,6 +50,9 @@ set PYENV_VERSION 3.12.6
 if type -p pyenv > /dev/null; pyenv init - | source; end
 status --is-interactive; and if type -p pyenv > /dev/null; pyenv virtualenv-init - | source; end
 
+# IDE
+alias idea="intellij-idea-ultimate"
+
 ####################
 # CONFIG: TOOLS
 ####################
