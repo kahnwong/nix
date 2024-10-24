@@ -1,5 +1,5 @@
 { pkgs, ... }: {
-  imports = [ ../programs/terraform/terraform.nix ];
+  imports = [  ];
 
   home = {
     packages = with pkgs; [

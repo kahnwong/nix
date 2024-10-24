@@ -6,6 +6,7 @@
     ../programs/pgconn/pgconn.nix
     ../programs/proxmox/proxmox.nix
     ../programs/scripts/scripts.nix
+    ../programs/terraform/terraform.nix
     ../programs/yt-dlp/yt-dlp.nix
 
     # apps
