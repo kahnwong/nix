@@ -14,6 +14,14 @@ function ga
     git add -p
 end
 
+function gc
+    git commit -m $argv
+end
+
+function gca
+    git commit --amend
+end
+
 function gp
     git push
 end
