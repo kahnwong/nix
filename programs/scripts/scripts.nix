@@ -7,6 +7,7 @@
   home.file."scripts/,flameshot-kill.sh".source = ./flameshot-kill.sh;
   home.file."scripts/,gh-list-repos.sh".source = ./gh-list-repos.sh;
   home.file."scripts/,git-add-ssh-key.sh".source = ./git-add-ssh-key.sh;
+  home.file."scripts/,poetry-to-uv.sh".source = ./poetry-to-uv.sh;
   home.file."scripts/,qgis.sh".source = ./qgis.sh;
   home.file."scripts/,sops-dc-init.sh".source = ./sops-dc-init.sh;
   home.file."scripts/,sops-init.sh".source = ./sops-init.sh;
