@@ -23,6 +23,10 @@ sops -d ./programs/ssh/config.sops >~/.ssh/config
 # timesheet
 mkdir -p ~/.config/timesheet
 sops -d ./programs/timesheet/config.sops.ini.txt >~/.config/timesheet/config.ini
+## replace path
+if [[ $(uname -s) == 'Linux' ]]; then
+	sed -i.bak 's#/Users/kahnwong/Cloud#/opt/syncthing/cloud#' ~/.config/timesheet/config.ini
+fi
 
 # wakatime
 sops -d ./programs/wakatime/wakatime.sops.cfg >~/.wakatime.cfg
