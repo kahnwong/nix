@@ -25,3 +25,10 @@ sortexpr = asc:priority
 show_all = 0
 filterexpr = @work
 groupexpr = project
+
+[Tinkering]
+title = Tinkering
+sortexpr = asc:priority
+show_all = 0
+filterexpr = @tinkering
+groupexpr = project
