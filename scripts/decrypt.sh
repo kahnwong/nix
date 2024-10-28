@@ -31,5 +31,9 @@ fi
 # wakatime
 sops -d ./programs/wakatime/wakatime.sops.cfg >~/.wakatime.cfg
 
+# workspace-init
+mkdir -p ~/.config/workspace-init
+sops -d ./programs/workspace-init/config.sops.yaml >~/.config/workspace-init/config.yaml
+
 ## vscode
 #sops -d ./scripts/vscode/config/settings.sops.json >./scripts/vscode/config/settings.json

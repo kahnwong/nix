@@ -38,6 +38,7 @@ go install github.com/kahnwong/config-init@latest
 go install github.com/kahnwong/pgconn@latest
 go install github.com/kahnwong/swissknife@latest
 go install github.com/kahnwong/timesheet@latest
+go install github.com/kahnwong/workspace-init@latest
 go install github.com/kahnwong/totp@latest
 go install github.com/kahnwong/waka@latest
 go install github.com/ksoclabs/kbom@latest
