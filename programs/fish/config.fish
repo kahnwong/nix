@@ -51,7 +51,10 @@ if type -p pyenv > /dev/null; pyenv init - | source; end
 status --is-interactive; and if type -p pyenv > /dev/null; pyenv virtualenv-init - | source; end
 
 # IDE
-alias idea="intellij-idea-ultimate"
+switch (uname)
+    case Linux
+        alias idea="intellij-idea-ultimate"
+end
 
 ####################
 # CONFIG: TOOLS
