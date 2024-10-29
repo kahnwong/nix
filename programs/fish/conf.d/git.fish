@@ -26,6 +26,10 @@ function gp
     git push
 end
 
+function gl
+    git pull
+end
+
 function gd
     git diff
 end
