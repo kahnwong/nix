@@ -38,6 +38,9 @@
       shellcheck
       shfmt
 
+      # ---- docker ----
+      hadolint
+
       # -------- others --------
       # ---- database ----
       pgcli
@@ -56,7 +59,7 @@
       #      visidata
 
       # ---- misc ----
-      sshx
+      #      sshx
       wakatime
 
       # -- finance --
