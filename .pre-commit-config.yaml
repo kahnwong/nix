@@ -15,14 +15,9 @@ repos:
       - id: detect-private-key
       - id: fix-byte-order-marker
       - id: mixed-line-ending
-  # ----------------------- OPS -----------------------
-  - repo: https://github.com/jumanjihouse/pre-commit-hooks
-    rev: 3.0.0
+  - repo: https://github.com/kahnwong/pre-commit
+    rev: "4bfed65"
     hooks:
       - id: shellcheck
       - id: shfmt
-    # ----------------------- NIX -----------------------
-  - repo: https://github.com/kahnwong/pre-commit
-    rev: "f1362c9"
-    hooks:
       - id: nix-fmt
