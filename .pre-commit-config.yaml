@@ -22,9 +22,7 @@ repos:
       - id: shellcheck
       - id: shfmt
     # ----------------------- NIX -----------------------
-  - repo: local
+  - repo: https://github.com/kahnwong/pre-commit
+    rev: "f1362c9"
     hooks:
-      - id: nixfmt
-        name: nixfmt
-        entry: "nixfmt"
-        language: system
+      - id: nix-fmt
