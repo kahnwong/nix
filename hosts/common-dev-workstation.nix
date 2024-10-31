@@ -12,19 +12,7 @@
       # gradle
       # maven
 
-      # ---- python ----
-      # gdal # for build env
-      black
-      ruff
-
       # -------- devops --------
-      # gcp
-      docker-credential-gcr
-      (google-cloud-sdk.withExtraComponents [
-        google-cloud-sdk.components.gke-gcloud-auth-plugin
-        # google-cloud-sdk.components.cloud_sql_proxy # this is outdated
-      ])
-
       # ---- azure ----
       #      azure-cli
 
