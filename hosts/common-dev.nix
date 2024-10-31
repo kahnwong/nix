@@ -33,7 +33,6 @@
 
       # ---- python ----
       # gdal # for build env
-      black
       ruff
 
       # ---- rust ----
@@ -42,6 +41,13 @@
       # ---- shell - linters ----
       shellcheck
       shfmt
+
+      # ---- yaml ----
+      yamlfmt
+      yamllint
+
+      # ---- markdown ----
+      markdownlint-cli2
 
       # ---- docker ----
       hadolint

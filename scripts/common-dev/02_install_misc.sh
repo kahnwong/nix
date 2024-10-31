@@ -58,6 +58,7 @@ cargo install imgcatr
 # uv tool install nbpreview
 uv tool install pip_search
 uv tool install "dvc[all]"
+uv tool install nbstripout
 uv tool install topydo[columns]
 uv tool install poetry
 uv tool install poetry-plugin-export
@@ -67,7 +68,6 @@ uv tool install poetry-plugin-export
 ############################
 npm set prefix ~/.npm-global
 npm install -g yarn
-npm install -g markdownlint-cli2
 
 ############################
 # kubectl
