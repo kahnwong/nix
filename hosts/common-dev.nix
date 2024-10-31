@@ -17,7 +17,7 @@
 
   home = {
     packages = with pkgs; [
-      # -------- runtimes & toolchains --------
+      # -------- runtimes & toolchains & linters --------
       # ---- golang ----
       golangci-lint
       gopls
@@ -40,6 +40,9 @@
 
       # ---- docker ----
       hadolint
+
+      # ---- security ----
+      trivy
 
       # -------- others --------
       # ---- database ----

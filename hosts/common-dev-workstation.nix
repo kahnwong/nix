@@ -44,7 +44,6 @@
       # ---- security ----
       #      grype
       #      syft
-      trivy
 
       # ---- database ----
       #      postgresql_16
