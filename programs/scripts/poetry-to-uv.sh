@@ -1,7 +1,7 @@
 #!/bin/bash
 
 poetry export -o requirements.txt --without-hashes
-rm pyproject.toml
+mv pyproject.toml pyproject.toml.bak
 rm poetry.lock
 
 uv init
