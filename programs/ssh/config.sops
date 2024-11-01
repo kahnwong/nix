@@ -1,5 +1,5 @@
 {
-	"data": "ENC[AES256_GCM,data:gZldWXQbCZdqJ+f9h5LBc463wcYymhbVa4pEbM4gxKKPL7Ln6LbBrf/LRV9XD1kejse7ZiZQ8e94/PunMl9sC3C4UweIV5aEp5ABbgWw0ydsHYM673n65K4fzjRMXURexwKqykbfJXGPN6XY72u1yCQt1BZ/fOSa6cJe4mYZUcA8F7NFXKcGp13Gr7xYHLVOFaQvJZ+nFUMzNYrQDsZ94/HF3eh55Ud+e8FiKJbTIZhw+VlkjYG2v5RlBcnJ39wMZAiaAcevFoUD4ydjvvJ3T/5byKp6x+ff4f+3,iv:dn8uKN9MwYl0Os9cQ2Omi31vYUDhD/6vq+Fr84eFfHU=,tag:ioGyH+hawbr4uoy5BKjdEQ==,type:str]",
+	"data": "ENC[AES256_GCM,data:iIDiCkYNjFEVicKgBgJxC3ueWaXIYtZDXOCm2EZN19z1myOxH4mV9mVdHrvO+xYMatjee5h7lZwpQfV1JFSdlIGy8KNV8MAZ7rGFoTIpvAthktJvVMTGiWVHWR8+h6NF+GIacIRYg748gDZWeUEGMqI+8X1tZx4KNfoG5P7bIEADofGeXeDtnrH8AByYrAj/ctMQoNiTv3+G+SOoxYxRvKbmwYm2k277CTKMrZF1Im4OTTren/pT83LDxTOVyCsFs22b+jhZ8peRAQuwMzN36Q==,iv:fDwOXJP6TwDx7HJuMsXsXpsJBxJtBh6VBAIV7RfqqZE=,tag:mPteQRXj1Ol0J5U+PS+10w==,type:str]",
 	"sops": {
 		"kms": null,
 		"gcp_kms": null,
@@ -11,10 +11,10 @@
 				"enc": "-----BEGIN AGE ENCRYPTED FILE-----\nYWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBJVVpld3hUMUREWEJxdEMy\nT25zRjF5dmYwSWgrbE1DTkZKbVRSNzVkcnpFCk5HUWcyZ2xLSi9PNnlwamxDNEph\nNlVuUUFPT2VITWRCa1FBUXZrSkFGRW8KLS0tIG1OTmIvOStxaHBvSjlRbzlyODhM\nTjdBOTk4blJONkhMbVN1cVhQSkpYbGcKGngsCAR3G8D2JXI81vA4U/lAm5VYfy76\nfoGS7oFLzS5N7D8IXyGte7Z1iAkrfuXBl3NaogtDjwClSi5oDXNxSA==\n-----END AGE ENCRYPTED FILE-----\n"
 			}
 		],
-		"lastmodified": "2024-10-27T10:30:19Z",
-		"mac": "ENC[AES256_GCM,data:yzWHuixkFMWqQ1plf+OyOfQILwoKNN9Pm77Oklf470/OLGPwGdm8QoiFHhduJvMzkFSRkytPLHcxSSTn8fzqUoEJ/909SJtjYo3cWxqeED89PRLRC1rDWg97tfL/nzVEAGtKvYZ+fkJ3/vjtpv5Ya1ksaSHfUpcqJXait2Bc9t4=,iv:L3C8S+Ebq/08/qm+r+JjhzbuUUAt4KZC1QFnU7RG0ZU=,tag:6ZhbiEX09zjB4Dce+R5sTg==,type:str]",
+		"lastmodified": "2024-11-01T04:53:20Z",
+		"mac": "ENC[AES256_GCM,data:u6HtEzm+b2ikvq4XUbffKVdji1HIp/s3vG5HhCBL+owgCt4V/5kJfRAaXgl6KoxqKK8opTvFs657rcXyNor2LP3EsHzZ3H7wVpgynDeYOkoJrikGo5rf12PKpD/XIjeoz69sF/vk9l0AnhvvTpPpmz292To+nxfHrFLjQR5eEx4=,iv:zjrSxa24wAv0pQZxGQwtU9wvqc0FrvD/lHx0Z3pClgM=,tag:1vUKUzrZU2al05iIc7YDug==,type:str]",
 		"pgp": null,
 		"unencrypted_suffix": "_unencrypted",
-		"version": "3.9.0"
+		"version": "3.9.1"
 	}
 }
