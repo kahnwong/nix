@@ -2,7 +2,7 @@ function t
     topydo $argv
 end
 
-function tt
+function td
     topydo due:"<=today"
 end
 
@@ -12,6 +12,10 @@ end
 
 function tw
     topydo @work
+end
+
+function tt
+    topydo @tinkering
 end
 
 function tc
