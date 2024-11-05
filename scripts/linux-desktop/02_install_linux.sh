@@ -16,6 +16,7 @@ curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 sudo snap install bruno
 sudo snap install intellij-idea-ultimate --classic
 sudo snap install mpv
+sudo snap install obsidian --classic
 
 # flatpak install flathub com.github.eneshecan.WhatsAppForLinux -y
 # flatpak install flathub com.sindresorhus.Caprine -y
