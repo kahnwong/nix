@@ -21,6 +21,7 @@ sudo snap install obsidian --classic
 # flatpak install flathub com.github.eneshecan.WhatsAppForLinux -y
 # flatpak install flathub com.sindresorhus.Caprine -y
 # flatpak install flathub com.usebottles.bottles -y
+# flatpak install flathub dev.skynomads.Seabird
 # flatpak install flathub io.mpv.Mpv -y
 # flatpak install flathub org.kde.konsole -y
 # flatpak install flathub org.mozilla.firefox -y  # already installed via snap by default
@@ -33,11 +34,13 @@ flatpak install flathub com.github.johnfactotum.Foliate -y
 flatpak install flathub com.github.ransome1.sleek -y
 flatpak install flathub com.github.zocker_160.SyncThingy -y
 flatpak install flathub com.google.Chrome -y
+flatpak install flathub com.transmissionbt.Transmission -y
 flatpak install flathub dev.k8slens.OpenLens -y
-flatpak install flathub dev.skynomads.Seabird
 flatpak install flathub io.github.dweymouth.supersonic -y
+flatpak install flathub io.github.flattool.Warehouse -y
 flatpak install flathub io.gitlab.adhami3310.Impression -y
 flatpak install flathub io.kinvolk.Headlamp -y
+flatpak install flathub org.audacityteam.Audacity -y
 flatpak install flathub org.fkoehler.KTailctl -y
 flatpak install flathub org.flameshot.Flameshot -y
 flatpak install flathub org.kde.okular -y
