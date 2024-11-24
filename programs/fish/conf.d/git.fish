@@ -34,6 +34,7 @@ function gd
     git diff
 end
 
+# ---- diffs ---- #
 function gds
     git diff --staged
 end
@@ -46,6 +47,12 @@ function diff
     difft $argv
 end
 
+# ---- pre-commit ---- #
 function p
     pre-commit $argv
+end
+
+# ---- changelog ---- #
+function grc
+    git cliff --unreleased --tag $argv
 end
