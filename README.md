@@ -62,6 +62,18 @@ make common-dev
 - Start synthingy on startup: `flatpak run --command=SyncThingy com.github.zocker_160.SyncThingy`.
 - Install [mullvad](https://mullvad.net/en/download/vpn/linux).
 - Fix discord not loading: `rm -rf ~/.var/app/com.discordapp.Discord`
+- To add Chrome extension desktop shortcut:
+  ```text
+  # ~/.local/share/applications/line.desktop
+  [Desktop Entry]
+  Version=1.0
+  Type=Application
+  Name=LINE
+  GenericName=LINE Chat
+  Exec=/var/lib/flatpak/exports/bin/com.google.Chrome --app="chrome-extension://ophjlpahpchlmihnnnihgmmeilfjmjjc/index.html"
+  StartupNotify=true
+  Categories=Social;
+  ```
 
 ## Post-installation instructions
 
