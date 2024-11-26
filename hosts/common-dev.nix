@@ -34,6 +34,7 @@
       # ---- python ----
       # gdal # for build env
       ruff
+      pylyzer
 
       # ---- rust ----
       rustup
