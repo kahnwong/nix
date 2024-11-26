@@ -77,7 +77,7 @@
       k6
 
       # ---- data ----
-      #      sqlfluff
+      sqruff
       #      visidata
 
       # ---- misc ----
