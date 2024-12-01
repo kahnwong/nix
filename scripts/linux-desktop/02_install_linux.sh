@@ -14,6 +14,7 @@
 ### applications
 curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 # sudo snap install bruno
+sudo apt install thunar -y
 sudo snap install intellij-idea-ultimate --classic
 sudo snap install mpv
 sudo snap install obsidian --classic
@@ -27,6 +28,7 @@ sudo snap install obsidian --classic
 # flatpak install flathub org.mozilla.firefox -y  # already installed via snap by default
 flatpak install flathub com.calibre_ebook.calibre -y
 flatpak install flathub com.discordapp.Discord -y
+flatpak install flathub com.dropbox.Client -y
 flatpak install flathub com.github.IsmaelMartinez.teams_for_linux -y
 flatpak install flathub com.github.hluk.copyq -y
 flatpak install flathub com.github.iwalton3.jellyfin-media-player -y
@@ -36,6 +38,7 @@ flatpak install flathub com.github.zocker_160.SyncThingy -y
 flatpak install flathub com.google.Chrome -y
 flatpak install flathub com.transmissionbt.Transmission -y
 flatpak install flathub dev.k8slens.OpenLens -y
+flatpak install flathub io.github.TransmissionRemoteGtk -y
 flatpak install flathub io.github.dweymouth.supersonic -y
 flatpak install flathub io.github.flattool.Warehouse -y
 flatpak install flathub io.gitlab.adhami3310.Impression -y
