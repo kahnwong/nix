@@ -12,12 +12,12 @@ show_all = 0
 filterexpr = due:<=today
 groupexpr = context
 
-[Tomorrow]
-title = Tomorrow
-sortexpr = desc:importance
-show_all = 0
-filterexpr = due:tomorrow
-groupexpr = context
+#[Tomorrow]
+#title = Tomorrow
+#sortexpr = desc:importance
+#show_all = 0
+#filterexpr = due:tomorrow
+#groupexpr = context
 
 [Work]
 title = Work
