@@ -43,6 +43,9 @@
       shellcheck
       shfmt
 
+      # ---- wasm ----
+      wasmtime
+
       # ---- yaml ----
       yamlfmt
       yamllint
@@ -89,6 +92,7 @@
       fava
 
       # -- utils --
+      hyperfine
       libqalculate
       tz
     ];
