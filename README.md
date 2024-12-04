@@ -60,6 +60,7 @@ make common-dev
 - Launch CopyQ on startup: `/var/lib/flatpak/exports/bin/com.github.hluk.copyq --start-server toggle`. On Wayland, add prefix `env QT_QPA_PLATFORM=xcb`.
   - Set shortcut to `alt + shift + v` for `show the tray menu`
 - Start synthingy on startup: `flatpak run --command=SyncThingy com.github.zocker_160.SyncThingy`.
+- Start dropbox on startup: `/var/lib/flatpak/exports/bin/com.dropbox.Client`
 - Install [mullvad](https://mullvad.net/en/download/vpn/linux).
 - Fix discord not loading: `rm -rf ~/.var/app/com.discordapp.Discord`
 - To add Chrome extension desktop shortcut:
