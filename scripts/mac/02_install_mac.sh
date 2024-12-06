@@ -33,8 +33,7 @@ brew install apache-spark
 # dev tools
 # brew install --cask mongodb-compass
 # brew install --cask rio
-brew install --cask bruno
-brew install --cask devtoys
+# brew install --cask devtoys
 brew install --cask docker
 brew install --cask fork
 brew install --cask intellij-idea
@@ -108,7 +107,7 @@ brew install --cask logitech-g-hub
 
 echo "================================= Install App Store applications ================================="
 mas install 1176895641 # spark
-mas install 1423210932 # flow - focus & pomodoro timer
+# mas install 1423210932 # flow - focus & pomodoro timer
 mas install 1451685025 # wireguard
 mas install 539883307  # LINE
 mas install 568494494  # pocket
