@@ -32,6 +32,7 @@ flatpak install flathub com.dropbox.Client -y
 flatpak install flathub com.github.IsmaelMartinez.teams_for_linux -y
 flatpak install flathub com.github.hluk.copyq -y
 flatpak install flathub com.github.iwalton3.jellyfin-media-player -y
+flatpak install flathub com.github.jeromerobert.pdfarranger -y
 flatpak install flathub com.github.johnfactotum.Foliate -y
 flatpak install flathub com.github.ransome1.sleek -y
 flatpak install flathub com.github.zocker_160.SyncThingy -y
