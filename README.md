@@ -2,6 +2,15 @@
 
 Flake migration based on <https://github.com/sebastiant/dotfiles>.
 
+## Testing packages
+
+```bash
+nix-env -iA nixpkgs.ffsend
+
+# uninstall
+nix-env --uninstall ffsend
+```
+
 ## Pre-requisites
 
 Edit `./scripts/apply.sh` and set appropriate build command. See `flake.nix` for available options.
