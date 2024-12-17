@@ -26,7 +26,6 @@ function ps
     procs $argv
 end
 
-
 ########################
 # SYSTEM: NETWORKING
 ########################
@@ -37,7 +36,6 @@ end
 function ping
     gping $argv
 end
-
 
 ########################
 # UTILITIES
