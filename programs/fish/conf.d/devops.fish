@@ -1,11 +1,4 @@
 ########################
-# CONTAINERS: DOCKER
-########################
-function ,docker-rmi
-    docker images | grep $argv | awk '{print $3}' | xargs docker rmi
-end
-
-########################
 # CONTAINERS: K8S
 ########################
 function k
