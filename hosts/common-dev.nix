@@ -92,6 +92,7 @@
       fava
 
       # -- utils --
+      ffsend
       hyperfine
       libqalculate
       tz
