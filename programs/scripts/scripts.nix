@@ -1,18 +1,18 @@
 { config, pkgs, lib, ... }:
 
 {
-  home.file."scripts/,code-to-image.sh".source = ./code-to-image.sh;
-  home.file."scripts/,convert-to-webp.sh".source = ./convert-to-webp.sh;
-  home.file."scripts/,docker-compose-up.sh".source = ./docker-compose-up.sh;
-  home.file."scripts/,flameshot-kill.sh".source = ./flameshot-kill.sh;
-  home.file."scripts/,gh-list-repos.sh".source = ./gh-list-repos.sh;
-  home.file."scripts/,git-add-ssh-key.sh".source = ./git-add-ssh-key.sh;
-  home.file."scripts/,poetry-to-uv.sh".source = ./poetry-to-uv.sh;
-  home.file."scripts/,qgis.sh".source = ./qgis.sh;
-  home.file."scripts/,sops-dc-init.sh".source = ./sops-dc-init.sh;
-  home.file."scripts/,sops-init.sh".source = ./sops-init.sh;
-  home.file."scripts/,tf-cost-html.sh".source = ./tf-cost-html.sh;
-  home.file."scripts/,tf-cost.sh".source = ./tf-cost.sh;
-  home.file."scripts/,uv-init.sh".source = ./uv-init.sh;
-  home.file."scripts/,zip-compress.sh".source = ./zip-compress.sh;
+  home.file."scripts/,code-to-image.sh".source = ./scripts/code-to-image.sh;
+  home.file."scripts/,convert-to-webp.sh".source = ./scripts/convert-to-webp.sh;
+  home.file."scripts/,docker-compose-up.sh".source = ./scripts/docker-compose-up.sh;
+  home.file."scripts/,flameshot-kill.sh".source = ./scripts/flameshot-kill.sh;
+  home.file."scripts/,gh-list-repos.sh".source = ./scripts/gh-list-repos.sh;
+  home.file."scripts/,git-add-ssh-key.sh".source = ./scripts/git-add-ssh-key.sh;
+  home.file."scripts/,poetry-to-uv.sh".source = ./scripts/poetry-to-uv.sh;
+  home.file."scripts/,qgis.sh".source = ./scripts/qgis.sh;
+  home.file."scripts/,sops-dc-init.sh".source = ./scripts/sops-dc-init.sh;
+  home.file."scripts/,sops-init.sh".source = ./scripts/sops-init.sh;
+  home.file."scripts/,tf-cost-html.sh".source = ./scripts/tf-cost-html.sh;
+  home.file."scripts/,tf-cost.sh".source = ./scripts/tf-cost.sh;
+  home.file."scripts/,uv-init.sh".source = ./scripts/uv-init.sh;
+  home.file."scripts/,zip-compress.sh".source = ./scripts/zip-compress.sh;
 }
