@@ -13,20 +13,6 @@ function ,rcode
 end
 
 ########################
-# INFRA: GCP
-########################
-function ,gcp-list-resources
-    # $argv = project_name
-
-    echo "getting resources: $argv"
-    gcloud asset search-all-resources \
-        --scope=projects/$argv \
-        --page-size=500 \
-        --format=json >$argv.json
-end
-
-
-########################
 # INFRA: TERRAFORM
 ########################
 function tf

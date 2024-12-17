@@ -7,6 +7,8 @@
     ./scripts/docker-compose-up.sh;
   home.file."scripts/,docker-rmi.sh".source = ./scripts/docker-rmi.sh;
   home.file."scripts/,flameshot-kill.sh".source = ./scripts/flameshot-kill.sh;
+  home.file."scripts/,gcp-list-resources.sh".source =
+    ./scripts/gcp-list-resources.sh;
   home.file."scripts/,gh-list-repos.sh".source = ./scripts/gh-list-repos.sh;
   home.file."scripts/,git-add-ssh-key.sh".source = ./scripts/git-add-ssh-key.sh;
   home.file."scripts/,poetry-to-uv.sh".source = ./scripts/poetry-to-uv.sh;
