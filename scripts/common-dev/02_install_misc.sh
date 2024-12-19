@@ -51,6 +51,7 @@ go install github.com/saltfishpr/redis-viewer@latest
 # applications - cargo
 ############################
 cargo install imgcatr
+cargo install mdsf --locked
 
 ############################
 # applications - python
@@ -62,6 +63,9 @@ uv tool install nbstripout
 uv tool install topydo[columns]
 uv tool install poetry
 uv tool install poetry-plugin-export
+## for mdsf
+uv tool install beautysh
+uv tool install usort
 
 ############################
 # applications - node
