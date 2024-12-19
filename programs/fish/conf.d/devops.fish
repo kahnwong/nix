@@ -16,7 +16,8 @@ end
 # INFRA: TERRAFORM
 ########################
 function tf
-    terraform $argv
+   # terraform $argv
+  tofu $argv
 end
 
 ########################
