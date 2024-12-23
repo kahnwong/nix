@@ -96,6 +96,10 @@
       hyperfine
       libqalculate
       tz
+
+      # blogging
+      hugo
+      zola
     ];
   };
 }

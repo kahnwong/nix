@@ -52,7 +52,6 @@
       # ---- tools ----
       nodePackages.markdown-link-check
       #      bitwarden-cli
-      hugo
       silicon
       pop
       git-cliff
