@@ -1,6 +1,6 @@
 #!/bin/bash
 
-uv python pin 3.12
+uv python pin 3.13
 uv init
 uv venv
 
