@@ -51,35 +51,35 @@ make common-dev
 
 ### Linux Extras
 
+### Packages
 - If you need `tailscale`, `caddy`, `fail2ban`, or `docker` on your server, install it via your system's package manager, since nix requires you set up systemd services explicitly.
+- Install [mullvad](https://mullvad.net/en/download/vpn/linux).
+- Install `sourcegit`: <https://github.com/sourcegit-scm/sourcegit>
 
+### Fonts
 - For nerd fonts, download fonts from [here](https://github.com/ryanoasis/nerd-fonts/releases), put them in `~/.local/share/fonts` (or `~/.fonts`) then run `fc-cache -fv`.
 
+### Mouse
 - To setup custom mouse buttons: <https://github.com/pwr-Solaar/Solaar>.
   - For some mouses, use <https://github.com/libratbag/piper/issues/352#issuecomment-1147626332>.
+
+### Configs
 - If you install linux on mac devices, install gnome-tweaks (`sudo apt install gnome-tweaks`) to remap super and alt button.
 - Add m4a support to RhythmBox: `sudo apt install gstreamer1.0-fdkaac -y`
+
+#### Shortcuts
+
 - Set Flameshot shortcut: <https://flameshot.org/docs/guide/key-bindings/#on-ubuntu-and-other-gnome-based-distros>. Flatpak path: `/var/lib/flatpak/exports/bin/org.flameshot.Flameshot`.
-- Set Kitty app launcher: <https://sw.kovidgoyal.net/kitty/binary/#desktop-integration-on-linux>.
+
+#### Startups
+
 - Launch CopyQ on startup: `/var/lib/flatpak/exports/bin/com.github.hluk.copyq --start-server toggle`. On Wayland, add prefix `env QT_QPA_PLATFORM=xcb`.
   - Set shortcut to `alt + shift + v` for `show the tray menu`
 - Start synthingy on startup: `flatpak run --command=SyncThingy com.github.zocker_160.SyncThingy`.
 - Start dropbox on startup: `/var/lib/flatpak/exports/bin/com.dropbox.Client`
-- Install [mullvad](https://mullvad.net/en/download/vpn/linux).
+
+### App Errors
 - Fix discord not loading: `rm -rf ~/.var/app/com.discordapp.Discord`
-- To add Chrome extension desktop shortcut:
-  ```text
-  # ~/.local/share/applications/line.desktop
-  [Desktop Entry]
-  Version=1.0
-  Type=Application
-  Name=LINE
-  GenericName=LINE Chat
-  Exec=/var/lib/flatpak/exports/bin/com.google.Chrome --app="chrome-extension://ophjlpahpchlmihnnnihgmmeilfjmjjc/index.html"
-  StartupNotify=true
-  Categories=Social;
-  ```
-- Install `sourcegit`: <https://github.com/sourcegit-scm/sourcegit>
 
 ## Post-installation instructions
 
