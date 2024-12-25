@@ -13,17 +13,7 @@ nix-env --uninstall ffsend
 
 ## Pre-requisites
 
-Edit `./scripts/apply.sh` and set appropriate build command. See `flake.nix` for available options.
-
-Examples:
-
-```bash
-# macbook
-nix build '.#homeManagerConfigurations.macbookMain.system'
-
-# linux
-nix build '.#homeManagerConfigurations.nuc.activationPackage'
-```
+Create `./scripts/apply.sh` and set appropriate build command. See `flake.nix` for available options.
 
 File content should look like this:
 
@@ -31,7 +21,11 @@ File content should look like this:
 #!/bin/bash
 
 export NIXPKGS_ALLOW_UNFREE=1
-nix build '.#homeManagerConfigurations.macbookMain.system' --experimental-features 'nix-command flakes'  --impure
+
+## macbook
+#nix build '.#homeManagerConfigurations.macbookMain.system' --experimental-features 'nix-command flakes' --impure
+# linux
+nix build '.#homeManagerConfigurations.nuc.activationPackage' --experimental-features 'nix-command flakes' --impure
 
 if [[ $(uname -s) == 'Darwin' ]]; then
     sudo ./result/activate
