@@ -71,6 +71,7 @@
       pgcli
 
       # ---- kubernetes ----
+      kubernetes-helm
       k9s
       kubectl
       kubectx
@@ -87,19 +88,11 @@
       #      sshx
       wakatime
 
-      # -- finance --
-      beancount
-      fava
-
       # -- utils --
       ffsend
       hyperfine
       libqalculate
       tz
-
-      # blogging
-      hugo
-      zola
     ];
   };
 }

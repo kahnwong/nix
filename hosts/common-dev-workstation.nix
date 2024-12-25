@@ -13,11 +13,12 @@
       # maven
 
       # -------- devops --------
+      headscale
+
       # ---- azure ----
       #      azure-cli
 
       # ---- kubernetes ----
-      kubernetes-helm
       #      argocd
       #      helm-dashboard
       #      kdash
@@ -54,6 +55,14 @@
       #      bitwarden-cli
       silicon
       pop
+
+      # blogging
+      hugo
+      zola
+
+      # finance
+      beancount
+      fava
     ];
   };
 }
