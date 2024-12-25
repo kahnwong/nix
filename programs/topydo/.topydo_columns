@@ -2,7 +2,7 @@
 title = All
 sortexpr = asc:priority
 show_all = 1
-filterexpr = -@work -@recurring -@quarterly-sync -@tinkering -@meet
+filterexpr = -@work -@recurring -@quarterly-sync -@tinkering -@meet -@download
 groupexpr = context
 
 [Today]
