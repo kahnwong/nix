@@ -67,10 +67,6 @@ make common-dev
 - If you install linux on mac devices, install gnome-tweaks (`sudo apt install gnome-tweaks`) to remap super and alt button.
 - Add m4a support to RhythmBox: `sudo apt install gstreamer1.0-fdkaac -y`
 
-#### Shortcuts
-
-- Set Flameshot shortcut: <https://flameshot.org/docs/guide/key-bindings/#on-ubuntu-and-other-gnome-based-distros>. Flatpak path: `/var/lib/flatpak/exports/bin/org.flameshot.Flameshot`.
-
 #### Startups
 
 - Launch CopyQ on startup: `/var/lib/flatpak/exports/bin/com.github.hluk.copyq --start-server toggle`. On Wayland, add prefix `env QT_QPA_PLATFORM=xcb`.
