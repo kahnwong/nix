@@ -55,11 +55,11 @@
       # optional
       includeIf."gitdir:~/Git/" = { path = "profiles/github"; };
 
-#      ## obsidian
-#      includeIf."gitdir:~/Library/Mobile Documents/" = {
-#        path = "profiles/github";
-#      };
-#      includeIf."gitdir:~/Obsidian/" = { path = "profiles/github"; };
+      #      ## obsidian
+      #      includeIf."gitdir:~/Library/Mobile Documents/" = {
+      #        path = "profiles/github";
+      #      };
+      #      includeIf."gitdir:~/Obsidian/" = { path = "profiles/github"; };
 
       ## syncthing
       includeIf."gitdir:~/Cloud/Apps/" = { path = "profiles/github"; };
@@ -91,12 +91,13 @@
   };
 
   home.packages = with pkgs; [
-    git-lfs
+    #    gopass
     delta
     gh
+    git-cliff
+    git-lfs
     gitleaks
     pre-commit
     trufflehog
-    #    gopass
   ];
 }

@@ -54,7 +54,6 @@
       #      bitwarden-cli
       silicon
       pop
-      git-cliff
     ];
   };
 }
