@@ -54,5 +54,7 @@ end
 
 # ---- changelog ---- #
 function grc
-    git cliff --unreleased --tag $argv
+    git cliff --unreleased --tag $argv > changelog.md
+    gh release create $argv -F changelog.md
+    rm changelog.md
 end
