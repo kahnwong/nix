@@ -15,6 +15,7 @@
 curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 # sudo snap install bruno
 sudo apt install thunar -y
+sudo snap install czkawka
 sudo snap install intellij-idea-ultimate --classic
 sudo snap install mpv
 sudo snap install obsidian --classic
@@ -49,3 +50,4 @@ flatpak install flathub org.fkoehler.KTailctl -y
 flatpak install flathub org.flameshot.Flameshot -y
 flatpak install flathub org.kde.okular -y
 flatpak install flathub org.mozilla.Thunderbird -y
+flatpak install flathub io.github.sigmasd.stimulator -y

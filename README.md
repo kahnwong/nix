@@ -85,6 +85,7 @@ make common-dev
   StartupNotify=true
   Categories=Social;
   ```
+- Install `sourcegit`: <https://github.com/sourcegit-scm/sourcegit>
 
 ## Post-installation instructions
 
