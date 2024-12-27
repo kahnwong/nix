@@ -43,8 +43,8 @@
       shellcheck
       shfmt
 
-      # ---- wasm ----
-      wasmtime
+      #      # ---- wasm ----
+      #      wasmtime
 
       # ---- yaml ----
       yamlfmt
@@ -60,13 +60,6 @@
       trivy
 
       # -------- others --------
-      # gcp
-      docker-credential-gcr
-      (google-cloud-sdk.withExtraComponents [
-        google-cloud-sdk.components.gke-gcloud-auth-plugin
-        # google-cloud-sdk.components.cloud_sql_proxy # this is outdated
-      ])
-
       # ---- database ----
       pgcli
 
@@ -92,7 +85,17 @@
       ffsend
       hyperfine
       libqalculate
+      pop
+      silicon
       tz
+
+      # blogging
+      #        hugo
+      zola
+
+      # finance
+      beancount
+      fava
     ];
   };
 }

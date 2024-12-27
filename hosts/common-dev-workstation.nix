@@ -15,6 +15,14 @@
       # -------- devops --------
       headscale
 
+      # ---- gcp ----
+      google-cloud-sdk
+      #      docker-credential-gcr
+      #      (google-cloud-sdk.withExtraComponents [
+      #        google-cloud-sdk.components.gke-gcloud-auth-plugin
+      #        # google-cloud-sdk.components.cloud_sql_proxy # this is outdated
+      #      ])
+
       # ---- azure ----
       #      azure-cli
 
@@ -53,16 +61,7 @@
       # ---- tools ----
       nodePackages.markdown-link-check
       #      bitwarden-cli
-      silicon
-      pop
 
-      # blogging
-      hugo
-      zola
-
-      # finance
-      beancount
-      fava
     ];
   };
 }
