@@ -9,6 +9,7 @@ in {
     ../../common-linux.nix
     ../../common-dev.nix
     ../../common-dev-workstation.nix
+    ../../../programs/tailscale/tailscale.nix
   ];
 
   home.packages = with pkgs; [ caddy vault-bin ];
