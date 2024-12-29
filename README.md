@@ -49,6 +49,16 @@ make common-dev
 1. Login to `App Store`
 2. `make mac`
 
+### Rust
+
+If nix gc borks rust, run following commands:
+
+```bash
+rustup show
+rustup toolchain remove $toolchain_version
+rustup install 1.83.0
+```
+
 ### Linux Extras
 
 ### Packages
