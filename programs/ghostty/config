@@ -1,0 +1,9 @@
+command=FISH_PATH
+
+keybind = ctrl+shift+t=new_tab
+
+keybind = ctrl+b>i=new_split:down
+keybind = ctrl+b>o=new_split:right
+
+keybind = ctrl+b>h=goto_split:previous
+keybind = ctrl+b>l=goto_split:next

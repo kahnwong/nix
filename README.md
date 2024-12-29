@@ -65,6 +65,7 @@ rustup install 1.83.0
 - If you need `tailscale`, `caddy`, `fail2ban`, or `docker` on your server, install it via your system's package manager, since nix requires you set up systemd services explicitly.
 - Install [mullvad](https://mullvad.net/en/download/vpn/linux).
 - Install `sourcegit`: <https://github.com/sourcegit-scm/sourcegit>
+- Install `ghostty`: <https://ghostty.org/docs/install/build>
 
 ### Fonts
 - For nerd fonts, download fonts from [here](https://github.com/ryanoasis/nerd-fonts/releases), put them in `~/.local/share/fonts` (or `~/.fonts`) then run `fc-cache -fv`.

@@ -37,6 +37,7 @@ brew install apache-spark
 # brew install --cask devtoys
 brew install --cask docker
 brew install --cask fork
+brew install --cask ghostty
 brew install --cask intellij-idea
 brew install --cask kitty
 brew install --cask microsoft-remote-desktop
