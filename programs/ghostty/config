@@ -1,6 +1,7 @@
-command=FISH_PATH
+command = FISH_PATH
+font-size = FONT_SIZE
 
-background-opacity=0.8
+background-opacity = 0.8
 
 keybind = ctrl+shift+t=new_tab
 
