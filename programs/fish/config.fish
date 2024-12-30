@@ -7,6 +7,10 @@ set fish_escape_delay_ms 3000
 # suppress fish_greeting message
 set -g fish_greeting
 
+# clipboard alias
+alias c 'fish_clipboard_copy'
+alias p 'fish_clipboard_paste'
+
 ####################
 # PATH
 ####################

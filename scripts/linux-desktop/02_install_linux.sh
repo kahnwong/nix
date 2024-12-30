@@ -15,6 +15,7 @@
 curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 # sudo snap install bruno
 sudo apt install thunar -y
+sudo apt install xclip -y
 sudo snap install czkawka
 sudo snap install intellij-idea-ultimate --classic
 sudo snap install mpv
