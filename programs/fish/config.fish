@@ -8,8 +8,8 @@ set fish_escape_delay_ms 3000
 set -g fish_greeting
 
 # clipboard alias
-alias c 'fish_clipboard_copy'
-alias p 'fish_clipboard_paste'
+alias copy 'fish_clipboard_copy'
+alias paste 'fish_clipboard_paste'
 
 ####################
 # PATH
