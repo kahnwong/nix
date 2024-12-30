@@ -1,5 +1,7 @@
 command=FISH_PATH
 
+background-opacity=0.8
+
 keybind = ctrl+shift+t=new_tab
 
 keybind = ctrl+b>i=new_split:down
