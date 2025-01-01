@@ -59,6 +59,7 @@
 
       # ---- security ----
       trivy
+      zizmor
 
       # -------- others --------
       # ---- database ----
