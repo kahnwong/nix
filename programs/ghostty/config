@@ -5,8 +5,8 @@ background-opacity = 0.8
 
 keybind = ctrl+shift+t=new_tab
 
-keybind = ctrl+b>i=new_split:down
-keybind = ctrl+b>o=new_split:right
+keybind = ctrl+b>shift+apostrophe=new_split:down
+keybind = ctrl+b>shift+five=new_split:right
 
 keybind = ctrl+b>h=goto_split:previous
 keybind = ctrl+b>l=goto_split:next
