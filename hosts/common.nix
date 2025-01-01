@@ -52,9 +52,9 @@
 
       # ---- fetch ----
       cpufetch
+      fastfetch
       neofetch
       onefetch
-      pfetch
 
       # ---- containers ----
       ctop
