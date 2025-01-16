@@ -14,19 +14,10 @@ if [[ $(uname -s) == 'Darwin' ]]; then
 fi
 
 ####################
-# prep debian
-####################
-if [[ $(uname -s) == 'Linux' ]]; then
-	echo "========== Installing build tools and other essentials =========="
-	sudo apt-get install make curl wget ntfs-3g \
-		-y
-fi
-
-####################
 # setup nix
 ####################
-sh <(curl -L https://nixos.org/nix/install) --daemon
-
+curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | \
+  sh -s -- install
 export PATH=$PATH:/nix/var/nix/profiles/default/bin/
 
 # temporary since during init only bash/zsh shell is available
