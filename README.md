@@ -64,7 +64,7 @@ rustup install 1.83.0
 ### Packages
 - If you need `tailscale`, `caddy`, `fail2ban`, or `docker` on your server, install it via your system's package manager, since nix requires you set up systemd services explicitly.
 
-### Fonts (only applicable if you don't use `Ghostty`)
+### Fonts (you don't need this for Ghostty, but intellij terminal needs this to render glyphs properly)
 - For nerd fonts, download fonts from [here](https://github.com/ryanoasis/nerd-fonts/releases), put them in `~/.local/share/fonts` (or `~/.fonts`) then run `fc-cache -fv`.
 
 ### Mouse
