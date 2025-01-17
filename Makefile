@@ -21,6 +21,7 @@ linux-desktop:
 	./scripts/linux-desktop/03_setup_app_icons.sh
 	./scripts/linux-desktop/04_setup_shortcuts.sh
 	./scripts/linux-desktop/05_setup_startups.sh
+	./scripts/linux-desktop/06_install_docker.sh
 # 	./scripts/vscode/setup.sh
 
 ##############
