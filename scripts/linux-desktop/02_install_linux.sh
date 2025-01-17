@@ -17,6 +17,7 @@ sudo apt install file-roller -y
 sudo apt install xclip -y
 sudo snap install intellij-idea-ultimate --classic
 sudo snap install mpv
+sudo snap install notion-calendar-snap
 
 # flatpak install flathub com.usebottles.bottles -y
 # flatpak install flathub dev.skynomads.Seabird
