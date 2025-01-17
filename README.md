@@ -63,7 +63,6 @@ rustup install 1.83.0
 
 ### Packages
 - If you need `tailscale`, `caddy`, `fail2ban`, or `docker` on your server, install it via your system's package manager, since nix requires you set up systemd services explicitly.
-- Install `sourcegit`: <https://github.com/sourcegit-scm/sourcegit>
 - Install `ghostty`: <https://askubuntu.com/a/1536694>
 
 ### Fonts (only applicable if you don't use `Ghostty`)
