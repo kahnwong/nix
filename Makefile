@@ -22,6 +22,7 @@ linux-desktop:
 	./scripts/linux-desktop/04_setup_shortcuts.sh
 	./scripts/linux-desktop/05_setup_startups.sh
 	./scripts/linux-desktop/06_install_docker.sh
+	./scripts/linux-desktop/07_install_mullvad.sh
 # 	./scripts/vscode/setup.sh
 
 ##############
