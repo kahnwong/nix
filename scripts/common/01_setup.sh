@@ -25,7 +25,8 @@ fi
 ####################
 # setup nix
 ####################
-sh <(curl -L https://nixos.org/nix/install) --daemon
+curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | \
+  sh -s -- install
 
 export PATH=$PATH:/nix/var/nix/profiles/default/bin/
 
