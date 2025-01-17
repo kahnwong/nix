@@ -13,8 +13,8 @@
           ] (builtins.readFile ./.topydo);
           linux =
             builtins.replaceStrings [ "ARCHIVE_FILENAME" "TODO_FILENAME" ] [
-              "/opt/syncthing/cloud/Apps/todotxt/done.txt"
-              "/opt/syncthing/cloud/Apps/todotxt/todo.txt"
+              "/home/kahnwong/Cloud/Apps/todotxt/done.txt"
+              "/home/kahnwong/Cloud/Apps/todotxt/todo.txt"
             ] (builtins.readFile ./.topydo);
         in (if stdenv.isLinux then linux else mac);
     };
