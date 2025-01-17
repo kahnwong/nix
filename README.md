@@ -69,7 +69,7 @@ rustup install 1.83.0
 
 ### Mouse
 - To setup custom mouse buttons: <https://github.com/pwr-Solaar/Solaar>.
-  - For some mouses, use <https://github.com/libratbag/piper/issues/352#issuecomment-1147626332>.
+  - For some mice, use <https://github.com/libratbag/piper/issues/352#issuecomment-1147626332>.
 
 ### Configs
 - If you install linux on mac devices, install gnome-tweaks (`sudo apt install gnome-tweaks`) to remap super and alt button.
