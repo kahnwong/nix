@@ -24,6 +24,7 @@ linux-desktop:
 	./scripts/linux-desktop/06_install_docker.sh
 	./scripts/linux-desktop/07_install_mullvad.sh
 	./scripts/linux-desktop/08_install_sourcegit.sh
+	./scripts/linux-desktop/09_install_ghostty.sh
 # 	./scripts/vscode/setup.sh
 
 ##############
