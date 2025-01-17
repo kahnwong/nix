@@ -3,7 +3,7 @@
     ../programs/aws/aws.nix
     ../programs/ghostty/ghostty.nix
     ../programs/git/git.nix
-    ../programs/kitty/kitty.nix
+    # ../programs/kitty/kitty.nix
     ../programs/pgconn/pgconn.nix
     ../programs/proxmox/proxmox.nix
     ../programs/scripts/scripts.nix

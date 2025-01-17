@@ -12,7 +12,6 @@
 # sudo apt install code -y
 
 ### applications
-curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 sudo apt install file-roller -y
 sudo apt install thunar -y
 sudo apt install xclip -y

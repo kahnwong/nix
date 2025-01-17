@@ -4,6 +4,9 @@ let
     exec ${pkgs.nixUnstable}/bin/nix --experimental-features "nix-command flakes" "$@"
   '');
 in {
-  imports = [ ../../common.nix ../../../programs/kitty/kitty.nix ];
+  imports = [
+    ../../common.nix
+    # ../../../programs/kitty/kitty.nix
+  ];
   home.packages = with pkgs; [ nodejs vhs ];
 }
