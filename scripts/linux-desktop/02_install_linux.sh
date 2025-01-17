@@ -51,6 +51,7 @@ flatpak install flathub md.obsidian.Obsidian -y
 flatpak install flathub org.audacityteam.Audacity -y
 flatpak install flathub org.fkoehler.KTailctl -y
 flatpak install flathub org.flameshot.Flameshot -y
+flatpak install flathub org.gpodder.gpodder -y
 flatpak install flathub org.kde.konsole -y
 flatpak install flathub org.kde.okular -y
 flatpak install flathub org.mozilla.Thunderbird -y
