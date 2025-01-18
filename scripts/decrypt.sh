@@ -25,7 +25,7 @@ mkdir -p ~/.config/timesheet
 sops -d ./programs/timesheet/config.sops.ini.txt >~/.config/timesheet/config.ini
 ## replace path
 if [[ $(uname -s) == 'Linux' ]]; then
-	sed -i.bak 's#/Users/kahnwong/Cloud#/opt/syncthing/cloud#' ~/.config/timesheet/config.ini
+	sed -i.bak 's#/Users/kahnwong/Cloud#/home/kahnwong/Cloud#' ~/.config/timesheet/config.ini
 fi
 
 # wakatime
