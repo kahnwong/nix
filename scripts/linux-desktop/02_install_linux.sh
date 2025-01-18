@@ -14,6 +14,7 @@
 ### applications
 sudo apt install dolphin -y
 sudo apt install file-roller -y
+sudo apt install simplescreenrecorder -y
 sudo apt install xclip -y
 sudo snap install intellij-idea-ultimate --classic
 sudo snap install mpv
