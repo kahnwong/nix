@@ -52,6 +52,7 @@ flatpak install flathub io.github.sigmasd.stimulator -y
 flatpak install flathub io.gitlab.adhami3310.Impression -y
 flatpak install flathub io.kinvolk.Headlamp -y
 flatpak install flathub md.obsidian.Obsidian -y
+flatpak install flathub net.puddletag.puddletag -y
 flatpak install flathub org.audacityteam.Audacity -y
 flatpak install flathub org.fkoehler.KTailctl -y
 flatpak install flathub org.flameshot.Flameshot -y
