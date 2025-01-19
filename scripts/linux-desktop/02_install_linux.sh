@@ -24,6 +24,7 @@ sudo snap install notion-calendar-snap
 # flatpak install flathub dev.skynomads.Seabird
 # flatpak install flathub io.mpv.Mpv -y
 # flatpak install flathub org.mozilla.firefox -y  # already installed via snap by default
+flatpak install flathub app.zen_browser.zen -y
 flatpak install flathub com.calibre_ebook.calibre -y
 flatpak install flathub com.discordapp.Discord -y
 flatpak install flathub com.dropbox.Client -y
@@ -46,6 +47,7 @@ flatpak install flathub io.github.TransmissionRemoteGtk -y
 flatpak install flathub io.github.ciromattia.kcc -y
 flatpak install flathub io.github.dweymouth.supersonic -y
 flatpak install flathub io.github.flattool.Warehouse -y
+flatpak install flathub io.github.josephmawa.Bella -y
 flatpak install flathub io.github.sigmasd.stimulator -y
 flatpak install flathub io.gitlab.adhami3310.Impression -y
 flatpak install flathub io.kinvolk.Headlamp -y
