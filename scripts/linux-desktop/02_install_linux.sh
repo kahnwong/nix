@@ -14,7 +14,6 @@
 ### applications
 sudo apt install dolphin -y
 sudo apt install file-roller -y
-sudo apt install simplescreenrecorder -y
 sudo apt install xclip -y
 sudo snap install intellij-idea-ultimate --classic
 sudo snap install mpv
@@ -48,6 +47,7 @@ flatpak install flathub io.github.ciromattia.kcc -y
 flatpak install flathub io.github.dweymouth.supersonic -y
 flatpak install flathub io.github.flattool.Warehouse -y
 flatpak install flathub io.github.josephmawa.Bella -y
+flatpak install flathub io.github.seadve.Kooha -y
 flatpak install flathub io.github.sigmasd.stimulator -y
 flatpak install flathub io.gitlab.adhami3310.Impression -y
 flatpak install flathub io.kinvolk.Headlamp -y
