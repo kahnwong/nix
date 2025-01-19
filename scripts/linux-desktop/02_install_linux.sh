@@ -57,3 +57,8 @@ flatpak install flathub org.gpodder.gpodder -y
 flatpak install flathub org.kde.konsole -y
 flatpak install flathub org.kde.okular -y
 flatpak install flathub org.mozilla.Thunderbird -y
+
+### code completion
+curl -fsSL https://ollama.com/install.sh | sh
+#ollama pull codestral
+ollama pull codegemma:7b
