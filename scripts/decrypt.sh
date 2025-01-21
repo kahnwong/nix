@@ -22,10 +22,10 @@ sops -d ./programs/ssh/config.sops >~/.ssh/config
 
 # timesheet
 mkdir -p ~/.config/timesheet
-sops -d ./programs/timesheet/config.sops.ini.txt >~/.config/timesheet/config.ini
+sops -d ./programs/timesheet/config.sops.yaml >~/.config/timesheet/config.yaml
 ## replace path
 if [[ $(uname -s) == 'Linux' ]]; then
-	sed -i.bak 's#/Users/kahnwong/Cloud#/home/kahnwong/Cloud#' ~/.config/timesheet/config.ini
+	sed -i.bak 's#/Users/kahnwong/Cloud#/home/kahnwong/Cloud#' ~/.config/timesheet/config.yaml
 fi
 
 # wakatime
