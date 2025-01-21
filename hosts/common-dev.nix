@@ -12,6 +12,7 @@
 
     # apps
     ../programs/article-summarizer/article-summarizer.nix
+    ../programs/book-summarizer/book-summarizer.nix
     ../programs/topydo/topydo.nix
     ../programs/totp/totp.nix
   ];
