@@ -15,6 +15,7 @@
     ../programs/book-summarizer/book-summarizer.nix
     ../programs/topydo/topydo.nix
     ../programs/totp/totp.nix
+    ../programs/wallabag-tagger/wallabag-tagger.nix
   ];
 
   home = {
