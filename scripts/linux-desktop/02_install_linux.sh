@@ -28,7 +28,6 @@ flatpak install flathub com.calibre_ebook.calibre -y
 flatpak install flathub com.discordapp.Discord -y
 flatpak install flathub com.dropbox.Client -y
 flatpak install flathub com.github.IsmaelMartinez.teams_for_linux -y
-flatpak install flathub com.github.eneshecan.WhatsAppForLinux -y
 flatpak install flathub com.github.hluk.copyq -y
 flatpak install flathub com.github.iwalton3.jellyfin-media-player -y
 flatpak install flathub com.github.jeromerobert.pdfarranger -y
@@ -39,6 +38,7 @@ flatpak install flathub com.github.tchx84.Flatseal -y
 flatpak install flathub com.github.zocker_160.SyncThingy -y
 flatpak install flathub com.google.Chrome -y
 flatpak install flathub com.heroicgameslauncher.hgl -y
+flatpak install flathub com.ktechpit.whatsie -y
 flatpak install flathub com.sindresorhus.Caprine -y
 flatpak install flathub com.transmissionbt.Transmission -y
 flatpak install flathub dev.k8slens.OpenLens -y
