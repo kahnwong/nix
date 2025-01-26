@@ -18,17 +18,6 @@ go1.23.2 download
 rustup default stable
 
 ############################
-# python - pyenv
-############################
-### pyenv
-curl https://pyenv.run | bash
-
-export PATH=$PATH:$HOME/.pyenv/bin
-export PYTHON_VERSION="3.12.6"
-pyenv install -s $PYTHON_VERSION
-pyenv global $PYTHON_VERSION
-
-############################
 # applications - golang
 ############################
 go install github.com/GoogleCloudPlatform/cloud-sql-proxy/v2@latest
@@ -73,6 +62,8 @@ uv tool install usort
 ############################
 npm set prefix ~/.npm-global
 npm install -g yarn
+# qgis via conda
+pixi global install qgis
 
 ############################
 # kubectl

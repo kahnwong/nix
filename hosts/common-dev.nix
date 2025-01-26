@@ -30,14 +30,16 @@
 
       # ---- node ----
       fnm
+      yarn
 
       # ---- nix ----
       nixfmt-classic
 
       # ---- python ----
       # gdal # for build env
-      ruff
+      pixi
       pylyzer
+      ruff
 
       # ---- rust ----
       rustup

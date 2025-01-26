@@ -12,7 +12,6 @@
   home.file."scripts/,gh-list-repos.sh".source = ./scripts/gh-list-repos.sh;
   home.file."scripts/,git-add-ssh-key.sh".source = ./scripts/git-add-ssh-key.sh;
   home.file."scripts/,poetry-to-uv.sh".source = ./scripts/poetry-to-uv.sh;
-  home.file."scripts/,qgis.sh".source = ./scripts/qgis.sh;
   home.file."scripts/,sops-dc-init.sh".source = ./scripts/sops-dc-init.sh;
   home.file."scripts/,sops-init.sh".source = ./scripts/sops-init.sh;
   home.file."scripts/,tf-cost-html.sh".source = ./scripts/tf-cost-html.sh;
