@@ -18,7 +18,6 @@ alias paste 'fish_clipboard_paste'
 set PATH \
     $HOME/.nix-profile/bin \
     $HOME/.local/bin \
-    $HOME/.npm-global/bin \
     $HOME/.krew/bin \
     $HOME/.cargo/bin \
     $HOME/.pixi/bin \

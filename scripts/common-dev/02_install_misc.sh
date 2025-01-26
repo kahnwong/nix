@@ -56,12 +56,6 @@ uv tool install poetry-plugin-export
 ## for mdsf
 uv tool install beautysh
 uv tool install usort
-
-############################
-# applications - node
-############################
-npm set prefix ~/.npm-global
-npm install -g yarn
 # qgis via conda
 pixi global install qgis
 
