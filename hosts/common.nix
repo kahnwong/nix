@@ -22,10 +22,13 @@
       fzf
       mcfly
       ripgrep
-      (pkgs.tere.overrideAttrs (oldAttrs: {
-        doCheck = false;
-        dontCheck = true;
-      }))
+      tere
+      # --- this was a hack to get tere to work; in case we need it again ---
+      #      (pkgs.tere.overrideAttrs (oldAttrs: {
+      #        doCheck = false;
+      #        dontCheck = true;
+      #      }))
+      # ---
       #      rsync
       #      tailspin
       tree
