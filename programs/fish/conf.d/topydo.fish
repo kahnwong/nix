@@ -6,6 +6,10 @@ function tt
     topydo due:"<=today"
 end
 
+function tdt
+    topydo add due:today $argv
+end
+
 function tr
     topydo ls -s asc:context -- -@work -@recurring -@tinkering -@meet
 end
