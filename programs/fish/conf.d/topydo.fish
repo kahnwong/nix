@@ -6,7 +6,7 @@ function tt
     topydo due:"<=today"
 end
 
-function tdt
+function tat
     topydo add due:today $argv
 end
 
