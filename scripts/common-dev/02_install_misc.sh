@@ -37,6 +37,12 @@ go install github.com/peterldowns/nix-search-cli/cmd/nix-search@latest
 go install github.com/protomaps/go-pmtiles@latest
 go install github.com/saltfishpr/redis-viewer@latest
 
+git clone https://github.com/trufflesecurity/trufflehog.git /tmp/trufflehog-src
+cd /tmp/trufflehog-src || exit
+go install
+rm -rf /tmp/trufflehog-src
+cd - || exit
+
 ############################
 # applications - cargo
 ############################

@@ -98,6 +98,6 @@
     git-lfs
     gitleaks
     pre-commit
-    trufflehog
+    # trufflehog # this binary has auto-update feature, and it messes with nix
   ];
 }
