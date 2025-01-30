@@ -28,6 +28,7 @@ flatpak install flathub com.calibre_ebook.calibre -y
 flatpak install flathub com.discordapp.Discord -y
 flatpak install flathub com.dropbox.Client -y
 flatpak install flathub com.github.IsmaelMartinez.teams_for_linux -y
+flatpak install flathub com.github.PintaProject.Pinta -y
 flatpak install flathub com.github.hluk.copyq -y
 flatpak install flathub com.github.iwalton3.jellyfin-media-player -y
 flatpak install flathub com.github.jeromerobert.pdfarranger -y
@@ -40,11 +41,13 @@ flatpak install flathub com.google.Chrome -y
 flatpak install flathub com.heroicgameslauncher.hgl -y
 flatpak install flathub com.ktechpit.whatsie -y
 flatpak install flathub com.sindresorhus.Caprine -y
+flatpak install flathub com.slack.Slack -y
 flatpak install flathub com.transmissionbt.Transmission -y
 flatpak install flathub dev.k8slens.OpenLens -y
 flatpak install flathub io.github.TransmissionRemoteGtk -y
 flatpak install flathub io.github.ciromattia.kcc -y
 flatpak install flathub io.github.dweymouth.supersonic -y
+flatpak install flathub io.github.flattool.Ignition -y
 flatpak install flathub io.github.flattool.Warehouse -y
 flatpak install flathub io.github.josephmawa.Bella -y
 flatpak install flathub io.github.seadve.Kooha -y
@@ -56,6 +59,7 @@ flatpak install flathub net.puddletag.puddletag -y
 flatpak install flathub org.audacityteam.Audacity -y
 flatpak install flathub org.fkoehler.KTailctl -y
 flatpak install flathub org.flameshot.Flameshot -y
+flatpak install flathub org.freefilesync.FreeFileSync -y
 flatpak install flathub org.gnome.gitlab.cheywood.Buffer -y
 flatpak install flathub org.gpodder.gpodder -y
 flatpak install flathub org.kde.konsole -y

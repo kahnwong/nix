@@ -21,6 +21,7 @@ rustup default stable
 # applications - golang
 ############################
 go install github.com/GoogleCloudPlatform/cloud-sql-proxy/v2@latest
+go install github.com/elliot40404/modo/cmd/modo@latest
 go install github.com/fawni/def@latest
 go install github.com/kahnwong/article-summarizer@latest
 go install github.com/kahnwong/config-init@latest
