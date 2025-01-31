@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# copy icons
+cp -r ./scripts/linux-desktop/icons /home/kahnwong/.local/fleet/icons
+
 # ------ LINE ------
 cat <<EOF >"$HOME/.local/share/applications/LINE Chat.desktop"
 [Desktop Entry]
@@ -46,3 +49,29 @@ EOF
 # Name=New Window
 # Exec=/home/kahnwong/.local/ghostty.app/bin/ghostty
 # EOF
+
+# ------ Docs ------
+cat <<EOF >"$HOME/.local/share/applications/Docs.desktop"
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Docs
+GenericName=Docs
+Exec=open https://docs.karnwong.me
+Icon=/home/kahnwong/.local/fleet/icons/docs.png
+StartupNotify=false
+Categories=Productivity;
+EOF
+
+# ------ Memos ------
+cat <<EOF >"$HOME/.local/share/applications/Memos.desktop"
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Memos
+GenericName=Memos
+Exec=open https://memos.karnwong.me
+Icon=/home/kahnwong/.local/fleet/icons/memos.png
+StartupNotify=false
+Categories=Productivity;
+EOF
