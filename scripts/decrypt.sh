@@ -7,6 +7,7 @@ sops -d ./programs/aws/credentials.sops >~/.aws/credentials
 
 # fish
 sops -d ./programs/fish/conf.d/work.sops.fish >~/.config/fish/conf.d/work.fish
+cp -r ./programs/fish/secrets ~/.config/fish/
 
 # k8s
 mkdir -p ~/.kube
