@@ -3,7 +3,6 @@
 echo "================================= Install brew apps ================================="
 
 # browser
-brew install --cask arc
 brew install --cask firefox
 brew install --cask firefox-nightly
 brew install --cask google-chrome
@@ -33,9 +32,8 @@ brew install apache-spark
 
 # dev tools
 # brew install --cask mongodb-compass
-# brew install --cask rio
 # brew install --cask devtoys
-brew install --cask docker
+# brew install --cask docker
 brew install --cask fork
 brew install --cask ghostty
 brew install --cask intellij-idea
@@ -83,15 +81,11 @@ brew install --cask appcleaner
 brew install --cask balenaetcher
 brew install --cask bitwarden
 brew install --cask cheatsheet
-brew install --cask cloudflare-warp
 brew install --cask coconutbattery
 brew install --cask flameshot
-brew install --cask heynote
 brew install --cask hot
 brew install --cask kap
-brew install --cask keepassxc
 brew install --cask keepingyouawake
-brew install --cask latest
 brew install --cask maccy
 #brew install --cask michaelvillar-timer
 brew install --cask mullvadvpn
