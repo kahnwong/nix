@@ -1,16 +1,5 @@
 #!/bin/bash
 
-# ### vscode
-# sudo apt-get install wget gpg
-# wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor >packages.microsoft.gpg
-# sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
-# sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
-# rm -f packages.microsoft.gpg
-#
-# sudo apt install apt-transport-https
-# sudo apt update
-# sudo apt install code -y
-
 ### applications
 sudo apt install dolphin -y
 sudo apt install file-roller -y
@@ -24,7 +13,6 @@ sudo snap install notion-calendar-snap
 # flatpak install flathub io.mpv.Mpv -y
 # flatpak install flathub org.mozilla.firefox -y  # already installed via snap by default
 flatpak install flathub app.freelens.Freelens -y
-flatpak install flathub app.zen_browser.zen -y
 flatpak install flathub com.calibre_ebook.calibre -y
 flatpak install flathub com.discordapp.Discord -y
 flatpak install flathub com.dropbox.Client -y
@@ -66,8 +54,3 @@ flatpak install flathub org.kde.konsole -y
 flatpak install flathub org.kde.okular -y
 flatpak install flathub org.mozilla.Thunderbird -y
 flatpak install flathub org.telegram.desktop -y
-
-### code completion
-curl -fsSL https://ollama.com/install.sh | sh
-#ollama pull codestral
-ollama pull codegemma:7b
