@@ -40,6 +40,12 @@ brew install --cask intellij-idea
 brew install --cask microsoft-remote-desktop
 brew install --cask tailscale
 
+## podman
+brew install --cask podman-desktop
+brew install podman
+brew install podman-compose
+
+## freelens
 brew tap freelensapp/tap
 brew install --cask freelens
 
