@@ -55,6 +55,15 @@ switch (uname)
         alias idea="intellij-idea-ultimate"
 end
 
+# podman
+switch (uname)
+    case Darwin
+        # https://github.com/jesseduffield/lazydocker/issues/4#issuecomment-2594808943
+        function lazydocker
+            DOCKER_HOST="unix://$(podman machine inspect --format '{{.ConnectionInfo.PodmanSocket.Path}}')" "$HOME/.nix-profile/bin/lazydocker"
+        end
+end
+
 ####################
 # CONFIG: TOOLS
 ####################
