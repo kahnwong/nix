@@ -69,7 +69,7 @@ pixi global install qgis
 # applications - node
 ############################
 npm set prefix ~/.npm-global
-yarn global add pake-cli
+yarn global add @quasar/cli
 
 ############################
 # kubectl
