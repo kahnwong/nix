@@ -37,11 +37,8 @@ brew install apache-spark
 brew install --cask fork
 brew install --cask ghostty
 brew install --cask intellij-idea
-# brew install --cask kitty
 brew install --cask microsoft-remote-desktop
 brew install --cask tailscale
-brew install --cask visual-studio-code
-brew install kui
 
 brew tap freelensapp/tap
 brew install --cask freelens
