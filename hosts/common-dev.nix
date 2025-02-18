@@ -48,8 +48,8 @@
       shellcheck
       shfmt
 
-      #      # ---- wasm ----
-      #      wasmtime
+      # ---- wasm ----
+      wasmtime
 
       # ---- yaml ----
       yamlfmt
@@ -81,7 +81,7 @@
 
       # ---- data ----
       sqruff
-      #      visidata
+      visidata
 
       # ---- misc ----
       #      sshx
@@ -96,7 +96,6 @@
       tz
 
       # blogging
-      #        hugo
       zola
 
       # finance
