@@ -53,8 +53,9 @@ function p
 end
 
 # ---- changelog ---- #
-function grc
-    git cliff --unreleased --tag $argv > changelog.md
-    gh release create $argv -F changelog.md
+function gr
+    export release_tag=$(svu next)
+    git cliff --unreleased --tag $release_tag > changelog.md
+    gh release create $release_tag -F changelog.md
     rm changelog.md
 end

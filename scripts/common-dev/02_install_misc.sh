@@ -20,7 +20,11 @@ rustup default stable
 ############################
 # applications - golang
 ############################
+#go install github.com/ksoclabs/kbom@latest
+#go install github.com/protomaps/go-pmtiles@latest
+#go install github.com/saltfishpr/redis-viewer@latest
 go install github.com/GoogleCloudPlatform/cloud-sql-proxy/v2@latest
+go install github.com/caarlos0/svu/v3@latest
 go install github.com/elliot40404/modo/cmd/modo@latest
 go install github.com/fawni/def@latest
 go install github.com/kahnwong/article-summarizer@latest
@@ -31,12 +35,9 @@ go install github.com/kahnwong/timesheet@latest
 go install github.com/kahnwong/totp@latest
 go install github.com/kahnwong/waka@latest
 go install github.com/kahnwong/workspace-init@latest
-#go install github.com/ksoclabs/kbom@latest
 go install github.com/maaslalani/invoice@latest
 go install github.com/nore-dev/fman@latest
 go install github.com/peterldowns/nix-search-cli/cmd/nix-search@latest
-#go install github.com/protomaps/go-pmtiles@latest
-#go install github.com/saltfishpr/redis-viewer@latest
 
 git clone https://github.com/trufflesecurity/trufflehog.git /tmp/trufflehog-src
 cd /tmp/trufflehog-src || exit
