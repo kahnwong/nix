@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # copy icons
-cp -r ./scripts/linux-desktop/icons /home/kahnwong/.local/fleet/icons
+cp -r ./scripts/linux-desktop/icons/* /home/kahnwong/.local/fleet/icons/
 
 # ------ LINE ------
 cat <<EOF >"$HOME/.local/share/applications/LINE Chat.desktop"
@@ -13,6 +13,7 @@ GenericName=LINE Chat
 Exec=/var/lib/flatpak/exports/bin/com.google.Chrome --app="chrome-extension://ophjlpahpchlmihnnnihgmmeilfjmjjc/index.html"
 StartupNotify=true
 Categories=Social;
+Icon=/home/kahnwong/.local/fleet/icons/line.png
 EOF
 
 # ------ Docs ------
