@@ -5,13 +5,6 @@ function k
     kubectl $argv
 end
 
-########################
-# CONTAINERS: PODMAN
-########################
-function docker
-    podman $argv
-end
-
 ############################
 # IDE: VSCODE
 ############################
