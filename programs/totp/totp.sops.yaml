@@ -1,6 +1,8 @@
 totp:
     - org: ENC[AES256_GCM,data:X7A+PJUcXT4=,iv:5Q8D44UKHta2zgVPt7Ml53pRSRdLxvZ9ZWrb6QIuC8E=,tag:5w4WzoXhY2fnFkQQn0sgKg==,type:str]
       accounts:
+        - name: ENC[AES256_GCM,data:2aV8aspNtAnx,iv:KoYMCMkjvUrQpdRmEKe/sSYoxzzPX0kCxOxBZZGRZgY=,tag:8UOnBOMjqSnvqfx95doQJg==,type:str]
+          token: ENC[AES256_GCM,data:4BTjGiX3pa1QIzkDxuT2UV2cY87kAbHCdCtL3PuNePI=,iv:VzJ4bMt5yKHoLvN223+ZPPCZG4OjnG/Vcaw48Ek8GlQ=,tag:6buCyItDHxN+bMqEQsvssA==,type:str]
         - name: ENC[AES256_GCM,data:glGmgg==,iv:Ymv8KdbQmHcPbjGK/h8EJbHEUJ5TqCg81VzHcbAa8Ac=,tag:IHhV6WZxz55seDSHnGy5/A==,type:str]
           token: ENC[AES256_GCM,data:Zyc5Q359NWzQg+0dHPFfSQ==,iv:GVHJazAGBHqIXqh5+NtqNXOBcyaz3OX/b00ocPf4B48=,tag:/F4sC/lT2nIjmjx07D3izA==,type:str]
         - name: ENC[AES256_GCM,data:peNI1SY/TvqXK0lB,iv:XemzIkRicYHdNYvpPGmOGvpXi24/dlvqQK3Q1atkrks=,tag:YOeI6EDieJaFG2mm6/W/Yg==,type:str]
@@ -104,8 +106,8 @@ sops:
             L2toZmJYa1M5a0hmV3gwLzBWdHgxRlkKcRTdyA4JLUpKNn1Pu+21Q+pzlcynmKxz
             rssa1zwyIYfTeRa/OF3i/1Tq1zUUqXcKOBVKL3DKvJdyvpJuI+D84w==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2024-12-25T02:30:36Z"
-    mac: ENC[AES256_GCM,data:vB9x5G7H1SOuchjRw3yPJjAgR8oXiZz+ogb4lDMTxnhobJgRkCOpxkGhbmcTM6QMwrmXJpnPljd3G/OvO4vr/8rCSPBKpVJKCrha+C9Z484TCQsxEsKaI3u7er5S8Hgd4HvfakOqGrE026/18idqX8arhYf0Mau+HZzR1Je4P38=,iv:wjSooV1J1JqrI0bCTZyyj1iJPTMbEGuOJwvtF7NgCps=,tag:6VJFtr2FNCvhjTmtTb8cgw==,type:str]
+    lastmodified: "2025-02-20T10:45:30Z"
+    mac: ENC[AES256_GCM,data:OdVbrn68R2I6cPjbxTjuXLkkjWjwmk1R65SeucdgJ5HVo6EYzkgCvMIJb6+BQ7aT7TS7KNFfqXy1QNjB4JTVesXT2/vn5h93otEEa9vJfE46lL8gqIZcNxzfGaxth+oaypP12WcmSzLlufC599CpKxUt95LwMJKOMUWbNnPsnRk=,iv:HAImO2piLz0hlPBZxJMu9nBQHsmF9UIG1XtUZZpbBHs=,tag:Pfh2q3WUa++TwoV9NG3NTQ==,type:str]
     pgp: []
     unencrypted_suffix: _unencrypted
-    version: 3.9.2
+    version: 3.9.3
