@@ -1,7 +1,7 @@
 #!/bin/bash
 
 uv python pin 3.13
-uv init --author-from
+uv init --author-from git
 uv venv
 
 cat <<EOF >>pyproject.toml
