@@ -11,7 +11,7 @@ cp -r ./programs/fish/secrets ~/.config/fish/
 
 # k8s
 mkdir -p ~/.kube
-sops -d ./programs/kubectl/config.sops >~/.kube/config
+sops -d ./programs/kubectl/config.sops.yaml >~/.kube/config
 
 # ssh
 mkdir -p ~/.ssh/config.d
