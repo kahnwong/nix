@@ -24,6 +24,7 @@ rustup default stable
 #go install github.com/protomaps/go-pmtiles@latest
 #go install github.com/saltfishpr/redis-viewer@latest
 go install github.com/GoogleCloudPlatform/cloud-sql-proxy/v2@latest
+go install github.com/ayoisaiah/f2/v2/cmd/f2@latest
 go install github.com/caarlos0/svu/v3@latest
 go install github.com/elliot40404/modo/cmd/modo@latest
 go install github.com/fawni/def@latest

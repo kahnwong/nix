@@ -6,6 +6,7 @@
   home.file."scripts/,docker-compose-up.sh".source =
     ./scripts/docker-compose-up.sh;
   home.file."scripts/,docker-rmi.sh".source = ./scripts/docker-rmi.sh;
+  home.file."scripts/,f2-rename-music.sh".source = ./scripts/f2-rename-music.sh;
   home.file."scripts/,flameshot-kill.sh".source = ./scripts/flameshot-kill.sh;
   home.file."scripts/,gcp-list-resources.sh".source =
     ./scripts/gcp-list-resources.sh;
