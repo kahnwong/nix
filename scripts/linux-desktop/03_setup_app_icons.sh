@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # copy icons
-cp -r ./scripts/linux-desktop/icons/* /home/kahnwong/.local/fleet/icons/
+mkdir -p ~/.local/fleet/icons
+cp -r ./scripts/linux-desktop/icons/* ~/.local/fleet/icons/
 
 # ------ LINE ------
 cat <<EOF >"$HOME/.local/share/applications/LINE Chat.desktop"
