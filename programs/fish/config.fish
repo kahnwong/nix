@@ -22,6 +22,7 @@ set PATH \
     $HOME/.krew/bin \
     $HOME/.cargo/bin \
     $HOME/.pixi/bin \
+    $HOME/.local/share/JetBrains/Toolbox/apps/intellij-idea-ultimate/bin \
     /Applications/IntelliJ\ IDEA.app/Contents/MacOS \
     /opt/homebrew/bin \
     /snap/bin \
@@ -49,11 +50,11 @@ set PATH $PATH:/nix/var/nix/profiles/default/bin/
 alias nvm="fnm"
 if type -p fnm > /dev/null; fnm env --use-on-cd --shell fish | source; end
 
-# IDE
-switch (uname)
-    case Linux
-        alias idea="intellij-idea-ultimate"
-end
+# IDE -- only when using intellij from snap
+# switch (uname)
+#     case Linux
+#         alias idea="intellij-idea-ultimate"
+# end
 
 # podman
 switch (uname)
