@@ -34,8 +34,10 @@
     extraConfig = {
       # ----- diff -----
       diff = {
-        colorMoved = "default";
         algorithm = "histogram";
+        colorMoved = "plain";
+        mnemonicPrefix = "true";
+        renames = "true";
       };
 
       # ----- merge -----
@@ -87,7 +89,12 @@
       init = { defaultBranch = "master"; };
 
       # ----- misc -----
+      column.ui = "auto";
       log.date = "iso";
+
+      # ----- sorting -----
+      branch.sort = "-committerdate";
+      tag.sort = "version:refname";
     };
   };
 
