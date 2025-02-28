@@ -13,8 +13,10 @@
     # `git config --global --edit` to see raw config
     enable = true;
 
+    # ----- lfs -----
     lfs = { enable = true; };
 
+    # ----- diff -----
     delta = {
       enable = true;
       options = {
@@ -23,24 +25,27 @@
       };
     };
 
-    # default
+    # ----- profile -----
     userName = "Karn Wong";
     userEmail = "karn@karnwong.me";
     # signing.key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGjELfQh9UxS1ORQZJY0it8T57x8+mHSg0fVAG/dprrl karn@karnwong.me";
 
     # https://jvns.ca/blog/2024/02/16/popular-git-config-options/
     extraConfig = {
+      # ----- diff -----
       diff = {
         colorMoved = "default";
         algorithm = "histogram";
       };
 
+      # ----- merge -----
       merge.conflictstyle = "zdiff3";
+
+      # ----- remote -----
       # url."git@github.com:".insteadOf = "https://github.com/";
 
-      ### commit signing
+      # ----- commit signing -----
       gpg.format = "ssh";
-
       commit = { gpgsign = true; };
 
       credential = lib.mkMerge [
@@ -51,15 +56,9 @@
         #        })
       ];
 
-      ### git profiles
+      # ----- profiles -----
       # optional
       includeIf."gitdir:~/Git/" = { path = "profiles/github"; };
-
-      #      ## obsidian
-      #      includeIf."gitdir:~/Library/Mobile Documents/" = {
-      #        path = "profiles/github";
-      #      };
-      #      includeIf."gitdir:~/Obsidian/" = { path = "profiles/github"; };
 
       ## syncthing
       includeIf."gitdir:~/Cloud/Apps/" = { path = "profiles/github"; };
@@ -71,21 +70,23 @@
       # forgejo
       includeIf."gitdir:~/Forgejo/" = { path = "profiles/forgejo"; };
 
-      ### global ignore
+      # ----- global ignore -----
       core.excludesfile = "~/.gitignore_global";
 
+      # ----- pull -----
       pull = {
         rebase = true;
         autosetupremote = true;
       };
+      fetch.prune = true;
 
+      # ----- push -----
       push = { autoSetupRemote = true; };
 
-      #      init = {
-      #        defaultBranch = "main";
-      #      };
+      # ----- init -----
+      init = { defaultBranch = "master"; };
 
-      fetch.prune = true;
+      # ----- misc -----
       log.date = "iso";
     };
   };
