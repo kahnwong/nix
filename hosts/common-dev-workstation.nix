@@ -1,6 +1,11 @@
 { pkgs, ... }: {
   imports = [ ];
 
+  programs.java = {
+    enable = true;
+    package = pkgs.temurin-bin;
+  };
+
   home = {
     packages = with pkgs; [
       # -------- runtimes & toolchains --------
@@ -8,7 +13,6 @@
       uncrustify
 
       # ---- java ----
-      temurin-bin
       # gradle
       # maven
 
