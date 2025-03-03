@@ -1,4 +1,8 @@
 totp:
+    - org: ENC[AES256_GCM,data:NXbMKg==,iv:+7DwdcnTltp/vxv7RqvgxvZ8juCNVv2mNQD4GBfLS5c=,tag:wCzmdI6UJEvEYy++3qVBZQ==,type:str]
+      accounts:
+        - name: ENC[AES256_GCM,data:xwOUZRPjIw==,iv:Xgcv+NbvKEnJOZw7hMzh4AqJxeUzB3pHUwezTuNVWMM=,tag:VV8QLir+0qWgE+fE99z+LQ==,type:str]
+          token: ENC[AES256_GCM,data:ZNeeeAalTymelAllavY+Ew==,iv:np6oPr0WKGJFDUNlOAC/uECukS/O5quw4zjcDdz35U8=,tag:SK6GLC1yy1IwGsCDlpKE1Q==,type:str]
     - org: ENC[AES256_GCM,data:X7A+PJUcXT4=,iv:5Q8D44UKHta2zgVPt7Ml53pRSRdLxvZ9ZWrb6QIuC8E=,tag:5w4WzoXhY2fnFkQQn0sgKg==,type:str]
       accounts:
         - name: ENC[AES256_GCM,data:2aV8aspNtAnx,iv:KoYMCMkjvUrQpdRmEKe/sSYoxzzPX0kCxOxBZZGRZgY=,tag:8UOnBOMjqSnvqfx95doQJg==,type:str]
@@ -106,8 +110,8 @@ sops:
             L2toZmJYa1M5a0hmV3gwLzBWdHgxRlkKcRTdyA4JLUpKNn1Pu+21Q+pzlcynmKxz
             rssa1zwyIYfTeRa/OF3i/1Tq1zUUqXcKOBVKL3DKvJdyvpJuI+D84w==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2025-02-20T10:45:30Z"
-    mac: ENC[AES256_GCM,data:OdVbrn68R2I6cPjbxTjuXLkkjWjwmk1R65SeucdgJ5HVo6EYzkgCvMIJb6+BQ7aT7TS7KNFfqXy1QNjB4JTVesXT2/vn5h93otEEa9vJfE46lL8gqIZcNxzfGaxth+oaypP12WcmSzLlufC599CpKxUt95LwMJKOMUWbNnPsnRk=,iv:HAImO2piLz0hlPBZxJMu9nBQHsmF9UIG1XtUZZpbBHs=,tag:Pfh2q3WUa++TwoV9NG3NTQ==,type:str]
+    lastmodified: "2025-03-04T13:24:02Z"
+    mac: ENC[AES256_GCM,data:NHGh7n4u+MzxnBKHVn2eICU+xEJtFSPA8p2VHeKJIIAl7+HuamAZVbD5JiRGx4ciKnPTmTf+SX4jHWaiu5Oj3gSJgOUeaDKjBKu4uIXi3DoeA8SkRkJPT5XZybR7bdhhaXTHmonexyq78fAkDwxTh430AYMmJq3rWst9/sTrOIs=,iv:+K4Qbcr2H44SR3uSdzkiku+qzxZyMQxQkZnijQkkNgk=,tag:Rc6IuyEo4BkUcNJ6B4gRag==,type:str]
     pgp: []
     unencrypted_suffix: _unencrypted
     version: 3.9.3
