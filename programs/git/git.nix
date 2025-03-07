@@ -7,7 +7,7 @@
 
   # templates
   home.file.".sops.yaml".source = ./sops/.sops.yaml;
-  home.file.".sops-dc.yaml".source = ./sops/.sops-dc.yaml;
+  home.file.".sops-work.yaml".source = ./sops/.sops-work.yaml;
 
   programs.git = {
     # `git config --global --edit` to see raw config
