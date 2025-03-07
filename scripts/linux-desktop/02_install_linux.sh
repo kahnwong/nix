@@ -31,6 +31,7 @@ flatpak install flathub com.heroicgameslauncher.hgl -y
 flatpak install flathub com.ktechpit.whatsie -y
 flatpak install flathub com.sindresorhus.Caprine -y
 flatpak install flathub com.slack.Slack -y
+flatpak install flathub com.todoist.Todoist -y
 flatpak install flathub com.transmissionbt.Transmission -y
 flatpak install flathub io.github.TransmissionRemoteGtk -y
 flatpak install flathub io.github.ciromattia.kcc -y
