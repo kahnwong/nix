@@ -72,6 +72,7 @@ pixi global install qgis
 ############################
 npm set prefix ~/.npm-global
 yarn global add @quasar/cli
+yarn global add prettier
 
 ############################
 # kubectl
