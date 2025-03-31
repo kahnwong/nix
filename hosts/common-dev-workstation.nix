@@ -20,6 +20,11 @@
       # zig
       # zls
 
+      # # ---- gleam ----
+      # gleam
+      # erlang
+      # rebar3
+
       # -------- devops --------
       headscale
 
