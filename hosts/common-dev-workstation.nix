@@ -16,6 +16,10 @@
       # gradle
       # maven
 
+      # # ---- zig ----
+      # zig
+      # zls
+
       # -------- devops --------
       headscale
 
