@@ -1,5 +1,7 @@
 #!/bin/bash
 
+mkdir -p "$HOME/.config/autostart"
+
 # ------ Dropbox ------
 cat <<EOF >"$HOME/.config/autostart/com.dropbox.Client.desktop"
 [Desktop Entry]
