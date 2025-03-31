@@ -19,7 +19,7 @@
     ./.terraformrc; # dummy file for init directory
 
   home.packages = with pkgs; [
-    terraform # non-free
+    # terraform # non-free
     opentofu
 
     ## tools
