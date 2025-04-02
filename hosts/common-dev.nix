@@ -67,6 +67,7 @@
 
       # -------- others --------
       # ---- database ----
+      atlas
       pgcli
 
       # ---- kubernetes ----
