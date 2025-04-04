@@ -39,6 +39,7 @@ brew install --cask ghostty
 brew install --cask intellij-idea
 brew install --cask microsoft-remote-desktop
 brew install --cask tailscale
+brew install --cask zed
 
 ## podman
 brew install --cask podman-desktop

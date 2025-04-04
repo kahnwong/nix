@@ -26,6 +26,7 @@ linux-desktop:
 	./scripts/linux-desktop/08_install_sourcegit.sh
 	./scripts/linux-desktop/09_install_ghostty.sh
 	./scripts/linux-desktop/10_install_foobar2000.sh
+	./scripts/linux-desktop/11_install_zed.sh
 # 	./scripts/vscode/setup.sh
 
 ##############
