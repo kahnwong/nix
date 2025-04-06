@@ -72,6 +72,7 @@ brew install --cask obsidian
 brew install --cask sleek
 brew install --cask todoist
 brew install --cask todotxt
+brew install lihaoyun6/tap/quickrecorder
 
 # utilities
 # brew install --cask hiddenbar
