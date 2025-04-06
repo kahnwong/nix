@@ -66,6 +66,7 @@ rustup install 1.83.0
 
 ### Fonts (you don't need this for Ghostty, but intellij terminal needs this to render glyphs properly)
 - For nerd fonts, download fonts from [here](https://github.com/ryanoasis/nerd-fonts/releases), put them in `~/.local/share/fonts` (or `~/.fonts`) then run `fc-cache -fv`.
+- Fix Thai fonts: `sudo apt install fonts-thai-tlwg -y`
 
 ### Mouse
 - To setup custom mouse buttons: <https://github.com/pwr-Solaar/Solaar>.
