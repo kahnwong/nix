@@ -77,6 +77,9 @@ rustup install 1.83.0
 - Add m4a support to RhythmBox: `sudo apt install gstreamer1.0-fdkaac -y`
 - `CopyQ`: set shortcut to `alt + shift + v` for `show the tray menu`
 
+### Notifications Mirroring
+- iOS: <https://github.com/impiaaa/ios-notif-forward>
+
 ### App Errors
 - Fix discord not loading: `rm -rf ~/.var/app/com.discordapp.Discord`
 
