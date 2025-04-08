@@ -37,7 +37,7 @@
       #      ])
 
       # ---- azure ----
-      #      azure-cli
+      azure-cli
 
       # ---- kubernetes ----
       #      argocd
