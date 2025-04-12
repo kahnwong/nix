@@ -66,7 +66,7 @@ brew install --cask qlmarkdown
 
 # productivity
 brew install --cask notion-calendar
-brew install --cask loom
+# brew install --cask loom
 brew install --cask macdown
 brew install --cask obsidian
 brew install --cask sleek
@@ -89,7 +89,7 @@ brew install --cask cheatsheet
 brew install --cask coconutbattery
 brew install --cask flameshot
 brew install --cask hot
-brew install --cask kap
+# brew install --cask kap
 brew install --cask keepingyouawake
 brew install --cask maccy
 #brew install --cask michaelvillar-timer
