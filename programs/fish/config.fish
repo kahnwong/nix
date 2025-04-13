@@ -56,6 +56,12 @@ if type -p fnm > /dev/null; fnm env --use-on-cd --shell fish | source; end
 #         alias idea="intellij-idea-ultimate"
 # end
 
+# zed
+switch (uname)
+    case Linux
+        alias zed="/var/lib/flatpak/exports/bin/dev.zed.Zed"
+end
+
 # podman
 switch (uname)
     case Darwin
