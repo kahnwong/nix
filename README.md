@@ -128,6 +128,9 @@ windowrule = pin, class:^(flameshot)$
 windowrule = monitor 1, class:^(flameshot)$
 
 bind = SUPER, X, exec, XDG_CURRENT_DESKTOP=sway /var/lib/flatpak/exports/bin/org.flameshot.Flameshot gui
+
+# lockscreen
+bind = $mainMod, L, exec, pactl set-sink-mute @DEFAULT_SINK@ 1 && hyprlock # Mute and lock the system
 ```
 
 ### Linux: (optional) convert EOS to Arch
