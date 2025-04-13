@@ -85,7 +85,7 @@ rustup install 1.83.0
 `vi /etc/passwd` and specify shell for your user
 ```
 
-#### Hyprland
+### Linux: Hyprland
 
 <https://github.com/JaKooLit/Ubuntu-Hyprland>  # each distro has its own setup script
 
@@ -129,6 +129,10 @@ windowrule = monitor 1, class:^(flameshot)$
 
 bind = SUPER, X, exec, XDG_CURRENT_DESKTOP=sway /var/lib/flatpak/exports/bin/org.flameshot.Flameshot gui
 ```
+
+### Linux: (optional) convert EOS to Arch
+
+<https://gist.github.com/NoobGajen/540b55fcec2d4ba450c46956eacf9a84>
 
 ### MacOS: Misc config
 
