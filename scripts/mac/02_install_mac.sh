@@ -6,6 +6,7 @@ echo "================================= Install brew apps ======================
 brew install --cask firefox
 brew install --cask firefox-nightly
 brew install --cask google-chrome
+brew install --cask microsoft-edge
 
 # cli
 brew install mas
