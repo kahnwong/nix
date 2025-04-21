@@ -85,6 +85,11 @@ rustup install 1.83.0
 `vi /etc/passwd` and specify shell for your user
 ```
 
+### Linux: Gnome extensions
+
+- [Hot Edge](https://extensions.gnome.org/extension/4222/hot-edge/)
+- [Just Perfection](https://extensions.gnome.org/extension/3843/just-perfection/)
+
 ### Linux: Hyprland
 
 <https://github.com/JaKooLit/Ubuntu-Hyprland>  # each distro has its own setup script
