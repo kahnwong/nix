@@ -29,6 +29,7 @@ flatpak install flathub com.github.zocker_160.SyncThingy -y
 flatpak install flathub com.google.Chrome -y
 flatpak install flathub com.heroicgameslauncher.hgl -y
 flatpak install flathub com.ktechpit.whatsie -y
+flatpak install flathub com.microsoft.Edge -y
 flatpak install flathub com.sindresorhus.Caprine -y
 flatpak install flathub com.slack.Slack -y
 flatpak install flathub com.todoist.Todoist -y
