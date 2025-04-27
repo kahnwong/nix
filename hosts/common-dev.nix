@@ -100,7 +100,6 @@
       zola
 
       # finance
-      beancount
       fava
     ];
   };

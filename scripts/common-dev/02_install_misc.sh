@@ -55,6 +55,8 @@ cargo install mdsf --locked
 ############################
 # applications - python
 ############################
+uv tool install beancount
+uv tool install beanquery
 # uv tool install nbpreview
 uv tool install pip_search
 #uv tool install "dvc[all]"
