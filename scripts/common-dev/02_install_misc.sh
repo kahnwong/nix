@@ -39,6 +39,7 @@ go install github.com/kahnwong/workspace-init@latest
 go install github.com/maaslalani/invoice@latest
 go install github.com/nore-dev/fman@latest
 go install github.com/peterldowns/nix-search-cli/cmd/nix-search@latest
+go install github.com/sinclairtarget/git-who@latest
 
 git clone https://github.com/trufflesecurity/trufflehog.git /tmp/trufflehog-src
 cd /tmp/trufflehog-src || exit
