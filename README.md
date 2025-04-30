@@ -85,6 +85,13 @@ rustup install 1.83.0
 `vi /etc/passwd` and specify shell for your user
 ```
 
+### Linux: Set symlink for desktop
+
+```bash
+ln -s /mnt/ssd/Git ~/Git
+ln -s /mnt/hdd/Downloads ~/Downloads
+```
+
 ### Linux: Gnome extensions
 
 - [Hot Edge](https://extensions.gnome.org/extension/4222/hot-edge/)

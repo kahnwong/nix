@@ -61,6 +61,7 @@
       # ----- profiles -----
       # optional
       includeIf."gitdir:~/Git/" = { path = "profiles/github"; };
+      includeIf."gitdir:/mnt/ssd/Git/" = { path = "profiles/github"; };
 
       ## syncthing
       includeIf."gitdir:~/Cloud/Apps/" = { path = "profiles/github"; };
