@@ -50,6 +50,9 @@ set PATH $PATH:/nix/var/nix/profiles/default/bin/
 alias nvm="fnm"
 if type -p fnm > /dev/null; fnm env --use-on-cd --shell fish | source; end
 
+# python
+set UV_CACHE_DIR ~/.cache/uv
+
 # IDE -- only when using intellij from snap
 # switch (uname)
 #     case Linux
