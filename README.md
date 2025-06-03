@@ -90,6 +90,7 @@ rustup install 1.83.0
 ```bash
 ln -s /mnt/ssd/Git ~/Git
 ln -s /mnt/hdd/Downloads ~/Downloads
+ln -s /mnt/hdd/Kooha ~/Videos/Kooha
 ```
 
 ### Linux: Gnome extensions
