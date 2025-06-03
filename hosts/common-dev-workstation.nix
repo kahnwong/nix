@@ -72,7 +72,6 @@
       # k3d # but actual k3s is better
 
       # ---- tools ----
-      nodePackages.markdown-link-check
       #      bitwarden-cli
 
     ];
