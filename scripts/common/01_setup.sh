@@ -25,8 +25,8 @@ fi
 ####################
 # setup nix
 ####################
-curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | \
-  sh -s -- install
+curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix |
+	sh -s -- install
 
 export PATH=$PATH:/nix/var/nix/profiles/default/bin/
 
@@ -52,3 +52,6 @@ fish -c "fisher install danhper/fish-ssh-agent"
 #### nvim
 #nvim --headless +PlugInstall +qall
 git clone https://github.com/kahnwong/nvchad-starter.git ~/.config/nvim --depth 1
+
+#### tailscale
+curl -fsSL https://tailscale.com/install.sh | sh
