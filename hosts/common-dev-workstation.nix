@@ -56,7 +56,7 @@
       #      syft
 
       # ---- database ----
-      #      postgresql_16
+      postgresql_17
       #    mongodb-tools
 
       # ---- monitoring ----
