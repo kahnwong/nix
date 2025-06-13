@@ -50,7 +50,7 @@
       duf
       htop
       ncdu
-      nvtop
+      # nvtop
       procs
       zenith
 
