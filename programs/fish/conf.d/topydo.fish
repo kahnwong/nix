@@ -18,6 +18,10 @@ function tw
     topydo @work
 end
 
+function taw
+    topydo add @work $argv
+end
+
 function tkr
     topydo @tinkering
 end
