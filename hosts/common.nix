@@ -81,6 +81,7 @@
 
       # ---- utils ----
       age
+      croc
       direnv
       entr
       sops
