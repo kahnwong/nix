@@ -61,7 +61,6 @@ category:
       repos:
         - ENC[AES256_GCM,data:oLhgZmiJcriYGRIQ9A==,iv:2Eq7oBTOi4H1ebOh1iMiHcuVy13eZZJGeKOTlwv6Dns=,tag:zhX1s1ZSaxyFpUdDgXzmGg==,type:str]
         - ENC[AES256_GCM,data:7a4//5nC4bHJwqab7Bmx,iv:Ve8mSuTxj9Fuhh7QFPVLZfJ9d/pIotdWpK7zFVS9I1Y=,tag:lhKHeaxgK/QqIu84RKsWkw==,type:str]
-        - ENC[AES256_GCM,data:HGdjRmEaUTM1,iv:gyvrNErqTO3+RspK2lggrP87puAeVXFU01ZDgVIwDpo=,tag:5HY96CHt8IY//uAwBLWnKg==,type:str]
     - group: ENC[AES256_GCM,data:LepkFLKiy5E=,iv:xfIMMYFewcsBDgps/ri5yPOZWBJkHGR2XZAnNzFKrtI=,tag:c8WTkhWCguNo7y7+DiwUOA==,type:str]
       repos:
         - ENC[AES256_GCM,data:Qnp7ei4d1v44WA==,iv:SsyEVhMFeVrH5ym7kcEbUKFRwRnrwYlUEAgjFnVANJg=,tag:NkiRVCIwN3pKzkXvsj/3sQ==,type:str]
@@ -226,10 +225,6 @@ excludeRepos:
     - ENC[AES256_GCM,data:jyGS77XC,iv:7wxENUgrOdlo1XOJK3AruxX5Cip4fq2jLd1xpDbs9Ow=,tag:Wx8wPWBqyofHek1KvYNyng==,type:str]
     - ENC[AES256_GCM,data:IoU1mUvido3vy2ztkpQ=,iv:qs4e34vcCBkgcFqxVWh4ORxBm7U9cbn180E19fPFJcU=,tag:LraKa8WWH1x1sE6nllDBMw==,type:str]
 sops:
-    kms: []
-    gcp_kms: []
-    azure_kv: []
-    hc_vault: []
     age:
         - recipient: age1m954z8ajdedsmvr9u89ud5v2zednmxgvvzuahpfy5fcdp97yn99ssy2wmm
           enc: |
@@ -240,8 +235,7 @@ sops:
             Q0R6K1hDMjdoUXo4SDNIZmY5M3hOdEEKyMLrO6VtaHzo6Ogqz3MZMBBx8WgGsLQG
             m8NtBjrrPfw2zJB2RIrkL8dqUa9mkL+K1QoaVfOzhLMFa7ganCDc+w==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2025-06-06T14:31:31Z"
-    mac: ENC[AES256_GCM,data:aUlvpvaKVyKEx5IaX8PmytvG2GluIRlMBmwI/RTD6N1Toww5lLboipSy+F5dKn48e8VNZ79HAq5+CYnAu1HvOS4kwJs5YWwQK50j5LGC0/xYhY+bMy9x3v92+a5J+p/xUI6klMH7wCE3XGrzIrXEidpKGjVNa5eWQPuSCuwm2nQ=,iv:XWFpe/hUUI+FOvFTWVk/AoEOHOjpHMuLJnajAGwvCM4=,tag:ajUnHpKhAaRNqoOc+bK0vw==,type:str]
-    pgp: []
+    lastmodified: "2025-06-24T07:17:22Z"
+    mac: ENC[AES256_GCM,data:K1mM3fWdVTMlQYa43baozuBVQTMKrIDHC4IjsOPHMszVOZ5ghpwnrjjTJWgf9fY8pbf8w3ccWhO3So6hEp7F88aoMBgkwnUqlbdfftBAVS46uo7QjlaiMNUDJSzTcTpUa12nXYcbO9/5i0hFcqXzMJHp6NPPaW3dj7v1hyx8J8U=,iv:f17aeBD/Msxk0vtWaCQdwjgimU+s2MECZ94RHYCbyL4=,tag:gAji1feDmXfe+t7IvNFayw==,type:str]
     unencrypted_suffix: _unencrypted
-    version: 3.9.4
+    version: 3.10.2
