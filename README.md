@@ -95,6 +95,8 @@ ln -s /mnt/hdd/Kooha ~/Videos/Kooha
 
 ### Linux: Gnome extensions
 
+You probably need to install `gnome-browser-connector` and use chrome to install gnome extensions.
+
 - [Hot Edge](https://extensions.gnome.org/extension/4222/hot-edge/)
 - [Just Perfection](https://extensions.gnome.org/extension/3843/just-perfection/)
 
