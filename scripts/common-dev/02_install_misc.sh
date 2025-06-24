@@ -52,6 +52,7 @@ cd - || exit
 ############################
 cargo install imgcatr
 cargo install mdsf --locked
+cargo install somo
 
 ############################
 # applications - python
