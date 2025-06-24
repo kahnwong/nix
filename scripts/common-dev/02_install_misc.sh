@@ -81,10 +81,11 @@ yarn global add prettier
 ############################
 # kubectl
 ############################
-krew install nodepools
-krew install status
-krew install outdated
 krew install images
+krew install node-resource
+krew install nodepools
+krew install outdated
+krew install status
 
 ####################
 # git
