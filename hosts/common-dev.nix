@@ -1,6 +1,7 @@
 { pkgs, ... }: {
   imports = [
     ../programs/aws/aws.nix
+    ../programs/erp/erp.nix
     ../programs/ghostty/ghostty.nix
     ../programs/git/git.nix
     # ../programs/kitty/kitty.nix
