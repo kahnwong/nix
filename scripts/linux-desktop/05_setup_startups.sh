@@ -40,16 +40,3 @@ Exec=flatpak run --command=SyncThingy com.github.zocker_160.SyncThingy
 X-Flatpak=com.github.zocker_160.SyncThingy
 EOF
 
-# ------ ydotool ------
-cat <<EOF >"$HOME/.config/autostart/ydotool.desktop"
-[Desktop Entry]
-Type=Application
-Exec=sudo -b ydotoold --socket-path="$HOME/.ydotool_socket" --socket-own="$(id -u):$(id -g)"\n
-Hidden=false
-NoDisplay=false
-X-GNOME-Autostart-enabled=true
-Name[en_US]=ydotool
-Name=ydotool
-Comment[en_US]=
-Comment=
-EOF

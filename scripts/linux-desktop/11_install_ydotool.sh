@@ -14,3 +14,6 @@ sudo make install
 
 cd ../.. || exit
 rm -rf ydotool
+
+echo "add this to 'sudo crontab -e'"
+echo '@reboot sudo -b ydotoold --socket-path="/home/kahnwong/.ydotool_socket" --socket-own="1000:1000"'
