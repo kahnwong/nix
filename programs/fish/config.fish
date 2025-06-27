@@ -127,6 +127,9 @@ if type -p config-init > /dev/null; ci completion fish | source; end
 # article-summarizer
 alias sm="article-summarizer"
 
+# erp
+if type -p erp > /dev/null; erp completion fish | source; end
+
 ####################
 # CONFIG: GCP
 ####################
