@@ -33,6 +33,7 @@
   users = { users.kahnwong = { home = /Users/kahnwong; }; };
 
   nix = {
+    enable = false;
     nixPath = lib.mkForce [ "nixpkgs=${nixpkgs}" ];
     extraOptions = ''
       experimental-features = nix-command flakes

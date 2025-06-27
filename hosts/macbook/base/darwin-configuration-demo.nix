@@ -32,6 +32,7 @@
   users = { users.demo = { home = /Users/demo; }; };
 
   nix = {
+    enable = false;
     nixPath = lib.mkForce [ "nixpkgs=${nixpkgs}" ];
     extraOptions = ''
       experimental-features = nix-command flakes
