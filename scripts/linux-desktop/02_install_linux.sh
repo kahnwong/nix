@@ -13,6 +13,7 @@ sudo snap install notion-calendar-snap
 # flatpak install flathub io.mpv.Mpv -y
 # flatpak install flathub org.mozilla.firefox -y  # already installed via snap by default
 flatpak install flathub app.freelens.Freelens -y
+flatpak install flathub be.alexandervanhee.gradia -y
 flatpak install flathub com.calibre_ebook.calibre -y
 flatpak install flathub com.discordapp.Discord -y
 flatpak install flathub com.dropbox.Client -y
@@ -49,7 +50,6 @@ flatpak install flathub md.obsidian.Obsidian -y
 flatpak install flathub net.puddletag.puddletag -y
 flatpak install flathub org.audacityteam.Audacity -y
 flatpak install flathub org.fkoehler.KTailctl -y
-flatpak install flathub org.flameshot.Flameshot -y
 flatpak install flathub org.freefilesync.FreeFileSync -y
 flatpak install flathub org.gnome.gitlab.cheywood.Buffer -y
 flatpak install flathub org.gpodder.gpodder -y
