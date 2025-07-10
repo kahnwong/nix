@@ -13,19 +13,20 @@
       # national-park-typeface
       meslo-lgs-nf # for terminal
       powerline-fonts
+      nerd-fonts.jetbrains-mono
 
-      (nerdfonts.override {
-        fonts = [
-          "CascadiaCode"
-          "FiraCode"
-          "JetBrainsMono"
-          # "Hack"
-          # "IBMPlexMono"
-          # "IntelOneMono"
-          # "Iosevka"
-          # "SourceCodePro"
-        ];
-      })
+      # (nerdfonts.override {
+      #   fonts = [
+      #     # "CascadiaCode"
+      #     # "FiraCode"
+      #     "JetBrainsMono"
+      #     # "Hack"
+      #     # "IBMPlexMono"
+      #     # "IntelOneMono"
+      #     # "Iosevka"
+      #     # "SourceCodePro"
+      #   ];
+      # })
     ];
   };
 
@@ -38,4 +39,6 @@
       experimental-features = nix-command flakes
     '';
   };
+
+  system.stateVersion = 5;
 }
