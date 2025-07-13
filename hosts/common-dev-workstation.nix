@@ -16,17 +16,17 @@
       # gradle
       # maven
 
-      # # ---- zig ----
-      # zig
-      # zls
+       # ---- zig ----
+       zig
+       zls
 
       # # ---- gleam ----
       # gleam
       # erlang
       # rebar3
 
-      # -------- devops --------
-      headscale
+#      # -------- devops --------
+#      headscale
 
       # ---- gcp ----
       google-cloud-sdk
@@ -36,8 +36,8 @@
       #        # google-cloud-sdk.components.cloud_sql_proxy # this is outdated
       #      ])
 
-      # ---- azure ----
-      azure-cli
+#      # ---- azure ----
+#      azure-cli
 
       # ---- kubernetes ----
       #      argocd
@@ -73,7 +73,6 @@
 
       # ---- tools ----
       #      bitwarden-cli
-
     ];
   };
 }
