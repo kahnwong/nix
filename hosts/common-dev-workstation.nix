@@ -17,8 +17,9 @@
       # maven
 
        # ---- zig ----
-       zig
-       zls
+       zig_0_13
+#       zls
+#       zlint
 
       # # ---- gleam ----
       # gleam
