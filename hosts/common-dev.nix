@@ -9,6 +9,7 @@
     ../programs/proxmox/proxmox.nix
     ../programs/scripts/scripts.nix
     ../programs/terraform/terraform.nix
+    ../programs/umami/umami.nix
     ../programs/yt-dlp/yt-dlp.nix
 
     # apps
