@@ -36,5 +36,9 @@ sops -d ./programs/wakatime/wakatime.sops.cfg >~/.wakatime.cfg
 mkdir -p ~/.config/workspace-init
 sops -d ./programs/workspace-init/config.sops.yaml >~/.config/workspace-init/config.yaml
 
+# media-discord-rpc
+mkdir -p ~/.config/media-discord-rpc
+sops -d ./programs/media-discord-rpc/config.sops.yaml >~/.config/media-discord-rpc/config.yaml
+
 ## vscode
 #sops -d ./scripts/vscode/config/settings.sops.json >./scripts/vscode/config/settings.json
