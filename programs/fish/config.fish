@@ -130,6 +130,9 @@ alias sm="article-summarizer"
 # erp
 if type -p erp > /dev/null; erp completion fish | source; end
 
+# umami
+if type -p umami > /dev/null; umami completion fish | source; end
+
 ####################
 # CONFIG: GCP
 ####################
