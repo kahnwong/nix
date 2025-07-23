@@ -133,6 +133,10 @@ if type -p erp > /dev/null; erp completion fish | source; end
 # umami
 if type -p umami > /dev/null; umami completion fish | source; end
 
+# media-discord-rpc
+alias d="media-discord-rpc"
+if type -p media-discord-rpc > /dev/null; d completion fish | source; end
+
 ####################
 # CONFIG: GCP
 ####################
