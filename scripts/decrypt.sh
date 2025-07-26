@@ -40,5 +40,9 @@ sops -d ./programs/workspace-init/config.sops.yaml >~/.config/workspace-init/con
 mkdir -p ~/.config/media-discord-rpc
 sops -d ./programs/media-discord-rpc/config.sops.yaml >~/.config/media-discord-rpc/config.yaml
 
+# gh-dash
+mkdir -p ~/.config/gh-dash
+sops -d ./programs/gh-dash/config.sops.yml >~/.config/gh-dash/config.yml
+
 ## vscode
 #sops -d ./scripts/vscode/config/settings.sops.json >./scripts/vscode/config/settings.json
