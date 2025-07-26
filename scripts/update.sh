@@ -10,6 +10,9 @@ nix-store --gc
 fisher update
 ./scripts/common/02_add_fish_completions.sh
 
+# gh extensions
+gh ext upgrade --all
+
 # brew
 if [[ $(uname -s) == 'Darwin' ]]; then
 	brew upgrade --greedy
