@@ -64,7 +64,7 @@
       includeIf."gitdir:/mnt/ssd/Git/" = { path = "profiles/github"; };
 
       ## syncthing
-      includeIf."gitdir:~/Cloud/Apps/" = { path = "profiles/github"; };
+      includeIf."gitdir:~/Apps/" = { path = "profiles/github"; };
       includeIf."gitdir:/opt/syncthing/cloud/" = { path = "profiles/github"; };
 
       ## nvim
