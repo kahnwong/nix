@@ -17,6 +17,7 @@ in {
 
   home.packages = with pkgs; [
     direnv
+    eza
     fish
     mcfly
     sops
