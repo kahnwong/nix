@@ -15,7 +15,16 @@ in {
     ../../../programs/umami/umami.nix
   ];
 
-  home.packages = with pkgs; [ direnv fish mcfly starship zoxide uv yq-go ];
+  home.packages = with pkgs; [
+    direnv
+    fish
+    mcfly
+    sops
+    starship
+    uv
+    yq-go
+    zoxide
+  ];
 
   home.stateVersion = "25.11";
 }
