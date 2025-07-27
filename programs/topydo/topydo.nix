@@ -7,14 +7,16 @@
     ".topydo" = {
       text = with pkgs;
         let
+          userHome = config.home.homeDirectory;
+
           mac = builtins.replaceStrings [ "ARCHIVE_FILENAME" "TODO_FILENAME" ] [
-            "/Users/kahnwong/Apps/todotxt/done.txt"
-            "/Users/kahnwong/Apps/todotxt/todo.txt"
+            "${userHome}/Apps/todotxt/done.txt"
+            "${userHome}/Apps/todotxt/todo.txt"
           ] (builtins.readFile ./.topydo);
           linux =
             builtins.replaceStrings [ "ARCHIVE_FILENAME" "TODO_FILENAME" ] [
-              "/home/kahnwong/Apps/todotxt/done.txt"
-              "/home/kahnwong/Apps/todotxt/todo.txt"
+              "${userHome}/Apps/todotxt/done.txt"
+              "${userHome}/Apps/todotxt/todo.txt"
             ] (builtins.readFile ./.topydo);
         in (if stdenv.isLinux then linux else mac);
     };
