@@ -93,7 +93,7 @@
       wakatime
 
       # -- utils --
-      ffsend
+      #      ffsend
       hyperfine
       libqalculate
       pop

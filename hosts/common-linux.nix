@@ -1,7 +1,5 @@
 { pkgs, ... }: {
-  imports = [
-    # ../programs/tmux/tmux.nix
-  ];
+  imports = [ ];
   programs.home-manager.enable = true;
 
   home.packages = with pkgs; [ iotop progress ];
