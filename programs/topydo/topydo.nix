@@ -8,13 +8,13 @@
       text = with pkgs;
         let
           mac = builtins.replaceStrings [ "ARCHIVE_FILENAME" "TODO_FILENAME" ] [
-            "/Users/kahnwong/Cloud/Apps/todotxt/done.txt"
-            "/Users/kahnwong/Cloud/Apps/todotxt/todo.txt"
+            "/Users/kahnwong/Apps/todotxt/done.txt"
+            "/Users/kahnwong/Apps/todotxt/todo.txt"
           ] (builtins.readFile ./.topydo);
           linux =
             builtins.replaceStrings [ "ARCHIVE_FILENAME" "TODO_FILENAME" ] [
-              "/home/kahnwong/Cloud/Apps/todotxt/done.txt"
-              "/home/kahnwong/Cloud/Apps/todotxt/todo.txt"
+              "/home/kahnwong/Apps/todotxt/done.txt"
+              "/home/kahnwong/Apps/todotxt/todo.txt"
             ] (builtins.readFile ./.topydo);
         in (if stdenv.isLinux then linux else mac);
     };

@@ -26,7 +26,12 @@ function go-build
     CGO_ENABLED=0 go build -ldflags="-s -w" .
 end
 
+function np
+    cd ~/Apps/notes/notes-personal/ || exit
+    vi "+:NvimTreeToggle"
+end
+
 function nw
-    cd ~/Cloud/Apps/notes/notes-work/ || exit
+    cd ~/Apps/notes/notes-work/ || exit
     vi "+:NvimTreeToggle"
 end
