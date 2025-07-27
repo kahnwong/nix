@@ -5,11 +5,17 @@ let
   '');
 in {
   imports = [
+    # shell
+    ../../../programs/fish/fish.nix
+    ../../../programs/starship/starship.nix
+    # apps
     ../../../programs/erp/erp.nix
     ../../../programs/habit-tracker/habit-tracker.nix
     ../../../programs/topydo/topydo.nix
     ../../../programs/umami/umami.nix
   ];
 
-  home.packages = with pkgs; [ ];
+  home.packages = with pkgs; [ direnv fish mcfly starship zoxide ];
+
+  home.stateVersion = "25.11";
 }
