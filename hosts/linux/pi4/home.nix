@@ -15,7 +15,7 @@ in {
     ../../../programs/umami/umami.nix
   ];
 
-  home.packages = with pkgs; [ direnv fish mcfly starship zoxide ];
+  home.packages = with pkgs; [ direnv fish mcfly starship zoxide uv ];
 
   home.stateVersion = "25.11";
 }
