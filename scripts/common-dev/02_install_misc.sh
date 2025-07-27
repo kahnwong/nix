@@ -48,7 +48,7 @@ go install github.com/sinclairtarget/git-who@latest
 ############################
 # applications - cargo
 ############################
-cargo install imgcatr
+cargo install mcat
 cargo install mdsf --locked
 cargo install somo
 
