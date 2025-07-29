@@ -1,7 +1,3 @@
-function u
-    umami $argv
-end
-
 function ut
     umami today
 end

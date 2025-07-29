@@ -132,6 +132,7 @@ if type -p erp > /dev/null; erp completion fish | source; end
 
 # umami
 if type -p umami > /dev/null; umami completion fish | source; end
+alias u="umami"
 
 # media-discord-rpc
 alias d="media-discord-rpc"
@@ -139,6 +140,7 @@ if type -p media-discord-rpc > /dev/null; d completion fish | source; end
 
 # habit-tracker
 if type -p habit-tracker > /dev/null; habit-tracker completion fish | source; end
+alias h="habit-tracker"
 
 ####################
 # CONFIG: GCP

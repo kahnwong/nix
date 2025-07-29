@@ -1,7 +1,3 @@
-function h
-    habit-tracker $argv
-end
-
 function ht
     habit-tracker today
 end
