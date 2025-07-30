@@ -7,6 +7,7 @@
     ../programs/scripts/scripts.nix
     ../programs/terraform/terraform.nix
     ../programs/yt-dlp/yt-dlp.nix
+    ../programs/zed/zed.nix
 
     # apps
     ../programs/article-summarizer/article-summarizer.nix
