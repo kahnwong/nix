@@ -5,18 +5,17 @@ function k
     kubectl $argv
 end
 
-############################
-# IDE: VSCODE
-############################
-function ,rcode
-    code --folder-uri=vscode-remote://ssh-remote+nuc/home/kahnwong/$argv/
-end
+# ############################
+# # IDE: VSCODE
+# ############################
+# function ,rcode
+#     code --folder-uri=vscode-remote://ssh-remote+nuc/home/kahnwong/$argv/
+# end
 
 ########################
 # INFRA: TERRAFORM
 ########################
 function tf
-   # terraform $argv
   tofu $argv
 end
 
