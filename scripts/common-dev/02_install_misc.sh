@@ -9,8 +9,8 @@ fnm default v22.12.0
 ############################
 # go
 ############################
-go install golang.org/dl/go1.24.1@latest
-go1.24.1 download
+go install golang.org/dl/go1.24.3@latest
+go1.24.3 download
 
 ############################
 # rust
@@ -50,24 +50,23 @@ go install github.com/sinclairtarget/git-who@latest
 ############################
 cargo install mcat
 cargo install mdsf --locked
+cargo install sendme
 cargo install somo
 
 ############################
 # applications - python
 ############################
+# uv tool install nbpreview
+pixi global install qgis
+uv tool install "dvc[s3]"
 uv tool install beancount
 uv tool install beanquery
-# uv tool install nbpreview
-uv tool install pip_search
-#uv tool install "dvc[all]"
 uv tool install nbstripout
+uv tool install pip_search
 uv tool install topydo[columns]
-#uv tool install poetry
-#uv tool install poetry-plugin-export
 ## for mdsf
 uv tool install beautysh
 uv tool install usort
-pixi global install qgis
 
 ############################
 # applications - node
