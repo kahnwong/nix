@@ -44,6 +44,7 @@ go install github.com/sinclairtarget/git-who@latest
 ## private utils
 # timesheet
 # umami
+# thailand-train-fare-calculator
 
 ############################
 # applications - cargo

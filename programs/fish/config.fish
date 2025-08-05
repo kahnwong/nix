@@ -142,6 +142,9 @@ if type -p media-discord-rpc > /dev/null; d completion fish | source; end
 if type -p habit-tracker > /dev/null; habit-tracker completion fish | source; end
 alias h="habit-tracker"
 
+# thailand-train-fare-calculator
+if type -p thailand-train-fare-calculator > /dev/null; thailand-train-fare-calculator completion fish | source; end
+
 ####################
 # CONFIG: GCP
 ####################
