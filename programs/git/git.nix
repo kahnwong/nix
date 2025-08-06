@@ -4,6 +4,7 @@
   home.file.".config/git/profiles/forgejo".source = ./profiles/forgejo;
   home.file.".config/git/profiles/github".source = ./profiles/github;
   home.file.".gitignore_global".source = ./gitignore/gitignore_global;
+  home.file.".config/git/profiles/go-install".source = ./profiles/go-install;
 
   # templates
   home.file.".sops.yaml".source = ./sops/.sops.yaml;

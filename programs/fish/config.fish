@@ -130,9 +130,9 @@ alias sm="article-summarizer"
 # erp
 if type -p erp > /dev/null; erp completion fish | source; end
 
-# umami
-if type -p umami > /dev/null; umami completion fish | source; end
-alias u="umami"
+# umamit
+if type -p umamit > /dev/null; umamit completion fish | source; end
+alias u="umamit"
 
 # media-discord-rpc
 alias d="media-discord-rpc"

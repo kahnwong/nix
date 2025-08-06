@@ -42,9 +42,13 @@ go install github.com/peterldowns/nix-search-cli/cmd/nix-search@latest
 go install github.com/sinclairtarget/git-who@latest
 
 ## private utils
-# timesheet
-# umami
-# thailand-train-fare-calculator
+export GIT_CONFIG_GLOBAL="$HOME/.config/git/profiles/go-install"
+export GOPRIVATE="github.com/kahnwong/*"
+
+# # need to install from local because bundled assets
+# go install github.com/kahnwong/thailand-train-fare-calculator@latest
+go install github.com/kahnwong/timesheet@latest
+go install github.com/kahnwong/umamit@latest
 
 ############################
 # applications - cargo

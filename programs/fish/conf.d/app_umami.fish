@@ -1,15 +1,15 @@
 function ut
-    umami today
+    umamit today
 end
 
 function uw
-    umami week
+    umamit week
 end
 
 function um
-    umami month
+    umamit month
 end
 
 function uy
-    umami yesterday
+    umamit yesterday
 end
