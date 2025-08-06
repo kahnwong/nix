@@ -47,6 +47,7 @@ export GOPRIVATE="github.com/kahnwong/*"
 
 # # need to install from local because bundled assets
 # go install github.com/kahnwong/thailand-train-fare-calculator@latest
+go install github.com/kahnwong/grocery@latest
 go install github.com/kahnwong/timesheet@latest
 go install github.com/kahnwong/umamit@latest
 
