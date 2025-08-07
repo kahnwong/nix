@@ -145,6 +145,9 @@ alias h="habit-tracker"
 # thailand-train-fare-calculator
 if type -p thailand-train-fare-calculator > /dev/null; thailand-train-fare-calculator completion fish | source; end
 
+# gcal-tui
+alias c="gcal-tui"
+
 ####################
 # CONFIG: GCP
 ####################
