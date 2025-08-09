@@ -5,6 +5,8 @@ uv init --author-from git
 uv venv
 
 cat <<EOF >>pyproject.toml
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
 
 [build-system]
 requires = ["hatchling"]
