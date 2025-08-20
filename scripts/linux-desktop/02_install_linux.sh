@@ -8,6 +8,7 @@ sudo snap install intellij-idea-ultimate --classic
 sudo snap install mpv
 sudo snap install notion-calendar-snap
 
+# flatpak install flathub com.sindresorhus.Caprine -y
 # flatpak install flathub com.usebottles.bottles -y
 # flatpak install flathub dev.skynomads.Seabird
 # flatpak install flathub io.mpv.Mpv -y
@@ -31,11 +32,11 @@ flatpak install flathub com.google.Chrome -y
 flatpak install flathub com.heroicgameslauncher.hgl -y
 flatpak install flathub com.ktechpit.whatsie -y
 flatpak install flathub com.microsoft.Edge -y
-flatpak install flathub com.sindresorhus.Caprine -y
 flatpak install flathub com.slack.Slack -y
 flatpak install flathub com.todoist.Todoist -y
 flatpak install flathub com.transmissionbt.Transmission -y
 flatpak install flathub dev.zed.Zed -y
+flatpak install flathub im.riot.Riot -y
 flatpak install flathub io.github.TransmissionRemoteGtk -y
 flatpak install flathub io.github.ciromattia.kcc -y
 flatpak install flathub io.github.dweymouth.supersonic -y

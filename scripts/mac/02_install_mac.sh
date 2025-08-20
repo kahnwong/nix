@@ -19,6 +19,7 @@ brew install --cask syncthing
 # communication
 brew install --cask adium
 brew install --cask discord
+brew install --cask element
 brew install --cask messenger
 brew install --cask microsoft-teams
 brew install --cask slack
