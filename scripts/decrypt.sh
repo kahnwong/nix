@@ -26,7 +26,7 @@ mkdir -p ~/.config/timesheet
 sops -d ./programs/timesheet/config.sops.yaml >~/.config/timesheet/config.yaml
 ## replace path
 if [[ $(uname -s) == 'Linux' ]]; then
-	sed -i.bak 's#/Users/kahnwong/Cloud#/home/kahnwong/Cloud#' ~/.config/timesheet/config.yaml
+	sed -i.bak 's#/Users/kahnwong/Apps#/home/kahnwong/Apps#' ~/.config/timesheet/config.yaml
 fi
 
 # wakatime
