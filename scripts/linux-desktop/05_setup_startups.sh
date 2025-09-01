@@ -40,3 +40,11 @@ Exec=flatpak run --command=SyncThingy com.github.zocker_160.SyncThingy
 X-Flatpak=com.github.zocker_160.SyncThingy
 EOF
 
+# ------ clyp ------
+cat <<EOF >"$HOME/.config/autostart/clyp-watcher.desktop"
+[Desktop Entry]
+Type=Application
+Name=Clyp
+Icon=bio.murat.clyp
+Exec=env GDK_BACKEND=x11 clyp --watch
+EOF

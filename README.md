@@ -73,6 +73,10 @@ rustup install 1.83.0
 #### Notifications Mirroring
 - iOS: <https://github.com/impiaaa/ios-notif-forward>
 
+#### Clipboard
+
+- [clyp](https://github.com/murat-cileli/clyp)
+
 #### App Errors
 - Fix discord not loading: `rm -rf ~/.var/app/com.discordapp.Discord`
 
