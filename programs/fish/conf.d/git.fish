@@ -18,6 +18,20 @@ function gc
     git commit -m $argv
 end
 
+function gmr
+    git checkout $argv
+    git rebase master
+    git checkout master
+    git merge $argv
+end
+
+function gmrm
+    git checkout $argv
+    git rebase main
+    git checkout main
+    git merge $argv
+end
+
 function gca
     git commit --amend
 end
