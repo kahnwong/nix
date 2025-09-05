@@ -68,8 +68,7 @@ end
 
 # ---- changelog ---- #
 function gr
-    export release_tag=$(svu next)
-    git cliff --unreleased --tag $release_tag > changelog.md
-    gh release create $release_tag -F changelog.md
+    git cliff --unreleased --tag $argv > changelog.md
+    gh release create $argv -F changelog.md
     rm changelog.md
 end
