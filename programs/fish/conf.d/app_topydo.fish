@@ -29,3 +29,7 @@ end
 function tc
     topydo columns
 end
+
+function tsort
+    topydo sort asc:project
+end
