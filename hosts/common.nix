@@ -22,6 +22,7 @@
       fzf
       mcfly
       ripgrep
+      sd
       tere
       # --- this was a hack to get tere to work; in case we need it again ---
       #      (pkgs.tere.overrideAttrs (oldAttrs: {
