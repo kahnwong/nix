@@ -14,10 +14,10 @@
   home.file."scripts/,git-add-ssh-key.sh".source = ./scripts/git-add-ssh-key.sh;
   home.file."scripts/,github-list-pr.sh".source = ./scripts/github-list-pr.sh;
   home.file."scripts/,poetry-to-uv.sh".source = ./scripts/poetry-to-uv.sh;
-  home.file."scripts/,sops-init.sh".source = ./scripts/sops-init.sh;
-  home.file."scripts/,sops-work-init.sh".source = ./scripts/sops-work-init.sh;
   home.file."scripts/,tf-cost-html.sh".source = ./scripts/tf-cost-html.sh;
   home.file."scripts/,tf-cost.sh".source = ./scripts/tf-cost.sh;
   home.file."scripts/,uv-init.sh".source = ./scripts/uv-init.sh;
   home.file."scripts/,zip-compress.sh".source = ./scripts/zip-compress.sh;
+  #  home.file."scripts/,sops-init.sh".source = ./scripts/sops-init.sh;  # use config-init instead
+  #  home.file."scripts/,sops-work-init.sh".source = ./scripts/sops-work-init.sh;  # use config-init instead
 }
