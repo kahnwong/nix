@@ -9,16 +9,13 @@ nix-store --gc
 # fish
 fisher update
 ./scripts/common/02_add_fish_completions.sh
+rm ~/.config/fish/completions/git.fish # it borks git completion
 
 # gh extensions
 gh ext upgrade --all
 
-# brew
-if [[ $(uname -s) == 'Darwin' ]]; then
-	brew upgrade --greedy
-	brew autoremove
-	brew cleanup
-fi
+# python
+uv tool upgrade --all
 
 # rust
 rustup update
@@ -27,4 +24,11 @@ rustup update
 if [[ $(uname -s) == 'Linux' ]]; then
 	flatpak update
 	flatpak uninstall --unused
+fi
+
+# brew
+if [[ $(uname -s) == 'Darwin' ]]; then
+	brew upgrade --greedy
+	brew autoremove
+	brew cleanup
 fi
