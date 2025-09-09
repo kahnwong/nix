@@ -148,6 +148,9 @@ if type -p thailand-train-fare-calculator > /dev/null; thailand-train-fare-calcu
 # gcal-tui
 alias c="gcal-tui"
 
+# bean-add
+if type -p bean-add > /dev/null; bean-add completion fish | source; end
+
 ####################
 # CONFIG: GCP
 ####################
