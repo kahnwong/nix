@@ -97,6 +97,7 @@
       #      ffsend
       hyperfine
       libqalculate
+      oha
       pop
       silicon
       tz
