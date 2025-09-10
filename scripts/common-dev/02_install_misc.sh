@@ -37,7 +37,6 @@ go install github.com/kahnwong/swissknife@latest
 go install github.com/kahnwong/totp@latest
 go install github.com/kahnwong/waka@latest
 go install github.com/kahnwong/workspace-init@latest
-go install github.com/nore-dev/fman@latest
 go install github.com/peterldowns/nix-search-cli/cmd/nix-search@latest
 go install github.com/sinclairtarget/git-who@latest
 
