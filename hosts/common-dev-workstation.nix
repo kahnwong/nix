@@ -16,18 +16,18 @@
       # gradle
       # maven
 
-       # ---- zig ----
-       zig_0_13
-#       zls
-#       zlint
+      # ---- zig ----
+      zig_0_13
+      #       zls
+      #       zlint
 
       # # ---- gleam ----
       # gleam
       # erlang
       # rebar3
 
-#      # -------- devops --------
-#      headscale
+      #      # -------- devops --------
+      #      headscale
 
       # ---- gcp ----
       google-cloud-sdk
@@ -37,8 +37,8 @@
       #        # google-cloud-sdk.components.cloud_sql_proxy # this is outdated
       #      ])
 
-#      # ---- azure ----
-#      azure-cli
+      #      # ---- azure ----
+      #      azure-cli
 
       # ---- kubernetes ----
       #      argocd
@@ -64,9 +64,8 @@
       #      sampler
 
       # ---- docs ----
-      #    d2
+      # d2
       # graphviz
-      #      charm-freeze
       # vhs
 
       # ---- kubernetes ----

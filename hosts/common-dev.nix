@@ -95,11 +95,11 @@
 
       # -- utils --
       #      ffsend
+      charm-freeze
       hyperfine
       libqalculate
       oha
       pop
-      silicon
       tz
 
       # blogging

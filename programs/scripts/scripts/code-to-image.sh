@@ -1,3 +1,4 @@
 #!/bin/bash
 
-silicon --from-clipboard -l rs --to-clipboard --theme OneHalfDark
+xclip -o | freeze --show-line-numbers -o /tmp/freeze.png
+xclip -selection clipboard -target image/png -i </tmp/freeze.png
