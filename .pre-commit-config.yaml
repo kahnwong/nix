@@ -16,8 +16,9 @@ repos:
       - id: fix-byte-order-marker
       - id: mixed-line-ending
   - repo: https://github.com/kahnwong/pre-commit
-    rev: "4bfed65"
+    rev: "9028398"
     hooks:
       - id: shellcheck
       - id: shfmt
       - id: nix-fmt
+      - id: kingfisher

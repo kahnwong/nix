@@ -120,6 +120,7 @@ gh extension install seachicken/gh-poi
 # rm -rf /tmp/trufflehog-src
 # cd - || exit
 
+gh install mongodb/kingfisher
 gh install trufflesecurity/trufflehog
 
 echo "" # force return exit 0 so it'll continue executing downstream steps. exit 1 is from package already exists
