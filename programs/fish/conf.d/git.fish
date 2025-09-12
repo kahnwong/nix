@@ -63,7 +63,7 @@ end
 
 # ---- pre-commit ---- #
 function p
-    pre-commit $argv
+    prek $argv
 end
 
 # ---- changelog ---- #

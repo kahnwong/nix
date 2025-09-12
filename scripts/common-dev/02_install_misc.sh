@@ -53,6 +53,7 @@ go install github.com/kahnwong/umamit@latest
 ############################
 # applications - cargo
 ############################
+cargo install --locked --git https://github.com/j178/prek
 cargo install mcat
 cargo install mdsf --locked
 cargo install sendme
