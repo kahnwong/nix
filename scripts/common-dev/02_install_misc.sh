@@ -120,6 +120,7 @@ gh extension install seachicken/gh-poi
 # rm -rf /tmp/trufflehog-src
 # cd - || exit
 
+gh install bodaay/HuggingFaceModelDownloader
 gh install mongodb/kingfisher
 gh install trufflesecurity/trufflehog
 
