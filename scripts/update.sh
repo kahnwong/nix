@@ -20,6 +20,9 @@ uv tool upgrade --all
 # rust
 rustup update
 
+# yarn
+yarn global upgrade
+
 # flatpak
 if [[ $(uname -s) == 'Linux' ]]; then
 	flatpak update

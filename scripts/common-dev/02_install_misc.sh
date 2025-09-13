@@ -79,7 +79,12 @@ uv tool install usort
 # applications - node
 ############################
 npm set prefix ~/.npm-global
+yarn global add @google/gemini-cli
 yarn global add @quasar/cli
+yarn global add create-quasar
+yarn global add create-slidev
+yarn global add markdown-link-check
+yarn global add playwright-chromium
 yarn global add prettier
 
 ############################
