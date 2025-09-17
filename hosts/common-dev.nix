@@ -3,7 +3,6 @@
     ../programs/aws/aws.nix
     ../programs/ghostty/ghostty.nix
     ../programs/git/git.nix
-    # ../programs/kitty/kitty.nix
     ../programs/scripts/scripts.nix
     ../programs/terraform/terraform.nix
     ../programs/yt-dlp/yt-dlp.nix
@@ -43,7 +42,6 @@
       # ---- python ----
       # gdal # for build env
       pixi
-      pylyzer
       ruff
 
       # ---- rust ----
@@ -84,21 +82,20 @@
       # ---- api testing ----
       hurl
       k6
+      oha
 
       # ---- data ----
       sqruff
       visidata
 
       # ---- misc ----
-      #      sshx
+      sshx
       wakatime
 
       # -- utils --
-      #      ffsend
       charm-freeze
       hyperfine
       libqalculate
-      oha
       pop
       tz
 

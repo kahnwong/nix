@@ -10,12 +10,10 @@
     stateVersion = "23.05";
     packages = with pkgs; [
       # ---- backup ----
-      #      rclone
       restic
 
       # ---- shell ----
       bat
-      colordiff
       difftastic
       eza
       fd
@@ -30,12 +28,12 @@
       #        dontCheck = true;
       #      }))
       # ---
-      #      rsync
-      #      tailspin
+      # rclone
+      rsync
+      # tailspin
       tree
       viddy
       watch
-      #      yazi
       zoxide
 
       # ---- networking ----
@@ -43,7 +41,6 @@
       doggo
       gping
       #      iftop
-      #      speedtest-cli
       rustscan
 
       # ---- system ----
@@ -51,7 +48,7 @@
       duf
       htop
       ncdu
-      # nvtop
+      nvtopPackages.full
       procs
       zenith
 
@@ -63,7 +60,6 @@
 
       # ---- containers ----
       ctop
-      oxker
       lazydocker
 
       # ---- data manipulation ----

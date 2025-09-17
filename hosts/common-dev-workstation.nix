@@ -43,7 +43,6 @@
       # ---- kubernetes ----
       #      argocd
       #      helm-dashboard
-      #      kdash
       #      kind
       #      pluto
 
@@ -61,18 +60,11 @@
       #    mongodb-tools
 
       # ---- monitoring ----
-      #      sampler
+      sampler
 
       # ---- docs ----
-      # d2
       # graphviz
       # vhs
-
-      # ---- kubernetes ----
-      # k3d # but actual k3s is better
-
-      # ---- tools ----
-      #      bitwarden-cli
     ];
   };
 }
