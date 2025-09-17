@@ -35,10 +35,7 @@ make common
 make common-dev
 ```
 
-### Mac OS Extras
 
-1. Login to `App Store`
-2. `make mac`
 
 ### Rust
 
@@ -50,10 +47,25 @@ rustup toolchain remove $toolchain_version
 rustup install 1.83.0
 ```
 
+### Run `sudo` without typing password
+
+```bash
+echo "$(whoami) ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/99-nopasswd-$(whoami)
+```
+
+
+### Mac OS Extras
+
+1. Login to `App Store`
+2. `make mac`
+
+
+
+
 ### Linux Extras
 
 #### Packages
-- If you need `tailscale`, `caddy`, `fail2ban`, or `docker` on your server, install it via your system's package manager, since nix requires you set up systemd services explicitly.
+- If you need `tailscale`, `caddy`, `fail2ban`, or `docker` on your server, install it via your system's package manager, since nix requires you to set up systemd services explicitly.
 
 #### Fonts (you don't need this for Ghostty, but intellij terminal needs this to render glyphs properly)
 - For nerd fonts, download fonts from [here](https://github.com/ryanoasis/nerd-fonts/releases), put them in `~/.local/share/fonts` (or `~/.fonts`) then run `fc-cache -fv`.
@@ -72,10 +84,6 @@ rustup install 1.83.0
 
 #### Notifications Mirroring
 - iOS: <https://github.com/impiaaa/ios-notif-forward>
-
-#### Clipboard
-
-- [clyp](https://github.com/murat-cileli/clyp)
 
 #### App Errors
 - Fix discord not loading: `rm -rf ~/.var/app/com.discordapp.Discord`
