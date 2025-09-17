@@ -79,6 +79,7 @@
 
       # ---- utils ----
       age
+      caligula
       croc
       direnv
       entr
