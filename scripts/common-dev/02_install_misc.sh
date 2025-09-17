@@ -25,6 +25,7 @@ rustup default stable
 go install github.com/GoogleCloudPlatform/cloud-sql-proxy/v2@latest
 go install github.com/ayoisaiah/f2/v2/cmd/f2@latest
 go install github.com/caarlos0/svu/v3@latest
+go install github.com/charmbracelet/mods@latest
 go install github.com/elliot40404/modo/cmd/modo@latest
 go install github.com/fawni/def@latest
 go install github.com/kahnwong/article-summarizer@latest

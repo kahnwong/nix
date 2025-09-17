@@ -1,0 +1,40 @@
+default-api: google
+default-model: gemini-2.5-flash-lite
+roles:
+  "default": [ ]
+  "snippet-generator":
+    - you should provide code snippet without explanation
+role: "snippet-generator"
+quiet: true
+
+apis:
+  google:
+    api-key-env: MODS_GOOGLE_API_TOKEN
+    models: # https://ai.google.dev/gemini-api/docs/models/gemini
+      gemini-2.5-pro:
+        max-input-chars: 4194304
+      gemini-2.5-flash:
+        max-input-chars: 4194304
+      gemini-2.5-flash-lite:
+        max-input-chars: 4194304
+
+  ollama:
+    base-url: http://localhost:11434
+    models: # https://ollama.com/library
+      "gemma3:1b":
+        max-input-chars: 650000
+      "gemma3:4b":
+        max-input-chars: 650000
+
+  github-models: # https://github.com/marketplace/models
+    base-url: https://models.github.ai/inference
+    api-key-env: MODS_GITHUB_PERSONAL_ACCESS_TOKEN
+    models:
+      #      openai/gpt-5-mini:
+      #        max-input-chars: 392000
+      #      openai/gpt-5-nano:
+      #        max-input-chars: 392000
+      openai/o4-mini:
+        max-input-chars: 392000
+      mistral-ai/Codestral-2501:
+        max-input-chars: 392000
