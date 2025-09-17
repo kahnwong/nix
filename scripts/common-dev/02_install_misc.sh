@@ -130,5 +130,6 @@ gh extension install seachicken/gh-poi
 gh install bodaay/HuggingFaceModelDownloader
 gh install mongodb/kingfisher
 gh install murat-cileli/clyp
+gh install pythops/oryx
 
 echo "" # force return exit 0 so it'll continue executing downstream steps. exit 1 is from package already exists
