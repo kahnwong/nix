@@ -54,3 +54,6 @@ sops -d ./programs/gh-dash/config.sops.yml >~/.config/gh-dash/config.yml
 # mods
 mkdir -p ~/.config/mods
 cp ./programs/mods/mods.yml ~/.config/mods/
+if [[ $(uname -s) == 'Darwin' ]]; then
+	cp ./programs/mods/mods.yml "/Users/kahnwong/Library/Application Support/mods/"
+fi
