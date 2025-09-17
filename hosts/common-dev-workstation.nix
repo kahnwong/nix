@@ -65,6 +65,11 @@
       # ---- docs ----
       # graphviz
       # vhs
+
+      # ---- desktop ----
+      ## -- bluetui --
+      bluez
+      bluetui
     ];
   };
 }
