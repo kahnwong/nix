@@ -95,6 +95,7 @@
       wakatime
 
       # -- utils --
+      ast-grep
       charm-freeze
       hyperfine
       libqalculate
