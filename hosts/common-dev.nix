@@ -16,6 +16,7 @@
     ../programs/media-discord-rpc/media-discord-rpc.nix
     ../programs/pgconn/pgconn.nix
     ../programs/proxmox/proxmox.nix
+    ../programs/sampler/sampler.nix
     ../programs/topydo/topydo.nix
     ../programs/totp/totp.nix
     ../programs/umami/umami.nix

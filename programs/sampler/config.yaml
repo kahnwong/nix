@@ -1,0 +1,9 @@
+sparklines:
+  - title: CPU usage
+    rate-ms: 200
+    scale: 0
+    sample: top -bn1 | grep "Cpu(s)" | sed "s/.*, *\([0-9.]*\)%* id.*/\1/" | awk '{print 100 - $1}'
+  - title: Memory usage
+    rate-ms: 200
+    scale: 0
+    sample: free -g | awk 'NR==2{printf "%.2f\n", $3}'
