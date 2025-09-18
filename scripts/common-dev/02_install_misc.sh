@@ -132,4 +132,8 @@ gh install mongodb/kingfisher
 gh install murat-cileli/clyp
 gh install pythops/oryx
 
+if [[ $(uname -s) == 'Darwin' ]]; then
+	gh install browsh-org/browsh
+fi
+
 echo "" # force return exit 0 so it'll continue executing downstream steps. exit 1 is from package already exists
