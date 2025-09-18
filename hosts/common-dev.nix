@@ -15,6 +15,7 @@
     ../programs/erp/erp.nix
     ../programs/habit-tracker/habit-tracker.nix
     ../programs/media-discord-rpc/media-discord-rpc.nix
+    ../programs/mods/mods.nix
     ../programs/pgconn/pgconn.nix
     ../programs/proxmox/proxmox.nix
     ../programs/sampler/sampler.nix

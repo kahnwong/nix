@@ -50,10 +50,3 @@ sops -d ./programs/gh-dash/config.sops.yml >~/.config/gh-dash/config.yml
 
 ## vscode
 #sops -d ./scripts/vscode/config/settings.sops.json >./scripts/vscode/config/settings.json
-
-# mods
-mkdir -p ~/.config/mods
-cp ./programs/mods/mods.yml ~/.config/mods/
-if [[ $(uname -s) == 'Darwin' ]]; then
-	cp ./programs/mods/mods.yml "/Users/kahnwong/Library/Application Support/mods/"
-fi

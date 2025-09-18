@@ -25,6 +25,8 @@ apis:
         max-input-chars: 650000
       "gemma3:4b":
         max-input-chars: 650000
+      "gemma3n:e4b":
+        max-input-chars: 650000
 
   github-models: # https://github.com/marketplace/models
     base-url: https://models.github.ai/inference
@@ -34,7 +36,7 @@ apis:
       #        max-input-chars: 392000
       #      openai/gpt-5-nano:
       #        max-input-chars: 392000
-      openai/o4-mini:
-        max-input-chars: 392000
+      # openai/o4-mini:
+      #  max-input-chars: 392000
       mistral-ai/Codestral-2501:
         max-input-chars: 392000
