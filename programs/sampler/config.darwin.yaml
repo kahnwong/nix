@@ -1,0 +1,9 @@
+sparklines:
+  - title: CPU usage
+    rate-ms: 200
+    scale: 0
+    sample: top -l 1 | grep -E "CPU usage:" | awk '{print $3}' | sed 's/%//'
+  - title: Memory usage
+    rate-ms: 200
+    scale: 0
+    sample: top -l 1 | grep "PhysMem" | awk '{print $2}' | sed 's/M/ MB/' | sed 's/G/ GB/' | awk '{print $1}'
