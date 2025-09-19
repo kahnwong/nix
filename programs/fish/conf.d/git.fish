@@ -23,6 +23,7 @@ function gmr
     git rebase master
     git checkout master
     git merge $argv
+    git branch -D $argv
 end
 
 function gmrm
