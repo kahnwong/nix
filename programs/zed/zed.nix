@@ -1,9 +1,11 @@
 { config, pkgs, lib, ... }:
 
 {
-  home.file.".config/zed/settings.json".source = ./settings.json; # darwin
-  home.file.".var/app/dev.zed.Zed/config/zed/settings.json".source =
-    ./settings.json; # flatpak
+  home.file = if pkgs.stdenv.isLinux then {
+    ".var/app/dev.zed.Zed/config/zed/settings.json".source = ./settings.json;
+  } else {
+    ".config/zed/settings.json".source = ./settings.json;
+  };
 
   home.packages = with pkgs; [ ];
 }
