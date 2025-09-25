@@ -1,13 +1,28 @@
+# base
 function t
     topydo $argv
 end
 
+function tc
+    topydo columns
+end
+
+function tsort
+    topydo sort asc:project
+end
+
+# query
 function tt
     topydo due:"<=today"
 end
 
-function tat
-    topydo add due:today $argv
+function tmr
+    topydo due:tomorrow
+end
+
+function tlh
+    # lh = look ahead
+    topydo due:"<=7d"
 end
 
 function tr
@@ -18,18 +33,15 @@ function tw
     topydo @work
 end
 
-function taw
-    topydo add @work $argv
-end
-
 function tkr
     topydo @tinkering
 end
 
-function tc
-    topydo columns
+# add
+function tat
+    topydo add due:today $argv
 end
 
-function tsort
-    topydo sort asc:project
+function taw
+    topydo add @work $argv
 end
