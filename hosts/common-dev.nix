@@ -25,9 +25,22 @@
     ../programs/wallabag-tagger/wallabag-tagger.nix
   ];
 
+  programs.java = {
+    enable = true;
+    package = pkgs.temurin-bin;
+  };
+
   home = {
     packages = with pkgs; [
       # -------- runtimes & toolchains & linters --------
+      # ---- c ----
+      uncrustify
+
+      # # ---- gleam ----
+      # gleam
+      # erlang
+      # rebar3
+
       # ---- golang ----
       golangci-lint
       gopls
@@ -35,15 +48,18 @@
       goreleaser
       air
 
-      # ---- node ----
-      fnm
-      yarn
+      # ---- java ----
+      # gradle
+      # maven
 
       # ---- nix ----
       nixfmt-classic
 
+      # ---- node ----
+      fnm
+      yarn
+
       # ---- python ----
-      # gdal # for build env
       pixi
       ruff
 
@@ -54,60 +70,88 @@
       shellcheck
       shfmt
 
-      # ---- wasm ----
-      wasmtime
-
       # ---- yaml ----
       yamlfmt
       yamllint
 
-      # ---- markdown ----
-      markdownlint-cli2
-
-      # ---- docker ----
-      hadolint
-
-      # ---- security ----
-      trivy
-      zizmor
+      # ---- zig ----
+      zig_0_13
+      # zls
+      # zlint
 
       # -------- others --------
-      # ---- database ----
-      atlas
-      pgcli
-
-      # ---- kubernetes ----
-      kubernetes-helm
-      k9s
-      kubectl
-      kubectx
-
-      # ---- api testing ----
-      hurl
-      k6
-      oha
+      # # ---- azure ----
+      # azure-cli
 
       # ---- data ----
       sqruff
       visidata
 
-      # ---- misc ----
-      sshx
-      wakatime
+      # ---- database ----
+      atlas
+      pgcli
+      postgresql_17
+      mongodb-tools
 
-      # -- utils --
-      ast-grep
-      charm-freeze
+      # ---- docker ----
+      hadolint
+
+      # ---- gcp ----
+      google-cloud-sdk
+      # docker-credential-gcr
+      # (google-cloud-sdk.withExtraComponents [
+      #   google-cloud-sdk.components.gke-gcloud-auth-plugin
+      #   # google-cloud-sdk.components.cloud_sql_proxy # this is outdated
+      # ])
+
+      # ---- kubernetes ----
+      k9s
+      krew
+      ktop
+      kube-capacity
+      kubectl
+      kubectx
+      kubernetes-helm
+      # argocd
+      # helm-dashboard
+      # kind
+      # pluto
+
+      # ---- markdown ----
+      markdownlint-cli2
+
+      # # ---- networking ----
+      # headscale
+
+      # ---- security ----
+      grype
+      syft
+      trivy
+      zizmor
+
+      # ---- tests ----
+      hurl
       hyperfine
+      k6
+      oha
+
+      # ---- wasm ----
+      wasmtime
+
+      # ---- misc ----
+      ast-grep
+      caddy
+      charm-freeze
+      fava
       libqalculate
       pop
+      sampler
+      sshx
       tz
-
-      # blogging
+      wakatime
       zola
-
-      # finance
-      fava
+      # graphviz
+      # vhs
     ];
   };
 }
