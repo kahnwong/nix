@@ -11,5 +11,5 @@ in {
     ../../common-dev-workstation.nix
   ];
 
-  home.packages = with pkgs; [ caddy vault-bin ];
+  home.packages = with pkgs; [ ];
 }

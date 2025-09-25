@@ -6,5 +6,5 @@ let
 in {
   imports =
     [ ../../common.nix ../../common-dev.nix ../../common-dev-workstation.nix ];
-  home.packages = with pkgs; [ caddy ];
+  home.packages = with pkgs; [ ];
 }

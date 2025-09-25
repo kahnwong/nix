@@ -62,6 +62,9 @@
       # ---- monitoring ----
       sampler
 
+      # ---- misc ----
+      caddy
+
       # ---- docs ----
       # graphviz
       # vhs
