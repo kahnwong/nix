@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Loop through all JPG/PNG files in the input folder
-for image_file in "$(pwd)"/*.{jpg,png}; do
+for image_file in "$(pwd)"/*.{jpg,png,heic}; do
 	if [ -f "$image_file" ]; then
 		# Get the file name without extension
 		base_name=$(basename -- "$image_file")
