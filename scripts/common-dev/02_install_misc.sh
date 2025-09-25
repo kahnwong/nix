@@ -39,6 +39,7 @@ go install github.com/kahnwong/waka@latest
 go install github.com/kahnwong/workspace-init@latest
 go install github.com/peterldowns/nix-search-cli/cmd/nix-search@latest
 go install github.com/sinclairtarget/git-who@latest
+go install github.com/terraform-docs/terraform-docs@latest
 
 ## private utils
 export GIT_CONFIG_GLOBAL="$HOME/.config/git/profiles/go-install"

@@ -23,9 +23,7 @@
     opentofu
 
     ## tools
-    terraform-docs
-    # terraformer
+    # terraform-docs # borks
     infracost
-
   ];
 }
