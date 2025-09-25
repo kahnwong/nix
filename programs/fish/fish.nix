@@ -9,8 +9,8 @@
   home.file.".config/fish/conf.d/shell.fish".source = ./conf.d/shell.fish;
   home.file.".config/fish/conf.d/app_topydo.fish".source =
     ./conf.d/app_topydo.fish;
-  home.file.".config/fish/conf.d/app_umami.fish".source =
-    ./conf.d/app_umami.fish;
+  home.file.".config/fish/conf.d/app_umamit.fish".source =
+    ./conf.d/app_umamit.fish;
   home.file.".config/fish/config.fish".source = ./config.fish;
   home.file.".config/fish/functions/envsource.fish".source =
     ./functions/envsource.fish;

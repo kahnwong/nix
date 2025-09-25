@@ -21,7 +21,7 @@
     ../programs/sampler/sampler.nix
     ../programs/topydo/topydo.nix
     ../programs/totp/totp.nix
-    ../programs/umami/umami.nix
+    ../programs/umamit/umamit.nix
     ../programs/wallabag-tagger/wallabag-tagger.nix
   ];
 

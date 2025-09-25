@@ -12,7 +12,7 @@ in {
     ../../../programs/erp/erp.nix
     ../../../programs/habit-tracker/habit-tracker.nix
     ../../../programs/topydo/topydo.nix
-    ../../../programs/umami/umami.nix
+    ../../../programs/umamit/umamit.nix
   ];
 
   home.packages = with pkgs; [
