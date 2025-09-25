@@ -1,13 +1,13 @@
-# croc
-function croc
-    if test "$argv[1]" = "send"
-        command croc --pass $(get_fish_secret CROC_PASS) --relay "$(get_fish_secret CROC_ENDPOINT)" $argv
-    else if test "$argv[1]" = "receive"
-        CROC_SECRET="$argv[2]" command croc --pass $(get_fish_secret CROC_PASS) --relay "$(get_fish_secret CROC_ENDPOINT)"
-    else
-        command croc $argv
-    end
-end
+# # croc
+# function croc
+#     if test "$argv[1]" = "send"
+#         command croc --pass $(get_fish_secret CROC_PASS) --relay "$(get_fish_secret CROC_ENDPOINT)" $argv
+#     else if test "$argv[1]" = "receive"
+#         CROC_SECRET="$argv[2]" command croc --pass $(get_fish_secret CROC_PASS) --relay "$(get_fish_secret CROC_ENDPOINT)"
+#     else
+#         command croc $argv
+#     end
+# end
 
 # picoshare
 function picoshare-upload -a path -a url
