@@ -100,5 +100,15 @@
     };
   };
 
-  home.packages = with pkgs; [ delta gh git-cliff git-lfs pre-commit ];
+  home.packages = with pkgs; [
+    # tools
+    delta
+    gh
+    git-cliff
+    git-lfs
+    pre-commit
+
+    # gh extensions
+    gh-poi
+  ];
 }

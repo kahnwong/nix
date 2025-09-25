@@ -114,7 +114,6 @@ gh extension install https://github.com/github/gh-models
 gh extension install kawarimidoll/gh-graph
 gh extension install mislav/gh-branch
 gh extension install redraw/gh-install
-gh extension install seachicken/gh-poi
 
 ## adhoc - trufflehog can now be installed via gh extension
 # git clone https://github.com/trufflesecurity/trufflehog.git /tmp/trufflehog-src
