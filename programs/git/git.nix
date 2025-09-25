@@ -106,8 +106,10 @@
     gh
     git-cliff
     git-lfs
+    git-who
     pre-commit
     prek
+    svu
 
     # gh extensions
     gh-poi

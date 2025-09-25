@@ -53,6 +53,7 @@
       # maven
 
       # ---- nix ----
+      nix-search-cli
       nixfmt-classic
 
       # ---- node ----
@@ -98,10 +99,10 @@
 
       # ---- gcp ----
       google-cloud-sdk
+      google-cloud-sql-proxy
       # docker-credential-gcr
       # (google-cloud-sdk.withExtraComponents [
       #   google-cloud-sdk.components.gke-gcloud-auth-plugin
-      #   # google-cloud-sdk.components.cloud_sql_proxy # this is outdated
       # ])
 
       # ---- kubernetes ----
@@ -143,10 +144,12 @@
       ast-grep
       caddy
       charm-freeze
+      f2
       fava
       libqalculate
       mcat
       mdsf
+      mods
       pop
       sampler
       sendme

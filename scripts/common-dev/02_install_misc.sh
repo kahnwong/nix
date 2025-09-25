@@ -23,10 +23,6 @@ rustup default stable
 ############################
 #go install github.com/ksoclabs/kbom@latest
 #go install github.com/protomaps/go-pmtiles@latest
-go install github.com/GoogleCloudPlatform/cloud-sql-proxy/v2@latest
-go install github.com/ayoisaiah/f2/v2/cmd/f2@latest
-go install github.com/caarlos0/svu/v3@latest
-go install github.com/charmbracelet/mods@latest
 go install github.com/elliot40404/modo/cmd/modo@latest
 go install github.com/fawni/def@latest
 go install github.com/kahnwong/article-summarizer@latest
@@ -38,9 +34,7 @@ go install github.com/kahnwong/swissknife@latest
 go install github.com/kahnwong/totp@latest
 go install github.com/kahnwong/waka@latest
 go install github.com/kahnwong/workspace-init@latest
-go install github.com/peterldowns/nix-search-cli/cmd/nix-search@latest
-go install github.com/sinclairtarget/git-who@latest
-go install github.com/terraform-docs/terraform-docs@latest
+go install github.com/terraform-docs/terraform-docs@latest # nix borks
 
 ## private utils
 export GIT_CONFIG_GLOBAL="$HOME/.config/git/profiles/go-install"
