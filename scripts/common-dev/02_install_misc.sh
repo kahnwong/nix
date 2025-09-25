@@ -57,15 +57,9 @@ go install github.com/kahnwong/umamit@latest
 # uv tool install nbpreview
 pixi global install qgis
 uv tool install "dvc[s3]"
-uv tool install beancount
-uv tool install beanquery
-uv tool install https://github.com/superstarryeyes/lue
-uv tool install nbstripout
+uv tool install huggingface_hub[cli]
 uv tool install pip_search
 uv tool install topydo[columns]
-## for mdsf
-uv tool install beautysh
-uv tool install usort
 
 ############################
 # applications - node

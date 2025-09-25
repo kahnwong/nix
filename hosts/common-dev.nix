@@ -33,8 +33,14 @@
   home = {
     packages = with pkgs; [
       # -------- runtimes & toolchains & linters --------
+      # ---- bash ----
+      beautysh
+      shellcheck
+      shfmt
+
       # ---- c ----
       uncrustify
+      usort
 
       # # ---- gleam ----
       # gleam
@@ -63,14 +69,11 @@
 
       # ---- python ----
       pixi
+      nbstripout
       ruff
 
       # ---- rust ----
       rustup
-
-      # ---- shell - linters ----
-      shellcheck
-      shfmt
 
       # ---- yaml ----
       yamlfmt
@@ -145,6 +148,8 @@
 
       # ---- misc ----
       ast-grep
+      beancount
+      beanquery
       caddy
       charm-freeze
       f2
