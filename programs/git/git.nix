@@ -112,6 +112,7 @@
     svu
 
     # gh extensions
+    gh-dash
     gh-poi
   ];
 }

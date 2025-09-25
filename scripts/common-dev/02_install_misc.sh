@@ -103,11 +103,7 @@ fi
 gh auth login
 gh config set git_protocol ssh -h github.com
 gh extension install Shresht7/gh-license
-gh extension install davidraviv/gh-clean-branches
-gh extension install dlvhdr/gh-dash
-gh extension install https://github.com/github/gh-models
-gh extension install kawarimidoll/gh-graph
-gh extension install mislav/gh-branch
+gh extension install github/gh-models
 gh extension install redraw/gh-install
 
 # install executables via gh release
