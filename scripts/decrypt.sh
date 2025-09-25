@@ -6,7 +6,6 @@ sops -d ./programs/aws/config.sops >~/.aws/config
 sops -d ./programs/aws/credentials.sops >~/.aws/credentials
 
 # fish
-sops -d ./programs/fish/conf.d/hush.sops.fish >~/.config/fish/conf.d/hush.fish
 cp -r ./programs/fish/secrets ~/.config/fish/
 
 # k8s
