@@ -100,14 +100,5 @@
     };
   };
 
-  home.packages = with pkgs; [
-    #    gopass
-    delta
-    gh
-    git-cliff
-    git-lfs
-    gitleaks
-    pre-commit
-    # trufflehog # this binary has auto-update feature, and it messes with nix
-  ];
+  home.packages = with pkgs; [ delta gh git-cliff git-lfs pre-commit ];
 }

@@ -120,7 +120,8 @@
       # ---- markdown ----
       markdownlint-cli2
 
-      # # ---- networking ----
+      # ---- networking ----
+      somo
       # headscale
 
       # ---- security ----
@@ -144,8 +145,11 @@
       charm-freeze
       fava
       libqalculate
+      mcat
+      mdsf
       pop
       sampler
+      sendme
       sshx
       tz
       wakatime
