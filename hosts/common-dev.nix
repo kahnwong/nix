@@ -58,6 +58,7 @@
 
       # ---- node ----
       fnm
+      prettier
       yarn
 
       # ---- python ----
@@ -119,7 +120,9 @@
       # pluto
 
       # ---- markdown ----
+      markdown-link-check
       markdownlint-cli2
+      mw
 
       # ---- networking ----
       somo
@@ -146,6 +149,7 @@
       charm-freeze
       f2
       fava
+      gemini-cli
       libqalculate
       mcat
       mdsf
