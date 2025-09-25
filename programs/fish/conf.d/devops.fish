@@ -37,8 +37,3 @@ end
 function garage-internal
     aws --endpoint-url $(get_fish_secret GARAGE_ENDPOINT_INTERNAL) --profile garage $argv
 end
-
-# sshx
-function sshx
-    command sshx --server $(get_fish_secret SSHX_ENDPOINT) --shell fish
-end

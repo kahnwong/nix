@@ -128,6 +128,7 @@
       mw
 
       # ---- networking ----
+      dumbpipe
       somo
       # headscale
 

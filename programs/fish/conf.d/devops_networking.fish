@@ -9,3 +9,8 @@ end
 function ping
     gping $argv
 end
+
+# ssh
+function sshx
+    command sshx --server $(get_fish_secret SSHX_ENDPOINT) --shell fish
+end
