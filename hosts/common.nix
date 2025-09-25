@@ -49,7 +49,7 @@
       duf
       htop
       ncdu
-      nvtopPackages.full
+      # nvtopPackages.full # eats a lot of space
       procs
       zenith
 
