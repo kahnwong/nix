@@ -110,14 +110,7 @@ gh extension install kawarimidoll/gh-graph
 gh extension install mislav/gh-branch
 gh extension install redraw/gh-install
 
-## adhoc - trufflehog can now be installed via gh extension
-# git clone https://github.com/trufflesecurity/trufflehog.git /tmp/trufflehog-src
-# cd /tmp/trufflehog-src || exit
-# go install
-# rm -rf /tmp/trufflehog-src
-# cd - || exit
-
-#gh install trufflesecurity/trufflehog
+# install executables via gh release
 gh install bodaay/HuggingFaceModelDownloader
 gh install mongodb/kingfisher
 gh install murat-cileli/clyp
