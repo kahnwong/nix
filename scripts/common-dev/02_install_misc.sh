@@ -9,8 +9,9 @@ fnm default v22.12.0
 ############################
 # go
 ############################
-go install golang.org/dl/go1.25.1@latest
-go1.25.1 download
+GO_VERSION="go1.25.1"
+go install "golang.org/dl/${GO_VERSION}@latest"
+"${GO_VERSION}" download
 
 ############################
 # rust
