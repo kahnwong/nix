@@ -48,3 +48,6 @@ ssh-keys-backup:
 
 ssh-keys-restore:
 	./scripts/ssh-keys-restore.sh
+
+migrate:
+	./scripts/migrate.sh
