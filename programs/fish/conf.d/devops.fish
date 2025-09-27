@@ -1,3 +1,8 @@
+# caddy
+function caddy-serve
+    caddy file-server --listen 0.0.0.0:3000
+end
+
 # golang
 function go-build
     CGO_ENABLED=0 go build -ldflags="-s -w" .
