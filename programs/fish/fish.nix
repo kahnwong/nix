@@ -1,6 +1,8 @@
 { config, pkgs, lib, ... }:
 
 {
+  home.file.".config/fish/conf.d/app_cpubench.fish".source =
+    ./conf.d/app_cpubench.fish;
   home.file.".config/fish/conf.d/app_habit.fish".source =
     ./conf.d/app_habit.fish;
   home.file.".config/fish/conf.d/app_mods.fish".source = ./conf.d/app_mods.fish;
