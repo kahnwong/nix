@@ -42,10 +42,10 @@
         specialArgs = { inherit nixpkgs; };
       };
       # ----------------- linux ----------------- #
-      sailfish = home-manager.lib.homeManagerConfiguration {
+      workstation = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         modules = [
-          ./hosts/linux/sailfish/home.nix
+          ./hosts/linux/workstation/home.nix
           {
             home = {
               username = "kahnwong";
