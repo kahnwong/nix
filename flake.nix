@@ -66,6 +66,18 @@
           }
         ];
       };
+      serverOnPrem = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.x86_64-linux;
+        modules = [
+          ./hosts/linux/server/home.nix
+          {
+            home = {
+              username = "kahnwong";
+              homeDirectory = "/home/kahnwong";
+            };
+          }
+        ];
+      };
       # ----------------- pi ----------------- #
       pi = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.aarch64-linux;

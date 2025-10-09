@@ -16,7 +16,7 @@ export NIXPKGS_ALLOW_UNFREE=1
 ## macbook
 #nix build '.#homeManagerConfigurations.macbookMain.system' --experimental-features 'nix-command flakes' --impure
 # linux
-nix build '.#homeManagerConfigurations.nuc.activationPackage' --experimental-features 'nix-command flakes' --impure
+nix build '.#homeManagerConfigurations.workstation.activationPackage' --experimental-features 'nix-command flakes' --impure
 
 if [[ $(uname -s) == 'Darwin' ]]; then
     sudo ./result/activate
