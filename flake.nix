@@ -42,18 +42,6 @@
         specialArgs = { inherit nixpkgs; };
       };
       # ----------------- linux ----------------- #
-      nuc = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.x86_64-linux;
-        modules = [
-          ./hosts/linux/nuc/home.nix
-          {
-            home = {
-              username = "kahnwong";
-              homeDirectory = "/home/kahnwong";
-            };
-          }
-        ];
-      };
       maguro = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         modules = [
