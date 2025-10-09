@@ -42,18 +42,6 @@
         specialArgs = { inherit nixpkgs; };
       };
       # ----------------- linux ----------------- #
-      maguro = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.x86_64-linux;
-        modules = [
-          ./hosts/linux/maguro/home.nix
-          {
-            home = {
-              username = "kahnwong";
-              homeDirectory = "/home/kahnwong";
-            };
-          }
-        ];
-      };
       sailfish = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         modules = [
