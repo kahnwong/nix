@@ -72,9 +72,6 @@
       nbstripout
       ruff
 
-      # ---- rust ----
-      rustup
-
       # ---- yaml ----
       yamlfmt
       yamllint

@@ -75,6 +75,7 @@
 
       # ---- runtimes & toolchains ----
       go
+      rustup
       uv
 
       # ---- utils ----
