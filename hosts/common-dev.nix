@@ -152,6 +152,7 @@
       beancount
       beanquery
       caddy
+      caligula
       charm-freeze
       f2
       fava

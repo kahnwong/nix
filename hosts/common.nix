@@ -29,7 +29,7 @@
       #      }))
       # ---
       # rclone
-      rsync
+      # rsync
       # tailspin
       tree
       viddy
@@ -41,7 +41,7 @@
       curl
       doggo
       gping
-      #      iftop
+      # iftop
       rustscan
 
       # ---- system ----
@@ -79,8 +79,6 @@
 
       # ---- utils ----
       age
-      caligula
-      croc
       direnv
       entr
       sops
