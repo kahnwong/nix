@@ -7,7 +7,7 @@
 - Add m4a support to RhythmBox: `sudo apt install gstreamer1.0-fdkaac -y`
 - `CopyQ`: set shortcut to `alt + shift + v` for `show the tray menu`
 
-## Set symlinks
+## Set Symlinks
 
 ```bash
 ln -s /mnt/ssd/Git ~/Git
@@ -15,7 +15,7 @@ ln -s /mnt/hdd/Downloads ~/Downloads
 ln -s /mnt/hdd/Kooha ~/Videos/Kooha
 ```
 
-## Gnome extensions
+## Gnome Extensions
 
 You probably need to install `gnome-browser-connector` and use chrome to install gnome extensions.
 
@@ -44,3 +44,14 @@ You don't need this for Ghostty, but intellij terminal needs this to render glyp
 ## App Errors
 
 - Fix discord not loading: `rm -rf ~/.var/app/com.discordapp.Discord`
+
+## Battery Optimization (TLP)
+
+```bash
+sudo apt install tlp cpufrequtils
+
+sudo tlp start
+
+sudo tlp bat
+sudo tlp ac
+```
