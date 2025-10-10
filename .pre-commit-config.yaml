@@ -22,3 +22,4 @@ repos:
       - id: shfmt
       - id: nix-fmt
       - id: kingfisher
+      - id: mdsf

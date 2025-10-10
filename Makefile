@@ -4,7 +4,6 @@
 common:
 	./scripts/common/01_setup.sh
 	./scripts/common/02_add_fish_completions.sh
-	cat ./post_installation_message.txt
 
 common-dev:
 	./scripts/common-dev/01_setup.sh
