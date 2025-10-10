@@ -49,6 +49,7 @@ You don't need this for Ghostty, but intellij terminal needs this to render glyp
 
 ```bash
 sudo apt install tlp cpufrequtils
+sudo cp ./programs/tlp/tlp.conf /etc/tlp.conf
 
 sudo tlp start
 
