@@ -12,6 +12,7 @@ common-dev:
 mac:
 	./scripts/mac/01_setup_mac.sh
 	./scripts/mac/02_install_mac.sh
+	./scripts/mac/03_install_batt.sh
 # 	./scripts/vscode/setup.sh
 
 linux-desktop:
