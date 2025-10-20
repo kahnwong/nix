@@ -123,6 +123,7 @@
       markdown-link-check
       markdownlint-cli2
       mw
+      rumdl
 
       # ---- networking ----
       dumbpipe
