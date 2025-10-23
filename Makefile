@@ -28,6 +28,7 @@ linux-desktop:
 	./scripts/linux-desktop/10_install_foobar2000.sh
 	./scripts/linux-desktop/11_install_ydotool.sh
 	./scripts/linux-desktop/12_install_tlp.sh
+	./scripts/linux-desktop/13_install_firefox_nightly.sh
 # 	./scripts/vscode/setup.sh
 
 ##############
