@@ -42,3 +42,29 @@ Icon=/home/kahnwong/.local/fleet/icons/memos.png
 StartupNotify=false
 Categories=Productivity;
 EOF
+
+# ------ Messenger ------
+cat <<EOF >"$HOME/.local/share/applications/Messenger.desktop"
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Messenger
+GenericName=Messenger
+Exec=/var/lib/flatpak/exports/bin/com.google.Chrome https://messenger.com
+StartupNotify=true
+Categories=Social;
+Icon=/home/kahnwong/.local/fleet/icons/messenger.png
+EOF
+
+# ------ Facebook ------
+cat <<EOF >"$HOME/.local/share/applications/Facebook.desktop"
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Facebook
+GenericName=Facebook
+Exec=/var/lib/flatpak/exports/bin/com.google.Chrome https://facebook.com
+StartupNotify=true
+Categories=Social;
+Icon=/home/kahnwong/.local/fleet/icons/facebook.svg
+EOF
