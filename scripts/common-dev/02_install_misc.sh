@@ -97,6 +97,7 @@ gh extension install redraw/gh-install
 
 # install executables via gh release
 gh install bodaay/HuggingFaceModelDownloader
+gh install kahnwong/cpubench-release
 gh install kahnwong/swissknife
 gh install mongodb/kingfisher
 gh install murat-cileli/clyp
