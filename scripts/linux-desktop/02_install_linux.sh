@@ -7,15 +7,14 @@ sudo apt install xclip -y
 # sudo snap install intellij-idea-ultimate --classic
 sudo snap install mpv
 
+# flatpak install flathub com.github.hluk.copyq -y
 # flatpak install flathub io.mpv.Mpv -y
-# flatpak install flathub org.mozilla.firefox -y  # already installed via snap by default
 flatpak install flathub app.freelens.Freelens -y
 flatpak install flathub com.calibre_ebook.calibre -y
 flatpak install flathub com.discordapp.Discord -y
 flatpak install flathub com.dropbox.Client -y
 flatpak install flathub com.github.IsmaelMartinez.teams_for_linux -y
 flatpak install flathub com.github.PintaProject.Pinta -y
-flatpak install flathub com.github.hluk.copyq -y
 flatpak install flathub com.github.iwalton3.jellyfin-media-player -y
 flatpak install flathub com.github.jeromerobert.pdfarranger -y
 flatpak install flathub com.github.johnfactotum.Foliate -y
