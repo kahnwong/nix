@@ -30,7 +30,6 @@ go install github.com/kahnwong/config-init@latest
 go install github.com/kahnwong/habit-tracker@latest
 go install github.com/kahnwong/invoice@latest
 go install github.com/kahnwong/pgconn@latest
-go install github.com/kahnwong/swissknife@latest
 go install github.com/kahnwong/totp@latest
 go install github.com/kahnwong/waka@latest
 go install github.com/kahnwong/workspace-init@latest
@@ -98,6 +97,7 @@ gh extension install redraw/gh-install
 
 # install executables via gh release
 gh install bodaay/HuggingFaceModelDownloader
+gh install kahnwong/swissknife
 gh install mongodb/kingfisher
 gh install murat-cileli/clyp
 gh install pythops/oryx
