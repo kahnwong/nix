@@ -5,7 +5,7 @@
 - If you install linux on mac devices, install gnome-tweaks (`sudo apt install gnome-tweaks`) to remap super and alt
   button.
 - Add m4a support to RhythmBox: `sudo apt install gstreamer1.0-fdkaac -y`
-- `CopyQ`: set shortcut to `alt + shift + v` for `show the tray menu`
+<!-- - `CopyQ`: set shortcut to `alt + shift + v` for `show the tray menu` -->
 
 ## Set Symlinks
 
