@@ -63,9 +63,7 @@
       nixfmt-classic
 
       # ---- node ----
-      fnm
       prettier
-      yarn
 
       # ---- python ----
       pixi

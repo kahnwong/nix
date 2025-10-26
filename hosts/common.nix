@@ -74,9 +74,11 @@
       wget
 
       # ---- runtimes & toolchains ----
+      fnm
       go
       rustup
       uv
+      yarn
 
       # ---- utils ----
       age
