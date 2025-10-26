@@ -54,6 +54,18 @@
           }
         ];
       };
+      demo = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.x86_64-linux;
+        modules = [
+          ./hosts/linux/demo/home.nix
+          {
+            home = {
+              username = "demo";
+              homeDirectory = "/home/demo";
+            };
+          }
+        ];
+      };
       server = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         modules = [
