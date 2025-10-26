@@ -102,3 +102,9 @@ Use fingerprint for sudo
 ```bash
 sudo pam-auth-update # enable `Fingerprint authentication`
 ```
+
+## Flameshot
+
+```bash
+flatpak permission-set screenshot screenshot org.flameshot.Flameshot yes
+```
