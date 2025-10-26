@@ -88,3 +88,17 @@ sudo tlp start
 sudo tlp bat
 sudo tlp ac
 ```
+
+## Fingerprint
+
+Ref: <https://linuxvox.com/blog/linux-fingerprint-reader-ubuntu/>
+
+```bash
+fprintd-enroll
+```
+
+Use fingerprint for sudo
+
+```bash
+sudo pam-auth-update # enable `Fingerprint authentication`
+```
