@@ -10,9 +10,9 @@
   home.file."scripts/,flameshot-kill.sh".source = ./scripts/flameshot-kill.sh;
   home.file."scripts/,gcp-list-resources.sh".source =
     ./scripts/gcp-list-resources.sh;
+  home.file."scripts/,gh-list-pr.sh".source = ./scripts/gh-list-pr.sh;
   home.file."scripts/,gh-list-repos.sh".source = ./scripts/gh-list-repos.sh;
   home.file."scripts/,git-add-ssh-key.sh".source = ./scripts/git-add-ssh-key.sh;
-  home.file."scripts/,github-list-pr.sh".source = ./scripts/github-list-pr.sh;
   home.file."scripts/,tf-cost-html.sh".source = ./scripts/tf-cost-html.sh;
   home.file."scripts/,tf-cost.sh".source = ./scripts/tf-cost.sh;
   home.file."scripts/,uv-init.sh".source = ./scripts/uv-init.sh;
