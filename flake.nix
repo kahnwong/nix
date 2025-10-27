@@ -103,10 +103,10 @@
           }
         ];
       };
-      pi4 = home-manager.lib.homeManagerConfiguration {
+      argon = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.aarch64-linux;
         modules = [
-          ./hosts/linux/pi4/home.nix
+          ./hosts/linux/argon/home.nix
           {
             home = {
               username = "ubuntu";
