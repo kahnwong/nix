@@ -38,6 +38,7 @@ flatpak install flathub io.github.josephmawa.Bella -y
 flatpak install flathub io.github.seadve.Kooha -y
 flatpak install flathub io.github.sigmasd.stimulator -y
 flatpak install flathub io.gitlab.adhami3310.Impression -y
+flatpak install flathub io.gitlab.librewolf-community -y
 flatpak install flathub io.kinvolk.Headlamp -y
 flatpak install flathub md.obsidian.Obsidian -y
 flatpak install flathub net.puddletag.puddletag -y
