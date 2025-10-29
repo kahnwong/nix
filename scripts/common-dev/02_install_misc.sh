@@ -98,12 +98,18 @@ gh extension install redraw/gh-install
 gh extension install seachicken/gh-poi
 
 # install executables via gh release
-gh install bodaay/HuggingFaceModelDownloader
+## better for .deb or tools requiring global discovery
+## cons: need manual interactions
+gh install domcyrus/rustnet
+gh install houseabsolute/ubi
 gh install kahnwong/cpubench-release
-gh install kahnwong/swissknife
-gh install mongodb/kingfisher
 gh install murat-cileli/clyp
-gh install pythops/oryx
+
+# install executables via ubi
+ubi --project bodaay/HuggingFaceModelDownloader --in ~/.local/bin/ --rename-exe hfdownloader
+ubi --project kahnwong/swissknife --in ~/.local/bin/
+ubi --project mongodb/kingfisher --in ~/.local/bin/
+ubi --project pythops/oryx --in ~/.local/bin/
 
 if [[ $(uname -s) == 'Darwin' ]]; then
 	gh install browsh-org/browsh
