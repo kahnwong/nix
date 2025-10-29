@@ -92,8 +92,10 @@ fi
 gh auth login
 gh config set git_protocol ssh -h github.com
 gh extension install Shresht7/gh-license
+gh extension install dlvhdr/gh-dash
 gh extension install github/gh-models
 gh extension install redraw/gh-install
+gh extension install seachicken/gh-poi
 
 # install executables via gh release
 gh install bodaay/HuggingFaceModelDownloader
