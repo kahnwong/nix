@@ -143,6 +143,9 @@
       # ---- wasm ----
       wasmtime
 
+      # ---- llm ----
+      llama-cpp
+
       # ---- misc ----
       ast-grep
       beancount
