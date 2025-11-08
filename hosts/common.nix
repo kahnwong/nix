@@ -46,6 +46,7 @@
 
       # ---- system ----
       du-dust
+      dua
       duf
       htop
       ncdu
