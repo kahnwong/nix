@@ -59,6 +59,8 @@ set UV_CACHE_DIR ~/.cache/uv
 #         alias idea="intellij-idea-ultimate"
 # end
 
+alias idea="command idea . &"
+
 # zed
 switch (uname)
     case Linux
