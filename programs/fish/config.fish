@@ -140,6 +140,7 @@ alias c="gcal-tui"
 
 # bean-add
 if type -p bean-add > /dev/null; bean-add completion fish | source; end
+alias ba="bean-add"
 
 ####################
 # CONFIG: GCP
