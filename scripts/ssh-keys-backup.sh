@@ -4,7 +4,7 @@ ARCHIVE_FILE="$(pwd)/programs/ssh/keys/ssh-keys.zip"
 
 mkdir programs/ssh/keys/temp
 cd programs/ssh/keys/temp &&
-	cp ~/.ssh/*.pem . &&
+	find ~/.ssh -maxdepth 1 -type f ! -name "config" ! -name "authorized_keys" ! -name "known_hosts" -exec cp {} . \; &&
 	zip "$ARCHIVE_FILE" ./* &&
 	cd .. && rm -rf temp
 
