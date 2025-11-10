@@ -8,7 +8,7 @@ function tc
 end
 
 function tsort
-    topydo sort asc:project
+    topydo sort asc:context asc:project
 end
 
 # query
