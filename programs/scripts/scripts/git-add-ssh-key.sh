@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [[ $(uname -s) == 'Darwin' ]]; then
-	ssh-add --apple-use-keychain ~/.ssh/github-signing-key.pem
+	ssh-add --apple-use-keychain ~/.ssh/github-signing-key
 
 elif [[ $(uname -s) == 'Linux' ]]; then
 	if [ -z "$SSH_AUTH_SOCK" ]; then
@@ -9,5 +9,5 @@ elif [[ $(uname -s) == 'Linux' ]]; then
 	fi
 
 	# ssh-agent fish # only required if sometimes ssh version borks
-	ssh-add ~/.ssh/github-signing-key.pem
+	ssh-add ~/.ssh/github-signing-key
 fi
