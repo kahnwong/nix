@@ -18,36 +18,35 @@
       # ----- profile -----
       user.name = "Karn Wong";
       user.email = "karn@karnwong.me";
+
+      # ----- commit signing -----
+      gpg.format = "ssh";
+      commit = { gpgsign = true; };
       # signing.key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGjELfQh9UxS1ORQZJY0it8T57x8+mHSg0fVAG/dprrl karn@karnwong.me";
 
       # https://jvns.ca/blog/2024/02/16/popular-git-config-options/
-      extraConfig = {
-        # ----- diff -----
-        diff = {
-          algorithm = "histogram";
-          colorMoved = "plain";
-          mnemonicPrefix = "true";
-          renames = "true";
-        };
-
-        # ----- merge -----
-        merge.conflictstyle = "zdiff3";
-
-        # ----- remote -----
-        # url."git@github.com:".insteadOf = "https://github.com/";
-
-        # ----- commit signing -----
-        gpg.format = "ssh";
-        commit = { gpgsign = true; };
-
-        credential = lib.mkMerge [
-          (lib.mkIf pkgs.stdenv.isDarwin { helper = "osxkeychain"; })
-
-          #        (lib.mkIf pkgs.stdenv.isLinux {
-          #          helper = "gopass";
-          #        })
-        ];
+      # ----- diff -----
+      diff = {
+        algorithm = "histogram";
+        colorMoved = "plain";
+        mnemonicPrefix = "true";
+        renames = "true";
       };
+
+      # ----- merge -----
+      merge.conflictstyle = "zdiff3";
+
+      # ----- remote -----
+      # url."git@github.com:".insteadOf = "https://github.com/";
+
+      # ----- creds -----
+      credential = lib.mkMerge [
+        (lib.mkIf pkgs.stdenv.isDarwin { helper = "osxkeychain"; })
+
+        #        (lib.mkIf pkgs.stdenv.isLinux {
+        #          helper = "gopass";
+        #        })
+      ];
 
       # ----- lfs -----
       lfs = { enable = true; };
