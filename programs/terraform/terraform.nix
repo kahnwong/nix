@@ -17,6 +17,7 @@
 
   home.file.".terraform.d/plugin-cache/.terraformrc".source =
     ./.terraformrc; # dummy file for init directory
+  home.file.".tofurc".source = ./.tofurc;
 
   home.packages = with pkgs; [
     # terraform # non-free
