@@ -35,7 +35,7 @@ set PATH \
     $HOME/scripts
 
 ####################
-# CONFIG: RUNTIME
+# CONFIG: RUNTIMES
 ####################
 # golang
 set GOPATH ~/go
@@ -87,54 +87,3 @@ set MCFLY_KEY_SCHEME vim
 
 # direnv
 direnv hook fish | source
-
-# pgconn
-if type -p pgconn > /dev/null; pgconn completion fish | source; end
-
-# totp
-if type -p totp > /dev/null; totp completion fish | source; end
-
-# swissknife
-alias sk="swissknife"
-if type -p swissknife > /dev/null; sk completion fish | source; end
-
-# timesheet
-alias ts="timesheet"
-if type -p timesheet > /dev/null; ts completion fish | source; end
-
-# config-init
-alias ci="config-init"
-if type -p config-init > /dev/null; ci completion fish | source; end
-
-# article-summarizer
-alias sm="article-summarizer"
-
-# erp
-if type -p erp > /dev/null; erp completion fish | source; end
-
-# umamit
-if type -p umamit > /dev/null; umamit completion fish | source; end
-alias u="umamit"
-
-# media-discord-rpc
-alias d="media-discord-rpc"
-if type -p media-discord-rpc > /dev/null; d completion fish | source; end
-
-# habit-tracker
-if type -p habit-tracker > /dev/null; habit-tracker completion fish | source; end
-alias h="habit-tracker"
-
-# thailand-train-fare-calculator
-if type -p thailand-train-fare-calculator > /dev/null; thailand-train-fare-calculator completion fish | source; end
-
-# gcal-tui
-alias c="gcal-tui"
-
-# bean-add
-if type -p bean-add > /dev/null; bean-add completion fish | source; end
-alias ba="bean-add"
-
-####################
-# CONFIG: GCP
-####################
-set GOOGLE_APPLICATION_CREDENTIALS $HOME/.config/gcloud/application_default_credentials.json

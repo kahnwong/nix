@@ -1,3 +1,6 @@
+if type -p umamit > /dev/null; umamit completion fish | source; end
+alias u="umamit"
+
 function ut
     umamit today
 end
