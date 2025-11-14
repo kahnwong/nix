@@ -107,6 +107,7 @@ gh install murat-cileli/clyp
 
 # install executables via ubi
 ubi --project bodaay/HuggingFaceModelDownloader --in ~/.local/bin/ --rename-exe hfdownloader
+ubi --project crate-ci/typos --in ~/.local/bin/
 ubi --project kahnwong/swissknife --in ~/.local/bin/
 ubi --project mongodb/kingfisher --in ~/.local/bin/
 ubi --project pythops/oryx --in ~/.local/bin/
