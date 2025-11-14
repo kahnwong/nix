@@ -50,3 +50,10 @@ function nw
     cd ~/Apps/notes/notes-work/ || exit
     vi "+:NvimTreeToggle"
 end
+
+# date
+function d-iso-8601
+    set -l value "$(date +%Y-%m-%d)"
+    echo $value
+    echo $value | copy
+end
