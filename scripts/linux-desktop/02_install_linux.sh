@@ -24,6 +24,8 @@ flatpak install flathub com.github.tchx84.Flatseal -y
 flatpak install flathub com.github.zocker_160.SyncThingy -y
 flatpak install flathub com.google.Chrome -y
 flatpak install flathub com.heroicgameslauncher.hgl -y
+flatpak install flathub com.obsproject.Studio -y
+flatpak install flathub com.obsproject.Studio.Plugin.BackgroundRemoval -y
 flatpak install flathub com.slack.Slack -y
 flatpak install flathub com.todoist.Todoist -y
 flatpak install flathub com.transmissionbt.Transmission -y
@@ -35,7 +37,6 @@ flatpak install flathub io.github.dweymouth.supersonic -y
 flatpak install flathub io.github.flattool.Ignition -y
 flatpak install flathub io.github.flattool.Warehouse -y
 flatpak install flathub io.github.josephmawa.Bella -y
-flatpak install flathub io.github.seadve.Kooha -y
 flatpak install flathub io.github.sigmasd.stimulator -y
 flatpak install flathub io.github.vemonet.EmojiMart -y
 flatpak install flathub io.gitlab.adhami3310.Impression -y
