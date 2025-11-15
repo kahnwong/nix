@@ -9,7 +9,7 @@ fnm default v22.12.0
 ############################
 # go
 ############################
-GO_VERSION="go1.25.1"
+GO_VERSION="go1.25.4"
 go install "golang.org/dl/${GO_VERSION}@latest"
 "${GO_VERSION}" download
 
@@ -100,14 +100,17 @@ gh extension install seachicken/gh-poi
 # install executables via gh release
 ## better for .deb or tools requiring global discovery
 ## cons: need manual interactions
-gh install domcyrus/rustnet
-gh install houseabsolute/ubi
-gh install kahnwong/cpubench-release
-gh install murat-cileli/clyp
 
 # install executables via ubi
+curl --silent --location \
+	https://raw.githubusercontent.com/houseabsolute/ubi/master/bootstrap/bootstrap-ubi.sh |
+	sudo sh
+
+sudo ubi --project domcyrus/rustnet --in /usr/bin/
+sudo ubi --project murat-cileli/clyp --in /usr/bin/
 ubi --project bodaay/HuggingFaceModelDownloader --in ~/.local/bin/ --rename-exe hfdownloader
 ubi --project crate-ci/typos --in ~/.local/bin/
+ubi --project kahnwong/cpubench-release -e cpubench --in ~/.local/bin/
 ubi --project kahnwong/swissknife --in ~/.local/bin/
 ubi --project mongodb/kingfisher --in ~/.local/bin/
 ubi --project pythops/oryx --in ~/.local/bin/
