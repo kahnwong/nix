@@ -106,8 +106,6 @@ curl --silent --location \
 	https://raw.githubusercontent.com/houseabsolute/ubi/master/bootstrap/bootstrap-ubi.sh |
 	sudo sh
 
-sudo ubi --project domcyrus/rustnet --in /usr/bin/
-sudo ubi --project murat-cileli/clyp --in /usr/bin/
 ubi --project bodaay/HuggingFaceModelDownloader --in ~/.local/bin/ --rename-exe hfdownloader
 ubi --project crate-ci/typos --in ~/.local/bin/
 ubi --project kahnwong/cpubench-release -e cpubench --in ~/.local/bin/
@@ -119,4 +117,15 @@ if [[ $(uname -s) == 'Darwin' ]]; then
 	gh install browsh-org/browsh
 fi
 
-echo "" # force return exit 0 so it'll continue executing downstream steps. exit 1 is from package already exists
+## these need `sudo` to run
+if [[ $(uname -s) == 'Linux' ]]; then
+	UBI_INSTALL_PATH="/usr/bin/"
+
+elif [[ $(uname -s) == 'Darwin' ]]; then
+	UBI_INSTALL_PATH="/usr/local/bin/"
+fi
+
+sudo ubi --project domcyrus/rustnet --in "$UBI_INSTALL_PATH"
+sudo ubi --project murat-cileli/clyp --in "$UBI_INSTALL_PATH"
+
+echo "" # force return exit 0 so it'll continue executing downstream steps. exit 1 is from `gh ext install` package already exists
