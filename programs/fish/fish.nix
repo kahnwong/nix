@@ -22,7 +22,6 @@
     ./conf.d/devops_system.fish;
   home.file.".config/fish/conf.d/git.fish".source = ./conf.d/git.fish;
   home.file.".config/fish/conf.d/misc.fish".source = ./conf.d/misc.fish;
-  home.file.".config/fish/conf.d/runtimes.fish".source = ./conf.d/runtimes.fish;
   home.file.".config/fish/conf.d/shell.fish".source = ./conf.d/shell.fish;
   home.file.".config/fish/config.fish".source = ./config.fish;
   home.file.".config/fish/functions/envsource.fish".source =
