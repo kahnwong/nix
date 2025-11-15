@@ -1,13 +1,10 @@
 #!/bin/bash
 
-if [[ $(uname -s) == 'Darwin' ]]; then
-	ssh-add --apple-use-keychain ~/.ssh/github-signing-key
-
-elif [[ $(uname -s) == 'Linux' ]]; then
-	if [ -z "$SSH_AUTH_SOCK" ]; then
-		eval "$(ssh-agent -s)"
-	fi
-
-	# ssh-agent fish # only required if sometimes ssh version borks
-	ssh-add ~/.ssh/github-signing-key
+if [ -z "$SSH_AUTH_SOCK" ]; then
+	eval "$(ssh-agent -s)"
 fi
+
+ssh-add ~/.ssh/github-signing-key
+
+# # on tahoe it looks like `--apple-use-keychain` flat is no longer required
+# ssh-add --apple-use-keychain ~/.ssh/github-signing-key
