@@ -12,7 +12,7 @@ alias copy 'fish_clipboard_copy'
 alias paste 'fish_clipboard_paste'
 
 ####################
-# PATH
+# PATHS
 ####################
 # default
 set PATH \
@@ -34,56 +34,14 @@ set PATH \
     /sbin \
     $HOME/scripts
 
+# flatpak on linux
+set XDG_DATA_DIRS $HOME/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:$XDG_DATA_DIRS
+
 ####################
-# CONFIG: RUNTIMES
+# CONFIG: EDITORS
 ####################
-# golang
-set GOPATH ~/go
-set PATH $PATH:$GOPATH/bin
-
-# nix
-set NIX_PATH $HOME/.nix-defexpr/channels
-set PATH $PATH:$HOME/.nix-profile/bin
-set PATH $PATH:/nix/var/nix/profiles/default/bin/
-
-# node
-alias nvm="fnm"
-if type -p fnm > /dev/null; fnm env --use-on-cd --shell fish | source; end
-
-# python
-set UV_CACHE_DIR ~/.cache/uv
-
 # zed
 switch (uname)
     case Linux
         alias zed="/var/lib/flatpak/exports/bin/dev.zed.Zed"
 end
-
-
-####################
-# CONFIG: TOOLS
-####################
-# editor
-set EDITOR nvim
-
-# flatpak on linux
-set XDG_DATA_DIRS $HOME/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:$XDG_DATA_DIRS
-
-# fzf
-export FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git -o -name cache -o -name dist \) -prune -o -print'
-
-# gpg
-set GPG_TTY tty
-
-# starship
-starship init fish | source
-
-# zoxide
-zoxide init fish | source
-
-# mcfly
-mcfly init fish | source
-set MCFLY_KEY_SCHEME vim
-
-# direnv
-direnv hook fish | source

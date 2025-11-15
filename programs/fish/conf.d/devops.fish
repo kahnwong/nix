@@ -3,11 +3,6 @@ function caddy-serve
     caddy file-server --listen 0.0.0.0:3000
 end
 
-# golang
-function go-build
-    CGO_ENABLED=0 go build -ldflags="-s -w" .
-end
-
 # ntfy
 function ntfy
     curl -d "Task completed" $(get_fish_secret NTFY_TOPIC)
@@ -27,21 +22,15 @@ function tf
   tofu $argv
 end
 
-# s3
-function r2
-    aws --endpoint-url $(get_fish_secret R2_ENDPOINT) --profile r2 $argv
+function tfcost
+    infracost breakdown --path .
 end
 
-function garage
-    # https://github.com/boto/boto3/issues/4392#issuecomment-2868118431
-    set -gx AWS_REQUEST_CHECKSUM_CALCULATION when_required
-    set -gx AWS_RESPONSE_CHECKSUM_VALIDATION when_required
-    aws --endpoint-url $(get_fish_secret GARAGE_ENDPOINT) --profile garage $argv
+function tfcost-html
+    infracost breakdown \
+        --format html \
+        --out-file infracost-report.html \
+        --usage-file /tmp/ignore.yml \
+        --sync-usage-file \
+        --path .
 end
-
-function garage-internal
-    aws --endpoint-url $(get_fish_secret GARAGE_ENDPOINT_INTERNAL) --profile garage $argv
-end
-
-# gcp
-set GOOGLE_APPLICATION_CREDENTIALS $HOME/.config/gcloud/application_default_credentials.json
