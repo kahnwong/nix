@@ -126,6 +126,7 @@ elif [[ $(uname -s) == 'Darwin' ]]; then
 fi
 
 sudo ubi --project domcyrus/rustnet --in "$UBI_INSTALL_PATH"
+sudo ubi --project imsnif/bandwhich --in "$UBI_INSTALL_PATH"
 sudo ubi --project murat-cileli/clyp --in "$UBI_INSTALL_PATH"
 
 echo "" # force return exit 0 so it'll continue executing downstream steps. exit 1 is from `gh ext install` package already exists

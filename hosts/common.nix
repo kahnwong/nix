@@ -37,7 +37,6 @@
       zoxide
 
       # ---- networking ----
-      bandwhich
       curl
       doggo
       gping
