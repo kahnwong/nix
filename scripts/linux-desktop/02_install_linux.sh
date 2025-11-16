@@ -26,6 +26,7 @@ flatpak install flathub com.google.Chrome -y
 flatpak install flathub com.heroicgameslauncher.hgl -y
 flatpak install flathub com.obsproject.Studio -y
 flatpak install flathub com.obsproject.Studio.Plugin.BackgroundRemoval -y
+flatpak install flathub com.rustdesk.RustDesk -y
 flatpak install flathub com.slack.Slack -y
 flatpak install flathub com.todoist.Todoist -y
 flatpak install flathub com.transmissionbt.Transmission -y

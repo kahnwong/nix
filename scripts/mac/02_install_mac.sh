@@ -82,7 +82,7 @@ brew install lihaoyun6/tap/quickrecorder
 # brew install --cask spectacle
 # brew install --cask stats
 # brew install ical-buddy
-#brew install --cask michaelvillar-timer
+# brew install --cask michaelvillar-timer
 brew install --cask alfred
 brew install --cask angry-ip-scanner
 brew install --cask anydesk
@@ -97,6 +97,7 @@ brew install --cask keepingyouawake
 brew install --cask maccy
 brew install --cask mullvadvpn
 brew install --cask raspberry-pi-imager
+brew install --cask rustdesk
 brew install --cask shifty
 brew install --cask the-unarchiver
 brew install --cask tyke
