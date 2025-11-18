@@ -30,6 +30,7 @@ You probably need to install `gnome-browser-connector` and use chrome to install
 
 - [Hot Edge](https://extensions.gnome.org/extension/4222/hot-edge/)
 - [Just Perfection](https://extensions.gnome.org/extension/3843/just-perfection/)
+- [Touchpad Gesture Customization](https://extensions.gnome.org/extension/7850/touchpad-gesture-customization/)
 
 ## Fonts
 
