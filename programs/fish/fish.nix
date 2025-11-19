@@ -8,7 +8,6 @@
     ./conf.d/app_topydo.fish;
   home.file.".config/fish/conf.d/app_umamit.fish".source =
     ./conf.d/app_umamit.fish;
-  home.file.".config/fish/conf.d/apps.fish".source = ./conf.d/apps.fish;
   home.file.".config/fish/conf.d/devops.fish".source = ./conf.d/devops.fish;
   home.file.".config/fish/conf.d/devops_cloud.fish".source =
     ./conf.d/devops_cloud.fish;

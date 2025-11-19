@@ -14,6 +14,10 @@ switch (uname)
         end
 end
 
+function cpubench
+    CPUBENCH_API_KEY="$(get_fish_secret CPUBENCH_API_KEY)" command cpubench $argv
+end
+
 # pop
 set -gx RESEND_API_KEY $(get_fish_secret POP_RESEND_API_KEY)
 set -gx POP_FROM $(get_fish_secret POP_EMAIL_FROM)
