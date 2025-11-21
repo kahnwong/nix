@@ -53,6 +53,12 @@ set NIX_PATH $HOME/.nix-defexpr/channels
 set PATH $PATH:$HOME/.nix-profile/bin
 set PATH $PATH:/nix/var/nix/profiles/default/bin/
 
+# android
+set ANDROID_HOME $HOME/Android/Sdk
+set ANDROID_SDK_ROOT $HOME/Android/Sdk
+set PATH $PATH:$ANDROID_SDK_ROOT/tools
+set PATH $PATH:$ANDROID_SDK_ROOT/platform-tools
+
 # node
 alias nvm="fnm"
 if type -p fnm > /dev/null; fnm env --use-on-cd --shell fish | source; end
