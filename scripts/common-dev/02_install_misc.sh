@@ -107,6 +107,7 @@ curl --silent --location \
 	sudo sh
 
 ubi --project bodaay/HuggingFaceModelDownloader --in ~/.local/bin/ --rename-exe hfdownloader
+ubi --project charmbracelet/crush --in ~/.local/bin
 ubi --project crate-ci/typos --in ~/.local/bin/
 ubi --project kahnwong/cpubench-release -e cpubench --in ~/.local/bin/
 ubi --project kahnwong/swissknife --in ~/.local/bin/
