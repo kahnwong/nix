@@ -15,7 +15,7 @@ function ga
 end
 
 function gc
-    git commit -m $argv
+    git commit -nm $argv
 end
 
 function gmr
@@ -34,7 +34,7 @@ function gmrm
 end
 
 function gca
-    git commit --amend
+    git commit --amend -n
 end
 
 function gp
