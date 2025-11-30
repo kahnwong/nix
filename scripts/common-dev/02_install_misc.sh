@@ -46,6 +46,8 @@ go install github.com/kahnwong/umamit@latest
 ############################
 # applications - cargo
 ############################
+cargo install --locked cargo-zigbuil
+cargo install --locked cross
 
 ############################
 # applications - python
