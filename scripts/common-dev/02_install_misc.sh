@@ -23,8 +23,6 @@ rustup default stable
 ############################
 #go install github.com/ksoclabs/kbom@latest
 #go install github.com/protomaps/go-pmtiles@latest
-go install github.com/elliot40404/modo/cmd/modo@latest
-go install github.com/fawni/def@latest
 go install github.com/kahnwong/article-summarizer@latest
 go install github.com/kahnwong/config-init@latest
 go install github.com/kahnwong/habit-tracker@latest
@@ -33,7 +31,6 @@ go install github.com/kahnwong/pgconn@latest
 go install github.com/kahnwong/totp@latest
 go install github.com/kahnwong/waka@latest
 go install github.com/kahnwong/workspace-init@latest
-go install github.com/terraform-docs/terraform-docs@latest # nix borks
 
 ## private utils
 export GIT_CONFIG_GLOBAL="$HOME/.config/git/profiles/go-install"
@@ -109,10 +106,13 @@ curl --silent --location \
 ubi --project bodaay/HuggingFaceModelDownloader --in ~/.local/bin/ --rename-exe hfdownloader
 ubi --project charmbracelet/crush --in ~/.local/bin
 ubi --project crate-ci/typos --in ~/.local/bin/
+ubi --project elliot40404/modo --in ~/.local/bin/
+ubi --project fawni/def --in ~/.local/bin/
 ubi --project kahnwong/cpubench-release -e cpubench --in ~/.local/bin/
 ubi --project kahnwong/swissknife --in ~/.local/bin/
 ubi --project mongodb/kingfisher --in ~/.local/bin/
 ubi --project pythops/oryx --in ~/.local/bin/
+ubi --project terraform-docs/terraform-docs --in ~/.local/bin/ # nix borks
 
 if [[ $(uname -s) == 'Darwin' ]]; then
 	gh install browsh-org/browsh
