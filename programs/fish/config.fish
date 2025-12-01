@@ -127,9 +127,9 @@ function tmux
     zellij $argv
 end
 
-####################
-# CONFIG: APPS
-####################
+###############################
+# APPS: Completions + Alias
+###############################
 # pgconn
 if type -p pgconn > /dev/null; pgconn completion fish | source; end
 
@@ -171,3 +171,7 @@ alias c="gcal-tui"
 # bean-add
 if type -p bean-add > /dev/null; bean-add completion fish | source; end
 alias ba="bean-add"
+
+# umamit
+if type -p umamit > /dev/null; umamit completion fish | source; end
+alias u="umamit"
