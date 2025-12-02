@@ -9,6 +9,10 @@ function ap
     mods --no-cache -m "gemini-2.5-pro" -P $argv
 end
 
+function as
+    mods --no-cache -R short-answer -P $argv
+end
+
 function an
     mods --no-cache -R default -P $argv
 end

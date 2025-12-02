@@ -4,6 +4,8 @@ roles:
   "default": [ ]
   "snippet-generator":
     - you should provide code snippet without explanation
+  "short-answer":
+    - you should provide answer within a few sentences
 role: "snippet-generator"
 quiet: true
 
