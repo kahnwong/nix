@@ -53,3 +53,8 @@ sops -d ./programs/fleet-dashboard/config.sops.yaml >~/.config/fleet-dashboard/c
 
 ## vscode
 #sops -d ./scripts/vscode/config/settings.sops.json >./scripts/vscode/config/settings.json
+
+# qalc
+# # add dummy file so it can write config
+mkdir -p ~/.config/qalculate/
+touch ~/.config/qalculate/qalc.cfg
