@@ -115,6 +115,7 @@ ubi --project kahnwong/swissknife --in ~/.local/bin/
 ubi --project mongodb/kingfisher --in ~/.local/bin/
 ubi --project pythops/oryx --in ~/.local/bin/
 ubi --project terraform-docs/terraform-docs --in ~/.local/bin/ # nix borks
+ubi --project yt-dlp/yt-dlp --in ~/.local/bin/                 # nix still doesn't support latest version
 
 if [[ $(uname -s) == 'Darwin' ]]; then
 	gh install browsh-org/browsh
