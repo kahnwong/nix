@@ -6,7 +6,7 @@ let
 in {
   imports = [
     # shell
-    ../../../programs/fish/fish.nix
+    ../../../programs/fish-generic/fish.nix
     ../../../programs/starship/starship.nix
     # apps
     ../../../programs/erp/erp.nix

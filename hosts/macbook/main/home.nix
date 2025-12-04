@@ -4,6 +4,7 @@ let
     exec ${pkgs.nixUnstable}/bin/nix --experimental-features "nix-command flakes" "$@"
   '');
 in {
-  imports = [ ../../common.nix ../../common-dev.nix ];
+  imports =
+    [ ../../../programs/fish/fish.nix ../../common.nix ../../common-dev.nix ];
   home.packages = with pkgs; [ ];
 }

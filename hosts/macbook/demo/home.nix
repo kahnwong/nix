@@ -5,6 +5,7 @@ let
   '');
 in {
   imports = [
+    ../../../programs/fish-generic/fish.nix
     ../../common.nix
     # ../../../programs/kitty/kitty.nix
   ];
