@@ -111,7 +111,6 @@ ubi --project crate-ci/typos --in ~/.local/bin/
 ubi --project elliot40404/modo --in ~/.local/bin/
 ubi --project fawni/def --in ~/.local/bin/
 ubi --project kahnwong/cpubench-release -e cpubench --in ~/.local/bin/
-ubi --project kahnwong/swissknife --in ~/.local/bin/
 ubi --project mongodb/kingfisher --in ~/.local/bin/
 ubi --project pythops/oryx --in ~/.local/bin/
 ubi --project terraform-docs/terraform-docs --in ~/.local/bin/ # nix borks
@@ -131,6 +130,7 @@ fi
 
 sudo ubi --project domcyrus/rustnet --in "$UBI_INSTALL_PATH"
 sudo ubi --project imsnif/bandwhich --in "$UBI_INSTALL_PATH"
+sudo ubi --project kahnwong/swissknife --in "$UBI_INSTALL_PATH"
 sudo ubi --project murat-cileli/clyp --in "$UBI_INSTALL_PATH"
 
 echo "" # force return exit 0 so it'll continue executing downstream steps. exit 1 is from `gh ext install` package already exists
