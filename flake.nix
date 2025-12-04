@@ -90,6 +90,18 @@
           }
         ];
       };
+      serverR440 = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.x86_64-linux;
+        modules = [
+          ./hosts/linux/server/home.nix
+          {
+            home = {
+              username = "r440-server";
+              homeDirectory = "/home/r440-server";
+            };
+          }
+        ];
+      };
       # ----------------- pi ----------------- #
       pi = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.aarch64-linux;
