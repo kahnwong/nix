@@ -1,6 +1,7 @@
 { pkgs, ... }: {
   imports = [
     ../programs/nvim/nvim.nix
+    ../programs/sampler/sampler.nix
     ../programs/starship/starship.nix
     ../programs/zellij/zellij.nix
   ];
@@ -10,6 +11,8 @@
     packages = with pkgs; [
       # ---- backup ----
       restic
+      # rclone
+      # rsync
 
       # ---- shell ----
       bat
@@ -27,8 +30,7 @@
       #        dontCheck = true;
       #      }))
       # ---
-      # rclone
-      # rsync
+
       # tailspin
       tree
       viddy
@@ -36,20 +38,25 @@
       zoxide
 
       # ---- networking ----
+      # iftop
+      # headscale
       curl
       doggo
+      dumbpipe
       gping
-      # iftop
       rustscan
+      sendme
+      somo
 
       # ---- system ----
+      # nvtopPackages.full # eats a lot of space
       du-dust
       dua
       duf
       htop
       ncdu
-      # nvtopPackages.full # eats a lot of space
       procs
+      sampler
       zenith
 
       # ---- fetch ----
@@ -61,11 +68,17 @@
       # ---- containers ----
       ctop
       lazydocker
+      oxker
+
+      # ---- database ----
+      pgcli
+      postgresql_17
 
       # ---- data manipulation ----
       fx
       glow
       jq
+      visidata
       yq-go
 
       # ---- downloader ----
@@ -83,8 +96,12 @@
       age
       direnv
       entr
+      mcat
       sops
       tldr
+
+      # ---- misc ----
+      sshx
     ];
   };
 }

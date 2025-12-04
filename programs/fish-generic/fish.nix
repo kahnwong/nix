@@ -3,6 +3,8 @@
 {
   home.file.".config/fish/conf.d/devops_containers.fish".source =
     ./conf.d/devops_containers.fish;
+  home.file.".config/fish/conf.d/devops_files_transfer.fish".source =
+    ./conf.d/devops_files_transfer.fish;
   home.file.".config/fish/conf.d/devops_networking.fish".source =
     ./conf.d/devops_networking.fish;
   home.file.".config/fish/conf.d/devops_system.fish".source =

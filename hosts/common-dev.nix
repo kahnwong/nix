@@ -18,7 +18,6 @@
     ../programs/mods/mods.nix
     ../programs/pgconn/pgconn.nix
     ../programs/proxmox/proxmox.nix
-    ../programs/sampler/sampler.nix
     ../programs/topydo/topydo.nix
     ../programs/totp/totp.nix
     ../programs/umamit/umamit.nix
@@ -85,12 +84,9 @@
 
       # ---- data ----
       sqruff
-      visidata
 
       # ---- database ----
       atlas
-      pgcli
-      postgresql_17
       mongodb-tools
 
       # ---- docker ----
@@ -120,13 +116,9 @@
       # ---- markdown ----
       markdown-link-check
       markdownlint-cli2
+      mdsf
       mw
       rumdl
-
-      # ---- networking ----
-      dumbpipe
-      somo
-      # headscale
 
       # ---- security ----
       grype
@@ -144,7 +136,9 @@
       wasmtime
 
       # ---- llm ----
+      gemini-cli
       llama-cpp
+      mods
 
       # ---- misc ----
       ast-grep
@@ -155,15 +149,8 @@
       charm-freeze
       f2
       fava
-      gemini-cli
       libqalculate
-      mcat
-      mdsf
-      mods
       pop
-      sampler
-      sendme
-      sshx
       tz
       wakatime
       zola
