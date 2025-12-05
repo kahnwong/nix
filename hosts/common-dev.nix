@@ -142,6 +142,7 @@
 
       # ---- misc ----
       ast-grep
+      atuin
       beancount
       beanquery
       caddy

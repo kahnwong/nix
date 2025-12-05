@@ -129,3 +129,12 @@ Then reboot.
 ```bash
 flatpak permission-set screenshot screenshot org.flameshot.Flameshot yes
 ```
+
+## Atuin
+
+Edit `sync_address` at `~/.config/atuin/config.toml`
+
+```bash
+atuin login -u <USERNAME>
+atuin sync
+```

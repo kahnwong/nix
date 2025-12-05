@@ -99,12 +99,17 @@ starship init fish | source
 # zoxide
 zoxide init fish | source
 
-# mcfly
-mcfly init fish | source
-set MCFLY_KEY_SCHEME vim
+# # mcfly
+# mcfly init fish | source
+# set MCFLY_KEY_SCHEME vim
 
 # direnv
 direnv hook fish | source
+
+# atuin
+# atuin init fish | source
+# # see <https://github.com/atuinsh/atuin/issues/2940>
+atuin init fish | sed "s/-k up/up/g" | source
 
 function ls
     eza --icons -1 --group-directories-first $argv
