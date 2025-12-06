@@ -41,6 +41,12 @@
       uncrustify
       usort
 
+      # ---- flutter ----
+      clang
+      flutter
+      glib
+      util-linux
+
       # # ---- gleam ----
       # gleam
       # erlang
@@ -62,7 +68,7 @@
       nixfmt-classic
 
       # ---- node ----
-      prettier
+      # prettier
 
       # ---- python ----
       pixi
