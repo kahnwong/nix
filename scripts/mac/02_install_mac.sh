@@ -31,6 +31,7 @@ brew install apache-spark
 # dev tools
 # brew install --cask docker
 # brew install --cask mongodb-compass
+brew install --cask flutter
 brew install --cask fork
 brew install --cask ghostty
 brew install --cask intellij-idea

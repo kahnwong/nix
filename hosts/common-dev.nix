@@ -41,9 +41,6 @@
       uncrustify
       usort
 
-      # ---- flutter ----
-      flutter
-
       # # ---- gleam ----
       # gleam
       # erlang
