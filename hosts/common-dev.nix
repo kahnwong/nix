@@ -42,10 +42,7 @@
       usort
 
       # ---- flutter ----
-      clang
       flutter
-      glib
-      util-linux
 
       # # ---- gleam ----
       # gleam

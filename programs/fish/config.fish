@@ -23,6 +23,7 @@ set PATH \
     $HOME/.cargo/bin \
     $HOME/.pixi/bin \
     $HOME/.local/share/JetBrains/Toolbox/apps/intellij-idea-ultimate/bin \
+    /nix/store/igj0jw2a2n1x2g6gjbfgwhc5ni3v7ca7-flutter-wrapped-3.35.5-sdk-links/bin \
     /Applications/IntelliJ\ IDEA.app/Contents/MacOS \
     /opt/homebrew/bin \
     /snap/bin \
