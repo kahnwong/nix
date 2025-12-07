@@ -49,6 +49,7 @@ flatpak install flathub org.audacityteam.Audacity -y
 flatpak install flathub org.fkoehler.KTailctl -y
 flatpak install flathub org.flameshot.Flameshot -y
 flatpak install flathub org.freefilesync.FreeFileSync -y
+flatpak install flathub org.gnome.Fractal -y
 flatpak install flathub org.gnome.gitlab.cheywood.Buffer -y
 flatpak install flathub org.gpodder.gpodder -y
 flatpak install flathub org.kde.okular -y
