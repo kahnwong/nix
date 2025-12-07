@@ -19,7 +19,7 @@ function docker-up
 end
 
 function docker-rmi
-    docker images | grep $argv | awk '{print $3}' | xargs docker rmi
+    docker images | grep $argv | awk '{print $2}' | xargs docker rmi
 end
 
 # podman
