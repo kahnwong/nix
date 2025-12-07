@@ -11,6 +11,10 @@ function k8s-emmental-tunnel
     ssh -L 6443:192.168.1.70:6443 nuc-tailscale
 end
 
+function k8s-r440-tunnel
+    ssh -L 6443:localhost:6443 r440
+end
+
 # docker
 function docker-up
     docker compose down
