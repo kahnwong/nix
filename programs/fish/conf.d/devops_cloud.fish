@@ -14,6 +14,12 @@ function garage-internal
     aws --endpoint-url $(get_fish_secret GARAGE_ENDPOINT_INTERNAL) --profile garage $argv
 end
 
+function garage-bird
+    set -gx AWS_REQUEST_CHECKSUM_CALCULATION when_required
+    set -gx AWS_RESPONSE_CHECKSUM_VALIDATION when_required
+    aws --endpoint-url $(get_fish_secret GARAGE_BIRD_ENDPOINT) --profile garage-bird $argv
+end
+
 # gcp
 set GOOGLE_APPLICATION_CREDENTIALS $HOME/.config/gcloud/application_default_credentials.json
 
