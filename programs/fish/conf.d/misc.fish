@@ -61,3 +61,6 @@ function d-iso-8601
     echo $value
     echo $value | copy
 end
+
+# crush
+set -gx AWS_BEARER_TOKEN_BEDROCK $(get_fish_secret AWS_BEARER_TOKEN_BEDROCK)
