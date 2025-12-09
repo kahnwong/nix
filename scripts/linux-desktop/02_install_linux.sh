@@ -11,6 +11,7 @@ sudo snap install mpv
 # flatpak install flathub io.mpv.Mpv -y
 flatpak install flathub app.freelens.Freelens -y
 flatpak install flathub com.calibre_ebook.calibre -y
+flatpak install flathub com.dec05eba.gpu_screen_recorder -y
 flatpak install flathub com.discordapp.Discord -y
 flatpak install flathub com.dropbox.Client -y
 flatpak install flathub com.github.IsmaelMartinez.teams_for_linux -y
