@@ -138,3 +138,8 @@ Edit `sync_address` at `~/.config/atuin/config.toml`
 atuin login -u <USERNAME>
 atuin sync
 ```
+
+## Power Management
+
+- tlp
+- power-profiles-daemon
