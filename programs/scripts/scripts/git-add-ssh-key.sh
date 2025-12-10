@@ -6,5 +6,5 @@ fi
 
 ssh-add ~/.ssh/github-signing-key
 
-# # on tahoe it looks like `--apple-use-keychain` flat is no longer required
+# # on tahoe it looks like `--apple-use-keychain` flag is no longer required
 # ssh-add --apple-use-keychain ~/.ssh/github-signing-key
