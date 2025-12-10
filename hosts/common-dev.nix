@@ -108,6 +108,7 @@
       kubectl
       kubectx
       kubernetes-helm
+      kubevirt
       # argocd
       # helm-dashboard
       # kind
