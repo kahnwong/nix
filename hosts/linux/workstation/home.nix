@@ -6,10 +6,10 @@ let
 in {
   imports = [
     ../../../programs/fish/fish.nix
-    ../../common.nix
     ../../common-dev.nix
-    ../../common-linux.nix
     ../../common-linux-desktop.nix
+    ../../common-linux.nix
+    ../../common.nix
   ];
 
   home.packages = with pkgs; [ ];

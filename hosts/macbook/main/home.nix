@@ -5,6 +5,6 @@ let
   '');
 in {
   imports =
-    [ ../../../programs/fish/fish.nix ../../common.nix ../../common-dev.nix ];
+    [ ../../../programs/fish/fish.nix ../../common-dev.nix ../../common.nix ];
   home.packages = with pkgs; [ ];
 }

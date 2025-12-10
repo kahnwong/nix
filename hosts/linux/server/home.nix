@@ -6,8 +6,8 @@ let
 in {
   imports = [
     ../../../programs/fish-generic/fish.nix
-    ../../common.nix
     ../../common-linux.nix
+    ../../common.nix
   ];
 
   home.packages = with pkgs; [ ];

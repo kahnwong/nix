@@ -6,11 +6,11 @@ let
 in {
   imports = [
     ../../../programs/fish-generic/fish.nix
-    ../../common.nix
     ../../../programs/ghostty/ghostty.nix
     ../../../programs/git/git.nix
     ../../../programs/starship/starship.nix
     ../../../programs/zed/zed.nix
+    ../../common.nix
   ];
 
   home.packages = with pkgs; [ caddy ];
