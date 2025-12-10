@@ -142,8 +142,9 @@
       mods
 
       # ---- misc ----
+      # atuin
+      # graphviz
       ast-grep
-      atuin
       beancount
       beanquery
       caddy
@@ -156,7 +157,6 @@
       tz
       wakatime
       zola
-      # graphviz
       # vhs
     ];
   };

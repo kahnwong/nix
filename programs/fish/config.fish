@@ -102,10 +102,10 @@ zoxide init fish | source
 # direnv
 direnv hook fish | source
 
-# atuin
-# atuin init fish | source
-# # see <https://github.com/atuinsh/atuin/issues/2940>
-atuin init fish | sed "s/-k up/up/g" | source
+# # atuin
+# # atuin init fish | source
+# # # see <https://github.com/atuinsh/atuin/issues/2940>
+# atuin init fish | sed "s/-k up/up/g" | source
 
 # mcfly
 mcfly init fish | source
