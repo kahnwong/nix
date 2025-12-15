@@ -15,6 +15,10 @@ function k8s-r440-tunnel
     ssh -L 6443:localhost:6443 r440
 end
 
+function k8s-howknow-tunnel
+    ssh -L 6443:localhost:6443 howknow-pc
+end
+
 # docker
 function docker-up
     docker compose down
