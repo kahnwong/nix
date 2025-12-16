@@ -68,3 +68,19 @@ StartupNotify=true
 Categories=Social;
 Icon=/home/kahnwong/.local/fleet/icons/facebook.svg
 EOF
+
+# ------ YubiKey Manager ------
+cat <<EOF >"$HOME/.local/share/applications/YubiKey Manager.desktop"
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=YubiKey Manager
+GenericName=YubiKey Manager
+Exec=sudo /usr/local/bin/yubikey-manager-qt-latest-linux.AppImage
+StartupNotify=true
+Categories=Utilities;
+Icon=/home/kahnwong/.local/fleet/icons/yubikey-manager.png
+EOF
+
+# ------ reload ------
+update-desktop-database ~/.local/share/applications/
