@@ -21,14 +21,15 @@ linux-desktop:
 	./scripts/linux-desktop/03_setup_app_icons.sh
 	./scripts/linux-desktop/04_setup_shortcuts.sh
 	./scripts/linux-desktop/05_setup_startups.sh
-	./scripts/linux-desktop/06_install_docker.sh
-	./scripts/linux-desktop/07_install_mullvad.sh
-	./scripts/linux-desktop/08_install_sourcegit.sh
-	./scripts/linux-desktop/09_install_ghostty.sh
-	./scripts/linux-desktop/10_install_foobar2000.sh
-	./scripts/linux-desktop/11_install_ydotool.sh
-	./scripts/linux-desktop/12_install_tlp.sh
-	./scripts/linux-desktop/13_install_firefox_nightly.sh
+	./scripts/linux-desktop/install_docker.sh
+	./scripts/linux-desktop/install_firefox_nightly.sh
+	./scripts/linux-desktop/install_foobar2000.sh
+	./scripts/linux-desktop/install_ghostty.sh
+	./scripts/linux-desktop/install_mullvad.sh
+	./scripts/linux-desktop/install_sourcegit.sh
+	./scripts/linux-desktop/install_tlp.sh
+	./scripts/linux-desktop/install_ydotool.sh
+	./scripts/linux-desktop/install_yubikey_manager.sh
 # 	./scripts/vscode/setup.sh
 
 ##############
