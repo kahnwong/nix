@@ -82,5 +82,18 @@ Categories=Utilities;
 Icon=/home/kahnwong/.local/fleet/icons/yubikey-manager.png
 EOF
 
+# ------ foobar2000 ------
+cat <<EOF >"$HOME/.local/share/applications/foobar2000.desktop"
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=foobar2000
+GenericName=foobar2000
+Exec=flatpak run org.winehq.Wine "/home/kahnwong/.var/app/org.winehq.Wine/data/wine/drive_c/Program Files (x86)/foobar2000/foobar2000.exe"
+StartupNotify=true
+Categories=Multimedia;
+Icon=/home/kahnwong/.local/fleet/icons/foobar2000.png
+EOF
+
 # ------ reload ------
 update-desktop-database ~/.local/share/applications/
