@@ -8,6 +8,7 @@ sudo apt install xclip -y
 sudo snap install mpv
 
 # flatpak install flathub com.github.hluk.copyq -y
+# flatpak install flathub io.kinvolk.Headlamp -y
 # flatpak install flathub io.mpv.Mpv -y
 flatpak install flathub app.freelens.Freelens -y
 flatpak install flathub com.calibre_ebook.calibre -y
@@ -31,8 +32,8 @@ flatpak install flathub com.rustdesk.RustDesk -y
 flatpak install flathub com.slack.Slack -y
 flatpak install flathub com.todoist.Todoist -y
 flatpak install flathub com.transmissionbt.Transmission -y
+flatpak install flathub com.valvesoftware.Steam -y
 flatpak install flathub dev.zed.Zed -y
-flatpak install flathub im.riot.Riot -y
 flatpak install flathub io.github.TransmissionRemoteGtk -y
 flatpak install flathub io.github.ciromattia.kcc -y
 flatpak install flathub io.github.dweymouth.supersonic -y
@@ -43,7 +44,6 @@ flatpak install flathub io.github.sigmasd.stimulator -y
 flatpak install flathub io.github.vemonet.EmojiMart -y
 flatpak install flathub io.gitlab.adhami3310.Impression -y
 flatpak install flathub io.gitlab.librewolf-community -y
-flatpak install flathub io.kinvolk.Headlamp -y
 flatpak install flathub md.obsidian.Obsidian -y
 flatpak install flathub net.puddletag.puddletag -y
 flatpak install flathub org.audacityteam.Audacity -y
