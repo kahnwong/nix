@@ -23,6 +23,7 @@ set PATH \
     $HOME/.cargo/bin \
     $HOME/.pixi/bin \
     $HOME/.local/share/JetBrains/Toolbox/apps/intellij-idea-ultimate/bin \
+    $HOME/.local/share/JetBrains/Toolbox/apps/intellij-idea/bin \
     /Applications/IntelliJ\ IDEA.app/Contents/MacOS \
     /opt/homebrew/bin \
     /snap/bin \
