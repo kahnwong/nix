@@ -181,3 +181,6 @@ alias ba="bean-add"
 # umamit
 if type -p umamit > /dev/null; umamit completion fish | source; end
 alias u="umamit"
+
+# cpubench
+if type -p umamit > /dev/null; cpubench completion fish | source; end
