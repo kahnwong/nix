@@ -88,6 +88,7 @@
       # ---- database ----
       atlas
       mongodb-tools
+      sqlite
 
       # ---- docker ----
       hadolint
