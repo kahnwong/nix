@@ -53,5 +53,7 @@ fish -c "fisher install danhper/fish-ssh-agent"
 #nvim --headless +PlugInstall +qall
 git clone https://github.com/kahnwong/nvchad-starter.git ~/.config/nvim --depth 1
 
-#### tailscale
-curl -fsSL https://tailscale.com/install.sh | sh
+#### tailscale - install here because on servers only this installation script would be run
+if [[ $(uname -s) == 'Linux' ]]; then
+	curl -fsSL https://tailscale.com/install.sh | sh
+fi
