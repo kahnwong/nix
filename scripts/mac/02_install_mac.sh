@@ -48,13 +48,13 @@ brew tap freelensapp/tap
 brew install --cask freelens
 
 # entertainment
-brew install --cask calibre
+# brew install --cask calibre
+# brew install --cask iina
+# brew install --cask jellyfin-media-player
+# brew install --cask xnviewmp
 brew install --cask fbreader
-brew install --cask iina
-brew install --cask jellyfin-media-player
 brew install --cask simple-comic
 brew install --cask transmission-remote-gui
-brew install --cask xnviewmp
 
 # quick look
 brew install --cask syntax-highlight
@@ -71,10 +71,10 @@ brew install --cask todotxt
 brew install lihaoyun6/tap/quickrecorder
 
 # utilities
+# brew install --cask anydesk
 # brew install ical-buddy
 brew install --cask alfred
 brew install --cask angry-ip-scanner
-brew install --cask anydesk
 brew install --cask appcleaner
 brew install --cask balenaetcher
 brew install --cask bitwarden

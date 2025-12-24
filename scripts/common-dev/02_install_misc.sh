@@ -101,6 +101,7 @@ gh extension install seachicken/gh-poi
 ## cons: need manual interactions
 
 # install executables via ubi
+echo "Installing ubi. On darwin you need to install homebrew beforehand, then re-run this"
 curl --silent --location \
 	https://raw.githubusercontent.com/houseabsolute/ubi/master/bootstrap/bootstrap-ubi.sh |
 	sudo sh
@@ -112,25 +113,25 @@ ubi --project elliot40404/modo --in ~/.local/bin/
 ubi --project fawni/def --in ~/.local/bin/
 ubi --project kahnwong/cpubench-release -e cpubench --in ~/.local/bin/
 ubi --project mongodb/kingfisher --in ~/.local/bin/
-ubi --project pythops/oryx --in ~/.local/bin/
 ubi --project terraform-docs/terraform-docs --in ~/.local/bin/ # nix borks
 ubi --project yt-dlp/yt-dlp --in ~/.local/bin/                 # nix still doesn't support latest version
 
-if [[ $(uname -s) == 'Darwin' ]]; then
+## os specific apps
+if [[ $(uname -s) == 'Linux' ]]; then
+	ubi --project pythops/oryx --in ~/.local/bin/
+elif [[ $(uname -s) == 'Darwin' ]]; then
 	gh install browsh-org/browsh
 fi
 
-## these need `sudo` to run
+## these need sudo
 if [[ $(uname -s) == 'Linux' ]]; then
 	UBI_INSTALL_PATH="/usr/bin/"
-
+	sudo ubi --project murat-cileli/clyp --in "$UBI_INSTALL_PATH"
 elif [[ $(uname -s) == 'Darwin' ]]; then
 	UBI_INSTALL_PATH="/usr/local/bin/"
 fi
-
 sudo ubi --project domcyrus/rustnet --in "$UBI_INSTALL_PATH"
 sudo ubi --project imsnif/bandwhich --in "$UBI_INSTALL_PATH"
 sudo ubi --project kahnwong/swissknife --in "$UBI_INSTALL_PATH"
-sudo ubi --project murat-cileli/clyp --in "$UBI_INSTALL_PATH"
 
 echo "" # force return exit 0 so it'll continue executing downstream steps. exit 1 is from `gh ext install` package already exists
