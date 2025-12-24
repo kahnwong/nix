@@ -69,7 +69,7 @@
       inu = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         modules = [
-          ./hosts/linux/demo/home.nix
+          ./hosts/linux/lite/home.nix
           {
             home = {
               username = "kahnwong";
