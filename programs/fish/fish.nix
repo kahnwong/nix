@@ -1,6 +1,8 @@
 { config, pkgs, lib, ... }:
 
 {
+  home.file.".config/fish/completions/garmin-tui.fish".source =
+    ./completions/garmin-tui.fish;
   home.file.".config/fish/conf.d/app_habit.fish".source =
     ./conf.d/app_habit.fish;
   home.file.".config/fish/conf.d/app_mods.fish".source = ./conf.d/app_mods.fish;
