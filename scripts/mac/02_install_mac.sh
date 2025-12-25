@@ -4,7 +4,7 @@ echo "================================= Install brew apps ======================
 
 # browser
 brew install --cask firefox
-brew install --cask firefox-nightly
+brew install --cask firefox@nightly
 brew install --cask google-chrome
 # brew install --cask microsoft-edge
 
