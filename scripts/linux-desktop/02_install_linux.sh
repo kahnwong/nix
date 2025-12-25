@@ -11,6 +11,7 @@ sudo snap install mpv
 # flatpak install flathub io.kinvolk.Headlamp -y
 # flatpak install flathub io.mpv.Mpv -y
 flatpak install flathub app.freelens.Freelens -y
+flatpak install flathub com.bitwarden.desktop -y
 flatpak install flathub com.calibre_ebook.calibre -y
 flatpak install flathub com.dec05eba.gpu_screen_recorder -y
 flatpak install flathub com.discordapp.Discord -y
@@ -54,5 +55,6 @@ flatpak install flathub org.gnome.gitlab.cheywood.Buffer -y
 flatpak install flathub org.gpodder.gpodder -y
 flatpak install flathub org.kde.okular -y
 flatpak install flathub org.mozilla.Thunderbird -y
+flatpak install flathub org.raspberrypi.rpi-imager -y
 flatpak install flathub org.telegram.desktop -y
 flatpak install flathub us.zoom.Zoom -y
