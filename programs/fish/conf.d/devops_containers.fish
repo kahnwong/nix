@@ -19,6 +19,10 @@ function k8s-howknow-tunnel
     ssh -L 6443:localhost:6443 howknow-pc
 end
 
+function kubevirt-r440-tunnel
+    ssh -L 30080:localhost:30080 r440
+end
+
 # docker
 function docker-up
     docker compose down
