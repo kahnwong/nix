@@ -8,22 +8,30 @@ in {
     # shell
     ../../../programs/fish-generic/fish.nix
     ../../../programs/starship/starship.nix
-    # apps
-    ../../../programs/erp/erp.nix
-    ../../../programs/habit-tracker/habit-tracker.nix
-    ../../../programs/topydo/topydo.nix
-    ../../../programs/umamit/umamit.nix
   ];
 
   home.packages = with pkgs; [
     bat
+    curl
     direnv
     eza
+    fd
     fish
+    go
+    gping
+    htop
+    jq
+    lazydocker
     mcfly
+    ncdu
+    oxker
     sops
     starship
+    tere
+    tree
     uv
+    watch
+    wget
     yq-go
     zoxide
   ];
