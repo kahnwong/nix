@@ -98,6 +98,7 @@
     git-cliff
     git-lfs
     git-who
+    glab
     pre-commit
     prek
     svu

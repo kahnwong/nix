@@ -96,6 +96,9 @@ gh extension install github/gh-models
 gh extension install redraw/gh-install
 gh extension install seachicken/gh-poi
 
+# gitlab
+glab auth login
+
 # install executables via gh release
 ## better for .deb or tools requiring global discovery
 ## cons: need manual interactions
