@@ -128,6 +128,9 @@
       trivy
       zizmor
 
+      # ---- networking ----
+      mitmproxy
+
       # ---- tests ----
       hurl
       hyperfine
