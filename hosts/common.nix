@@ -50,9 +50,9 @@
 
       # ---- system ----
       # nvtopPackages.full # eats a lot of space
-      du-dust
       dua
       duf
+      dust
       htop
       ncdu
       procs
@@ -82,7 +82,7 @@
       yq-go
 
       # ---- downloader ----
-      aria
+      aria2
       wget
 
       # ---- runtimes & toolchains ----

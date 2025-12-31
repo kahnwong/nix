@@ -159,7 +159,7 @@
       libqalculate
       pop
       tz
-      wakatime
+      wakatime-cli
       zola
       # vhs
     ];
