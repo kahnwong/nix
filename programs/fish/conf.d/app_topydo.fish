@@ -13,7 +13,7 @@ end
 
 # query
 function tt
-    topydo due:"<=today"
+    topydo ls -s desc:priority,asc:context,asc:project due:"<=today"
 end
 
 function tmr
@@ -34,7 +34,7 @@ function tw
 end
 
 function tkr
-    topydo @tinkering
+    topydo ls -s desc:priority,asc:project @tinkering
 end
 
 # add
