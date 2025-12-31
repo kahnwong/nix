@@ -91,6 +91,8 @@ brew install --cask the-unarchiver
 brew install --cask tyke
 brew install --cask yubico-authenticator
 brew install --cask yubico-yubikey-manager
+brew install mole
+npx mac-cleaner-cli
 uv tool install brew-cleaner
 
 # peripheral software
