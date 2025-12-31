@@ -3,8 +3,9 @@
 ############################
 # node
 ############################
-fnm install v22.12.0
-fnm default v22.12.0
+NODE_VERSION="v24.12.0"
+fnm install "$NODE_VERSION"
+fnm default "$NODE_VERSION"
 
 ############################
 # go
