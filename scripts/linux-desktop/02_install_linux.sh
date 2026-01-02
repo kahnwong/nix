@@ -15,6 +15,7 @@ sudo snap install mpv
 #io.mpv.Mpv
 flatpak install -y flathub \
 	app.freelens.Freelens \
+	com.bilingify.readest \
 	com.bitwarden.desktop \
 	com.calibre_ebook.calibre \
 	com.dec05eba.gpu_screen_recorder \
@@ -23,7 +24,6 @@ flatpak install -y flathub \
 	com.github.PintaProject.Pinta \
 	com.github.iwalton3.jellyfin-media-player \
 	com.github.jeromerobert.pdfarranger \
-	com.github.johnfactotum.Foliate \
 	com.github.qarmin.czkawka \
 	com.github.ransome1.sleek \
 	com.github.tchx84.Flatseal \
