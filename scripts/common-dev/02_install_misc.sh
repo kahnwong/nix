@@ -123,19 +123,14 @@ ubi --project yt-dlp/yt-dlp --in ~/.local/bin/                 # nix still doesn
 ## os specific apps
 if [[ $(uname -s) == 'Linux' ]]; then
 	ubi --project pythops/oryx --in ~/.local/bin/
+	sudo ubi --project hengyoush/kyanos --in /usr/local/bin/
+	sudo ubi --project murat-cileli/clyp --in /usr/local/bin/
 elif [[ $(uname -s) == 'Darwin' ]]; then
 	gh install browsh-org/browsh
 fi
 
-## these need sudo
-if [[ $(uname -s) == 'Linux' ]]; then
-	UBI_INSTALL_PATH="/usr/bin/"
-	sudo ubi --project murat-cileli/clyp --in "$UBI_INSTALL_PATH"
-elif [[ $(uname -s) == 'Darwin' ]]; then
-	UBI_INSTALL_PATH="/usr/local/bin/"
-fi
-sudo ubi --project domcyrus/rustnet --in "$UBI_INSTALL_PATH"
-sudo ubi --project imsnif/bandwhich --in "$UBI_INSTALL_PATH"
-sudo ubi --project kahnwong/swissknife --in "$UBI_INSTALL_PATH"
+sudo ubi --project domcyrus/rustnet --in /usr/local/bin/
+sudo ubi --project imsnif/bandwhich --in /usr/local/bin/
+sudo ubi --project kahnwong/swissknife --in /usr/local/bin/
 
 echo "" # force return exit 0 so it'll continue executing downstream steps. exit 1 is from `gh ext install` package already exists
