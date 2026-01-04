@@ -65,9 +65,6 @@ function d-iso-8601
     echo $value | copy
 end
 
-# crush
-set -gx AWS_BEARER_TOKEN_BEDROCK $(get_fish_secret AWS_BEARER_TOKEN_BEDROCK)
-
 # lemonade
 function llm
     /usr/local/bin/lemonade-server serve & /usr/local/share/lemonade-server/app/lemonade
