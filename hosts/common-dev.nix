@@ -129,6 +129,7 @@
       zizmor
 
       # ---- networking ----
+      caddy
       mitmproxy
 
       # ---- tests ----
@@ -146,22 +147,21 @@
       mods
 
       # ---- misc ----
-      # atuin
       # graphviz
+      # vhs
       ast-grep
       beancount
       beanquery
-      caddy
       caligula
       charm-freeze
       f2
       fava
+      imagemagick
       libqalculate
       pop
       tz
       wakatime-cli
       zola
-      # vhs
     ];
   };
 }

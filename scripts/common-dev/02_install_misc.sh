@@ -72,6 +72,7 @@ yarn global add playwright-chromium
 ############################
 # kubectl
 ############################
+krew install crd-wizard
 krew install images
 krew install node-resource
 krew install nodepools
@@ -100,11 +101,9 @@ gh extension install seachicken/gh-poi
 # gitlab
 glab auth login
 
-# install executables via gh release
-## better for .deb or tools requiring global discovery
-## cons: need manual interactions
-
-# install executables via ubi
+####################
+# executables
+####################
 echo "Installing ubi. On darwin you need to install homebrew beforehand, then re-run this"
 curl --silent --location \
 	https://raw.githubusercontent.com/houseabsolute/ubi/master/bootstrap/bootstrap-ubi.sh |
@@ -120,7 +119,11 @@ ubi --project mongodb/kingfisher --in ~/.local/bin/
 ubi --project terraform-docs/terraform-docs --in ~/.local/bin/ # nix borks
 ubi --project yt-dlp/yt-dlp --in ~/.local/bin/                 # nix still doesn't support latest version
 
-## os specific apps
+sudo ubi --project domcyrus/rustnet --in /usr/local/bin/
+sudo ubi --project imsnif/bandwhich --in /usr/local/bin/
+sudo ubi --project kahnwong/swissknife --in /usr/local/bin/
+
+# os specific apps
 if [[ $(uname -s) == 'Linux' ]]; then
 	ubi --project pythops/oryx --in ~/.local/bin/
 	sudo ubi --project hengyoush/kyanos --in /usr/local/bin/
@@ -129,6 +132,4 @@ elif [[ $(uname -s) == 'Darwin' ]]; then
 	gh install browsh-org/browsh
 fi
 
-sudo ubi --project domcyrus/rustnet --in /usr/local/bin/
-sudo ubi --project imsnif/bandwhich --in /usr/local/bin/
-sudo ubi --project kahnwong/swissknife --in /usr/local/bin/
+curl -fsSL https://cli.kiro.dev/install | bash
