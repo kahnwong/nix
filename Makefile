@@ -13,7 +13,7 @@ mac:
 	./scripts/mac/01_setup_mac.sh
 	./scripts/mac/02_install_mac.sh
 	./scripts/mac/03_install_batt.sh
-# 	./scripts/vscode/setup.sh
+ 	# ./scripts/vscode/setup.sh
 
 linux-desktop:
 	./scripts/linux-desktop/01_setup_linux.sh
@@ -30,7 +30,7 @@ linux-desktop:
 	./scripts/linux-desktop/install_tlp.sh
 	./scripts/linux-desktop/install_ydotool.sh
 	./scripts/linux-desktop/install_yubikey_manager.sh
-# 	./scripts/vscode/setup.sh
+	# ./scripts/vscode/setup.sh
 
 ##############
 # UTILS
@@ -40,6 +40,9 @@ decrypt-credentials:
 
 update:
 	./scripts/update.sh
+
+migrate:
+	./scripts/migrate.sh
 
 # NIX
 apply:
@@ -51,6 +54,3 @@ ssh-keys-backup:
 
 ssh-keys-restore:
 	./scripts/ssh-keys-restore.sh
-
-migrate:
-	./scripts/migrate.sh

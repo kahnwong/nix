@@ -132,5 +132,3 @@ fi
 sudo ubi --project domcyrus/rustnet --in /usr/local/bin/
 sudo ubi --project imsnif/bandwhich --in /usr/local/bin/
 sudo ubi --project kahnwong/swissknife --in /usr/local/bin/
-
-echo "" # force return exit 0 so it'll continue executing downstream steps. exit 1 is from `gh ext install` package already exists
