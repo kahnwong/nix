@@ -32,6 +32,7 @@
     "pylsp": true,
     "scss": true,
     "terraform": true,
+    "toml": true,
     "vue": true,
     "wakatime": true,
   },
