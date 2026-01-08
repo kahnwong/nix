@@ -25,6 +25,7 @@
     "basher": true,
     "docker-compose": true,
     "dockerfile": true,
+    "fish": true,
     "git-firefly": true,
     "golangci-lint": true,
     "html": true,
