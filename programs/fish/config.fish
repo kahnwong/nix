@@ -167,3 +167,10 @@ for cmd in $completion_commands
         $cmd completion fish | source
     end
 end
+
+if type -q repo-switcher
+    repo-switcher completion fish | source
+
+    # wrap the completions so 's' behaves like 'repo-switcher'
+    complete -c s -w repo-switcher
+end

@@ -69,3 +69,11 @@ end
 function llm
     /usr/local/bin/lemonade-server serve & /usr/local/share/lemonade-server/app/lemonade
 end
+
+# repo-switcher
+function s
+    set path (command repo-switcher $argv)
+    if test $status -eq 0
+        cd $path
+    end
+end

@@ -29,6 +29,7 @@ go install github.com/kahnwong/config-init@latest
 go install github.com/kahnwong/habit-tracker@latest
 go install github.com/kahnwong/invoice@latest
 go install github.com/kahnwong/pgconn@latest
+go install github.com/kahnwong/repo-switcher@latest
 go install github.com/kahnwong/totp@latest
 go install github.com/kahnwong/waka@latest
 go install github.com/kahnwong/workspace-init@latest
