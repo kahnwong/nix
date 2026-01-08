@@ -18,6 +18,19 @@ function gc
     git commit -nm $argv
 end
 
+function gca
+    git commit --amend -n
+end
+
+function gp
+    git push
+end
+
+function gl
+    git pull
+end
+
+# ---- merge ---- #
 function gmr
     git checkout $argv
     git rebase master
@@ -33,23 +46,11 @@ function gmrm
     git merge $argv
 end
 
-function gca
-    git commit --amend -n
-end
-
-function gp
-    git push
-end
-
-function gl
-    git pull
-end
-
+# ---- diffs ---- #
 function gd
     git diff
 end
 
-# ---- diffs ---- #
 function gds
     git diff --staged
 end
@@ -62,14 +63,17 @@ function diff
     difft $argv
 end
 
-# ---- pre-commit ---- #
+# ---- utils ---- #
 function p
     prek $argv
 end
 
-# ---- changelog ---- #
 function gr
     git cliff --unreleased --tag $argv > changelog.md
     gh release create $argv -F changelog.md
     rm changelog.md
+end
+
+function glicense
+    gh license create mit --author "Karn Wong <karn@karnwong.me>"
 end
