@@ -71,7 +71,7 @@ function llm
 end
 
 # repo-switcher
-function s
+function r
     set path (command repo-switcher $argv)
     if test $status -eq 0
         cd $path

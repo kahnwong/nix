@@ -171,6 +171,6 @@ end
 if type -q repo-switcher
     repo-switcher completion fish | source
 
-    # wrap the completions so 's' behaves like 'repo-switcher'
-    complete -c s -w repo-switcher
+    # wrap the completions so 'r' behaves like 'repo-switcher'
+    complete -c r -w repo-switcher
 end
