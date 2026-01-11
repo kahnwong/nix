@@ -18,6 +18,7 @@
     ../programs/mods/mods.nix
     ../programs/pgconn/pgconn.nix
     ../programs/proxmox/proxmox.nix
+    ../programs/repo-switcher/repo-switcher.nix
     ../programs/topydo/topydo.nix
     ../programs/totp/totp.nix
     ../programs/umamit/umamit.nix
