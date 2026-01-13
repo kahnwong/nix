@@ -3,6 +3,7 @@
     "NixOS configuration and home-manager configurations for mac and debian gnu/linux";
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-25.11";
     # nixos-hardware.url = "github:nixos/nixos-hardware/master";
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -14,7 +15,7 @@
     };
   };
 
-  outputs = { darwin, home-manager, nixpkgs, ... }: {
+  outputs = { darwin, home-manager, nixpkgs, nixpkgs-stable, ... }: {
     homeManagerConfigurations = {
       # ----------------- mac ----------------- #
       macbookMain = darwin.lib.darwinSystem {
@@ -27,7 +28,10 @@
             home-manager.users.kahnwong = ./hosts/macbook/main/home.nix;
           }
         ];
-        specialArgs = { inherit nixpkgs; };
+        specialArgs = {
+          inherit nixpkgs;
+          pkgs-stable = nixpkgs-stable.legacyPackages.aarch64-darwin;
+        };
       };
       macbookDemo = darwin.lib.darwinSystem {
         system = "aarch64-darwin";
@@ -39,7 +43,10 @@
             home-manager.users.demo = ./hosts/macbook/demo/home.nix;
           }
         ];
-        specialArgs = { inherit nixpkgs; };
+        specialArgs = {
+          inherit nixpkgs;
+          pkgs-stable = nixpkgs-stable.legacyPackages.aarch64-darwin;
+        };
       };
       # ----------------- linux ----------------- #
       workstation = home-manager.lib.homeManagerConfiguration {
@@ -53,6 +60,9 @@
             };
           }
         ];
+        extraSpecialArgs = {
+          pkgs-stable = nixpkgs-stable.legacyPackages.x86_64-linux;
+        };
       };
       demo = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;

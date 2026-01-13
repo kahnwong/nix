@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ pkgs, pkgs-stable, ... }: {
   imports = [
     ../programs/aws/aws.nix
     ../programs/ghostty/ghostty.nix
@@ -162,7 +162,7 @@
       pop
       tz
       wakatime-cli
-      zola
+      pkgs-stable.zola
     ];
   };
 }
