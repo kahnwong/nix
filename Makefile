@@ -21,6 +21,7 @@ linux-desktop:
 	./scripts/linux-desktop/03_setup_app_icons.sh
 	./scripts/linux-desktop/04_setup_shortcuts.sh
 	./scripts/linux-desktop/05_setup_startups.sh
+	./scripts/linux-desktop/06_setup_wacom.sh
 	./scripts/linux-desktop/install_docker.sh
 	./scripts/linux-desktop/install_firefox_nightly.sh
 	./scripts/linux-desktop/install_foobar2000.sh
