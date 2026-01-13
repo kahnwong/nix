@@ -1,4 +1,5 @@
-{ pkgs, pkgs-stable, ... }: {
+{ pkgs, pkgs-stable, ... }:
+{
   imports = [
     ../programs/aws/aws.nix
     ../programs/ghostty/ghostty.nix
@@ -60,7 +61,7 @@
 
       # ---- nix ----
       nix-search-cli
-      nixfmt-classic
+      nixfmt
 
       # ---- node ----
       # prettier
