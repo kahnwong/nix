@@ -34,3 +34,7 @@ function tfcost-html
         --sync-usage-file \
         --path .
 end
+
+function tfdocs
+    terraform-docs markdown table --html=false --anchor=false --output-file README.md --output-mode inject .
+end
