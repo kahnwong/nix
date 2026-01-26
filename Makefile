@@ -30,7 +30,7 @@ linux-desktop:
 	./scripts/linux-desktop/install_sourcegit.sh
 	./scripts/linux-desktop/install_tlp.sh
 	./scripts/linux-desktop/install_ydotool.sh
-	./scripts/linux-desktop/install_yubikey_manager.sh
+	# ./scripts/linux-desktop/install_yubikey_manager.sh # appimage borks on ubuntu 24, it clashes with gdm
 	# ./scripts/vscode/setup.sh
 
 ##############
