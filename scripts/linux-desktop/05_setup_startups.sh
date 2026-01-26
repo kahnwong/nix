@@ -2,19 +2,19 @@
 
 mkdir -p "$HOME/.config/autostart"
 
-# ------ Dropbox ------
-cat <<EOF >"$HOME/.config/autostart/com.dropbox.Client.desktop"
-[Desktop Entry]
-Type=Application
-Exec=/var/lib/flatpak/exports/bin/com.dropbox.Client
-Hidden=false
-NoDisplay=false
-X-GNOME-Autostart-enabled=true
-Name[en_US]=dropbox
-Name=dropbox
-Comment[en_US]=
-Comment=
-EOF
+## ------ Dropbox ------
+#cat <<EOF >"$HOME/.config/autostart/com.dropbox.Client.desktop"
+#[Desktop Entry]
+#Type=Application
+#Exec=/var/lib/flatpak/exports/bin/com.dropbox.Client
+#Hidden=false
+#NoDisplay=false
+#X-GNOME-Autostart-enabled=true
+#Name[en_US]=dropbox
+#Name=dropbox
+#Comment[en_US]=
+#Comment=
+#EOF
 
 # # ------ CopyQ ------
 # # On Wayland, add prefix `env QT_QPA_PLATFORM=xcb`
