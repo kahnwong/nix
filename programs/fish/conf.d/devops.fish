@@ -38,3 +38,8 @@ end
 function tfdocs
     terraform-docs markdown table --html=false --anchor=false --output-file README.md --output-mode inject .
 end
+
+# scratch workspace
+function firecrack
+    ssh -t kubevirt-ubuntu-r440 firecrack start
+end
