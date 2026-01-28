@@ -142,7 +142,13 @@ Then reboot.
 
 Install [lemonade](https://github.com/lemonade-sdk/lemonade/releases). Use the full packakge.
 
-## Firefox Containers
+## Firefox
+
+### Fonts
+
+Use `waree` for Thai sans-serif.
+
+### Containers
 
 - Facebook Container
   - messenger
