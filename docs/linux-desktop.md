@@ -124,12 +124,6 @@ sudo chmod +x /lib/systemd/system-sleep/fingerprint-wakeup.sh
 
 Then reboot.
 
-## Flameshot
-
-```bash
-flatpak permission-set screenshot screenshot org.flameshot.Flameshot yes
-```
-
 <!-- ## Atuin -->
 <!---->
 <!-- Edit `sync_address` at `~/.config/atuin/config.toml` -->
@@ -147,3 +141,12 @@ flatpak permission-set screenshot screenshot org.flameshot.Flameshot yes
 ## LLM
 
 Install [lemonade](https://github.com/lemonade-sdk/lemonade/releases). Use the full packakge.
+
+## Firefox Containers
+
+- Facebook Container
+  - messenger
+- Gemini Container
+  - Gemini
+- AI Studio Container
+  - AI Studio

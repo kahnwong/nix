@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# check chrome profile path via `chrome://version` -> `Profile Path`
+
 # copy icons
 mkdir -p ~/.local/fleet/icons
 cp -r ./scripts/linux-desktop/icons/* ~/.local/fleet/icons/
@@ -11,7 +13,7 @@ Version=1.0
 Type=Application
 Name=LINE
 GenericName=LINE Chat
-Exec=/var/lib/flatpak/exports/bin/com.google.Chrome --app="chrome-extension://ophjlpahpchlmihnnnihgmmeilfjmjjc/index.html"
+Exec=flatpak run com.google.Chrome --app="chrome-extension://ophjlpahpchlmihnnnihgmmeilfjmjjc/index.html" --profile-directory="Default"
 StartupNotify=true
 Categories=Social;
 Icon=/home/kahnwong/.local/fleet/icons/line.png
@@ -50,37 +52,37 @@ Version=1.0
 Type=Application
 Name=Messenger
 GenericName=Messenger
-Exec=/var/lib/flatpak/exports/bin/com.google.Chrome https://messenger.com
+Exec=open https://messenger.com
 StartupNotify=true
 Categories=Social;
 Icon=/home/kahnwong/.local/fleet/icons/messenger.png
 EOF
 
-# ------ Facebook ------
-cat <<EOF >"$HOME/.local/share/applications/Facebook.desktop"
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=Facebook
-GenericName=Facebook
-Exec=/var/lib/flatpak/exports/bin/com.google.Chrome https://facebook.com
-StartupNotify=true
-Categories=Social;
-Icon=/home/kahnwong/.local/fleet/icons/facebook.svg
-EOF
+## ------ Facebook ------
+#cat <<EOF >"$HOME/.local/share/applications/Facebook.desktop"
+#[Desktop Entry]
+#Version=1.0
+#Type=Application
+#Name=Facebook
+#GenericName=Facebook
+#Exec=flatpak run com.google.Chrome https://facebook.com
+#StartupNotify=true
+#Categories=Social;
+#Icon=/home/kahnwong/.local/fleet/icons/facebook.svg
+#EOF
 
-# ------ YubiKey Manager ------
-cat <<EOF >"$HOME/.local/share/applications/YubiKey Manager.desktop"
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=YubiKey Manager
-GenericName=YubiKey Manager
-Exec=sudo /usr/local/bin/yubikey-manager-qt-latest-linux.AppImage
-StartupNotify=true
-Categories=Utilities;
-Icon=/home/kahnwong/.local/fleet/icons/yubikey-manager.png
-EOF
+## ------ YubiKey Manager ------
+#cat <<EOF >"$HOME/.local/share/applications/YubiKey Manager.desktop"
+#[Desktop Entry]
+#Version=1.0
+#Type=Application
+#Name=YubiKey Manager
+#GenericName=YubiKey Manager
+#Exec=sudo /usr/local/bin/yubikey-manager-qt-latest-linux.AppImage
+#StartupNotify=true
+#Categories=Utilities;
+#Icon=/home/kahnwong/.local/fleet/icons/yubikey-manager.png
+#EOF
 
 # ------ foobar2000 ------
 cat <<EOF >"$HOME/.local/share/applications/foobar2000.desktop"

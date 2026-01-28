@@ -62,3 +62,6 @@ flatpak install -y flathub \
 	org.raspberrypi.rpi-imager \
 	org.telegram.desktop \
 	us.zoom.Zoom
+
+# set flameshot permission
+flatpak permission-set screenshot screenshot org.flameshot.Flameshot yes
