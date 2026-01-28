@@ -26,6 +26,7 @@ rustup default stable
 #go install github.com/protomaps/go-pmtiles@latest
 go install github.com/kahnwong/article-summarizer@latest
 go install github.com/kahnwong/config-init@latest
+go install github.com/kahnwong/erp@latest
 go install github.com/kahnwong/habit-tracker@latest
 go install github.com/kahnwong/invoice@latest
 go install github.com/kahnwong/pgconn@latest
