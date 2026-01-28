@@ -97,5 +97,18 @@ Categories=Multimedia;
 Icon=/home/kahnwong/.local/fleet/icons/foobar2000.png
 EOF
 
+# ------ Gemini ------
+cat <<EOF >"$HOME/.local/share/applications/Gemini.desktop"
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Gemini
+GenericName=Gemini
+Exec=open https://gemini.google.com
+StartupNotify=true
+Categories=Productivity;
+Icon=/home/kahnwong/.local/fleet/icons/gemini.png
+EOF
+
 # ------ reload ------
 update-desktop-database ~/.local/share/applications/
