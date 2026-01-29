@@ -1,5 +1,5 @@
-default-api: google
-default-model: gemini-2.5-flash-lite
+default-api: custom
+default-model: claude-sonnet-4-5
 roles:
   "default": [ ]
   "snippet-generator":
@@ -20,23 +20,32 @@ apis:
       gemini-2.5-flash-lite:
         max-input-chars: 4194304
 
-  ollama:
-    base-url: http://localhost:11434
-    models: # https://ollama.com/library
-      "gemma3:1b":
-        max-input-chars: 650000
-      "gemma3:4b":
-        max-input-chars: 650000
-      "gemma3n:e4b":
-        max-input-chars: 650000
-
-  github-models: # https://github.com/marketplace/models
-    base-url: https://models.github.ai/inference
-    api-key-env: MODS_GITHUB_PERSONAL_ACCESS_TOKEN
+  custom:
+    base-url: https://ai-gateway.karnwong.me/v1
+    api-key-env: MODS_CUSTOM_API_TOKEN
     models:
-      openai/gpt-4.1-nano:
+      claude-sonnet-4-5:
         max-input-chars: 392000
-      openai/gpt-4.1-mini:
-        max-input-chars: 392000
-      deepseek/DeepSeek-V3-0324:
-        max-input-chars: 392000
+      claude-haiku-4-5:
+        max-input-chars: 794000
+
+#  ollama:
+#    base-url: http://localhost:11434
+#    models: # https://ollama.com/library
+#      "gemma3:1b":
+#        max-input-chars: 650000
+#      "gemma3:4b":
+#        max-input-chars: 650000
+#      "gemma3n:e4b":
+#        max-input-chars: 650000
+
+#  github-models: # https://github.com/marketplace/models
+#    base-url: https://models.github.ai/inference
+#    api-key-env: MODS_GITHUB_PERSONAL_ACCESS_TOKEN
+#    models:
+#      openai/gpt-4.1-nano:
+#        max-input-chars: 392000
+#      openai/gpt-4.1-mini:
+#        max-input-chars: 392000
+#      deepseek/DeepSeek-V3-0324:
+#        max-input-chars: 392000
