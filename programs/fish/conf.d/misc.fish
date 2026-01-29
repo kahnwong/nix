@@ -19,8 +19,11 @@ function cpubench
 end
 
 # pop
-set -gx RESEND_API_KEY $(get_fish_secret POP_RESEND_API_KEY)
-set -gx POP_FROM $(get_fish_secret POP_EMAIL_FROM)
+function pop
+    set -x RESEND_API_KEY $(get_fish_secret POP_RESEND_API_KEY)
+    set -x POP_FROM $(get_fish_secret POP_EMAIL_FROM)
+    command pop $argv
+end
 
 # syncthing
 function sts
