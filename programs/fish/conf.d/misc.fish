@@ -18,6 +18,18 @@ function cpubench
     CPUBENCH_API_KEY="$(get_fish_secret CPUBENCH_API_KEY)" command cpubench $argv
 end
 
+function fcat
+     if test "$argv[2]" = "-p"
+        fd $argv | xargs cat
+     else
+        fd $argv | xargs bat
+     end
+end
+
+function fvi
+    fd $argv | xargs vi
+end
+
 # pop
 function pop
     set -x RESEND_API_KEY $(get_fish_secret POP_RESEND_API_KEY)
