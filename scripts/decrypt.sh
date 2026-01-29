@@ -58,3 +58,11 @@ sops -d ./programs/fleet-dashboard/config.sops.yaml >~/.config/fleet-dashboard/c
 # # add dummy file so it can write config
 mkdir -p ~/.config/qalculate/
 touch ~/.config/qalculate/qalc.cfg
+
+# crush
+mkdir -p ~/.local/share/crush
+sops -d ./programs/crush/crush.sops.json >~/.local/share/crush/crush.json
+
+# opencode
+mkdir -p ~/.config/opencode
+sops -d ./programs/opencode/opencode.sops.json >~/.config/opencode/opencode.json

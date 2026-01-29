@@ -1,0 +1,34 @@
+{
+	"$schema": "ENC[AES256_GCM,data:NYhcb2ALjHnY7BcH4eet91gFkIIit9gdJvwzUlK7AQ==,iv:8gHwC8/qO0z5Pln8A3GZHFV529jo3gVxCudO31VVj5o=,tag:ql2ri+QVtpIUHWel2Yo8Dw==,type:str]",
+	"plugin": [
+		"ENC[AES256_GCM,data:0si/Sp+NCBoXiOHEUZ3bOYo=,iv:McuYwJQZJKu/JqEkEl3haTmzjKuopJEfdasTz/tV9I0=,tag:ki1aV74B0cKSNr+5ULpJbg==,type:str]"
+	],
+	"provider": {
+		"custom": {
+			"name": "ENC[AES256_GCM,data:wEyu64Di,iv:iwSI9nXj6rqFfAPaoHgtbCRZ1meIalcn+DkdIDkVRNs=,tag:Hyt2inNFnAVoKslWV1Jtpw==,type:str]",
+			"options": {
+				"baseURL": "ENC[AES256_GCM,data:EOzvX+jMSH2JsEz7lmaquQc4MLhRJyHHao85raqVoEef,iv:96qvn1nJUeX0R4nxIeojxKsLOsrPjLBWAgFTIhCItzU=,tag:JVgjbU+v3AKcFCifBaE7Qw==,type:str]"
+			},
+			"models": {
+				"claude-sonnet-4-5": {
+					"name": "ENC[AES256_GCM,data:/fxp3AvkBRl48kAXlHiHhdc=,iv:vTlOvNhby3MNpNKX1V6ugggnfrdlChBdsB7ytjsxWjg=,tag:/USIlcibZH7cR28z1KwdfQ==,type:str]"
+				},
+				"claude-haiku-4-5": {
+					"name": "ENC[AES256_GCM,data:Y193/FSt2BeIBkLGZRYVjg==,iv:XqJ0FJmK6VC4fdfIQpwa8oUHec23f7uttAzl6aOmAHM=,tag:2FFIaK7wc6h+9FUb0lCadA==,type:str]"
+				}
+			}
+		}
+	},
+	"sops": {
+		"age": [
+			{
+				"recipient": "age1m954z8ajdedsmvr9u89ud5v2zednmxgvvzuahpfy5fcdp97yn99ssy2wmm",
+				"enc": "-----BEGIN AGE ENCRYPTED FILE-----\nYWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBMTDBzWTE0SXkrSW9KU2VP\nZ2xGcmQwZm5IUzR0UzhtRUpvaDdDTkVaZ0RzCjc0UlRwemN5b0JRZ0tUNlRtV29M\nSFh4d0hMalorVkt0WlZSUlEwVnVpaHMKLS0tIHpnaFJ1UHBDL0EyS1p4MUhsRXZ5\nMVFNYUtiMWxlWUhGdmp6cVREc2RHZVkKpk0SSeGXc7ERWTT+RM0yZ8Haq8sYcQtt\nSxuPdEgQqQXbgsPrV6oaSJt06DNHv2rGVbLxGsuNi2WcyDbNUwlmYw==\n-----END AGE ENCRYPTED FILE-----\n"
+			}
+		],
+		"lastmodified": "2026-01-29T10:17:06Z",
+		"mac": "ENC[AES256_GCM,data:F7r00ujeJitfTZsC1DqvDGBzk0jZuOV8u/xNgenu4BQQXRC24F9221veO1+4qzx8xay12E+aL/0KBZXahPFTsysYvTijiBvujRCrBcdib8zZFTXjT2lrk7hZwT1R3QTJHTgVAnzlojXQV4DpNnUvL1FjEeu/KAHs/0c2J9ocLNM=,iv:MfwDaskgegjaf3gRrrmr/gnAcvd7B2qpzWsC3g0G4xA=,tag:Jm6dnB+GDfVMJBoLCLCiRQ==,type:str]",
+		"unencrypted_suffix": "_unencrypted",
+		"version": "3.11.0"
+	}
+}

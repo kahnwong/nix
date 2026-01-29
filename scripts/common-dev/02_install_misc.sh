@@ -69,6 +69,7 @@ npm set prefix ~/.npm-global
 yarn global add @quasar/cli
 yarn global add create-quasar
 yarn global add create-slidev
+yarn global add opencode-ai
 yarn global add playwright-chromium
 
 ############################

@@ -1,4 +1,5 @@
 #!/bin/bash
 
-gh extension install dlvhdr/gh-dash
-gh extension install seachicken/gh-poi
+make decrypt-credentials
+yarn global add opencode-ai
+ubi --project charmbracelet/crush --in ~/.local/bin
