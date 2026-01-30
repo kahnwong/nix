@@ -64,5 +64,6 @@ mkdir -p ~/.local/share/crush
 sops -d ./programs/crush/crush.sops.json >~/.local/share/crush/crush.json
 
 # opencode
-mkdir -p ~/.config/opencode
+mkdir -p ~/.config/opencode/plugins
 sops -d ./programs/opencode/opencode.sops.json >~/.config/opencode/opencode.json
+sops -d ./programs/opencode/plugins/notifications.sops.js >~/.config/opencode/plugins/notifications.js
