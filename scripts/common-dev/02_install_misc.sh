@@ -104,6 +104,10 @@ gh extension install seachicken/gh-poi
 # gitlab
 glab auth login
 
+# forgejo
+tea login
+tea login default git.karnwong.me
+
 ####################
 # executables
 ####################
