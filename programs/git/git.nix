@@ -102,5 +102,6 @@
     pre-commit
     prek
     svu
+    tea
   ];
 }
