@@ -63,13 +63,23 @@ echo "$(whoami) ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/99-nopasswd-$
 
 ## Post-installation instructions
 
-### Linux: Set default shell
+### Linux
+
+#### Set default shell
 
 ```bash
 `chsh` and type `$HOME/.nix-profile/bin/fish`
 
 # or this one
 `vi /etc/passwd` and specify shell for your user
+```
+
+#### Add nix path to sudo
+
+`sudo vi /root/.bashrc`
+
+```bash
+export PATH="$PATH:/home/kahnwong/.nix-profile/bin"
 ```
 
 ### MacOS: Misc config
