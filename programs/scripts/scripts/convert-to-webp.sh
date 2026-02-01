@@ -5,7 +5,7 @@ for image_file in "$(pwd)"/*.{jpg,png,heic}; do
 		base_name=$(basename -- "$image_file")
 		file_name="${base_name%.*}"
 
-		convert "$image_file" "$(pwd)/$file_name.webp"
+		magick "$image_file" "$(pwd)/$file_name.webp"
 		echo "Converted $image_file to $(pwd)/$file_name.webp"
 
 		rm "$image_file"
