@@ -80,6 +80,9 @@
       # zls
       # zlint
 
+      # ---- misc ----
+      typos
+
       # -------- others --------
       # # ---- azure ----
       # azure-cli

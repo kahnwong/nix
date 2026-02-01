@@ -1,4 +1,9 @@
-{ config, pkgs, lib, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
 
 {
   #  home.file.".terraformrc".source = ./.terraformrc;
@@ -15,8 +20,7 @@
   #    };
   #  };
 
-  home.file.".terraform.d/plugin-cache/.terraformrc".source =
-    ./.terraformrc; # dummy file for init directory
+  home.file.".terraform.d/plugin-cache/.terraformrc".source = ./.terraformrc; # dummy file for init directory
   home.file.".tofurc".source = ./.tofurc;
 
   home.packages = with pkgs; [
@@ -24,7 +28,7 @@
     opentofu
 
     ## tools
-    # terraform-docs # borks
+    terraform-docs # borks
     infracost
   ];
 }

@@ -1,4 +1,5 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   imports = [
     ../programs/nvim/nvim.nix
     ../programs/sampler/sampler.nix
@@ -50,6 +51,7 @@
 
       # ---- system ----
       # nvtopPackages.full # eats a lot of space
+      bandwhich
       dua
       duf
       dust

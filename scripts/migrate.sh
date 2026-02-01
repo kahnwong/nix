@@ -1,5 +1,5 @@
 #!/bin/bash
 
-make decrypt-credentials
-yarn global add opencode-ai
-ubi --project charmbracelet/crush --in ~/.local/bin
+rm ~/.local/bin/typos
+rm ~/.local/bin/terraform-docs
+sudo rm /usr/local/bin/bandwhich
