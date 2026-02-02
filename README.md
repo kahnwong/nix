@@ -63,6 +63,10 @@ echo "$(whoami) ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/99-nopasswd-$
 
 ## Post-installation instructions
 
+### uBlock Origin Blocklist
+
+- [Microsoft GitHub Less Social](https://codeberg.org/toastal/github-less-social)
+
 ### Linux
 
 #### Set default shell
