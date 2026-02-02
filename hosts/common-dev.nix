@@ -166,7 +166,7 @@
       pop
       tz
       wakatime-cli
-      pkgs-stable.zola
+      zola # pkgs-stable.zola
     ];
   };
 }
