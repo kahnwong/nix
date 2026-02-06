@@ -1,6 +1,5 @@
 {
-  description =
-    "NixOS configuration and home-manager configurations for mac and debian gnu/linux";
+  description = "NixOS configuration and home-manager configurations for mac and debian gnu/linux";
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-25.11";
@@ -15,140 +14,160 @@
     };
   };
 
-  outputs = { darwin, home-manager, nixpkgs, nixpkgs-stable, ... }: {
-    homeManagerConfigurations = {
-      # ----------------- mac ----------------- #
-      macbookMain = darwin.lib.darwinSystem {
-        system = "aarch64-darwin";
-        modules = [
-          ./hosts/macbook/base/darwin-configuration.nix
-          home-manager.darwinModules.home-manager
-          {
-            home-manager.useGlobalPkgs = true;
-            home-manager.users.kahnwong = ./hosts/macbook/main/home.nix;
-          }
-        ];
-        specialArgs = {
-          inherit nixpkgs;
-          pkgs-stable = nixpkgs-stable.legacyPackages.aarch64-darwin;
+  outputs =
+    {
+      darwin,
+      home-manager,
+      nixpkgs,
+      nixpkgs-stable,
+      ...
+    }:
+    {
+      homeManagerConfigurations = {
+        # ----------------- mac ----------------- #
+        macbookMain = darwin.lib.darwinSystem {
+          system = "aarch64-darwin";
+          modules = [
+            ./hosts/macbook/base/darwin-configuration.nix
+            home-manager.darwinModules.home-manager
+            {
+              home-manager.useGlobalPkgs = true;
+              home-manager.users.kahnwong = ./hosts/macbook/main/home.nix;
+            }
+          ];
+          specialArgs = {
+            inherit nixpkgs;
+            pkgs-stable = nixpkgs-stable.legacyPackages.aarch64-darwin;
+          };
         };
-      };
-      macbookDemo = darwin.lib.darwinSystem {
-        system = "aarch64-darwin";
-        modules = [
-          ./hosts/macbook/base/darwin-configuration-demo.nix
-          home-manager.darwinModules.home-manager
-          {
-            home-manager.useGlobalPkgs = true;
-            home-manager.users.demo = ./hosts/macbook/demo/home.nix;
-          }
-        ];
-        specialArgs = {
-          inherit nixpkgs;
-          pkgs-stable = nixpkgs-stable.legacyPackages.aarch64-darwin;
+        macbookDemo = darwin.lib.darwinSystem {
+          system = "aarch64-darwin";
+          modules = [
+            ./hosts/macbook/base/darwin-configuration-demo.nix
+            home-manager.darwinModules.home-manager
+            {
+              home-manager.useGlobalPkgs = true;
+              home-manager.users.demo = ./hosts/macbook/demo/home.nix;
+            }
+          ];
+          specialArgs = {
+            inherit nixpkgs;
+            pkgs-stable = nixpkgs-stable.legacyPackages.aarch64-darwin;
+          };
         };
-      };
-      # ----------------- linux ----------------- #
-      workstation = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.x86_64-linux;
-        modules = [
-          ./hosts/linux/workstation/home.nix
-          {
-            home = {
-              username = "kahnwong";
-              homeDirectory = "/home/kahnwong";
-            };
-          }
-        ];
-        extraSpecialArgs = {
-          pkgs-stable = nixpkgs-stable.legacyPackages.x86_64-linux;
+        # ----------------- linux ----------------- #
+        workstation = home-manager.lib.homeManagerConfiguration {
+          pkgs = nixpkgs.legacyPackages.x86_64-linux;
+          modules = [
+            ./hosts/linux/workstation/home.nix
+            {
+              home = {
+                username = "kahnwong";
+                homeDirectory = "/home/kahnwong";
+              };
+            }
+          ];
+          extraSpecialArgs = {
+            pkgs-stable = nixpkgs-stable.legacyPackages.x86_64-linux;
+          };
         };
-      };
-      demo = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.x86_64-linux;
-        modules = [
-          ./hosts/linux/demo/home.nix
-          {
-            home = {
-              username = "demo";
-              homeDirectory = "/home/demo";
-            };
-          }
-        ];
-      };
-      inu = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.x86_64-linux;
-        modules = [
-          ./hosts/linux/lite/home.nix
-          {
-            home = {
-              username = "kahnwong";
-              homeDirectory = "/home/kahnwong";
-            };
-          }
-        ];
-      };
-      server = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.x86_64-linux;
-        modules = [
-          ./hosts/linux/server/home.nix
-          {
-            home = {
-              username = "ubuntu";
-              homeDirectory = "/home/ubuntu";
-            };
-          }
-        ];
-      };
-      serverOnPrem = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.x86_64-linux;
-        modules = [
-          ./hosts/linux/server/home.nix
-          {
-            home = {
-              username = "kahnwong";
-              homeDirectory = "/home/kahnwong";
-            };
-          }
-        ];
-      };
-      serverR440 = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.x86_64-linux;
-        modules = [
-          ./hosts/linux/server/home.nix
-          {
-            home = {
-              username = "r440-server";
-              homeDirectory = "/home/r440-server";
-            };
-          }
-        ];
-      };
-      # ----------------- pi ----------------- #
-      pi = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.aarch64-linux;
-        modules = [
-          ./hosts/linux/server/home.nix
-          {
-            home = {
-              username = "ubuntu";
-              homeDirectory = "/home/ubuntu";
-            };
-          }
-        ];
-      };
-      argon = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.aarch64-linux;
-        modules = [
-          ./hosts/linux/argon/home.nix
-          {
-            home = {
-              username = "ubuntu";
-              homeDirectory = "/home/ubuntu";
-            };
-          }
-        ];
+        demo = home-manager.lib.homeManagerConfiguration {
+          pkgs = nixpkgs.legacyPackages.x86_64-linux;
+          modules = [
+            ./hosts/linux/demo/home.nix
+            {
+              home = {
+                username = "demo";
+                homeDirectory = "/home/demo";
+              };
+            }
+          ];
+        };
+        lite = home-manager.lib.homeManagerConfiguration {
+          pkgs = nixpkgs.legacyPackages.x86_64-linux;
+          modules = [
+            ./hosts/linux/lite/home.nix
+            {
+              home = {
+                username = "kahnwong";
+                homeDirectory = "/home/kahnwong";
+              };
+            }
+          ];
+        };
+        dev = home-manager.lib.homeManagerConfiguration {
+          pkgs = nixpkgs.legacyPackages.x86_64-linux;
+          modules = [
+            ./hosts/linux/dev/home.nix
+            {
+              home = {
+                username = "kahnwong";
+                homeDirectory = "/home/kahnwong";
+              };
+            }
+          ];
+        };
+        server = home-manager.lib.homeManagerConfiguration {
+          pkgs = nixpkgs.legacyPackages.x86_64-linux;
+          modules = [
+            ./hosts/linux/server/home.nix
+            {
+              home = {
+                username = "ubuntu";
+                homeDirectory = "/home/ubuntu";
+              };
+            }
+          ];
+        };
+        serverOnPrem = home-manager.lib.homeManagerConfiguration {
+          pkgs = nixpkgs.legacyPackages.x86_64-linux;
+          modules = [
+            ./hosts/linux/server/home.nix
+            {
+              home = {
+                username = "kahnwong";
+                homeDirectory = "/home/kahnwong";
+              };
+            }
+          ];
+        };
+        serverR440 = home-manager.lib.homeManagerConfiguration {
+          pkgs = nixpkgs.legacyPackages.x86_64-linux;
+          modules = [
+            ./hosts/linux/server/home.nix
+            {
+              home = {
+                username = "r440-server";
+                homeDirectory = "/home/r440-server";
+              };
+            }
+          ];
+        };
+        # ----------------- pi ----------------- #
+        pi = home-manager.lib.homeManagerConfiguration {
+          pkgs = nixpkgs.legacyPackages.aarch64-linux;
+          modules = [
+            ./hosts/linux/server/home.nix
+            {
+              home = {
+                username = "ubuntu";
+                homeDirectory = "/home/ubuntu";
+              };
+            }
+          ];
+        };
+        argon = home-manager.lib.homeManagerConfiguration {
+          pkgs = nixpkgs.legacyPackages.aarch64-linux;
+          modules = [
+            ./hosts/linux/argon/home.nix
+            {
+              home = {
+                username = "ubuntu";
+                homeDirectory = "/home/ubuntu";
+              };
+            }
+          ];
+        };
       };
     };
-  };
 }
