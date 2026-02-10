@@ -5,8 +5,16 @@ background-opacity = 0.8
 
 keybind = ctrl+shift+t=new_tab
 
-keybind = ctrl+b>shift+apostrophe=new_split:down
-keybind = ctrl+b>shift+five=new_split:right
+# ---- tmux inspired ----
+# keybind = ctrl+b>shift+apostrophe=new_split:down
+# keybind = ctrl+b>shift+five=new_split:right
 
-keybind = ctrl+b>h=goto_split:previous
-keybind = ctrl+b>l=goto_split:next
+# keybind = ctrl+b>h=goto_split:previous
+# keybind = ctrl+b>l=goto_split:next
+# -----------------------
+
+keybind = ctrl+shift+)=new_split:down
+keybind = ctrl+shift+(=new_split:right
+
+keybind = ctrl+[=goto_split:previous
+keybind = ctrl+]=goto_split:next
