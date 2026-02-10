@@ -24,6 +24,7 @@ set PATH \
     $HOME/.pixi/bin \
     $HOME/.local/share/JetBrains/Toolbox/apps/intellij-idea-ultimate/bin \
     $HOME/.local/share/JetBrains/Toolbox/apps/intellij-idea/bin \
+    $HOME/.Garmin/ConnectIQ/Sdks/connectiq-sdk-lin-8.4.1-2026-02-03-e9f77eeaa/bin \
     /Applications/IntelliJ\ IDEA.app/Contents/MacOS \
     /opt/homebrew/bin \
     /snap/bin \
