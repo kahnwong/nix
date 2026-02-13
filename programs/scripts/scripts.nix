@@ -12,5 +12,6 @@
   home.file."scripts/,gh-archive-repo.sh".source = ./scripts/gh-archive-repo.sh;
   home.file."scripts/,gh-list-pr.sh".source = ./scripts/gh-list-pr.sh;
   home.file."scripts/,gh-list-repos.sh".source = ./scripts/gh-list-repos.sh;
+  home.file."scripts/,uv-init.sh".source = ./scripts/uv-init.sh;
   home.file."scripts/,zip-compress.sh".source = ./scripts/zip-compress.sh;
 }

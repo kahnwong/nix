@@ -68,12 +68,6 @@ if type -p fnm > /dev/null; fnm env --use-on-cd --shell fish | source; end
 # python
 set UV_CACHE_DIR ~/.cache/uv
 
-function uv-init
-    uv python pin 3.13
-    uv init --package --author-from git --no-description
-    uv venv
-end
-
 ####################
 # CONFIG: EDITORS
 ####################
