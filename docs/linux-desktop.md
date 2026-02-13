@@ -151,9 +151,16 @@ Use `waree` for Thai sans-serif.
 
 ### Containers
 
-- Facebook Container
-  - messenger
-- Gemini Container
-  - Gemini
-- AI Studio Container
-  - AI Studio
+```js
+// const icons = ["fingerprint", "briefcase", "dollar", "cart", "vacation", "gift", "food", "fruit", "pet", "tree", "chill", "circle"]
+// if (url.hostname === "gemini.google.com") return { name: "Workspace", icon: "circle", color: "blue" };
+
+const workspaceHosts = ["gemini.google.com", "meet.google.com", "console.cloud.google.com", "notebooklm.google.com"];
+if (workspaceHosts.includes(url.hostname)) {
+  return { name: "Workspace", icon: "circle", color: "blue" };
+}
+
+if (url.hostname === "www.google.com") return { name: "Search", icon: "circle", color: "green" };
+if (url.hostname === "www.youtube.com") return { name: "YouTube", icon: "circle", color: "red" };
+if (url.hostname === "contacts.google.com") return { name: "Contacts", icon: "circle", color: "purple" };
+```
