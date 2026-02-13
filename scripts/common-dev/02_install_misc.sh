@@ -134,8 +134,17 @@ if [[ $(uname -s) == 'Linux' ]]; then
 	ubi --project pythops/oryx --in ~/.local/bin/
 	sudo ubi --project hengyoush/kyanos --in /usr/local/bin/
 	sudo ubi --project murat-cileli/clyp --in /usr/local/bin/
+
+	# terraform
+	wget -O - https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+	echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(grep -oP '(?<=UBUNTU_CODENAME=).*' /etc/os-release || lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+	sudo apt update && sudo apt install terraform
+
+	# garmin connect sdk
+	curl -Ls https://raw.githubusercontent.com/pcolby/connectiq-sdk-manager/main/install.sh | bash -r
 elif [[ $(uname -s) == 'Darwin' ]]; then
 	gh install browsh-org/browsh
 fi
 
+# kiro
 curl -fsSL https://cli.kiro.dev/install | bash
