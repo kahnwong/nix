@@ -34,6 +34,7 @@ go install github.com/kahnwong/repo-switcher@latest
 go install github.com/kahnwong/totp@latest
 go install github.com/kahnwong/waka@latest
 go install github.com/kahnwong/workspace-init@latest
+go install github.com/spf13/cobra-cli@latest
 
 ## private utils
 export GIT_CONFIG_GLOBAL="$HOME/.config/git/profiles/go-install"
