@@ -152,9 +152,9 @@
       mods
 
       # ---- misc ----
+      # ast-grep
       # graphviz
       # vhs
-      ast-grep
       beancount
       beanquery
       caligula
@@ -163,6 +163,8 @@
       fava
       imagemagick
       libqalculate
+      numbat
+      pastel
       pop
       tz
       wakatime-cli

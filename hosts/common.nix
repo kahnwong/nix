@@ -52,6 +52,7 @@
       # ---- system ----
       # nvtopPackages.full # eats a lot of space
       bandwhich
+      diskus
       dua
       duf
       dust
