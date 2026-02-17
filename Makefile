@@ -24,7 +24,6 @@ linux-desktop:
 	./scripts/linux-desktop/06_setup_wacom.sh
 	./scripts/linux-desktop/install_docker.sh
 	./scripts/linux-desktop/install_firefox_nightly.sh
-	./scripts/linux-desktop/install_foobar2000.sh
 	./scripts/linux-desktop/install_ghostty.sh
 	./scripts/linux-desktop/install_mullvad.sh
 	./scripts/linux-desktop/install_sourcegit.sh
