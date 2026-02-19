@@ -155,7 +155,7 @@ Use `waree` for Thai sans-serif.
 // const icons = ["fingerprint", "briefcase", "dollar", "cart", "vacation", "gift", "food", "fruit", "pet", "tree", "chill", "circle"]
 // if (url.hostname === "gemini.google.com") return { name: "Workspace", icon: "circle", color: "blue" };
 
-const workspaceHosts = ["gemini.google.com", "meet.google.com", "console.cloud.google.com", "notebooklm.google.com"];
+const workspaceHosts = ["gemini.google.com", "meet.google.com", "console.cloud.google.com", "notebooklm.google.com", "gmail.com"];
 if (workspaceHosts.includes(url.hostname)) {
   return { name: "Workspace", icon: "circle", color: "blue" };
 }
