@@ -19,9 +19,8 @@ linux-desktop:
 	./scripts/linux-desktop/01_setup_linux.sh
 	./scripts/linux-desktop/02_install_linux.sh
 	./scripts/linux-desktop/03_setup_app_shortcuts.sh
-	./scripts/linux-desktop/04_setup_shortcuts.sh
-	./scripts/linux-desktop/05_setup_startups.sh
-	./scripts/linux-desktop/06_setup_wacom.sh
+	./scripts/linux-desktop/04_setup_startups.sh
+	./scripts/linux-desktop/05_setup_gnome.sh
 	./scripts/linux-desktop/install_docker.sh
 	./scripts/linux-desktop/install_firefox_nightly.sh
 	./scripts/linux-desktop/install_ghostty.sh

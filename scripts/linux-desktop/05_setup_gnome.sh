@@ -17,3 +17,7 @@ dconf load / <programs/gnome/wm-keybindings.conf
 
 # export via: `dconf dump / | sed -n '/\[org.gnome.desktop.input-sources/,/^$/p' > programs/gnome/input-sources.conf`
 dconf load / <programs/gnome/input-sources.conf
+
+# ------ wacom ------
+# export via: `dconf dump / | sed -n '/\[org.gnome.desktop.peripherals.tablets/,/^$/p' > programs/gnome/wacom.conf`
+dconf load / <programs/gnome/wacom.conf
