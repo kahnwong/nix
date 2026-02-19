@@ -21,3 +21,7 @@ dconf load / <programs/gnome/input-sources.conf
 # ------ wacom ------
 # export via: `dconf dump / | sed -n '/\[org.gnome.desktop.peripherals.tablets/,/^$/p' > programs/gnome/wacom.conf`
 dconf load / <programs/gnome/wacom.conf
+
+# ------ dock ------
+# export via: `dconf read /org/gnome/shell/favorite-apps > programs/gnome/gnome-shell-favorites.conf`
+dconf write /org/gnome/shell/favorite-apps "$(cat programs/gnome/gnome-shell-favorites.conf)"
