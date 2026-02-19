@@ -63,13 +63,8 @@ function sts
 end
 
 # notes
-function np
-    cd ~/Apps/notes/notes-personal/ || exit
-    vi "+:NvimTreeToggle"
-end
-
-function nw
-    cd ~/Apps/notes/notes-work/ || exit
+function n
+    cd ~/Git/kahnwong/notes/notes-personal/ || exit
     vi "+:NvimTreeToggle"
 end
 
