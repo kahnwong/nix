@@ -80,6 +80,7 @@
       # ---- data manipulation ----
       fx
       glow
+      jnv
       jq
       visidata
       yq-go

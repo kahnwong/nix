@@ -118,6 +118,7 @@ curl --silent --location \
 	https://raw.githubusercontent.com/houseabsolute/ubi/master/bootstrap/bootstrap-ubi.sh |
 	sudo sh
 
+ubi --project AlexsJones/llmfit --in ~/.local/bin/
 ubi --project bodaay/HuggingFaceModelDownloader --in ~/.local/bin/ --rename-exe hfdownloader
 ubi --project charmbracelet/crush --in ~/.local/bin
 ubi --project elliot40404/modo --in ~/.local/bin/
