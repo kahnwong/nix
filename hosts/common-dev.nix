@@ -10,19 +10,14 @@
     ../programs/zed/zed.nix
 
     # apps
-    ../programs/article-summarizer/article-summarizer.nix
     ../programs/book-summarizer/book-summarizer.nix
     ../programs/browsh/browsh.nix
-    ../programs/erp/erp.nix
-    ../programs/habit-tracker/habit-tracker.nix
     ../programs/media-discord-rpc/media-discord-rpc.nix
     ../programs/mods/mods.nix
     ../programs/pgconn/pgconn.nix
     ../programs/proxmox/proxmox.nix
     ../programs/repo-switcher/repo-switcher.nix
-    ../programs/topydo/topydo.nix
     ../programs/totp/totp.nix
-    ../programs/umamit/umamit.nix
     ../programs/wallabag-tagger/wallabag-tagger.nix
   ];
 

@@ -1,11 +1,21 @@
-{ config, pkgs, nixpkgs, lib, ... }:
+{
+  config,
+  pkgs,
+  nixpkgs,
+  lib,
+  ...
+}:
 let
-  nixFlakes = (pkgs.writeScriptBin "nixFlakes" ''
-    exec ${pkgs.nixUnstable}/bin/nix --experimental-features "nix-command flakes" "$@"
-  '');
-in {
+  nixFlakes = (
+    pkgs.writeScriptBin "nixFlakes" ''
+      exec ${pkgs.nixUnstable}/bin/nix --experimental-features "nix-command flakes" "$@"
+    ''
+  );
+in
+{
   imports = [
     ../../../programs/fish/fish.nix
+    ../../apps.nix
     ../../common-dev.nix
     ../../common-linux-desktop.nix
     ../../common-linux.nix
