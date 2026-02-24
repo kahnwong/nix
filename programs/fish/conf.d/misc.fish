@@ -42,19 +42,12 @@ function sts
     switch (hostname)
         case Karn-MBP3.local
             set SYNCTHING_API_KEY SYNCTHING_API_KEY_M3
-            set SYNCTHING_FOLDER_ID ku6v2-jkm7y
         case sailfish
             set SYNCTHING_API_KEY SYNCTHING_API_KEY_SAILFISH
-            set SYNCTHING_FOLDER_ID ku6v2-jkm7y
         case redfin
             set SYNCTHING_API_KEY SYNCTHING_API_KEY_REDFIN
-            set SYNCTHING_FOLDER_ID ku6v2-jkm7y
-        case pi4
-            set SYNCTHING_API_KEY SYNCTHING_API_KEY_PI4
-            set SYNCTHING_FOLDER_ID ku6v2-jkm7y
         case inu
             set SYNCTHING_API_KEY SYNCTHING_API_KEY_INU
-            set SYNCTHING_FOLDER_ID ku6v2-jkm7y
     end
 
     curl "http://127.0.0.1:8384/rest/db/scan?folder=$SYNCTHING_FOLDER_ID" \
