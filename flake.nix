@@ -131,6 +131,18 @@
             }
           ];
         };
+        apps = home-manager.lib.homeManagerConfiguration {
+          pkgs = nixpkgs.legacyPackages.x86_64-linux;
+          modules = [
+            ./hosts/linux/apps/home.nix
+            {
+              home = {
+                username = "ubuntu";
+                homeDirectory = "/home/ubuntu";
+              };
+            }
+          ];
+        };
         # ----------------- pi ----------------- #
         pi = home-manager.lib.homeManagerConfiguration {
           pkgs = nixpkgs.legacyPackages.aarch64-linux;

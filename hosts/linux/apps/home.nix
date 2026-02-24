@@ -15,12 +15,10 @@ in
 {
   imports = [
     ../../../programs/fish-generic/fish.nix
-    ../../apps.nix
     ../../common.nix
+    ../../apps.nix
   ];
 
   home.packages = with pkgs; [
   ];
-
-  home.stateVersion = "25.11";
 }
