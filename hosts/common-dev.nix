@@ -142,7 +142,6 @@
       wasmtime
 
       # ---- llm ----
-      gemini-cli
       llama-cpp
       mods
 
