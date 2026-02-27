@@ -18,6 +18,10 @@ function cpubench
     CPUBENCH_API_KEY="$(get_fish_secret CPUBENCH_API_KEY)" command cpubench $argv
 end
 
+function retrooo
+    RETROOO_API_KEY="$(get_fish_secret RETROOO_API_KEY)" command retrooo $argv
+end
+
 function fcat
      if test "$argv[2]" = "-p"
         fd $argv | xargs cat
