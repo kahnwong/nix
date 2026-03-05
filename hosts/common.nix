@@ -48,6 +48,7 @@
       rustscan
       sendme
       somo
+      whois
 
       # ---- system ----
       # nvtopPackages.full # eats a lot of space
