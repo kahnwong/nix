@@ -63,7 +63,7 @@ set PATH $PATH:$ANDROID_SDK_ROOT/platform-tools
 
 # node
 alias nvm="fnm"
-if type -p fnm > /dev/null; fnm env --use-on-cd --shell fish | source; end
+if command -v fnm > /dev/null; fnm env --use-on-cd --shell fish | source; end
 
 # python
 set UV_CACHE_DIR ~/.cache/uv
@@ -158,7 +158,7 @@ set -l completion_commands \
     umamit
 
 for cmd in $completion_commands
-    if type -p $cmd > /dev/null
+    if command -v $cmd > /dev/null
         $cmd completion fish | source
     end
 end
