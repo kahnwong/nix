@@ -14,8 +14,7 @@ let
 in
 {
   imports = [
-    ../../../programs/fish-generic/fish.nix
-    ../../common.nix
+    ../../../programs/fish/fish-generic.nix
     ../../apps.nix
   ];
 

@@ -5,6 +5,7 @@ nix flake update --experimental-features 'nix-command flakes'
 ./scripts/apply.sh
 nix-store --gc
 # nix-collect-garbage --delete-old  # only run this once in a while
+# nix-store --optimize # free-up space without deleting
 
 # fish
 fisher update
