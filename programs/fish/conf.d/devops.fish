@@ -1,5 +1,6 @@
 # caddy
 function caddy-serve
+    echo "Serving at http://localhost:3000"
     caddy file-server --listen 0.0.0.0:3000
 end
 
