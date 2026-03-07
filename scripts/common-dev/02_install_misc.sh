@@ -60,6 +60,7 @@ cargo install --locked cross
 pixi global install qgis
 uv tool install "dvc[s3]"
 uv tool install huggingface_hub[cli]
+uv tool install magika
 uv tool install pip_search
 uv tool install topydo[columns]
 
