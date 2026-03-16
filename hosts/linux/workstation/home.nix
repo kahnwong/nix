@@ -3,6 +3,7 @@
   pkgs,
   nixpkgs,
   lib,
+  flox,
   ...
 }:
 let
@@ -22,5 +23,7 @@ in
     ../../common.nix
   ];
 
-  home.packages = with pkgs; [ ];
+  home.packages = with pkgs; [
+    flox.packages.${pkgs.system}.default
+  ];
 }
