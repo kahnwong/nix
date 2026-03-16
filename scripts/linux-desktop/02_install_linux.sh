@@ -56,6 +56,7 @@ flatpak install -y flathub \
   org.gpodder.gpodder \
   org.kde.okular \
   org.mozilla.Thunderbird \
+  org.openshot.OpenShot \
   org.raspberrypi.rpi-imager \
   org.telegram.desktop \
   us.zoom.Zoom
