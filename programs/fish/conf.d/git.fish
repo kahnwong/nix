@@ -39,6 +39,11 @@ function gmr
     git branch -D $argv
 end
 
+function gmr-batch
+    git fetch
+    gh pr list --json headRefName --template '{{range .}}{{ .headRefName }}{{"\n"}}{{end}}' | xargs -I {} fish -c "gmr {} || git rebase --abort && git checkout master && git branch -D {}"
+end
+
 function gmrm
     git checkout $argv
     git rebase main
