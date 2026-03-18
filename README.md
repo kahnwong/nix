@@ -67,6 +67,12 @@ echo "$(whoami) ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/99-nopasswd-$
 
 - [Microsoft GitHub Less Social](https://codeberg.org/toastal/github-less-social)
 
+### OpenCode
+
+```bash
+opencode auth login
+```
+
 ### Linux
 
 #### Set default shell
