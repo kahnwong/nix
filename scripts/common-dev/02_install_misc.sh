@@ -152,5 +152,8 @@ fi
 # kiro
 curl -fsSL https://cli.kiro.dev/install | bash
 
+# claude
+curl -fsSL https://claude.ai/install.sh | bash
+
 # git-ai
 curl -sSL https://usegitai.com/install.sh | bash
