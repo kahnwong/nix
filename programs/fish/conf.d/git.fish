@@ -1,5 +1,5 @@
 function gg
-    git log --graph --oneline --all
+    git log --graph --oneline
 end
 
 function gf
