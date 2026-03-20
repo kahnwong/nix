@@ -99,11 +99,6 @@ direnv hook fish | source
 # git-ai
 fish_add_path -g $HOME/.git-ai/bin  # need to use git binary from this path
 
-# # atuin
-# # atuin init fish | source
-# # # see <https://github.com/atuinsh/atuin/issues/2940>
-# atuin init fish | sed "s/-k up/up/g" | source
-
 # mcfly
 mcfly init fish | source
 set MCFLY_KEY_SCHEME vim
@@ -116,9 +111,6 @@ function cat
     bat --theme "Monokai Extended" $argv
 end
 
-function vi
-    nvim $argv
-end
 
 function tere
     set --local result (command tere $argv)
@@ -128,6 +120,10 @@ end
 function tmux
     zellij $argv
 end
+
+alias cp="cpx"
+alias tmux="zellij"
+alias vi="nvim"
 
 ###############################
 # APPS: Completions + Alias

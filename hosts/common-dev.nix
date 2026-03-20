@@ -153,6 +153,7 @@
       beanquery
       caligula
       charm-freeze
+      cpx
       f2
       fava
       imagemagick
