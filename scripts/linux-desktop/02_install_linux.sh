@@ -51,6 +51,7 @@ flatpak install -y flathub \
   org.fkoehler.KTailctl \
   org.flameshot.Flameshot \
   org.freefilesync.FreeFileSync \
+  org.gnome.Boxes \
   org.gnome.Fractal \
   org.gnome.gitlab.cheywood.Buffer \
   org.gpodder.gpodder \
