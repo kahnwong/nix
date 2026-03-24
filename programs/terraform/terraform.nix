@@ -24,11 +24,7 @@
   home.file.".tofurc".source = ./.tofurc;
 
   home.packages = with pkgs; [
-    # terraform # non-free
-    opentofu
-
-    ## tools
-    terraform-docs # borks
+    terraform-docs
     infracost
   ];
 }
