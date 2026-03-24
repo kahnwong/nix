@@ -6,6 +6,10 @@ function oryx
     sudo /home/kahnwong/.local/bin/oryx
 end
 
+function bandwhich
+    sudo /home/kahnwong/.nix-profile/bin/bandwhich
+end
+
 function ping
     gping $argv
 end

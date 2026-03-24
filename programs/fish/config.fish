@@ -66,6 +66,9 @@ if command -v fnm > /dev/null; fnm env --use-on-cd --shell fish | source; end
 # python
 set UV_CACHE_DIR ~/.cache/uv
 
+# mise
+mise activate fish | source
+
 ####################
 # CONFIG: EDITORS
 ####################
