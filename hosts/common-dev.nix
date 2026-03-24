@@ -158,7 +158,6 @@
       fava
       imagemagick
       libqalculate
-      mise
       numbat
       pastel
       pop

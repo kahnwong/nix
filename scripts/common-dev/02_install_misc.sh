@@ -1,13 +1,6 @@
 #!/bin/bash
 
 ############################
-# node
-############################
-NODE_VERSION="v24.12.0"
-fnm install "$NODE_VERSION"
-fnm default "$NODE_VERSION"
-
-############################
 # go
 ############################
 GO_VERSION="go1.25.4"
@@ -22,6 +15,7 @@ rustup default stable
 ############################
 # mise
 ############################
+mise use -g node@24
 mise use -g terraform@latest
 
 ############################

@@ -91,8 +91,8 @@
       wget
 
       # ---- runtimes & toolchains ----
-      fnm
       go
+      mise
       rustup
       uv
       yarn

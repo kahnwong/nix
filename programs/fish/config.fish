@@ -59,10 +59,6 @@ set ANDROID_SDK_ROOT $HOME/Android/Sdk
 set PATH $PATH:$ANDROID_SDK_ROOT/tools
 set PATH $PATH:$ANDROID_SDK_ROOT/platform-tools
 
-# node
-alias nvm="fnm"
-if command -v fnm > /dev/null; fnm env --use-on-cd --shell fish | source; end
-
 # python
 set UV_CACHE_DIR ~/.cache/uv
 
