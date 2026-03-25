@@ -24,6 +24,6 @@ in
   ];
 
   home.packages = with pkgs; [
-    # flox.packages.${pkgs.system}.default  // no use case for now
+      flox.packages.${pkgs.system}.default
   ];
 }
