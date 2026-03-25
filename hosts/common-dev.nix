@@ -1,6 +1,7 @@
 { pkgs, pkgs-stable, ... }:
-{
-  imports = [
+
+let
+  programImports = [
     ../programs/aws/aws.nix
     ../programs/ghostty/ghostty.nix
     ../programs/git/git.nix
@@ -21,153 +22,116 @@
     ../programs/wallabag-tagger/wallabag-tagger.nix
   ];
 
+  toolchainsAndLinters = with pkgs; [
+    # android
+    android-tools
+    flutter
+    # bash
+    beautysh
+    shellcheck
+    shfmt
+    # c
+    uncrustify
+    usort
+    # golang
+    golangci-lint
+    gopls
+    gotools
+    goreleaser
+    air
+    # nix
+    nix-search-cli
+    nixfmt
+    # python
+    pixi
+    nbstripout
+    ruff
+    # yaml
+    yamlfmt
+    yamllint
+    # # zig
+    # zig_0_13
+    # misc
+    hadolint
+    sqruff
+    typos
+  ];
+
+  cloudAndOps = with pkgs; [
+    # # database
+    # atlas
+    # mongodb-tools
+    sqlite
+    # gcp
+    google-cloud-sdk
+    google-cloud-sql-proxy
+    # kubernetes
+    k9s
+    krew
+    ktop
+    kube-capacity
+    kubectl
+    kubectx
+    kubernetes-helm
+    kubevirt
+    # markdown
+    markdown-link-check
+    markdownlint-cli2
+    mdsf
+    mw
+    rumdl
+    # security
+    grype
+    syft
+    trivy
+    zizmor
+  ];
+
+  webAndTesting = with pkgs; [
+    # networking
+    caddy
+    mitmproxy
+    # tests
+    hurl
+    hyperfine
+    k6
+    oha
+    # wasm
+    wasmtime
+  ];
+
+  aiAndLlm = with pkgs; [
+    llama-cpp
+    mods
+  ];
+
+  misc = with pkgs; [
+    beancount
+    beanquery
+    caligula
+    charm-freeze
+    f2
+    fava
+    imagemagick
+    libqalculate
+    numbat
+    pastel
+    pop
+    tz
+    wakatime-cli
+    zola # use pkgs-stable.zola here if needed
+  ];
+
+in
+{
+  imports = programImports;
+
   programs.java = {
     enable = true;
     package = pkgs.temurin-bin;
   };
 
   home = {
-    packages = with pkgs; [
-      # -------- runtimes & toolchains & linters --------
-      # ---- bash ----
-      beautysh
-      shellcheck
-      shfmt
-
-      # ---- c ----
-      uncrustify
-      usort
-
-      # # ---- gleam ----
-      # gleam
-      # erlang
-      # rebar3
-
-      # ---- golang ----
-      golangci-lint
-      gopls
-      gotools
-      goreleaser
-      air
-
-      # ---- java ----
-      # gradle
-      # maven
-
-      # ---- nix ----
-      nix-search-cli
-      nixfmt
-
-      # ---- node ----
-      # prettier
-
-      # ---- python ----
-      pixi
-      nbstripout
-      ruff
-
-      # ---- yaml ----
-      yamlfmt
-      yamllint
-
-      # ---- zig ----
-      zig_0_13
-      # zls
-      # zlint
-
-      # ---- android ----
-      android-tools
-      flutter
-
-      # ---- misc ----
-      typos
-
-      # -------- others --------
-      # # ---- azure ----
-      # azure-cli
-
-      # ---- data ----
-      sqruff
-
-      # ---- database ----
-      atlas
-      mongodb-tools
-      sqlite
-
-      # ---- docker ----
-      hadolint
-
-      # ---- gcp ----
-      google-cloud-sdk
-      google-cloud-sql-proxy
-      # docker-credential-gcr
-      # (google-cloud-sdk.withExtraComponents [
-      #   google-cloud-sdk.components.gke-gcloud-auth-plugin
-      # ])
-
-      # ---- kubernetes ----
-      k9s
-      krew
-      ktop
-      kube-capacity
-      kubectl
-      kubectx
-      kubernetes-helm
-      kubevirt
-      # argocd
-      # helm-dashboard
-      # kind
-      # pluto
-
-      # ---- markdown ----
-      markdown-link-check
-      markdownlint-cli2
-      mdsf
-      mw
-      rumdl
-
-      # ---- security ----
-      grype
-      syft
-      trivy
-      zizmor
-
-      # ---- networking ----
-      caddy
-      mitmproxy
-
-      # ---- tests ----
-      hurl
-      hyperfine
-      k6
-      oha
-
-      # ---- wasm ----
-      wasmtime
-
-      # ---- llm ----
-      llama-cpp
-      mods
-
-      # ---- misc ----
-      # ast-grep
-      # graphviz
-      # vhs
-      beancount
-      beanquery
-      caligula
-      charm-freeze
-      cpx
-      f2
-      fava
-      imagemagick
-      libqalculate
-      numbat
-      pastel
-      pop
-      tz
-      wakatime-cli
-      zola # pkgs-stable.zola
-    ];
+    packages = toolchainsAndLinters ++ cloudAndOps ++ webAndTesting ++ aiAndLlm ++ misc;
   };
 }

@@ -1,112 +1,129 @@
 { pkgs, ... }:
-{
-  imports = [
+
+let
+  programImports = [
     ../programs/nvim/nvim.nix
     ../programs/sampler/sampler.nix
     ../programs/starship/starship.nix
     ../programs/zellij/zellij.nix
   ];
 
+  base = with pkgs; [
+    bat
+    cpx
+    difftastic
+    eza
+    fd
+    fzf
+    mcfly
+    ripgrep
+    sd
+    tailspin
+    tere
+    tree
+    viddy
+    watch
+    zoxide
+  ];
+
+  backup = with pkgs; [
+    restic
+    # rclone
+    # rsync
+  ];
+
+  networking = with pkgs; [
+    curl
+    doggo
+    dumbpipe
+    gping
+    rustscan
+    sendme
+    somo
+    whois
+  ];
+
+  system = with pkgs; [
+    bandwhich
+    diskus
+    dua
+    duf
+    dust
+    htop
+    ncdu
+    procs
+    sampler
+    zenith
+  ];
+
+  fetch = with pkgs; [
+    cpufetch
+    fastfetch
+    neofetch
+    onefetch
+  ];
+
+  containers = with pkgs; [
+    ctop
+    lazydocker
+    oxker
+  ];
+
+  database = with pkgs; [
+    pgcli
+    postgresql_18
+  ];
+
+  dataManipulation = with pkgs; [
+    fx
+    glow
+    jnv
+    jq
+    visidata
+    yq-go
+  ];
+
+  downloader = with pkgs; [
+    aria2
+    wget
+  ];
+
+  toolchains = with pkgs; [
+    go
+    mise
+    rustup
+    uv
+    yarn
+  ];
+
+  utils = with pkgs; [
+    age
+    direnv
+    entr
+    mcat
+    sops
+    sshx
+    tldr
+  ];
+
+in
+{
+  imports = programImports;
+
   home = {
     stateVersion = "23.05";
-    packages = with pkgs; [
-      # ---- backup ----
-      restic
-      # rclone
-      # rsync
 
-      # ---- shell ----
-      bat
-      difftastic
-      eza
-      fd
-      fzf
-      mcfly
-      ripgrep
-      sd
-      tere
-      # --- this was a hack to get tere to work; in case we need it again ---
-      #      (pkgs.tere.overrideAttrs (oldAttrs: {
-      #        doCheck = false;
-      #        dontCheck = true;
-      #      }))
-      # ---
-
-      # tailspin
-      tree
-      viddy
-      watch
-      zoxide
-
-      # ---- networking ----
-      # iftop
-      # headscale
-      curl
-      doggo
-      dumbpipe
-      gping
-      rustscan
-      sendme
-      somo
-      whois
-
-      # ---- system ----
-      # nvtopPackages.full # eats a lot of space
-      bandwhich
-      diskus
-      dua
-      duf
-      dust
-      htop
-      ncdu
-      procs
-      sampler
-      zenith
-
-      # ---- fetch ----
-      cpufetch
-      fastfetch
-      neofetch
-      onefetch
-
-      # ---- containers ----
-      ctop
-      lazydocker
-      oxker
-
-      # ---- database ----
-      pgcli
-      postgresql_17
-
-      # ---- data manipulation ----
-      fx
-      glow
-      jnv
-      jq
-      visidata
-      yq-go
-
-      # ---- downloader ----
-      aria2
-      wget
-
-      # ---- runtimes & toolchains ----
-      go
-      mise
-      rustup
-      uv
-      yarn
-
-      # ---- utils ----
-      age
-      direnv
-      entr
-      mcat
-      sops
-      tldr
-
-      # ---- misc ----
-      sshx
-    ];
+    packages =
+      base
+      ++ backup
+      ++ networking
+      ++ system
+      ++ fetch
+      ++ containers
+      ++ database
+      ++ dataManipulation
+      ++ downloader
+      ++ toolchains
+      ++ utils;
   };
 }
