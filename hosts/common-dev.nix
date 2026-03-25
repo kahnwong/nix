@@ -75,6 +75,10 @@
       # zls
       # zlint
 
+      # ---- android ----
+      android-tools
+      flutter
+
       # ---- misc ----
       typos
 

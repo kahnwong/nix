@@ -1,4 +1,5 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   imports = [ ];
   programs.home-manager.enable = true;
 
@@ -6,8 +7,5 @@
     bluez
     bluetui
     tigervnc
-
-    # ---- flutter ----
-    flutter
   ];
 }
