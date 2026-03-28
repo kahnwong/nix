@@ -91,3 +91,12 @@ function rcd # cd into directory
         cd $path
     end
 end
+
+# flox
+function fa
+    flox activate
+end
+
+function fas
+    flox activate --start-services
+end
