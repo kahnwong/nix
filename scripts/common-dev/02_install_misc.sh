@@ -132,6 +132,8 @@ ubi --project yt-dlp/yt-dlp --in ~/.local/bin/ # nix still doesn't support lates
 sudo ubi --project domcyrus/rustnet --in /usr/local/bin/
 sudo ubi --project kahnwong/swissknife --in /usr/local/bin/
 
+gh install mmcdole/kino
+
 # os specific apps
 if [[ $(uname -s) == 'Linux' ]]; then
 	ubi --project pythops/oryx --in ~/.local/bin/
