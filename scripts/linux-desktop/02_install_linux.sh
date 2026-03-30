@@ -48,6 +48,7 @@ flatpak install -y flathub \
   io.gitlab.adhami3310.Impression \
   net.puddletag.puddletag \
   org.audacityteam.Audacity \
+  org.filezillaproject.Filezilla \
   org.fkoehler.KTailctl \
   org.flameshot.Flameshot \
   org.freefilesync.FreeFileSync \
