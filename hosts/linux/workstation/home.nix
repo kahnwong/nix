@@ -24,6 +24,6 @@ in
   ];
 
   home.packages = with pkgs; [
-      flox.packages.${pkgs.system}.default
+    flox.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }

@@ -1,4 +1,10 @@
-{ config, pkgs, lib, ... }: {
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
+{
   imports = [ ./delta.nix ];
 
   home.file.".config/git/profiles/forgejo".source = ./profiles/forgejo;
@@ -14,6 +20,10 @@
     # `git config --global --edit` to see raw config
     enable = true;
 
+    signing = {
+      format = null;
+    };
+
     settings = {
       # ----- profile -----
       user.name = "Karn Wong";
@@ -21,7 +31,9 @@
 
       # ----- commit signing -----
       gpg.format = "ssh";
-      commit = { gpgsign = true; };
+      commit = {
+        gpgsign = true;
+      };
       # signing.key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGjELfQh9UxS1ORQZJY0it8T57x8+mHSg0fVAG/dprrl karn@karnwong.me";
 
       # https://jvns.ca/blog/2024/02/16/popular-git-config-options/
@@ -39,32 +51,37 @@
       # ----- remote -----
       # url."git@github.com:".insteadOf = "https://github.com/";
 
-      # ----- creds -----
-      credential = lib.mkMerge [
-        (lib.mkIf pkgs.stdenv.isDarwin { helper = "osxkeychain"; })
-
-        #        (lib.mkIf pkgs.stdenv.isLinux {
-        #          helper = "gopass";
-        #        })
-      ];
-
       # ----- lfs -----
-      lfs = { enable = true; };
+      lfs = {
+        enable = true;
+      };
 
       # ----- profiles -----
       # optional
-      includeIf."gitdir:~/Git/" = { path = "profiles/github"; };
-      includeIf."gitdir:/mnt/ssd/Git/" = { path = "profiles/github"; };
+      includeIf."gitdir:~/Git/" = {
+        path = "profiles/github";
+      };
+      includeIf."gitdir:/mnt/ssd/Git/" = {
+        path = "profiles/github";
+      };
 
       ## syncthing
-      includeIf."gitdir:~/Apps/" = { path = "profiles/github"; };
-      includeIf."gitdir:/opt/syncthing/cloud/" = { path = "profiles/github"; };
+      includeIf."gitdir:~/Apps/" = {
+        path = "profiles/github";
+      };
+      includeIf."gitdir:/opt/syncthing/cloud/" = {
+        path = "profiles/github";
+      };
 
       ## nvim
-      includeIf."gitdir:~/.config/nvim/" = { path = "profiles/github"; };
+      includeIf."gitdir:~/.config/nvim/" = {
+        path = "profiles/github";
+      };
 
       # forgejo
-      includeIf."gitdir:~/Forgejo/" = { path = "profiles/forgejo"; };
+      includeIf."gitdir:~/Forgejo/" = {
+        path = "profiles/forgejo";
+      };
 
       # ----- global ignore -----
       core.excludesfile = "~/.gitignore_global";
@@ -77,10 +94,14 @@
       fetch.prune = true;
 
       # ----- push -----
-      push = { autoSetupRemote = true; };
+      push = {
+        autoSetupRemote = true;
+      };
 
       # ----- init -----
-      init = { defaultBranch = "master"; };
+      init = {
+        defaultBranch = "master";
+      };
 
       # ----- misc -----
       column.ui = "auto";
@@ -99,7 +120,6 @@
     git-lfs
     git-who
     glab
-    pre-commit
     prek
     svu
     tea

@@ -59,7 +59,6 @@ let
   fetch = with pkgs; [
     cpufetch
     fastfetch
-    neofetch
     onefetch
   ];
 
