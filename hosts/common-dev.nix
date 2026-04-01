@@ -14,7 +14,6 @@ let
     ../programs/book-summarizer/book-summarizer.nix
     ../programs/browsh/browsh.nix
     ../programs/media-discord-rpc/media-discord-rpc.nix
-    ../programs/mods/mods.nix
     ../programs/pgconn/pgconn.nix
     ../programs/proxmox/proxmox.nix
     ../programs/repo-switcher/repo-switcher.nix
@@ -102,7 +101,6 @@ let
 
   aiAndLlm = with pkgs; [
     llama-cpp
-    mods
   ];
 
   misc = with pkgs; [
