@@ -31,20 +31,4 @@ mkdir -p "$HOME/.config/autostart"
 # Comment=
 # EOF
 
-# ------ Syncthing ------
-cat <<EOF >"$HOME/.config/autostart/com.github.zocker_160.SyncThingy.desktop"
-[Desktop Entry]
-Type=Application
-Name=com.github.zocker_160.SyncThingy
-Exec=flatpak run --command=SyncThingy com.github.zocker_160.SyncThingy
-X-Flatpak=com.github.zocker_160.SyncThingy
-EOF
-
-# ------ clyp ------
-cat <<EOF >"$HOME/.config/autostart/clyp-watcher.desktop"
-[Desktop Entry]
-Type=Application
-Name=Clyp
-Icon=bio.murat.clyp
-Exec=env GDK_BACKEND=x11 clyp --watch
-EOF
+cp -r ./programs/autostart/*.desktop "$HOME/.config/autostart/"
