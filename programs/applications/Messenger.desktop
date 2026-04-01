@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Messenger
+GenericName=Messenger
+Exec=open https://messenger.com
+StartupNotify=true
+Categories=Social;
+Icon=/home/kahnwong/.local/fleet/icons/messenger.png

@@ -10,7 +10,6 @@ nix-store --gc
 # fish
 fisher update
 ./scripts/common/02_add_fish_completions.sh
-rm ~/.config/fish/completions/git.fish # it borks git completion
 
 # gh extensions
 gh ext upgrade --all
