@@ -8,6 +8,11 @@ if [[ "$1" == "backup" ]]; then
 	dconf dump / | sed -n '/\[org.gnome.shell.extensions.auto-move-windows/,/^$/p' >programs/gnome/config/auto-move-windows.conf
 	dconf dump / | sed -n '/\[org.gnome.shell.extensions.tiling-assistant/,/^$/p' >programs/gnome/config/tiling-assistant-shortcuts.conf
 	dconf read /org/gnome/shell/favorite-apps >programs/gnome/config/gnome-shell-favorites.conf
+
+	# laptop only
+	if [[ "$(hostname)" != "sailfish" ]]; then
+		dconf dump / | sed -n '/\[org.gnome.shell.extensions.touchpad-gesture-customization/,/^$/p' >programs/gnome/config/touchpad-gesture-customization.conf
+	fi
 else
 	dconf load / <programs/gnome/config/auto-move-windows.conf
 	dconf load / <programs/gnome/config/input-sources.conf
@@ -21,5 +26,6 @@ else
 		sed 's/QT_QPA_PLATFORM=wayland//g' "$CUSTOM_SHORTCUTS_CONFIG_FILE" | dconf load /
 	else
 		dconf load / <"$CUSTOM_SHORTCUTS_CONFIG_FILE"
+		dconf load / <programs/gnome/config/touchpad-gesture-customization.conf
 	fi
 fi
