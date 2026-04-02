@@ -16,8 +16,8 @@ else
 	dconf load / <programs/gnome/config/wm-keybindings.conf
 	dconf write /org/gnome/shell/favorite-apps "$(cat programs/gnome/config/gnome-shell-favorites.conf)"
 
+	CUSTOM_SHORTCUTS_CONFIG_FILE="programs/gnome/config/custom-shortcuts.conf"
 	if [[ "$(hostname)" == "sailfish" ]]; then
-		CUSTOM_SHORTCUTS_CONFIG_FILE="programs/gnome/config/custom-shortcuts.conf"
 		sed 's/QT_QPA_PLATFORM=wayland//g' "$CUSTOM_SHORTCUTS_CONFIG_FILE" | dconf load /
 	else
 		dconf load / <"$CUSTOM_SHORTCUTS_CONFIG_FILE"
