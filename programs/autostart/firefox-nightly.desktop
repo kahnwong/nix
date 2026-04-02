@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=Firefox Nightly
+Exec=/usr/bin/firefox-nightly

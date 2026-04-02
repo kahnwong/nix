@@ -25,3 +25,7 @@ dconf load / <programs/gnome/wacom.conf
 # ------ dock ------
 # export via: `dconf read /org/gnome/shell/favorite-apps > programs/gnome/gnome-shell-favorites.conf`
 dconf write /org/gnome/shell/favorite-apps "$(cat programs/gnome/gnome-shell-favorites.conf)"
+
+# ------ auto move windows ------
+# export via: `dconf dump / | sed -n '/\[org.gnome.shell.extensions.auto-move-windows/,/^$/p' > programs/gnome/auto-move-windows.conf`
+dconf load / <programs/gnome/auto-move-windows.conf

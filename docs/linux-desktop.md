@@ -28,6 +28,7 @@ ln -s /mnt/hdd/Kooha ~/Videos/Kooha
 
 You probably need to install `gnome-browser-connector` and use chrome to install gnome extensions.
 
+- [Auto Move Windows](https://extensions.gnome.org/extension/16/auto-move-windows/)
 - [Disable unredirect fullscreen windows](https://extensions.gnome.org/extension/1873/disable-unredirect-fullscreen-windows/) # fix missing wacom cursor on wayland
 - [Hot Edge](https://extensions.gnome.org/extension/4222/hot-edge/)
 - [Just Perfection](https://extensions.gnome.org/extension/3843/just-perfection/)

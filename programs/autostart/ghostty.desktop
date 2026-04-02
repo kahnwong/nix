@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=Ghostty
+Exec=/usr/bin/ghostty
