@@ -10,10 +10,16 @@ if [[ "$1" == "backup" ]]; then
 	dconf read /org/gnome/shell/favorite-apps >programs/gnome/config/gnome-shell-favorites.conf
 else
 	dconf load / <programs/gnome/config/auto-move-windows.conf
-	dconf load / <programs/gnome/config/custom-shortcuts.conf
 	dconf load / <programs/gnome/config/input-sources.conf
 	dconf load / <programs/gnome/config/tiling-assistant-shortcuts.conf
 	dconf load / <programs/gnome/config/wacom.conf
 	dconf load / <programs/gnome/config/wm-keybindings.conf
 	dconf write /org/gnome/shell/favorite-apps "$(cat programs/gnome/config/gnome-shell-favorites.conf)"
+
+	if [[ "$(hostname)" == "sailfish" ]]; then
+		CUSTOM_SHORTCUTS_CONFIG_FILE="programs/gnome/config/custom-shortcuts.conf"
+		sed 's/QT_QPA_PLATFORM=wayland//g' "$CUSTOM_SHORTCUTS_CONFIG_FILE" | dconf load /
+	else
+		dconf load / <"$CUSTOM_SHORTCUTS_CONFIG_FILE"
+	fi
 fi
