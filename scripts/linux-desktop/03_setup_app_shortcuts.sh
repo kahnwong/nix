@@ -4,7 +4,7 @@
 
 # copy icons
 mkdir -p ~/.local/fleet/icons
-cp -r ./scripts/linux-desktop/icons/* ~/.local/fleet/icons/
+cp -r ./programs/gnome/icons/* ~/.local/fleet/icons/
 
 ## ------ Facebook ------
 #cat <<EOF >"$HOME/.local/share/applications/Facebook.desktop"
@@ -19,7 +19,7 @@ cp -r ./scripts/linux-desktop/icons/* ~/.local/fleet/icons/
 #Icon=/home/kahnwong/.local/fleet/icons/facebook.svg
 #EOF
 
-cp ./programs/applications/*.desktop "$HOME/.local/share/applications/"
+cp ./programs/gnome/applications/*.desktop "$HOME/.local/share/applications/"
 
 # ------ reload ------
 update-desktop-database ~/.local/share/applications/

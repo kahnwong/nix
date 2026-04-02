@@ -1,31 +1,19 @@
 #!/bin/bash
 
-# ------ Flameshot ------
-# <https://flameshot.org/docs/guide/key-bindings/#on-ubuntu-and-other-gnome-based-distros>
-
-# ------ shortcuts ------
-# export via: `dconf dump / | sed -n '/\[org.gnome.settings-daemon.plugins.media-keys/,/^$/p' > programs/gnome/custom-shortcuts.conf`
-dconf load / <programs/gnome/custom-shortcuts.conf
-
-# ------ tiling assistant shortcuts ------
-# export via: `dconf dump / | sed -n '/\[org.gnome.shell.extensions.tiling-assistant/,/^$/p' > programs/gnome/tiling-assistant-shortcuts.conf`
-dconf load / <programs/gnome/tiling-assistant-shortcuts.conf
-
-# ------ languages ------
-# export via: `dconf dump / | sed -n '/\[org.gnome.desktop.wm.keybindings/,/^$/p' > programs/gnome/wm-keybindings.conf`
-dconf load / <programs/gnome/wm-keybindings.conf
-
-# export via: `dconf dump / | sed -n '/\[org.gnome.desktop.input-sources/,/^$/p' > programs/gnome/input-sources.conf`
-dconf load / <programs/gnome/input-sources.conf
-
-# ------ wacom ------
-# export via: `dconf dump / | sed -n '/\[org.gnome.desktop.peripherals.tablets/,/^$/p' > programs/gnome/wacom.conf`
-dconf load / <programs/gnome/wacom.conf
-
-# ------ dock ------
-# export via: `dconf read /org/gnome/shell/favorite-apps > programs/gnome/gnome-shell-favorites.conf`
-dconf write /org/gnome/shell/favorite-apps "$(cat programs/gnome/gnome-shell-favorites.conf)"
-
-# ------ auto move windows ------
-# export via: `dconf dump / | sed -n '/\[org.gnome.shell.extensions.auto-move-windows/,/^$/p' > programs/gnome/auto-move-windows.conf`
-dconf load / <programs/gnome/auto-move-windows.conf
+if [[ "$1" == "backup" ]]; then
+	dconf dump / | sed -n '/\[org.gnome.desktop.input-sources/,/^$/p' >programs/gnome/config/input-sources.conf
+	dconf dump / | sed -n '/\[org.gnome.desktop.peripherals.tablets/,/^$/p' >programs/gnome/config/wacom.conf
+	dconf dump / | sed -n '/\[org.gnome.desktop.wm.keybindings/,/^$/p' >programs/gnome/config/wm-keybindings.conf
+	dconf dump / | sed -n '/\[org.gnome.settings-daemon.plugins.media-keys/,/^$/p' >programs/gnome/config/custom-shortcuts.conf
+	dconf dump / | sed -n '/\[org.gnome.shell.extensions.auto-move-windows/,/^$/p' >programs/gnome/config/auto-move-windows.conf
+	dconf dump / | sed -n '/\[org.gnome.shell.extensions.tiling-assistant/,/^$/p' >programs/gnome/config/tiling-assistant-shortcuts.conf
+	dconf read /org/gnome/shell/favorite-apps >programs/gnome/config/gnome-shell-favorites.conf
+else
+	dconf load / <programs/gnome/config/auto-move-windows.conf
+	dconf load / <programs/gnome/config/custom-shortcuts.conf
+	dconf load / <programs/gnome/config/input-sources.conf
+	dconf load / <programs/gnome/config/tiling-assistant-shortcuts.conf
+	dconf load / <programs/gnome/config/wacom.conf
+	dconf load / <programs/gnome/config/wm-keybindings.conf
+	dconf write /org/gnome/shell/favorite-apps "$(cat programs/gnome/config/gnome-shell-favorites.conf)"
+fi

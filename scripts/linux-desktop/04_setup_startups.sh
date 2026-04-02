@@ -1,37 +1,7 @@
 #!/bin/bash
 
 mkdir -p "$HOME/.config/autostart"
-
-## ------ Dropbox ------
-#cat <<EOF >"$HOME/.config/autostart/com.dropbox.Client.desktop"
-#[Desktop Entry]
-#Type=Application
-#Exec=/var/lib/flatpak/exports/bin/com.dropbox.Client
-#Hidden=false
-#NoDisplay=false
-#X-GNOME-Autostart-enabled=true
-#Name[en_US]=dropbox
-#Name=dropbox
-#Comment[en_US]=
-#Comment=
-#EOF
-
-# # ------ CopyQ ------
-# # On Wayland, add prefix `env QT_QPA_PLATFORM=xcb`
-# cat <<EOF >"$HOME/.config/autostart/com.github.hluk.copyq.desktop"
-# [Desktop Entry]
-# Type=Application
-# Exec=env QT_QPA_PLATFORM=xcb /var/lib/flatpak/exports/bin/com.github.hluk.copyq --start-server toggle
-# Hidden=false
-# NoDisplay=false
-# X-GNOME-Autostart-enabled=true
-# Name[en_US]=copyq
-# Name=copyq
-# Comment[en_US]=
-# Comment=
-# EOF
-
-cp -r ./programs/autostart/*.desktop "$HOME/.config/autostart/"
+cp -r ./programs/gnome/autostart/*.desktop "$HOME/.config/autostart/"
 
 # exclude if not pc
 if [[ $(uname -n) != 'sailfish' ]]; then
