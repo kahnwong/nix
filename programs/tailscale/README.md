@@ -25,7 +25,7 @@ Then restart via: `sudo systemctl restart nftables`
 ## Verify that Mullvad is active
 
 ```bash
-./is_mullvad_active.sh
+./is-mullvad-active.sh
 ```
 
 ## Useful commands

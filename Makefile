@@ -2,34 +2,34 @@
 # SETUP
 ##############
 common:
-	./scripts/common/01_setup.sh
-	./scripts/common/02_add_fish_completions.sh
+	./scripts/common/01-setup.sh
+	./scripts/common/02-add-fish-completions.sh
 
 common-dev:
-	./scripts/common-dev/01_setup.sh
-	./scripts/common-dev/02_install_misc.sh
+	./scripts/common-dev/01-setup.sh
+	./scripts/common-dev/02-install-misc.sh
 
 darwin:
-	./scripts/darwin/01_setup_mac.sh
-	./scripts/darwin/02_install_mac.sh
-	./scripts/darwin/03_install_batt.sh
+	./scripts/darwin/01-setup-mac.sh
+	./scripts/darwin/02-install-mac.sh
+	./scripts/darwin/03-install-batt.sh
  	# ./scripts/vscode/setup.sh
 
 linux-desktop:
-	./scripts/linux-desktop/01_setup_linux.sh
-	./scripts/linux-desktop/02_install_linux.sh
-	./scripts/linux-desktop/03_setup_app_shortcuts.sh
-	./scripts/linux-desktop/04_setup_startups.sh
-	./scripts/linux-desktop/05_setup_gnome.sh
-	./scripts/linux-desktop/06_setup_flatpak_config
-	./scripts/linux-desktop/install_docker.sh
-	./scripts/linux-desktop/install_firefox_nightly.sh
-	./scripts/linux-desktop/install_ghostty.sh
-	./scripts/linux-desktop/install_mullvad.sh
-	./scripts/linux-desktop/install_sourcegit.sh
-	./scripts/linux-desktop/install_tlp.sh
-	./scripts/linux-desktop/install_ydotool.sh
-	./scripts/linux-desktop/install_yubikey_manager.sh
+	./scripts/linux-desktop/01-setup-linux.sh
+	./scripts/linux-desktop/02-install-linux.sh
+	./scripts/linux-desktop/03-setup-app-shortcuts.sh
+	./scripts/linux-desktop/04-setup-startups.sh
+	./scripts/linux-desktop/05-setup-gnome.sh
+	./scripts/linux-desktop/06-setup-flatpak-config
+	./scripts/linux-desktop/install-docker.sh
+	./scripts/linux-desktop/install-firefox-nightly.sh
+	./scripts/linux-desktop/install-ghostty.sh
+	./scripts/linux-desktop/install-mullvad.sh
+	./scripts/linux-desktop/install-sourcegit.sh
+	./scripts/linux-desktop/install-tlp.sh
+	./scripts/linux-desktop/install-ydotool.sh
+	./scripts/linux-desktop/install-yubikey-manager.sh
 	# ./scripts/vscode/setup.sh
 
 ##############
@@ -50,7 +50,7 @@ apply:
 
 # SSH
 ssh-keys-backup:
-	./scripts/linux-desktop/07_setup_ssh_keys.sh backup
+	./scripts/linux-desktop/07-setup-ssh-keys.sh backup
 
 ssh-keys-restore:
-	./scripts/linux-desktop/07_setup_ssh_keys.sh
+	./scripts/linux-desktop/07-setup-ssh-keys.sh

@@ -9,7 +9,7 @@ nix-store --gc
 
 # fish
 fisher update
-./scripts/common/02_add_fish_completions.sh
+./scripts/common/02-add-fish-completions.sh
 
 # gh extensions
 gh ext upgrade --all
