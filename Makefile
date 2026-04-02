@@ -18,10 +18,11 @@ darwin:
 linux-desktop:
 	./scripts/linux-desktop/01-setup-linux.sh
 	./scripts/linux-desktop/02-install-linux.sh
-	./scripts/linux-desktop/03-setup-app-shortcuts.sh
-	./scripts/linux-desktop/04-setup-startups.sh
-	./scripts/linux-desktop/05-setup-gnome.sh
-	./scripts/linux-desktop/06-setup-flatpak-config
+	./scripts/linux-desktop/setup-app-shortcuts.sh
+	./scripts/linux-desktop/setup-flatpak-config.sh
+	./scripts/linux-desktop/setup-gnome.sh
+	./scripts/linux-desktop/setup-ssh-keys.sh
+	./scripts/linux-desktop/setup-startups.sh
 	./scripts/linux-desktop/install-docker.sh
 	./scripts/linux-desktop/install-firefox-nightly.sh
 	./scripts/linux-desktop/install-ghostty.sh
