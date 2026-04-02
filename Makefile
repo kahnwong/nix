@@ -21,6 +21,7 @@ linux-desktop:
 	./scripts/linux-desktop/03_setup_app_shortcuts.sh
 	./scripts/linux-desktop/04_setup_startups.sh
 	./scripts/linux-desktop/05_setup_gnome.sh
+	./scripts/linux-desktop/06_setup_flatpak_config
 	./scripts/linux-desktop/install_docker.sh
 	./scripts/linux-desktop/install_firefox_nightly.sh
 	./scripts/linux-desktop/install_ghostty.sh
@@ -28,7 +29,7 @@ linux-desktop:
 	./scripts/linux-desktop/install_sourcegit.sh
 	./scripts/linux-desktop/install_tlp.sh
 	./scripts/linux-desktop/install_ydotool.sh
-	# ./scripts/linux-desktop/install_yubikey_manager.sh # appimage borks on ubuntu 24, it clashes with gdm
+	./scripts/linux-desktop/install_yubikey_manager.sh
 	# ./scripts/vscode/setup.sh
 
 ##############
