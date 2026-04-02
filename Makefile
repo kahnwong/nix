@@ -9,10 +9,10 @@ common-dev:
 	./scripts/common-dev/01_setup.sh
 	./scripts/common-dev/02_install_misc.sh
 
-mac:
-	./scripts/mac/01_setup_mac.sh
-	./scripts/mac/02_install_mac.sh
-	./scripts/mac/03_install_batt.sh
+darwin:
+	./scripts/darwin/01_setup_mac.sh
+	./scripts/darwin/02_install_mac.sh
+	./scripts/darwin/03_install_batt.sh
  	# ./scripts/vscode/setup.sh
 
 linux-desktop:
