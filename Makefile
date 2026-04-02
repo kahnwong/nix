@@ -50,7 +50,7 @@ apply:
 
 # SSH
 ssh-keys-backup:
-	./scripts/ssh-keys-backup.sh
+	./scripts/linux-desktop/07_setup_ssh_keys.sh backup
 
 ssh-keys-restore:
-	./scripts/ssh-keys-restore.sh
+	./scripts/linux-desktop/07_setup_ssh_keys.sh
