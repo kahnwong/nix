@@ -3,7 +3,7 @@
 		"ANTHROPIC_BASE_URL": "ENC[AES256_GCM,data:BmzrUzpGm5i/ntjMBuvzNhlurgcZBI52Lhee7YRR,iv:qABdYURFH/FRpn3dJit2pGKB+/yi3dTu7bXGTcbAPvk=,tag:ApWS4479jTfG9Iwq+W8T1A==,type:str]",
 		"ANTHROPIC_AUTH_TOKEN": "ENC[AES256_GCM,data:ANVljyleFYi8emq6m7zMe+H/kvrEibpM+09H57A0Hx+mFGYD8R7K3kDrEkVG,iv:/bkqiwik3dnnWbKB1rCzypABLoCyHtDCRJ3oQQ5dW9U=,tag:uweOSaKbsQ8r5a3KjbckXg==,type:str]"
 	},
-	"model": "ENC[AES256_GCM,data:+E8WVbBxkrlZTjtF+pKUmBw=,iv:HgyDUWtDVl/9Q0ZcD15KGDti/v0akLcJ1xjXVav5rT4=,tag:i7kKysQtpSpd23puIGPKaQ==,type:str]",
+	"model": "ENC[AES256_GCM,data:uRC7at2yEmJBKQCwOACQiM8=,iv:JHm63iXH/5Nczg4WgUC/3rTK2yzUJyfxt4/kRF2HaS4=,tag:PDZCRUtcYakVYDI3JsWtog==,type:str]",
 	"hooks": {
 		"PostToolUse": [
 			{
@@ -35,9 +35,9 @@
 				"enc": "-----BEGIN AGE ENCRYPTED FILE-----\nYWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBFLzZNMFpvZXc3TVBPcDJv\nZkNOQkF2MkVSUDJrQ0JWWTI5ckZrQTRQNlQ0CmlEK0FCNkRJZFJOWTEydzZjQVBC\nRm0zdlBHdnFuTjdqQUhZcUszUDQvUU0KLS0tIG10K2RjMW5EMnFneVFhWjhTOTRm\nRjNzOU1pYzJhVitRcm1TalFKZ0djSTQKHIZiV0dkv9qwVs1SN4tIUdMbNtBPJEqo\nREASM1w18tmxAnZf8YPzHgFV8LETkuzvuNmn+chjM+1zXgr7LOCQXA==\n-----END AGE ENCRYPTED FILE-----\n"
 			}
 		],
-		"lastmodified": "2026-03-19T06:52:42Z",
-		"mac": "ENC[AES256_GCM,data:4E7e1mtuootnx2p25L3lkAt1mYpJZ1aJBrfT5GTsRWgy67enIM7gyKo7XeHKQ/LEdCTnNbT/GH+e74KF/V+0sr/OpMk6aQnYr5jHeP5mDZJw5ejAzju2Y9iHTvv6OdjhXJfwN1BvxjR8IAI5Afl6WPtZCtNhpqIBI519odHJRp8=,iv:4f2ZpHUwWahdcfy3HHpxRO2+NCNM3Qa7nyi4sI90zxw=,tag:qhWgZlDUfhR2MNw9dg3E7Q==,type:str]",
+		"lastmodified": "2026-04-04T13:59:44Z",
+		"mac": "ENC[AES256_GCM,data:QWhZgjekLCIvJ6BaQC7Ns7juXWhcQ6WgNj82KYwPgENmbyJDVUQwjddw+t7OXGnN6CuyjfdRF+2d1tchV9I2Ny763NYh26i8U7WWHp5wTviYjU/liRd/BFIdtK0kwX5kAWlwcB1TKwDyrM1G9BSRY7qCIrQXp0TGTsC3PTMFyW0=,iv:6RNc8oN8a50DioJdq/VMbL1rQyrjmvjd3TpTtg0KdXY=,tag:LPLnUDS/uMfqgGsv9mhtwA==,type:str]",
 		"unencrypted_suffix": "_unencrypted",
-		"version": "3.11.0"
+		"version": "3.12.2"
 	}
 }
