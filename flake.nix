@@ -155,22 +155,10 @@
           ];
         };
         # ----------------- pi ----------------- #
-        pi = home-manager.lib.homeManagerConfiguration {
-          pkgs = nixpkgs.legacyPackages.aarch64-linux;
-          modules = [
-            ./hosts/linux/server/home.nix
-            {
-              home = {
-                username = "ubuntu";
-                homeDirectory = "/home/ubuntu";
-              };
-            }
-          ];
-        };
         argon = home-manager.lib.homeManagerConfiguration {
           pkgs = nixpkgs.legacyPackages.aarch64-linux;
           modules = [
-            ./hosts/linux/argon/home.nix
+            ./hosts/linux/server/home.nix
             {
               home = {
                 username = "ubuntu";
