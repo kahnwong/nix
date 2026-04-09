@@ -76,8 +76,8 @@ if [[ $(uname -n) == 'sailfish' ]]; then
 fi
 
 ## redfin only
-if [[ $(uname -n) == 'redfin' ]]; then
-	sudo add-apt-repository ppa:lemonade-team/stable
-	sudo apt update
-	sudo apt install lemonade-server -y
-fi
+# if [[ $(uname -n) == 'redfin' ]]; then
+# 	sudo add-apt-repository ppa:lemonade-team/stable
+# 	sudo apt update
+# 	sudo apt install lemonade-server -y
+# fi
