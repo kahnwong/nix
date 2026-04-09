@@ -146,6 +146,9 @@ elif [[ $(uname -s) == 'Darwin' ]]; then
 	gh install browsh-org/browsh
 fi
 
+####################
+# Gen AI
+####################
 # kiro
 curl -fsSL https://cli.kiro.dev/install | bash
 
@@ -154,3 +157,10 @@ curl -fsSL https://claude.ai/install.sh | bash
 
 # git-ai
 curl -sSL https://usegitai.com/install.sh | bash
+
+# skills
+## caveman
+claude plugin marketplace add JuliusBrussee/caveman
+claude plugin install caveman@caveman
+
+npx skills add JuliusBrussee/caveman -a opencode
