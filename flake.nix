@@ -170,7 +170,7 @@
         argon = home-manager.lib.homeManagerConfiguration {
           pkgs = nixpkgs.legacyPackages.aarch64-linux;
           modules = [
-            ./hosts/linux/server/home.nix
+            ./hosts/linux/server-lite/home.nix
             {
               home = {
                 username = "ubuntu";
