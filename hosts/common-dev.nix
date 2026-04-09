@@ -10,7 +10,7 @@ let
     ../programs/yt-dlp/yt-dlp.nix
     ../programs/zed/zed.nix
 
-    # apps
+    # utils
     ../programs/book-summarizer/book-summarizer.nix
     ../programs/browsh/browsh.nix
     ../programs/media-discord-rpc/media-discord-rpc.nix
