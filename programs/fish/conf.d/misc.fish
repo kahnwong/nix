@@ -72,11 +72,6 @@ function d-iso-8601
     echo $value | copy
 end
 
-# lemonade
-function llm
-    /usr/local/bin/lemonade-server serve & /usr/local/share/lemonade-server/app/lemonade
-end
-
 # repo-switcher
 function r # open in IDE
     set path (command repo-switcher $argv)

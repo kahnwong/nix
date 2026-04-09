@@ -130,10 +130,6 @@ Then reboot.
 - tlp
 - power-profiles-daemon
 
-## LLM
-
-Install [lemonade](https://github.com/lemonade-sdk/lemonade/releases). Use the full packakge.
-
 ## Firefox
 
 ### Fonts
