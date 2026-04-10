@@ -8,8 +8,8 @@
 {
   home.file.".config/fish/completions/garmin-tui.fish".source = ./completions/garmin-tui.fish;
   home.file.".config/fish/conf.d/app_gcal_tui.fish".source = ./conf.d/app_gcal_tui.fish;
+  home.file.".config/fish/conf.d/app_genai.fish".source = ./conf.d/app_genai.fish;
   home.file.".config/fish/conf.d/app_habit.fish".source = ./conf.d/app_habit.fish;
-  home.file.".config/fish/conf.d/app_crush.fish".source = ./conf.d/app_crush.fish;
   home.file.".config/fish/conf.d/app_topydo.fish".source = ./conf.d/app_topydo.fish;
   home.file.".config/fish/conf.d/app_umamit.fish".source = ./conf.d/app_umamit.fish;
   home.file.".config/fish/conf.d/devops.fish".source = ./conf.d/devops.fish;
