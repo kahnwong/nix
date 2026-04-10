@@ -120,6 +120,7 @@
     git-lfs
     git-who
     glab
+    pre-commit # for backward compatibility
     prek
     svu
     tea
