@@ -68,12 +68,10 @@ uv tool install topydo[columns]
 # applications - node
 ############################
 npm set prefix ~/.npm-global
-yarn global add @google/gemini-cli
 yarn global add @quasar/cli
 yarn global add create-quasar
 yarn global add create-slidev
 yarn global add md-to-pdf
-yarn global add opencode-ai
 yarn global add playwright-chromium
 
 ############################
@@ -149,11 +147,11 @@ fi
 ####################
 # Gen AI
 ####################
-# kiro
-curl -fsSL https://cli.kiro.dev/install | bash
-
-# claude
 curl -fsSL https://claude.ai/install.sh | bash
+curl -fsSL https://cli.kiro.dev/install | bash
+curl -fsSL https://gh.io/copilot-install | bash
+yarn global add @google/gemini-cli
+yarn global add opencode-ai
 
 # git-ai
 curl -sSL https://usegitai.com/install.sh | bash
