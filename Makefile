@@ -21,7 +21,7 @@ linux-desktop:
 	./scripts/linux-desktop/setup-app-shortcuts.sh
 	./scripts/linux-desktop/setup-flatpak-config.sh
 	./scripts/linux-desktop/setup-gnome.sh
-	./scripts/linux-desktop/setup-ssh-keys.sh
+	./scripts/linux-desktop/install-chrome.sh
 	./scripts/linux-desktop/install-docker.sh
 	./scripts/linux-desktop/install-firefox-nightly.sh
 	./scripts/linux-desktop/install-ghostty.sh
@@ -31,6 +31,7 @@ linux-desktop:
 	./scripts/linux-desktop/install-tlp.sh
 	./scripts/linux-desktop/install-ydotool.sh
 	./scripts/linux-desktop/install-yubikey-manager.sh
+	./scripts/linux-desktop/setup-ssh-keys.sh
 	./scripts/linux-desktop/setup-startups.sh
 	# ./scripts/vscode/setup.sh
 

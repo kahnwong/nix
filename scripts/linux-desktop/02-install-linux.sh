@@ -28,7 +28,6 @@ flatpak install -y flathub \
 	com.github.ransome1.sleek \
 	com.github.tchx84.Flatseal \
 	com.github.zocker_160.SyncThingy \
-	com.google.Chrome \
 	com.obsproject.Studio \
 	com.obsproject.Studio.Plugin.BackgroundRemoval \
 	com.rustdesk.RustDesk \

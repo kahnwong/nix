@@ -3,7 +3,7 @@ Version=1.0
 Type=Application
 Name=LINE
 GenericName=LINE Chat
-Exec=flatpak run com.google.Chrome --app="chrome-extension://ophjlpahpchlmihnnnihgmmeilfjmjjc/index.html" --profile-directory="Default"
+Exec=google-chrome --app="chrome-extension://ophjlpahpchlmihnnnihgmmeilfjmjjc/index.html" --profile-directory="Default"
 StartupNotify=true
 Categories=Social;
 Icon=/home/kahnwong/.local/fleet/icons/line.png
