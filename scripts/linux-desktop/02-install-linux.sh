@@ -15,7 +15,6 @@ sudo snap install mpv
 #io.mpv.Mpv
 flatpak install -y flathub \
 	app.freelens.Freelens \
-	app.zen_browser.zen \
 	com.bilingify.readest \
 	com.bitwarden.desktop \
 	com.calibre_ebook.calibre \
