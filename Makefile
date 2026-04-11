@@ -22,15 +22,16 @@ linux-desktop:
 	./scripts/linux-desktop/setup-flatpak-config.sh
 	./scripts/linux-desktop/setup-gnome.sh
 	./scripts/linux-desktop/setup-ssh-keys.sh
-	./scripts/linux-desktop/setup-startups.sh
 	./scripts/linux-desktop/install-docker.sh
 	./scripts/linux-desktop/install-firefox-nightly.sh
 	./scripts/linux-desktop/install-ghostty.sh
+	./scripts/linux-desktop/install-librewolf.sh
 	./scripts/linux-desktop/install-mullvad.sh
 	./scripts/linux-desktop/install-sourcegit.sh
 	./scripts/linux-desktop/install-tlp.sh
 	./scripts/linux-desktop/install-ydotool.sh
 	./scripts/linux-desktop/install-yubikey-manager.sh
+	./scripts/linux-desktop/setup-startups.sh
 	# ./scripts/vscode/setup.sh
 
 ##############
