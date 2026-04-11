@@ -4,3 +4,5 @@ wget -q https://packages.mozilla.org/apt/repo-signing-key.gpg -O- | gpg --dearmo
 echo "deb [signed-by=/etc/apt/keyrings/packages.mozilla.org.gpg] https://packages.mozilla.org/apt mozilla main" | sudo tee -a /etc/apt/sources.list.d/mozilla.list >/dev/null
 sudo apt update
 sudo apt install firefox-nightly -y
+
+# check HW acceleration via `about:support` and the value for `Compositing` should be `WebRender`
