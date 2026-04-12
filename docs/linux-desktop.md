@@ -141,3 +141,7 @@ if (url.hostname === "contacts.google.com") return {name: "Contacts", icon: "cir
 ### Ntfyr
 
 - Set to start in background
+
+## Gnome
+
+If not being redirected to login page via `Online Accounts`, run `gnome-keyring-daemon -r` and try again.
