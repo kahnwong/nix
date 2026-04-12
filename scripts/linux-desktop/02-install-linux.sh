@@ -38,15 +38,20 @@ flatpak install -y flathub \
 	com.transmissionbt.Transmission \
 	dev.zed.Zed \
 	io.github.TransmissionRemoteGtk \
+	io.github.celluloid_player.Celluloid \
 	io.github.ciromattia.kcc \
 	io.github.dweymouth.supersonic \
 	io.github.flattool.Ignition \
 	io.github.flattool.Warehouse \
 	io.github.josephmawa.Bella \
+	io.github.nokse22.inspector \
 	io.github.sigmasd.stimulator \
 	io.github.tobagin.Ntfyr \
+	io.github.tobagin.karere \
 	io.github.vemonet.EmojiMart \
 	io.gitlab.adhami3310.Impression \
+	io.gitlab.news_flash.NewsFlash \
+	io.missioncenter.MissionCenter \
 	net.puddletag.puddletag \
 	org.audacityteam.Audacity \
 	org.filezillaproject.Filezilla \
@@ -54,6 +59,8 @@ flatpak install -y flathub \
 	org.flameshot.Flameshot \
 	org.freefilesync.FreeFileSync \
 	org.gnome.Boxes \
+	org.gnome.Calendar \
+	org.gnome.Firmware \
 	org.gnome.Fractal \
 	org.gnome.gitlab.cheywood.Buffer \
 	org.gpodder.gpodder \
