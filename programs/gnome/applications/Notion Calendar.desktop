@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Notion Calendar
+GenericName=Notion Calendar
+Exec=open https://calendar.notion.so/
+Icon=/home/kahnwong/.local/fleet/icons/notion-calendar.png
+StartupNotify=false
+Categories=Productivity;
