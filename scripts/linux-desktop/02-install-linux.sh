@@ -44,6 +44,7 @@ flatpak install -y flathub \
 	io.github.flattool.Warehouse \
 	io.github.josephmawa.Bella \
 	io.github.sigmasd.stimulator \
+	io.github.tobagin.Ntfyr \
 	io.github.vemonet.EmojiMart \
 	io.gitlab.adhami3310.Impression \
 	net.puddletag.puddletag \

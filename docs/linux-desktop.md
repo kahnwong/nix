@@ -137,3 +137,7 @@ if (url.hostname === "www.google.com") return {name: "Search", icon: "circle", c
 if (url.hostname === "www.youtube.com") return {name: "YouTube", icon: "circle", color: "red"};
 if (url.hostname === "contacts.google.com") return {name: "Contacts", icon: "circle", color: "purple"};
 ```
+
+### Ntfyr
+
+- Set to start in background

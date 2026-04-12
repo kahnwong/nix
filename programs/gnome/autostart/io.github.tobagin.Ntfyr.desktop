@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=io.github.tobagin.Ntfyr
+Exec=flatpak run io.github.tobagin.Ntfyr
+X-Flatpak=io.github.tobagin.Ntfyr
