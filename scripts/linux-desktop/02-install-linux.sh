@@ -4,6 +4,7 @@
 sudo apt install -y \
 	dolphin \
 	file-roller \
+	gnome-tweaks \
 	gparted \
 	konsole \
 	xclip

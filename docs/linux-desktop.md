@@ -1,43 +1,19 @@
 # Linux Desktop
 
-## crontabs
-
-### sudo
-
-```bash
-@reboot sudo -b ydotoold --socket-path="/home/kahnwong/.ydotool_socket" --socket-own="1000:1000"
-```
-
-## Configs
+## Hardware & Codecs
 
 - If you install linux on mac devices, install gnome-tweaks (`sudo apt install gnome-tweaks`) to remap super and alt
   button.
 - Add m4a support to RhythmBox: `sudo apt install gstreamer1.0-fdkaac -y`
 
-<!-- - `CopyQ`: set shortcut to `alt + shift + v` for `show the tray menu` -->
+## Peripherals
 
-## Set Symlinks
-
-```bash
-ln -s /mnt/ssd/Git ~/Git
-ln -s /mnt/hdd/Downloads ~/Downloads
-ln -s /mnt/hdd/Kooha ~/Videos/Kooha
-```
-
-## Fonts
-
-You don't need this for Ghostty, but intellij terminal needs this to render glyphs properly.
-
-- For nerd fonts, download fonts from [here](https://github.com/ryanoasis/nerd-fonts/releases), put them in
-  `~/.local/share/fonts` (or `~/.fonts`) then run `fc-cache -fv`.
-- Fix Thai fonts: `sudo apt install fonts-thai-tlwg -y`
-
-## Mouse
+### Mouse
 
 - To setup custom mouse buttons: <https://github.com/pwr-Solaar/Solaar>.
 - For some mice, use <https://github.com/libratbag/piper/issues/352#issuecomment-1147626332>.
 
-### Installing libratbag
+#### Installing libratbag
 
 If you run into errors: <https://github.com/libratbag/libratbag/issues/981>
 
@@ -60,15 +36,9 @@ sudo systemctl enable ratbagd.service
 flatpak install flathub org.freedesktop.Piper -y
 ```
 
-## Notifications Mirroring
+## Systems
 
-- iOS: <https://github.com/impiaaa/ios-notif-forward>
-
-## App Errors
-
-- Fix discord not loading: `rm -rf ~/.var/app/com.discordapp.Discord`
-
-## Battery Optimization (TLP)
+### Battery Optimization (TLP)
 
 ```bash
 sudo tlp start
@@ -77,7 +47,17 @@ sudo tlp bat
 sudo tlp ac
 ```
 
-## Fingerprint
+It might get conflicted with `power-profiles-daemon`, in that case uninstall it and reinstall `tlp`.
+
+### Crontabs
+
+As `sudo`
+
+```bash
+@reboot sudo -b ydotoold --socket-path="/home/kahnwong/.ydotool_socket" --socket-own="1000:1000"
+```
+
+### Fingerprint
 
 Ref: <https://linuxvox.com/blog/linux-fingerprint-reader-ubuntu/>
 
@@ -85,13 +65,13 @@ Ref: <https://linuxvox.com/blog/linux-fingerprint-reader-ubuntu/>
 fprintd-enroll
 ```
 
-Use fingerprint for sudo
+#### Use fingerprint for sudo
 
 ```bash
 sudo pam-auth-update # enable `Fingerprint authentication`
 ```
 
-Fix fprintd inactive after suspend:
+#### Fix fprintd inactive after suspend:
 
 ```bash
 sudo vi /lib/systemd/system-sleep/fingerprint-wakeup.sh
@@ -116,27 +96,33 @@ sudo chmod +x /lib/systemd/system-sleep/fingerprint-wakeup.sh
 
 Then reboot.
 
-<!-- ## Atuin -->
-<!---->
-<!-- Edit `sync_address` at `~/.config/atuin/config.toml` -->
-<!---->
-<!-- ```bash -->
-<!-- atuin login -u <USERNAME> -->
-<!-- atuin sync -->
-<!-- ``` -->
-
-## Power Management
-
-- tlp
-- power-profiles-daemon
-
-## Firefox
-
 ### Fonts
+
+You don't need this for Ghostty, but intellij terminal needs this to render glyphs properly.
+
+- For nerd fonts, download fonts from [here](https://github.com/ryanoasis/nerd-fonts/releases), put them in
+  `~/.local/share/fonts` (or `~/.fonts`) then run `fc-cache -fv`.
+- Fix Thai fonts: `sudo apt install fonts-thai-tlwg -y`
+
+## Misc
+
+### Notifications Mirroring
+
+- iOS: <https://github.com/impiaaa/ios-notif-forward>
+
+## Apps
+
+### Discord
+
+- Fix discord not loading: `rm -rf ~/.var/app/com.discordapp.Discord`
+
+### Firefox
+
+#### Fonts
 
 Use `waree` for Thai sans-serif.
 
-### Containers
+#### Containers
 
 ```js
 // const icons = ["fingerprint", "briefcase", "dollar", "cart", "vacation", "gift", "food", "fruit", "pet", "tree", "chill", "circle"]
@@ -144,10 +130,10 @@ Use `waree` for Thai sans-serif.
 
 const workspaceHosts = ["gemini.google.com", "meet.google.com", "console.cloud.google.com", "notebooklm.google.com", "gmail.com", "drive.google.com", "docs.google.com", "sheets.google.com"];
 if (workspaceHosts.includes(url.hostname)) {
-  return { name: "Workspace", icon: "circle", color: "blue" };
+    return {name: "Workspace", icon: "circle", color: "blue"};
 }
 
-if (url.hostname === "www.google.com") return { name: "Search", icon: "circle", color: "green" };
-if (url.hostname === "www.youtube.com") return { name: "YouTube", icon: "circle", color: "red" };
-if (url.hostname === "contacts.google.com") return { name: "Contacts", icon: "circle", color: "purple" };
+if (url.hostname === "www.google.com") return {name: "Search", icon: "circle", color: "green"};
+if (url.hostname === "www.youtube.com") return {name: "YouTube", icon: "circle", color: "red"};
+if (url.hostname === "contacts.google.com") return {name: "Contacts", icon: "circle", color: "purple"};
 ```
