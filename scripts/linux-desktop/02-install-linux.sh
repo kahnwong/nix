@@ -31,6 +31,7 @@ flatpak install -y flathub \
 	com.github.zocker_160.SyncThingy \
 	com.obsproject.Studio \
 	com.obsproject.Studio.Plugin.BackgroundRemoval \
+	com.ranfdev.DistroShelf \
 	com.rustdesk.RustDesk \
 	com.slack.Slack \
 	com.todoist.Todoist \

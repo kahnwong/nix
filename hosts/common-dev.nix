@@ -51,6 +51,7 @@ let
     # # zig
     # zig_0_13
     # misc
+    distrobox
     hadolint
     sqruff
     typos
