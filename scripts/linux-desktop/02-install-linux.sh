@@ -59,7 +59,6 @@ flatpak install -y flathub \
 	org.flameshot.Flameshot \
 	org.freefilesync.FreeFileSync \
 	org.gnome.Boxes \
-	org.gnome.Calendar \
 	org.gnome.Firmware \
 	org.gnome.Fractal \
 	org.gnome.gitlab.cheywood.Buffer \
