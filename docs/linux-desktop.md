@@ -144,4 +144,4 @@ if (url.hostname === "contacts.google.com") return {name: "Contacts", icon: "cir
 
 ## Gnome
 
-If not being redirected to login page via `Online Accounts`, run `gnome-keyring-daemon -r` and try again.
+If not being redirected to login page via `Online Accounts`, run `gnome-keyring-daemon -r` and try again. But this'll prompt you to enter keyring password twice...
