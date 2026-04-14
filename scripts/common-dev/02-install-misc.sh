@@ -57,12 +57,15 @@ cargo install --locked cross
 # applications - python
 ############################
 # uv tool install nbpreview
-pixi global install qgis
 uv tool install "dvc[s3]"
 uv tool install huggingface_hub[cli]
 uv tool install magika
 uv tool install pip_search
 uv tool install topydo[columns]
+
+if [[ $(uname -s) == 'Darwin' ]]; then
+	pixi global install qgis
+fi
 
 ############################
 # applications - node
