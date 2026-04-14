@@ -10,31 +10,32 @@ sudo apt install -y \
 	xclip
 sudo snap install mpv
 
+#com.bilingify.readest
+#com.bitwarden.desktop
 #com.dropbox.Client
-#com.github.hluk.copyq
+#com.github.iwalton3.jellyfin-media-player
+#com.github.ransome1.sleek
+#com.slack.Slack
+#com.todoist.Todoist
 #io.kinvolk.Headlamp
 #io.mpv.Mpv
 flatpak install -y flathub \
 	app.freelens.Freelens \
-	com.bilingify.readest \
-	com.bitwarden.desktop \
+	com.belmoussaoui.Decoder \
 	com.calibre_ebook.calibre \
 	com.dec05eba.gpu_screen_recorder \
 	com.discordapp.Discord \
 	com.github.IsmaelMartinez.teams_for_linux \
 	com.github.PintaProject.Pinta \
-	com.github.iwalton3.jellyfin-media-player \
 	com.github.jeromerobert.pdfarranger \
 	com.github.qarmin.czkawka \
-	com.github.ransome1.sleek \
 	com.github.tchx84.Flatseal \
 	com.github.zocker_160.SyncThingy \
+	com.jeffser.Pigment \
 	com.obsproject.Studio \
 	com.obsproject.Studio.Plugin.BackgroundRemoval \
 	com.ranfdev.DistroShelf \
 	com.rustdesk.RustDesk \
-	com.slack.Slack \
-	com.todoist.Todoist \
 	com.transmissionbt.Transmission \
 	dev.zed.Zed \
 	io.github.TransmissionRemoteGtk \
@@ -48,12 +49,15 @@ flatpak install -y flathub \
 	io.github.sigmasd.stimulator \
 	io.github.tobagin.Ntfyr \
 	io.github.tobagin.karere \
+	io.github.v81d.Wattage \
 	io.github.vemonet.EmojiMart \
 	io.gitlab.adhami3310.Impression \
+	io.gitlab.metadatacleaner.metadatacleaner \
 	io.gitlab.news_flash.NewsFlash \
 	io.missioncenter.MissionCenter \
 	net.puddletag.puddletag \
 	org.audacityteam.Audacity \
+	org.cosmic_utils.enroll \
 	org.filezillaproject.Filezilla \
 	org.fkoehler.KTailctl \
 	org.flameshot.Flameshot \
@@ -61,6 +65,7 @@ flatpak install -y flathub \
 	org.gnome.Boxes \
 	org.gnome.Firmware \
 	org.gnome.Fractal \
+	org.gnome.Logs \
 	org.gnome.gitlab.cheywood.Buffer \
 	org.gpodder.gpodder \
 	org.kde.okular \
