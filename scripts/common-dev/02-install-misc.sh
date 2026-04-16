@@ -87,6 +87,11 @@ krew install nodepools
 krew install outdated
 krew install status
 
+############################
+# helm
+############################
+helm plugin install https://github.com/databus23/helm-diff
+
 ####################
 # git
 ####################
