@@ -66,6 +66,7 @@ let
     google-cloud-sdk
     google-cloud-sql-proxy
     # kubernetes
+    helmfile
     k9s
     krew
     ktop
