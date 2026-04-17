@@ -81,10 +81,6 @@ function tere
     [ -n "$result" ] && cd -- "$result"
 end
 
-function tmux
-    zellij $argv
-end
-
 alias cp="cpx"
 alias tmux="zellij"
 alias vi="nvim"

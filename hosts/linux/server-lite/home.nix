@@ -22,14 +22,16 @@ in
   home.stateVersion = "23.05";
   home.packages = with pkgs; [
     bat
-    eza
-    duf
-    htop
-    ncdu
     cpufetch
+    cpx
+    duf
+    eza
     fastfetch
+    htop
     lazydocker
+    ncdu
     oxker
     wget
+    zellij
   ];
 }
