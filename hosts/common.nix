@@ -27,9 +27,9 @@ let
   ];
 
   backup = with pkgs; [
-    restic
     # rclone
-    # rsync
+    restic
+    rsync
   ];
 
   networking = with pkgs; [

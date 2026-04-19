@@ -24,3 +24,13 @@ function sendme
     end
     command sendme $argv
 end
+
+# rsync
+## trailing slash prevents mirror-ing into subfolder
+function mirror
+    rsync -rvP --size-only --delete "$argv[1]/" "$argv[2]/"
+end
+
+function mirror-dry-run
+    rsync -rvPn --size-only --delete "$argv[1]/" "$argv[2]/"
+end
