@@ -138,6 +138,19 @@ if (url.hostname === "www.youtube.com") return {name: "YouTube", icon: "circle",
 if (url.hostname === "contacts.google.com") return {name: "Contacts", icon: "circle", color: "purple"};
 ```
 
+#### Privacy Settings
+
+- Disable Telemetry Settings > Privacy & Security > Firefox Data Collection
+- Change Search Engine Settings > Search (Switch to DuckDuckGo or Brave Search)
+- Strict Protection Settings > Privacy & Security > Enhanced Tracking Protection (Set to Strict)
+- DNS over HTTPS Settings > Privacy & Security > Enable Max Protection
+
+#### Set Custom AI Chatbot
+
+For Open WebUI.
+
+Type `about:config` and set value for `browser.ml.chat.provider` as `https://chat.example.com/?model=gemma4-26b&temporary-chat=true`.
+
 ### Ntfyr
 
 - Set to start in background
