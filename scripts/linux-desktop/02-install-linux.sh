@@ -17,8 +17,8 @@ sudo snap install mpv
 #com.github.ransome1.sleek
 #com.slack.Slack
 #com.todoist.Todoist
-#io.kinvolk.Headlamp
 #io.mpv.Mpv
+#org.gnome.Fractal
 flatpak install -y flathub \
 	app.freelens.Freelens \
 	com.belmoussaoui.Decoder \
@@ -54,6 +54,7 @@ flatpak install -y flathub \
 	io.gitlab.adhami3310.Impression \
 	io.gitlab.metadatacleaner.metadatacleaner \
 	io.gitlab.news_flash.NewsFlash \
+	io.kinvolk.Headlamp \
 	io.missioncenter.MissionCenter \
 	net.puddletag.puddletag \
 	org.audacityteam.Audacity \
@@ -64,7 +65,6 @@ flatpak install -y flathub \
 	org.freefilesync.FreeFileSync \
 	org.gnome.Boxes \
 	org.gnome.Firmware \
-	org.gnome.Fractal \
 	org.gnome.Logs \
 	org.gnome.gitlab.cheywood.Buffer \
 	org.gpodder.gpodder \
