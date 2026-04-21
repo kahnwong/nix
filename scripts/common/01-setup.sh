@@ -20,6 +20,10 @@ if [[ $(uname -s) == 'Linux' ]]; then
 	echo "========== Installing build tools and other essentials =========="
 	sudo apt-get install make curl wget ntfs-3g \
 		-y
+
+	# disable snap
+	sudo systemctl stop snapd
+	sudo systemctl mask snapd
 fi
 
 ####################
