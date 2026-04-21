@@ -137,8 +137,8 @@ if (url.hostname === "www.google.com") return {name: "Search", icon: "circle", c
 if (url.hostname === "www.youtube.com") return {name: "YouTube", icon: "circle", color: "red"};
 if (url.hostname === "contacts.google.com") return {name: "Contacts", icon: "circle", color: "purple"};
 
+if (url.hostname === "www.perplexity.ai") return {name: "Perplexity", icon: "circle", color: "blue"};
 if (url.hostname === "chatgpt.com") return {name: "ChatGPT", icon: "circle", color: "orange"};
-
 if (url.hostname === "github.com") return null;
 ```
 
