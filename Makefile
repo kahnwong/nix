@@ -53,7 +53,7 @@ apply:
 
 # SSH
 ssh-keys-backup:
-	./scripts/linux-desktop/07-setup-ssh-keys.sh backup
+	./scripts/linux-desktop/setup-ssh-keys.sh backup
 
 ssh-keys-restore:
-	./scripts/linux-desktop/07-setup-ssh-keys.sh
+	./scripts/linux-desktop/setup-ssh-keys.sh
