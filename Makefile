@@ -57,3 +57,7 @@ ssh-keys-backup:
 
 ssh-keys-restore:
 	./scripts/linux-desktop/setup-ssh-keys.sh
+
+# LINUX
+gnome-restore:
+	./scripts/linux-desktop/setup-gnome.sh
