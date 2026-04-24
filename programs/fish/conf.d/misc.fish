@@ -73,17 +73,17 @@ function d-iso-8601
 end
 
 # repo-switcher
-function r # open in IDE
-    set path (command repo-switcher $argv)
-    if test $status -eq 0
-        idea $path &
-    end
-end
+function r
+    argparse 'n' -- $argv
+    or return
 
-function rcd # cd into directory
-    set path (command repo-switcher $argv)
-    if test $status -eq 0
+    set -l path (command repo-switcher $argv)
+    test $status -eq 0; or return
+
+    if set -q _flag_n # cd into project
         cd $path
+    else # open in IDE
+        idea $path &
     end
 end
 
