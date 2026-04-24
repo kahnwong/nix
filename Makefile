@@ -8,6 +8,7 @@ common:
 common-dev:
 	./scripts/common-dev/01-setup.sh
 	./scripts/common-dev/02-install-misc.sh
+	./scripts/common-dev/03-install-ai-tools.sh
 
 darwin:
 	./scripts/darwin/01-setup-mac.sh
@@ -43,6 +44,8 @@ decrypt-credentials:
 
 update:
 	./scripts/update.sh
+update-ai:
+	./scripts/common-dev/03-install-ai-tools.sh
 
 migrate:
 	./scripts/migrate.sh

@@ -128,7 +128,6 @@ curl --silent --location \
 
 ubi --project AlexsJones/llmfit --in ~/.local/bin/
 ubi --project bodaay/HuggingFaceModelDownloader --in ~/.local/bin/ --rename-exe hfdownloader
-ubi --project charmbracelet/crush --in ~/.local/bin
 ubi --project elliot40404/modo --in ~/.local/bin/
 ubi --project fawni/def --in ~/.local/bin/
 ubi --project kahnwong/cpubench-release -e cpubench --in ~/.local/bin/
@@ -151,22 +150,3 @@ if [[ $(uname -s) == 'Linux' ]]; then
 elif [[ $(uname -s) == 'Darwin' ]]; then
 	gh install browsh-org/browsh
 fi
-
-####################
-# Gen AI
-####################
-curl -fsSL https://claude.ai/install.sh | bash
-curl -fsSL https://cli.kiro.dev/install | bash
-curl -fsSL https://gh.io/copilot-install | bash
-yarn global add @google/gemini-cli
-yarn global add opencode-ai
-
-# git-ai
-curl -sSL https://usegitai.com/install.sh | bash
-
-# skills
-## caveman
-claude plugin marketplace add JuliusBrussee/caveman
-claude plugin install caveman@caveman
-
-npx skills add JuliusBrussee/caveman -a opencode
