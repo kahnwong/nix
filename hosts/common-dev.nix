@@ -58,9 +58,9 @@ let
   ];
 
   cloudAndOps = with pkgs; [
-    # # database
-    # atlas
-    # mongodb-tools
+    # database
+    #atlas
+    #mongodb-tools
     sqlite
     # gcp
     google-cloud-sdk
@@ -83,6 +83,7 @@ let
     rumdl
     # security
     grype
+    osv-scanner
     syft
     trivy
     zizmor
