@@ -7,8 +7,8 @@ sudo apt install -y \
 	gnome-tweaks \
 	gparted \
 	konsole \
+	mpv \
 	xclip
-sudo snap install mpv
 
 #com.bilingify.readest
 #com.bitwarden.desktop
@@ -17,7 +17,6 @@ sudo snap install mpv
 #com.github.ransome1.sleek
 #com.slack.Slack
 #com.todoist.Todoist
-#io.mpv.Mpv
 #org.gnome.Fractal
 flatpak install -y flathub \
 	app.freelens.Freelens \
