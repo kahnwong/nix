@@ -85,6 +85,7 @@
 
       # ----- global ignore -----
       core.excludesfile = "~/.gitignore_global";
+      core.editor = "/home/kahnwong/.nix-profile/bin/nvim"; # [TODO] does it work on darwin?
 
       # ----- pull -----
       pull = {

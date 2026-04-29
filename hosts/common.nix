@@ -2,7 +2,6 @@
 
 let
   programImports = [
-    ../programs/nvim/nvim.nix
     ../programs/sampler/sampler.nix
     ../programs/starship/starship.nix
     ../programs/zellij/zellij.nix
@@ -16,6 +15,7 @@ let
     fd
     fzf
     mcfly
+    neovim
     ripgrep
     sd
     tailspin
