@@ -19,7 +19,7 @@ in
     ../../../programs/starship/starship.nix
   ];
 
-  home.stateVersion = "23.05";
+  home.stateVersion = "26.05";
   home.packages = with pkgs; [
     bat
     cpufetch

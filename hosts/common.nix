@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, pkgs-stable, ... }:
 
 let
   programImports = [
@@ -69,7 +69,7 @@ let
   ];
 
   database = with pkgs; [
-    pgcli
+    pkgs-stable.pgcli
     postgresql_18
   ];
 
@@ -110,7 +110,7 @@ in
   imports = programImports;
 
   home = {
-    stateVersion = "23.05";
+    stateVersion = "26.05";
 
     packages =
       base

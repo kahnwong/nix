@@ -35,7 +35,6 @@ let
     # golang
     golangci-lint
     gopls
-    gotools
     goreleaser
     air
     # nix
