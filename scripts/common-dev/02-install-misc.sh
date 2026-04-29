@@ -150,3 +150,8 @@ if [[ $(uname -s) == 'Linux' ]]; then
 elif [[ $(uname -s) == 'Darwin' ]]; then
 	gh install browsh-org/browsh
 fi
+
+# only on laptop
+if [[ $(uname -n) != 'sailfish' ]]; then
+	ubi --project jordond/jolt --in ~/.local/bin/
+fi
