@@ -110,6 +110,17 @@ function cat
     bat --theme "Monokai Extended" $argv
 end
 
+function fcat
+     if test "$argv[2]" = "-p"
+        fd $argv | xargs cat
+     else
+        fd $argv | xargs bat
+     end
+end
+
+function fvi
+    fd $argv | xargs vi
+end
 
 function tere
     set --local result (command tere $argv)

@@ -1,44 +1,9 @@
-# utils
-function weather
-    curl wttr.in/Bangkok
-end
-
-function tz # <https://github.com/oz/tz>
-    TZ_LIST="US/Eastern,USA - New York;US/Pacific,USA - Seattle;Europe/Amsterdam,NL - Amsterdam;Europe/Riga,LV - Riga;Europe/London,UK - London" command tz
-end
-
+# browsh
 switch (uname)
     case Linux
         function browsh
             docker run -it --rm -v "$HOME/.config/browsh/config.toml:/app/.config/browsh/config.toml" browsh/browsh
         end
-end
-
-function cpubench
-    CPUBENCH_API_KEY="$(get_fish_secret CPUBENCH_API_KEY)" command cpubench $argv
-end
-
-function retrooo
-    RETROOO_API_KEY="$(get_fish_secret RETROOO_API_KEY)" command retrooo $argv
-end
-
-function fcat
-     if test "$argv[2]" = "-p"
-        fd $argv | xargs cat
-     else
-        fd $argv | xargs bat
-     end
-end
-
-function fvi
-    fd $argv | xargs vi
-end
-
-# pop
-function pop
-    set -x RESEND_API_KEY $(get_fish_secret POP_RESEND_API_KEY)
-    set -x POP_FROM $(get_fish_secret POP_EMAIL_FROM)
-    command pop $argv
 end
 
 # syncthing
@@ -59,43 +24,9 @@ function sts
         -H "X-API-Key: $(get_fish_secret $SYNCTHING_API_KEY)"
 end
 
-# notes
-function n
-    cd ~/Git/kahnwong/notes/notes-personal/ || exit
-    vi "+:NvimTreeToggle"
-end
-
 # date
 function d-iso-8601
     set -l value "$(date +%Y-%m-%d)"
     echo $value
     echo $value | copy
-end
-
-# repo-switcher
-function r
-    argparse 'n' -- $argv
-    or return
-
-    set -l path (command repo-switcher $argv)
-    test $status -eq 0; or return
-
-    if set -q _flag_n # cd into project
-        cd $path
-    else # open in IDE
-        idea $path &
-    end
-end
-
-# flox
-function fa
-    flox activate
-end
-
-function fas
-    flox activate --start-services
-end
-
-function fsr
-    flox services restart
 end

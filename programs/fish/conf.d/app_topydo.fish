@@ -20,8 +20,8 @@ function tmr
     topydo due:tomorrow
 end
 
+# lh = look ahead
 function tlh
-    # lh = look ahead
     topydo due:"<=7d"
 end
 

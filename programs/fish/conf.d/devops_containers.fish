@@ -11,7 +11,7 @@ function docker-up
 end
 
 function docker-rmi
-    docker images | grep $argv | awk '{print $2}' | xargs docker rmi
+    docker images --format "table {{.Repository}}:{{.Tag}}\t{{.ID}}\t{{.Size}}" | grep $argv | awk '{print $2}' | xargs docker rmi
 end
 
 # podman

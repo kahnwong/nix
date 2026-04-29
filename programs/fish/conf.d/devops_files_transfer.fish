@@ -26,11 +26,18 @@ function sendme
 end
 
 # rsync
-## trailing slash prevents mirror-ing into subfolder
 function mirror
-    rsync -rvP --size-only --delete "$argv[1]/" "$argv[2]/"
-end
+    # Usage: mirror [-a] <source> <destination>
+    argparse 'a/apply' -- $argv
+    or return
 
-function mirror-dry-run
-    rsync -rvPn --size-only --delete "$argv[1]/" "$argv[2]/"
+    set -l flags -rvP --size-only --delete
+
+    # If -a is NOT set, add the -n (dry-run) flag
+    if not set -q _flag_apply
+        set flags $flags -n
+    end
+
+    # trailing slash prevents mirror-ing into subfolder
+    rsync $flags "$argv[1]/" "$argv[2]/"
 end

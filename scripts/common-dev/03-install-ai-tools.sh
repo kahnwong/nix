@@ -2,7 +2,7 @@
 
 curl -fsSL https://claude.ai/install.sh | bash
 curl -fsSL https://cli.kiro.dev/install | bash
-curl -fsSL https://gh.io/copilot-install | bash
+#curl -fsSL https://gh.io/copilot-install | bash
 ubi --project charmbracelet/crush --in ~/.local/bin
 yarn global add @google/gemini-cli
 yarn global add opencode-ai
