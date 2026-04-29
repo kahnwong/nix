@@ -82,10 +82,10 @@ let
     mw
     rumdl
     # security
-    grype
+    # grype
     osv-scanner
     syft
-    trivy
+    # trivy
     zizmor
   ];
 

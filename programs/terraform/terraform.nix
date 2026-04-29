@@ -24,7 +24,8 @@
   home.file.".tofurc".source = ./.tofurc;
 
   home.packages = with pkgs; [
-    terraform-docs
+    checkov
     infracost
+    terraform-docs
   ];
 }
