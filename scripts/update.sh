@@ -11,17 +11,8 @@ nix-store --gc
 fisher update
 ./scripts/common/02-add-fish-completions.sh
 
-# gh extensions
-gh ext upgrade --all
-
-# python
-uv tool upgrade --all
-
-# rust
-rustup update
-
-# yarn
-yarn global upgrade
+# packages
+./scripts/common-dev/02-install-misc.sh update
 
 # flatpak
 if [[ $(uname -s) == 'Linux' ]]; then

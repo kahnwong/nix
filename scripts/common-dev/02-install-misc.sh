@@ -3,14 +3,20 @@
 ############################
 # go
 ############################
-GO_VERSION="go1.25.4"
-go install "golang.org/dl/${GO_VERSION}@latest"
-"${GO_VERSION}" download
+if [[ "$1" != "update" ]]; then
+	GO_VERSION="go1.26.2"
+	go install "golang.org/dl/${GO_VERSION}@latest"
+	"${GO_VERSION}" download
+fi
 
 ############################
 # rust
 ############################
-rustup default stable
+if [[ "$1" != "update" ]]; then
+	rustup default stable
+else
+	rustup update
+fi
 
 ############################
 # mise
@@ -56,26 +62,34 @@ cargo install --locked cross
 ############################
 # applications - python
 ############################
-# uv tool install nbpreview
-uv tool install "dvc[s3]"
-uv tool install huggingface_hub[cli]
-uv tool install magika
-uv tool install pip_search
-uv tool install topydo[columns]
+if [[ "$1" != "update" ]]; then
+	# uv tool install nbpreview
+	uv tool install "dvc[s3]"
+	uv tool install huggingface_hub[cli]
+	uv tool install magika
+	uv tool install pip_search
+	uv tool install topydo[columns]
 
-if [[ $(uname -s) == 'Darwin' ]]; then
-	pixi global install qgis
+	if [[ $(uname -s) == 'Darwin' ]]; then
+		pixi global install qgis
+	fi
+else
+	uv tool upgrade --all
 fi
 
 ############################
 # applications - node
 ############################
-npm set prefix ~/.npm-global
-yarn global add @quasar/cli
-yarn global add create-quasar
-yarn global add create-slidev
-yarn global add md-to-pdf
-yarn global add playwright-chromium
+if [[ "$1" != "update" ]]; then
+	npm set prefix ~/.npm-global
+	yarn global add @quasar/cli
+	yarn global add create-quasar
+	yarn global add create-slidev
+	yarn global add md-to-pdf
+	yarn global add playwright-chromium
+else
+	yarn global upgrade
+fi
 
 ############################
 # kubectl
@@ -95,28 +109,39 @@ helm plugin install https://github.com/databus23/helm-diff
 ####################
 # git
 ####################
-# create ssh key
-if [ ! -f "$HOME/.ssh/github" ]; then
-	ssh-keygen -b 2048 -t rsa -f ~/.ssh/github -q -N ""
-else
-	echo "$HOME/.ssh/github already exists"
+if [[ "$1" != "update" ]]; then
+	# create ssh key
+	if [ ! -f "$HOME/.ssh/github" ]; then
+		ssh-keygen -b 2048 -t rsa -f ~/.ssh/github -q -N ""
+	else
+		echo "$HOME/.ssh/github already exists"
+	fi
 fi
 
 # gh-cli extensions
-gh auth login
-gh config set git_protocol ssh -h github.com
-gh extension install Shresht7/gh-license
-gh extension install dlvhdr/gh-dash
-gh extension install github/gh-models
-gh extension install redraw/gh-install
-gh extension install seachicken/gh-poi
+if [[ "$1" != "update" ]]; then
+	gh auth login
+	gh config set git_protocol ssh -h github.com
+
+	gh extension install Shresht7/gh-license
+	gh extension install dlvhdr/gh-dash
+	gh extension install github/gh-models
+	gh extension install redraw/gh-install
+	gh extension install seachicken/gh-poi
+else
+	gh ext upgrade --all
+fi
 
 # gitlab
-glab auth login
+if [[ "$1" != "update" ]]; then
+	glab auth login
+fi
 
 # forgejo
-tea login
-tea login default git.karnwong.me
+if [[ "$1" != "update" ]]; then
+	tea login
+	tea login default git.karnwong.me
+fi
 
 ####################
 # executables
