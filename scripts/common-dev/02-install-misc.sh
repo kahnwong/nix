@@ -98,7 +98,6 @@ krew install crd-wizard
 krew install images
 krew install node-resource
 krew install nodepools
-krew install outdated
 krew install status
 
 ############################
