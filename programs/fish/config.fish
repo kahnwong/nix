@@ -78,7 +78,7 @@ end
 # CONFIG: SHELL
 ####################
 # editor
-set EDITOR nvim
+set -gx EDITOR nvim
 
 # fzf
 export FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git -o -name cache -o -name dist \) -prune -o -print'
