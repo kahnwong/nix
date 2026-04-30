@@ -1,6 +1,12 @@
 { pkgs, pkgs-stable, ... }:
 
 let
+  gotoolsCustom = pkgs.symlinkJoin {
+    name = "gotools-custom";
+    paths = [ pkgs.gotools ];
+    postBuild = "rm -f $out/bin/modernize";
+  };
+
   programImports = [
     ../programs/aws/aws.nix
     ../programs/ghostty/ghostty.nix
@@ -36,6 +42,7 @@ let
     golangci-lint
     gopls
     goreleaser
+    gotoolsCustom
     air
     # nix
     nix-search-cli
