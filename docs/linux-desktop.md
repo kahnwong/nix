@@ -116,45 +116,6 @@ You don't need this for Ghostty, but intellij terminal needs this to render glyp
 
 - Fix discord not loading: `rm -rf ~/.var/app/com.discordapp.Discord`
 
-### Firefox
-
-#### Fonts
-
-Use `waree` for Thai sans-serif.
-
-#### Containers
-
-```js
-// const icons = ["fingerprint", "briefcase", "dollar", "cart", "vacation", "gift", "food", "fruit", "pet", "tree", "chill", "circle"]
-// if (url.hostname === "gemini.google.com") return { name: "Workspace", icon: "circle", color: "blue" };
-
-const workspaceHosts = ["gemini.google.com", "meet.google.com", "console.cloud.google.com", "notebooklm.google.com", "gmail.com", "drive.google.com", "docs.google.com", "sheets.google.com", "jules.google", "jules.google.com"];
-if (workspaceHosts.includes(url.hostname)) {
-    return {name: "Workspace", icon: "circle", color: "blue"};
-}
-
-if (url.hostname === "www.google.com") return {name: "Search", icon: "circle", color: "green"};
-if (url.hostname === "www.youtube.com") return {name: "YouTube", icon: "circle", color: "red"};
-if (url.hostname === "contacts.google.com") return {name: "Contacts", icon: "circle", color: "purple"};
-
-if (url.hostname === "www.perplexity.ai") return {name: "Perplexity", icon: "circle", color: "blue"};
-if (url.hostname === "chatgpt.com") return {name: "ChatGPT", icon: "circle", color: "orange"};
-if (url.hostname === "github.com") return null;
-```
-
-#### Privacy Settings
-
-- Disable Telemetry Settings > Privacy & Security > Firefox Data Collection
-- Change Search Engine Settings > Search (Switch to DuckDuckGo or Brave Search)
-- Strict Protection Settings > Privacy & Security > Enhanced Tracking Protection (Set to Strict)
-- DNS over HTTPS Settings > Privacy & Security > Enable Max Protection
-
-#### Set Custom AI Chatbot
-
-For Open WebUI.
-
-Type `about:config` and set value for `browser.ml.chat.provider` as `https://chat.example.com/?model=gemma4-26b&temporary-chat=true`.
-
 ### Ntfyr
 
 - Set to start in background
