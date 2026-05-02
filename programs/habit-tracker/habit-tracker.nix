@@ -1,4 +1,7 @@
-{ config, pkgs, lib, ... }:
+{
+  pkgs,
+  ...
+}:
 
 {
   home.file.".config/habit-tracker/config.yaml".source = ./config.yaml;

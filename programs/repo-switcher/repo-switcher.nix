@@ -1,4 +1,4 @@
-{ config, pkgs, lib, ... }:
+_:
 
 {
   home.file.".config/repo-switcher/config.yaml".source = ./config.yaml;

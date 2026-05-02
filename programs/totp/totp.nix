@@ -1,4 +1,7 @@
-{ config, pkgs, lib, ... }:
+{
+  pkgs,
+  ...
+}:
 
 {
   home.file.".config/totp/totp.sops.yaml".source = ./totp.sops.yaml;

@@ -1,6 +1,5 @@
 {
   home-manager,
-  nixpkgs,
   nixpkgs-stable,
   ...
 }:

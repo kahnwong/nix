@@ -1,4 +1,7 @@
-{ config, pkgs, lib, ... }:
+{
+  pkgs,
+  ...
+}:
 
 {
   home.file.".config/yt-dlp/config".source = ./yt-dlp.conf;

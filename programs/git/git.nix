@@ -1,20 +1,34 @@
 {
-  config,
   pkgs,
-  lib,
   ...
 }:
 {
   imports = [ ./delta.nix ];
 
-  home.file.".config/git/profiles/forgejo".source = ./profiles/forgejo;
-  home.file.".config/git/profiles/github".source = ./profiles/github;
-  home.file.".gitignore_global".source = ./gitignore/gitignore_global;
-  home.file.".config/git/profiles/go-install".source = ./profiles/go-install;
+  home = {
+    file = {
+      ".config/git/profiles/forgejo".source = ./profiles/forgejo;
+      ".config/git/profiles/github".source = ./profiles/github;
+      ".gitignore_global".source = ./gitignore/gitignore_global;
+      ".config/git/profiles/go-install".source = ./profiles/go-install;
 
-  # templates
-  home.file.".sops.yaml".source = ./sops/.sops.yaml;
-  home.file.".sops-work.yaml".source = ./sops/.sops-work.yaml;
+      # templates
+      ".sops.yaml".source = ./sops/.sops.yaml;
+      ".sops-work.yaml".source = ./sops/.sops-work.yaml;
+    };
+
+    packages = with pkgs; [
+      gh
+      git-cliff
+      git-lfs
+      git-who
+      glab
+      pre-commit # for backward compatibility
+      prek
+      svu
+      tea
+    ];
+  };
 
   programs.git = {
     # `git config --global --edit` to see raw config
@@ -58,29 +72,31 @@
 
       # ----- profiles -----
       # optional
-      includeIf."gitdir:~/Git/" = {
-        path = "profiles/github";
-      };
-      includeIf."gitdir:/mnt/ssd/Git/" = {
-        path = "profiles/github";
-      };
+      includeIf = {
+        "gitdir:~/Git/" = {
+          path = "profiles/github";
+        };
+        "gitdir:/mnt/ssd/Git/" = {
+          path = "profiles/github";
+        };
 
-      ## syncthing
-      includeIf."gitdir:~/Apps/" = {
-        path = "profiles/github";
-      };
-      includeIf."gitdir:/opt/syncthing/cloud/" = {
-        path = "profiles/github";
-      };
+        ## syncthing
+        "gitdir:~/Apps/" = {
+          path = "profiles/github";
+        };
+        "gitdir:/opt/syncthing/cloud/" = {
+          path = "profiles/github";
+        };
 
-      ## nvim
-      includeIf."gitdir:~/.config/nvim/" = {
-        path = "profiles/github";
-      };
+        ## nvim
+        "gitdir:~/.config/nvim/" = {
+          path = "profiles/github";
+        };
 
-      # forgejo
-      includeIf."gitdir:~/Forgejo/" = {
-        path = "profiles/forgejo";
+        # forgejo
+        "gitdir:~/Forgejo/" = {
+          path = "profiles/forgejo";
+        };
       };
 
       # ----- global ignore -----
@@ -114,16 +130,4 @@
     };
   };
 
-  home.packages = with pkgs; [
-    # tools
-    gh
-    git-cliff
-    git-lfs
-    git-who
-    glab
-    pre-commit # for backward compatibility
-    prek
-    svu
-    tea
-  ];
 }

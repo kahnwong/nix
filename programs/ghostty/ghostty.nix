@@ -1,7 +1,6 @@
 {
   config,
   pkgs,
-  lib,
   ...
 }:
 
@@ -28,7 +27,7 @@
               ]
               (builtins.readFile ./config);
         in
-        (if stdenv.isLinux then linux else mac);
+        if stdenv.isLinux then linux else mac;
     };
   };
 }

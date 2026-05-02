@@ -1,4 +1,7 @@
-{ config, pkgs, lib, ... }:
+{
+  pkgs,
+  ...
+}:
 
 {
   home.file.".config/zellij/config.kdl".source = ./config.kdl;

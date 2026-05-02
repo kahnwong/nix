@@ -15,10 +15,12 @@ repos:
       - id: fix-byte-order-marker
       - id: mixed-line-ending
   - repo: https://github.com/kahnwong/pre-commit
-    rev: "98ee5b1"
+    rev: "320801a"
     hooks:
       - id: shellcheck
       - id: shfmt
       - id: nix-fmt
+      - id: statix
+      - id: deadnix
       # - id: kingfisher
       - id: mdsf

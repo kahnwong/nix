@@ -1,7 +1,5 @@
 {
-  config,
   pkgs,
-  lib,
   ...
 }:
 
@@ -20,12 +18,16 @@
   #    };
   #  };
 
-  home.file.".terraform.d/plugin-cache/.terraformrc".source = ./.terraformrc; # dummy file for init directory
-  home.file.".tofurc".source = ./.tofurc;
+  home = {
+    file = {
+      ".terraform.d/plugin-cache/.terraformrc".source = ./.terraformrc; # dummy file for init directory
+      ".tofurc".source = ./.tofurc;
+    };
 
-  home.packages = with pkgs; [
-    checkov
-    infracost
-    terraform-docs
-  ];
+    packages = with pkgs; [
+      checkov
+      infracost
+      terraform-docs
+    ];
+  };
 }
