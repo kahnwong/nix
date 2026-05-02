@@ -117,6 +117,9 @@
               };
             }
           ];
+          extraSpecialArgs = {
+            pkgs-stable = nixpkgs-stable.legacyPackages.x86_64-linux;
+          };
         };
         server = home-manager.lib.homeManagerConfiguration {
           pkgs = nixpkgs.legacyPackages.x86_64-linux;
