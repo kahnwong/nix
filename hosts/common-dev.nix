@@ -45,8 +45,10 @@ let
     gotoolsCustom
     air
     # ---- nix ----
+    deadnix
     nix-search-cli
     nixfmt
+    statix
     # ---- python ----
     pixi
     nbstripout
