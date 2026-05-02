@@ -78,10 +78,7 @@ let
     helmfile
     k9s
     krew
-    ktop
-    kube-capacity
     kubectl
-    kubectx
     kubernetes-helm
     kubevirt
     # ---- markdown ----

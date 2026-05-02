@@ -1,8 +1,3 @@
-# k8s
-function k
-    kubectl $argv
-end
-
 # docker
 function docker-up
     docker compose down

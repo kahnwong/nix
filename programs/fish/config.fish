@@ -131,6 +131,8 @@ alias cp="cpx"
 alias tmux="zellij"
 alias vi="nvim"
 
+abbr -a k kubectl
+
 ###############################
 # APPS: Completions + Alias
 ###############################

@@ -94,11 +94,22 @@ fi
 ############################
 # kubectl
 ############################
-krew install crd-wizard
-krew install images
-krew install node-resource
-krew install nodepools
-krew install status
+if [[ "$1" != "update" ]]; then
+	krew install argo-apps-viz
+	krew install crd-wizard
+	krew install ctx
+	krew install deprecations
+	krew install images
+	krew install ktop
+	krew install node-resource
+	krew install nodepools
+	krew install ns
+	krew install outdated
+	krew install resource-capacity
+	krew install status
+else
+	krew upgrade
+fi
 
 ############################
 # helm
