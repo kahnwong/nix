@@ -1,4 +1,4 @@
-{ pkgs, pkgs-stable, ... }:
+{ pkgs, ... }:
 
 let
   programImports = [
@@ -9,12 +9,9 @@ let
 
   base = with pkgs; [
     bat
-    cpx
-    difftastic
+    curl
     eza
     fd
-    fzf
-    mcfly
     neovim
     ripgrep
     sd
@@ -26,23 +23,6 @@ let
     zoxide
   ];
 
-  backup = with pkgs; [
-    # rclone
-    restic
-    rsync
-  ];
-
-  networking = with pkgs; [
-    curl
-    doggo
-    dumbpipe
-    gping
-    rustscan
-    sendme
-    somo
-    whois
-  ];
-
   system = with pkgs; [
     bandwhich
     diskus
@@ -52,7 +32,6 @@ let
     htop
     ncdu
     procs
-    sampler
     zenith
   ];
 
@@ -69,17 +48,7 @@ let
   ];
 
   database = with pkgs; [
-    pkgs-stable.pgcli
     postgresql_18
-  ];
-
-  dataManipulation = with pkgs; [
-    fx
-    glow
-    jnv
-    jq
-    visidata
-    yq-go
   ];
 
   downloader = with pkgs; [
@@ -101,28 +70,25 @@ let
     entr
     mcat
     sops
-    sshx
-    tldr
   ];
+
+  linuxOnly =
+    with pkgs;
+    if stdenv.isLinux then
+      [
+        iotop
+        progress
+      ]
+    else
+      [ ];
 
 in
 {
   imports = programImports;
 
   home = {
-    stateVersion = "26.05";
-
+    stateVersion = "25.11";
     packages =
-      base
-      ++ backup
-      ++ networking
-      ++ system
-      ++ fetch
-      ++ containers
-      ++ database
-      ++ dataManipulation
-      ++ downloader
-      ++ toolchains
-      ++ utils;
+      base ++ system ++ fetch ++ containers ++ database ++ downloader ++ toolchains ++ utils ++ linuxOnly;
   };
 }

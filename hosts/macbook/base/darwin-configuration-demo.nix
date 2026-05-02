@@ -1,10 +1,15 @@
-{ pkgs, nix, nixpkgs, config, lib, ... }: {
+{
+  pkgs,
+  nixpkgs,
+  lib,
+  ...
+}:
+{
   imports = [ ];
-  environment.systemPackages = with pkgs;
-    [
-      # nix
-      home-manager # this needs to stay here
-    ];
+  environment.systemPackages = with pkgs; [
+    # nix
+    home-manager # this needs to stay here
+  ];
 
   fonts = {
     packages = with pkgs; [
@@ -30,7 +35,11 @@
     ];
   };
 
-  users = { users.demo = { home = /Users/demo; }; };
+  users = {
+    users.demo = {
+      home = /Users/demo;
+    };
+  };
 
   nix = {
     enable = false;

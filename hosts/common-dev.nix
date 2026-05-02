@@ -28,35 +28,35 @@ let
   ];
 
   toolchainsAndLinters = with pkgs; [
-    # android
+    # ---- android ----
     android-tools
     flutter
-    # bash
+    # ---- bash ----
     beautysh
     shellcheck
     shfmt
-    # c
+    # ---- c ----
     uncrustify
     usort
-    # golang
+    # ---- golang ----
     golangci-lint
     gopls
     goreleaser
     gotoolsCustom
     air
-    # nix
+    # ---- nix ----
     nix-search-cli
     nixfmt
-    # python
+    # ---- python ----
     pixi
     nbstripout
     ruff
-    # yaml
+    # ---- yaml ----
     yamlfmt
     yamllint
-    # # zig
+    # ---- zig ----
     # zig_0_13
-    # misc
+    # ---- misc ----
     distrobox
     hadolint
     sqruff
@@ -64,14 +64,15 @@ let
   ];
 
   cloudAndOps = with pkgs; [
-    # database
+    # ---- database ----
     #atlas
     #mongodb-tools
+    pkgs-stable.pgcli
     sqlite
-    # gcp
+    # ---- gcp ----
     google-cloud-sdk
     google-cloud-sql-proxy
-    # kubernetes
+    # ---- kubernetes ----
     helmfile
     k9s
     krew
@@ -81,51 +82,74 @@ let
     kubectx
     kubernetes-helm
     kubevirt
-    # markdown
+    # ---- markdown ----
     markdown-link-check
     markdownlint-cli2
     mdsf
     mw
     rumdl
-    # security
+    # ---- security ----
     # grype
     osv-scanner
     syft
-    # trivy
     zizmor
   ];
 
   webAndTesting = with pkgs; [
-    # networking
+    # ---- networking ----
     caddy
+    doggo
+    dumbpipe
+    gping
     mitmproxy
-    # tests
+    rustscan
+    sendme
+    somo
+    sshx
+    whois
+    # ---- tests ----
     hurl
     hyperfine
     k6
     oha
-    # wasm
+    # ---- wasm ----
     wasmtime
   ];
 
-  aiAndLlm = with pkgs; [
-    llama-cpp
+  dataManipulation = with pkgs; [
+    fx
+    glow
+    jnv
+    jq
+    visidata
+    yq-go
+  ];
+
+  utils = with pkgs; [
+    caligula
+    charm-freeze
+    cpx
+    difftastic
+    f2
+    fzf
+    imagemagick
+    libqalculate
+    mcfly
+    numbat
+    pastel
+    pop
+    restic
+    rsync
+    tldr
+    tz
+    wakatime-cli
   ];
 
   misc = with pkgs; [
     beancount
     beanquery
-    caligula
-    charm-freeze
-    f2
     fava
-    imagemagick
-    libqalculate
-    numbat
-    pastel
-    pop
-    tz
-    wakatime-cli
+    llama-cpp
     zola # use pkgs-stable.zola here if needed
   ];
 
@@ -139,6 +163,7 @@ in
   };
 
   home = {
-    packages = toolchainsAndLinters ++ cloudAndOps ++ webAndTesting ++ aiAndLlm ++ misc;
+    packages =
+      toolchainsAndLinters ++ cloudAndOps ++ webAndTesting ++ dataManipulation ++ utils ++ misc;
   };
 }

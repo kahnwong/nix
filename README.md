@@ -13,10 +13,10 @@ File content should look like this:
 
 export NIXPKGS_ALLOW_UNFREE=1
 
-## macbook
+## darwin
 #nix build '.#homeManagerConfigurations.macbookMain.system' --experimental-features 'nix-command flakes' --impure
 # linux
-nix build '.#homeManagerConfigurations.workstation.activationPackage'
+nix build '.#homeManagerConfigurations.base.activationPackage' --experimental-features 'nix-command flakes' --impure
 
 if [[ $(uname -s) == 'Darwin' ]]; then
     sudo ./result/activate

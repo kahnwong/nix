@@ -53,7 +53,7 @@ set PATH $PATH:/nix/var/nix/profiles/default/bin/
 # CONFIG: SHELL
 ####################
 # editor
-set EDITOR nvim
+set -gx EDITOR nvim
 
 # starship
 starship init fish | source
@@ -63,10 +63,6 @@ zoxide init fish | source
 
 # direnv
 direnv hook fish | source
-
-# mcfly
-mcfly init fish | source
-set MCFLY_KEY_SCHEME vim
 
 function ls
     eza --icons -1 --group-directories-first $argv
@@ -81,6 +77,5 @@ function tere
     [ -n "$result" ] && cd -- "$result"
 end
 
-alias cp="cpx"
 alias tmux="zellij"
 alias vi="nvim"

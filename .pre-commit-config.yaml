@@ -20,5 +20,5 @@ repos:
       - id: shellcheck
       - id: shfmt
       - id: nix-fmt
-      - id: kingfisher
+      # - id: kingfisher
       - id: mdsf

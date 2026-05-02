@@ -1,4 +1,4 @@
-{ pkgs, pkgs-stable, ... }:
+{ pkgs, ... }:
 {
   imports = [
     ../programs/article-summarizer/article-summarizer.nix

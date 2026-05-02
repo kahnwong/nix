@@ -65,123 +65,17 @@
             pkgs-stable = nixpkgs-stable.legacyPackages.aarch64-darwin;
           };
         };
-        # ----------------- linux ----------------- #
-        workstation = home-manager.lib.homeManagerConfiguration {
-          pkgs = nixpkgs.legacyPackages.x86_64-linux;
-          modules = [
-            ./hosts/linux/workstation/home.nix
-            {
-              home = {
-                username = "kahnwong";
-                homeDirectory = "/home/kahnwong";
-              };
-            }
-          ];
-          extraSpecialArgs = {
-            pkgs-stable = nixpkgs-stable.legacyPackages.x86_64-linux;
-            inherit flox;
-          };
-        };
-        demo = home-manager.lib.homeManagerConfiguration {
-          pkgs = nixpkgs.legacyPackages.x86_64-linux;
-          modules = [
-            ./hosts/linux/demo/home.nix
-            {
-              home = {
-                username = "demo";
-                homeDirectory = "/home/demo";
-              };
-            }
-          ];
-        };
-        dev = home-manager.lib.homeManagerConfiguration {
-          pkgs = nixpkgs.legacyPackages.x86_64-linux;
-          modules = [
-            ./hosts/linux/dev/home.nix
-            {
-              home = {
-                username = "kahnwong";
-                homeDirectory = "/home/kahnwong";
-              };
-            }
-          ];
-        };
-        lite = home-manager.lib.homeManagerConfiguration {
-          pkgs = nixpkgs.legacyPackages.x86_64-linux;
-          modules = [
-            ./hosts/linux/lite/home.nix
-            {
-              home = {
-                username = "kahnwong";
-                homeDirectory = "/home/kahnwong";
-              };
-            }
-          ];
-          extraSpecialArgs = {
-            pkgs-stable = nixpkgs-stable.legacyPackages.x86_64-linux;
-          };
-        };
-        server = home-manager.lib.homeManagerConfiguration {
-          pkgs = nixpkgs.legacyPackages.x86_64-linux;
-          modules = [
-            ./hosts/linux/server/home.nix
-            {
-              home = {
-                username = "ubuntu";
-                homeDirectory = "/home/ubuntu";
-              };
-            }
-          ];
-        };
-        serverOnPrem = home-manager.lib.homeManagerConfiguration {
-          pkgs = nixpkgs.legacyPackages.x86_64-linux;
-          modules = [
-            ./hosts/linux/server/home.nix
-            {
-              home = {
-                username = "kahnwong";
-                homeDirectory = "/home/kahnwong";
-              };
-            }
-          ];
-        };
-        serverR440 = home-manager.lib.homeManagerConfiguration {
-          pkgs = nixpkgs.legacyPackages.x86_64-linux;
-          modules = [
-            ./hosts/linux/server/home.nix
-            {
-              home = {
-                username = "r440-server";
-                homeDirectory = "/home/r440-server";
-              };
-            }
-          ];
-        };
-        apps = home-manager.lib.homeManagerConfiguration {
-          pkgs = nixpkgs.legacyPackages.x86_64-linux;
-          modules = [
-            ./hosts/linux/apps/home.nix
-            {
-              home = {
-                username = "ubuntu";
-                homeDirectory = "/home/ubuntu";
-              };
-            }
-          ];
-        };
-        # ----------------- pi ----------------- #
-        argon = home-manager.lib.homeManagerConfiguration {
-          pkgs = nixpkgs.legacyPackages.aarch64-linux;
-          modules = [
-            ./hosts/linux/server-lite/home.nix
-            {
-              home = {
-                username = "ubuntu";
-                homeDirectory = "/home/ubuntu";
-              };
-            }
-          ];
-        };
-      };
+      }
+      // (import ./personal.nix {
+        inherit
+          home-manager
+          nixpkgs
+          nixpkgs-stable
+          flox
+          ;
+      })
+      // (import ./server.nix {
+        inherit home-manager nixpkgs nixpkgs-stable;
+      });
     };
 }
