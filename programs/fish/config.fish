@@ -119,7 +119,7 @@ function fcat
 end
 
 function fvi
-    fd $argv | xargs vi
+    fd $argv | xargs nvim
 end
 
 function tere
