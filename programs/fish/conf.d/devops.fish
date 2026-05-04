@@ -11,5 +11,5 @@ end
 
 # scratch workspace
 function firecrack
-    ssh -t kubevirt-ubuntu-r440 firecrack start
+    ssh -t nuc firecrack start
 end
