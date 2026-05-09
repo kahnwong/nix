@@ -21,19 +21,30 @@ end
 ######################
 # short commands
 ######################
-function a # ask - coding mode
-    # crush run -m claude-haiku-4-5 you should provide code snippet without explanation $argv | glow
+function fetch-response
+    curl -s -X POST http://localhost:13305/v1/responses \
+      -H "Content-Type: application/json" \
+      -d "{
+            \"model\": \"Bonsai-1.7B-gguf\",
+            \"input\": \"$argv[2] $argv[1]\",
+            \"stream\": false
+          }" | jq -r .output[0].content[0].text | glow -
+end
 
-    mkdir -p /tmp/gemini # prevent gemini from scanning the folder
-    cd /tmp/gemini || exit 1
-    gemini -m gemini-3-flash-preview -p "you should provide code snippet without explanation $argv" | glow
+function a # ask - coding mode
+    fetch-response "you should provide code snippet without explanation" "$argv"
 end
 
 # normal
 function as # ask - short answer
-    # crush run -m claude-haiku-4-5 you should provide answer within a few sentences $argv | glow
-
-    mkdir -p /tmp/gemini # prevent gemini from scanning the folder
-    cd /tmp/gemini || exit 1
-    gemini -m gemini-3-flash-preview -p "you should provide answer within a few sentences $argv" | glow
+    fetch-response "you should provide answer within a few sentences" "$argv"
 end
+
+# gemini-cli
+# # not used because it's very slow on free tier
+# mkdir -p /tmp/gemini # prevent gemini from scanning the folder
+# cd /tmp/gemini || exit 1
+# gemini -m gemini-3-flash-preview -p "you should provide answer within a few sentences $argv" | glow
+
+# crush
+# crush run -m claude-haiku-4-5 you should provide answer within a few sentences $argv | glow
