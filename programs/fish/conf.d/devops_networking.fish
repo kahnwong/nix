@@ -18,3 +18,11 @@ end
 function sshx
     command sshx --server $(get_fish_secret SSHX_ENDPOINT) --shell fish
 end
+
+# find process name from port
+function pid-from-port
+    switch (uname)
+        case Linux
+            sudo lsof -i :$argv
+    end
+end
