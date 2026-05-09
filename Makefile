@@ -18,23 +18,24 @@ darwin:
  	# ./scripts/vscode/setup.sh
 
 linux-desktop:
-	./scripts/linux-desktop/01-setup-linux.sh
-	./scripts/linux-desktop/02-install-linux.sh
-	./scripts/linux-desktop/setup-app-shortcuts.sh
-	./scripts/linux-desktop/setup-flatpak-config.sh
-	./scripts/linux-desktop/setup-gnome.sh
-	./scripts/linux-desktop/install-chrome.sh
-	./scripts/linux-desktop/install-docker.sh
-	./scripts/linux-desktop/install-firefox-nightly.sh
-	./scripts/linux-desktop/install-ghostty.sh
-	./scripts/linux-desktop/install-librewolf.sh
-	./scripts/linux-desktop/install-mullvad.sh
-	./scripts/linux-desktop/install-sourcegit.sh
-	./scripts/linux-desktop/install-tlp.sh
-	./scripts/linux-desktop/install-ydotool.sh
-	./scripts/linux-desktop/install-yubikey-manager.sh
 	./scripts/common-dev/setup-ssh-keys.sh
-	./scripts/linux-desktop/setup-startups.sh
+	./scripts/linux/01-setup-linux.sh
+	./scripts/linux/02-install-linux.sh
+	./scripts/linux/install-chrome.sh
+	./scripts/linux/install-docker.sh
+	./scripts/linux/install-firefox-nightly.sh
+	./scripts/linux/install-ghostty.sh
+	./scripts/linux/install-lemonade.sh
+	./scripts/linux/install-librewolf.sh
+	./scripts/linux/install-mullvad.sh
+	./scripts/linux/install-sourcegit.sh
+	./scripts/linux/install-tlp.sh
+	./scripts/linux/install-ydotool.sh
+	./scripts/linux/install-yubikey-manager.sh
+	./scripts/linux/setup-app-shortcuts.sh
+	./scripts/linux/setup-flatpak-config.sh
+	./scripts/linux/setup-gnome.sh
+	./scripts/linux/setup-startups.sh
 	# ./scripts/vscode/setup.sh
 
 ##############
@@ -64,4 +65,4 @@ ssh-keys-restore:
 
 # LINUX
 gnome-restore:
-	./scripts/linux-desktop/setup-gnome.sh
+	./scripts/linux/setup-gnome.sh

@@ -77,10 +77,6 @@ flatpak install -y flathub \
 # set flameshot permission
 flatpak permission-set screenshot screenshot org.flameshot.Flameshot yes
 
-# lemonade
-sudo add-apt-repository ppa:lemonade-team/stable
-sudo apt install -y lemonade-server lemonade-desktop
-
 # sailfish only
 if [[ $(uname -n) == 'sailfish' ]]; then
 	flatpak install -y flathub \
