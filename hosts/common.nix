@@ -12,12 +12,14 @@ let
     curl
     eza
     fd
+    gnutar
     neovim
     ripgrep
     sd
     tailspin
     tere
     tree
+    unzip
     viddy
     watch
     zoxide
