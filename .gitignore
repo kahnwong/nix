@@ -4,9 +4,3 @@ apply.sh
 
 # ide
 .idea
-
-# vscode
-settings.json
-
-# keys
-ssh-keys.zip
