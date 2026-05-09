@@ -14,6 +14,7 @@ darwin:
 	./scripts/darwin/01-setup-mac.sh
 	./scripts/darwin/02-install-mac.sh
 	./scripts/darwin/03-install-batt.sh
+	./scripts/common-dev/setup-ssh-keys.sh
  	# ./scripts/vscode/setup.sh
 
 linux-desktop:
@@ -32,7 +33,7 @@ linux-desktop:
 	./scripts/linux-desktop/install-tlp.sh
 	./scripts/linux-desktop/install-ydotool.sh
 	./scripts/linux-desktop/install-yubikey-manager.sh
-	./scripts/linux-desktop/setup-ssh-keys.sh
+	./scripts/common-dev/setup-ssh-keys.sh
 	./scripts/linux-desktop/setup-startups.sh
 	# ./scripts/vscode/setup.sh
 
@@ -40,7 +41,7 @@ linux-desktop:
 # UTILS
 ##############
 decrypt-credentials:
-	./scripts/decrypt.sh
+	./scripts/common-dev/decrypt.sh
 
 update:
 	./scripts/update.sh
@@ -56,10 +57,10 @@ apply:
 
 # SSH
 ssh-keys-backup:
-	./scripts/linux-desktop/setup-ssh-keys.sh backup
+	./scripts/common-dev/setup-ssh-keys.sh backup
 
 ssh-keys-restore:
-	./scripts/linux-desktop/setup-ssh-keys.sh
+	./scripts/common-dev/setup-ssh-keys.sh
 
 # LINUX
 gnome-restore:
