@@ -45,6 +45,13 @@ rustup toolchain remove $toolchain_version
 rustup install 1.90.0
 ```
 
+or
+
+```bash
+rustup toolchain uninstall stable
+rustup toolchain install stable
+```
+
 ### Run `sudo` without typing password
 
 ```bash
