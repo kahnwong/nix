@@ -1,5 +1,6 @@
 {
   home-manager,
+  nixpkgs,
   nixpkgs-stable,
   ...
 }:
@@ -17,17 +18,21 @@
     ];
   };
 
-  serverR440 = home-manager.lib.homeManagerConfiguration {
-    pkgs = nixpkgs-stable.legacyPackages.x86_64-linux;
+  dev = home-manager.lib.homeManagerConfiguration {
+    pkgs = nixpkgs.legacyPackages.x86_64-linux;
     modules = [
-      ./hosts/linux/server/home.nix
+      ./hosts/linux/dev/home.nix
       {
         home = {
-          username = "r440-server";
-          homeDirectory = "/home/r440-server";
+          username = "ubuntu";
+          homeDirectory = "/home/ubuntu";
         };
       }
     ];
+    extraSpecialArgs = {
+      pkgs-stable = nixpkgs-stable.legacyPackages.x86_64-linux;
+      # inherit flox;
+    };
   };
 
   apps = home-manager.lib.homeManagerConfiguration {
