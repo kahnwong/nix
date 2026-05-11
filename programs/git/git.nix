@@ -10,8 +10,9 @@
     file = {
       ".config/git/profiles/forgejo".source = ./profiles/forgejo;
       ".config/git/profiles/github".source = ./profiles/github;
-      ".gitignore_global".source = ./gitignore/gitignore_global;
       ".config/git/profiles/go-install".source = ./profiles/go-install;
+      ".gitignore_global".source = ./gitignore/gitignore_global;
+      ".ssh/allowed_signers".source = ./allowed_signers;
 
       # templates
       ".sops.yaml".source = ./sops/.sops.yaml;
@@ -46,6 +47,7 @@
 
       # ----- commit signing -----
       gpg.format = "ssh";
+      gpg.ssh.allowedSignersFile = "~/.ssh/allowed_signers";
       commit = {
         gpgsign = true;
       };
