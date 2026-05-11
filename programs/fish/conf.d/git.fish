@@ -14,6 +14,10 @@ function ga
     git add -p
 end
 
+function gaa
+    git add .
+end
+
 function gc
     git commit -nm $argv
 end
