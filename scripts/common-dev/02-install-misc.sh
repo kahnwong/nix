@@ -4,7 +4,7 @@
 # go
 ############################
 if [[ "$1" != "update" ]]; then
-	GO_VERSION="go1.26.2"
+	GO_VERSION="go1.26.3"
 	go install "golang.org/dl/${GO_VERSION}@latest"
 	"${GO_VERSION}" download
 fi
