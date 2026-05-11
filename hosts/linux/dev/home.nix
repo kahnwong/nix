@@ -4,7 +4,7 @@
 }:
 {
   imports = [
-    ../../../programs/fish/fish-generic.nix
+    ../../../programs/fish/fish.nix
     ../../common-dev.nix
     ../../common.nix
   ];
