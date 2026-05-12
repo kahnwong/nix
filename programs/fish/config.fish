@@ -137,7 +137,6 @@ abbr -a k kubectl
 # APPS: Completions + Alias
 ###############################
 # Aliases
-alias ba="bean-add"
 alias c="gcal-tui"
 alias ci="config-init"
 alias d="media-discord-rpc"
@@ -149,7 +148,7 @@ alias u="umamit"
 
 # Auto-completions
 set -l completion_commands \
-    bean-add \
+    bean \
     config-init \
     cpubench \
     erp \

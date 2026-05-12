@@ -8,7 +8,7 @@
     ../programs/umamit/umamit.nix
 
     # other binaries
-    # bean-add
+    # bean
   ];
 
   home = {

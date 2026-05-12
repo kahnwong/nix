@@ -8,7 +8,6 @@ set EDITOR nvim
 
 zoxide init fish | source
 
-alias ba="bean-add"
 alias h="habit-tracker"
 alias sk="swissknife"
 alias sm="article-summarizer"
@@ -18,7 +17,7 @@ alias vi="nvim"
 
 # Auto-completions
 set -l completion_commands \
-    bean-add \
+    bean \
     erp \
     habit-tracker \
     swissknife \
