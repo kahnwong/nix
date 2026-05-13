@@ -1,27 +1,20 @@
 pgconn:
     - account: ENC[AES256_GCM,data:B0S074URS/8=,iv:flRRyjuAyAjT8Bfc89taA5Bx2UJBdFJIuwUFK8scgXk=,tag:Q4STYbNNr7+vIhbhpTpADw==,type:str]
       dbs:
-        - name: ENC[AES256_GCM,data:auYTynIscMbqERnQ,iv:JVPFFVmeSRHZAfXhVz6YhZdUa0bPB4NcG2BpbozKoic=,tag:Gjr9gLQ71cxr1Xxr+KrHiA==,type:str]
+        - name: ENC[AES256_GCM,data:PwVHEkB2JSo+N3P1D9Je7KwSWs9f,iv:ObCzqQW5eXoAGL0Gwc78TqKFhXzrpUrsWV7RkQVd5Ck=,tag:RIATi8X+V0QwfgACpHiHVQ==,type:str]
           hostname: ENC[AES256_GCM,data:Tp8lqT1sJATM/wN1joev77A+n0w=,iv:2kQc9pAYx2OrmK9mNQ8QW74OvfSqP3WqntEJEEOJ/AQ=,tag:kXJRXf5fDuc5+X8b5pAFig==,type:str]
-          port: ENC[AES256_GCM,data:LNB6OQ0=,iv:Kkwl66drwHfiSpDQTh1dye0CWi7ueDm7PtnATpPjzzE=,tag:lJ1mN/S/rC3fS+sVR3EAbw==,type:int]
+          port: ENC[AES256_GCM,data:PETG3hI=,iv:ktE9WaqcDkoWBIKIdnMOZCC8wbRdssXtOFP10ntEuDw=,tag:fAw2/2vyJkxwvtWpfG8Paw==,type:int]
           roles:
-            - username: ENC[AES256_GCM,data:DMfjP8Xgj39P5au7qtq63805,iv:wwaeWXYdzXfW0BeAfWB0fft5sQwPWVoNvnYPzO22IyY=,tag:gDLdJfw62gucFffNPtZc0A==,type:str]
-              password: ENC[AES256_GCM,data:MGa5niM=,iv:P+qRh5z+Jbwt5rkaEmVyLxKGJqpr5SZfVUC8feDcBLk=,tag:xFuovCTkqCczjlYwaie6Hg==,type:str]
-              dbname: ENC[AES256_GCM,data:Ul8phuQpHLE=,iv:rnS2e2RKwVcVIHyyt7saSiVsstAecT/7PmX7Fw18cMU=,tag:I3k9R28Qoj6m7R3WWOR0KA==,type:str]
-        - name: ENC[AES256_GCM,data:HS7Vp7Z9U+jROaIZqxEdg+0sWgvhAA==,iv:ZgmqB6qcpXTwk6KEosq5GrYxG09yQtAxRRh7ozThHWw=,tag:gZi47KBMHltFa/9s5mguag==,type:str]
-          hostname: ENC[AES256_GCM,data:YbVvRNzlFP/NH8UOgU/0,iv:Zi/ZUoKGekuZM3O1mnLLBZu5zBO6a0bjwUQKCyEyTuI=,tag:JorhMhfjyPAh0PQJ0XB3Ww==,type:str]
-          port: ENC[AES256_GCM,data:Qpqg4w==,iv:lkEbD/pmKxrC2VDr+PBLeovX4Cb9fguwoRZXN15Zi78=,tag:0J+ckh+8ipFtgosLTqT6Wg==,type:int]
-          roles:
-            - username: ENC[AES256_GCM,data:Q4AESyVmTnU=,iv:LcM6995KyabpaexWxO6S1Hwlilt8nC2YgVcqNMR7RnU=,tag:4fTXsmKVTdzvILPNFgX8KQ==,type:str]
-              password: ENC[AES256_GCM,data:DXkxzYu7QNhE9SyY2s5JKA==,iv:LQ6jK/kYzPTuNetHNEgnFOYlG2jNu8PtK65Mz6K4pfk=,tag:q5J5LHsX4mwjmCLmBkMlSw==,type:str]
-              dbname: ENC[AES256_GCM,data:Ul8phuQpHLE=,iv:rnS2e2RKwVcVIHyyt7saSiVsstAecT/7PmX7Fw18cMU=,tag:I3k9R28Qoj6m7R3WWOR0KA==,type:str]
-        - name: ENC[AES256_GCM,data:Nlt5O3WIxD60mGyYroluuT83wgh7,iv:zGEwsH8rWRsnzWvq2nWMpwlmtWb78d09PoJKKOaETWE=,tag:mxhcx+yMlsDz5yQNagDdYA==,type:str]
+            - username: ENC[AES256_GCM,data:e/ypCYyZ/EaT8hPJBkygkBZUSd+r3Uv1,iv:QADagUr60/LsPNnP21k2oIEtgzc7XfOxptBfn5hcBis=,tag:62KDJ9C6UK0YYGf+/Qpuiw==,type:str]
+              password: ENC[AES256_GCM,data:UXlwjitDDKrJIj8g2o3c0rQp707q9cYZqQB9eZuKFF6s+ExQji05fe0waSoyMz0=,iv:EQVmYZQx1huxfK69qJCdayw/Aav4xlEsI4NbEAKHohE=,tag:XG/xdqWugRP1wfONr2mEhA==,type:str]
+              dbname: ENC[AES256_GCM,data:+agwSvxOsZqUGw==,iv:ygS4QbeZdPCdmpfU5BQ0qcEwHLtf44ScMBKZjWUexBY=,tag:i0hV2IqcPhITMNqNlaHBGQ==,type:str]
+        - name: ENC[AES256_GCM,data:auYTynIscMbqERnQ,iv:JVPFFVmeSRHZAfXhVz6YhZdUa0bPB4NcG2BpbozKoic=,tag:Gjr9gLQ71cxr1Xxr+KrHiA==,type:str]
           hostname: ENC[AES256_GCM,data:lT3yeAP639UYw2bM,iv:Nwhio5ZDbBipuqAvyZy1IXkeeSsDO9N+O+CoLRk51z0=,tag:UQhRFsVefBYFRWnlwhBErg==,type:str]
-          port: ENC[AES256_GCM,data:Qpqg4w==,iv:lkEbD/pmKxrC2VDr+PBLeovX4Cb9fguwoRZXN15Zi78=,tag:0J+ckh+8ipFtgosLTqT6Wg==,type:int]
+          port: ENC[AES256_GCM,data:lbwlS7A=,iv:1Hp9yVtQTFWAtL5u/rJ3uJLVsGCRkq0pF7Vp8gMhfbw=,tag:gZjRZDaUcW9aSyJU7koZnQ==,type:int]
           roles:
-            - username: ENC[AES256_GCM,data:Q4AESyVmTnU=,iv:LcM6995KyabpaexWxO6S1Hwlilt8nC2YgVcqNMR7RnU=,tag:4fTXsmKVTdzvILPNFgX8KQ==,type:str]
+            - username: ENC[AES256_GCM,data:p4c6tuUV,iv:ogQpVwyC4PdAZCM57OjxqjYHLdYpUqDoYaUGoLICUzE=,tag:2Z7TFow268vVhoaV4NmfAw==,type:str]
               password: ENC[AES256_GCM,data:DXkxzYu7QNhE9SyY2s5JKA==,iv:LQ6jK/kYzPTuNetHNEgnFOYlG2jNu8PtK65Mz6K4pfk=,tag:q5J5LHsX4mwjmCLmBkMlSw==,type:str]
-              dbname: ENC[AES256_GCM,data:Ul8phuQpHLE=,iv:rnS2e2RKwVcVIHyyt7saSiVsstAecT/7PmX7Fw18cMU=,tag:I3k9R28Qoj6m7R3WWOR0KA==,type:str]
+              dbname: ENC[AES256_GCM,data:+agwSvxOsZqUGw==,iv:ygS4QbeZdPCdmpfU5BQ0qcEwHLtf44ScMBKZjWUexBY=,tag:i0hV2IqcPhITMNqNlaHBGQ==,type:str]
         - name: ENC[AES256_GCM,data:2UtMi4672g/cLy/W5B4=,iv:ROizU6CqrWdapihcEjCjKV1piliQLkK9Tq5zCIBZ51A=,tag:LRH3eVv18mnzhPZUKHI8Og==,type:str]
           hostname: ENC[AES256_GCM,data:R3DFmZucfUHh,iv:AKYWkR3NT1fjRghGfhPCNPfbkdaOpjq9GxSlbD/G6lY=,tag:/70ZniHXh2CgwuGseWN5nw==,type:str]
           port: ENC[AES256_GCM,data:Qpqg4w==,iv:lkEbD/pmKxrC2VDr+PBLeovX4Cb9fguwoRZXN15Zi78=,tag:0J+ckh+8ipFtgosLTqT6Wg==,type:int]
@@ -40,7 +33,7 @@ sops:
             ZG5GdWtkOC9ITklncDRNdUdqRmNTSTgK/n8IOmk1TM/8w+vM2zPMt1qBe6Jbo40f
             olGA9AFZWia3bdzjgl736Lpd31p77SKyeG45CDRtzmW3g+trUNMUnA==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2025-06-14T08:49:28Z"
-    mac: ENC[AES256_GCM,data:T5259MGCN1BS+Mj4YNqkuO1ZOHFQhdOEpYzY98XsEmsoyHDs/NxLvEsID7GJl6f3Lx5nctKRWeczMlHKsMb1ZKmm/02gFiDwpprpvfuCso1ZP/zuRX6Y506MX4o3W4GbAnQysWOIOvpJpAMaqq8GEczty1PiIqMLwHNaSZhCrsI=,iv:oSgX7UA+BjjoIn2NP/S4GgT7kck5BwnwbouGYIh+lSs=,tag:9QZuDvGgYOA+3MCRuyEiKA==,type:str]
+    lastmodified: "2026-05-13T15:08:44Z"
+    mac: ENC[AES256_GCM,data:/4aLEEF4NsrM3JPZCVb/tRMU+1aCNUqLqIhngt8P1qIr64fmA2+D5gK+HK337Gc0zl+t5gx9NQWTekGTxSDVCghC1jwUK/n45oigBd9VGc0geOz4TYlzYvF10fGJ7u9hLxch7o7QStgw817R+2Ogo1eH2dXZgmmVQ5PbJcUGSDU=,iv:1JvLESr+lgAnKbB6mVzofTybiXoKS9YPTR+q2CnZCBo=,tag:SFIpwDvLLTfDn7xfY4kNoA==,type:str]
     unencrypted_suffix: _unencrypted
-    version: 3.10.2
+    version: 3.12.2
