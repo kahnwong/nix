@@ -1,14 +1,14 @@
 # repo-switcher
 function r
-    argparse 'n' -- $argv
-    or return
-
-    set -l path (command repo-switcher $argv)
-    test $status -eq 0; or return
-
-    if set -q _flag_n # cd into project
-        cd $path
-    else # open in IDE
+    set path (command repo-switcher $argv)
+    if test $status -eq 0
         idea $path &
+    end
+end
+
+function rcd
+    set path (command repo-switcher $argv)
+    if test $status -eq 0
+        cd $path
     end
 end
