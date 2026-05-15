@@ -99,6 +99,7 @@ if [[ "$1" != "update" ]]; then
 	krew install crd-wizard
 	krew install ctx
 	krew install deprecations
+	krew install df-pv
 	krew install images
 	krew install ktop
 	krew install node-resource
