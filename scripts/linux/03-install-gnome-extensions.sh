@@ -7,7 +7,10 @@ uv tool install gnome-extensions-cli
 
 # extension UUID is easier to obtain if you install via browser then run `gext` to list installed extensions
 gext install \
+	Bluetooth-Battery-Meter@maniacx.github.com \
+	Vitals@CoreCoding.com \
 	auto-move-windows@gnome-shell-extensions.gcampax.github.com \
+	drive-menu@gnome-shell-extensions.gcampax.github.com \
 	hotedge@jonathan.jdoda.ca \
 	just-perfection-desktop@just-perfection \
 	unredirect@vaina.lt
