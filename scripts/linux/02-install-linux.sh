@@ -18,6 +18,7 @@ sudo apt install -y \
 #com.slack.Slack
 #com.todoist.Todoist
 #org.gnome.Fractal
+#org.gnome.gitlab.cheywood.Buffer
 flatpak install -y flathub \
 	app.freelens.Freelens \
 	com.belmoussaoui.Decoder \
@@ -49,7 +50,6 @@ flatpak install -y flathub \
 	io.github.tobagin.Ntfyr \
 	io.github.tobagin.karere \
 	io.github.v81d.Wattage \
-	io.github.vemonet.EmojiMart \
 	io.gitlab.adhami3310.Impression \
 	io.gitlab.metadatacleaner.metadatacleaner \
 	io.gitlab.news_flash.NewsFlash \
@@ -65,7 +65,6 @@ flatpak install -y flathub \
 	org.gnome.Boxes \
 	org.gnome.Firmware \
 	org.gnome.Logs \
-	org.gnome.gitlab.cheywood.Buffer \
 	org.gpodder.gpodder \
 	org.kde.okular \
 	org.mozilla.Thunderbird \
