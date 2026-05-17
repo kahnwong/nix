@@ -13,6 +13,7 @@ gext install \
 	drive-menu@gnome-shell-extensions.gcampax.github.com \
 	hotedge@jonathan.jdoda.ca \
 	just-perfection-desktop@just-perfection \
+	quick-sound-switcher@dustin-hawkins \
 	unredirect@vaina.lt
 
 # laptop only
