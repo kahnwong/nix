@@ -56,7 +56,6 @@ flatpak install -y flathub \
 	io.kinvolk.Headlamp \
 	io.missioncenter.MissionCenter \
 	net.puddletag.puddletag \
-	org.audacityteam.Audacity \
 	org.cosmic_utils.enroll \
 	org.filezillaproject.Filezilla \
 	org.fkoehler.KTailctl \
@@ -71,6 +70,7 @@ flatpak install -y flathub \
 	org.openshot.OpenShot \
 	org.raspberrypi.rpi-imager \
 	org.telegram.desktop \
+	org.tenacityaudio.Tenacity \
 	us.zoom.Zoom
 
 # set flameshot permission
