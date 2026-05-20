@@ -11,6 +11,7 @@
       ".config/fish/conf.d/app_genai.fish".source = ./conf.d/app_genai.fish;
       ".config/fish/conf.d/app_habit.fish".source = ./conf.d/app_habit.fish;
       ".config/fish/conf.d/app_misc.fish".source = ./conf.d/app_misc.fish;
+      ".config/fish/conf.d/app_togodo.fish".source = ./conf.d/app_togodo.fish;
       ".config/fish/conf.d/app_topydo.fish".source = ./conf.d/app_topydo.fish;
       ".config/fish/conf.d/app_umamit.fish".source = ./conf.d/app_umamit.fish;
       ".config/fish/conf.d/dev.fish".source = ./conf.d/dev.fish;

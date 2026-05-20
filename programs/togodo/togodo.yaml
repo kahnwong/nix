@@ -1,0 +1,32 @@
+todo_path: ~/Apps/todotxt/todo.txt
+
+colors:
+  context_color: cyan
+  project_color: yellow
+  focus_background_color: blue
+
+columns:
+  - section: All
+    sort: asc:priority
+    filter: -@work -@recurring -@tinkering -@meet -@download
+    group: context
+
+  - section: Today
+    sort: desc:importance
+    filter: due:<=today
+    group: context
+
+  - section: Work
+    sort: asc:priority
+    filter: "@work"
+    group: project
+
+  - section: Tinkering
+    sort: asc:priority
+    filter: "@tinkering"
+    group: project
+
+#  - section: Meet
+#    sort: asc:priority
+#    filter: "@meet"
+#    group: project

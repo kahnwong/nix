@@ -3,9 +3,9 @@ function t
     topydo $argv
 end
 
-function tc
-    topydo columns
-end
+# function tc
+#     topydo columns
+# end
 
 function tsort
     topydo sort asc:context asc:project
