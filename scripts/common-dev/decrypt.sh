@@ -51,6 +51,10 @@ sops -d ./programs/gh-dash/config.sops.yml >~/.config/gh-dash/config.yml
 mkdir -p ~/.config/fleet-dashboard
 sops -d ./programs/fleet-dashboard/config.sops.yaml >~/.config/fleet-dashboard/config.yaml
 
+# infracost
+mkdir -p ~/.config/infracost
+sops -d ./programs/terraform/infracost.credentials.sops.yaml >~/.config/infracost/credentials.yml
+
 ## vscode
 #sops -d ./scripts/vscode/config/settings.sops.json >./scripts/vscode/config/settings.json
 
