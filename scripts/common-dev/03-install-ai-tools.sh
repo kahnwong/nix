@@ -11,8 +11,5 @@ yarn global add opencode-ai
 curl -sSL https://usegitai.com/install.sh | bash
 
 # skills
-## caveman
-claude plugin marketplace add JuliusBrussee/caveman
-claude plugin install caveman@caveman
-
-npx skills add JuliusBrussee/caveman -a opencode
+npx skills add JuliusBrussee/caveman -a opencode crush claude-code
+npx skills add GoogleChrome/modern-web-guidance -a opencode crush claude-code
