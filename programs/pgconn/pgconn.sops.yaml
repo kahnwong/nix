@@ -22,6 +22,18 @@ pgconn:
             - username: ENC[AES256_GCM,data:Q4AESyVmTnU=,iv:LcM6995KyabpaexWxO6S1Hwlilt8nC2YgVcqNMR7RnU=,tag:4fTXsmKVTdzvILPNFgX8KQ==,type:str]
               password: ENC[AES256_GCM,data:DXkxzYu7QNhE9SyY2s5JKA==,iv:LQ6jK/kYzPTuNetHNEgnFOYlG2jNu8PtK65Mz6K4pfk=,tag:q5J5LHsX4mwjmCLmBkMlSw==,type:str]
               dbname: ENC[AES256_GCM,data:Ul8phuQpHLE=,iv:rnS2e2RKwVcVIHyyt7saSiVsstAecT/7PmX7Fw18cMU=,tag:I3k9R28Qoj6m7R3WWOR0KA==,type:str]
+    - account: ENC[AES256_GCM,data:NqZ9OzYD,iv:e2IKHJNmDKvA7oRMhn2E5v81iuV5zO/prc06S8KNdhs=,tag:ryhzSclAM2nm+18CRWywIQ==,type:str]
+      dbs:
+        - name: ENC[AES256_GCM,data:7F+G+A==,iv:1tOO2tOzivMrtJHbuDbXmIcW1sUx6QASh0yJRt/3QGk=,tag:WC3nYfdQUB9G+FALrqTYXg==,type:str]
+          hostname: ENC[AES256_GCM,data:pUkOEhT8l2Px,iv:oGY1pAMFV6kLJAZ2oyFvmIEo0rX+ctbvGEGnirgpwRY=,tag:s+68ZEQ8GdlixgOPlY+FJA==,type:str]
+          port: ENC[AES256_GCM,data:Qpqg4w==,iv:lkEbD/pmKxrC2VDr+PBLeovX4Cb9fguwoRZXN15Zi78=,tag:0J+ckh+8ipFtgosLTqT6Wg==,type:int]
+          proxy:
+            kind: ENC[AES256_GCM,data:maB/,iv:blFQ6FYUUSuO+Hh7HpI14GB5QDoIiEomgWdoyANqLRQ=,tag:QX13WBD342JNbHZeOQlgxw==,type:str]
+            host: ENC[AES256_GCM,data:NhA2FcB5,iv:lGGqASw91folDvVWzIc26ZM6DWqTqGVKyWw3plQ2eyg=,tag:APuw+/jR2A1ojYizM4r66g==,type:str]
+          roles:
+            - username: ENC[AES256_GCM,data:7iU=,iv:/17SYAOEJMmnCrt5He1K910ConbP1AlIRcx86tU2+Vc=,tag:3Nf6mtZkKlmoQhK1/8L1Ng==,type:str]
+              password: ENC[AES256_GCM,data:pP9ZYqYbUaqa+Dl/njq8gcqUngAWPctKK/0Vfu+CV+s=,iv:OYDpCpis/KWlX+QJMxOwgv5dkhEHY5nZ938q2BYUv/w=,tag:K4lFg/vX8ccA++urL44ARg==,type:str]
+              dbname: ENC[AES256_GCM,data:Sf7gvoRrmzk=,iv:Omjx2UQScaoCyyrnVoPDWi75RD70Z/QOFJvG71IZLJA=,tag:2kf07zdWNG4HISAPYW+xoA==,type:str]
 sops:
     age:
         - recipient: age1m954z8ajdedsmvr9u89ud5v2zednmxgvvzuahpfy5fcdp97yn99ssy2wmm
@@ -33,7 +45,7 @@ sops:
             ZG5GdWtkOC9ITklncDRNdUdqRmNTSTgK/n8IOmk1TM/8w+vM2zPMt1qBe6Jbo40f
             olGA9AFZWia3bdzjgl736Lpd31p77SKyeG45CDRtzmW3g+trUNMUnA==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2026-05-13T15:08:44Z"
-    mac: ENC[AES256_GCM,data:/4aLEEF4NsrM3JPZCVb/tRMU+1aCNUqLqIhngt8P1qIr64fmA2+D5gK+HK337Gc0zl+t5gx9NQWTekGTxSDVCghC1jwUK/n45oigBd9VGc0geOz4TYlzYvF10fGJ7u9hLxch7o7QStgw817R+2Ogo1eH2dXZgmmVQ5PbJcUGSDU=,iv:1JvLESr+lgAnKbB6mVzofTybiXoKS9YPTR+q2CnZCBo=,tag:SFIpwDvLLTfDn7xfY4kNoA==,type:str]
+    lastmodified: "2026-05-22T05:00:31Z"
+    mac: ENC[AES256_GCM,data:hYjSpxFj9dxQtAaOIvCqhNFYniiavMnfAqzGmXmBsZCmJ7uB4Eq4oMRsvmYQ6x0kRnoqK3PhO8AC2qBKhE2LOhafQMt7SwGkONcO6rR4npgoNlwWPeVWCAKSMqb2o/pY0IUjsWszr1JEqqWdPdxIuRGtKEWHhxbM8XhjCs+q/Dw=,iv:CIkVGiv9RKH8NPUFkPwr297bqkKPu1gxwvEKFcqMo4I=,tag:mjdPFNig/bQRIxGoFTzrvw==,type:str]
     unencrypted_suffix: _unencrypted
     version: 3.12.2
