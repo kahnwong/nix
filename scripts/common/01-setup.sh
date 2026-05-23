@@ -14,7 +14,7 @@ if [[ $(uname -s) == 'Darwin' ]]; then
 fi
 
 ####################
-# prep debian
+# prep ubuntu
 ####################
 if [[ $(uname -s) == 'Linux' ]]; then
 	echo "========== Installing build tools and other essentials =========="
