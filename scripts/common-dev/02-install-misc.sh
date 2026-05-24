@@ -101,6 +101,7 @@ if [[ "$1" != "update" ]]; then
 	krew install deprecations
 	krew install df-pv
 	krew install images
+	krew install klock
 	krew install ktop
 	krew install node-resource
 	krew install nodepools
