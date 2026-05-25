@@ -111,15 +111,19 @@ function cat
 end
 
 function fcat
-     if test "$argv[2]" = "-p"
-        fd $argv | xargs cat
-     else
-        fd $argv | xargs bat
-     end
+    fd $argv | fzf | xargs echo | xargs bat $argv
 end
 
 function fvi
-    fd $argv | xargs nvim
+    fd $argv | fzf | xargs echo | xargs nvim
+end
+
+function fcd
+    cd $(fd --type d $argv | fzf)
+end
+
+function fsops
+    fd $argv[2] | grep "sops." | fzf | xargs echo | xargs sops $argv[1]
 end
 
 function tere
