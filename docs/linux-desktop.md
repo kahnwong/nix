@@ -57,6 +57,8 @@ As `sudo`
 @reboot sudo -b ydotoold --socket-path="/home/kahnwong/.ydotool_socket" --socket-own="1000:1000"
 ```
 
+On apple devices, `super` key is `56`.
+
 ### Fingerprint
 
 Ref: <https://linuxvox.com/blog/linux-fingerprint-reader-ubuntu/>
