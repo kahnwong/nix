@@ -28,6 +28,7 @@ linux-desktop:
 	./scripts/linux/install-lemonade.sh
 	./scripts/linux/install-librewolf.sh
 	./scripts/linux/install-mullvad.sh
+	./scripts/linux/install-nvtop.sh
 	./scripts/linux/install-sourcegit.sh
 	./scripts/linux/install-tlp.sh
 	./scripts/linux/install-ydotool.sh
