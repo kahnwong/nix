@@ -99,6 +99,14 @@ opencode auth login
 export PATH="$PATH:/home/kahnwong/.nix-profile/bin"
 ```
 
+#### Linux on Intel Apple
+
+Install Wi-Fi driver:
+
+```bash
+sudo apt install broadcom-sta-dkms
+```
+
 ### MacOS: Misc config
 
 - set `tap to single click`
