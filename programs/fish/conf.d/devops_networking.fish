@@ -3,11 +3,11 @@ function dig
 end
 
 function oryx
-    sudo /home/kahnwong/.local/bin/oryx
+    sudo "$(which oryx)"
 end
 
 function bandwhich
-    sudo /home/kahnwong/.nix-profile/bin/bandwhich
+    sudo "$(which bandwhich)"
 end
 
 function ping
