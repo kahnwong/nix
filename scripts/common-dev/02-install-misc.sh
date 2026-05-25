@@ -170,6 +170,7 @@ ubi --project fawni/def --in ~/.local/bin/
 ubi --project kahnwong/cpubench-release -e cpubench --in ~/.local/bin/
 ubi --project mongodb/kingfisher --in ~/.local/bin/
 ubi --project yt-dlp/yt-dlp --in ~/.local/bin/ # nix still doesn't support latest version
+mise use -g carapace@latest
 
 sudo ubi --project domcyrus/rustnet --in /usr/local/bin/
 sudo ubi --project kahnwong/swissknife --in /usr/local/bin/

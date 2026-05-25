@@ -102,6 +102,10 @@ fish_add_path -g $HOME/.git-ai/bin  # need to use git binary from this path
 mcfly init fish | source
 set MCFLY_KEY_SCHEME vim
 
+# carapace
+carapace _carapace | source
+
+# alias
 function ls
     eza --icons -1 --group-directories-first $argv
 end
