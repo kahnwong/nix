@@ -9,7 +9,7 @@ nix flake update --experimental-features 'nix-command flakes'
 
 # fish
 fisher update
-#./scripts/common/02-add-fish-completions.sh
+./scripts/common/02-add-fish-completions.sh
 
 # packages
 ./scripts/common-dev/02-install-misc.sh update

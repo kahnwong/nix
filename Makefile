@@ -3,7 +3,7 @@
 ##############
 common:
 	./scripts/common/01-setup.sh
-	# ./scripts/common/02-add-fish-completions.sh
+	./scripts/common/02-add-fish-completions.sh
 
 common-dev:
 	./scripts/common-dev/01-setup.sh
