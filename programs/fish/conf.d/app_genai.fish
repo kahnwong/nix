@@ -7,6 +7,14 @@ function crush
     command crush $argv
 end
 
+######################
+# lemonade
+######################
+function lemonade-sailfish
+    ssh -L 13306:localhost:13305 sailfish
+end
+
+
 # ######################
 # # copilot
 # ######################
@@ -39,12 +47,6 @@ end
 function as # ask - short answer
     fetch-response "you should provide answer within a few sentences" "$argv"
 end
-
-# gemini-cli
-# # not used because it's very slow on free tier
-# mkdir -p /tmp/gemini # prevent gemini from scanning the folder
-# cd /tmp/gemini || exit 1
-# gemini -m gemini-3-flash-preview -p "you should provide answer within a few sentences $argv" | glow
 
 # crush
 # crush run -m claude-haiku-4-5 you should provide answer within a few sentences $argv | glow
