@@ -58,6 +58,7 @@ set ANDROID_HOME $HOME/Android/Sdk
 set ANDROID_SDK_ROOT $HOME/Android/Sdk
 set PATH $PATH:$ANDROID_SDK_ROOT/tools
 set PATH $PATH:$ANDROID_SDK_ROOT/platform-tools
+set PATH $PATH:$ANDROID_HOME/build-tools/36.1.0
 
 # python
 set UV_CACHE_DIR ~/.cache/uv
