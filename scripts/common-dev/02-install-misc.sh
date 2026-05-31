@@ -68,6 +68,7 @@ if [[ "$1" != "update" ]]; then
 	uv tool install hf
 	uv tool install magika
 	uv tool install pip_search
+	uv tool install sisou
 	uv tool install topydo[columns]
 
 	if [[ $(uname -s) == 'Darwin' ]]; then
