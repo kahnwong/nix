@@ -33,6 +33,7 @@ linux-desktop:
 	./scripts/linux/install-tlp.sh
 	./scripts/linux/install-ydotool.sh
 	./scripts/linux/install-yubikey-manager.sh
+	./scripts/linux/install-zed.sh
 	./scripts/linux/setup-app-shortcuts.sh
 	./scripts/linux/setup-flatpak-config.sh
 	./scripts/linux/setup-gnome.sh

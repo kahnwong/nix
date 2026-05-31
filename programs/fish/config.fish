@@ -67,15 +67,6 @@ set UV_CACHE_DIR ~/.cache/uv
 mise activate fish | source
 
 ####################
-# CONFIG: EDITORS
-####################
-# zed
-switch (uname)
-    case Linux
-        alias zed="/var/lib/flatpak/exports/bin/dev.zed.Zed"
-end
-
-####################
 # CONFIG: SHELL
 ####################
 # editor

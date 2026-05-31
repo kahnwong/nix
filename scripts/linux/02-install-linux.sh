@@ -37,7 +37,6 @@ flatpak install -y flathub \
 	com.ranfdev.DistroShelf \
 	com.rustdesk.RustDesk \
 	com.transmissionbt.Transmission \
-	dev.zed.Zed \
 	io.github.TransmissionRemoteGtk \
 	io.github.celluloid_player.Celluloid \
 	io.github.ciromattia.kcc \
