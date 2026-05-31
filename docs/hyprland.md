@@ -1,6 +1,6 @@
 # Hyprland
 
-<https://github.com/JaKooLit/Ubuntu-Hyprland>  # each distro has its own setup script
+<https://github.com/JaKooLit/Ubuntu-Hyprland> # each distro has its own setup script
 
 Reload config via: `hyprctl reload`
 

@@ -10,17 +10,30 @@ Use `waree` for Thai sans-serif.
 // const icons = ["fingerprint", "briefcase", "dollar", "cart", "vacation", "gift", "food", "fruit", "pet", "tree", "chill", "circle"]
 // if (url.hostname === "gemini.google.com") return { name: "Workspace", icon: "circle", color: "blue" };
 
-const workspaceHosts = ["gemini.google.com", "meet.google.com", "console.cloud.google.com", "notebooklm.google.com", "gmail.com", "drive.google.com", "docs.google.com", "sheets.google.com", "jules.google", "jules.google.com"];
+const workspaceHosts = [
+  "gemini.google.com",
+  "meet.google.com",
+  "console.cloud.google.com",
+  "notebooklm.google.com",
+  "gmail.com",
+  "drive.google.com",
+  "docs.google.com",
+  "sheets.google.com",
+  "jules.google",
+  "jules.google.com",
+];
 if (workspaceHosts.includes(url.hostname)) {
-    return {name: "Workspace", icon: "circle", color: "blue"};
+  return { name: "Workspace", icon: "circle", color: "blue" };
 }
 
-if (url.hostname === "www.google.com") return {name: "Search", icon: "circle", color: "green"};
-if (url.hostname === "www.youtube.com") return {name: "YouTube", icon: "circle", color: "red"};
-if (url.hostname === "contacts.google.com") return {name: "Contacts", icon: "circle", color: "purple"};
+if (url.hostname === "www.google.com") return { name: "Search", icon: "circle", color: "green" };
+if (url.hostname === "www.youtube.com") return { name: "YouTube", icon: "circle", color: "red" };
+if (url.hostname === "contacts.google.com")
+  return { name: "Contacts", icon: "circle", color: "purple" };
 
-if (url.hostname === "www.perplexity.ai") return {name: "Perplexity", icon: "circle", color: "blue"};
-if (url.hostname === "chatgpt.com") return {name: "ChatGPT", icon: "circle", color: "orange"};
+if (url.hostname === "www.perplexity.ai")
+  return { name: "Perplexity", icon: "circle", color: "blue" };
+if (url.hostname === "chatgpt.com") return { name: "ChatGPT", icon: "circle", color: "orange" };
 if (url.hostname === "github.com") return null;
 ```
 
@@ -43,7 +56,6 @@ Type `about:config` and set value for `browser.ml.chat.provider` as `https://cha
 sudo snap remove firefox
 cat /etc/apt/preferences.d/firefox-no-snap 2>/dev/null || echo "File doesn't exist yet"
 ```
-
 
 ```bash
 # sudo vi /etc/apt/preferences.d/firefox-no-snap

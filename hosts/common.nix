@@ -16,7 +16,7 @@ let
     neovim
     ripgrep
     sd
-    tailspin
+    # tailspin
     tere
     tree
     unzip
@@ -44,7 +44,7 @@ let
   ];
 
   containers = with pkgs; [
-    ctop
+    # ctop
     lazydocker
     oxker
   ];

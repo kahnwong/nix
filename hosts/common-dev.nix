@@ -56,11 +56,14 @@ let
     # ---- yaml ----
     yamlfmt
     yamllint
+    # ---- wasm ----
+    wasmtime
     # ---- zig ----
     # zig_0_13
     # ---- misc ----
     distrobox
     hadolint
+    oxfmt
     sqruff
     typos
   ];
@@ -73,7 +76,7 @@ let
     sqlite
     # ---- gcp ----
     google-cloud-sdk
-    google-cloud-sql-proxy
+    # google-cloud-sql-proxy
     # ---- kubernetes ----
     helmfile
     k9s
@@ -87,32 +90,27 @@ let
     mdsf
     mw
     rumdl
+    # ---- networking ----
+    caddy
+    doggo
+    # dumbpipe
+    gping
+    mitmproxy
+    rustscan
+    # sendme
+    somo
+    sshx
+    whois
     # ---- security ----
     # grype
     osv-scanner
     syft
     zizmor
-  ];
-
-  webAndTesting = with pkgs; [
-    # ---- networking ----
-    caddy
-    doggo
-    dumbpipe
-    gping
-    mitmproxy
-    rustscan
-    sendme
-    somo
-    sshx
-    whois
     # ---- tests ----
     hurl
     hyperfine
     k6
     oha
-    # ---- wasm ----
-    wasmtime
   ];
 
   dataManipulation = with pkgs; [
@@ -148,7 +146,7 @@ let
     beancount
     beanquery
     fava
-    llama-cpp
+    # llama-cpp
     zola # use pkgs-stable.zola here if needed
   ];
 
@@ -162,7 +160,6 @@ in
   };
 
   home = {
-    packages =
-      toolchainsAndLinters ++ cloudAndOps ++ webAndTesting ++ dataManipulation ++ utils ++ misc;
+    packages = toolchainsAndLinters ++ cloudAndOps ++ dataManipulation ++ utils ++ misc;
   };
 }
