@@ -70,6 +70,7 @@ flatpak install -y flathub \
 	org.raspberrypi.rpi-imager \
 	org.telegram.desktop \
 	org.tenacityaudio.Tenacity \
+	xyz.riothedev.emojify \
 	us.zoom.Zoom
 
 # set flameshot permission
