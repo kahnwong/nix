@@ -1,14 +1,30 @@
 #!/bin/bash
 
 ### applications
-sudo apt install -y \
-	dolphin \
-	file-roller \
-	gnome-tweaks \
-	gparted \
-	konsole \
-	mpv \
-	xclip
+if [ -f /etc/os-release ]; then
+	source /etc/os-release
+
+	if [ "$ID" = "ubuntu" ]; then
+		sudo apt install -y \
+			dolphin \
+			file-roller \
+			gnome-tweaks \
+			gparted \
+			konsole \
+			mpv \
+			xclip
+
+	elif [ "$ID" = "fedora-asahi-remix" ]; then
+		sudo dnf install -y \
+			dolphin \
+			file-roller \
+			gnome-tweaks \
+			gparted \
+			konsole \
+			mpv \
+			xclip
+	fi
+fi
 
 #com.bilingify.readest
 #com.bitwarden.desktop

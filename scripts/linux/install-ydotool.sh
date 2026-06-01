@@ -2,7 +2,15 @@
 
 # <https://gabrielstaples.com/ydotool-tutorial/#gsc.tab=0>
 
-sudo apt install -y cmake scdoc
+if [ -f /etc/os-release ]; then
+	source /etc/os-release
+
+	if [ "$ID" = "ubuntu" ]; then
+		sudo apt install -y cmake scdoc
+	elif [ "$ID" = "fedora-asahi-remix" ]; then
+		sudo dnf install -y cmake scdoc
+	fi
+fi
 
 git clone https://github.com/ReimuNotMoe/ydotool.git
 cd ydotool || exit

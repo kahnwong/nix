@@ -14,16 +14,26 @@ if [[ $(uname -s) == 'Darwin' ]]; then
 fi
 
 ####################
-# prep ubuntu
+# prep linux
 ####################
 if [[ $(uname -s) == 'Linux' ]]; then
 	echo "========== Installing build tools and other essentials =========="
-	sudo apt-get install make curl wget ntfs-3g python3.12-venv \
-		-y
 
-	# disable snap
-	sudo systemctl stop snapd
-	sudo systemctl mask snapd
+	if [ -f /etc/os-release ]; then
+		source /etc/os-release
+
+		if [ "$ID" = "ubuntu" ]; then
+			sudo apt-get install make curl wget ntfs-3g python3.12-venv \
+				-y
+
+			# # disable snap
+			# sudo systemctl stop snapd
+			# sudo systemctl mask snapd
+
+		elif [ "$ID" = "fedora-asahi-remix" ]; then
+			sudo dnf install make curl wget ntfs-3g python3.12 -y
+		fi
+	fi
 fi
 
 ####################

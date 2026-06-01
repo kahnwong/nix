@@ -73,5 +73,5 @@ sops -d ./programs/opencode/opencode.sops.json >~/.config/opencode/opencode.json
 sops -d ./programs/opencode/plugins/notifications.sops.js >~/.config/opencode/plugins/notifications.js
 
 # claude
-mkdir -p ~/.config/claude
+mkdir -p ~/.claude
 sops -d ./programs/claude/settings.sops.json >~/.claude/settings.json

@@ -1,7 +1,17 @@
 #!/bin/bash
 
 # for browser install, just in case
-sudo apt install -y gnome-browser-connector
+if [ -f /etc/os-release ]; then
+	source /etc/os-release
+
+	if [ "$ID" = "ubuntu" ]; then
+		sudo apt install -y gnome-browser-connector
+
+	elif [ "$ID" = "fedora-asahi-remix" ]; then
+		sudo dnf install -y gnome-browser-connector
+	fi
+fi
+
 # cli installer
 uv tool install gnome-extensions-cli
 
