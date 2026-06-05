@@ -5,7 +5,11 @@ if [ -f /etc/os-release ]; then
 
 	if [ "$ID" = "ubuntu" ]; then
 		sudo apt install tlp cpufrequtils -y
-		sudo cp ./programs/tlp/tlp.conf /etc/tlp.conf
+
+		if [[ $(uname -n) == 'redfin' ]]; then
+			sudo cp ./programs/tlp/tlp.redfin.conf /etc/tlp.conf
+		fi
+
 		sudo tlp start
 	fi
 fi
