@@ -112,6 +112,34 @@ You don't need this for Ghostty, but intellij terminal needs this to render glyp
 
 - iOS: <https://github.com/impiaaa/ios-notif-forward>
 
+### Control Android Audio Playback
+
+```bash
+sudo apt install playerctl pipewire-audio-client-libraries -y
+```
+
+```unit file (systemd)
+# ~/.config/systemd/user/mpris-proxy.service
+
+[Unit]
+Description=Forward Bluetooth Media Controls to MPRIS
+After=bluetooth.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/mpris-proxy
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
+```
+
+```bash
+systemctl --user enable --now mpris-proxy
+```
+
+Now `playerctl play-pause` should work.
+
 ## Apps
 
 ### Discord
