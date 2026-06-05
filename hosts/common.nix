@@ -45,6 +45,7 @@ let
 
   containers = with pkgs; [
     # ctop
+    dive
     lazydocker
     oxker
   ];
