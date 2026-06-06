@@ -111,6 +111,10 @@ function fsops
     fd $argv[2] | grep "sops." | fzf | xargs echo | xargs sops $argv[1]
 end
 
+function fsh
+    fd $argv | grep '\.sh$' | fzf | xargs echo | xargs bash
+end
+
 # misc
 function ls
     eza --icons -1 --group-directories-first $argv
