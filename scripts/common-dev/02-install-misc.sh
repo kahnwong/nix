@@ -51,6 +51,7 @@ export GOPRIVATE="github.com/kahnwong/*"
 go install github.com/kahnwong/gcal-tui@latest
 go install github.com/kahnwong/grocery@latest
 go install github.com/kahnwong/timesheet@latest
+go install github.com/kahnwong/togodo@latest
 go install github.com/kahnwong/umamit@latest
 
 ############################
