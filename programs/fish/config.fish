@@ -94,14 +94,7 @@ fish_add_path -g $HOME/.git-ai/bin  # need to use git binary from this path
 mcfly init fish | source
 set MCFLY_KEY_SCHEME vim
 
-function ls
-    eza --icons -1 --group-directories-first $argv
-end
-
-function cat
-    bat --theme "Monokai Extended" $argv
-end
-
+# fzf
 function fcat
     fd $argv | fzf | xargs echo | xargs bat $argv
 end
@@ -118,11 +111,21 @@ function fsops
     fd $argv[2] | grep "sops." | fzf | xargs echo | xargs sops $argv[1]
 end
 
+# misc
+function ls
+    eza --icons -1 --group-directories-first $argv
+end
+
+function cat
+    bat --theme "Monokai Extended" $argv
+end
+
 function tere
     set --local result (command tere $argv)
     [ -n "$result" ] && cd -- "$result"
 end
 
+# alias
 alias cp="cpx"
 alias tmux="zellij"
 alias vi="nvim"
