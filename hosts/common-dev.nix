@@ -78,6 +78,7 @@ let
     google-cloud-sdk
     # google-cloud-sql-proxy
     # ---- kubernetes ----
+    argocd
     helmfile
     k9s
     krew
