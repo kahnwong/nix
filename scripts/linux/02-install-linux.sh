@@ -71,6 +71,7 @@ flatpak install -y flathub \
 	io.kinvolk.Headlamp \
 	io.missioncenter.MissionCenter \
 	net.puddletag.puddletag \
+	net.thunderbird.Thunderbird \
 	org.cosmic_utils.enroll \
 	org.filezillaproject.Filezilla \
 	org.fkoehler.KTailctl \
@@ -81,7 +82,6 @@ flatpak install -y flathub \
 	org.gnome.Logs \
 	org.gpodder.gpodder \
 	org.kde.okular \
-	org.mozilla.Thunderbird \
 	org.openshot.OpenShot \
 	org.raspberrypi.rpi-imager \
 	org.telegram.desktop \
