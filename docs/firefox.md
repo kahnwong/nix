@@ -101,3 +101,7 @@ Pin-Priority: 1000
 sudo apt update
 sudo apt install firefox
 ```
+
+## uBlock Origin Blocklist
+
+- [Microsoft GitHub Less Social](https://codeberg.org/toastal/github-less-social)

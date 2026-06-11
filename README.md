@@ -70,16 +70,6 @@ echo "$(whoami) ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/99-nopasswd-$
 
 ## Post-installation instructions
 
-### uBlock Origin Blocklist
-
-- [Microsoft GitHub Less Social](https://codeberg.org/toastal/github-less-social)
-
-### OpenCode
-
-```bash
-opencode auth login
-```
-
 ### Linux
 
 #### Set default shell
@@ -89,14 +79,6 @@ opencode auth login
 
 # or this one
 `vi /etc/passwd` and specify shell for your user
-```
-
-#### Add nix path to sudo
-
-`sudo vi /root/.bashrc`
-
-```bash
-export PATH="$PATH:/home/kahnwong/.nix-profile/bin"
 ```
 
 #### Linux on Intel Apple
@@ -111,6 +93,12 @@ sudo apt install broadcom-sta-dkms
 
 - set `tap to single click`
 - set `three-finger drag`
+
+### Crontab
+
+```bash
+@reboot /home/kahnwong/go/bin/workspace-init
+```
 
 ## Useful commands
 
