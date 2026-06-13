@@ -40,7 +40,6 @@ flatpak install -y flathub \
 	com.belmoussaoui.Decoder \
 	com.calibre_ebook.calibre \
 	com.dec05eba.gpu_screen_recorder \
-	com.discordapp.Discord \
 	com.github.IsmaelMartinez.teams_for_linux \
 	com.github.PintaProject.Pinta \
 	com.github.jeromerobert.pdfarranger \
@@ -53,6 +52,7 @@ flatpak install -y flathub \
 	com.ranfdev.DistroShelf \
 	com.rustdesk.RustDesk \
 	com.transmissionbt.Transmission \
+	dev.vencord.Vesktop \
 	io.github.TransmissionRemoteGtk \
 	io.github.celluloid_player.Celluloid \
 	io.github.ciromattia.kcc \
