@@ -35,6 +35,7 @@ if (url.hostname === "www.perplexity.ai")
   return { name: "Perplexity", icon: "circle", color: "blue" };
 if (url.hostname === "chatgpt.com") return { name: "ChatGPT", icon: "circle", color: "orange" };
 if (url.hostname === "github.com") return null;
+if (url.hostname === "old.reddit.com") return null;
 ```
 
 ## Privacy Settings
