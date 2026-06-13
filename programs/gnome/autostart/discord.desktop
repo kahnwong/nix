@@ -1,5 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Discord
-Exec=flatpak run com.discordapp.Discord
-X-Flatpak=com.discordapp.Discord
