@@ -94,12 +94,6 @@ sudo apt install broadcom-sta-dkms
 - set `tap to single click`
 - set `three-finger drag`
 
-### Crontab
-
-```bash
-@reboot /home/kahnwong/go/bin/workspace-init
-```
-
 ## Useful commands
 
 ```bash
