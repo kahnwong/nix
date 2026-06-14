@@ -29,6 +29,7 @@ let
 
   toolchainsAndLinters = with pkgs; [
     # ---- android ----
+    android-cli
     android-tools
     flutter
     # ---- bash ----

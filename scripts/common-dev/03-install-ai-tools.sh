@@ -13,6 +13,5 @@ curl -sSL https://usegitai.com/install.sh | bash
 # skills
 npx skills add JuliusBrussee/caveman -a opencode crush claude-code
 npx skills add GoogleChrome/modern-web-guidance -a opencode crush claude-code
-
-# misc
 npx @colbymchenry/codegraph
+android skills add --all
