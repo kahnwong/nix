@@ -9,14 +9,14 @@ end
 # syncthing
 function sts
     switch (hostname)
-        case Karn-MBP3.local
-            set SYNCTHING_API_KEY SYNCTHING_API_KEY_M3
         case sailfish
             set SYNCTHING_API_KEY SYNCTHING_API_KEY_SAILFISH
         case redfin
             set SYNCTHING_API_KEY SYNCTHING_API_KEY_REDFIN
         case inu
             set SYNCTHING_API_KEY SYNCTHING_API_KEY_INU
+        case Comte
+            set SYNCTHING_API_KEY SYNCTHING_API_KEY_COMTE
     end
 
     curl "http://127.0.0.1:8384/rest/db/scan?folder=$SYNCTHING_FOLDER_ID" \
