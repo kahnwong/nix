@@ -20,6 +20,7 @@ gext install \
 	Bluetooth-Battery-Meter@maniacx.github.com \
 	Vitals@CoreCoding.com \
 	auto-move-windows@gnome-shell-extensions.gcampax.github.com \
+	batime@martin.zurowietz.de \
 	drive-menu@gnome-shell-extensions.gcampax.github.com \
 	hotedge@jonathan.jdoda.ca \
 	just-perfection-desktop@just-perfection \
