@@ -15,7 +15,7 @@ function sts
             set SYNCTHING_API_KEY SYNCTHING_API_KEY_REDFIN
         case inu
             set SYNCTHING_API_KEY SYNCTHING_API_KEY_INU
-        case Comte
+        case steelhead
             set SYNCTHING_API_KEY SYNCTHING_API_KEY_COMTE
     end
 
