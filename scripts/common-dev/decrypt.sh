@@ -75,3 +75,6 @@ sops -d ./programs/opencode/plugins/notifications.sops.js >~/.config/opencode/pl
 # claude
 mkdir -p ~/.claude
 sops -d ./programs/claude/settings.sops.json >~/.claude/settings.json
+
+# pi
+cp ./programs/pi/notify-done.ts ~/.pi/agent/extensions/
