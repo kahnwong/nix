@@ -23,7 +23,12 @@ columns:
 
   - section: Tinkering
     sort: asc:priority
-    filter: "@tinkering"
+    filter: "@tinkering -blog"
+    group: project
+
+  - section: Blog
+    sort: asc:priority
+    filter: "+blog"
     group: project
 
 #  - section: Meet
