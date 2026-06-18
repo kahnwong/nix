@@ -78,7 +78,9 @@
         "gitdir:~/Git/" = {
           path = "profiles/github";
         };
-        "gitdir:/mnt/ssd/Git/" = {
+
+        ## .agents
+        "gitdir:~/.agents/" = {
           path = "profiles/github";
         };
 
@@ -95,10 +97,10 @@
           path = "profiles/github";
         };
 
-        # forgejo
-        "gitdir:~/Forgejo/" = {
-          path = "profiles/forgejo";
-        };
+        # # forgejo - currently use the same signing key
+        # "gitdir:~/Forgejo/" = {
+        #   path = "profiles/forgejo";
+        # };
       };
 
       # ----- global ignore -----
