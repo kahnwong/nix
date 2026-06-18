@@ -21,5 +21,15 @@ cp -r ./programs/gnome/icons/* ~/.local/fleet/icons/
 
 cp ./programs/gnome/applications/*.desktop "$HOME/.local/share/applications/"
 
+# chrome isn't available on linux/arm64, so we use chromium instead
+
+if [ -f /etc/os-release ]; then
+	source /etc/os-release
+
+	if [ "$ID" = "fedora-asahi-remix" ]; then
+		mv "$HOME/.local/share/applications/LINE Chat.asahi.desktop" "$HOME/.local/share/applications/LINE Chat.desktop"
+	fi
+fi
+
 # ------ reload ------
 update-desktop-database ~/.local/share/applications/
