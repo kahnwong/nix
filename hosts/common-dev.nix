@@ -27,47 +27,49 @@ let
     ../programs/wallabag-tagger/wallabag-tagger.nix
   ];
 
-  toolchainsAndLinters = with pkgs; [
-    # ---- android ----
-    android-cli
-    android-tools
-    flutter
-    # ---- bash ----
-    beautysh
-    shellcheck
-    shfmt
-    # ---- c ----
-    uncrustify
-    usort
-    # ---- golang ----
-    golangci-lint
-    gopls
-    goreleaser
-    gotoolsCustom
-    air
-    # ---- nix ----
-    deadnix
-    nix-search-cli
-    nixfmt
-    statix
-    # ---- python ----
-    pixi
-    nbstripout
-    ruff
-    # ---- yaml ----
-    yamlfmt
-    yamllint
-    # ---- wasm ----
-    wasmtime
-    # ---- zig ----
-    # zig_0_13
-    # ---- misc ----
-    distrobox
-    hadolint
-    oxfmt
-    sqruff
-    typos
-  ];
+  toolchainsAndLinters =
+    with pkgs;
+    (lib.optionals (stdenv.hostPlatform.system != "aarch64-linux") [ android-cli ])
+    ++ [
+      # ---- android ----
+      android-tools
+      flutter
+      # ---- bash ----
+      beautysh
+      shellcheck
+      shfmt
+      # ---- c ----
+      uncrustify
+      usort
+      # ---- golang ----
+      golangci-lint
+      gopls
+      goreleaser
+      gotoolsCustom
+      air
+      # ---- nix ----
+      deadnix
+      nix-search-cli
+      nixfmt
+      statix
+      # ---- python ----
+      pixi
+      nbstripout
+      ruff
+      # ---- yaml ----
+      yamlfmt
+      yamllint
+      # ---- wasm ----
+      wasmtime
+      # ---- zig ----
+      # zig_0_13
+      # ---- misc ----
+      distrobox
+      hadolint
+      oxfmt
+      sqruff
+      typos
+    ];
 
   cloudAndOps = with pkgs; [
     # ---- database ----
