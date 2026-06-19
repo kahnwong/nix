@@ -71,6 +71,7 @@ flatpak install -y flathub \
 	io.kinvolk.Headlamp \
 	io.missioncenter.MissionCenter \
 	net.puddletag.puddletag \
+	one.naiara.Kuychi \
 	org.cosmic_utils.enroll \
 	org.filezillaproject.Filezilla \
 	org.fkoehler.KTailctl \
