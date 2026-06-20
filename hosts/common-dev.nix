@@ -62,7 +62,7 @@ let
       # ---- wasm ----
       wasmtime
       # ---- zig ----
-      # zig_0_13
+      zig
       # ---- misc ----
       distrobox
       hadolint
