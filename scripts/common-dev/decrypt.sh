@@ -47,10 +47,6 @@ sops -d ./programs/media-discord-rpc/config.sops.yaml >~/.config/media-discord-r
 mkdir -p ~/.config/gh-dash
 sops -d ./programs/gh-dash/config.sops.yml >~/.config/gh-dash/config.yml
 
-# fleet-dashboard
-mkdir -p ~/.config/fleet-dashboard
-sops -d ./programs/fleet-dashboard/config.sops.yaml >~/.config/fleet-dashboard/config.yaml
-
 # infracost
 mkdir -p ~/.config/infracost
 sops -d ./programs/terraform/infracost.credentials.sops.yaml >~/.config/infracost/credentials.yml
