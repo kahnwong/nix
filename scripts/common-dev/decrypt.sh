@@ -75,3 +75,7 @@ sops -d ./programs/claude/settings.sops.json >~/.claude/settings.json
 # pi
 mkdir -p ~/.pi/agent/extensions
 cp ./programs/pi/notify-done.ts ~/.pi/agent/extensions/
+
+# npipe
+mkdir -p ~/.config/npipe
+sops -d ./programs/npipe/config.sops.yaml >~/.config/npipe/config.yaml

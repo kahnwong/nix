@@ -1,0 +1,13 @@
+[Unit]
+Description=npipe connect
+
+[Service]
+User=kahnwong
+Group=kahnwong
+Type=simple
+ExecStart=/usr/local/bin/npipe connect
+Restart=always
+RestartSec=5s
+
+[Install]
+WantedBy=default.target
