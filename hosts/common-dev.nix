@@ -115,6 +115,8 @@ let
     hyperfine
     k6
     oha
+    # ---- misc ----
+    ansible
   ];
 
   dataManipulation = with pkgs; [
