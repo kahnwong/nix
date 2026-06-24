@@ -14,6 +14,7 @@ let
     fd
     gnutar
     neovim
+    gping
     ripgrep
     sd
     # tailspin

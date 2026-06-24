@@ -98,7 +98,6 @@ let
     caddy
     doggo
     # dumbpipe
-    gping
     mitmproxy
     rustscan
     # sendme
