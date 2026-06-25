@@ -43,5 +43,5 @@ function tat
 end
 
 function taw
-    topydo add @work $argv
+    topydo add due:today @work $argv
 end
