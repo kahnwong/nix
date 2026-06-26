@@ -79,7 +79,7 @@ fprintd-enroll
 sudo pam-auth-update # enable `Fingerprint authentication`
 ```
 
-#### Fix fprintd inactive after suspend:
+#### Fix fprintd inactive after suspend
 
 ```bash
 sudo vi /lib/systemd/system-sleep/fingerprint-wakeup.sh
@@ -111,6 +111,28 @@ You don't need this for Ghostty, but intellij terminal needs this to render glyp
 - For nerd fonts, download fonts from [here](https://github.com/ryanoasis/nerd-fonts/releases), put them in
   `~/.local/share/fonts` (or `~/.fonts`) then run `fc-cache -fv`.
 - Fix Thai fonts: `sudo apt install fonts-thai-tlwg -y`
+
+## Gnome
+
+If not being redirected to login page via `Online Accounts`, run `gnome-keyring-daemon -r` and try again. But this'll prompt you to enter keyring password twice...
+
+### Asahi Linux
+
+Run this, otherewise shutdown hangs on `dnf5daemon`.
+
+```bash
+gsettings set org.gnome.software allow-updates false
+```
+
+## Apps
+
+### Discord
+
+- Fix discord not loading: `rm -rf ~/.var/app/com.discordapp.Discord`
+
+### Ntfyr
+
+- Set to start in background
 
 ## Misc
 
@@ -146,24 +168,13 @@ systemctl --user enable --now mpris-proxy
 
 Now `playerctl play-pause` should work.
 
-## Apps
-
-### Discord
-
-- Fix discord not loading: `rm -rf ~/.var/app/com.discordapp.Discord`
-
-### Ntfyr
-
-- Set to start in background
-
-## Gnome
-
-If not being redirected to login page via `Online Accounts`, run `gnome-keyring-daemon -r` and try again. But this'll prompt you to enter keyring password twice...
-
-### Asahi Linux
-
-Run this, otherewise shutdown hangs on `dnf5daemon`.
+### MPV Gnome Integration
 
 ```bash
-gsettings set org.gnome.software allow-updates false
+sudo apt install mpv-mpris
+```
+
+```bash
+# ~/.config/mpv/mpv.conf
+script-opts=mpris-enable=yes
 ```

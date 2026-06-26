@@ -22,5 +22,6 @@ repos:
       - id: nix-fmt
       - id: statix
       - id: deadnix
+      - id: rumdl
       # - id: kingfisher
       - id: mdsf
