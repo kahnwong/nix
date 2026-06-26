@@ -6,6 +6,12 @@
   button.
 - Add m4a support to RhythmBox: `sudo apt install gstreamer1.0-fdkaac -y`
 
+### HEIC no preview on Ubuntu 26 Fix
+
+```bash
+sudo apt-get install libheif-plugin-libde265
+```
+
 ## Peripherals
 
 ### Mouse
@@ -153,3 +159,11 @@ Now `playerctl play-pause` should work.
 ## Gnome
 
 If not being redirected to login page via `Online Accounts`, run `gnome-keyring-daemon -r` and try again. But this'll prompt you to enter keyring password twice...
+
+### Asahi Linux
+
+Run this, otherewise shutdown hangs on `dnf5daemon`.
+
+```bash
+gsettings set org.gnome.software allow-updates false
+```
