@@ -169,6 +169,7 @@ ubi --project AlexsJones/llmfit --in ~/.local/bin/
 ubi --project bodaay/HuggingFaceModelDownloader --in ~/.local/bin/ --rename-exe hfdownloader
 ubi --project elliot40404/modo --in ~/.local/bin/
 ubi --project fawni/def --in ~/.local/bin/
+ubi --project hardwood-hq/hardwood --in ~/.local/bin/
 ubi --project kahnwong/cpubench-release -e cpubench --in ~/.local/bin/
 ubi --project mongodb/kingfisher --in ~/.local/bin/
 ubi --project yt-dlp/yt-dlp --in ~/.local/bin/ # nix still doesn't support latest version
