@@ -178,3 +178,11 @@ sudo apt install mpv-mpris
 # ~/.config/mpv/mpv.conf
 script-opts=mpris-enable=yes
 ```
+
+### mprisence
+
+Install <https://github.com/lazykern/mprisence> and run:
+
+```bash
+systemctl --user enable --now mprisence.service
+```

@@ -12,3 +12,7 @@ flatpak run org.winehq.Wine ~/Downloads/foobar2000-x64_v2.25.3.exe
 ```bash
 flatpak run --command=winetricks org.winehq.Wine
 ```
+
+## Linux Native
+
+<https://github.com/fooyin/fooyin>
