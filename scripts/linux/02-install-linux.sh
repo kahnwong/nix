@@ -52,7 +52,6 @@ flatpak install -y flathub \
 	com.ranfdev.DistroShelf \
 	com.rustdesk.RustDesk \
 	com.transmissionbt.Transmission \
-	dev.vencord.Vesktop \
 	io.github.TransmissionRemoteGtk \
 	io.github.celluloid_player.Celluloid \
 	io.github.ciromattia.kcc \
@@ -106,4 +105,12 @@ fi
 if [[ $(uname -n) == 'redfin' ]]; then
 	flatpak install -y \
 		flathub org.qgis.qgis
+fi
+
+## arm doesn't support official Discord client
+if [[ $(uname -m) == 'x86_64' ]]; then
+	open "https://discord.com/"
+elif [[ $(uname -m) == 'arm64' ]]; then
+	flatpak install -y flathub \
+		dev.vencord.Vesktop
 fi

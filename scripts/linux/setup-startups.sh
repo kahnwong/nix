@@ -15,3 +15,10 @@ if [[ $(uname -n) == 'sailfish' ]]; then
 else
 	rm "$HOME/.config/autostart/firefox-nightly.desktop"
 fi
+
+# official Discord client isn't available on arm64
+if [[ $(uname -m) == 'x86_64' ]]; then
+	rm "$HOME/.config/autostart/dev.vencord.Vesktop.desktop"
+elif [[ $(uname -m) == 'arm64' ]]; then
+	rm "$HOME/.config/autostart/discord.desktop"
+fi
