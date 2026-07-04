@@ -33,6 +33,9 @@ fi
 #com.github.ransome1.sleek
 #com.slack.Slack
 #com.todoist.Todoist
+#io.github.flattool.Ignition
+#io.github.nokse22.inspector
+#org.gnome.Boxes
 #org.gnome.Fractal
 #org.gnome.gitlab.cheywood.Buffer
 flatpak install -y flathub \
@@ -56,10 +59,8 @@ flatpak install -y flathub \
 	io.github.celluloid_player.Celluloid \
 	io.github.ciromattia.kcc \
 	io.github.dweymouth.supersonic \
-	io.github.flattool.Ignition \
 	io.github.flattool.Warehouse \
 	io.github.josephmawa.Bella \
-	io.github.nokse22.inspector \
 	io.github.sigmasd.stimulator \
 	io.github.tobagin.Ntfyr \
 	io.github.tobagin.karere \
@@ -76,7 +77,6 @@ flatpak install -y flathub \
 	org.fkoehler.KTailctl \
 	org.flameshot.Flameshot \
 	org.freefilesync.FreeFileSync \
-	org.gnome.Boxes \
 	org.gnome.Firmware \
 	org.gnome.Logs \
 	org.gpodder.gpodder \
