@@ -11,5 +11,5 @@
     ../../common.nix
   ];
 
-  home.packages = with pkgs; [ caddy ];
+  home.packages = with pkgs; [ caddy zola ];
 }
