@@ -95,12 +95,13 @@ let
     mw
     rumdl
     # ---- networking ----
+    # dumbpipe
+    # sendme
     caddy
     doggo
-    # dumbpipe
     mitmproxy
+    rustnet
     rustscan
-    # sendme
     somo
     sshx
     whois
@@ -136,6 +137,7 @@ let
     fzf
     imagemagick
     libqalculate
+    magika-cli
     mcfly
     numbat
     pastel
@@ -145,6 +147,7 @@ let
     tldr
     tz
     wakatime-cli
+    yt-dlp
   ];
 
   misc = with pkgs; [

@@ -10,6 +10,10 @@ function bandwhich
     sudo "$(which bandwhich)"
 end
 
+function rustnet
+    sudo "$(which rustnet)"
+end
+
 function ping
     gping $argv
 end

@@ -67,10 +67,9 @@ if [[ "$1" != "update" ]]; then
 	# uv tool install nbpreview
 	uv tool install "dvc[s3]"
 	uv tool install hf
-	uv tool install magika
 	uv tool install pip_search
 	uv tool install sisou
-	uv tool install topydo[columns]
+	uv tool install topydo
 
 	if [[ $(uname -s) == 'Darwin' ]]; then
 		pixi global install qgis
@@ -165,16 +164,13 @@ curl --silent --location \
 	https://raw.githubusercontent.com/houseabsolute/ubi/master/bootstrap/bootstrap-ubi.sh |
 	sudo sh
 
-ubi --project AlexsJones/llmfit --in ~/.local/bin/
 ubi --project bodaay/HuggingFaceModelDownloader --in ~/.local/bin/ --rename-exe hfdownloader
 ubi --project elliot40404/modo --in ~/.local/bin/
 ubi --project fawni/def --in ~/.local/bin/
 ubi --project hardwood-hq/hardwood --in ~/.local/bin/
 ubi --project kahnwong/cpubench-release -e cpubench --in ~/.local/bin/
 ubi --project mongodb/kingfisher --in ~/.local/bin/
-ubi --project yt-dlp/yt-dlp --in ~/.local/bin/ # nix still doesn't support latest version
 
-sudo ubi --project domcyrus/rustnet --in /usr/local/bin/
 sudo ubi --project kahnwong/swissknife --in /usr/local/bin/
 
 gh install mmcdole/kino
@@ -189,9 +185,4 @@ if [[ $(uname -s) == 'Linux' ]]; then
 	curl -Ls https://raw.githubusercontent.com/pcolby/connectiq-sdk-manager/main/install.sh | bash -r
 elif [[ $(uname -s) == 'Darwin' ]]; then
 	gh install browsh-org/browsh
-fi
-
-# only on laptop
-if [[ $(uname -n) != 'sailfish' ]]; then
-	ubi --project jordond/jolt --in ~/.local/bin/
 fi
