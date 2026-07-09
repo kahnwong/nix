@@ -1,4 +1,5 @@
 function tf
+  sops -d terraform.tfvars.sops > terraform.tfvars
   tofu $argv
 end
 
