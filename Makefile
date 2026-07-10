@@ -25,6 +25,7 @@ linux-desktop:
 	./scripts/linux/install-docker.sh
 	./scripts/linux/install-firefox-nightly.sh
 	./scripts/linux/install-ghostty.sh
+	./scripts/linux/install-gitcomet.sh
 	./scripts/linux/install-lemonade.sh
 	./scripts/linux/install-librewolf.sh
 	./scripts/linux/install-mullvad.sh
