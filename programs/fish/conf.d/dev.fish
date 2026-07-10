@@ -2,7 +2,11 @@
 function r
     set path (command repo-switcher $argv)
     if test $status -eq 0
-        idea $path &
+        if hostname != "steelhead"
+            idea $path &
+        else
+            zed $path
+        end
     end
 end
 
