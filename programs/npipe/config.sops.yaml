@@ -2,8 +2,8 @@ iroh:
     relays:
         - ENC[AES256_GCM,data:NnDZGiLRv7dsbDTsUyFUHsWCaRPKBqlXRc7D4tYZ,iv:SRThYRCEe6ssWZjZG821bT4Ft1GZ0XtphwhJfBZdqLU=,tag:aAUO6Pta3LzaNP54CRdUQQ==,type:str]
 peers:
-    - ENC[AES256_GCM,data:4YlRWIbt2SlewTE=,iv:tVTPzbGkz6Ql8xnQpI0FvKDmL5wX3K5hmswMXoXiOmA=,tag:OGUQNqv9FfFwDEtxaq2ueg==,type:comment]
-    - endpoint_id: ENC[AES256_GCM,data:5dxUlH3kgtD4gjpHj54ji7VTtY9twOTVcRfbvfXJzCNrdYCf3yjBaF4pG+1QztsKhIpHMhZ7+i6oys0fcoe9pQ==,iv:xAlepvq3tSVVFuKdvidWlMo6gg0aKYUquUmBKJGfH+0=,tag:FluBrXc/tRhg1zODgZAk1g==,type:str]
+    - ENC[AES256_GCM,data:MXY9uttI+k7j4i+r,iv:oZlnWrfII0bHgh6sNY6LyqcqksLIE6eax2s/FkkguaM=,tag:54Aw+EnrRRkwXXJrkI9bYA==,type:comment]
+    - endpoint_id: ENC[AES256_GCM,data:47rLIIJxUL97f5FVEK/GYyk+MMGHowwi2Zjff0CpW8XcU54O90YtSbDBRlp8yWxYZ+1isji7Fta73PIA7x1XoA==,iv:1+iYlbYf4WpKVql7uqaFYNxC1Mx0wasYpf+eRMiMRpw=,tag:8dx2LGfVYFEKgHtjC7io8w==,type:str]
       services:
         gatus:
             port: ENC[AES256_GCM,data:45M+biw=,iv:nUqIpSaA6xqb6Hy573LDUx5GBtUj2dNT8mtOVX0I3t0=,tag:46ILOpCRSQf2pwxQEF0B1w==,type:int]
@@ -23,7 +23,7 @@ sops:
             cDeX8Ny0m+A9CAN9OhW08hTNphhtDqQkPYSn3fbjZ7LU4W4NaVW1xQ==
             -----END AGE ENCRYPTED FILE-----
           recipient: age1m954z8ajdedsmvr9u89ud5v2zednmxgvvzuahpfy5fcdp97yn99ssy2wmm
-    lastmodified: "2026-06-21T05:35:17Z"
-    mac: ENC[AES256_GCM,data:5ovg8Yh3iLEPSuQji5hply+tzqJWjx6KIbCwdkLKVQBe8CE9P72/StPrqV6UOh/MfDkza5m8tZJLALx58C2beptYQjy9UsHc92mD7i+fIgCdrQDJvhZ/3Es/VIRywl21CJ5vEPgH3+kj86rpxMOa91OkHHQmXfZk7r5OwBel3xQ=,iv:UCM0ao1WFUrt9hOxu1rUyLgmUFCYHofMOS1FiuRajPA=,tag:rWyzwA+k1xdb+V5REUjptw==,type:str]
+    lastmodified: "2026-07-12T10:46:25Z"
+    mac: ENC[AES256_GCM,data:r6dTptrDuTKC7/+H37PEt20UZLWwyFvPHORbTaqRkDegu9ZAZiwXHBGr3zmIMZpOzj03F/mp5FtMFzf7O0v0MFt7PVdSEXyrI3gq2y1d16PIPxzvZ9tzrEUQTMZoXLOKHyxWkYWbM0qEIRw2Q560g8Z7HnEcTWmrXV8KPJOfWug=,iv:OZXZ+AncNeTiCuWheIHmM90Jfo5px4mnjbAEYP0T69w=,tag:t0DYBz7zKCiNtQjclPb24w==,type:str]
     unencrypted_suffix: _unencrypted
     version: 3.13.1
