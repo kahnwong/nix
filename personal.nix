@@ -22,6 +22,24 @@
       inherit flox;
     };
   };
+
+  base-without-flox = home-manager.lib.homeManagerConfiguration {
+    pkgs = nixpkgs.legacyPackages.x86_64-linux;
+    modules = [
+      ./hosts/linux/base/home.nix
+      {
+        home = {
+          username = "kahnwong";
+          homeDirectory = "/home/kahnwong";
+        };
+      }
+    ];
+    extraSpecialArgs = {
+      pkgs-stable = nixpkgs-stable.legacyPackages.x86_64-linux;
+      includeFlox = false;
+    };
+  };
+
   base-arm = home-manager.lib.homeManagerConfiguration {
     pkgs = nixpkgs.legacyPackages.aarch64-linux;
     modules = [

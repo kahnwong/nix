@@ -1,6 +1,7 @@
 {
   pkgs,
-  flox,
+  flox ? null,
+  includeFlox ? true,
   ...
 }:
 {
@@ -12,7 +13,7 @@
     ../../common.nix
   ];
 
-  home.packages = with pkgs; [
+  home.packages = pkgs.lib.optionals includeFlox [
     flox.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }
