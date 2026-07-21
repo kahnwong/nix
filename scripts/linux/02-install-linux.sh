@@ -81,7 +81,7 @@ flatpak install -y flathub \
 	org.gnome.Logs \
 	org.gpodder.gpodder \
 	org.kde.okular \
-	org.mozilla.Thunderbird \
+	org.mozilla.thunderbird_esr \
 	org.openshot.OpenShot \
 	org.raspberrypi.rpi-imager \
 	org.telegram.desktop \
