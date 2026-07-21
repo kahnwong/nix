@@ -20,6 +20,7 @@
     extraSpecialArgs = {
       pkgs-stable = nixpkgs-stable.legacyPackages.x86_64-linux;
       inherit flox;
+      includeFlox = true;
     };
   };
 
@@ -54,6 +55,7 @@
     extraSpecialArgs = {
       pkgs-stable = nixpkgs-stable.legacyPackages.aarch64-linux;
       inherit flox;
+      includeFlox = true;
     };
   };
 
