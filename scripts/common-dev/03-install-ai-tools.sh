@@ -20,10 +20,14 @@ pi install npm:pi-web-access
 # git-ai
 curl -sSL https://usegitai.com/install.sh | bash
 
+# microsandbox
+curl -fsSL https://install.microsandbox.dev | sh
+
 # skills
 git clone git@github.com:kahnwong/.agents.git ~/.agents --depth 1
 
-npx skills add JuliusBrussee/caveman -a opencode crush claude-code pi
-npx skills add GoogleChrome/modern-web-guidance -a opencode crush claude-code pi
 npx @colbymchenry/codegraph
+npx skills add GoogleChrome/modern-web-guidance -a opencode crush claude-code pi
+npx skills add JuliusBrussee/caveman -a opencode crush claude-code pi
+npx skills add superradcompany/skills -a opencode crush claude-code pi
 android skills add --all
