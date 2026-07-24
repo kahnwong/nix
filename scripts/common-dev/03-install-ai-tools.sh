@@ -17,17 +17,24 @@ pi install npm:context-mode
 pi install npm:pi-mcp-adapter
 pi install npm:pi-web-access
 
-# git-ai
+# tools
+## git-ai
 curl -sSL https://usegitai.com/install.sh | bash
 
-# microsandbox
+## microsandbox
 curl -fsSL https://install.microsandbox.dev | sh
+
+## apm
+curl -sSL https://aka.ms/apm-unix | sh
+
+## codegraph
+npx @colbymchenry/codegraph
 
 # skills
 git clone git@github.com:kahnwong/.agents.git ~/.agents --depth 1
+npx skills add superradcompany/skills -a opencode crush claude-code pi
 
-npx @colbymchenry/codegraph
+## per-project basis
 npx skills add GoogleChrome/modern-web-guidance -a opencode crush claude-code pi
 npx skills add JuliusBrussee/caveman -a opencode crush claude-code pi
-npx skills add superradcompany/skills -a opencode crush claude-code pi
 android skills add --all
