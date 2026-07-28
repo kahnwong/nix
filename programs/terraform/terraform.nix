@@ -1,5 +1,6 @@
 {
   pkgs,
+  pkgs-stable,
   ...
 }:
 
@@ -25,7 +26,7 @@
     };
 
     packages = with pkgs; [
-      checkov
+      pkgs-stable.checkov
       infracost
       terraform-docs
     ];
