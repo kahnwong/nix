@@ -24,9 +24,6 @@ curl -sSL https://usegitai.com/install.sh | bash
 ## microsandbox
 curl -fsSL https://install.microsandbox.dev | sh
 
-## apm
-curl -sSL https://aka.ms/apm-unix | sh
-
 ## codegraph
 npx @colbymchenry/codegraph
 
