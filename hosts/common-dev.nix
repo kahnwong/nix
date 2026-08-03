@@ -1,99 +1,118 @@
 { pkgs, pkgs-stable, ... }:
 
 let
-  gotoolsCustom = pkgs.symlinkJoin {
-    name = "gotools-custom";
-    paths = [ pkgs.gotools ];
-    postBuild = "rm -f $out/bin/modernize";
-  };
-
   programImports = [
     ../programs/aws/aws.nix
-    ../programs/ghostty/ghostty.nix
-    ../programs/git/git.nix
     ../programs/scripts/scripts.nix
     ../programs/terraform/terraform.nix
-    ../programs/yt-dlp/yt-dlp.nix
     ../programs/zed/zed.nix
 
-    # utils
+    # custom programs
     ../programs/book-summarizer/book-summarizer.nix
-    ../programs/browsh/browsh.nix
     ../programs/pgconn/pgconn.nix
-    ../programs/proxmox/proxmox.nix
     ../programs/repo-switcher/repo-switcher.nix
-    ../programs/totp/totp.nix
-    ../programs/wallabag-tagger/wallabag-tagger.nix
   ];
 
-  toolchainsAndLinters =
+  android =
     with pkgs;
     (lib.optionals (stdenv.hostPlatform.system != "aarch64-linux") [ android-cli ])
     ++ [
-      # ---- android ----
       android-tools
       flutter
-      # ---- bash ----
-      beautysh
-      shellcheck
-      shfmt
-      # ---- c ----
-      uncrustify
-      usort
-      # ---- golang ----
-      golangci-lint
-      gopls
-      goreleaser
-      gotoolsCustom
-      air
-      # ---- nix ----
-      deadnix
-      nix-search-cli
-      nixfmt
-      statix
-      # ---- python ----
-      pixi
-      nbstripout
-      ruff
-      # ---- yaml ----
-      yamlfmt
-      yamllint
-      # ---- wasm ----
-      wasmtime
-      # ---- zig ----
-      zig
-      # ---- misc ----
-      distrobox
-      hadolint
-      oxfmt
-      sqruff
-      typos
     ];
 
-  cloudAndOps = with pkgs; [
-    # ---- database ----
-    #atlas
-    #mongodb-tools
+  bash = with pkgs; [
+    # beautysh
+    shellcheck
+    shfmt
+  ];
+
+  c = with pkgs; [
+    # uncrustify
+    # usort
+  ];
+
+  golang = with pkgs; [
+    air
+    golangci-lint
+    gopls
+    goreleaser
+    gotools
+  ];
+
+  nix = with pkgs; [
+    deadnix
+    nix-search-cli
+    nixfmt
+    statix
+  ];
+
+  node = with pkgs; [
+    yarn
+  ];
+
+  python = with pkgs; [
+    nbstripout
+    pixi
+    ruff
+  ];
+
+  yaml = with pkgs; [
+    yamlfmt
+    yamllint
+  ];
+
+  wasm = with pkgs; [
+    wasmtime
+  ];
+
+  zig_group = with pkgs; [
+    zig
+  ];
+
+  containerTools = with pkgs; [
+    distrobox
+    hadolint
+  ];
+
+  formattersAndLinters = with pkgs; [
+    oxfmt
+    sqruff
+    typos
+  ];
+
+  database = with pkgs; [
+    # atlas
+    # mongodb-tools
     pkgs-stable.pgcli
+    postgresql_18
     sqlite
-    # ---- gcp ----
+  ];
+
+  gcp = with pkgs; [
     google-cloud-sdk
     # google-cloud-sql-proxy
-    # ---- kubernetes ----
+  ];
+
+  kubernetes = with pkgs; [
+    # helmfile
     argocd
-    helmfile
     k9s
     krew
     kubectl
     kubernetes-helm
     kubevirt
-    # ---- markdown ----
+  ];
+
+  markdown = with pkgs; [
     markdown-link-check
     markdownlint-cli2
     mdsf
     mw
     rumdl
-    # ---- networking ----
+  ];
+
+  networking = with pkgs; [
     # dumbpipe
     # sendme
     caddy
@@ -104,17 +123,23 @@ let
     somo
     sshx
     whois
-    # ---- security ----
+  ];
+
+  security = with pkgs; [
     # grype
     osv-scanner
     syft
     zizmor
-    # ---- tests ----
+  ];
+
+  tests = with pkgs; [
     hurl
     hyperfine
     k6
     oha
-    # ---- misc ----
+  ];
+
+  automation = with pkgs; [
     ansible
   ];
 
@@ -127,32 +152,40 @@ let
     yq-go
   ];
 
-  utils = with pkgs; [
-    caligula
-    charm-freeze
+  devUtils = with pkgs; [
+    direnv
+    entr
+    pastel
+  ];
+
+  fileUtils = with pkgs; [
     cpx
     difftastic
     f2
+    mcat
+    restic
+    rsync
+  ];
+
+  terminalUtils = with pkgs; [
+    caligula
+    charm-freeze
     fzf
     imagemagick
     libqalculate
     magika-cli
     mcfly
     numbat
-    pastel
     pop
-    restic
-    rsync
     tldr
     tz
-    wakatime-cli
-    yt-dlp
   ];
 
   misc = with pkgs; [
     beancount
     beanquery
     fava
+    wakatime-cli
     zola # use pkgs-stable.zola here if needed
   ];
 
@@ -176,12 +209,36 @@ in
         "rust" = "latest";
         "terraform" = "latest";
         "uv" = "latest";
-        "yarn" = "latest";
       };
     };
   };
 
   home = {
-    packages = toolchainsAndLinters ++ cloudAndOps ++ dataManipulation ++ utils ++ misc;
+    packages =
+      android
+      ++ bash
+      ++ c
+      ++ golang
+      ++ nix
+      ++ node
+      ++ python
+      ++ yaml
+      ++ wasm
+      ++ zig_group
+      ++ containerTools
+      ++ formattersAndLinters
+      ++ database
+      ++ gcp
+      ++ kubernetes
+      ++ markdown
+      ++ networking
+      ++ security
+      ++ tests
+      ++ automation
+      ++ dataManipulation
+      ++ devUtils
+      ++ fileUtils
+      ++ terminalUtils
+      ++ misc;
   };
 }

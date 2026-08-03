@@ -159,7 +159,6 @@ set -l completion_commands \
     swissknife \
     thailand-train-fare-calculator \
     timesheet \
-    totp \
     umamit
 
 for cmd in $completion_commands

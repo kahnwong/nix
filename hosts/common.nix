@@ -2,40 +2,47 @@
 
 let
   programImports = [
+    ../programs/browsh/browsh.nix
+    ../programs/ghostty/ghostty.nix
+    ../programs/git/git.nix
     ../programs/sampler/sampler.nix
     ../programs/starship/starship.nix
+    ../programs/yt-dlp/yt-dlp.nix
     ../programs/zellij/zellij.nix
   ];
 
-  base = with pkgs; [
+  cli = with pkgs; [
     bat
     curl
     eza
     fd
     gnutar
     neovim
-    gping
     ripgrep
     sd
     # tailspin
     tere
     tree
     unzip
-    viddy
-    watch
     zoxide
   ];
 
-  system = with pkgs; [
+  monitoring = with pkgs; [
     bandwhich
+    gping
+    htop
+    procs
+    viddy
+    watch
+    zenith
+  ];
+
+  disk = with pkgs; [
     diskus
     dua
     duf
     dust
-    htop
     ncdu
-    procs
-    zenith
   ];
 
   fetch = with pkgs; [
@@ -45,26 +52,19 @@ let
   ];
 
   containers = with pkgs; [
-    # ctop
     dive
     lazydocker
     oxker
   ];
 
-  database = with pkgs; [
-    postgresql_18
-  ];
-
-  downloader = with pkgs; [
+  downloaders = with pkgs; [
     aria2
     wget
+    yt-dlp
   ];
 
-  utils = with pkgs; [
+  security = with pkgs; [
     age
-    direnv
-    entr
-    mcat
     sops
   ];
 
@@ -84,6 +84,6 @@ in
 
   home = {
     stateVersion = "25.11";
-    packages = base ++ system ++ fetch ++ containers ++ database ++ downloader ++ utils ++ linuxOnly;
+    packages = cli ++ monitoring ++ disk ++ fetch ++ containers ++ downloaders ++ security ++ linuxOnly;
   };
 }
