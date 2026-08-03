@@ -15,5 +15,5 @@
         "Library/Application Support/browsh/config.toml".source = ./config.toml;
       };
 
-  home.packages = with pkgs; [ ];
+  home.packages = with pkgs; [ browsh ];
 }

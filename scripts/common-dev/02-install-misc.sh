@@ -173,6 +173,4 @@ if [[ $(uname -s) == 'Linux' ]]; then
 
 	# garmin connect sdk
 	curl -Ls https://raw.githubusercontent.com/pcolby/connectiq-sdk-manager/main/install.sh | bash -r
-elif [[ $(uname -s) == 'Darwin' ]]; then
-	gh install browsh-org/browsh
 fi
