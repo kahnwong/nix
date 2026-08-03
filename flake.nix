@@ -73,9 +73,6 @@
           nixpkgs-stable
           flox
           ;
-      })
-      // (import ./server.nix {
-        inherit home-manager nixpkgs nixpkgs-stable;
       });
     };
 }
