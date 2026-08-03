@@ -142,7 +142,6 @@ abbr -a k kubectl
 # Aliases
 alias c="gcal-tui"
 alias ci="config-init"
-alias d="media-discord-rpc"
 alias h="habit-tracker"
 alias sk="swissknife"
 alias sm="article-summarizer"
@@ -156,7 +155,6 @@ set -l completion_commands \
     cpubench \
     erp \
     habit-tracker \
-    media-discord-rpc \
     pgconn \
     swissknife \
     thailand-train-fare-calculator \
