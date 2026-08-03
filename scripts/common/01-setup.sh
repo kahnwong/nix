@@ -63,7 +63,10 @@ fish -c "fisher install meaningful-ooo/sponge"
 fish -c "fisher install patrickf1/colored_man_pages.fish"
 fish -c "fisher install danhper/fish-ssh-agent"
 
-#### nvim
+#### mise
+mise upgrade
+
+### nvim
 #nvim --headless +PlugInstall +qall
 git clone https://github.com/kahnwong/nvchad-starter.git ~/.config/nvim --depth 1
 

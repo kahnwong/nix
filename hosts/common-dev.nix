@@ -154,7 +154,6 @@ let
     beancount
     beanquery
     fava
-    # llama-cpp
     zola # use pkgs-stable.zola here if needed
   ];
 
@@ -165,6 +164,22 @@ in
   programs.java = {
     enable = true;
     package = pkgs.temurin-bin;
+  };
+
+  programs.mise = {
+    enable = true;
+
+    globalConfig = {
+      tools = {
+        "go" = "latest";
+        "nodejs" = "24";
+        "opentofu" = "latest";
+        "rust" = "latest";
+        "terraform" = "latest";
+        "uv" = "latest";
+        "yarn" = "latest";
+      };
+    };
   };
 
   home = {

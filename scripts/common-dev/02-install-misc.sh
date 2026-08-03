@@ -1,32 +1,18 @@
 #!/bin/bash
 
 ############################
-# go
-############################
-if [[ "$1" != "update" ]]; then
-	GO_VERSION="go1.26.3"
-	go install "golang.org/dl/${GO_VERSION}@latest"
-	"${GO_VERSION}" download
-fi
-
-############################
-# rust
-############################
-if [[ "$1" != "update" ]]; then
-	rustup default stable
-else
-	rustup update
-fi
-
-############################
 # mise
 ############################
 if [[ "$1" != "update" ]]; then
+	mise use -g go@latest
 	mise use -g node@24
 	mise use -g opentofu@latest
+	mise use -g rust@latest
 	mise use -g terraform@latest
+	mise use -g uv@latest
 else
 	mise upgrade
+	mise prune
 fi
 
 ############################

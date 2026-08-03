@@ -60,14 +60,6 @@ let
     wget
   ];
 
-  toolchains = with pkgs; [
-    go
-    mise
-    rustup
-    uv
-    yarn
-  ];
-
   utils = with pkgs; [
     age
     direnv
@@ -92,7 +84,6 @@ in
 
   home = {
     stateVersion = "25.11";
-    packages =
-      base ++ system ++ fetch ++ containers ++ database ++ downloader ++ toolchains ++ utils ++ linuxOnly;
+    packages = base ++ system ++ fetch ++ containers ++ database ++ downloader ++ utils ++ linuxOnly;
   };
 }
