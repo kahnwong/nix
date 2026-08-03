@@ -21,9 +21,13 @@ fi
 ############################
 # mise
 ############################
-mise use -g node@24
-mise use -g opentofu@latest
-mise use -g terraform@latest
+if [[ "$1" != "update" ]]; then
+	mise use -g node@24
+	mise use -g opentofu@latest
+	mise use -g terraform@latest
+else
+	mise upgrade
+fi
 
 ############################
 # applications - golang
