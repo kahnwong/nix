@@ -8,7 +8,6 @@ mkdir -p ~/.config/fish/completions
 mv fish-shell/share/completions/*.fish ~/.config/fish/completions/
 rm ~/.config/fish/completions/git.fish
 rm ~/.config/fish/completions/sops.fish
-cp ./programs/fish/completions/garmin-tui.fish ~/.config/fish/completions/
 
 cd .. || exit
 rm -rf temp
