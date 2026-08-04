@@ -3,14 +3,7 @@
 ############################
 # mise
 ############################
-if [[ "$1" != "update" ]]; then
-	mise use -g go@latest
-	mise use -g node@24
-	mise use -g opentofu@latest
-	mise use -g rust@latest
-	mise use -g terraform@latest
-	mise use -g uv@latest
-else
+if [[ "$1" == "update" ]]; then
 	mise upgrade
 	mise prune
 fi
