@@ -12,6 +12,12 @@
 sudo apt-get install libheif-plugin-libde265
 ```
 
+## GPU
+
+```bash
+sudo apt install nvidia-driver-570 # GTX 1060 6GB
+```
+
 ## Peripherals
 
 ### Mouse
