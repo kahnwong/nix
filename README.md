@@ -81,14 +81,6 @@ echo "$(whoami) ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/99-nopasswd-$
 `vi /etc/passwd` and specify shell for your user
 ```
 
-#### Linux on Intel Apple
-
-Install Wi-Fi driver:
-
-```bash
-sudo apt install broadcom-sta-dkms
-```
-
 ### MacOS: Misc config
 
 - set `tap to single click`

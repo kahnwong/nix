@@ -12,10 +12,38 @@
 sudo apt-get install libheif-plugin-libde265
 ```
 
-## GPU
+### GPU
 
 ```bash
 sudo apt install nvidia-driver-570 # GTX 1060 6GB
+```
+
+### Broadcom
+
+#### Linux on Intel Apple
+
+```bash
+sudo apt install broadcom-sta-dkms
+```
+
+#### broadcom-sta-dkms fails to build with kernel 7.0 HWE
+
+<https://bugs.launchpad.net/ubuntu/+source/broadcom-sta/+bug/2161038>
+
+```bash
+--------------------------------------------
+WORKAROUND (courtesy of eumir camara)
+--------------------------------------------
+
+Edit /usr/src/broadcom-sta-6.30.223.271/dkms.conf
+
+Change:
+MAKE[0]="make KVER=$kernelver"
+to:
+MAKE[0]="make KVER=$kernelver objtool=/bin/true"
+
+Save file. Run:
+sudo apt install broadcom-sta-dkms && sudo apt dist-upgrade
 ```
 
 ## Peripherals
