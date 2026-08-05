@@ -99,6 +99,7 @@ if [[ $(uname -n) == 'sailfish' ]]; then
 		com.valvesoftware.Steam
 
 	flatpak override --user --device=dri --socket=x11 --socket=wayland com.valvesoftware.Steam
+	flatpak override --user --talk-name=org.freedesktop.Flatpak com.valvesoftware.Steam
 fi
 
 ## redfin only
