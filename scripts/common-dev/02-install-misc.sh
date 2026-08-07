@@ -1,6 +1,16 @@
 #!/bin/bash
 
 ############################
+# go
+############################
+# this setup doesn't require shell exec to activate project's Go version
+if [[ "$1" != "update" ]]; then
+	GO_VERSION="go1.26.5"
+	go install "golang.org/dl/${GO_VERSION}@latest"
+	"${GO_VERSION}" download
+fi
+
+############################
 # mise
 ############################
 if [[ "$1" == "update" ]]; then

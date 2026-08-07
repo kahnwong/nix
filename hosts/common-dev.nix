@@ -34,6 +34,7 @@ let
 
   golang = with pkgs; [
     air
+    go
     golangci-lint
     gopls
     goreleaser
@@ -203,7 +204,8 @@ in
 
     globalConfig = {
       tools = {
-        "go" = "latest";
+        # needs to exec shell to activate target Go version, this behavior doesn't happen in global Go
+        # "go" = "latest";
         "nodejs" = "24";
         "opentofu" = "latest";
         "rust" = "latest";
