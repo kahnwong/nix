@@ -160,6 +160,10 @@ gsettings set org.gnome.software allow-updates false
 
 ## Apps
 
+### Clyp
+
+Clear with `.local/share/bio.murat.clyp/clyp.db`. Need to run once in a while.
+
 ### Discord
 
 - Fix discord not loading: `rm -rf ~/.var/app/com.discordapp.Discord`
