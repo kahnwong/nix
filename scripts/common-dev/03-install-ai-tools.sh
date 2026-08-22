@@ -18,13 +18,9 @@ pi install npm:pi-mcp-adapter
 pi install npm:pi-web-access
 
 # tools
-## git-ai
-curl -sSL https://usegitai.com/install.sh | bash
-
-## microsandbox
 curl -fsSL https://install.microsandbox.dev | sh
-
-## codegraph
+curl -fsSL https://raw.githubusercontent.com/raine/workmux/main/scripts/install.sh | bash
+curl -sSL https://usegitai.com/install.sh | bash
 npx @colbymchenry/codegraph
 
 # skills

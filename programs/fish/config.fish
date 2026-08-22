@@ -90,6 +90,9 @@ direnv hook fish | source
 # git-ai
 fish_add_path -g $HOME/.git-ai/bin  # need to use git binary from this path
 
+# workmux
+workmux completions fish | source
+
 # mcfly
 mcfly init fish | source
 set MCFLY_KEY_SCHEME vim
@@ -131,8 +134,8 @@ end
 
 # alias
 alias cp="cpx"
-alias tmux="zellij"
 alias vi="nvim"
+alias wm="workmux"
 
 abbr -a k kubectl
 
