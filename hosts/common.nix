@@ -22,6 +22,7 @@ let
     sd
     # tailspin
     tere
+    tmux # for stuff that don't support zellij
     tree
     unzip
     zoxide
