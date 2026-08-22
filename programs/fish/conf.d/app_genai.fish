@@ -8,12 +8,12 @@ function crush
 end
 
 ######################
-# lemonade
+# workmkux
 ######################
-function lemonade-sailfish
-    ssh -L 13306:localhost:13305 sailfish
+function workmux
+    set -x ZELLIJ true # so workmux picks up zellij on default
+    command workmux $argv
 end
-
 
 # ######################
 # # copilot
