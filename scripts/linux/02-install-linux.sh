@@ -61,6 +61,7 @@ flatpak install -y flathub \
 	io.github.dweymouth.supersonic \
 	io.github.flattool.Warehouse \
 	io.github.josephmawa.Bella \
+	io.github.seadve.Kooha \
 	io.github.sigmasd.stimulator \
 	io.github.tobagin.Ntfyr \
 	io.github.tobagin.karere \
