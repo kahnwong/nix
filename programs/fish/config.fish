@@ -97,6 +97,19 @@ workmux completions fish | source
 mcfly init fish | source
 set MCFLY_KEY_SCHEME vim
 
+# zellij
+function zellij_update_tabname --on-variable PWD
+    if set -q ZELLIJ
+        set -l current_dir $PWD
+        if test "$current_dir" = "$HOME"
+            set current_dir "~"
+        else
+            set current_dir (basename "$current_dir")
+        end
+        nohup zellij action rename-tab "$current_dir" >/dev/null 2>&1
+    end
+end
+
 # fzf
 function fcat
     fd $argv | fzf | xargs echo | xargs bat $argv
