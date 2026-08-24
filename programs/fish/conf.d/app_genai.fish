@@ -33,7 +33,7 @@ function fetch-response
     curl -s -X POST http://localhost:13305/v1/responses \
       -H "Content-Type: application/json" \
       -d "{
-            \"model\": \"Bonsai-1.7B-gguf\",
+            \"model\": \"Gemma-4-E2B-it-GGUF\",
             \"input\": \"$argv[2] $argv[1]\",
             \"stream\": false
           }" | jq -r .output[0].content[0].text | glow -
