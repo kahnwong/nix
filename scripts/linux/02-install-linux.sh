@@ -52,9 +52,11 @@ flatpak install -y flathub \
 	com.jeffser.Pigment \
 	com.obsproject.Studio \
 	com.obsproject.Studio.Plugin.BackgroundRemoval \
+	com.rafaelmardojai.SharePreview \
 	com.ranfdev.DistroShelf \
 	com.rustdesk.RustDesk \
 	com.transmissionbt.Transmission \
+	dev.mufeed.Wordbook \
 	io.github.TransmissionRemoteGtk \
 	io.github.celluloid_player.Celluloid \
 	io.github.ciromattia.kcc \
