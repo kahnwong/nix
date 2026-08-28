@@ -4,9 +4,9 @@
 curl -fsSL https://antigravity.google/cli/install.sh | bash
 curl -fsSL https://claude.ai/install.sh | bash
 curl -fsSL https://cli.kiro.dev/install | bash
+curl -fsSL https://opencode.ai/install | bash
 curl -fsSL https://pi.dev/install.sh | sh
 ubi --project charmbracelet/crush --in ~/.local/bin
-yarn global add opencode-ai
 
 ### pi plugins
 curl -fsSL https://hypabolic.github.io/Hypa/install.sh | sh

@@ -22,12 +22,12 @@ if [ -f /etc/os-release ]; then
 			sudo tee /etc/apt/sources.list.d/docker.list >/dev/null
 		sudo apt-get update
 
-		sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+		sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 
 	elif [ "$ID" = "fedora-asahi-remix" ]; then
 		sudo dnf config-manager addrepo --from-repofile https://download.docker.com/linux/fedora/docker-ce.repo
 
-		sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+		sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 		sudo systemctl enable --now docker
 	fi
 fi

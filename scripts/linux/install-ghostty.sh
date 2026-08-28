@@ -7,11 +7,11 @@ if [ -f /etc/os-release ]; then
 		# <https://github.com/mkasberg/ghostty-ubuntu>
 		sudo add-apt-repository ppa:mkasberg/ghostty-ubuntu
 		sudo apt update
-		sudo apt install ghostty
+		sudo apt install ghostty -y
 
 	elif [ "$ID" = "fedora-asahi-remix" ]; then
 		sudo dnf copr enable scottames/ghostty
-		sudo dnf install ghostty
+		sudo dnf install ghostty -y
 	fi
 fi
 

@@ -145,7 +145,7 @@ fi
 
 # forgejo
 if [[ "$1" != "update" ]]; then
-	tea login
+	tea login add git.karnwong.me
 	tea login default git.karnwong.me
 fi
 
