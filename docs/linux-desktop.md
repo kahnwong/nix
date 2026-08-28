@@ -152,7 +152,7 @@ If not being redirected to login page via `Online Accounts`, run `gnome-keyring-
 
 ### Asahi Linux
 
-Run this, otherewise shutdown hangs on `dnf5daemon`.
+Run this, otherwise shutdown hangs on `dnf5daemon`.
 
 ```bash
 gsettings set org.gnome.software allow-updates false

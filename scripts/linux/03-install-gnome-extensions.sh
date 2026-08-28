@@ -5,10 +5,9 @@ if [ -f /etc/os-release ]; then
 	source /etc/os-release
 
 	if [ "$ID" = "ubuntu" ]; then
-		sudo apt install -y gnome-browser-connector
-
+		sudo apt install -y gnome-browser-connector gnome-shell-extension-manager
 	elif [ "$ID" = "fedora-asahi-remix" ]; then
-		sudo dnf install -y gnome-browser-connector
+		sudo dnf install -y gnome-browser-connector gnome-shell-extension-manager
 	fi
 fi
 
