@@ -43,7 +43,7 @@ if (url.hostname === "old.reddit.com") return null;
 - Disable Telemetry Settings > Privacy & Security > Firefox Data Collection
 - Change Search Engine Settings > Search (Switch to DuckDuckGo or Brave Search)
 - Strict Protection Settings > Privacy & Security > Enhanced Tracking Protection (Set to Strict)
-- DNS over HTTPS Settings > Privacy & Security > Enable Max Protection
+- DNS over HTTPS Settings > Privacy & Security > Enable Max Protection and set DNS to `https://family.dns.mullvad.net/dns-query`
 
 ## Set Custom AI Chatbot
 
