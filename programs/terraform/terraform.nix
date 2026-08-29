@@ -15,7 +15,7 @@
   #          linux =
   #            builtins.replaceStrings [ "GOBIN" ] [ "/home/kahnwong/go/bin" ]
   #            (builtins.readFile ./.terraformrc);
-  #        in (if stdenv.isLinux then linux else mac);
+  #        in (if stdenv.hostPlatform.isLinux then linux else mac);
   #    };
   #  };
 

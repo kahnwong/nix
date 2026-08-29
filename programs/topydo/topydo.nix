@@ -31,7 +31,7 @@
                 ]
                 (builtins.readFile ./.topydo);
           in
-          if stdenv.isLinux then linux else mac;
+          if stdenv.hostPlatform.isLinux then linux else mac;
       };
     };
 

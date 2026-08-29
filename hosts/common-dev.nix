@@ -102,7 +102,7 @@ let
     krew
     kubectl
     kubernetes-helm
-    kubevirt
+    # kubevirt
   ];
 
   markdown = with pkgs; [

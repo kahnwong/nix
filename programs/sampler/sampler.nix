@@ -5,7 +5,7 @@
 
 {
   home.file =
-    if pkgs.stdenv.isLinux then
+    if pkgs.stdenv.hostPlatform.isLinux then
       {
         ".config/sampler/config.yaml".source = ./config.yaml;
       }

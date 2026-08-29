@@ -6,7 +6,7 @@
 {
 
   home.file =
-    if pkgs.stdenv.isLinux then
+    if pkgs.stdenv.hostPlatform.isLinux then
       {
         ".config/browsh/config.toml".source = ./config.toml;
       }

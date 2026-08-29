@@ -71,7 +71,7 @@ let
 
   linuxOnly =
     with pkgs;
-    if stdenv.isLinux then
+    if stdenv.hostPlatform.isLinux then
       [
         iotop
         progress

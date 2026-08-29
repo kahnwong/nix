@@ -27,7 +27,7 @@
       pre-commit # for backward compatibility
       prek
       svu
-      tea
+      # tea
     ];
   };
 

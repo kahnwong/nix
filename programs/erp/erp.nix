@@ -20,7 +20,7 @@
             builtins.readFile ./config.yaml
           );
         in
-        if stdenv.isLinux then linux else mac;
+        if stdenv.hostPlatform.isLinux then linux else mac;
     };
   };
 
