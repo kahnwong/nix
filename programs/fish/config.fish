@@ -23,6 +23,7 @@ set PATH \
     $HOME/.krew/bin \
     $HOME/.npm-global/bin \
     $HOME/.pixi/bin \
+    $HOME/.opencode/bin \
     /Applications/IntelliJ\ IDEA.app/Contents/MacOS \
     /opt/homebrew/bin \
     /snap/bin \
