@@ -4,6 +4,13 @@ Flake migration based on <https://github.com/sebastiant/dotfiles>.
 
 ## Pre-requisites
 
+Add current user to trusted users (only apply ONCE on the machine):
+
+```bash
+echo "trusted-users = root @wheel $USER" | sudo tee -a /etc/nix/nix.custom.conf
+sudo systemctl restart nix-daemon
+```
+
 Create `./scripts/apply.sh` and set appropriate build command. See `flake.nix` for available options.
 
 File content should look like this:
@@ -13,16 +20,6 @@ File content should look like this:
 
 export NIXPKGS_ALLOW_UNFREE=1
 export NIXPKGS_ALLOW_INSECURE=1
-
-if [[ $(uname -s) == 'Linux' ]] && [[ " $(nix config show trusted-substituters) " != *" https://cache.flox.dev "* ]]; then
-   echo "Configuring the Flox binary cache (sudo required)..."
-   sudo tee -a /etc/nix/nix.custom.conf >/dev/null <<'EOF'
-extra-trusted-substituters = https://cache.flox.dev
-extra-trusted-public-keys = flox-cache-public-1:7F4OyH7ZCnFhcze3fJdfyXYLQw/aV7GEed86nQ7IsOs=
-EOF
-   sudo systemctl stop nix-daemon.service
-   sudo systemctl restart nix-daemon.socket
-fi
 
 ## darwin
 #nix build '.#homeManagerConfigurations.macbookMain.system' --experimental-features 'nix-command flakes' --impure
