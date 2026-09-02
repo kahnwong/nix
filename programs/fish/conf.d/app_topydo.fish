@@ -45,3 +45,7 @@ end
 function taw
     topydo add due:today @work $argv
 end
+
+function tag
+    topydo add due:friday @grocery $argv
+end
