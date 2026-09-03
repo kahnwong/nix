@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=IntelliJ IDEA 2026.2.1
+Exec="/home/kahnwong/.local/share/JetBrains/Toolbox/apps/intellij-idea/bin/idea" %u
+Version=1.0
+Type=Application
+Categories=Development;IDE;
+Terminal=false
+Icon=/home/kahnwong/.local/fleet/icons/idea.svg
+Comment=The IDE for pro Java and Kotlin development
+StartupWMClass=jetbrains-idea
+StartupNotify=true

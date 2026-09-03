@@ -3,6 +3,7 @@
 # <https://gabrielstaples.com/ydotool-tutorial/#gsc.tab=0>
 
 if [ -f /etc/os-release ]; then
+	# shellcheck disable=SC1091
 	source /etc/os-release
 
 	if [ "$ID" = "ubuntu" ]; then

@@ -4,26 +4,15 @@
 
 # copy icons
 mkdir -p ~/.local/fleet/icons
-cp -r ./programs/gnome/icons/* ~/.local/fleet/icons/
-
-## ------ Facebook ------
-#cat <<EOF >"$HOME/.local/share/applications/Facebook.desktop"
-#[Desktop Entry]
-#Version=1.0
-#Type=Application
-#Name=Facebook
-#GenericName=Facebook
-#Exec=flatpak run com.google.Chrome https://facebook.com
-#StartupNotify=true
-#Categories=Social;
-#Icon=/home/kahnwong/.local/fleet/icons/facebook.svg
-#EOF
+rsync -a --delete ./programs/gnome/icons/* ~/.local/fleet/icons/
 
 cp ./programs/gnome/applications/*.desktop "$HOME/.local/share/applications/"
+## remove official intellij idea shortcut - uuid makes it hard to sync config
+rm ~/.local/share/applications/jetbrains-idea-*.desktop
 
 # chrome isn't available on linux/arm64, so we use chromium instead
-
 if [ -f /etc/os-release ]; then
+	# shellcheck disable=SC1091
 	source /etc/os-release
 
 	if [ "$ID" = "fedora-asahi-remix" ]; then
