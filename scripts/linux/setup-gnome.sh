@@ -22,8 +22,13 @@ else # apply config
 
 	# custom shortcuts
 	CUSTOM_SHORTCUTS_CONFIG_FILE="programs/gnome/config/custom-shortcuts.conf"
-	if [[ "$(hostname)" == "sailfish" ]]; then
+	if [[ "$(hostname)" == "sailfish" ]]; then # this system is on x11
 		sed 's/QT_QPA_PLATFORM=wayland//g' "$CUSTOM_SHORTCUTS_CONFIG_FILE" | dconf load /
+	elif [[ "$(hostname)" == "steelhead" ]]; then # for apple devices - remap super key
+		sed \
+			-e 's#125:1#56:1#g' \
+			-e 's#125:0#56:0#g' \
+			"$CUSTOM_SHORTCUTS_CONFIG_FILE" | dconf load /
 	else
 		dconf load / <"$CUSTOM_SHORTCUTS_CONFIG_FILE"
 		dconf load / <programs/gnome/config/touchpad-gesture-customization.conf
