@@ -1,18 +1,8 @@
 # Linux Desktop
 
-## Hardware & Codecs
+## Hardware
 
-- If you install linux on mac devices, install gnome-tweaks (`sudo apt install gnome-tweaks`) to remap super and alt
-  button.
-- Add m4a support to RhythmBox: `sudo apt install gstreamer1.0-fdkaac -y`
-
-### HEIC no preview on Ubuntu 26 Fix
-
-```bash
-sudo apt-get install libheif-plugin-libde265
-```
-
-### GPU
+### Nvidia
 
 ```bash
 sudo apt install nvidia-driver-570 # GTX 1060 6GB
@@ -46,48 +36,7 @@ Save file. Run:
 sudo apt install broadcom-sta-dkms && sudo apt dist-upgrade
 ```
 
-## Peripherals
-
-### Mouse
-
-- To setup custom mouse buttons: <https://github.com/pwr-Solaar/Solaar>.
-- For some mice, use <https://github.com/libratbag/piper/issues/352#issuecomment-1147626332>.
-
-#### Installing libratbag
-
-If you run into errors: <https://github.com/libratbag/libratbag/issues/981>
-
-```bash
-sudo apt-get install meson ninja-build -y
-sudo apt-get install libudev-dev libevdev-dev libglib2.0-dev libjson-glib-dev libunistring-dev libsystemd-dev swig check valgrind python3-dev python3-evde
-
-git clone https://github.com/libratbag/libratbag.git
-cd libratbag
-
-meson builddir --prefix=/usr
-meson configure builddir -Dsystemd-unit-dir=/usr/lib/systemd/system
-ninja -C builddir
-sudo ninja -C builddir install
-
-sudo systemctl daemon-reload
-sudo systemctl reload dbus.service
-sudo systemctl enable ratbagd.service
-
-flatpak install flathub org.freedesktop.Piper -y
-```
-
 ## Systems
-
-### Battery Optimization (TLP)
-
-```bash
-sudo tlp start
-
-sudo tlp bat
-sudo tlp ac
-```
-
-It might get conflicted with `power-profiles-daemon`, in that case uninstall it and reinstall `tlp`.
 
 ### Crontabs
 
@@ -98,6 +47,14 @@ As `sudo`
 ```
 
 On apple devices, `super` key is `56`.
+
+### File Browser
+
+HEIC no preview on Ubuntu 26 Fix
+
+```bash
+sudo apt-get install libheif-plugin-libde265
+```
 
 ### Fingerprint
 
@@ -146,11 +103,7 @@ You don't need this for Ghostty, but intellij terminal needs this to render glyp
   `~/.local/share/fonts` (or `~/.fonts`) then run `fc-cache -fv`.
 - Fix Thai fonts: `sudo apt install fonts-thai-tlwg -y`
 
-## Gnome
-
-If not being redirected to login page via `Online Accounts`, run `gnome-keyring-daemon -r` and try again. But this'll prompt you to enter keyring password twice...
-
-### Asahi Linux
+## Asahi Linux
 
 Run this, otherwise shutdown hangs on `dnf5daemon`.
 
@@ -164,10 +117,6 @@ gsettings set org.gnome.software allow-updates false
 
 Clear with `.local/share/bio.murat.clyp/clyp.db`. Need to run once in a while.
 
-### Discord
-
-- Fix discord not loading: `rm -rf ~/.var/app/com.discordapp.Discord`
-
 ### Ntfyr
 
 - Set to start in background
@@ -177,50 +126,3 @@ Clear with `.local/share/bio.murat.clyp/clyp.db`. Need to run once in a while.
 ### Notifications Mirroring
 
 - iOS: <https://github.com/impiaaa/ios-notif-forward>
-
-### Control Android Audio Playback
-
-```bash
-sudo apt install playerctl pipewire-audio-client-libraries -y
-```
-
-```unit file (systemd)
-# ~/.config/systemd/user/mpris-proxy.service
-
-[Unit]
-Description=Forward Bluetooth Media Controls to MPRIS
-After=bluetooth.target
-
-[Service]
-Type=simple
-ExecStart=/usr/bin/mpris-proxy
-Restart=on-failure
-
-[Install]
-WantedBy=default.target
-```
-
-```bash
-systemctl --user enable --now mpris-proxy
-```
-
-Now `playerctl play-pause` should work.
-
-### MPV Gnome Integration
-
-```bash
-sudo apt install mpv-mpris
-```
-
-```bash
-# ~/.config/mpv/mpv.conf
-script-opts=mpris-enable=yes
-```
-
-### mprisence
-
-Install <https://github.com/lazykern/mprisence> and run:
-
-```bash
-systemctl --user enable --now mprisence.service
-```

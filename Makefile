@@ -35,6 +35,7 @@ linux-desktop:
 	./scripts/linux/install-ydotool.sh
 	./scripts/linux/install-yubikey-manager.sh
 	./scripts/linux/install-zed.sh
+	./scripts/linux/setup-audio.sh
 	./scripts/linux/setup-flatpak-config.sh
 	./scripts/linux/setup-gnome-app-shortcuts.sh
 	./scripts/linux/setup-gnome-startups.sh
