@@ -42,4 +42,9 @@ else # apply config
 	else
 		dconf write /org/gnome/shell/favorite-apps "$(cat programs/gnome/config/gnome-shell-favorites.conf)"
 	fi
+
+	# remap keys on apple devices
+	if [[ "$(hostname)" == "steelhead" ]]; then
+		dconf write /org/gnome/desktop/input-sources/xkb-options "['altwin:swap_lalt_lwin']"
+	fi
 fi
