@@ -19,7 +19,6 @@ else
 	dconf load / <programs/gnome/config/tiling-assistant-shortcuts.conf
 	dconf load / <programs/gnome/config/wacom.conf
 	dconf load / <programs/gnome/config/wm-keybindings.conf
-	dconf write /org/gnome/shell/favorite-apps "$(cat programs/gnome/config/gnome-shell-favorites.conf)"
 
 	CUSTOM_SHORTCUTS_CONFIG_FILE="programs/gnome/config/custom-shortcuts.conf"
 	if [[ "$(hostname)" == "sailfish" ]]; then
@@ -27,5 +26,11 @@ else
 	else
 		dconf load / <"$CUSTOM_SHORTCUTS_CONFIG_FILE"
 		dconf load / <programs/gnome/config/touchpad-gesture-customization.conf
+	fi
+
+	if [[ "$(hostname)" == "sailfish" ]]; then
+		dconf write /org/gnome/shell/favorite-apps "$(sed 's/firefox\.desktop/firefox-nightly\.desktop/g' programs/gnome/config/gnome-shell-favorites.conf)"
+	else
+		dconf write /org/gnome/shell/favorite-apps "$(cat programs/gnome/config/gnome-shell-favorites.conf)"
 	fi
 fi
