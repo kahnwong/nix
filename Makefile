@@ -35,10 +35,10 @@ linux-desktop:
 	./scripts/linux/install-ydotool.sh
 	./scripts/linux/install-yubikey-manager.sh
 	./scripts/linux/install-zed.sh
-	./scripts/linux/setup-app-shortcuts.sh
 	./scripts/linux/setup-flatpak-config.sh
+	./scripts/linux/setup-gnome-app-shortcuts.sh
+	./scripts/linux/setup-gnome-startups.sh
 	./scripts/linux/setup-gnome.sh
-	./scripts/linux/setup-startups.sh
 	# ./scripts/vscode/setup.sh
 
 ##############
