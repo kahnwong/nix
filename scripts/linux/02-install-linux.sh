@@ -30,7 +30,6 @@ fi
 #com.bilingify.readest
 #com.bitwarden.desktop
 #com.dropbox.Client
-#com.github.iwalton3.jellyfin-media-player
 #com.github.ransome1.sleek
 #com.slack.Slack
 #com.todoist.Todoist
@@ -46,6 +45,7 @@ flatpak install -y flathub \
 	com.dec05eba.gpu_screen_recorder \
 	com.github.IsmaelMartinez.teams_for_linux \
 	com.github.PintaProject.Pinta \
+	com.github.iwalton3.jellyfin-media-player \
 	com.github.jeromerobert.pdfarranger \
 	com.github.qarmin.czkawka \
 	com.github.tchx84.Flatseal \

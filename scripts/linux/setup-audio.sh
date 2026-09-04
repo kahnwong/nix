@@ -34,3 +34,9 @@ DEB_URL=$(curl -s https://api.github.com/repos/lazykern/mprisence/releases/lates
 	rm /tmp/mprisence_latest.deb
 
 systemctl --user enable --now mprisence.service
+
+mkdir -p ~/.config/mprisence && cat <<'EOF' >~/.config/mprisence/config.toml
+[player]
+[player.Jellyfin]
+ignore = false
+EOF
