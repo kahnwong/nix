@@ -29,10 +29,11 @@ end
 # short commands
 ######################
 function fetch-response
-    curl -s -X POST http://localhost:13305/v1/responses \
+    curl -s -X POST $(get_fish_secret AI_GATEWAY_BASE_URL)/responses \
+      -H "Authorization: Bearer "$(get_fish_secret AI_GATEWAY_API_KEY) \
       -H "Content-Type: application/json" \
       -d "{
-            \"model\": \"Gemma-4-E2B-it-GGUF\",
+            \"model\": \"auto\",
             \"input\": \"$argv[2] $argv[1]\",
             \"stream\": false
           }" | jq -r .output[0].content[0].text | glow -
@@ -46,6 +47,3 @@ end
 function as # ask - short answer
     fetch-response "you should provide answer within a few sentences" "$argv"
 end
-
-# crush
-# crush run -m claude-haiku-4-5 you should provide answer within a few sentences $argv | glow
