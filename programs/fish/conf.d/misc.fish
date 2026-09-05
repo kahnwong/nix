@@ -22,3 +22,8 @@ function d-iso-8601
     echo -n $value # display output
     echo -n $value | copy # copy to clipboard
 end
+
+# md-to-pdf
+function md-to-pdf
+    command md-to-pdf --launch-options '{ "args": ["--no-sandbox"] }' $argv
+end
