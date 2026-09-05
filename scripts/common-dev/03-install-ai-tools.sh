@@ -26,6 +26,7 @@ npx @colbymchenry/codegraph
 # skills
 git clone git@github.com:kahnwong/.agents.git ~/.agents --depth 1
 npx skills add superradcompany/skills -a opencode crush claude-code pi
+npx skills add JetBrains/go-modern-guidelines -a opencode crush claude-code pi
 
 ## per-project basis
 npx skills add GoogleChrome/modern-web-guidance -a opencode crush claude-code pi
