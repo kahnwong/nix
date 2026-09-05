@@ -19,6 +19,6 @@ end
 # date
 function d-iso-8601
     set -l value "$(date +%Y-%m-%d)"
-    echo $value
-    echo $value | copy
+    echo -n $value # display output
+    echo -n $value | copy # copy to clipboard
 end
