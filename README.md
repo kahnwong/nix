@@ -8,6 +8,7 @@ Add current user to trusted users (only apply ONCE on the machine):
 
 ```bash
 echo "trusted-users = root @wheel $USER" | sudo tee -a /etc/nix/nix.custom.conf
+echo "experimental-features = nix-command flakes" | sudo tee -a /etc/nix/nix.custom.conf
 sudo systemctl restart nix-daemon
 ```
 

@@ -32,6 +32,18 @@
       flox,
       ...
     }:
+    let
+      nixpkgsConfig = {
+        allowUnfree = true;
+        allowInsecure = true;
+      };
+      mkPkgs =
+        source: system:
+        import source {
+          inherit system;
+          config = nixpkgsConfig;
+        };
+    in
     {
       homeManagerConfigurations = {
         # ----------------- mac ----------------- #
@@ -41,13 +53,14 @@
             ./hosts/macbook/base/darwin-configuration.nix
             home-manager.darwinModules.home-manager
             {
+              nixpkgs.config = nixpkgsConfig;
               home-manager.useGlobalPkgs = true;
               home-manager.users.kahnwong = ./hosts/macbook/main/home.nix;
             }
           ];
           specialArgs = {
             inherit nixpkgs;
-            pkgs-stable = nixpkgs-stable.legacyPackages.aarch64-darwin;
+            pkgs-stable = mkPkgs nixpkgs-stable "aarch64-darwin";
           };
         };
         macbookDemo = darwin.lib.darwinSystem {
@@ -56,13 +69,14 @@
             ./hosts/macbook/base/darwin-configuration-demo.nix
             home-manager.darwinModules.home-manager
             {
+              nixpkgs.config = nixpkgsConfig;
               home-manager.useGlobalPkgs = true;
               home-manager.users.demo = ./hosts/macbook/demo/home.nix;
             }
           ];
           specialArgs = {
             inherit nixpkgs;
-            pkgs-stable = nixpkgs-stable.legacyPackages.aarch64-darwin;
+            pkgs-stable = mkPkgs nixpkgs-stable "aarch64-darwin";
           };
         };
       }
@@ -72,6 +86,7 @@
           nixpkgs
           nixpkgs-stable
           flox
+          mkPkgs
           ;
       });
     };

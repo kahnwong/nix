@@ -3,11 +3,12 @@
   nixpkgs,
   nixpkgs-stable,
   flox,
+  mkPkgs,
   ...
 }:
 {
   base = home-manager.lib.homeManagerConfiguration {
-    pkgs = nixpkgs.legacyPackages.x86_64-linux;
+    pkgs = mkPkgs nixpkgs "x86_64-linux";
     modules = [
       ./hosts/linux/base/home.nix
       {
@@ -18,14 +19,14 @@
       }
     ];
     extraSpecialArgs = {
-      pkgs-stable = nixpkgs-stable.legacyPackages.x86_64-linux;
+      pkgs-stable = mkPkgs nixpkgs-stable "x86_64-linux";
       inherit flox;
       includeFlox = true;
     };
   };
 
   base-without-flox = home-manager.lib.homeManagerConfiguration {
-    pkgs = nixpkgs.legacyPackages.x86_64-linux;
+    pkgs = mkPkgs nixpkgs "x86_64-linux";
     modules = [
       ./hosts/linux/base/home.nix
       {
@@ -36,13 +37,13 @@
       }
     ];
     extraSpecialArgs = {
-      pkgs-stable = nixpkgs-stable.legacyPackages.x86_64-linux;
+      pkgs-stable = mkPkgs nixpkgs-stable "x86_64-linux";
       includeFlox = false;
     };
   };
 
   base-arm = home-manager.lib.homeManagerConfiguration {
-    pkgs = nixpkgs.legacyPackages.aarch64-linux;
+    pkgs = mkPkgs nixpkgs "aarch64-linux";
     modules = [
       ./hosts/linux/base/home.nix
       {
@@ -53,14 +54,14 @@
       }
     ];
     extraSpecialArgs = {
-      pkgs-stable = nixpkgs-stable.legacyPackages.aarch64-linux;
+      pkgs-stable = mkPkgs nixpkgs-stable "aarch64-linux";
       inherit flox;
       includeFlox = true;
     };
   };
 
   demo = home-manager.lib.homeManagerConfiguration {
-    pkgs = nixpkgs-stable.legacyPackages.x86_64-linux;
+    pkgs = mkPkgs nixpkgs-stable "x86_64-linux";
     modules = [
       ./hosts/linux/demo/home.nix
       {
