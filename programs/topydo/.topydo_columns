@@ -1,0 +1,41 @@
+[All]
+title = All
+sortexpr = asc:priority
+show_all = 1
+filterexpr = -@work -@recurring -@quarterly-sync -@tinkering -@meet -@download -@facebook -@bluesky
+groupexpr = context
+
+[Today]
+title = Today
+sortexpr = desc:importance
+show_all = 0
+filterexpr = due:<=today
+groupexpr = context
+
+#[Tomorrow]
+#title = Tomorrow
+#sortexpr = desc:importance
+#show_all = 0
+#filterexpr = due:tomorrow
+#groupexpr = context
+
+[Work]
+title = Work
+sortexpr = asc:priority
+show_all = 0
+filterexpr = @work
+groupexpr = project
+
+[Tinkering]
+title = Tinkering
+sortexpr = asc:priority
+show_all = 0
+filterexpr = @tinkering
+groupexpr = project
+
+[Meet]
+title = Meet
+sortexpr = asc:priority
+show_all = 0
+filterexpr = @meet
+groupexpr = project

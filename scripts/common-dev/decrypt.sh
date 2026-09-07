@@ -1,0 +1,77 @@
+#!/bin/bash
+
+# aws
+mkdir -p ~/.aws
+sops -d ./programs/aws/config.sops >~/.aws/config
+sops -d ./programs/aws/credentials.sops >~/.aws/credentials
+
+# fish
+cp -r ./programs/fish/secrets ~/.config/fish/
+
+# k8s
+mkdir -p ~/.kube
+sops -d ./programs/kubectl/config.sops.yaml >~/.kube/config
+
+# ssh
+mkdir -p ~/.ssh/config.d
+sops -d ./programs/ssh/config.d/homelab.sops >~/.ssh/config.d/homelab
+sops -d ./programs/ssh/config.d/vps.sops >~/.ssh/config.d/vps
+# sops -d ./programs/ssh/config.d/work-legacy.sops >~/.ssh/config.d/work-legacy
+sops -d ./programs/ssh/config.d/work.sops >~/.ssh/config.d/work
+sops -d ./programs/ssh/config.sops >~/.ssh/config
+
+# timesheet
+mkdir -p ~/.config/timesheet
+sops -d ./programs/timesheet/config.sops.yaml >~/.config/timesheet/config.yaml
+## replace path
+if [[ $(uname -s) == 'Linux' ]]; then
+	sed -i.bak 's#/Users/kahnwong/Apps#/home/kahnwong/Apps#' ~/.config/timesheet/config.yaml
+fi
+
+# wakatime
+sops -d ./programs/wakatime/wakatime.sops.cfg >~/.wakatime.cfg
+
+# workspace-init
+mkdir -p ~/.config/workspace-init
+sops -d ./programs/workspace-init/config.sops.yaml >~/.config/workspace-init/config.yaml
+
+# gcal-tui
+mkdir -p ~/.config/gcal-tui
+sops -d ./programs/gcal-tui/config.sops.yaml >~/.config/gcal-tui/config.yaml
+
+# gh-dash
+mkdir -p ~/.config/gh-dash
+sops -d ./programs/gh-dash/config.sops.yml >~/.config/gh-dash/config.yml
+
+# infracost
+mkdir -p ~/.config/infracost
+sops -d ./programs/terraform/infracost.credentials.sops.yaml >~/.config/infracost/credentials.yml
+
+## vscode
+#sops -d ./scripts/vscode/config/settings.sops.json >./scripts/vscode/config/settings.json
+
+# qalc
+# # add dummy file so it can write config
+mkdir -p ~/.config/qalculate/
+touch ~/.config/qalculate/qalc.cfg
+
+# crush
+mkdir -p ~/.local/share/crush
+sops -d ./programs/crush/crush.sops.json >~/.local/share/crush/crush.json
+
+# opencode
+mkdir -p ~/.config/opencode/plugins
+sops -d ./programs/opencode/opencode.sops.json >~/.config/opencode/opencode.json
+sops -d ./programs/opencode/plugins/notifications.sops.js >~/.config/opencode/plugins/notifications.js
+
+# claude
+mkdir -p ~/.claude
+sops -d ./programs/claude/settings.sops.json >~/.claude/settings.json
+
+# pi
+mkdir -p ~/.pi/agent/extensions
+cp ./programs/pi/notify-done.ts ~/.pi/agent/extensions/
+
+# npipe
+mkdir -p ~/.config/npipe
+sops -d ./programs/npipe/config.sops.yaml >~/.config/npipe/config.yaml

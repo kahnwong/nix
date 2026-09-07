@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=Discord
+Exec=/usr/bin/discord

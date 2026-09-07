@@ -1,0 +1,12 @@
+# ide
+.idea
+.vscode
+
+# darwin
+.DS_Store
+
+# tools
+.workmux.yaml
+
+# build artifacts
+.vitepress/dist/

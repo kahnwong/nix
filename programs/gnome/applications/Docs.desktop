@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Docs
+GenericName=Docs
+Exec=open https://docs.karnwong.me
+Icon=/home/kahnwong/.local/fleet/icons/docs.png
+StartupNotify=false
+Categories=Productivity;

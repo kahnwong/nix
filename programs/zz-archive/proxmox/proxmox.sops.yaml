@@ -1,0 +1,25 @@
+PROXMOX_VE_USERNAME: ENC[AES256_GCM,data:ibJT81M4np5UGAFFEw==,iv:5egqRvTuV8AENcKMEZkhcrbMitL3/INrdxet1C1lrBM=,tag:hTr6RR/D6r3toqGSUxLRag==,type:str]
+PROXMOX_VE_PASSWORD: ENC[AES256_GCM,data:UUoIfz41i9UARon74PjJaM0VTA3n5HOdwwiMj/r3B9cyTuVd5IqoyAa3COcaUhpqEWTz16sbwen0sBH8drYOfA==,iv:X8sKDAxCCEIw4ZqUd6LfN9toHBVMY3AC0VkjLONXIs4=,tag:bfUFpy5/qxwkpdltDRyiAw==,type:str]
+PROXMOX_VE_HOST: ENC[AES256_GCM,data:vtBYY6fmKKU1o35uPA//7eI11Q==,iv:GUZMuKYI6M6XI56Ud8d7RCbxdfrskBuncAOLp6Qd8Mo=,tag:24hLV2HNw4PnDHjFVitLNQ==,type:str]
+#ENC[AES256_GCM,data:fNMMnZlse1ubXVtfgHO9nwS5wtFeZ3mzckQr62HlX76rZA==,iv:Tb2Qs3BjuKLB023MKplecIqmodVopYvwIYJ/aZKX1Rg=,tag:tX7G7YilEwu+LdxFoPFBeA==,type:comment]
+PROXMOX_VE_NODENAME: ENC[AES256_GCM,data:s2q4QzGGjA==,iv:itYJ2SShC7iypJ8vVJN3KyCDgEtaMN14L3zZ5mpZ46w=,tag:WMXQ8VDzkRj0EMa7JPfb8g==,type:str]
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1m954z8ajdedsmvr9u89ud5v2zednmxgvvzuahpfy5fcdp97yn99ssy2wmm
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB3U2o4SUpWNlNGanlLdStj
+            NXdkMmdvR3FNczNNUkZsejRZOFNPbXNWbW5NCkJ3eTFXTnROaHoreFJXaVc2RS83
+            Wm1RVXNsMGhaZGpJS3RoTWVLY29ZZWsKLS0tIGdGei9GUnVqL04zRWhlTUE2T0dU
+            ekJ1WjNCdGZIUTMycGV5S0ZkM3N1YncKYWLPlz6WuUJ0HbmVKIjR/ZEUFzzGCP6V
+            1Ycbvwce+StVjGpRg3ih5JOMNpPnHSMef1DWZtDBU5pwRFgGsk5mtg==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2024-10-27T10:35:09Z"
+    mac: ENC[AES256_GCM,data:bX5uoebsLHO7bcM0FB4ms2BtrCSLcP12dyFjBc9fqHsMuHemKOJsg1GAdr/xUA9Mr84QuB1aJ24CWpBDpc43rQVDdJPsXqw6WOn3hy3gXAMCGlTSCBSeRzdNdlS1/ij2y0uAaEV+ue1SXhosJangdXMW/8Oic7NcmokMEwSO0NA=,iv:KZJN5Ayvjk9/JYY63WMjclRJOrVqF0sueGtMBmVAqYw=,tag:x17G3w/DmleGr1anxE2Yng==,type:str]
+    pgp: []
+    unencrypted_suffix: _unencrypted
+    version: 3.9.0

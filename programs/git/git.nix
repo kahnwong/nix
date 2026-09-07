@@ -1,0 +1,138 @@
+{
+  pkgs,
+  ...
+}:
+{
+  imports = [ ./delta.nix ];
+
+  home = {
+    file = {
+      ".config/git/profiles/forgejo".source = ./profiles/forgejo;
+      ".config/git/profiles/github".source = ./profiles/github;
+      ".config/git/profiles/go-install".source = ./profiles/go-install;
+      ".gitignore_global".source = ./gitignore/gitignore_global;
+      ".ssh/allowed_signers".source = ./allowed_signers;
+
+      # templates
+      ".sops.yaml".source = ./sops/.sops.yaml;
+      ".sops-work.yaml".source = ./sops/.sops-work.yaml;
+    };
+
+    packages = with pkgs; [
+      gh
+      git-cliff
+      git-lfs
+      git-who
+      glab
+      pre-commit # for backward compatibility
+      prek
+      svu
+      # tea
+    ];
+  };
+
+  programs.git = {
+    # `git config --global --edit` to see raw config
+    enable = true;
+
+    signing = {
+      format = null;
+    };
+
+    settings = {
+      # ----- profile -----
+      user.name = "Karn Wong";
+      user.email = "karn@karnwong.me";
+
+      # ----- commit signing -----
+      gpg.format = "ssh";
+      gpg.ssh.allowedSignersFile = "~/.ssh/allowed_signers";
+      commit = {
+        gpgsign = true;
+      };
+      # signing.key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGjELfQh9UxS1ORQZJY0it8T57x8+mHSg0fVAG/dprrl karn@karnwong.me";
+
+      # https://jvns.ca/blog/2024/02/16/popular-git-config-options/
+      # ----- diff -----
+      diff = {
+        algorithm = "histogram";
+        colorMoved = "plain";
+        mnemonicPrefix = "true";
+        renames = "true";
+      };
+
+      # ----- merge -----
+      merge.conflictstyle = "zdiff3";
+
+      # ----- remote -----
+      # url."git@github.com:".insteadOf = "https://github.com/";
+
+      # ----- lfs -----
+      lfs = {
+        enable = true;
+      };
+
+      # ----- profiles -----
+      # optional
+      includeIf = {
+        "gitdir:~/Git/" = {
+          path = "profiles/github";
+        };
+
+        ## .agents
+        "gitdir:~/.agents/" = {
+          path = "profiles/github";
+        };
+
+        ## syncthing
+        "gitdir:~/Apps/" = {
+          path = "profiles/github";
+        };
+        "gitdir:/opt/syncthing/cloud/" = {
+          path = "profiles/github";
+        };
+
+        ## nvim
+        "gitdir:~/.config/nvim/" = {
+          path = "profiles/github";
+        };
+
+        # # forgejo - currently use the same signing key
+        # "gitdir:~/Forgejo/" = {
+        #   path = "profiles/forgejo";
+        # };
+      };
+
+      # ----- global ignore -----
+      core.excludesfile = "~/.gitignore_global";
+      #      core.editor = "${config.home.homeDirectory}/.nix-profile/bin/nvim"; # [TODO] does it work on darwin?
+      core.editor = "/usr/bin/vi"; # [TODO] does it work on darwin?
+
+      # ----- pull -----
+      pull = {
+        rebase = true;
+        autosetupremote = true;
+      };
+      fetch.prune = true;
+
+      # ----- push -----
+      push = {
+        autoSetupRemote = true;
+      };
+
+      # ----- init -----
+      init = {
+        defaultBranch = "master";
+      };
+
+      # ----- misc -----
+      column.ui = "auto";
+      log.date = "iso";
+
+      # ----- sorting -----
+      branch.sort = "-committerdate";
+      tag.sort = "version:refname";
+    };
+  };
+
+}

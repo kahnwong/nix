@@ -1,0 +1,27 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-added-large-files
+      - id: check-case-conflict
+      - id: check-executables-have-shebangs
+      - id: check-json
+      - id: check-shebang-scripts-are-executable
+      - id: check-toml
+      - id: detect-private-key
+      - id: fix-byte-order-marker
+      - id: mixed-line-ending
+  - repo: https://github.com/kahnwong/pre-commit
+    rev: "e4f4ade"
+    hooks:
+      - id: shellcheck
+      - id: shfmt
+      - id: nix-fmt
+      - id: statix
+      - id: deadnix
+      - id: rumdl
+      # - id: kingfisher
+      - id: mdsf

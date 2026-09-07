@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Memos
+GenericName=Memos
+Exec=open https://memos.karnwong.me
+Icon=/home/kahnwong/.local/fleet/icons/memos.png
+StartupNotify=false
+Categories=Productivity;

@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=com.github.zocker_160.SyncThingy
+Exec=flatpak run --command=SyncThingy com.github.zocker_160.SyncThingy
+X-Flatpak=com.github.zocker_160.SyncThingy

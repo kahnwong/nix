@@ -1,0 +1,29 @@
+# syncthing
+function sts
+    switch (hostname)
+        case sailfish
+            set SYNCTHING_API_KEY SYNCTHING_API_KEY_SAILFISH
+        case redfin
+            set SYNCTHING_API_KEY SYNCTHING_API_KEY_REDFIN
+        case inu
+            set SYNCTHING_API_KEY SYNCTHING_API_KEY_INU
+        case steelhead
+            set SYNCTHING_API_KEY SYNCTHING_API_KEY_COMTE
+    end
+
+    curl "http://127.0.0.1:8384/rest/db/scan?folder=$SYNCTHING_FOLDER_ID" \
+        -X POST \
+        -H "X-API-Key: $(get_fish_secret $SYNCTHING_API_KEY)"
+end
+
+# date
+function d-iso-8601
+    set -l value "$(date +%Y-%m-%d)"
+    echo -n $value # display output
+    echo -n $value | copy # copy to clipboard
+end
+
+# md-to-pdf
+function md-to-pdf
+    command md-to-pdf --launch-options '{ "args": ["--no-sandbox"] }' $argv
+end

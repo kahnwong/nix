@@ -1,0 +1,5 @@
+[Context]
+devices=dri;
+
+[Session Bus Policy]
+org.freedesktop.Flatpak=talk

@@ -1,0 +1,11 @@
+# function t
+#     task $argv
+# end
+
+# function tt
+#     task due:today
+# end
+
+# function ta
+#     task -recurring
+# end
