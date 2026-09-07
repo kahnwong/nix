@@ -5,9 +5,7 @@ let
     ../programs/browsh/browsh.nix
     ../programs/ghostty/ghostty.nix
     ../programs/git/git.nix
-    ../programs/sampler/sampler.nix
     ../programs/starship/starship.nix
-    ../programs/yt-dlp/yt-dlp.nix
     ../programs/zellij/zellij.nix
   ];
 
@@ -61,7 +59,6 @@ let
   downloaders = with pkgs; [
     aria2
     wget
-    yt-dlp
   ];
 
   security = with pkgs; [

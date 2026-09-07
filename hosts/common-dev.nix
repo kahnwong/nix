@@ -5,10 +5,10 @@ let
     ../programs/aws/aws.nix
     ../programs/scripts/scripts.nix
     ../programs/terraform/terraform.nix
+    ../programs/yt-dlp/yt-dlp.nix
     ../programs/zed/zed.nix
 
     # custom programs
-    ../programs/book-summarizer/book-summarizer.nix
     ../programs/pgconn/pgconn.nix
     ../programs/repo-switcher/repo-switcher.nix
   ];
@@ -18,7 +18,7 @@ let
     (lib.optionals (stdenv.hostPlatform.system != "aarch64-linux") [ android-cli ])
     ++ [
       android-tools
-      flutter
+      # flutter
     ];
 
   bash = with pkgs; [
@@ -96,13 +96,11 @@ let
   ];
 
   kubernetes = with pkgs; [
-    # helmfile
     argocd
     k9s
     krew
     kubectl
     kubernetes-helm
-    # kubevirt
   ];
 
   markdown = with pkgs; [
@@ -127,7 +125,6 @@ let
   ];
 
   security = with pkgs; [
-    # grype
     osv-scanner
     syft
     zizmor
@@ -140,7 +137,7 @@ let
     oha
   ];
 
-  automation = with pkgs; [
+  devops = with pkgs; [
     ansible
   ];
 
@@ -168,9 +165,10 @@ let
     rsync
   ];
 
-  terminalUtils = with pkgs; [
+  cliUtils = with pkgs; [
     caligula
     charm-freeze
+    ffmpeg
     fzf
     imagemagick
     libqalculate
@@ -236,11 +234,11 @@ in
       ++ networking
       ++ security
       ++ tests
-      ++ automation
+      ++ devops
       ++ dataManipulation
       ++ devUtils
       ++ fileUtils
-      ++ terminalUtils
+      ++ cliUtils
       ++ misc;
   };
 }
