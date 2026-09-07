@@ -13,6 +13,10 @@ let
     ../programs/repo-switcher/repo-switcher.nix
   ];
 
+  fonts = with pkgs; [
+    meslo-lgs-nf
+  ];
+
   android =
     with pkgs;
     (lib.optionals (stdenv.hostPlatform.system != "aarch64-linux") [ android-cli ])
@@ -192,6 +196,8 @@ in
 {
   imports = programImports;
 
+  fonts.fontconfig.enable = true;
+
   programs.java = {
     enable = true;
     package = pkgs.temurin-bin;
@@ -215,7 +221,8 @@ in
 
   home = {
     packages =
-      android
+      fonts
+      ++ android
       ++ bash
       ++ c
       ++ golang
