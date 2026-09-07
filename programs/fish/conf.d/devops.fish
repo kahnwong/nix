@@ -8,8 +8,3 @@ end
 function ntfy
     curl -d "Task completed" $(get_fish_secret NTFY_TOPIC)
 end
-
-# scratch workspace
-function firecrack
-    ssh -t nuc firecrack start
-end
