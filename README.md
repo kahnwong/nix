@@ -11,29 +11,6 @@ echo "trusted-users = root @wheel $USER" | sudo tee -a /etc/nix/nix.custom.conf
 sudo systemctl restart nix-daemon
 ```
 
-Create `./scripts/apply.sh` and set appropriate build command. See `flake.nix` for available options.
-
-File content should look like this:
-
-```bash
-#!/bin/bash
-
-export NIXPKGS_ALLOW_UNFREE=1
-export NIXPKGS_ALLOW_INSECURE=1
-
-## darwin
-#nix build '.#homeManagerConfigurations.macbookMain.system' --experimental-features 'nix-command flakes' --impure
-# linux
-nix build '.#homeManagerConfigurations.base.activationPackage' --experimental-features 'nix-command flakes' --impure
-
-if [[ $(uname -s) == 'Darwin' ]]; then
-    sudo ./result/activate
-
-    elif [[ $(uname -s) == 'Linux' ]]; then
-    ./result/activate
-fi
-```
-
 ## Usage
 
 ```bash
