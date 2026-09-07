@@ -59,17 +59,4 @@
       includeFlox = true;
     };
   };
-
-  demo = home-manager.lib.homeManagerConfiguration {
-    pkgs = mkPkgs nixpkgs-stable "x86_64-linux";
-    modules = [
-      ./hosts/linux/demo/home.nix
-      {
-        home = {
-          username = "demo";
-          homeDirectory = "/home/demo";
-        };
-      }
-    ];
-  };
 }
