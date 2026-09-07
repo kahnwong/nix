@@ -24,7 +24,7 @@ else # apply config
 	CUSTOM_SHORTCUTS_CONFIG_FILE="programs/gnome/config/custom-shortcuts.conf"
 	if [[ "$(hostname)" == "sailfish" ]]; then # this system is on x11
 		sed 's/QT_QPA_PLATFORM=wayland//g' "$CUSTOM_SHORTCUTS_CONFIG_FILE" | dconf load /
-	elif [[ "$(hostname)" == "steelhead" ]]; then # for apple devices - remap super key
+	elif [[ "$(hostname)" == "steelhead" || "$(hostname)" == "ika" ]]; then # for apple devices - remap super key
 		sed \
 			-e 's#125:1#56:1#g' \
 			-e 's#125:0#56:0#g' \
@@ -44,12 +44,16 @@ else # apply config
 			-e 's#org.mozilla.thunderbird_esr.desktop#net.thunderbird.Thunderbird.desktop#g' \
 			-e 's#intellij.desktop#dev.zed.Zed.desktop#g' \
 			programs/gnome/config/gnome-shell-favorites.conf)"
+	elif [[ "$(hostname)" == "ika" ]]; then
+		dconf write /org/gnome/shell/favorite-apps "$(sed \
+			-e 's#intellij.desktop#dev.zed.Zed.desktop#g' \
+			programs/gnome/config/gnome-shell-favorites.conf)"
 	else
 		dconf write /org/gnome/shell/favorite-apps "$(cat programs/gnome/config/gnome-shell-favorites.conf)"
 	fi
 
 	# remap keys on apple devices
-	if [[ "$(hostname)" == "steelhead" ]]; then
+	if [[ "$(hostname)" == "steelhead" || "$(hostname)" == "ika" ]]; then
 		dconf write /org/gnome/desktop/input-sources/xkb-options "['altwin:swap_lalt_lwin']"
 	fi
 fi

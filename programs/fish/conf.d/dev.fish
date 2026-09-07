@@ -4,7 +4,7 @@ function r
     if test $status -eq 0
         read -l -P "Launch IDE? [y/N] " launch_ide
         if string match -qir '^(y|yes)$' -- "$launch_ide"
-            if test "$hostname" != "steelhead"
+            if test "$hostname" != "steelhead"; or test "$hostname" != "ika"
                 idea $path &
             else
                 zed $path
