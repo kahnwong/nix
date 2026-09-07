@@ -149,6 +149,7 @@ end
 # alias
 alias cp="cpx"
 alias tmux="zellij"
+alias tree="dust"
 alias vi="nvim"
 alias wm="workmux"
 
