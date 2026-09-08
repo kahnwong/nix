@@ -7,13 +7,13 @@ if [[ $(uname -s) == 'Darwin' ]]; then
 elif [[ $(uname -s) == 'Linux' ]]; then
 	case "${HOSTNAME:-$(hostname)}" in
 	steelhead)
-		config="base-arm"
+		config="main-arm"
 		;;
 	demo)
 		config="demo"
 		;;
 	*)
-		config="base"
+		config="main"
 		;;
 	esac
 
