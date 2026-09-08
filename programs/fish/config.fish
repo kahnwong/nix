@@ -18,11 +18,12 @@ alias paste 'fish_clipboard_paste'
 set PATH \
     $HOME/.nix-profile/bin \
     $HOME/.local/bin \
-    $HOME/.local/share/JetBrains/Toolbox/apps/intellij-idea/bin \
     $HOME/.cargo/bin \
     $HOME/.krew/bin \
     $HOME/.npm-global/bin \
     $HOME/.pixi/bin \
+    $HOME/.git-ai/bin \
+    $HOME/.local/share/JetBrains/Toolbox/apps/intellij-idea/bin \
     $HOME/.opencode/bin \
     /Applications/IntelliJ\ IDEA.app/Contents/MacOS \
     /opt/homebrew/bin \
@@ -87,9 +88,6 @@ zoxide init fish | source
 
 # direnv
 direnv hook fish | source
-
-# git-ai
-fish_add_path -g $HOME/.git-ai/bin  # need to use git binary from this path
 
 # workmux
 workmux completions fish | source
