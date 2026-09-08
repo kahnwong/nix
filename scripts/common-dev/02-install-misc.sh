@@ -13,9 +13,19 @@ fi
 ############################
 # mise
 ############################
-if [[ "$1" == "update" ]]; then
-	mise upgrade
-	mise prune
+mise upgrade
+mise prune
+
+############################
+# android
+############################
+if [[ "$1" != "update" ]]; then
+	sudo mkdir -p /opt/android-sdk
+	sudo chown -R kahnwong:kahnwong /opt/android-sdk
+
+	# sdkmanager --list
+	sdkmanager --install "platforms;android-37.0" "build-tools;37.0.0" "platform-tools"
+	sdkmanager --licenses
 fi
 
 ############################

@@ -56,11 +56,10 @@ set PATH $PATH:$HOME/.nix-profile/bin
 set PATH $PATH:/nix/var/nix/profiles/default/bin/
 
 # android
-set ANDROID_HOME $HOME/Android/Sdk
-set ANDROID_SDK_ROOT $HOME/Android/Sdk
-set PATH $PATH:$ANDROID_SDK_ROOT/tools
-set PATH $PATH:$ANDROID_SDK_ROOT/platform-tools
-set PATH $PATH:$ANDROID_HOME/build-tools/36.1.0
+# set ANDROID_HOME $HOME/Android/Sdk
+set ANDROID_HOME /opt/android-sdk
+set -l latest_build_tools $ANDROID_HOME/build-tools/*
+set PATH $PATH $ANDROID_HOME/platform-tools $latest_build_tools[-1]
 
 # python
 set UV_CACHE_DIR ~/.cache/uv
