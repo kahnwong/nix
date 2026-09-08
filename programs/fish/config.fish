@@ -73,23 +73,22 @@ mise activate fish | source
 # editor
 set -gx EDITOR nvim
 
-# fzf
-export FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git -o -name cache -o -name dist \) -prune -o -print'
+# tools
+direnv hook fish | source
+starship init fish | source
+workmux completions fish | source
+zoxide init fish | source
+
+# alias
+alias cp="cpx"
+alias tmux="zellij"
+alias tree="dust"
+alias vi="nvim"
+alias wm="workmux"
+abbr -a k kubectl
 
 # gpg
 set GPG_TTY tty
-
-# starship
-starship init fish | source
-
-# zoxide
-zoxide init fish | source
-
-# direnv
-direnv hook fish | source
-
-# workmux
-workmux completions fish | source
 
 # mcfly
 mcfly init fish | source
@@ -109,6 +108,8 @@ function zellij_update_tabname --on-variable PWD
 end
 
 # fzf
+export FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git -o -name cache -o -name dist \) -prune -o -print'
+
 function fcat
     fd $argv | fzf | xargs echo | xargs bat $argv
 end
@@ -142,15 +143,6 @@ function tere
     set --local result (command tere $argv)
     [ -n "$result" ] && cd -- "$result"
 end
-
-# alias
-alias cp="cpx"
-alias tmux="zellij"
-alias tree="dust"
-alias vi="nvim"
-alias wm="workmux"
-
-abbr -a k kubectl
 
 ###############################
 # APPS: Completions + Alias
