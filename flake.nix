@@ -32,37 +32,22 @@
       flox,
       ...
     }:
-    let
-      nixpkgsConfig = {
-        allowUnfree = true;
-        allowInsecure = true;
-      };
-      mkPkgs =
-        source: system:
-        import source {
-          inherit system;
-          config = nixpkgsConfig;
-        };
-    in
     {
       homeManagerConfigurations =
-        (import ./darwin.nix {
-          inherit
-            darwin
-            home-manager
-            nixpkgs
-            nixpkgs-stable
-            mkPkgs
-            nixpkgsConfig
-            ;
-        })
-        // (import ./linux.nix {
+        (import ./linux.nix {
           inherit
             home-manager
             nixpkgs
             nixpkgs-stable
             flox
-            mkPkgs
+            ;
+        })
+        // (import ./darwin.nix {
+          inherit
+            darwin
+            home-manager
+            nixpkgs
+            nixpkgs-stable
             ;
         })
         // (import ./demo.nix {
@@ -71,8 +56,6 @@
             home-manager
             nixpkgs
             nixpkgs-stable
-            mkPkgs
-            nixpkgsConfig
             ;
         });
     };

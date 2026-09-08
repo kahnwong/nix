@@ -195,6 +195,7 @@ let
 in
 {
   imports = programImports;
+  nixpkgs.config.allowUnfree = true;
 
   fonts.fontconfig.enable = true;
 

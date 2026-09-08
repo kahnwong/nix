@@ -3,12 +3,11 @@
   nixpkgs,
   nixpkgs-stable,
   flox,
-  mkPkgs,
   ...
 }:
 {
   base = home-manager.lib.homeManagerConfiguration {
-    pkgs = mkPkgs nixpkgs "x86_64-linux";
+    pkgs = import nixpkgs { system = "x86_64-linux"; };
     modules = [
       ./hosts/linux/base/home.nix
       {
@@ -19,14 +18,14 @@
       }
     ];
     extraSpecialArgs = {
-      pkgs-stable = mkPkgs nixpkgs-stable "x86_64-linux";
+      pkgs-stable = import nixpkgs-stable { system = "x86_64-linux"; };
       inherit flox;
       includeFlox = true;
     };
   };
 
   base-without-flox = home-manager.lib.homeManagerConfiguration {
-    pkgs = mkPkgs nixpkgs "x86_64-linux";
+    pkgs = import nixpkgs { system = "x86_64-linux"; };
     modules = [
       ./hosts/linux/base/home.nix
       {
@@ -37,13 +36,13 @@
       }
     ];
     extraSpecialArgs = {
-      pkgs-stable = mkPkgs nixpkgs-stable "x86_64-linux";
+      pkgs-stable = import nixpkgs-stable { system = "x86_64-linux"; };
       includeFlox = false;
     };
   };
 
   base-arm = home-manager.lib.homeManagerConfiguration {
-    pkgs = mkPkgs nixpkgs "aarch64-linux";
+    pkgs = import nixpkgs { system = "aarch64-linux"; };
     modules = [
       ./hosts/linux/base/home.nix
       {
@@ -54,7 +53,7 @@
       }
     ];
     extraSpecialArgs = {
-      pkgs-stable = mkPkgs nixpkgs-stable "aarch64-linux";
+      pkgs-stable = import nixpkgs-stable { system = "aarch64-linux"; };
       inherit flox;
       includeFlox = true;
     };
