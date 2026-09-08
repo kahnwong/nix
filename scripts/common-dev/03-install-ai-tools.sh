@@ -23,6 +23,9 @@ curl -fsSL https://raw.githubusercontent.com/raine/workmux/main/scripts/install.
 curl -sSL https://usegitai.com/install.sh | bash
 npx @colbymchenry/codegraph
 
+curl -fsSL https://raw.githubusercontent.com/rtk-ai/rtk/refs/heads/master/install.sh | sh
+rtk init -g --agent pi
+
 # skills
 git clone git@github.com:kahnwong/.agents.git ~/.agents --depth 1
 npx skills add superradcompany/skills -a opencode crush claude-code pi
