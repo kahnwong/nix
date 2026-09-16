@@ -29,7 +29,6 @@
       ".config/fish/config.fish".source = ./config.fish;
       ".config/fish/functions/envsource.fish".source = ./functions/envsource.fish;
       ".config/fish/functions/get_fish_secret.fish".source = ./functions/get_fish_secret.fish;
-      ".config/fish/functions/pip.fish".source = ./functions/pip.fish;
     };
 
     packages = with pkgs; [ fish ];

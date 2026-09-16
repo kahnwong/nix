@@ -156,6 +156,7 @@ let
   ];
 
   devUtils = with pkgs; [
+    (pkgs.dvc.override { enableAWS = true; })
     direnv
     entr
     pastel
@@ -210,7 +211,7 @@ in
 
     globalConfig = {
       tools = {
-        # needs to exec shell to activate target Go version, this behavior doesn't happen in global Go
+        # need to exec shell to activate target Go version, this behavior doesn't happen in global Go
         # "go" = "latest";
         "nodejs" = "24";
         "opentofu" = "latest";

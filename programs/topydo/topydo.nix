@@ -35,8 +35,6 @@
       };
     };
 
-    packages = with pkgs; [
-      # topydo # installed via uv instead
-    ];
+    packages = with pkgs; [ topydo ];
   };
 }

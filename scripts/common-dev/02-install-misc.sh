@@ -67,12 +67,7 @@ cargo install --locked cross
 # applications - python
 ############################
 if [[ "$1" != "update" ]]; then
-	# uv tool install nbpreview
-	uv tool install "dvc[s3]"
-	uv tool install hf
-	uv tool install pip_search
 	uv tool install sisou
-	uv tool install topydo
 
 	if [[ $(uname -s) == 'Darwin' ]]; then
 		pixi global install qgis
