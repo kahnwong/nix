@@ -88,21 +88,8 @@ fi
 ####################
 # executables
 ####################
-echo "Installing ubi. On darwin you need to install homebrew beforehand, then re-run this"
-curl --silent --location \
-	https://raw.githubusercontent.com/houseabsolute/ubi/master/bootstrap/bootstrap-ubi.sh |
-	sudo sh
-
-ubi --project bodaay/HuggingFaceModelDownloader --in ~/.local/bin/ --rename-exe hfdownloader
-ubi --project elliot40404/modo --in ~/.local/bin/
-ubi --project fawni/def --in ~/.local/bin/
-ubi --project hardwood-hq/hardwood --in ~/.local/bin/
-ubi --project kahnwong/cpubench-release -e cpubench --in ~/.local/bin/
-ubi --project mongodb/kingfisher --in ~/.local/bin/
-
-sudo ubi --project kahnwong/swissknife --in /usr/local/bin/
-
-gh install mmcdole/kino
+ubi --project kahnwong/cpubench-release -e cpubench --in ~/.local/bin/ # nix shim does not support rename
+sudo ubi --project kahnwong/swissknife --in /usr/local/bin/            # use this PATH so sudo can find it
 
 # os specific apps
 if [[ $(uname -s) == 'Linux' ]]; then

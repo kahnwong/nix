@@ -40,6 +40,12 @@ fi
 ####################
 # setup nix
 ####################
+# required for pkgs-ubi.nix
+echo "Installing ubi. On darwin you need to install homebrew beforehand, then re-run this"
+curl --silent --location \
+	https://raw.githubusercontent.com/houseabsolute/ubi/master/bootstrap/bootstrap-ubi.sh |
+	sudo sh
+
 curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix |
 	sh -s -- install
 

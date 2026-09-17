@@ -16,6 +16,7 @@ let
     ./pkgs-go.nix
     ./pkgs-krew.nix
     ./pkgs-node.nix
+    ./pkgs-ubi.nix
   ];
 
   fonts = with pkgs; [
