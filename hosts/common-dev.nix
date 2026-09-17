@@ -11,6 +11,9 @@ let
     # custom programs
     ../programs/pgconn/pgconn.nix
     ../programs/repo-switcher/repo-switcher.nix
+
+    # other packages
+    ./pkgs-go.nix
   ];
 
   fonts = with pkgs; [

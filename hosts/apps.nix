@@ -1,4 +1,5 @@
 { ... }:
+
 {
   imports = [
     ../programs/article-summarizer/article-summarizer.nix
@@ -9,4 +10,5 @@
     ../programs/topydo/topydo.nix
     ../programs/umamit/umamit.nix
   ];
+
 }
