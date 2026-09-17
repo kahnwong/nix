@@ -14,6 +14,7 @@ let
 
     # other packages
     ./pkgs-go.nix
+    ./pkgs-krew.nix
     ./pkgs-node.nix
   ];
 

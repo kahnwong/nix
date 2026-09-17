@@ -47,44 +47,18 @@ else
 	uv tool upgrade --all
 fi
 
-############################
-# kubectl
-############################
-if [[ "$1" != "update" ]]; then
-	krew install argo-apps-viz
-	krew install crd-wizard
-	krew install ctx
-	krew install deprecations
-	krew install df-pv
-	krew install images
-	krew install klock
-	krew install ktop
-	krew install node-resource
-	krew install nodepools
-	krew install ns
-	krew install outdated
-	krew install resource-capacity
-	krew install status
-else
-	krew upgrade
-fi
-
-############################
-# helm
-############################
-helm plugin install https://github.com/databus23/helm-diff
-
 ####################
 # git
 ####################
-if [[ "$1" != "update" ]]; then
-	# create ssh key
-	if [ ! -f "$HOME/.ssh/github" ]; then
-		ssh-keygen -b 2048 -t rsa -f ~/.ssh/github -q -N ""
-	else
-		echo "$HOME/.ssh/github already exists"
-	fi
-fi
+## obsolete - github ssh key is stored in encrypted config
+# if [[ "$1" != "update" ]]; then
+# 	# create ssh key
+# 	if [ ! -f "$HOME/.ssh/github" ]; then
+# 		ssh-keygen -b 2048 -t rsa -f ~/.ssh/github -q -N ""
+# 	else
+# 		echo "$HOME/.ssh/github already exists"
+# 	fi
+# fi
 
 # gh-cli extensions
 if [[ "$1" != "update" ]]; then
