@@ -48,20 +48,6 @@ else
 fi
 
 ############################
-# applications - node
-############################
-if [[ "$1" != "update" ]]; then
-	npm set prefix ~/.npm-global
-	yarn global add @quasar/cli
-	yarn global add create-quasar
-	yarn global add create-slidev
-	yarn global add md-to-pdf
-	yarn global add playwright-chromium
-else
-	yarn global upgrade
-fi
-
-############################
 # kubectl
 ############################
 if [[ "$1" != "update" ]]; then

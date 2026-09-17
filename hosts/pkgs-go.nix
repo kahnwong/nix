@@ -45,7 +45,7 @@ let
       # For private pkgs
       export GIT_CONFIG_GLOBAL="$HOME/.config/git/profiles/go-install"
       export GOPRIVATE="github.com/kahnwong/*"
-      GO_INSTALL_JOBS="''${GO_INSTALL_JOBS:-4}"
+      GO_INSTALL_JOBS="''${GO_INSTALL_JOBS:-8}"
 
       echo "--> Installing/Updating Go packages via Nix..."
 

@@ -14,6 +14,7 @@ let
 
     # other packages
     ./pkgs-go.nix
+    ./pkgs-node.nix
   ];
 
   fonts = with pkgs; [
