@@ -81,7 +81,6 @@ flatpak install -y flathub \
 	org.gnome.Logs \
 	org.gpodder.gpodder \
 	org.jellyfin.JellyfinDesktop \
-	org.kde.dolphin \
 	org.kde.okular \
 	org.mozilla.thunderbird_esr \
 	org.openshot.OpenShot \
