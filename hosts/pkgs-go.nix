@@ -11,7 +11,6 @@ let
     "kahnwong/repo-switcher"
     "kahnwong/waka"
     "kahnwong/workspace-init"
-    "spf13/cobra-cli"
 
     # private pkgs
     "kahnwong/bean"
@@ -31,13 +30,15 @@ let
       pkgs.findutils
       pkgs.gcc
       pkgs.git
-      pkgs.go
+      pkgs.go_1_27
       pkgs.openssh
     ];
 
     text = ''
       export GOBIN="$HOME/.local/bin"
       mkdir -p "$GOBIN"
+      unset GOROOT GOTOOLDIR
+      export GOTOOLCHAIN=local
 
       # Array of Go repositories defined via Home Manager
       GO_PACKAGES=(${builtins.concatStringsSep " " (map (p: "\"${p}\"") goPackages)})

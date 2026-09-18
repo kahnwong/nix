@@ -45,8 +45,10 @@ let
 
   golang = with pkgs; [
     air
+    cobra-cli
     go
     golangci-lint
+    goose
     gopls
     goreleaser
     gotools
