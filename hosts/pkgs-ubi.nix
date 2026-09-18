@@ -9,6 +9,12 @@ let
     "mongodb/kingfisher"
   ];
 
+  ubiProjectsLinux = [
+    "hengyoush/kyanos"
+    "murat-cileli/clyp"
+    "pythops/oryx"
+  ];
+
   updateUbiPkgs = pkgs.writeShellApplication {
     name = "update-ubi-pkgs";
     runtimeInputs = [
@@ -19,7 +25,11 @@ let
     text = ''
       export UBI_INSTALL_DIR="$HOME/.local/bin"
       UBI_INSTALL_JOBS="''${UBI_INSTALL_JOBS:-8}"
-      UBI_PROJECTS=(${builtins.concatStringsSep " " (map (p: "\"${p}\"") ubiProjects)})
+      UBI_PROJECTS=(${
+        builtins.concatStringsSep " " (
+          map (p: "\"${p}\"") (ubiProjects ++ lib.optionals pkgs.stdenv.isLinux ubiProjectsLinux)
+        )
+      })
 
       mkdir -p "$UBI_INSTALL_DIR"
 

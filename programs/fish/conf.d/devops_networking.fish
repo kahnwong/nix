@@ -6,6 +6,10 @@ function oryx
     sudo "$(which oryx)"
 end
 
+function kyanos
+    sudo "$(which kyanos)"
+end
+
 function bandwhich
     sudo "$(which bandwhich)"
 end
