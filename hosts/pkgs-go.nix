@@ -15,9 +15,12 @@ let
     # private pkgs
     "kahnwong/bean"
     "kahnwong/billing"
+    "kahnwong/docs/utils/docs-utils"
     "kahnwong/firecrack"
     "kahnwong/gcal-tui"
     "kahnwong/grocery"
+    "kahnwong/karnwong.me/extras/utils/create-microblog"
+    "kahnwong/karnwong.me/extras/utils/create-post"
     "kahnwong/timesheet"
     "kahnwong/togodo"
     "kahnwong/umamit"
