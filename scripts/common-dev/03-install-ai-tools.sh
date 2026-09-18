@@ -25,11 +25,11 @@ curl -fsSL https://raw.githubusercontent.com/rtk-ai/rtk/refs/heads/master/instal
 rtk init -g --agent pi
 
 # skills
-git clone git@github.com:kahnwong/.agents.git ~/.agents --depth 1
-npx skills add superradcompany/skills -a opencode crush pi
-npx skills add JetBrains/go-modern-guidelines -a opencode crush pi
+if [ -d "$HOME/.agents" ]; then git -C "$HOME/.agents" pull; else git clone git@github.com:kahnwong/.agents.git "$HOME/.agents" --depth 1; fi
+npx skills add superradcompany/skills -g -a opencode crush pi
+npx skills add JetBrains/go-modern-guidelines -g -a opencode crush pi
 
-## per-project basis
-npx skills add GoogleChrome/modern-web-guidance -a opencode crush pi
-npx skills add JuliusBrussee/caveman -a opencode crush pi
-android skills add --all
+### per-project basis
+#npx skills add GoogleChrome/modern-web-guidance -a opencode crush pi
+#npx skills add JuliusBrussee/caveman -a opencode crush pi
+#android skills add --all
