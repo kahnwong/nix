@@ -1,8 +1,6 @@
 #!/bin/bash
 
 # coding agents
-curl -fsSL https://antigravity.google/cli/install.sh | bash
-curl -fsSL https://claude.ai/install.sh | bash
 curl -fsSL https://cli.kiro.dev/install | bash
 curl -fsSL https://opencode.ai/install | bash
 curl -fsSL https://pi.dev/install.sh | sh
@@ -28,10 +26,10 @@ rtk init -g --agent pi
 
 # skills
 git clone git@github.com:kahnwong/.agents.git ~/.agents --depth 1
-npx skills add superradcompany/skills -a opencode crush claude-code pi
-npx skills add JetBrains/go-modern-guidelines -a opencode crush claude-code pi
+npx skills add superradcompany/skills -a opencode crush pi
+npx skills add JetBrains/go-modern-guidelines -a opencode crush pi
 
 ## per-project basis
-npx skills add GoogleChrome/modern-web-guidance -a opencode crush claude-code pi
-npx skills add JuliusBrussee/caveman -a opencode crush claude-code pi
+npx skills add GoogleChrome/modern-web-guidance -a opencode crush pi
+npx skills add JuliusBrussee/caveman -a opencode crush pi
 android skills add --all
