@@ -7,21 +7,17 @@ if [ -f /etc/os-release ]; then
 
 	if [ "$ID" = "ubuntu" ]; then
 		sudo apt install -y \
-			dolphin \
 			file-roller \
 			gnome-tweaks \
 			gparted \
-			konsole \
 			mpv \
 			xclip
 
 	elif [ "$ID" = "fedora-asahi-remix" ]; then
 		sudo dnf install -y \
-			dolphin \
 			file-roller \
 			gnome-tweaks \
 			gparted \
-			konsole \
 			mpv \
 			xclip
 	fi
@@ -85,6 +81,7 @@ flatpak install -y flathub \
 	org.gnome.Logs \
 	org.gpodder.gpodder \
 	org.jellyfin.JellyfinDesktop \
+	org.kde.dolphin \
 	org.kde.okular \
 	org.mozilla.thunderbird_esr \
 	org.openshot.OpenShot \
