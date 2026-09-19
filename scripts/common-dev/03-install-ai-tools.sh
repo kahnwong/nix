@@ -26,8 +26,9 @@ rtk init -g --agent pi
 
 # skills
 if [ -d "$HOME/.agents" ]; then git -C "$HOME/.agents" pull; else git clone git@github.com:kahnwong/.agents.git "$HOME/.agents" --depth 1; fi
-npx skills add superradcompany/skills -g -a opencode crush pi
 npx skills add JetBrains/go-modern-guidelines -g -a opencode crush pi
+npx skills add mattpocock/skills --skill grill-me -g -a opencode crush pi
+npx skills add superradcompany/skills -g -a opencode crush pi
 
 ### per-project basis
 #npx skills add GoogleChrome/modern-web-guidance -a opencode crush pi
