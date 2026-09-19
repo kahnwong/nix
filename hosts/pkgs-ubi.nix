@@ -27,7 +27,7 @@ let
       UBI_INSTALL_JOBS="''${UBI_INSTALL_JOBS:-8}"
       UBI_PROJECTS=(${
         builtins.concatStringsSep " " (
-          map (p: "\"${p}\"") (ubiProjects ++ lib.optionals pkgs.stdenv.isLinux ubiProjectsLinux)
+          map (p: "\"${p}\"") (ubiProjects ++ lib.optionals pkgs.stdenv.hostPlatform.isLinux ubiProjectsLinux)
         )
       })
 

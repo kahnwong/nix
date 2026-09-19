@@ -43,6 +43,9 @@ let
       unset GOROOT GOTOOLDIR
       export GOTOOLCHAIN=local
 
+      # Point SSH directly to your identity key or user config while ignoring system-wide /etc config
+      export GIT_SSH_COMMAND="${pkgs.openssh}/bin/ssh -F $HOME/.ssh/config -i $HOME/.ssh/github"
+
       # Array of Go repositories defined via Home Manager
       GO_PACKAGES=(${builtins.concatStringsSep " " (map (p: "\"${p}\"") goPackages)})
 
