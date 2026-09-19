@@ -1,4 +1,4 @@
 [Desktop Entry]
 Type=Application
 Name=Workspace Init
-Exec=/home/kahnwong/go/bin/workspace-init
+Exec=/home/kahnwong/.local/bin/workspace-init
