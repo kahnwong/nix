@@ -30,33 +30,34 @@ let
       KREW_PACKAGES=(${builtins.concatStringsSep " " (map (p: "\"${p}\"") krewPackages)})
       KREW_INSTALL_JOBS="''${KREW_INSTALL_JOBS:-8}"
 
+      echo "--> Updating Krew index..."
+      krew update
+
       echo "--> Installing Krew packages..."
 
-      install_status=0
-
-      if krew update; then
-        # Variables in the worker command must expand in the child shell.
-        # shellcheck disable=SC2016
-        printf '%s\n' "''${KREW_PACKAGES[@]}" \
-          | xargs -n 1 -P "$KREW_INSTALL_JOBS" ${pkgs.bash}/bin/bash -c '
-              package="$1"
-              echo "--> Processing $package..."
-              krew install --no-update-index "$package"
-            ' _ \
-          || install_status=$?
-      else
-        install_status=$?
-      fi
+      # Variables in the worker command must expand in the child shell.
+      # shellcheck disable=SC2016
+      printf '%s\n' "''${KREW_PACKAGES[@]}" \
+        | xargs -n 1 -P "$KREW_INSTALL_JOBS" ${pkgs.bash}/bin/bash -c '
+            plugin="$1"
+            echo "--> Installing $plugin..."
+            if ! output=$(krew install --no-update-index "$plugin" 2>&1); then
+              printf "%s\n" "$output"
+              case "$output" in
+                *"does not offer installation for this platform"*)
+                  echo "--> Skipping $plugin: platform not supported."
+                  ;;
+                *)
+                  exit 1
+                  ;;
+              esac
+            elif [ -n "$output" ]; then
+              printf "%s\n" "$output"
+            fi
+          ' _
 
       echo "--> Upgrading Krew packages..."
-      upgrade_status=0
-      krew upgrade || upgrade_status=$?
-
-      if (( install_status != 0 )); then
-        exit "$install_status"
-      fi
-
-      exit "$upgrade_status"
+      krew upgrade
     '';
   };
 in
