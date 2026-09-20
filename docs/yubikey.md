@@ -27,3 +27,13 @@ sudo vi /etc/pam.d/gdm-password
 ## put this BEFORE `@include common-auth`
 auth sufficient pam_u2f.so
 ```
+
+## For gnome sudo prompt
+
+```bash
+sudo cp /usr/lib/pam.d/polkit-1 /etc/pam.d/polkit-1
+sudo vi /etc/pam.d/polkit-1
+
+## put this BEFORE `@include common-auth`
+auth sufficient pam_u2f.so cue
+```
