@@ -1,11 +1,11 @@
 [Unit]
-Description=npipe connect
+Description=teapipe connect
 
 [Service]
 User=kahnwong
 Group=kahnwong
 Type=simple
-ExecStart=/usr/local/bin/npipe connect
+ExecStart=/usr/local/bin/teapipe connect
 Restart=always
 RestartSec=5s
 
