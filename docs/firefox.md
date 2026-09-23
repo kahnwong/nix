@@ -38,6 +38,7 @@ if (url.hostname === "contacts.google.com") return { name: "Personlich", icon: "
 if (url.hostname === "chatgpt.com") return { name: "ChatGPT", icon: "circle", color: "gray" };
 if (url.hostname === "old.reddit.com") return { name: "Reddit", icon: "circle", color: "red" };
 if (url.hostname === "de.aipass.net") return { name: "AIPass", icon: "circle", color: "pink" };
+if (url.hostname === "claude.ai") return { name: "Claude", icon: "circle", color: "orange" };
 
 if (url.hostname === "github.com") return null;
 ```
