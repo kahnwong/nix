@@ -10,11 +10,11 @@ if [ -f /etc/os-release ]; then
 
 		sudo apt install cpufrequtils tlp tlp-pd tlp-rdw -y
 
-		if [[ $(uname -n) == 'redfin' ]]; then
-			sudo cp ./programs/tlp/tlp.redfin.conf /etc/tlp.conf
-		elif [[ $(uname -n) == 'inu' ]]; then
-			sudo cp ./programs/tlp/tlp.inu.conf /etc/tlp.conf
-		fi
+		case "$(uname -n)" in
+		redfin | inu | ika)
+			sudo cp "./programs/tlp/tlp.$(uname -n).conf" /etc/tlp.conf
+			;;
+		esac
 
 		sudo systemctl enable --now tlp-pd.service
 		sudo tlp start
