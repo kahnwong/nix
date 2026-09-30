@@ -24,7 +24,7 @@ if [[ $(uname -s) == 'Linux' ]]; then
 		source /etc/os-release
 
 		if [ "$ID" = "ubuntu" ]; then
-			sudo apt-get install make curl wget ntfs-3g python3.12-venv \
+			sudo apt-get install make curl wget ntfs-3g python3.14-venv \
 				-y
 
 			# # disable snap
