@@ -46,6 +46,7 @@ flatpak install -y flathub \
 	com.github.tchx84.Flatseal \
 	com.github.zocker_160.SyncThingy \
 	com.jeffser.Pigment \
+	com.markwyner.ratio \
 	com.obsproject.Studio \
 	com.obsproject.Studio.Plugin.BackgroundRemoval \
 	com.rafaelmardojai.SharePreview \
