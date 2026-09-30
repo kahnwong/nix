@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=IntelliJ IDEA 2026.2.1
+Name=IntelliJ IDEA
 Exec="/home/kahnwong/.local/share/JetBrains/Toolbox/apps/intellij-idea/bin/idea" %u
 Version=1.0
 Type=Application
