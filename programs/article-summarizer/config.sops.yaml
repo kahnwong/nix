@@ -3,15 +3,11 @@ CLIENT_ID: ENC[AES256_GCM,data:rpJwTLomJlfMi8Wp+MR2BU5QnkA9MnLjzEjqJzT6Ph6oKO5w8
 CLIENT_SECRET: ENC[AES256_GCM,data:iyh58p5+Ywd3NkAzDeSW6jJ4u3XB5P7NhQHiMR7Lr+5o5AP1fZCSxneS2rm8pX3B2AY=,iv:Vh72jsgJ3HeQxrf5eifOpJSM7iccZ9R5nbWPxVQWSU0=,tag:iTzOdrZBarqWFrZmoY3osg==,type:str]
 USERNAME: ENC[AES256_GCM,data:9C6JMhiIk1A=,iv:AmraJj4hPrVqHwKLc3tvcJCpxg/q5tx8h3Sq8+4lh7s=,tag:qUZ/sEmEjVwSPwLx8gQdIg==,type:str]
 PASSWORD: ENC[AES256_GCM,data:IUEEerZaMLTTi05GUW2Gzg==,iv:en3qptOydp1TkJQSbreKmN+f5b4J3C6+OCZyD0+ex00=,tag:a6FPMi654ugh5YPMEwQIGQ==,type:str]
-GOOGLE_AI_API_KEY: ENC[AES256_GCM,data:R6sS5ZeEG0x0WAoIwPDPUiSeJzJDlf+5EDzC1UBU7vKyl+4AQyZx,iv:abFWAnigCbXe/2f/bprpC0fShNCOsBH7ndO5i7l4fs8=,tag:gY+WU+LoyGrNUuqbIUPYwA==,type:str]
+GOOGLE_API_KEY: ENC[AES256_GCM,data:CNLqKZJ4Fn/6RVx54pRry9TPTFNUkpVFOMZxSBGKma87HiEsBffb,iv:twToFQdPcCCeWvCU46K0H/DtIjiYz2FY/J12oTCocSw=,tag:yx8ZYpRf1LRCkRrBeGBfVw==,type:str]
+MODEL_NAME: ENC[AES256_GCM,data:xiqyWHPX7OO44+iHiX0FS3h6xryQ,iv:OMRf2LmNq6OXMc8RCaIsb35esGVNgUaqPKYuzc1fu7k=,tag:3eYAlohU3pSGPZDYg1jymg==,type:str]
 sops:
-    kms: []
-    gcp_kms: []
-    azure_kv: []
-    hc_vault: []
     age:
-        - recipient: age1m954z8ajdedsmvr9u89ud5v2zednmxgvvzuahpfy5fcdp97yn99ssy2wmm
-          enc: |
+        - enc: |
             -----BEGIN AGE ENCRYPTED FILE-----
             YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBHYU9Lam1naFljL0F1ZHZC
             Mm9CakdMczhWWGRjbVpCcEs5ZCtTVlV2eFVnCmV5cldCSFdKYlV2WVRieTBWSGZJ
@@ -19,8 +15,8 @@ sops:
             L2toZmJYa1M5a0hmV3gwLzBWdHgxRlkKcRTdyA4JLUpKNn1Pu+21Q+pzlcynmKxz
             rssa1zwyIYfTeRa/OF3i/1Tq1zUUqXcKOBVKL3DKvJdyvpJuI+D84w==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2024-08-08T08:25:26Z"
-    mac: ENC[AES256_GCM,data:VuVk89MtGIivtlP0U/hqgzU9oq0k/2dkcINKHvKa+yNHfsK6zlzX0XCfnb6z5Djx00dzqDDPF8Fc51IESeOkf8TCDvSaNEa4xtwfxgZWGObUrmkABYkiSJwDkgDVrqyrbAdmsFBnOnDp47y1ImSzucaHfQgxVljHah9wxpy4WwI=,iv:oWcHCTJA7K3iSCKpG/6a+92EEPOsCMiBEU56CvR37Nc=,tag:wjlFodojj4MLNrqzZZruqw==,type:str]
-    pgp: []
+          recipient: age1m954z8ajdedsmvr9u89ud5v2zednmxgvvzuahpfy5fcdp97yn99ssy2wmm
+    lastmodified: "2026-10-02T08:50:20Z"
+    mac: ENC[AES256_GCM,data:dAJitElqnZfLE5jZ63y9Ak0NktPnsFahrZ250JP5lHmlEXOWhNmi4pAjUX79MkfSh+Hh5v5mIXEBupMweEs4RtZJCOcDBXvCP6xL2QI5xPkbZB+rPErz4SrD0bWRPEtFV9XJzHr3PRMdlkFY+aBgI/Csasg1OmRyl6YWacA0Uw8=,iv:ge7wVGaYxL64DlGBm90YdfrE7iUudVX13cQGxHuoEK0=,tag:AkvPNVCyzhRm/IbOSfsEgg==,type:str]
     unencrypted_suffix: _unencrypted
-    version: 3.9.0
+    version: 3.13.3
