@@ -148,6 +148,7 @@ end
 # APPS: Completions + Alias
 ###############################
 # Aliases
+alias a="ask"
 alias c="gcal-tui"
 alias ci="config-init"
 alias h="habit-tracker"

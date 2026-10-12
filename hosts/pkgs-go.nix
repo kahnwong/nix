@@ -13,6 +13,7 @@ let
     "kahnwong/workspace-init"
 
     # private pkgs
+    "kahnwong/ask"
     "kahnwong/bean"
     "kahnwong/billing"
     "kahnwong/docs/utils/docs-utils"
@@ -61,7 +62,7 @@ let
         | xargs -n 1 -P "$GO_INSTALL_JOBS" ${pkgs.bash}/bin/bash -c '
             repo="$1"
             echo "--> Processing github.com/$repo..."
-            go install "github.com/$repo@latest"
+            go install -ldflags="-s -w" "github.com/$repo@latest"
           ' _
 
       echo "--> Done!"
