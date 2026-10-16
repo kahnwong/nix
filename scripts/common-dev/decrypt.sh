@@ -16,9 +16,10 @@ sops -d ./programs/kubectl/config.sops.yaml >~/.kube/config
 mkdir -p ~/.ssh/config.d
 sops -d ./programs/ssh/config.d/homelab.sops >~/.ssh/config.d/homelab
 sops -d ./programs/ssh/config.d/vps.sops >~/.ssh/config.d/vps
-# sops -d ./programs/ssh/config.d/work-legacy.sops >~/.ssh/config.d/work-legacy
 sops -d ./programs/ssh/config.d/work.sops >~/.ssh/config.d/work
 sops -d ./programs/ssh/config.sops >~/.ssh/config
+chmod 600 ~/.ssh/config
+chmod 600 ~/.ssh/config.d/*
 
 # timesheet
 mkdir -p ~/.config/timesheet
