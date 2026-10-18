@@ -16,6 +16,7 @@ let
     "outdated"
     "resource-capacity"
     "status"
+    "virt"
   ];
 
   updateKrewPkgs = pkgs.writeShellApplication {
