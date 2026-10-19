@@ -14,12 +14,7 @@ sudo systemctl restart nix-daemon
 
 ## Usage
 
-```bash
-make common
-
-# optional
-make common-dev
-```
+See `./scripts`.
 
 ### Rust
 

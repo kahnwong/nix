@@ -1,4 +1,9 @@
-{ pkgs, pkgs-stable, ... }:
+{
+  lib,
+  pkgs,
+  pkgs-stable,
+  ...
+}:
 
 let
   programImports = [
@@ -11,13 +16,6 @@ let
     # custom programs
     ../programs/pgconn/pgconn.nix
     ../programs/repo-switcher/repo-switcher.nix
-
-    # other packages
-    ./pkgs-go.nix
-    ./pkgs-krew.nix
-    ./pkgs-mise.nix
-    ./pkgs-node.nix
-    ./pkgs-ubi.nix
   ];
 
   fonts = with pkgs; [
@@ -47,7 +45,7 @@ let
   golang = with pkgs; [
     air
     cobra-cli
-    go
+    go_1_27
     golangci-lint
     goose
     gopls
@@ -203,6 +201,15 @@ let
     zola # use pkgs-stable.zola here if needed
   ];
 
+  updateMisePkgs = pkgs.writeShellApplication {
+    name = "update-mise-pkgs";
+    runtimeInputs = [ pkgs.mise ];
+
+    text = ''
+      mise upgrade
+      mise prune
+    '';
+  };
 in
 {
   imports = programImports;
@@ -213,6 +220,22 @@ in
   programs.java = {
     enable = true;
     package = pkgs.temurin-bin;
+  };
+
+  programs.mise = {
+    enable = true;
+
+    globalConfig = {
+      tools = {
+        # need to exec shell to activate target Go version, this behavior doesn't happen in global Go
+        # "go" = "latest";
+        "nodejs" = "24";
+        "opentofu" = "latest";
+        "rust" = "latest";
+        "terraform" = "latest";
+        "uv" = "latest";
+      };
+    };
   };
 
   home = {
@@ -242,6 +265,11 @@ in
       ++ devUtils
       ++ fileUtils
       ++ cliUtils
-      ++ misc;
+      ++ misc
+      ++ [ updateMisePkgs ];
   };
+
+  home.activation.syncMisePackages = lib.hm.dag.entryAfter [ "linkGeneration" ] ''
+    $DRY_RUN_CMD ${updateMisePkgs}/bin/update-mise-pkgs
+  '';
 }
