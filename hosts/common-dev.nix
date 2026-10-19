@@ -215,16 +215,6 @@ let
     wakatime-cli
     zola # use pkgs-stable.zola here if needed
   ];
-
-  updateMisePkgs = pkgs.writeShellApplication {
-    name = "update-mise-pkgs";
-    runtimeInputs = [ pkgs.mise ];
-
-    text = ''
-      mise upgrade
-      mise prune
-    '';
-  };
 in
 {
   imports = programImports;
@@ -281,11 +271,6 @@ in
       ++ devUtils
       ++ fileUtils
       ++ cliUtils
-      ++ misc
-      ++ [ updateMisePkgs ];
+      ++ misc;
   };
-
-  home.activation.syncMisePackages = lib.hm.dag.entryAfter [ "linkGeneration" ] ''
-    $DRY_RUN_CMD ${updateMisePkgs}/bin/update-mise-pkgs
-  '';
 }

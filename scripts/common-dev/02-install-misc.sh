@@ -1,6 +1,12 @@
 #!/bin/bash
 
 ############################
+# mise
+############################
+mise upgrade
+mise prune
+
+############################
 # go
 ############################
 # this setup doesn't require shell exec to activate project's Go version
