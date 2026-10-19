@@ -39,6 +39,7 @@ fi
 ############################
 cargo install --locked cargo-zigbuild
 cargo install --locked cross
+cargo install --locked wakatime-ls
 
 ############################
 # applications - python

@@ -12,12 +12,44 @@ language-servers = ["terraform-ls"]
 language-id = "terraform-vars"
 
 [[language]]
+name = "markdown"
+language-servers = ["marksman", "wakatime"]
+
+[[language]]
+name = "rust"
+language-servers = ["rust-analyzer", "wakatime"]
+
+[[language]]
+name = "go"
+language-servers = ["gopls", "wakatime"]
+
+[[language]]
+name = "yaml"
+language-servers = ["yaml-language-server", "wakatime"]
+
+[[language]]
+name = "dockerfile"
+language-servers = ["docker-langserver", "wakatime"]
+
+[[language]]
+name = "docker-compose"
+language-servers = ["docker-compose-langserver", "yaml-language-server", "wakatime"]
+
+[[language]]
 name = "toml"
+language-servers = ["taplo", "wakatime"]
 formatter = { command = "taplo", args = ["fmt", "-"] }
+
+[[language]]
+name = "bash"
+language-servers = ["bash-language-server", "wakatime"]
 
 # ==============================================================================
 # Language Servers
 # ==============================================================================
+[language-server.wakatime]
+command = "wakatime-ls"
+
 [language-server.terraform-ls]
 command = "terraform-ls"
 args = ["serve"]
