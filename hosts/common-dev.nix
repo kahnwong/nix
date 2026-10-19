@@ -8,6 +8,7 @@
 let
   programImports = [
     ../programs/aws/aws.nix
+    ../programs/helix/helix.nix
     ../programs/scripts/scripts.nix
     ../programs/terraform/terraform.nix
     ../programs/yt-dlp/yt-dlp.nix
@@ -32,7 +33,6 @@ let
     ];
 
   bash = with pkgs; [
-    # beautysh
     shellcheck
     shfmt
   ];
@@ -48,8 +48,6 @@ let
     go_1_27
     golangci-lint
     goose
-    gopls
-    goreleaser
     gotools
   ];
 
@@ -81,6 +79,22 @@ let
 
   zig_group = with pkgs; [
     zig
+  ];
+
+  lsp = with pkgs; [
+    bash-language-server
+    docker-compose-language-service
+    dockerfile-language-server
+    gopls
+    marksman # for markdown
+    nil # for nix
+    rust-analyzer
+    sqls
+    taplo # for toml
+    terraform-ls
+    vscode-langservers-extracted
+    vue-language-server
+    yaml-language-server
   ];
 
   containerTools = with pkgs; [
@@ -151,6 +165,7 @@ let
 
   devops = with pkgs; [
     ansible
+    goreleaser
   ];
 
   dataManipulation = with pkgs; [
@@ -251,6 +266,7 @@ in
       ++ yaml
       ++ wasm
       ++ zig_group
+      ++ lsp
       ++ containerTools
       ++ formattersAndLinters
       ++ database

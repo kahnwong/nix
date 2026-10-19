@@ -1,0 +1,35 @@
+# ==============================================================================
+# Languages
+# ==============================================================================
+[[language]]
+name = "hcl"
+language-servers = ["terraform-ls"]
+language-id = "terraform"
+
+[[language]]
+name = "tfvars"
+language-servers = ["terraform-ls"]
+language-id = "terraform-vars"
+
+[[language]]
+name = "toml"
+formatter = { command = "taplo", args = ["fmt", "-"] }
+
+# ==============================================================================
+# Language Servers
+# ==============================================================================
+[language-server.terraform-ls]
+command = "terraform-ls"
+args = ["serve"]
+
+[language-server.yaml-language-server]
+command = "yaml-language-server"
+args = ["--stdio"]
+
+[language-server.yaml-language-server.config.yaml]
+format = { enable = true }
+validation = true
+
+[language-server.yaml-language-server.config.yaml.schemas]
+"https://json.schemastore.org/github-workflow.json" = ".github/workflows/*.{yml,yaml}"
+"https://raw.githubusercontent.com/ansible-community/schemas/main/f/ansible-tasks.json" = "roles/{tasks,handlers}/*.{yml,yaml}"

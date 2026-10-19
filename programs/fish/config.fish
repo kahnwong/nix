@@ -83,7 +83,7 @@ zoxide init fish | source
 alias cp="cpx"
 alias tmux="zellij"
 alias tree="dust"
-alias vi="nvim"
+alias vi="hx"
 alias wm="workmux"
 abbr -a k kubectl
 
@@ -115,7 +115,7 @@ function fcat
 end
 
 function fvi
-    fd $argv | fzf | xargs echo | xargs nvim
+    fd $argv | fzf | xargs echo | xargs hx
 end
 
 function fcd
