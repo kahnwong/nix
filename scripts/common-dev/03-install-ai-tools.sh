@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # coding agents
+curl -fsSL https://antigravity.google/cli/install.sh | bash
 curl -fsSL https://cli.kiro.dev/install | bash
 curl -fsSL https://opencode.ai/install | bash
 curl -fsSL https://pi.dev/install.sh | sh
