@@ -11,6 +11,7 @@ curl -fsSL https://hypabolic.github.io/Hypa/install.sh | sh
 pi install npm:@hypabolic/pi-hypa
 pi install npm:@juicesharp/rpiv-ask-user-question
 pi install npm:@juicesharp/rpiv-todo
+pi install npm:@pi-spice/prefer-modern-cli
 pi install npm:context-mode
 pi install npm:pi-mcp-adapter
 pi install npm:pi-web-access
