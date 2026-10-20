@@ -49,3 +49,11 @@ end
 function tag
     topydo add due:friday @grocery $argv
 end
+
+function tas
+    topydo add due:today +share $argv
+end
+
+function tae
+    topydo add @tinkering +eval $argv
+end
