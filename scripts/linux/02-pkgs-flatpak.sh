@@ -23,22 +23,9 @@ if [ -f /etc/os-release ]; then
 	fi
 fi
 
-#com.bilingify.readest
-#com.bitwarden.desktop
-#com.dropbox.Client
-#com.github.ransome1.sleek
-#com.slack.Slack
-#com.todoist.Todoist
-#io.github.flattool.Ignition
-#io.github.nokse22.inspector
-#org.gnome.Boxes
-#org.gnome.Fractal
-#org.gnome.gitlab.cheywood.Buffer
 flatpak install -y flathub \
 	app.freelens.Freelens \
 	com.belmoussaoui.Decoder \
-	com.calibre_ebook.calibre \
-	com.dec05eba.gpu_screen_recorder \
 	com.github.IsmaelMartinez.teams_for_linux \
 	com.github.PintaProject.Pinta \
 	com.github.jeromerobert.pdfarranger \
@@ -46,9 +33,8 @@ flatpak install -y flathub \
 	com.github.tchx84.Flatseal \
 	com.github.zocker_160.SyncThingy \
 	com.jeffser.Pigment \
+	com.ktechpit.omnidict \
 	com.markwyner.ratio \
-	com.obsproject.Studio \
-	com.obsproject.Studio.Plugin.BackgroundRemoval \
 	com.rafaelmardojai.SharePreview \
 	com.ranfdev.DistroShelf \
 	com.rustdesk.RustDesk \
@@ -67,12 +53,10 @@ flatpak install -y flathub \
 	io.github.v81d.Wattage \
 	io.gitlab.adhami3310.Impression \
 	io.gitlab.metadatacleaner.metadatacleaner \
-	io.gitlab.news_flash.NewsFlash \
 	io.kinvolk.Headlamp \
 	io.missioncenter.MissionCenter \
 	net.puddletag.puddletag \
 	one.naiara.Kuychi \
-	org.cosmic_utils.enroll \
 	org.filezillaproject.Filezilla \
 	org.fkoehler.KTailctl \
 	org.flameshot.Flameshot \
@@ -84,8 +68,6 @@ flatpak install -y flathub \
 	org.jellyfin.JellyfinDesktop \
 	org.kde.okular \
 	org.mozilla.thunderbird_esr \
-	org.openshot.OpenShot \
-	org.raspberrypi.rpi-imager \
 	org.telegram.desktop \
 	org.tenacityaudio.Tenacity \
 	xyz.riothedev.emojify \
@@ -107,7 +89,12 @@ fi
 ## redfin only
 if [[ $(uname -n) == 'redfin' ]]; then
 	flatpak install -y \
-		flathub org.qgis.qgis
+		flathub org.qgis.qgis \
+		com.calibre_ebook.calibre \
+		com.obsproject.Studio \
+		com.obsproject.Studio.Plugin.BackgroundRemoval \
+		org.cosmic_utils.enroll \
+		org.openshot.OpenShot
 fi
 
 ## arm doesn't support official Discord client
