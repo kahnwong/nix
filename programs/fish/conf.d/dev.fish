@@ -12,5 +12,6 @@ function r
         end
 
         cd $path
+        zellij --layout two_panes_vertical
     end
 end
