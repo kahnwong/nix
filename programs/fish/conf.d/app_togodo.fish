@@ -1,3 +1,7 @@
 function tc
-    togodo
+    togodo columns
+end
+
+function tk
+    togodo kanban
 end
