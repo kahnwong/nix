@@ -14,6 +14,7 @@ language-id = "terraform-vars"
 [[language]]
 name = "markdown"
 language-servers = ["marksman", "wakatime"]
+soft-wrap.enable = true
 
 [[language]]
 name = "rust"
