@@ -12,6 +12,7 @@ function r
         end
 
         cd $path
-        zellij --layout two_panes_vertical
+        # zellij --layout two_panes_vertical
+        zellij --session $(zellij ls -s -n | head -1) action new-tab --layout two_panes_vertical --cwd $path --name $(basename $path) > /dev/null
     end
 end
