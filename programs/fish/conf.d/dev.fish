@@ -11,10 +11,6 @@ function zellij_update_tabname --on-variable PWD
     end
 end
 
-function tal
-    zellij attach $(zellij ls -s -n | head -1)
-end
-
 # repo-switcher
 function r
     set path (command repo-switcher $argv)
@@ -30,6 +26,6 @@ function r
 
         cd $path
         # zellij --layout two_panes_vertical
-        zellij --session $(zellij ls -s -n | head -1) action new-tab --layout two_panes_vertical --cwd $path --name $(basename $path) > /dev/null
+        zellij --session $(zellij ls -s -n | tail -1) action new-tab --layout two_panes_vertical --cwd $path --name $(basename $path) > /dev/null
     end
 end
