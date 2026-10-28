@@ -28,7 +28,7 @@ if (workspaceHosts.includes(url.hostname)) {
 const anonHosts = [
     "maps.google.com",
     "www.google.com",
-    "www.youtube.com",
+    // "www.youtube.com",
 ];
 if (anonHosts.includes(url.hostname)) {
     return { name: "Anonymous", icon: "circle", color: "violet" };
