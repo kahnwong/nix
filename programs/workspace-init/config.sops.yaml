@@ -143,8 +143,6 @@ orgs:
             - ENC[AES256_GCM,data:G4PxEmk0nCDeRP+hEDncRQKWQuihwQ7pMTHrWj4=,iv:FYecntvYLgp4v4/VxI4jSXKiCXUk4UW5ezq8ExoUzak=,tag:82jlkrBS50+YVxPkUD5t/w==,type:str]
             - ENC[AES256_GCM,data:LIbuUnT4w7ggJdaskz7trizr+g43ABfTXedDhk3F,iv:G0YsZ8uTfwB+hoSpwN209q2cECZP9mUHzMYrEJwty6k=,tag:9Z2CH95H2DzOPrt0iQ6xwA==,type:str]
             - ENC[AES256_GCM,data:x8jFMRWdhWBffChBXRwUbwpgRhza,iv:KWvVoQRCGih9ykRZwxoz5EZLzaI21gTmvha4JC3GbLg=,tag:rcX7PenidewfO4R72sGxhw==,type:str]
-            - ENC[AES256_GCM,data:pwxvkAETGyM+1UaOWJUoGLLJgQ==,iv:NOz8q7kP1AwDlqFMDEhAYibCH60WsrPZDi4s7a8/K4w=,tag:JkgIyZ3DCY+MspkeJY+8pg==,type:comment]
-            - ENC[AES256_GCM,data:gmZJMQM3a1xw1XfzZ7UGxWjiGP0=,iv:lW1YSufxwTiYK+lQOFuHnpDwJMHmJYblSaM1BH7JXZA=,tag:SmhBcOHI2fa0N4jLOjH8DA==,type:str]
         - group: ENC[AES256_GCM,data:TOg3G+1Bbg==,iv:Lo88xsCNf9mJVQk6tOet+tIN8Y7w0jZYa5A/zMgkEX0=,tag:Kzy1Oe+Tw7gEBJfEuljwUA==,type:str]
           repos:
             - ENC[AES256_GCM,data:mDQcwp/mtgT5k1V2jQ==,iv:DjQttjgqdcx0oSTr1e9I1X6QckYouc38TbkQ3zAJP7w=,tag:U91fOKl+0K8uDU/50JMynQ==,type:str]
@@ -263,7 +261,7 @@ sops:
             q/+Zeoi7SxMGoNdIKq0xHpmAnbavJm5Nv4jGvxEN/6MTBwXEdGR0xQ==
             -----END AGE ENCRYPTED FILE-----
           recipient: age1m954z8ajdedsmvr9u89ud5v2zednmxgvvzuahpfy5fcdp97yn99ssy2wmm
-    lastmodified: "2026-10-25T10:04:09Z"
-    mac: ENC[AES256_GCM,data:NCuKyzMbB3OfD0Gk49OBXaiA7GoVJgGv0NnuRxjBA65VSg07ACLXauRVez+vE3ceR5TLaYAMAy+wbJuVAOue2FH6b4KC6a11O0EiwsYA/VNvFol3W1N1kH9Wvyhjs8KPOCXpZmxOIWt/LHhFQe28aqMlOuwQfpmURAcKrvt/HAI=,iv:w4QDeJq2fLm+5ZdImVRyJD1TXCEduSelahplTJa4GYk=,tag:9PspvkWR+42LREbgLwUDmw==,type:str]
+    lastmodified: "2026-10-28T07:07:17Z"
+    mac: ENC[AES256_GCM,data:vQKLH39c/QBxuPWtU/rvTGVs3sIO4UM/L7vYkQya678E50UcreswuI3OTTGkMFheu38A1FvaGkP2y+4BUgK3jwwDLq+etaIuKHl5TpM29PXZXSgDojPUJUQUclcKDlRX8lZcD5gfRD6+2LwyF7zMEC8xk7SF6E5HrObb+VYQkaU=,iv:Juj729pYaVD08VFJ5PA7WHKLuVR/f36jCHfwjp+Dk4s=,tag:0AKue0H3OcRxxzI4OSEVNw==,type:str]
     unencrypted_suffix: _unencrypted
     version: 3.13.3
