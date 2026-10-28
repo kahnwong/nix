@@ -17,12 +17,6 @@ if [[ "$1" != "update" ]]; then
 fi
 
 ############################
-# cargo
-############################
-CARGO_NET_GIT_FETCH_WITH_CLI=true cargo install --git ssh://git@github.com/kahnwong/teapipe.git
-sudo mv ~/.cargo/bin/teapipe /usr/local/bin/
-
-############################
 # android
 ############################
 if [[ "$1" != "update" ]]; then

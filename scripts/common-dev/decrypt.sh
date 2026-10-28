@@ -73,10 +73,6 @@ sops -d ./programs/claude/settings.sops.json >~/.claude/settings.json
 mkdir -p ~/.pi/agent/extensions
 cp ./programs/pi/notify-done.ts ~/.pi/agent/extensions/
 
-# teapipe
-mkdir -p ~/.config/teapipe
-sops -d ./programs/teapipe/config.sops.yaml >~/.config/teapipe/config.yaml
-
 # ask
 mkdir -p ~/.config/ask
 sops -d ./programs/ask/config.sops.yaml >~/.config/ask/config.yaml
