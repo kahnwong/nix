@@ -70,6 +70,9 @@ fish -c "fisher install meaningful-ooo/sponge"
 fish -c "fisher install patrickf1/colored_man_pages.fish"
 fish -c "fisher install danhper/fish-ssh-agent"
 
+#### save theme variables to file to prevent re-init on every shell startup
+fish_config theme save default
+
 ### nvim
 #nvim --headless +PlugInstall +qall
 git clone https://github.com/kahnwong/nvchad-starter.git ~/.config/nvim --depth 1
