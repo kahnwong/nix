@@ -24,7 +24,11 @@ function r
             end
         end
 
-        cd $path
+        # only perform `cd $path` if not in IDE
+        if test "$TERMINAL_EMULATOR" != "JetBrains-JediTerm"
+            cd $path
+        end
+
         # zellij --layout two_panes_vertical
         zellij --session $(zellij ls -s -n | tail -1) action new-tab --layout two_panes_vertical --cwd $path --name $(basename $path) > /dev/null
     end
