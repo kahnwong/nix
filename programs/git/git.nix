@@ -1,5 +1,6 @@
 {
   pkgs,
+  config,
   ...
 }:
 {
@@ -105,8 +106,9 @@
 
       # ----- global ignore -----
       core.excludesfile = "~/.gitignore_global";
-      #      core.editor = "${config.home.homeDirectory}/.nix-profile/bin/nvim"; # [TODO] does it work on darwin?
-      core.editor = "/usr/bin/vi"; # [TODO] does it work on darwin?
+      # core.editor = "${config.home.homeDirectory}/.nix-profile/bin/nvim"; # [TODO] does it work on darwin?
+      # core.editor = "/usr/bin/vi"; # [TODO] does it work on darwin?
+      core.editor = "${config.home.homeDirectory}/.nix-profile/bin/hx";
 
       # ----- pull -----
       pull = {

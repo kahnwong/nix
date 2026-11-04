@@ -71,7 +71,8 @@ mise activate fish | source
 # CONFIG: SHELL
 ####################
 # editor
-set -gx EDITOR nvim
+# set -gx EDITOR nvim
+set -gx EDITOR hx
 
 # tools
 direnv hook fish | source
