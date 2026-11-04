@@ -140,6 +140,7 @@ let
   networking = with pkgs; [
     # dumbpipe
     # sendme
+    arp-scan-rs
     caddy
     doggo
     mitmproxy

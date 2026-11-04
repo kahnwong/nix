@@ -1,5 +1,6 @@
 # Networking Tools
 
+- arp-scan - discover hosts on local network
 - bandwhich - bandwidth monitor with visualization
 - kyanos - network visualizer
 - oryx - network monitoring, linux only, has interface filter + chart
