@@ -21,3 +21,8 @@ if [[ $(uname -m) == 'x86_64' ]]; then
 elif [[ $(uname -m) == 'arm64' ]]; then
 	rm "$HOME/.config/autostart/discord.desktop"
 fi
+
+# local music library only available on sailfish & redfin
+if [[ "$(hostname)" != "sailfish" || "$(hostname)" == "redfin" ]]; then
+	rm "$HOME/.config/autostart/fooyin.desktop"
+fi

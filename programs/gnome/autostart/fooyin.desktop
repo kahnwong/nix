@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=Fooyin
+Exec=flatpak run org.fooyin.fooyin
+X-Flatpak=org.fooyin.fooyin
