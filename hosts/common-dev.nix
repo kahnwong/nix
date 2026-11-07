@@ -233,9 +233,8 @@ in
 
     globalConfig = {
       tools = {
-        # need to exec shell to activate target Go version, this behavior doesn't happen in global Go
-        # "go" = "latest";
-        "nodejs" = "24";
+        "go" = "latest";
+        "nodejs" = "lts";
         "opentofu" = "latest";
         "rust" = "latest";
         "terraform" = "latest";
