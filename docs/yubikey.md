@@ -37,3 +37,9 @@ sudo vi /etc/pam.d/polkit-1
 ## put this BEFORE `@include common-auth`
 auth sufficient pam_u2f.so cue
 ```
+
+## References
+
+Currently not implemented
+
+- [gnome-keyring-yubikey-unlock](https://github.com/recolic/gnome-keyring-yubikey-unlock)
