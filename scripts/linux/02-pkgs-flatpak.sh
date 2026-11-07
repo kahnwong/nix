@@ -63,6 +63,7 @@ flatpak install -y flathub \
 	org.fooyin.fooyin \
 	org.freefilesync.FreeFileSync \
 	org.gnome.Firmware \
+	org.gnome.Fractal \
 	org.gnome.Logs \
 	org.gpodder.gpodder \
 	org.jellyfin.JellyfinDesktop \
