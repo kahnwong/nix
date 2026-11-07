@@ -111,7 +111,7 @@ function fcd
 end
 
 function fsops
-    fd $argv[2] | grep "sops." | fzf | xargs echo | xargs sops $argv[1]
+    fd $argv[2] | grep ".sops" | fzf | xargs echo | xargs sops $argv[1]
 end
 
 function fsh
