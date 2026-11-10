@@ -33,3 +33,10 @@ function r
         zellij --session $(zellij ls -s -n | tail -1) action new-tab --layout two_panes_vertical --cwd $path --name $(basename $path) > /dev/null
     end
 end
+
+# cd to temp workspace
+function temp-workspace
+    set path "/tmp/scratch"
+    mkdir -p $path
+    cd $path
+end
