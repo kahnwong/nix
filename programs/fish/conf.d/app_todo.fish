@@ -3,10 +3,6 @@ function t
     topydo $argv
 end
 
-# function tc
-#     topydo columns
-# end
-
 function tsort
     topydo sort asc:context asc:project
 end
@@ -56,4 +52,13 @@ end
 
 function tae
     topydo add @tinkering +eval $argv
+end
+
+# columns view
+function tc
+    togodo columns
+end
+
+function tk
+    togodo kanban
 end
