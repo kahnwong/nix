@@ -28,6 +28,7 @@ let
     (lib.optionals (stdenv.hostPlatform.system != "aarch64-linux") [ android-cli ])
     ++ [
       android-tools
+      scrcpy
       sdkmanager
       # flutter
     ];
