@@ -33,13 +33,11 @@ flatpak install -y flathub \
 	com.github.tchx84.Flatseal \
 	com.github.zocker_160.SyncThingy \
 	com.jeffser.Pigment \
-	com.ktechpit.omnidict \
 	com.markwyner.ratio \
 	com.rafaelmardojai.SharePreview \
 	com.ranfdev.DistroShelf \
 	com.rustdesk.RustDesk \
 	com.transmissionbt.Transmission \
-	dev.mufeed.Wordbook \
 	io.github.TransmissionRemoteGtk \
 	io.github.celluloid_player.Celluloid \
 	io.github.ciromattia.kcc \
@@ -49,22 +47,16 @@ flatpak install -y flathub \
 	io.github.seadve.Kooha \
 	io.github.sigmasd.stimulator \
 	io.github.tobagin.Ntfyr \
-	io.github.tobagin.karere \
 	io.github.v81d.Wattage \
-	io.gitlab.adhami3310.Impression \
 	io.gitlab.metadatacleaner.metadatacleaner \
 	io.kinvolk.Headlamp \
 	io.missioncenter.MissionCenter \
 	net.puddletag.puddletag \
 	one.naiara.Kuychi \
 	org.filezillaproject.Filezilla \
-	org.fkoehler.KTailctl \
 	org.flameshot.Flameshot \
 	org.fooyin.fooyin \
 	org.freefilesync.FreeFileSync \
-	org.gnome.Firmware \
-	org.gnome.Logs \
-	org.gpodder.gpodder \
 	org.jellyfin.JellyfinDesktop \
 	org.kde.okular \
 	org.mozilla.thunderbird_esr \
@@ -94,6 +86,7 @@ if [[ $(uname -n) == 'redfin' ]]; then
 		com.obsproject.Studio \
 		com.obsproject.Studio.Plugin.BackgroundRemoval \
 		org.cosmic_utils.enroll \
+		org.gpodder.gpodder \
 		org.openshot.OpenShot
 fi
 
