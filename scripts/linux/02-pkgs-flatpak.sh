@@ -26,9 +26,10 @@ fi
 flatpak install -y flathub \
 	app.freelens.Freelens \
 	com.belmoussaoui.Decoder \
+	com.bilingify.readest \
 	com.github.IsmaelMartinez.teams_for_linux \
-	com.github.PintaProject.Pinta \
 	com.github.jeromerobert.pdfarranger \
+	com.github.PintaProject.Pinta \
 	com.github.qarmin.czkawka \
 	com.github.tchx84.Flatseal \
 	com.github.zocker_160.SyncThingy \
@@ -38,7 +39,6 @@ flatpak install -y flathub \
 	com.ranfdev.DistroShelf \
 	com.rustdesk.RustDesk \
 	com.transmissionbt.Transmission \
-	io.github.TransmissionRemoteGtk \
 	io.github.celluloid_player.Celluloid \
 	io.github.ciromattia.kcc \
 	io.github.dweymouth.supersonic \
@@ -47,6 +47,7 @@ flatpak install -y flathub \
 	io.github.seadve.Kooha \
 	io.github.sigmasd.stimulator \
 	io.github.tobagin.Ntfyr \
+	io.github.TransmissionRemoteGtk \
 	io.github.v81d.Wattage \
 	io.gitlab.metadatacleaner.metadatacleaner \
 	io.kinvolk.Headlamp \
