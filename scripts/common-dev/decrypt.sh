@@ -56,19 +56,6 @@ sops -d ./programs/terraform/infracost.credentials.sops.yaml >~/.config/infracos
 mkdir -p ~/.config/qalculate/
 touch ~/.config/qalculate/qalc.cfg
 
-# crush
-mkdir -p ~/.local/share/crush
-sops -d ./programs/crush/crush.sops.json >~/.local/share/crush/crush.json
-
-# opencode
-mkdir -p ~/.config/opencode/plugins
-sops -d ./programs/opencode/opencode.sops.json >~/.config/opencode/opencode.json
-sops -d ./programs/opencode/plugins/notifications.sops.js >~/.config/opencode/plugins/notifications.js
-
-# claude
-mkdir -p ~/.claude
-sops -d ./programs/claude/settings.sops.json >~/.claude/settings.json
-
 # pi
 mkdir -p ~/.pi/agent/extensions
 cp ./programs/pi/notify-done.ts ~/.pi/agent/extensions/
@@ -76,3 +63,7 @@ cp ./programs/pi/notify-done.ts ~/.pi/agent/extensions/
 # ask
 mkdir -p ~/.config/ask
 sops -d ./programs/ask/config.sops.yaml >~/.config/ask/config.yaml
+
+# qoder
+mkdir -p ~/.qoder
+sops -d ./programs/qoder/settings.sops.json >~/.qoder/settings.json
