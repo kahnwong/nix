@@ -16,6 +16,7 @@ GO_PACKAGES=(
 	kahnwong/ask
 	kahnwong/bean
 	kahnwong/billing
+	kahnwong/book-summarizer
 	kahnwong/docs/utils/docs-utils
 	kahnwong/firecrack
 	kahnwong/gcal-tui
