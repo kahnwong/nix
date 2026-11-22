@@ -14,6 +14,7 @@ UBI_PROJECTS=(
 if [[ "$(uname -s)" == Linux ]]; then
 	UBI_PROJECTS+=(
 		hengyoush/kyanos
+		mrusme/sysdeck
 		murat-cileli/clyp
 		pythops/oryx
 	)

@@ -76,7 +76,7 @@ gsettings set org.gnome.software allow-updates false
 
 ### Clyp
 
-Clear with `.local/share/bio.murat.clyp/clyp.db`. Need to run once in a while.
+Clear with `rm ~/.local/share/bio.murat.clyp/clyp.db`. Need to run once in a while.
 
 ### Ntfyr
 

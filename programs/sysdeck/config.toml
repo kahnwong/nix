@@ -1,0 +1,410 @@
+# sysdeck configuration
+#
+# Copy this file to $XDG_CONFIG_HOME/sysdeck/config.toml, or to
+# ~/.config/sysdeck/config.toml when XDG_CONFIG_HOME is unset.
+#
+# Every setting is commented out, at its built-in default or as an example
+# where it has none. A value out of range or a key binding that can't work
+# falls back to its default with a warning on stderr. A file that doesn't parse
+# or holds a value of the wrong type is reported and ignored as a whole, and a
+# key sysdeck doesn't know is ignored without a warning.
+
+
+[list]
+# How many rows to show at once. The window grows with the rows, and a manual
+# page or a context menu is drawn underneath, so a large number might make the
+# window too tall in some instances.
+#
+# lines = 8
+
+# How many milliseconds to wait after a keystroke before searching. With 0 every
+# keystroke searches at once.
+#
+# debounce_ms = 300
+
+
+[window]
+# How opaque the background of the window is, from 0 to 1.
+# Note: If unset, it is 0.74 where the background is blurred and 0.95 elsewhere.
+#
+# opacity = 0.95
+
+# Draw a blurred picture of the screen behind the window where the compositor
+# has no blur of its own (e.g. Sway).
+#
+# static_blur = false
+
+
+[recommendations]
+# With the `--recommendations` flag the list shows the entries you have picked
+# at least twice whenever the text box is empty.
+#
+# How many entries each of them adds to the list at most.
+#
+# max_per_subroutine = 5
+
+
+[terminal]
+# The terminal that executables are opened in, as the command and the argument
+# that takes the program to run. sysdeck usually works this out by itself,
+# honoring $TERMINAL first, but if the "magic" doesn't do its job feel free to
+# configure your terminal here.
+#
+# A disk entry whose handler runs in a terminal, such as a file opening in
+# an editor, is using this setting, too.
+#
+# command = ["ghostty", "-e"]
+
+
+[keys]
+# The manual page sections, where {n} is the section number. F{n} means the
+# function keys, so Alt+F5 shows man 5. Write {n} on its own for the number
+# row, as in "Alt+{n}", which however collides with the context menu below when
+# both use the same modifier.
+#
+# Note: GNOME and KDE bind Alt+F1, Alt+F2 and Alt+F4 themselves and grab those
+# keys before sysdeck sees them. If you are using either of these WMs it's
+# probably best to switch these to "Ctrl+F{n}".
+#
+# manual = "Alt+F{n}"
+
+# This key must be held to show the context menu of the selected entry, whose
+# rows are then run with the numbers 1 to 9. You'd want to use a modifier here,
+# since it is held and not just pressed.
+#
+# context = "Alt"
+
+# This keybinding switches back from any other mode to the general search.
+#
+# search = "Ctrl+f"
+
+# This keybinding switches from the general search to the list of Sway windows.
+#
+# windows = "Ctrl+t"
+
+# This keybinding switches from the general search to the clipboard history.
+#
+# history = "Ctrl+h"
+
+# This keybinding switches from the general search to the disk browser.
+#
+# disk = "Ctrl+d"
+
+# This keybinding switches from the general search to the whats prompt.
+#
+# whats = "Ctrl+w"
+
+# This keybinding switches from the general search to the network list.
+#
+# network = "Ctrl+k"
+
+# This keybinding switches from the general search to the phonebook.
+#
+# phonebook = "Ctrl+p"
+
+# This keybinding switches from the general search to the Podman containers.
+#
+# containers = "Ctrl+0"
+
+# This keybinding switches from the general search to the LLM prompt.
+# Pressing it again while already in LLM mode changes to the next provider in
+# the dropdown.
+#
+# llm = "Ctrl+l"
+
+# This keybinding starts a new conversation in LLM mode.
+#
+# reset = "Ctrl+n"
+
+
+[index]
+# How old an index may get before it is rebuilt, in minutes. The rebuild runs
+# in the background, hence queries go against the previous index while it does.
+# A bookmark adapter is rebuilt whatever its age when this file has been written
+# since the index was built, so a newly configured file is read straight away.
+#
+# max_age_minutes = 60
+
+
+[extensions.man]
+# Show the manual page of the selected executable underneath the list.
+#
+# enable = true
+
+
+[extensions.preview]
+# Show a preview of the selected entry underneath the list. This works for
+# images and text.
+#
+# enable = true
+
+# How tall the picture or the text box may get, in pixels. Keep in mind that
+# this is added to the height of the list.
+#
+# height = 200
+
+# The largest file size that is previewed, in bytes. Anything above this is
+# still listed, but is not read/previewed.
+#
+# max_bytes = 10485760
+
+# The most pixels, width times height, a picture may have to be previewed.
+#
+# max_pixels = 64000000
+
+
+[sources.apps]
+# Whether the installed applications can be searched.
+#
+# enable = true
+
+# Per index override of the global max_age_minutes value.
+#
+# max_age_minutes = 240
+
+
+[sources.bins]
+enable = false
+# Per index override of the global max_age_minutes value.
+#
+# max_age_minutes = 60
+
+
+[sources.bookmarks]
+enable = false
+
+
+[sources.clipboard]
+enable = false
+
+[sources.disk]
+enable = false
+
+# `id` and `path` are required, the rest is optional. The id names the location
+# in the index. The path accepts ~ and environment variables, and any XDG_*_DIR
+# that the session doesn't export is read from ~/.config/user-dirs.dirs.
+#
+# Note: The walk follows a symlink to a file, but it does not enter a symlinked
+# directory.
+#
+# locations = [
+#   { id = "documents", path = "~/documents", max_age_minutes = 20 },
+#   { id = "shots", path = "$XDG_PICTURES_DIR/screenshots", only = ["image/*"] },
+#   { id = "code", path = "~/projects", exclude = ["node_modules", "*.o"] },
+# ]
+
+# Per location override of the global max_age_minutes value.
+#
+# max_age_minutes = 60
+
+# Index only these mimetypes, either exactly or as a wildcard for the whole
+# type. A folder is "inode/directory". Everything is indexed when this is left
+# out.
+#
+# only = ["image/jpeg", "image/png", "video/*"]
+
+# Leave out what matches one of these globs. A pattern is matched against the
+# `path` and against the name on its own, e.g. "node_modules" excludes any item
+# named like that at any depth, but "build/tmp" only excludes the specific item.
+#
+# Note: * and ? do not cross a separator.
+#
+# exclude = ["node_modules", "*.log"]
+
+# Whether dotfiles and dot directories are indexed.
+#
+# hidden = false
+
+
+[sources.inca]
+enable = false
+
+# The inca executable. If this is unset, inca is looked up in $PATH.
+#
+# exec = "~/go/bin/inca"
+
+# Note: Photos that a contact links to rather than embeds are kept in
+# ~/.cache/sysdeck/contacts. If a photo couldn't be fetched you can delete its
+# .none file there to trigger a re-fetch.
+
+
+[sources.llm]
+# Ask a configured LLM things. Ctrl+L switches to LLM mode (unless configured
+# otherwise), and the `--llm` flag starts sysdeck with it.
+#
+# Pressing Escape while an answer is being written stops the request and keeps
+# the text that arrived. A second Escape closes sysdeck.
+#
+# Note: The pane keeps the conversation, so a follow-up question carries the
+# earlier turns with it for context awareness. A long conversation will cost
+# more tokens. Ctrl+N starts a new conversation.
+#
+# Note: LLM mode will not be available if there is no provider
+# configuration (below).
+#
+enable = false
+
+# How tall the answer pane may get, in pixels.
+#
+# height = 300
+
+# Providers
+#
+# Each entry has a `kind` of gemini, openai or anthropic. They are listed in the
+# order they appear here.
+#
+# Note: The key is read from the environment, not from this file. Set
+# `api_key_env` to name a variable, or leave it out to use the provider's
+# default, which is GOOGLE_API_KEY, OPENAI_API_KEY or ANTHROPIC_API_KEY. An
+# entry with a `base_url` reads only the variable `api_key_env` names, and sends
+# `none` without it.
+#
+# Note: `max_tokens` is the answer limit setting for any provider and it
+# defaults to 4096.
+
+# [[sources.llm.providers]]
+# kind = "gemini"
+# name = "flash"
+# model = "gemini-2.5-flash"
+
+# [[sources.llm.providers]]
+# kind = "openai"
+# name = "local"
+# model = "Qwen/Qwen3-4B-GGUF:Q4_K_M"
+#
+# Note: `base_url` points the OpenAI client at anything with a compatible API,
+# such as llama.cpp's llama-server, Ollama or Hugging Face Inference.
+# Leave it out for OpenAI itself.
+#
+# base_url = "http://192.168.122.1:8080/v1"
+
+# [[sources.llm.providers]]
+# kind = "openai"
+# name = "gpt"
+# model = "gpt-4o"
+
+# [[sources.llm.providers]]
+# kind = "anthropic"
+# name = "sonnet"
+# model = "claude-sonnet-4-6"
+#
+# max_tokens = 4096
+
+
+[sources.mpris]
+enable = false
+
+
+[sources.nm]
+# Whether the NetworkManager devices and connections can be searched, which is
+# what the `network` key above switches to.
+#
+# Note: This one has no default. When NetworkManager is present on the system
+# bus it is enabled, otherwise it is off. Setting it overrides this behavior.
+#
+# enable = true
+
+
+[sources.podman]
+enable = false
+# exec = "/usr/bin/podman"
+
+
+[sources.processes]
+# Whether the entries of running programs show their process ids, to focus or
+# kill them.
+#
+# enable = true
+
+
+[sources.screenshot]
+# Enable screenshot subroutine. It can take a screenshot of a region, a window
+# or a whole screen.
+#
+# Note: This feature requires a compositor that does wlr-screencopy and
+# wlr-layer-shell, which is Sway, river, Wayfire, and a few others, and it is
+# off outside Wayland.
+#
+# Type "screenshot" to get the entry, hold Alt for its context menu.
+#
+enable = false
+
+# Where the file is written. If this is unset it uses the XDG pictures
+# directory (usually ~/Pictures). The directory is created if it is missing.
+#
+# directory = "~/cloud/photos/screenshots"
+
+# The name of the file, with the % variables of date(1). The format is decided
+# by the extension, which can either be .jpg and .jpeg for a JPEG, or .png for
+# a PNG.
+#
+# Note: A separator writes into subdirectories, as in
+# "%Y/%m/screenshot_%d-%H%M%S.png".  A name that is already taken gets -2, -3
+# and so on.
+#
+# filename = "screenshot_%Y-%m-%d-%H%M%S.png"
+
+# What is copied after the file is written. "image" copies the picture itself,
+# "path" copies the absolute path to the saved image, and "none" copies nothing.
+#
+# Note: Copying needs wl-copy.
+#
+# clipboard = "none"
+
+# Whether the mouse pointer should be part of the picture.
+#
+# cursor = false
+
+
+[sources.snippets]
+# Whether snippets can be searched.
+#
+# enable = false
+
+# Whether every emoji is a snippet, found by its name and keywords.
+#
+# emoji = true
+
+
+# Snippets of your own, found by their text and their keywords.
+#
+# [[sources.snippets.entries]]
+# snippet = '¯\_(ツ)_/¯'
+# keywords = ["shrug"]
+
+
+[sources.ssh]
+enable = false
+
+
+[sources.sway]
+enable = false
+
+
+[sources.websearch]
+enable = false
+
+# Providers
+#
+# Each %s in `url` is replaced with the arguments typed after Tab. `icon` is an
+# image file or an http(s) URL. If unspecified the favicon of the url's host is
+# fetched through DuckDuckGo's favicon proxy.
+#
+# Note: Icons are kept in ~/.cache/sysdeck/icons. If an icon couldn't be fetched
+# you can delete its .none file there to trigger a re-fetch.
+
+# [[sources.websearch.providers]]
+# name = "Brave"
+# url = "https://search.brave.com/search?q=%s"
+
+# [[sources.websearch.providers]]
+# name = "Wikipedia"
+# url = "https://en.wikipedia.org/wiki/%s"
+# icon = "~/pictures/wikipedia.svg"
+
+
+[sources.whats]
+# Whether what you type is calculated and converted, which is also what the
+# `whats` key above switches to.
+#
+# enable = true

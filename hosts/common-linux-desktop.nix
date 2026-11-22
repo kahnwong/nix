@@ -1,6 +1,8 @@
 { pkgs, ... }:
 {
-  imports = [ ];
+  imports = [
+    ../programs/sysdeck/sysdeck.nix
+  ];
   programs.home-manager.enable = true;
 
   home.packages = with pkgs; [
