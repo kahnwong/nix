@@ -1,6 +1,6 @@
 # LUKS
 
-Set up during Ubuntu installation.
+Setup during Ubuntu installation.
 
 To apply rw speed increase, get `crypt` volume name:
 
