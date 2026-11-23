@@ -17,7 +17,7 @@ function r
     if test $status -eq 0
         read -l -P "Launch IDE? [y/N] " launch_ide
         if string match -qir '^(y|yes)$' -- "$launch_ide"
-            if test "$hostname" != "steelhead"; and test "$hostname" != "ika"
+            if test "$hostname" != steelhead; and test "$hostname" != ika
                 idea $path &
             else
                 zed $path
@@ -25,18 +25,18 @@ function r
         end
 
         # only perform `cd $path` if not in IDE
-        if test "$TERMINAL_EMULATOR" != "JetBrains-JediTerm"
+        if test "$TERMINAL_EMULATOR" != JetBrains-JediTerm
             cd $path
         end
 
-        # zellij --layout two_panes_vertical
-        zellij --session $(zellij ls -s -n | tail -1) action new-tab --layout two_panes_vertical --cwd $path --name $(basename $path) > /dev/null
+        zellij --layout two_panes_vertical
+        # zellij --session $(zellij ls -s -n | tail -1) action new-tab --layout two_panes_vertical --cwd $path --name $(basename $path) > /dev/null
     end
 end
 
 # cd to temp workspace
 function temp-workspace
-    set path "/tmp/scratch"
+    set path /tmp/scratch
     mkdir -p $path
     cd $path
 end
